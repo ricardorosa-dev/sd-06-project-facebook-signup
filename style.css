@@ -19,6 +19,13 @@
 
 .main-content {
   display: flex;
+  justify-content: space-between;
+}
+
+.right-content {
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 300px;
 }
 
 .left-content {
