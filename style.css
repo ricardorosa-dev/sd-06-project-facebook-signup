@@ -51,3 +51,7 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.main-content {
+  display: flex;
+}
