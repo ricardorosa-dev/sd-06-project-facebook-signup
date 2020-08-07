@@ -42,3 +42,7 @@ body {
 .right-content {
   width: 300px;
 }
+
+.right-content form {
+  display: flex; /* Para satisfazer posicionamento do requisito 11 */
+}
