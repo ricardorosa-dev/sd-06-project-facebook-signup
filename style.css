@@ -56,6 +56,10 @@ body {
   width: 100%;
 }
 
+.right-content form div {
+  margin: 5px 0;
+}
+
 .name {
   display: flex;
 }
