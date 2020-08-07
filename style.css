@@ -45,4 +45,15 @@ body {
 
 .right-content form {
   display: flex; /* Para satisfazer posicionamento do requisito 11 */
+  justify-content: space-between; /* Para satisfazer posicionamento do requisito 12 */
+  flex-wrap: wrap; /* Para satisfazer posicionamento do requisito 13 */
 }
+
+.right-content form input {
+  width: 45%; /* Para satisfazer posicionamento do requisito 12 */
+}
+
+.right-content form input:nth-child(3) {
+  width: 100%; /* Para satisfazer posicionamento do requisito 13 */
+}
+
