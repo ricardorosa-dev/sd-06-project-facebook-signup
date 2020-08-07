@@ -1,15 +1,19 @@
-<!DOCTYPE html>
+ !DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FacebookPageProject</title>
-    <link rel="stylesheet" type="text/css" href="face.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 
 <body>
+
+
+
     <header class="top-bar">
+
         <div>
             <img class="facebook-logo" src="imgs/facebook-logo.png">
         </div>
@@ -23,30 +27,44 @@
                 <input id="user-password" type="password" name="password" minlength="8" required>
                 <small class="small">Esqueceu a conta?</small>
             </div>
-            <div class="form-control">
-                <button id="button-login">Entrar</button>
-            </div>
-        </div>
-    </header>
-    <section class="main-content">
-        <div class="left-content">
-            <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
-            </p>
-            <img class="img" src="">
-        </div>
-        <div class="right-content" class="registrationContainer">
-            <h1>Abra uma Conta</h1>
-            <p>É rápido e fácil</p>
-            <div class="inputs">
-                <input type="text" id="name" name="name">
-                <input type="text" id="lastName" name="lastName">
-                <input type="text" id="emailOrCell" name="emailOrCell">
-                <input type="password" name="password" minlength="8" required>
-                <input type="password" name="password" minlength="8" required>
-            </div>
-        </div>
-        </div>
-    </section>
-</body>
 
-</html>
+            <div class="form-group">
+                <div class="form-control">
+
+                    <input type="submit" value="Entrar">
+                    <button id="button-login">Entrar</button>
+
+                </div>
+
+                @@ -44,9 +47,9 @@
+
+    </header>
+
+    <section class="sidebyside">
+        <section class="main-content">
+
+            <div class="left">
+                <div class="left-content">
+
+                    <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+                    </p>
+                    <img class="img" src="">
+
+                </div>
+
+                <div class="right" class="registrationContainer">
+                    <div class="right-content" class="registrationContainer">
+
+                        <h1>Abra uma Conta</h1>
+                        <p>É rápido e fácil</p>
+                        <div class="inputs">
+                            <input type="text" id="name" name="name">
+                            <input type="text" id="lastName" name="lastName">
+                            <input type="text" id="emailOrCell" name="emailOrCell">
+                            <input type="password" name="password" minlength="8" required>
+                            <input type="password" name="password" minlength="8" required>
+                        </div>
+                    </div>
+                </div>
+        </section>
+</body>
