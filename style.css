@@ -63,7 +63,7 @@ a {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
@@ -82,4 +82,9 @@ a {
 
 .nome {
   display: flex;
+}
+
+.birthdate {
+  display: flex;
+  flex-direction: column;
 }
