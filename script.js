@@ -3,7 +3,7 @@ function loginAlert() {
   alert(email);
 }
 
-window.onload = function() {
+window.onload = function () {
   const loginBtn = document.querySelector('#button-login');
   loginBtn.addEventListener('click', loginAlert);
-}
+};
