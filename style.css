@@ -16,3 +16,11 @@ body {
 .container {
   width: 960px;
 }
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
