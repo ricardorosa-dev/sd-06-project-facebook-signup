@@ -1,33 +1,33 @@
 .top-bar {
-    background-color: rgb(66, 103, 178);
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px 0;
-  }
+  background-color: rgb(66, 103, 178);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+    
+.form-group {
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+}
   
-  .form-group {
-    display: flex;
-  }
-  
-  .form-control {
-    align-self: flex-end;
-  }
-  
-  .facebook-login {
-    align-items: center;
-    display: flex;
-    height: 40px;
-    justify-content: space-around;
-    width: 900px;
-  }
-  
-  .button-login {
-    background-color: #4c6396;
-    border-radius: 5px;
-    color: white;
-    margin: 12px;
-    width: 90px;
-  }
+.facebook-login {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  justify-content: space-around;
+  width: 900px;
+}
+
+.button-login {
+  background-color: #4c6396;
+  border-radius: 5px;
+  color: white;
+  margin: 12px;
+  width: 90px;
+}
   
