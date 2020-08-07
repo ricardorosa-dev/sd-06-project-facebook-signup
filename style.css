@@ -2,3 +2,19 @@
   background-color: rgb(66, 103, 178);
   display: flex;
 }
+
+.facebook-login {
+  display: flex;
+}
+
+.top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
