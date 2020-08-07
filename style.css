@@ -15,9 +15,9 @@ header {
   width: 100%;
 }
 
-.top-bar {
+/* .top-bar {
 
-}
+} */
 
 header img {
   margin-top: 17px;
@@ -25,7 +25,7 @@ header img {
 
 .facebook-login {
   display: flex;
-  
+
 }
 
 .form-group {
