@@ -42,3 +42,8 @@ body {
 .name-inputs {
   display: flex;
 }
+
+.gender-buttons {
+  display: flex;
+  flex-direction: row;
+}
