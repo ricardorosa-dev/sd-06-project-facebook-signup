@@ -55,59 +55,69 @@
                 <div class="field">
                     <div class="form-flex-container-row" style="display:flex;">
                         <div class="control">
-                            <input class="input" name="firstname" type=" text " placeholder="Nome">
+                            <input class="input" name="firstname" required="required" type=" text " placeholder="Nome">
                         </div>
                         <div class="control">
-                            <input class="input" name="lastname" type="text " placeholder="Sobrenome">
+                            <input class="input" name="lastname" required="required" type="text " placeholder="Sobrenome">
                         </div>
                     </div>
                     <div class="form-flex-container-column" style="display:flex; flex-direction:column;">
                         <div class="control">
-                            <input class="input" name="phone_email" type="text " placeholder="Celular ou email">
+                            <input class="input" required="required" name="phone_email" type="text " placeholder="Celular ou email">
                         </div>
                         <div class="control">
-                            <input class="input" name="password" type="password " placeholder="Nova Senha">
+                            <input class="input" required="required" name="password" type="password " placeholder="Nova Senha">
                         </div>
                         <div class="control">
-                            <label class="label " style="font-size: 12px; color:gray; ">Data de nascimento</label>
-                            <input class="input" name="birthdate" id="label-birthdatestyle" placeholder="dd/mm/aaaa">
-                        </div>
-
-                        <label class="label " style="font-size: 12px; color:gray; ">Gênero</label>
-                        <div class="radio-btn ">
-
-                            <div class="control ">
-                                <label class="radio" for="female ">
-                      					<input type="radio" name="gender " id="female ">
-                      Feminino
-                    </label>
-                                <label class="radio" for="male ">
-                      <input type="radio" name="gender " id="male ">
-                      Masculino
-                    </label>
-                                <label class="radio" for="other ">
-                      <input type="radio" name="gender " id="other ">
-                      Personalizado
-                    </label>
-                            </div>
-                        </div>
-
-
-                        <p style="font-size: 9px; ">
-                            Ao clicar em Cadastre-se, você concorda com nossos
-                            <a class="terms-class " href="https://www.facebook.com/legal/terms/update ">Termos</a>,<br>
-                            <a class="terms-class " href="https://www.facebook.com/about/privacy/update ">Política de Dados</a> e
-                            <a class="terms-class " href="https://www.facebook.com/policies/cookies/ ">Política de Cookies</a>. Você pode receber<br>notificações por SMS e pode cancelar isso quando quiser.
-                        </p>
-                        <div class="control ">
-                            <button class="button is-success sign-button " type="submit ">Cadastre-se</button>
+                            <label class="label" style="font-size: 12px; color:gray; ">Data de nascimento</label>
+                            <input class="input" required="required" name="birthdate" id="label-birthdatestyle" placeholder="dd/mm/aaaa">
                         </div>
                     </div>
+
+                    <label class="label" id="label-gender" style="font-size: 12px; color:gray; ">Gênero</label>
+                    <div class="form-flex-container-column" style="display:flex;">
+                        <div class="control ">
+
+                            <label for="female" class="radio">
+                                <input type="radio" name="gender" id="female">
+                                Feminino
+                            </label>
+                            <label for="male" class="radio">
+                                <input type="radio" name="gender" id="male">
+                                Masculino
+                            </label>
+                            <label for="other" class="radio">
+                                <input type="radio" name="gender" id="other">
+                                Personalizado
+                            </label>
+                            <div id="gender-area" style="display: none">
+                                <select name="gender" id="genders">
+                                    <option selected=1 disabled=1 value="volvo">Selecione seu pronome</option>
+                                    <option value=1>Feminino: "Deseje a ela um feliz aniversário!"</option>
+                                    <option value=2>Masculino: "Deseje a ele um feliz aniversário!"</option>
+                                    <option value=6>Neutro: "Deseje a ele(a) um feliz aniversário!"</option>
+                                  </select>
+                                <p>O seu pronome fica visível para todos.</p>
+                                <div class="control">
+                                    <input class="input" name="gender-custom" required="required" type=" text " placeholder="Gênero (opcional)">
+                                </div>
+                            </div>
+
+                            <p style="font-size: 9px; ">
+                                Ao clicar em Cadastre-se, você concorda com nossos
+                                <a class="terms-class " href="https://www.facebook.com/legal/terms/update ">Termos</a>,<br>
+                                <a class="terms-class " href="https://www.facebook.com/about/privacy/update ">Política de Dados</a> e
+                                <a class="terms-class " href="https://www.facebook.com/policies/cookies/ ">Política de Cookies</a>. Você pode receber<br>notificações por SMS e pode cancelar isso quando quiser.
+                            </p>
+                            <div class="control ">
+                                <button id="facebook-register" class="button is-success sign-button " type="submit ">Cadastre-se</button>
+                            </div>
+                        </div>
             </form>
             <p style="font-size: 12px; font-weight: bold; "><a href="https://www.facebook.com/pages/create/?ref_type=registration_form ">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
             </div>
-        </div>
-        <script src="script.js "></script>
+            </div>
+            <script src="script.js "></script>
 </body>
 
-</html>s" "
+</html>O seu pronome fica visível para todos.
