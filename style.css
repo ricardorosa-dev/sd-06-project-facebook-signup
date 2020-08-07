@@ -27,7 +27,6 @@ body {
 }
 
 .form-group {
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
 }
@@ -36,6 +35,7 @@ body {
   align-self: flex-end;
 }
 
-.facebook-logo {
-  border: 2px solid yellow;
+.main-content {
+  display: flex;
+  flex-direction: column;
 }
