@@ -29,8 +29,9 @@
 
 .input-gender {
   display: inline-block;
-  width: 28%;
   text-align: left;
+  width: 28%;
+
 }
 
 .label {
