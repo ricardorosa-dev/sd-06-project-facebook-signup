@@ -9,6 +9,7 @@
 
 .form-group {
   display: flex;
+  align-content: flex-end;
 }
 
 .form-control {
