@@ -47,3 +47,7 @@ body {
   margin-bottom: 10px;
   width: 120px;
 }
+
+form input[name='phone_email'] , form input[name='password'] {
+  width: 100%;
+}
