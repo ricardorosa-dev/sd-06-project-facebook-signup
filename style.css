@@ -1,0 +1,123 @@
+body {
+  line-height: 1.34;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  background-image: linear-gradient(#4e69a2, #3b5998 50%);
+  border-bottom: 1px solid #133783;
+  height: 82px;
+  min-width: 980px;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  padding-top: 4px;
+}
+
+.facebook-logo {
+  width: 185px;
+}
+
+
+.input-container {
+  /* width: 300px;
+  height: 55px;*/
+  /* background-color: burlywood;  */
+  display: flex;
+  color: white;
+  /* align-items: baseline; */
+}
+
+.user-email-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding: 15px;
+  margin-right: -10px;
+}
+
+.password-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding: 15px;
+}
+
+a {
+  color: #9cb4d8;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.34;
+  text-decoration: none;
+}
+
+.user-email-phone {
+  border: 1px solid #ccd0d5;
+  border-radius: 0;
+  margin: 0;
+  padding: 3px;
+  /* width: 140px; */
+}
+
+.password-label {
+  border: 1px solid #ccd0d5;
+  border-radius: 0px;
+  margin: 0;
+  padding: 3px;
+  /* margin-top: 3px; */
+}
+
+form label {
+  padding-bottom: 3px;
+}
+
+.form-button {
+  display: flex;
+}
+.button-login {
+  background: #4466ad;
+  border: 1px solid #2f4981;
+  border-radius: 0;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  align-self: center;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.main-container {
+  background-color: #e9ebee;
+  width: 100%;
+  /* height: 600px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  background-color: lawngreen;
+  /* width: 600px;
+  height: 800px; */
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-facebook {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 400px;
+  word-spacing: -1px;
+  background-color: lightcoral;
+}
+
+
