@@ -1,8 +1,10 @@
 
-* {
+
+body {
   box-sizing: border-box; /* ignora o padding */
-  margin: 0px;
-  padding: 0px;
+  font-family: 'Mulish', sans-serif;
+  margin: 0 ;
+  padding: 0 ;
 }
 
 .top-bar {
@@ -11,16 +13,14 @@
   display: flex;
   font-size: 15px;
   height: 50px;
-  justify-content: space-around;  
+  justify-content: space-around;
   width: 100%;
-
 }
 
 .facebook-login {
   align-items: flex-end;
   color: white;
   display: flex;
-
 }
 
 .facebook-logo {
