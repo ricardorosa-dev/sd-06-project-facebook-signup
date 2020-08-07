@@ -16,6 +16,13 @@
       <label for="user-email-phone" id="user-email-phone-laber">Email ou telefone</label>
       <input type="text" id="user-email-phone" name="email-phone">
     </div>
+    <div class="form-group">
+      <label for="user-password" id="user-password-label">Senha</label>
+      <input type="password" id="user-password" name="password">
+    </div>
+    <div class="form-control">
+      <button id="button-login" name="button" type="submit">Entrar</button>
+    </div>
   </form>
   </div>
 
@@ -38,6 +45,27 @@
         <input type="text" name="phone_email" placeholder="Celular ou email">
         <input type="password" name="password" placeholder="Nova senha">
         <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
+        <div class="input-gender-container">
+          <label for="" id="label-gender">Gênero</label>
+          <div class="gender-container">
+            <label for="feminine">
+              <input type="radio" name="gender" id="feminine">
+              Feminino
+            </label>
+            <label for="masculine">
+              <input type="radio" name="gender" id="masculine">
+              Masculino
+            </label>
+            <label for="other">
+              <input type="radio" name="gender" id="other">
+              Personalizado
+            </label>
+          </div>
+        </div>
+        <div class="register-button">
+          <p id="invalid-inputs"></p>
+          <button type="submit" id="facebook-register">Cadastre-se</button>
+        </div>
       </form>
     </div>
   </div>
