@@ -6,16 +6,11 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .facebook-login {
   display: flex;
-  float: right;
-}
-
-.facebook-logo {
-  float: left;
 }
 
 .form-group {
