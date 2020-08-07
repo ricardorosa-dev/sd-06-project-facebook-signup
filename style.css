@@ -33,3 +33,8 @@
 .user-name {
   display: flex;
 }
+
+.user-birth-date {
+  display: flex;
+  flex-direction: column;
+}
