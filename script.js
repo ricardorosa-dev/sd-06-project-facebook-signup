@@ -10,24 +10,24 @@ function invalidFields() {
 }
 
 function checkEmpty() {
-  let a;
+  let isEmpty;
   if (document.getElementById('firstname').value === '') {
-    a = 1;
+    isEmpty = 1;
   }
   if (document.getElementById('lastname').value === '') {
-    a = 1;
+    isEmpty = 1;
   }
   if (document.getElementById('phone_email').value === '') {
-    a = 1;
+    isEmpty = 1;
   }
   if (document.getElementById('password').value === '') {
-    a = 1;
+    isEmpty = 1;
   }
   if (document.getElementById('birthdate').value === '') {
-    a = 1;
+    isEmpty = 1;
   }
 
-  if (a == 1) {
+  if (isEmpty === 1) {
     invalidFields();
   }
 }
