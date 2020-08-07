@@ -5,9 +5,6 @@ body {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
-}
-
-.top-bar {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -30,4 +27,9 @@ body {
 
 .fullName {
   display: flex;
+}
+
+.birth {
+  display: flex;
+  flex-direction: column;
 }
