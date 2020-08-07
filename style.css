@@ -13,12 +13,10 @@ body {
 
 .login-password {
   display: flex;
-  /* flex-wrap: wrap; */
 }
 
 .facebook-login {
   display: flex;
-  justify-content: right;
 }
 
 .form-group {
