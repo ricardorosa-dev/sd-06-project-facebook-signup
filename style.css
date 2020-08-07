@@ -27,8 +27,32 @@ body {
 }
 
 .button-login {
+<<<<<<< HEAD
   background-color:rgb(66, 103, 178) ;
   border:1px solid black;
   color: #fff;
   font-weight: bold;
+=======
+  background-color: rgb(66, 103, 178);
+  border: 1px solid black;
+  color: white;
+  font-weight: 700;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.facebook-slogan {
+  text-align: center;
+}
+
+.right-content {
+  width: 300px;
+>>>>>>> bc8095635c6e9a8803c10322fad7b2ae4e0d91ca
 }
