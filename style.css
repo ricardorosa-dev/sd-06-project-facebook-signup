@@ -13,9 +13,18 @@ body {
 .facebook-login {
   align-self: center;
   display: flex;
+  margin-right: 180px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.facebook-logo {
+  margin-left: 150px;
 }
