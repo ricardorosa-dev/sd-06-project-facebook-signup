@@ -31,3 +31,21 @@ body {
   align-self: flex-end;
   margin-bottom: 25px;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.facebook-slogan {
+  color: rgb(14, 56, 95);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 29px;
+  width: 400px;
+  word-spacing: -1px;
+}
