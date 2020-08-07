@@ -1,11 +1,14 @@
 body {
+  background-image: linear-gradient(rgb(246, 247, 248), rgb(167, 193, 245));
   font-family: Roboto, sans-serif;
+  height: 100vh;
   margin: 0 auto;
   padding: 0;
+  width: 100vw;
 }
 
 .top-bar {
-  align-items: center;
+  align-items: stretch;
   background-color: rgb(66, 103, 178);
   box-sizing: border-box;
   display: flex;
@@ -43,6 +46,29 @@ body {
 }
 
 .main-content {
-  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 32px 0;
   width: 90%;
+}
+
+.left-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  width: 800px;
+}
+
+.left-content p {
+  color: rgb(29, 56, 109);
+  font-size: 20px;
+  font-weight: 700;
+  width: 65%;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
