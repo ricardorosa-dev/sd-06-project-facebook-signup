@@ -1,15 +1,22 @@
-.top-bar{
-    height: 82px;
-    display: flex;
+.top-bar {
     background-color: rgb(66, 103, 178);
+    display: flex;
+    height: 82px;
 }
-.facebook-logo{
 
-}
-.facebook-login{
+.facebook-logo {}
 
+.facebook-login {
+    font-size: 12px;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
+}
+
+.login-text {
+    color: #fff;
+    margin-bottom: 6px;
+    text-align: left;
 }
