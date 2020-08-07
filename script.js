@@ -5,6 +5,6 @@ function buttonAlert() {
   alert(inputEmail.value);
 }
 
-window.onload = function() {
+window.onload = function () {
   button.addEventListener("click", buttonAlert);
 };
