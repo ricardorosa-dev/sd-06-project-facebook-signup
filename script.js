@@ -3,7 +3,6 @@ const mailEntry = document.querySelector('#user-email-phone');
 const btnSignup = document.querySelector('#facebook-register');
 const inputsValidate = document.querySelectorAll('.validate-inputs');
 const radioBtns = document.querySelectorAll('.radio-inputs');
-const customGender = false;
 const btnCustomGender = document.querySelector('#personalizado');
 
 
@@ -20,7 +19,7 @@ btnSignup.addEventListener('click', function () {
     }
   }
   if (radioBtns[0].checked === false && radioBtns[1].checked === false &&
-     radioBtns[2].checked === false) {
+      radioBtns[2].checked === false) {
     temErro = 1;
   }
   if (temErro === 1) {
@@ -28,3 +27,11 @@ btnSignup.addEventListener('click', function () {
   }
 });
 
+btnCustomGender.addEventListener('click', function () {
+  let radioGender = document.querySelector('.gender-radio');
+  let newInput = document.createElement('input');
+  newInput.type = 'text';
+  newInput.name = 'gender-custom';
+  newInput.placeholder = 'Gênero (opcional)';
+  radioGender.appendChild(newInput);
+});
