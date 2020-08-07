@@ -3,26 +3,29 @@ const buttonSignUp = document.getElementById('facebook-register');
 const emailInput = document.getElementById('user-email-phone');
 const form = document.getElementById('formSignUp');
 const altGender = document.getElementById('other');
+let isEmpty = 5;
 
 function invalidFields() {
+  if (isEmpty === 5) {
   buttonSignUp.type = 'reset';
   const invalid = document.createElement('div');
   invalid.innerHTML = 'Campos inválidos';
   form.appendChild(invalid);
+  }
 }
 
 function checkEmpty() {
-  let ids = ['firstname', 'lastname', 'phone_email', 'password', 'birthdate'];
-  let isEmpty = 0;
+  const ids = ['firstname', 'lastname', 'phone_email', 'password', 'birthdate'];
   for (let i = 0; i < ids.length; i += 1) {
     if (document.getElementById(ids[i]).value === '') {
-      if (isEmpty === 0) {
-        invalidFields();
-      }
-      isEmpty = 1;
+      invalidFields();
+      isEmpty -= 1;
+    }
+    if (document.getElementById(ids[i]).value != '') {
+      isEmpty += 1;
     }
   }
-  if (isEmpty === 0) {
+  if (isEmpty === 5) {
     buttonSignUp.type = 'submit';
   }
 }
