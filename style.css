@@ -44,6 +44,10 @@ body {
   width: 300px;
 }
 
+.name {
+  display: flex;
+}
+
 .background {
   background-image: linear-gradient(#fefefe, #d3d8e8);
   height: 100%;
