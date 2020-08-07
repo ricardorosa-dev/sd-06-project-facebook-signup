@@ -24,8 +24,13 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: row;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
