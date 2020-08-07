@@ -10,19 +10,19 @@ function invalidFields() {
 }
 
 function checkEmpty() {
-  if (document.getElementById('firstname').value === '') {
+  if (document.getElementsByName('firstname').value === '') {
     invalidFields();
   }
-  if (document.getElementById('lastname').value === '') {
+  if (document.getElementsByName('lastname').value === '') {
     invalidFields();
   }
-  if (document.getElementById('phone_email').value === '') {
+  if (document.getElementsByName('phone_email').value === '') {
     invalidFields();
   }
-  if (document.getElementById('password').value === '') {
+  if (document.getElementsByName('password').value === '') {
     invalidFields();
   }
-  if (document.getElementById('birthdate').value === '') {
+  if (document.getElementsByName('birthdate').value === '') {
     invalidFields();
   }
 }
