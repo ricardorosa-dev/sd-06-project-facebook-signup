@@ -6,4 +6,4 @@ function loginAlert() {
 window.onload = function () {
   const loginBtn = document.querySelector('#button-login');
   loginBtn.addEventListener('click', loginAlert);
-}
+};
