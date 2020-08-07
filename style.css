@@ -6,6 +6,9 @@
   justify-content: space-around;
   padding: 20px 0;
 }
+img {
+  align-self: start;
+}
 
 .form-group {
   align-content: flex-end;
