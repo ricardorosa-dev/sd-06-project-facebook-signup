@@ -18,3 +18,9 @@ body {
   height: 5vh; /* Dimensão configurada já que não há ocnteúdo */
   width: 10vw;
 }
+
+/* Requisito 4 */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
