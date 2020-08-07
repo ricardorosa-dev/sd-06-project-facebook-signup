@@ -45,9 +45,10 @@ body {
 }
 .form-control {
   align-self: center;
-  margin-left: 10px;
   margin-bottom: 8px;
+  margin-left: 10px;
 }
+
 p {
   margin: 0;
   padding: 0;
@@ -74,9 +75,5 @@ a {
 }
 
 .quick-easy {
-  
-}
-
-.right-content {
-  width: 300px;
+  color: black;
 }
