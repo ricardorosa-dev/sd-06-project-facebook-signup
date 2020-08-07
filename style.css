@@ -3,6 +3,8 @@ body {
   padding: 0;
 }
 
+/* RODRIGO */
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -13,6 +15,18 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+.form-group {
+  align-items: center;
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+/* CLEYTON */
 
 .main-content {
   display: flex;
@@ -26,12 +40,22 @@ body {
   width: 800px;
 }
 
-.form-group {
-  align-items: center;
+.right-content {
   display: flex;
+  flex-direction: column;
 }
 
-.form-control {
-  align-self: flex-end;
+.form-content {
   display: flex;
+  flex-direction: column;
+}
+
+.phone-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.birthdate {
+  display: flex;
+  flex-direction: column;
 }
