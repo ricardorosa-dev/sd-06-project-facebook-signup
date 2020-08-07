@@ -1,27 +1,24 @@
-* {
+body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
   padding: 15px;
-
-  align-items: center;
 }
 .top-bar img {
   width: 200px;
 }
-
 .facebook-login {
+  align-items: center;
+  color: white;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  color: #fff;
 }
-
 .form-group {
   display: flex;
   flex-direction: column;
@@ -29,26 +26,24 @@
 }
 .form-control button {
   background-color: #4267b2;
-  padding: 4px;
-  color: white;
   border: 1px solid #29487d;
+  color: white;
+  padding: 4px;
 }
-
 .form-control {
   align-self: flex-end;
 }
-
-.form-group label{
+.form-group label {
   margin-bottom: 5px;
 }
-.form-group input{
+.form-group input {
   border: none;
   height: 25px;
 }
-.form-group p{
+.form-group p {
   margin-top: 5px;
 }
-.form-group:nth-child(2) {
+.form-group:nth-child( 2 ) {
   position: relative;
   top: 7px;
 }
