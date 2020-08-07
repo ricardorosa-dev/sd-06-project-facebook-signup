@@ -7,10 +7,10 @@ let isEmpty = 5;
 
 function invalidFields() {
   if (isEmpty === 5) {
-  buttonSignUp.type = 'reset';
-  const invalid = document.createElement('div');
-  invalid.innerHTML = 'Campos inválidos';
-  form.appendChild(invalid);
+    buttonSignUp.type = 'reset';
+    const invalid = document.createElement('div');
+    invalid.innerHTML = 'Campos inválidos';
+    form.appendChild(invalid);
   }
 }
 
@@ -21,7 +21,7 @@ function checkEmpty() {
       invalidFields();
       isEmpty -= 1;
     }
-    if (document.getElementById(ids[i]).value != '') {
+    if (document.getElementById(ids[i]).value !== '') {
       isEmpty += 1;
     }
   }
