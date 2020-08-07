@@ -9,7 +9,7 @@
 
 .form-group {
   display: flex;
-  align-items: flex-end;
+  justify-content:flex-end;
 }
 
 .form-control {
@@ -17,7 +17,7 @@
 }
 
 .facebook-login {
-  align-items: right;
+  align-items: flex-start;
   display: flex;
   font-family: Helvetica, sans-serif;
   height: 40px;
