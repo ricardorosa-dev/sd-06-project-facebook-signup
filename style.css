@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-bar {
+    background-image: linear-gradient(#4e69a2, #3b5998 50%);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.menu {
+    align-items: center;
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+    height: 50px;
+    justify-content: space-between;
+    min-width: 980px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login {
+    margin-left: 20px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+    zoom: 1;
+}
+
+.facebook-text {
+    color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 40px;
+    width: 450px;
+    word-spacing: -1px;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 900px;
+}
+
+.photo-grid-item {
+    border: 1px solid #fff;
+    height: 300px;
+    width: 300px;
+}
