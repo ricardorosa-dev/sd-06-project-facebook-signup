@@ -27,8 +27,8 @@ body {
 }
 
 .form-group {
-  display: flex;
   border: 2px solid green;
+  display: flex;
   flex-direction: column;
 }
 
