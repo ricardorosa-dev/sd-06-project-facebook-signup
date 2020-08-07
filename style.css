@@ -1,11 +1,23 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
+  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 
 .facebook-login {
   display: flex;
+  justify-content: space-between;
+  width: 30%;
 }
 
 .form-group {
@@ -13,6 +25,24 @@
   flex-direction: column;
 }
 
+.form-control button {
+  background-color: rgb(104, 141, 214);
+  border: 1px solid rgb(48, 80, 145);
+  border-radius: 4px;
+  color: white;
+  padding: 3px 7px;
+}
+
+.form-group label {
+  color: white;
+}
+
 .form-control {
   align-self: flex-end;
+  display: flex;
+}
+
+.main-content {
+  margin: 20px auto;
+  width: 90%;
 }
