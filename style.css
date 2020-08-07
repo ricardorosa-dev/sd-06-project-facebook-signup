@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -24,11 +25,12 @@ body {
 .form-control {
   align-self: flex-end;
 }
-#button-login {
+
+.button-login {
   background-color:rgb(66, 103, 178) ;
-  border:1px solid black;
+  border: 1px solid black;
   color: white;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .main-content {
@@ -40,7 +42,7 @@ body {
   width: 800px;
 }
 
-#facebook-slogan {
+.facebook-slogan {
   text-align: center;
 }
 
