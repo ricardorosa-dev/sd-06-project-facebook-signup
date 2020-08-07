@@ -16,7 +16,11 @@
   width: 300px;
 }
 
-input {
+.input-name {
   display: inline-block;
   width: 140px;
+}
+
+.contact {
+  width: 292px;
 }
