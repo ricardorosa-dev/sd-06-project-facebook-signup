@@ -1,13 +1,13 @@
-  /** { border: 1px solid red; }*/
+/** { border: 1px solid red; } */
 body {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
   height: 82px;
   justify-content: space-between;
 }
@@ -18,30 +18,33 @@ body {
 }
 
 .facebook-login {
-  justify-content: flex-end;
-  display: flex;
   align-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .form-group {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   margin-right: 20px;
 }
 
 .form-control {
-  display: flex;
   align-self: flex-end;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  justify-content: center;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .btn-login {
+  background-color: rgb(41, 72, 125);
+  border-color: rgb(66, 103, 178);
   border-radius: 2px;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
@@ -53,9 +56,6 @@ body {
   text-shadow: none;
   vertical-align: top;
   white-space: nowrap;
-  background-color: rgb(41, 72, 125);
-  border-color: rgb(66, 103, 178);
-  color: rgb(255, 255, 255);
 }
 
 .btn-login:hover {
@@ -73,8 +73,8 @@ body {
 }
 
 .facebook-slogan {
-  margin-top: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .right-content {
