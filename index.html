@@ -36,7 +36,28 @@
             <div class="right-content">
                 <h1>Abra uma conta</h1>
                 <p class="quick-easy">É rápido e fácil."</p>
-                <form></form>
+                <form>
+                    <div class="flex-container">
+                        <input class="validate-inputs" type="text" name="firstname" placeholder="Nome">
+                        <input class="validate-inputs" type="text" name="lastname" pĺaceholder="Sobrenome">
+                    </div>
+                    <input class="validate-inputs" type="text" name="phone_email" placeholder="Celular ou email">
+                    <input class="validate-inputs" type="password" name="password" placeholder="Nova senha">
+                    <div class="flex-container form-date">
+                        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+                        <input class="validate-inputs" type="date" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+                        <div class="gender-radio">
+                            <label for="" id="label-gender">Gênero</label><br>
+                            <label for="masculino">Masculino</label>
+                            <input class="radio-inputs" type="radio" name="gender" value="Masculino" id="masculino" required="required" class="radio">
+                            <label for="feminino">Feminino</label>
+                            <input class="radio-inputs" type="radio" name="gender" value="Feminino" id="feminino" required="required" class="radio">
+                            <label for="personalizado">Personalizado</label>
+                            <input class="radio-inputs" type="radio" name="gender" value="Personalizado" id="personalizado" required="required" class="radio"> 
+                        </div>
+                        <button id="facebook-register" type="submit">Cadastre-se</button>
+                    </div>
+                </form>
             </div>
         </section>
 

@@ -16,6 +16,10 @@ body {
   align-self: flex-end;
 }
 
+.form-date {
+  flex-direction: column;
+}
+
 .left-content {
   width: 800px;
 }
