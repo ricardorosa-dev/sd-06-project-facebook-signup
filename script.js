@@ -14,17 +14,13 @@ function checkEmpty() {
 
   if (document.getElementById('firstname').value === '') {
     isEmpty = 1;
-  }
-  if (document.getElementById('lastname').value === '') {
+  } else if (document.getElementById('lastname').value === '') {
     isEmpty = 1;
-  }
-  if (document.getElementById('phone_email').value === '') {
+  } else if (document.getElementById('phone_email').value === '') {
     isEmpty = 1;
-  }
-  if (document.getElementById('password').value === '') {
+  } else if (document.getElementById('password').value === '') {
     isEmpty = 1;
-  }
-  if (document.getElementById('birthdate').value === '') {
+  } else if (document.getElementById('birthdate').value === '') {
     isEmpty = 1;
   }
 
