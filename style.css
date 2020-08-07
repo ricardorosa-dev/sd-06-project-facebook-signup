@@ -74,3 +74,11 @@ form {
 .main-content {
   display: flex;
 }
+
+.main-content p , .main-content img {
+  padding: 0 150px;
+}
+
+.left-content {
+  width: 800px;
+}
