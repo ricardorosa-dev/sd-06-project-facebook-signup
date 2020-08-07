@@ -52,3 +52,8 @@ header , body , img , form , input , button , footer , div , p , span , h1 , h2 
 input {
   width: 100%;
 }
+
+.radio-input-container {
+  display: flex;
+  align-items: center;
+}
