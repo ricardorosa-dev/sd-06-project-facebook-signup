@@ -13,14 +13,16 @@ body {
 
 /* Classe do Forms de Login */
 .facebook-login {
-  background-color: white; /* Cor de fundo para vermos o box */
   display: flex; /* Requisito 3 */
-  height: 5vh; /* Dimensão configurada já que não há ocnteúdo */
-  width: 10vw;
 }
 
 /* Requisito 4 */
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+/* Requisito 7 */
+.form-control {
+  align-self: flex-end;
 }
