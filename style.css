@@ -19,7 +19,7 @@ body {
 .facebook-login {
   align-content: center;
   display: flex;
-	flex-grow: 1;
+  flex-grow: 1;
   flex-wrap: wrap;
   justify-content: flex-end;
   padding-right: 10px;
@@ -34,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Tahoma, sans-serif;
-	font-size: 15px;
+  font-size: 15px;
   justify-content: center;
 }
 
