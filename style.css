@@ -13,7 +13,31 @@ body {
   display: flex;
 }
 
-.facebook-login-input {
+.form-group {
+  color: white;
+  justify-content: flex-start;
   display: flex;
   flex-direction: column;
+  margin: 0 8px;
+}
+
+.form-group:last-child {
+  justify-content: center;
+}
+
+.form-group button {
+  background-color: rgb(66, 103, 178);
+  border: 1px solid rgb(41, 72, 125);
+  border-radius: 2px;
+  color: white;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
