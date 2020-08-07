@@ -7,14 +7,18 @@
   display: flex;
 }
 
-.top-bar-container {
+/* .top-bar-container {
   display: flex;
   justify-content: space-between;
   margin: auto;
   width: 70%;
-}
+} */
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }
