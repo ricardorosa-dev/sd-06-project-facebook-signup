@@ -4,12 +4,9 @@
     height: 82px;
 }
 
-.facebook-logo {}
-
 .facebook-login {
     font-size: 12px;
     margin-right: 0;
-    display: inline;
 }
 
 body {
@@ -24,9 +21,9 @@ body {
 }
 
 .page-content {
-    width: 980px;
-    padding-top: 13px;
-    display: flex;
     align-content: center;
+    display: flex;
     margin: 0 auto;
+    padding-top: 13px;
+    width: 980px;
 }
