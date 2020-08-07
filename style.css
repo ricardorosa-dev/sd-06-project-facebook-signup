@@ -28,6 +28,10 @@
   width: 300px;
 }
 
+.firstLine {
+  display: flex;
+}
+
 .left-content {
   width: 800px;
 }
