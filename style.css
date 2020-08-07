@@ -18,7 +18,7 @@ body {
 }
 
 .left-content {
-  width: 800px;
+	width: 800px;
 }
 
 .main-content {
@@ -28,11 +28,15 @@ body {
 }
 
 .right-content {
-  width: 300px;
+	width: 300px;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+}
+
+.username {
+  display: flex;
 }
