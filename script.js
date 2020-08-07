@@ -36,13 +36,13 @@ function handleHeyJoeElement() {
 
   formInputs.forEach((input) => {
     inputValues[input.name] = input.value;
-  })
+  });
 
   radioInputs.forEach((radio) => {
     if (radio.checked) {
       inputValues[radio.name] = radio.value;
     }
-  })
+  });
 
   const heyJoeElement = createHeyJoe(inputValues);
 
@@ -56,11 +56,9 @@ function handleHeyJoeElement() {
 function validateForm(event) {
   event.preventDefault();
   const formInputs = document.querySelectorAll('.signup-form input');
-
   let radioChecked = false;
   let radiosChecked = 0;
   let emptyInputs = false;
-
   formInputs.forEach((input) => {
     if (input.type === 'text' || input.type === 'password') {
       if (input.value === '') {
@@ -126,8 +124,6 @@ function handleCustomGender() {
   feminineGender.addEventListener('change', removeInputField);
   masculineGender.addEventListener('change', removeInputField);
 }
-
-
 
 window.onload = () => {
   handleLoginButton();
