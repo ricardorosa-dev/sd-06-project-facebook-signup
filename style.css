@@ -10,6 +10,10 @@ body {
   padding: 0 150px;
 }
 
+form {
+  height: 80px;
+}
+
 .logo {
   align-items: center;
   display: flex;
@@ -27,4 +31,42 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin: 15px 10px 0 0;
+}
+
+.form-group p {
+  font-size: 0.9em;
+  margin-top: 3px;
+}
+
+.form-group a {
+  color: white;
+  letter-spacing: -0.5px;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.form-group label {
+  color: white;
+  margin-bottom: 3px;
+}
+
+.form-group input {
+  width: 130px;
+}
+
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-control button {
+  background-color: rgb(66, 103, 178);
+  border: 0.1px solid black;
+  border-radius: 3px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 28px;
 }
