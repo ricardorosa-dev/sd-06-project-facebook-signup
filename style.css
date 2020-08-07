@@ -1,15 +1,15 @@
-.container-top-bar {
-    margin: 0;
-    display: flex;
-    background-color: rgb(66, 103, 178);
-    width: 980vh;
-    height: 82px;
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 .top-bar {
-    display: block;
-    margin: 0 auto;
-    padding-top: 13px;
-    width: 980px;
-    height: 78px;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-shrink: 0;
     background-color: rgb(66, 103, 178);
+    width: 980vw;
+    height: 82px;
 }
