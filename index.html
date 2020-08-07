@@ -21,8 +21,21 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <div class="quick-easy">
-        <h2>Abra uma conta</h2>
+        <p>É rápido e fácil</p>
         <form class="formNewAccount"action="">
+          <input type="text" name="firstname" id="firstname" placeholder="Nome" required="required">
+          <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" required="required">
+          <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" required="required">
+          <input type="password" name="password" id="password" placeholder="Nova senha" required="required">
+          <legend>Data de nascimento</legend>
+          <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
+          <legend id="label-gender">Gênero</legend>
+          <input type="radio" name="gender" id="male" value="male" required="required">
+          <label for="male">Masculino</label>
+          <input type="radio" name="gender" id="female" value="female" required="required">
+          <label for="female">Feminino</label>
+          <input type="radio" name="gender" id="custom" value="custom" required="required">
+          <label for="custom">Personalizado</label>
         </form>
       </div>
     </div>
