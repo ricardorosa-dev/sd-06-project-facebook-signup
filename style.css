@@ -3,63 +3,45 @@ body {
   padding: 0;
 }
 
+/* Rodrigo */
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  padding: 25px;
 }
 
-<<<<<<< HEAD
-.right-content {
-  width: 300px;
-}
-
-.form-name {
-=======
 .login-password {
->>>>>>> cbaf69adef8361d7f13940de9a0c544effeda755
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
-<<<<<<< HEAD
 .facebook-login {
-=======
+  display: flex;
+  justify-content: right;
+}
+
+.form-group {
+  flex-direction: column;
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+/* Cleyton */
+
 .main-content {
->>>>>>> cbaf69adef8361d7f13940de9a0c544effeda755
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-<<<<<<< HEAD
-=======
 .left-content {
   display: flex;
   flex-wrap: wrap;
   width: 800px;
 }
 
->>>>>>> cbaf69adef8361d7f13940de9a0c544effeda755
-.form-group {
-  align-items: center;
-  display: flex;
-}
-
-.form-control {
-  align-self: flex-end;
-<<<<<<< HEAD
-}
-
-.login-password {
-  display: flex;
-}
-
-.facebook-logo {
-  display: flex;
-}
-=======
-  display: flex;
-}
->>>>>>> cbaf69adef8361d7f13940de9a0c544effeda755
