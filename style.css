@@ -10,14 +10,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-<<<<<<< HEAD
-=======
 }
 
 .facebook-logo {
   display: flex;
   margin-left: 0;
->>>>>>> 5723c80eeb9a03bcca66da7cee6e66c2537bcd98
 }
 
 .top-bar img {
@@ -77,6 +74,7 @@ body {
   display: flex;
   flex-direction: row;
 }
+
 .left-content {
   background-color: red;
   width: 800px;
