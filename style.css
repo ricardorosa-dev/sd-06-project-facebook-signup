@@ -1,0 +1,15 @@
+.container-top-bar {
+    margin: 0;
+    display: flex;
+    background-color: rgb(66, 103, 178);
+    width: 980px;
+    height: 82px;
+}
+.top-bar {
+    display: block;
+    margin: 0 auto;
+    padding-top: 13px;
+    width: 980px;
+    height: 78px;
+    background-color: rgb(66, 103, 178);
+}
