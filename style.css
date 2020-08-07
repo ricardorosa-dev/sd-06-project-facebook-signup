@@ -5,6 +5,7 @@
 
 .main-content {
   display: flex;
+  justify-content: center;
 }
 
 .left-content {
@@ -12,5 +13,5 @@
 }
 
 .right-content {
-  display: flex;
+  width: 300px;
 }
