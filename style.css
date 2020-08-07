@@ -70,10 +70,12 @@ body {
 }
 
 .main-content {
+  background-image: linear-gradient(white, rgb(233, 235, 238));
   display: flex;
-  background-image: linear-gradient(white, rgb(233, 235, 238) );
+  flex-direction: row;
 }
 
 .left-content {
+  background-color: red;
   width: 800px;
 }
