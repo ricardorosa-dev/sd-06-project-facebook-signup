@@ -1,6 +1,6 @@
-const btnLogin = document.querySelector("#button-login");
-const mailEntry = document.querySelector("#user-email-phone");
+const btnLogin = document.getElementById("button-login");
+const mailEntry = document.getElementById("user-email-phone");
 
-btnLogin.addEventListener("click", function() {
-    alert(mailEntry.value);
+btnLogin.addEventListener("click", function () {
+  alert(mailEntry.value);
 })
