@@ -13,10 +13,6 @@ body {
   justify-content: center;
 }
 
-.container {
-  width: 960px;
-}
-
 .left-content {
   max-width: 800px;
 }
@@ -25,4 +21,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 300px;
+}
+
+.fullName {
+  display: flex;
 }
