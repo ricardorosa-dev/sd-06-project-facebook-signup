@@ -8,4 +8,13 @@ body {
   align-items: center; /* Alinhar conteudo no meio da barra - vertical */
   background-color: rgb(66, 103, 178); /* Requisito 1 */
   display: flex; /* Requisito 1 */
+  justify-content: space-around; /* Requisito 3 */
+}
+
+/* Classe do Forms de Login */
+.facebook-login {
+  background-color: white; /* Cor de fundo para vermos o box */
+  display: flex; /* Requisito 3 */
+  height: 5vh; /* Dimensão configurada já que não há ocnteúdo */
+  width: 10vw;
 }
