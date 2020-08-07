@@ -20,6 +20,7 @@
 .main-content {
   display: flex;
   justify-content: space-between;
+  width: 90%;
 }
 
 .left-content {
@@ -36,4 +37,9 @@ body {
 
 .full-name {
   display: flex;
+}
+
+.other-fields {
+  display: flex;
+  flex-direction: column;
 }
