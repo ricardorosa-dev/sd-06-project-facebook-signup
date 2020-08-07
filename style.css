@@ -30,9 +30,15 @@ body {
 /* Requisito 8 */
 .main-content {
   display: flex;
+  justify-content: center; /* Requisito 10 */
 }
 
 /* Requisito 9 */
 .left-content {
   width: 800px;
+}
+
+/* Requisito 10 */
+.right-content {
+  width: 300px;
 }
