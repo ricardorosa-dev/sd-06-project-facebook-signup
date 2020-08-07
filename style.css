@@ -41,6 +41,26 @@
   width: 300px;
 }
 
-.right-content form input:first-child , .right-content form input:last-child {
-  width: 40%;
+.name-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-content form div input:first-child , .right-content form div input:nth-child(2) {
+  width: 49%;
+}
+
+.right-content form input {
+  margin: 3px 0;
+  width: 100%;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gender-container {
+  display: flex;
 }
