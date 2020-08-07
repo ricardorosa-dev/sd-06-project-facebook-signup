@@ -26,8 +26,16 @@ body {
   margin: 0 8px;
 }
 
-.form-group:last-child {
-  justify-content: center;
+.form-control {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 8px;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 .form-group button {
