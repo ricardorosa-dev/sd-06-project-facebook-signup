@@ -9,14 +9,14 @@ body {
 
 .top-bar {
   align-items: center;
-  background-color: rgb(66 , 103 , 178);
+  background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   padding: 8px 0;
 }
 
-.top-bar.form-container {
+.top-bar .form-container {
   justify-content: flex-end;
 }
 
