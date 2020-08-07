@@ -10,7 +10,7 @@
 
 <body>
   <header>
-    <div class="top-bar">
+    <div class="top-bar"> <!--TOPO DA PÁGINA-->
       <img src="imgs/facebook-logo.png" class="facebook-logo">
       <form action="" method="GET" class="facebook-login">
 
@@ -19,20 +19,23 @@
           <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
           <input type="text" id="user-email-phone">
         </div>
+
         <!-- SENHA-->
         <div class="form-group">
           <label for="user-password" id="user-password-label">Senha</label>
           <input type="password" id="user-password">
         </div>
+
         <!--BOTÃO ENTRAR-->
         <div class="form-control">
-          <button class="button-login" type="submit">Entrar</button>
+          <button id="button-login" type="submit">Entrar</button>
         </div>
-    </div>
-
-    </form>
+      </form>
     </div>
   </header>
+
+  <!-- ENTRADA DO JAVASCRiPT-->
+  <script src="script.js"></script> 
 </body>
 
 </html>
