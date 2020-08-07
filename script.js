@@ -1,40 +1,49 @@
 const buttonLogin = document.querySelector('#button-login');
-const userEmailPhone = document.querySelector('#user-email-phone');
-const firstName = document.querySelector('#first-name');
-const lastName = document.querySelector('#last-name');
+const userLogin = document.querySelector('#user-email-phone');
+const fName = document.querySelector('#first-name');
+const lName = document.querySelector('#last-name');
 const phoneEmail = document.querySelector('#phone-email');
 const password = document.querySelector('#password');
-const birthDate = document.querySelector('#birth-date');
+const birth = document.querySelector('#birth-date');
 const genderFemale = document.querySelector('#female');
 const genderMale = document.querySelector('#male');
 const genderOther = document.querySelector('#other');
 const buttonFacebookRegister = document.querySelector('#facebook-register');
-let errorText = 0;
+
+
 
 buttonLogin.addEventListener('click', function () {
-  alert(userEmailPhone.value);
+  alert(userLogin.value);
 });
 
-function validateData() {
-  const validationData = [firstName.value, lastName.value, phoneEmail.value, password.value, birthDate.value];
-  const valGender = [
-    genderFemale.checked, 
-    genderMale.checked, 
-    genderOther.checked
-  ];
+function verifyData() {
+  let errorCounter = 0;
+  const valData = [fName.value, lName.value, phoneEmail.value, password.value, birth.value];
 
-  for (let i = 0; i < validationData.length; i += 1) {
-    if (!validationData[i]) {
-      errorText += 1;
+  for (let i = 0; i < valData.length; i += 1) {
+    if (!valData[i]) {
+      errorCounter += 1;
     }
   }
 
+  return errorCounter;
+}
+
+function verifyGender() {
+  let errorCounter = 0;
+  const valGender = [genderFemale.checked, genderMale.checked, genderOther.checked];
   if (valGender[0] === false && valGender[1] === false && valGender[2] === false) {
-    errorText += 1;
+    errorCounter += 1;
   }
-  if (errorText > 0) {
+
+  return errorCounter;
+}
+
+function validateData() {
+  let totalError = verifyData + verifyGender;
+  if (errorCounter > 0) {
     alert('Campos inválidos');
-    errorText = 0;
+    errorCounter = 0;
   }
 }
 
