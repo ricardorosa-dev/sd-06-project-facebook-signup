@@ -51,3 +51,7 @@ body {
   flex-wrap: nowrap;
   margin-left: 0;
 }
+
+.register-form p {
+  display: inline-block;
+}
