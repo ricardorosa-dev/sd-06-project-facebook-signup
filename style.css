@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   color: white;
@@ -10,22 +11,26 @@ body {
   flex-direction: row;
   justify-content: center;
 }
+
 .menu {
   align-items: center;
   display: flex;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   height: 50px;
   justify-content: space-between;
   min-width: 980px;
 }
+
 .links {
   display: flex;
   justify-content: flex-end;
   padding: 10px;
 }
+
 .login {
   margin-left: 20px;
 }
+
 .main-content {
   display: flex;
   flex-direction: row;
@@ -35,40 +40,48 @@ body {
   width: 80%;
   zoom: 1;
 }
+
 .left-content {
   flex-direction: column;
   width: 800px;
 }
+
 .right-content {
   width: 400px;
 }
+
 .facebook-slogan {
   color: black;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 10px;
   line-height: 29px;
   margin-top: 40px;
   width: 450px;
   word-spacing: -1px;
 }
+
 .photo-grid-container {
   display: flex;
   justify-content: center;
 }
+
 .photo-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 900px;
 }
+
 .photo-grid-item {
   border: 1px solid white;
   height: 300px;
   width: 300px;
 }
+
 .facebook-login {
   padding: 20px;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
