@@ -5,6 +5,7 @@ const form = document.getElementById('formSignUp');
 const altGender = document.getElementById('other');
 
 function invalidFields() {
+  buttonSignUp.type = 'reset';
   const invalid = document.createElement('div');
   invalid.innerHTML = 'Campos inválidos';
   form.appendChild(invalid);
@@ -21,6 +22,8 @@ function checkEmpty() {
     invalidFields();
   } else if (document.getElementById('birthdate').value === '') {
     invalidFields();
+  } else {
+    buttonSignUp.type = 'submit';
   }
 }
 
