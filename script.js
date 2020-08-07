@@ -86,7 +86,7 @@ function validateForm(event) {
   event.preventDefault();
   const formInputs = document.querySelectorAll('.signup-form input');
 
-  let anyEmptyInput = checkEmptyValues(formInputs);
+  const anyEmptyInput = checkEmptyValues(formInputs);
 
   if (!anyEmptyInput) {
     handleHeyJoeElement();
