@@ -2,7 +2,7 @@
     margin: 0;
     display: flex;
     background-color: rgb(66, 103, 178);
-    width: 980px;
+    width: 980vh;
     height: 82px;
 }
 .top-bar {
