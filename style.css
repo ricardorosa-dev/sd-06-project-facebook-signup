@@ -7,14 +7,20 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   flex-direction: row;
+  font-size: 12px;
   height: 90px;
   justify-content: space-around;
 }
 
 .facebook-logo {
-  align-self: center;
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
+}
+
+.facebook-login {
+  align-items: flex-end;
+  display: flex;
 }
 
 .form-container {
@@ -35,4 +41,17 @@ body {
 
 .form-control button {
   margin: 0 5px;
+  background-color: #4267b2;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
 }
