@@ -53,13 +53,12 @@ function handleHeyJoeElement() {
   rightContentContainer.style.display = 'flex';
 }
 
-function validateForm(event) {
-  event.preventDefault();
-  const formInputs = document.querySelectorAll('.signup-form input');
+function checkEmptyValues(inputCollection) {
   let radioChecked = false;
   let radiosChecked = 0;
   let emptyInputs = false;
-  formInputs.forEach((input) => {
+
+  inputCollection.forEach((input) => {
     if (input.type === 'text' || input.type === 'password') {
       if (input.value === '') {
         showErrorMsg();
@@ -80,7 +79,16 @@ function validateForm(event) {
     }
   });
 
-  if (!emptyInputs) {
+  return emptyInputs;
+}
+
+function validateForm(event) {
+  event.preventDefault();
+  const formInputs = document.querySelectorAll('.signup-form input');
+
+  let anyEmptyInput = checkEmptyValues(formInputs);
+
+  if (!anyEmptyInput) {
     handleHeyJoeElement();
   }
 }
