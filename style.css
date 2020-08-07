@@ -46,8 +46,10 @@
   justify-content: space-between;
 }
 
-.right-content form div input:first-child , .right-content form div input:nth-child(2) {
-  width: 49%;
+input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .right-content form input {
@@ -55,10 +57,8 @@
   width: 100%;
 }
 
-input {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.right-content form div input:first-child , .right-content form div input:nth-child( 2 ) {
+  width: 49%;
 }
 
 .gender-container {
