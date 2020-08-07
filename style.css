@@ -54,6 +54,6 @@ input {
 }
 
 .radio-input-container {
-  display: flex;
   align-items: center;
+  display: flex;
 }
