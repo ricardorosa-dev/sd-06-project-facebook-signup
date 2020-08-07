@@ -1,7 +1,9 @@
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .left-content {
@@ -23,4 +25,10 @@
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+#campo-de-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
