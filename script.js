@@ -10,8 +10,6 @@ const genderMale = document.querySelector('#male');
 const genderOther = document.querySelector('#other');
 const buttonFacebookRegister = document.querySelector('#facebook-register');
 
-
-
 buttonLogin.addEventListener('click', function () {
   alert(userLogin.value);
 });
@@ -40,10 +38,10 @@ function verifyGender() {
 }
 
 function validateData() {
-  let totalError = verifyData + verifyGender;
-  if (errorCounter > 0) {
+  const totalError = verifyData + verifyGender;
+  if (totalError > 0) {
     alert('Campos inválidos');
-    errorCounter = 0;
+    totalError = 0;
   }
 }
 
