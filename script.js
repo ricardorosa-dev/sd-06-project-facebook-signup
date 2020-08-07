@@ -12,17 +12,17 @@ function invalidFields() {
 }
 
 function checkEmpty() {
-  if (document.getElementById('firstname').value === '') {
-    invalidFields();
-  } else if (document.getElementById('lastname').value === '') {
-    invalidFields();
-  } else if (document.getElementById('phone_email').value === '') {
-    invalidFields();
-  } else if (document.getElementById('password').value === '') {
-    invalidFields();
-  } else if (document.getElementById('birthdate').value === '') {
-    invalidFields();
-  } else {
+  let ids = ['firstname', 'lastname', 'phone_email', 'password', 'birthdate'];
+  let isEmpty = 0;
+  for (let i = 0; i < ids.length; i += 1) {
+    if (document.getElementById(ids[i]).value === '') {
+      if (isEmpty === 0) {
+        invalidFields();
+      }
+      isEmpty = 1;
+    }
+  }
+  if (isEmpty === 0) {
     buttonSignUp.type = 'submit';
   }
 }
