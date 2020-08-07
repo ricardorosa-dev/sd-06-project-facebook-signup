@@ -9,36 +9,21 @@ body {
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-
-.menu {
-  align-items: center;
-  display: flex;
   font-family: Quicksand, sans-serif;
-  height: 50px;
   justify-content: space-between;
-  min-width: 980px;
 }
 
-.links {
+.facebook-logo {
+  align-self: center;
+}
+
+.facebook-login {
   display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-}
-
-.login {
-  margin-left: 20px;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin: 0 auto;
-  position: relative;
-  width: 80%;
-  zoom: 1;
 }
 
 .left-content {
@@ -64,24 +49,11 @@ body {
   justify-content: center;
 }
 
-.photo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 900px;
-}
-
-.photo-grid-item {
-  border: 1px solid white;
-  height: 300px;
-  width: 300px;
-}
-
-.facebook-login {
-  padding: 20px;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  justify-items: center;
 }
