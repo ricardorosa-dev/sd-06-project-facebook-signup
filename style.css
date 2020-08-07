@@ -18,12 +18,9 @@
 }
 
 .facebook-login {
-  justify-content: flex-end;
-}
-
-.formulario {
   align-items: center;
   display: flex;
+  justify-content: flex-end;
 }
 
 .form-group {
