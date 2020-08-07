@@ -1,7 +1,18 @@
+.facebook-login {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.form-email, .form-senha {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 .top-bar {
   background-color:rgb(66, 103, 178);
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
-  height: 15vh;
+  justify-content: space-between;
 }
