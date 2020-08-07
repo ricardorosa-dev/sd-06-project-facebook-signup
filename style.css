@@ -15,6 +15,7 @@
 }
 
 body {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -33,6 +34,12 @@ body {
 
 .facebook-logo {
   display: flex;
+}
+
+.facebook-networking {
+  display: flex;
+  margin: -10px 0 30px 0;
+  width: 70%;
 }
 
 .facebook-password {
@@ -61,8 +68,14 @@ body {
 .form-group {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-end;
   margin: 0 10px;
+}
+
+.form-group label {
+  color: rgb(240, 240, 240);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .form-input {
@@ -81,6 +94,13 @@ body {
   width: 100%;
 }
 
+h1 {
+  color: rgb(61, 61, 61);
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
 .lastname {
   display: flex;
   width: 50%;
@@ -91,6 +111,15 @@ body {
   flex-flow: column wrap;
   height: auto;
   width: 800px;
+}
+
+.left-content p {
+  color: rgb(66, 103, 178);
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 60px;
+  text-align: left;
+  width: 60%;
 }
 
 .main-content {
@@ -118,6 +147,11 @@ body {
   width: 300px;
 }
 
+.right-content p {
+  font-size: 1.4rem;
+  margin: -15px 0 15px 0;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -130,4 +164,12 @@ body {
   display: flex;
   flex-flow: row nowrap;
   margin: 5px 0;
+}
+
+.user-email-phone {
+  border: 1px black solid;
+}
+
+.user-password {
+  border: 1px black solid;
 }
