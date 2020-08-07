@@ -1,3 +1,9 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -7,6 +13,12 @@
 
 .facebook-login {
   display: flex;
+}
+
+.facebook-login label {
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 .form-group {
@@ -30,4 +42,89 @@
 
 .button-login:hover {
   background-color: #335294;
+}
+
+.main-content {
+  background-color: #e9ebee;
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.font {
+  color: #333;
+  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.quick-easy {
+  font-size: 19px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content form input {
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+}
+
+.fname {
+  width: 150px;
+}
+
+.lname {
+  margin-left: 5px;
+  width: 140px;
+}
+
+.normal_inp {
+  width: 100%;
+}
+
+form label {
+  color: #90949c;
+  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input_group {
+  margin-bottom: 10px;
+}
+
+.radio_group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio label {
+  color: #1d2129;
+  font-size: 12px;
+  width: 33%;
+}
+
+.right-content form button {
+  border: 1px solid darkgreen;
+  border-radius: 7px;
+  background-image: linear-gradient(rgb(91, 151, 91), rgb(44, 87, 44));
+  color: white;
+  font-size: 16px;
+  padding: 10px 30px;
+}
+
+.right-content form button:hover {
+  background-image: linear-gradient(rgb(121, 168, 121), rgb(44, 87, 44));
 }
