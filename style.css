@@ -1,7 +1,12 @@
 .birthdate-container {
   display: flex;
   flex-flow: column wrap;
+  margin-top: 5px;
   width: 300px;
+}
+
+.birthdate-container label {
+  margin: 5px;
 }
 
 .birth-date {
@@ -42,6 +47,7 @@ body {
 .firstname {
   display: flex;
   width: 50%;
+  margin-right: 5px;
 }
 
 .form-control {
@@ -102,6 +108,7 @@ body {
 .phone-email {
   display: flex;
   flex-grow: 1;
+  margin-bottom: 5px;
 }
 
 .right-content {
@@ -122,4 +129,5 @@ body {
 .totalName {
   display: flex;
   flex-flow: row nowrap;
+  margin: 5px 0;
 }
