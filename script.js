@@ -4,25 +4,30 @@ const emailInput = document.getElementById('user-email-phone');
 const form = document.getElementById('formSignUp');
 
 function invalidFields() {
-  const invalid = document.createElement('p');
-  invalid.appendChild(document.createTextNode('Campos inválidos'));
+  const invalid = document.createElement('div');
+  invalid.innerHTML = 'Campos inválidos';
   form.appendChild(invalid);
 }
 
 function checkEmpty() {
-  if (document.getElementsByName('firstname').value === '') {
-    invalidFields();
+  let a;
+  if (document.getElementById('firstname').value === '') {
+    a = 1;
   }
-  if (document.getElementsByName('lastname').value === '') {
-    invalidFields();
+  if (document.getElementById('lastname').value === '') {
+    a = 1;
   }
-  if (document.getElementsByName('phone_email').value === '') {
-    invalidFields();
+  if (document.getElementById('phone_email').value === '') {
+    a = 1;
   }
-  if (document.getElementsByName('password').value === '') {
-    invalidFields();
+  if (document.getElementById('password').value === '') {
+    a = 1;
   }
-  if (document.getElementsByName('birthdate').value === '') {
+  if (document.getElementById('birthdate').value === '') {
+    a = 1;
+  }
+
+  if (a == 1) {
     invalidFields();
   }
 }
