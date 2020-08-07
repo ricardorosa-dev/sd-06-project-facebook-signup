@@ -17,14 +17,10 @@ body {
   padding-top: 12px;
 }
 
-.facebook-logo {
-  margin-left: 160px;
-}
 
 .facebook-login {
   display: flex;
   justify-content: space-between;
-  margin-right: 160px;
   width: 30%;
 }
 
