@@ -5,7 +5,7 @@
   justify-content: space-around;
 }
 
-.form-email, .form-senha {
+.form-group {
   display: flex;
   flex-flow: column wrap;
 }
