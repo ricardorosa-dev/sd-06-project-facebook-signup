@@ -34,3 +34,8 @@
 .right-content {
   width: 300px;
 }
+
+.subscription-form {
+  display: flex;
+  flex-flow: row nowrap;
+}
