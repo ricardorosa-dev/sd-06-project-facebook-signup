@@ -1,9 +1,27 @@
 body {
+  box-sizing: border-box;
   margin: 0;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
   padding-bottom: 82px;
+}
+
+.top-items {
+  display: flex;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.facebook-logo {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
 }
