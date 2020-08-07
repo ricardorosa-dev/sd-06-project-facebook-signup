@@ -67,3 +67,7 @@ body {
 .input-info {
   width: 100%;
 }
+
+.gender {
+  font-size: small;
+}
