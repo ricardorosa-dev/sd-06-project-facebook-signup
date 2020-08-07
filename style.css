@@ -15,8 +15,8 @@ body {
 }
 
 .left-content {
-  width: 800px;
   flex-direction: column;
+  width: 800px;
 }
 
 .main-content {
@@ -62,7 +62,7 @@ header label {
 }
 
 .right-content {
-  width:300px;
+  width: 300px;
 }
 
 .names {
@@ -73,4 +73,8 @@ header label {
   height: 30px;
   margin: 5px;
   width: 100%;
+}
+
+.gender {
+  display: flex;
 }
