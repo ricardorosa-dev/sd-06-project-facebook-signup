@@ -3,7 +3,7 @@
   display: flex;
 }
 .container {
-  width: 300px;
-  height: 700px;
   background-color: red;
+  height: 700px;
+  width: 300px;
 }
