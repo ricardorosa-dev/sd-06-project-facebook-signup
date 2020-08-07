@@ -18,7 +18,7 @@ body {
 }
 
 .left-content {
-	width: 800px;
+  width: 800px;
 }
 
 .main-content {
@@ -28,7 +28,7 @@ body {
 }
 
 .right-content {
-	width: 300px;
+  width: 300px;
 }
 
 .top-bar {
@@ -38,5 +38,5 @@ body {
 }
 
 .username {
-  display: flex;
+	display: flex;
 }
