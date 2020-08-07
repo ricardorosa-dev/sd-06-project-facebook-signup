@@ -42,6 +42,6 @@ body {
   width: 45%;
 }
 
-#label-birthdate{
+.label-birthdate {
   display: block;
 }
