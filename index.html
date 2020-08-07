@@ -8,25 +8,27 @@
 <body>
     <!-- MENU -->
     <div class="top-bar">
-      <img class="facebook-logo" src="imgs/facebook-logo.png">
-      <form  class="facebook-login" action="" method="get">
-        <!-- Primeiro subcontainer -->
-        <div class="form-group">
-          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-            <input  id="user-email-phone" type="email" name="e-mail">
-        </div>
-        <!-- Segundo subcontainer -->
-        <div class="form-group">
-          <label  id="user-password-label" for="user-password-label">Senha
-            <input id="user-password-label" type="password" name="senha">
-          </label>
-          <div class="pass-forget">Esqueceu a senha?</div>
-        </div>
-        <!-- Terceiro subcontainer -->
-        <div class="form-control">
-          <button id="button-login" class="button-login">Entrar</button>
-        </div>
-      </form>
+      <div>
+        <img src="imgs/facebook-logo.png" alt="logo" class="facebook-logo">
+      </div>
+      <div>
+        <form  class="facebook-login" action="" method="get">
+          <!-- Primeiro subcontainer -->
+          <div class="form-group">
+            <label for="usermail" id="user-email-phone-label">Email ou telefone</label>
+            <input type="text" name="usermail" id="user-email-phone">
+         </div>
+          <!-- Segundo subcontainer -->
+          <div class="form-group">
+            <label for="user-password" id="user-password-label">Senha</label>
+            <input type="password" name="user-password" id="user-password">
+          </div>
+          <!-- Terceiro subcontainer -->
+          <div class="form-control">
+            <button id="button-login">Entrar</button>
+          </div>
+        </form>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>

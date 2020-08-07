@@ -1,15 +1,19 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
-  color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: right;
-  padding: 20px 0;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-right: 4px;
+}
+
+.facebook-logo {
+  background-color: tomato;
+  align-self: flex-start;
 }
 
 .form-control {
@@ -17,12 +21,7 @@
 }
 
 .facebook-login {
-  align-items: flex-start;
   display: flex;
-  font-family: Helvetica, sans-serif;
-  height: 40px;
-  justify-content: space-around;
-  width: 900px;
 }
 
 .button-login {
