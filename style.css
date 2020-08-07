@@ -9,7 +9,7 @@ body {
   flex-direction: row;
   font-size: 12px;
   height: 90px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .facebook-login {
