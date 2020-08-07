@@ -31,7 +31,6 @@
   display: inline-block;
   width: 28%;
   text-align: left;
-
 }
 
 .label {
@@ -43,11 +42,11 @@
 }
 
 .gender-type {
+  display: flex;
   width: 33%;
-  display: flex
 }
 
-.input-gender{
+.input-gender {
   flex-basis:1;
 }
 
