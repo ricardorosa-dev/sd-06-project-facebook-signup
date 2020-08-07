@@ -4,31 +4,47 @@ body {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  border-bottom: 1px solid black;
   display: flex;
   height: 82px;
-  border-bottom: 1px solid black;
-  margin: 0px;
   justify-content: space-around;
+  margin: 0px;
 }
 
-img {
-  margin-top: 10px;
-  width: 200px;
+.facebook-logo {
   border: black 1px solid;
+  margin-top: 10px;
+  width: 170px;
 }
 
 .facebook-login {
+  border: black 1px solid;
   display: flex;
-  border: black 1px solid; 
 }
 
 .form-group {
+  border: black 1px solid;
+  color: #fff;
   display: flex;
   flex-direction: column ;
+  font-family: inherit;
+  font-weight: normal;
   justify-content: center;
-  border: black 1px solid; 
+  padding-left: 1px;
 }
 
 .form-control {
   align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
