@@ -10,7 +10,6 @@ function invalidFields() {
 }
 
 function checkEmpty() {
-  
   let isEmpty = 0;
 
   if (document.getElementById('firstname').value === '') {
