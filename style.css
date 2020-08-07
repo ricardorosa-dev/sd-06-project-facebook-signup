@@ -31,3 +31,11 @@ body {
 .form-control {
   align-self: flex-end
 }
+
+.main-content {
+  display: flex;
+}
+
+.lef-content {
+  width: 800px;
+}
