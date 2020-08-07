@@ -8,8 +8,8 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
   padding: 15px;
+  justify-content: space-between;
 }
 
 .top-bar img {
@@ -21,6 +21,7 @@ body {
   color: white;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .form-group {
@@ -55,6 +56,11 @@ body {
 }
 
 .form-group:nth-child( 2 ) {
-  position: relative;
-  top: 7px;
+ align-content: center;
+ position: relative;
+}
+.form-group span{
+  position: absolute;
+  bottom: -20px;
+  left: 0;
 }
