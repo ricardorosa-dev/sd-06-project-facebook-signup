@@ -7,11 +7,19 @@ body {
   width: 180px;
 }
 
-.left-content-wrapper , .left-header {
+.left-content , .left-header {
   align-items: center;
   display: flex;
   justify-content: flex-start;
   margin-top: 15px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
 }
 
 .top-bar {

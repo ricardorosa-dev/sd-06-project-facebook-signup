@@ -28,23 +28,24 @@
     </form>
   </header>
 
-  <article class="left-content-wrapper">
-    <img id="facebook-networking" src="./imgs/networking.png">
-    <section class="fb-description">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
-      sua vida.</section>
-  </article>
-  <article class="right-content-wrapper">
-    <h2>Abra uma Conta</h2>
-    <section>É rápido e fácil.</section>
-    <form class="sign-in-data">
-      <input placeholder="Nome" id="name" name="name" type="text">
-      <input placeholder="Sobrenome" id="surname" name="surname" type="text">
-      <input placeholder="Celular ou email" id="phone-email-sign" name="phone-email-sign" type="text">
-      <input placeholder="Nova Senha" id="password" name="password" type="password">
-      <label for="birth">Data de nascimento
-        <input id="birth" name="birth" type="text">
-    </form>
-  </article>
+  <div class="main-content">
+    <article class="left-content">
+      <img id="facebook-networking" src="./imgs/networking.png">
+      <section class="fb-description" id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</section>
+    </article>
+    <article class="right-content-wrapper">
+      <h2>Abra uma Conta</h2>
+      <section>É rápido e fácil.</section>
+      <form class="sign-in-data">
+        <input placeholder="Nome" id="name" name="name" type="text">
+        <input placeholder="Sobrenome" id="surname" name="surname" type="text">
+        <input placeholder="Celular ou email" id="phone-email-sign" name="phone-email-sign" type="text">
+        <input placeholder="Nova Senha" id="password" name="password" type="password">
+        <label for="birth">Data de nascimento
+          <input id="birth" name="birth" type="text">
+      </form>
+    </article>
+  </div>
   <script>
     document.querySelector('#button-login').addEventListener('click', (e) => {
       const EMAILORPHONE = document.querySelector('#user-email-phone').value;
