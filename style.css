@@ -1,4 +1,11 @@
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
+  height: 90px;
+  justify-content: flex-start;
+}
+
+.facebook-logo {
+  margin-left: 10%;
 }
