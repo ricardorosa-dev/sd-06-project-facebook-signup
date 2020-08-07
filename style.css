@@ -43,7 +43,11 @@ body {
   border-radius: 2px;
   color: white;
 }
-
+.form-control {
+  align-self: center;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
 p {
   margin: 0;
   padding: 0;
@@ -53,3 +57,16 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+} 
