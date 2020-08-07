@@ -1,8 +1,8 @@
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
-
+  display: flex;
 }
+
 .main-content {
   display: flex;
 }
@@ -12,5 +12,5 @@
 }
 
 .right-content {
-
+  display: flex;
 }
