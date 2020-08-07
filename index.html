@@ -9,26 +9,30 @@
 <body>
   <header>
     <nav class="top-bar">
-      <div>
-        <form>
-          <label for="email">Email or Phone</label>
-          <input type="email" name="email" id="email">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password">
-        </form>
-        <button type="submit">Log In</button>
-        <a href="#">Forgot account?</a>
-      </div>
+      <form class="facebook-login" action="">
+        <div class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone">E-mail ou telefone</label>
+          <input type="text" name="user-email-phone" id="user-email-phone">
+        </div>
+        <div class="form-group">
+          <label id="user-password-label" for="user-password">Senha</label>
+          <input type="password" name="user-password" id="user-password">
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+        <div class="form-control">
+          <button id="button-login" type="submit">Entrar</button>
+        </div>
+      </form>
     </nav>
   </header>
   <main class="main-content">
     <div class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida</p>
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img id="facebook-networking" src="imgs/networking.png" alt="">
     </div>
     <div class="right-content">
       <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil</p>
+      <p class="quick-easy">É rápido e fácil.</p>
       <form action="" method="GET">
         <div class="fullName">
           <input type="text" name="firstname" id="first-name" placeholder="Nome">
