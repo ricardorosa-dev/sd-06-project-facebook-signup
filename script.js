@@ -41,7 +41,6 @@ function validateData() {
   const totalError = verifyData + verifyGender;
   if (totalError > 0) {
     alert('Campos inválidos');
-    totalError = 0;
   }
 }
 
