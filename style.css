@@ -73,9 +73,18 @@ body {
   background-image: linear-gradient(white, rgb(233, 235, 238));
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .left-content {
   background-color: red;
   width: 800px;
+}
+
+.right-content {
+  background-color: chocolate;
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+
 }
