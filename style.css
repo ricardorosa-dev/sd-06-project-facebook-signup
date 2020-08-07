@@ -23,13 +23,12 @@ body {
 
 .main-content {
   display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .right-content {
-	width: 300px;
-	background-color: springgreen;
+  width: 300px;
 }
 
 .top-bar {
