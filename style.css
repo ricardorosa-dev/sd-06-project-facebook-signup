@@ -40,6 +40,10 @@ body {
   width: 800px;
 }
 
+#facebook-slogan {
+  text-align: center;
+}
+
 .right-content {
   width: 300px;
 }
