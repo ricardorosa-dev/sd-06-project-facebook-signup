@@ -1,23 +1,25 @@
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
   flex-direction: row;
 }
 
 .left-content {
   width: 800px;
 }
-.facebook-logo{
-  display: flex;
+
+.facebook-logo {
   align-items: center;
+  display: flex;
   justify-content: flex-start;
 }
 
 .facebook-login {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: flex-end;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
