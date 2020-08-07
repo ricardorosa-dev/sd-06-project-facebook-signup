@@ -1,11 +1,17 @@
 .facebook-login {
   display: flex;
+  justify-content: flex-end;
 }
 
 .facebook-logo {
   display: flex;
   height: 90%;
+  justify-content: flex-start;
   width: auto;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 .form-group {
