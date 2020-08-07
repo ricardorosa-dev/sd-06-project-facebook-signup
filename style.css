@@ -13,3 +13,7 @@
     width: 980vw;
     height: 82px;
 }
+.facebook-logo {
+    justify-content: flex-start;
+    width: 175px;
+}
