@@ -111,3 +111,16 @@ form label {
   background-color: orange;
   width: 300px;
 }
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-field {
+  display: flex;
+}
+
+.name-field input {
+  width: 142px;
+}
