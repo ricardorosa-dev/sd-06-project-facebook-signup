@@ -36,3 +36,13 @@ body {
 .right-content {
   width: 300px;
 }
+
+.right-content form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.right-content form input {
+  width: 120px;
+}
