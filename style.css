@@ -11,8 +11,8 @@ body {
 
 .left-content {
   display: flex;
-  width: 800px;
   flex-wrap: wrap;
+  width: 800px;
 }
 
 .top-bar {
