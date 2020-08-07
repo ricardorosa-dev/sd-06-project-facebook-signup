@@ -18,3 +18,7 @@ header , body , img , form , input , button , footer , div , p , span , h1 , h2 
   display: flex;
   flex-direction: column;
 }
+
+.form-control {
+  align-self: flex-end;
+}
