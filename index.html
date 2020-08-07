@@ -41,13 +41,13 @@
       <h4 class="quick-easy">É rápido e fácil.</h4>
       <form action="" class="form-register" method="get">
         <div class="full-name">
-          <input type="text" name="firstname" placeholder="Nome" required>
-          <input type="text" name="lastname" placeholder="Sobrenome" required>
+          <input type="text" name="firstname" placeholder="Nome" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
+          <input type="text" name="lastname" placeholder="Sobrenome" required oninvalid="setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" required>
-        <input type="password" name="password" placeholder="Nova senha" required>
+        <input type="text" name="phone_email" placeholder="Celular ou email"  required oninvalid="setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
+        <input type="password" name="password" placeholder="Nova senha"  required oninvalid="setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
         <label id="label-birthdate" for="">Data de nascimento</label>
-        <input type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
+        <input type="date" name="birthdate" placeholder="dd/mm/aaaa" required oninvalid="setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
         <label for="" id="label-gender">Gênero</label>
         <div class="gender-radio">
           <label for="feminino">
@@ -60,11 +60,12 @@
           </label>
           <input id="personalizado" type="radio" name="gender" value="Personalizado">Personalizado
         </div>
-        <button id="facebook-register" type="submit">Cadastre-se</button>
+        <button id="facebook-register" class="form__btn btn btn-primary" type="submit">Cadastre-se</button>
       </form>
     </div>
   </div>
   <script src="script.js"></script>
+  <script src="justValidation.js"></script>
 </body>
 
 </html>
