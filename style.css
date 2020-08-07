@@ -1,0 +1,12 @@
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+/* Classe da Barra Superior */
+.top-bar {
+  background-color: rgb(66, 103, 178);   /*Requisito 1*/
+  display: flex;   /*Requisito 1*/
+  height: 11vh; /*Altura especificada para vermos em tela já que não há conteúdo ainda*/
+}
+
