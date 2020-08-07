@@ -8,6 +8,7 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
   padding: 15px;
 }
 
@@ -60,5 +61,10 @@ body {
 
 .form-group:nth-child( 2 ) {
   position: relative;
-  top: 7px;
+}
+
+.form-group span {
+  bottom: -20px;
+  left: 0;
+  position: absolute;
 }

@@ -1,7 +1,7 @@
 window.onload = function () {
   const entrar = document.querySelector('#button-login');
+  const text = document.querySelector('#user-email-phone');
   entrar.addEventListener('click', function () {
-    const email = document.querySelector('#user-email-phone');
-    alert(email.value);
+    alert(text.value);
   });
 };
