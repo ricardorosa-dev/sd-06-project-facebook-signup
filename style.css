@@ -1,17 +1,14 @@
+* { border: 1px solid red; }
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
 .top-bar {
-    position: fixed;
-    margin: 0px;
-    padding: 0px;
     display: flex;
-    flex-shrink: 0;
     background-color: rgb(66, 103, 178);
-    width: 980vw;
     height: 82px;
+    justify-content: space-between;
 }
 .facebook-logo {
     justify-content: flex-start;
@@ -27,8 +24,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-right: 20px;
 }
 .form-control {
     display: flex;
+    align-self: flex-end;
     justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.main-content {
+    display: flex;
+    flex-direction: row;
 }
