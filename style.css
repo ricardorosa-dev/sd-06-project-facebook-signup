@@ -16,6 +16,13 @@ body {
   padding: 8px 0;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 40%;
+}
+
 .top-bar .form-container {
   justify-content: flex-end;
 }
@@ -25,13 +32,6 @@ body {
   justify-content: flex-start;
   margin-left: 200px;
   width: 60%;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 40%;
 }
 
 .facebook-login {
