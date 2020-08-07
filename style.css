@@ -46,8 +46,8 @@ body {
 
 .firstname {
   display: flex;
-  width: 50%;
   margin-right: 5px;
+  width: 50%;
 }
 
 .form-control {
