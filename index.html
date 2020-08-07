@@ -18,22 +18,22 @@
             <img class="facebook-logo" src="/imgs/facebook-logo.png" alt="">
             <div class="links">
                 <form class="facebook-login" action="">
-                    <table>
-                        <tr>
-                            <td id="user-email-phone-label" class="email_tel">Email ou telefone</td>
-                            <td id="user-password-label" class="senha">Senha</td>
-                        </tr>
-                        <tr>
-                            <td><input id="user-email-phone" type="email"></td>
-                            <td><input id="user-password" type="password"></td>
-                            <td><button class="entrar">Entrar</button></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <a href=""></a>Esqueceu a conta?</td>
-                        </tr>
-                    </table>
+                    <div>
+                        <label class="form-group" for="login">Email ou telefone<br>
+                          <input style="margin-top: 3px;" type="text" name="login" id="user-email-phone">
+                        </label>
+                    </div>
+                    <div>
+                        <label class="form-group" id="user-password-label" for="pwd">Senha<br>
+                          <input type="password" name="password" id="user-password" style="margin-top: 3px; margin-bottom: 5px;">
+                          <li><a class="remember-password" href="https://www.facebook.com/recover/initiate?lwv=110&ars=royal_blue_bar">Esqueceu a conta?</a></li>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="login-button" for="btn">
+                          <input value="Entrar" type="submit" class="login-button-input">
+                        </label>
+                    </div>
                 </form>
             </div>
         </div>
