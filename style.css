@@ -124,3 +124,7 @@ form label {
 .name-field input {
   width: 142px;
 }
+
+.label-gender {
+  display: flex;
+}
