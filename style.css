@@ -23,9 +23,21 @@ body {
 .right-content {
   width: 300px;
 }
+
 .facebook-login {
   display: flex;
 }
-.login-password {
+
+/* .login-password {
   display: flex;
+} */
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
 }
