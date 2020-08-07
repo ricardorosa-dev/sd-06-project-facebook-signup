@@ -51,3 +51,7 @@ body {
 .right-content form > div:first-child {
   display: flex;
 }
+
+form .label-birthdate {
+  display: block;
+}
