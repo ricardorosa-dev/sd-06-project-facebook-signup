@@ -11,6 +11,7 @@ body {
 
 .left-content {
   display: flex;
+  flex-wrap: wrap;
   width: 800px;
 }
 
@@ -24,10 +25,25 @@ body {
   width: 300px;
 }
 
+<<<<<<< HEAD
+=======
+.form-name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 400px;
+}
+
+.form-name input {
+  width: 150px;
+}
+
+>>>>>>> a708e04a032c801aa7904c924302c085518e9969
 .facebook-login {
   display: flex;
 }
 
+<<<<<<< HEAD
 /* .login-password {
   display: flex;
 } */
@@ -41,3 +57,8 @@ body {
   display: flex;
   align-self: flex-end;
 }
+=======
+.login-password {
+  display: flex;
+}
+>>>>>>> a708e04a032c801aa7904c924302c085518e9969
