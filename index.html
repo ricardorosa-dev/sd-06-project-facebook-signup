@@ -40,14 +40,14 @@
       </p>
       <form action="">
         <div class="name-inputs">
-          <input name="firstname" placeholder="Nome" type="text">
-          <input name="lastname" placeholder="Sobrenome" type="text">
+          <input name="firstname" placeholder="Nome" type="text" required>
+          <input name="lastname" placeholder="Sobrenome" type="text" required>
         </div>
-        <input name="phone_email" placeholder="Celular ou email" type="text">
-        <input name="password" placeholder="Nova senha" type="password">
+        <input name="phone_email" placeholder="Celular ou email" type="text" required>
+        <input name="password" placeholder="Nova senha" type="password" required>
         <div class="user-birthdate">
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-          <input id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" type="text">
+          <input id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" type="text" required>
         </div>
         <div class="user-gender">
           <label for="" id="label-gender">
@@ -55,15 +55,15 @@
           </label>
           <div class="gender-buttons">
             <div>
-              <input id="feminino" name="gender" type="radio" value="feminino">
+              <input id="feminino" name="gender" type="radio" value="feminino" required>
               <label for="feminino">Feminino</label>
             </div>
             <div>
-              <input id="masculino" name="gender" type="radio" value="masculino">
+              <input id="masculino" name="gender" type="radio" value="masculino" required>
               <label for="masculino">Masculino</label>
             </div>
             <div>
-              <input id="personalizado" name="gender" type="radio" value="personalizado">
+              <input id="personalizado" name="gender" type="radio" value="personalizado" required>
               <label for="personalizado">Personalizado</label>
             </div>
           </div>
