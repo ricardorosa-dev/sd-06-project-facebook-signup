@@ -1,14 +1,15 @@
-* {
+header, body, img, form, input, button, footer, div, p, span, h1, h2, h3 {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .top-bar {
-  background-color: rgb(66 , 103 , 178);
+  background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
 }
 
-.facebook-logo {
-  align-self: flex-start;
+.facebook-login {
+  display: flex;
 }
