@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook - entre ou cadastre-se</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="libs/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+<header class="top-bar">
+  <div class="facebook-logo-div">
+    <a class="tooltip" href="https://www.facebook.com/">
+        <img class="facebook-logo" width=170px src="imgs/facebook-logo.png" alt="Logomarca do Facebook">
+         <span class="tooltiptext">Ir para a página inicial do Facebook</span>
+    </a>
+  </div>
+  <form class="facebook-login" action="">
+    <div>
+        <label class="login" for="login">Email ou telefone<br>
+          <input size="10" style="margin-top: 3px;" type="text" name="login" id="login">
+        </label>
+    </div>
+    <div>
+        <label class="senha" for="pwd">Senha<br>
+          <input size="10" type="password" name="password" id="pwd" style="margin-top: 3px; margin-bottom: 5px;">
+          <li><a class="remember-password" href="https://www.facebook.com/recover/initiate?lwv=110&ars=royal_blue_bar">Esqueceu a conta?</a></li>
+        </label>
+    </div>
+    <div>
+        <label class="login-button" for="btn">
+          <input value="Entrar" type="submit" class="login-button-input">
+        </label>
+    </div>
+  </form>
+</header>
+
+<!-- CONTAINER OF SECTIONS-->
+<div class="main-container">
+
+  <!-- SECTION LEFT -->
+  <section class="section-left">
+    <h2>O Facebook ajuda você a se conectar e<br>
+      compartilhar com as pessoas que fazem parte<br> da sua vida.</h2>
+      <img class="network-img" width="500px" src="imgs/networking.png" alt="Imagem pessoas se conectando" srcset="" >
+  </section>
+
+  <!-- SECTION RIGHT -->
+  <section class="section-right">
+    <form action="" method="post" acntype="multipart/form-data">
+      <h1 class="title">Abra uma conta</h1>
+      <h2 class="subtitle">É rápido e fácil.</h2>
+      <div class="field">
+        <div class="control">
+          <input class="input" type="text" placeholder="Nome">
+        </div>
+        <div class="control">
+          <input class="input" type="text" placeholder="Sobrenome">
+        </div>
+        <div class="control">
+          <input class="input" type="text" placeholder="Celular ou email">
+        </div>
+        <div class="control">
+          <input class="input" type="text" placeholder="Nova Senha">
+        </div>
+        <!-- <label class="label" style="font-size: 12px; color:gray;" for="">Data de nascimento</label>
+        <div class="control">
+          <input class="input" type="text" id="date" maxlength="10" minlength="10" placeholder="dd/mm/aaaa">
+        </div> -->
+        <div class="control">
+          <label class="label" style="font-size: 12px; color:gray;">Data de nascimento</label>
+          <select id="date-month" name="month"><option value="0">Mês:</option></select>
+          <select id="day-month" name="day"><option value="0">Dia:</option></select>
+          <select id="year-month" name="year"><option value="0">Ano:</option></select>
+        </div>
+        <label class="label" style="font-size: 12px; color:gray;">Gênero</label>
+        <div class="control">
+          <label class="radio" for="female">
+            <input type="radio" name="gender" id="female">
+            Feminino
+          </label>
+          <label class="radio" for="male">
+            <input type="radio" name="gender" id="male">
+            Masculino
+          </label>
+          <label class="radio" for="other">
+            <input type="radio" name="gender" id="other">
+            Personalizado
+          </label>
+        </div>
+        <p style="font-size: 9px;">
+          Ao clicar em Cadastre-se, você concorda com nossos 
+          <a class="terms-class" href="https://www.facebook.com/legal/terms/update">Termos</a>,<br>
+          <a class="terms-class" href="https://www.facebook.com/about/privacy/update">Política de Dados</a> e
+          <a class="terms-class" href="https://www.facebook.com/policies/cookies/">Política de Cookies</a>. 
+          Você pode receber<br>notificações por SMS e pode cancelar isso quando quiser.
+        </p>
+        <div class="control">
+          <button class="button is-success sign-button" type="submit">Cadastre-se</button>
+        </div>
+      </div>
+    </form>
+    <p style="font-size: 12px; font-weight: bold;"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form" >Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
+  </section>
+</div>
+</body>
+</html>
