@@ -10,29 +10,31 @@
     </title>
 </head>
 
+
 <body>
     <!-- MENU -->
     <div class="top-bar">
         <div class="menu">
-            <img src="/imgs/facebook-logo.png" alt="">
+            <img class="facebook-logo" src="/imgs/facebook-logo.png" alt="">
             <div class="links">
-
-                <table>
-                    <tr>
-                        <td class="email_tel">Email ou telefone</td>
-                        <td class="senha">Senha</td>
-                    </tr>
-                    <tr>
-                        <td><input type="email"></td>
-                        <td><input type="password"></td>
-                        <td><button class="entrar">Entrar</button></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <a href=""></a>Esqueceu a conta?</td>
-                    </tr>
-                </table>
+                <form class="facebook-login" action="">
+                    <table>
+                        <tr>
+                            <td id="user-email-phone-label" class="email_tel">Email ou telefone</td>
+                            <td id="user-password-label" class="senha">Senha</td>
+                        </tr>
+                        <tr>
+                            <td><input id="user-email-phone" type="email"></td>
+                            <td><input id="user-password" type="password"></td>
+                            <td><button class="entrar">Entrar</button></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <a href=""></a>Esqueceu a conta?</td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
     </div>
