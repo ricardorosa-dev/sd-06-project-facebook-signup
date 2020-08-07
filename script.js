@@ -9,7 +9,7 @@ buttonLogin.addEventListener('click', () => {
 
 submitButton.addEventListener('click', function () {
   const inputs = document.querySelectorAll('#register-form input');
-  for (let index = 0;  index < inputs.length; index += 1) {
+  for (let index = 0; index < inputs.length; index += 1) {
     if (!inputs[index].checkValidity()) {
       if (registerForm) {
         registerForm.remove();
