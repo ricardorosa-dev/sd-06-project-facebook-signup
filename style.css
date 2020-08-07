@@ -41,6 +41,6 @@
   width: 300px;
 }
 
-.right-content form input:first-child, .right-content form input:last-child {
+.right-content form input:first-child , .right-content form input:last-child {
   width: 40%;
 }
