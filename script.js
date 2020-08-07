@@ -28,8 +28,8 @@ btnSignup.addEventListener('click', function () {
 });
 
 btnCustomGender.addEventListener('click', function () {
-  let radioGender = document.querySelector('.gender-radio');
-  let newInput = document.createElement('input');
+  const radioGender = document.querySelector('.gender-radio');
+  const newInput = document.createElement('input');
   newInput.type = 'text';
   newInput.name = 'gender-custom';
   newInput.placeholder = 'Gênero (opcional)';
