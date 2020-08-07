@@ -46,7 +46,6 @@ body {
 
 .form-control {
   align-self: center;
-  margin-left: 10px;
   margin-bottom: 11px;
   margin-left: 10px;
 }
@@ -73,14 +72,6 @@ a {
 }
 
 .right-content {
-  width: 300px;
-}
-
-.quick-easy {
-}
-
-.right-content {
-  width: 300px;
   color: black;
-
+  width: 300px;
 }
