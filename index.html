@@ -12,11 +12,17 @@
     <!--header start-->
     <header class="top-bar">
       <div class="facebook-logo" background-color="# 00">
-        <img id="facebook-logo" src="/imgs/facebook-logo.png">
+        <img id="facebook-logo" src="imgs/facebook-logo.png">
       </div>
       <form class="facebook-login">
-        <input type="text" class="email">
-        <input type="text" class="password">
+        <div class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+          <input id="user-email-phone" type="text" class="email">
+        </div>
+        <div class="form-group">
+          <label id="user-password-label" for="user-password">Senha</label>
+          <input id="user-password" type="text" class="password">
+        </div>
         <input type="button" value="">
         <a class="esqueceu" href="">Esqueceu sua conta?</a>
       </form>
