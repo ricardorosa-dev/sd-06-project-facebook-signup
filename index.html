@@ -13,19 +13,19 @@
     <div class="top-bar">
 
       <div class="logo">
-        <img class="facebook-logo" src="./imgs/facebook-logo.png" alt="Logo Facebook">
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo Facebook">
       </div>
 
       <form class="facebook-login" action="">
 
         <div class="form-group">
           <label id="user-email-phone-label"for="user-email-phone">Email ou telefone</label>
-          <input id="user-email-phone" type="text">
+          <input id="user-email-phone" name="user-email-phone-name" type="text">
         </div>
 
         <div class="form-group">
           <label id="user-password-label" for="user-password">Senha</label>
-          <input id="user-password" type="password">
+          <input id="user-password" type="password" name="user-password-name">
         </div>
 
         <div class="form-control">
@@ -37,7 +37,7 @@
 
   <div class="main-content">
     <div class="left-content">
-      <p class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img id="facebook-networking" src="imgs/networking.png">
     </div>
 
@@ -48,7 +48,9 @@
         <input id="input-firstname" type="text" name="firstname" placeholder="Nome">
         <input id="input-lastname" type="text" name="lastname" placeholder="Sobrenome">
         <input id="input-phoneEmail" name="phone_email" placeholder="Celular ou email">
-        <input id="input-password" name="password" placeholder="Nova senha">
+        <input id="input-password" type="password" name="password" placeholder="Nova senha">
+        <label id="label-birthdate">Data de nascimento</label>
+        <input id="input-birthdate" name="birthdate" placeholder="dd/mm/aaaa">
       </form>
     </div>
   </div>
