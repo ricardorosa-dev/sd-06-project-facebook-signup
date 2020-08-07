@@ -18,3 +18,7 @@
   align-self: flex-end;
   display: flex;
 }
+
+.main-content {
+  display: flex;
+}
