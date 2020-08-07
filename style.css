@@ -1,34 +1,38 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+
+header {
+    color: #fff;
 }
 
 .top-bar {
-<<<<<<< HEAD
     display: flex;
-    background-color: rgb(66, 103, 178);    
+    background-color: rgb(66, 103, 178);
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;   
 }
 
-.logo {
+.facebook-logo {
+    display: flex;    
+}
+
+.facebook-login {
     display: flex;
-    justify-content: left;
-}
-=======
-  background-color: rgb(66, 103, 178);
-  display: flex;
+    flex-direction: column;        
 }
 
-.main-content {
-  display: flex;
-  justify-content: center;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.left-content {
-  width: 800px;
+.form-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
-
-.right-content {
-  width: 300px;
-}
->>>>>>> 2e278dc149132de71f0b9404ecae85f7ed178788
