@@ -7,20 +7,25 @@ body {
   background-color: rgb(66, 103, 178);
 }
 
-.top-bar , .main-content {
+.top-bar {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
 .left-content {
-  max-width: 800px;
+  width: 800px;
 }
 
 .right-content {
   display: flex;
   flex-wrap: wrap;
-  max-width: 300px;
+  width: 300px;
 }
 
 .fullName {
