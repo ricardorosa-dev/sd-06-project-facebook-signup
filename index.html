@@ -37,20 +37,20 @@
       <div class="quick-easy">É rápido e fácil.</div>
       <form class="subscription-form" method="GET">
         <div class="subscription-form-1">
-          <input name="firstname" placeholder="Nome">
-          <input name="lastname" placeholder="Sobrenome">
+          <input class="input-text-verification" name="firstname" placeholder="Nome" >
+          <input class="input-text-verification" name="lastname" placeholder="Sobrenome" >
         </div>
-        <input name="phone_email" placeholder="Celular ou email">
-        <input name="password" type="password" placeholder="Nova senha">
+        <input class="input-text-verification" name="phone_email" placeholder="Celular ou email" >
+        <input class="input-text-verification" name="password" type="password" placeholder="Nova senha" required>
         <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-        <input name="birthdate" placeholder="dd/mm/aaaa">
+        <input class="input-text-verification" name="birthdate" placeholder="dd/mm/aaaa" >
         <label id="label-gender" for="">Gênero</label>
         <div class="subscription-form-2">
-          <input id="feminino" type="radio" name="gender" value='Feminino'>
+          <input class="input-radio-verification" id="feminino" type="radio" name="gender" value='Feminino'>
           <label for="feminino">Feminino</label>
-          <input id="masculino" type="radio" name="gender" value='Masculino'>
+          <input class="input-radio-verification" id="masculino" type="radio" name="gender" value='Masculino'>
           <label for="masculino">Masculino</label>
-          <input id="personalizado" type="radio" name="gender" value='Personalizado'>
+          <input class="input-radio-verification" id="personalizado" type="radio" name="gender" value='Personalizado'>
           <label for="personalizado">Personalizado</label>
         </div>
         <button id="facebook-register" type="submit">Cadastre-se</button>
