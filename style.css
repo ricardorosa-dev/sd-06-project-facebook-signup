@@ -69,7 +69,6 @@ body {
   position: absolute;
 }
 
-/* Main-Container */
 .main-content {
   display: flex;
   flex-direction: row;
