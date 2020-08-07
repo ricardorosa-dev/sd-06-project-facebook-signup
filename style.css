@@ -12,20 +12,9 @@ body {
   justify-content: space-around;
 }
 
-.facebook-logo {
-  align-self: flex-start;
-  display: flex;
-  flex-direction: column;
-}
-
 .facebook-login {
   align-items: flex-end;
   display: flex;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: row;
 }
 
 .form-group {
