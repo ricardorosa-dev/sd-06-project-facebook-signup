@@ -1,6 +1,6 @@
 .facebook-login {
+  align-content: flex-end;
   display: flex;
-  justify-content: flex-end;
 }
 
 .facebook-logo {
@@ -17,6 +17,11 @@
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
 }
 
 .top-bar {
