@@ -28,15 +28,17 @@
 }
 
 .left-content {
-  float: left;
   width: 800px;
 }
 
 .right-content {
-  float: right;
   width: 300px;
 }
 
 .linha {
   display: flex;
+}
+
+.radio input{
+  margin: 0;
 }
