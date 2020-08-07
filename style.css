@@ -8,18 +8,23 @@ body {
 }
 
 .top-bar {
-  align-items: stretch;
+  align-items: center;
   background-color: rgb(66, 103, 178);
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 12px;
   padding-top: 12px;
+}
+
+.facebook-logo-container {
+  margin-left: 160px;
 }
 
 .facebook-login {
   display: flex;
   justify-content: space-between;
+  margin-right: 160px;
   width: 30%;
 }
 
@@ -28,11 +33,19 @@ body {
   flex-direction: column;
 }
 
+.form-group input {
+  height: 16px;
+  margin-top: 4px;
+  padding: 4px 8px;
+}
+
 .form-control button {
   background-color: rgb(104, 141, 214);
   border: 1px solid rgb(48, 80, 145);
   border-radius: 4px;
+  box-sizing: content-box;
   color: white;
+  height: 20px;
   padding: 3px 7px;
 }
 
@@ -71,4 +84,21 @@ body {
   display: flex;
   flex-direction: column;
   width: 300px;
+}
+
+.register-container .input-container {
+  display: flex;
+  width: 100%;
+}
+
+.register-container .input-container input:first-child {
+  margin-right: 16px;
+}
+
+.register-container .input-form {
+  box-sizing: border-box;
+  height: 28px;
+  margin-top: 16px;
+  padding: 4px 8px;
+  width: 100%;
 }
