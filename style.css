@@ -6,7 +6,10 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1100px;
 }
 
 .left-content {
