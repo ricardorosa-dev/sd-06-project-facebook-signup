@@ -12,7 +12,7 @@
   display: flex;
 }
 
-.password, .email {
+.password , .email {
   display: flex;
   flex-direction: column;
 }
