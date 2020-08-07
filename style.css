@@ -53,7 +53,11 @@ body {
   width: 45%; /* Para satisfazer posicionamento do requisito 12 */
 }
 
-/* O seletor nth-child() pega o enésimo elemento filho - no caso aqui pega do 3 ao 4 elemento filho */
-.right-content form input:nth-child(n+3):nth-child(-n+4) {
+/* O seletor nth-child() pega o enésimo elemento filho - no caso aqui pega do 3 ao 6 elemento filho */
+.right-content form input:nth-child(n+3):nth-child(-n+5) {
   width: 100%; /* Para satisfazer posicionamento do requisito 13 e 14*/
+}
+
+.right-content form label {
+  width: 100%; /* Para satisfazer posicionamento do requisito 15*/
 }
