@@ -8,7 +8,25 @@
 </head>
 
 <body>
-
+  <nav class="top-bar">
+        <img src="imgs/facebook-logo.png" class="facebook-logo" alt="Logotipo Facebook">
+      <form class="facebook-login">
+        <div class="form-group">
+          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" id="user-email-phone" name="email">
+        </div>
+        <div class="form-group">
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input type="password" id="user-password" name="password">
+          <p>Esqueceu a conta ?</p>
+        </div>
+        <div class="form-control">
+          <button id="button-login" onclick="alertar()">Entrar</button>
+        </div>
+      </form>
+    
+  </nav>
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,2 +1,54 @@
-body {
-  background: linear-gradient(white, #d3d8e8);}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+
+  align-items: center;
+}
+.top-bar img {
+  width: 200px;
+}
+
+.facebook-login {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.form-control button {
+  background-color: #4267b2;
+  padding: 4px;
+  color: white;
+  border: 1px solid #29487d;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-group label{
+  margin-bottom: 5px;
+}
+.form-group input{
+  border: none;
+  height: 25px;
+}
+.form-group p{
+  margin-top: 5px;
+}
+.form-group:nth-child(2) {
+  position: relative;
+  top: 7px;
+}
