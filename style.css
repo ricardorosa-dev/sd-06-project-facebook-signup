@@ -17,3 +17,14 @@
     justify-content: flex-start;
     width: 175px;
 }
+.facebook-login {
+    justify-content: flex-end;
+    display: flex;
+    align-content: flex-end;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
