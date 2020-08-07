@@ -33,7 +33,7 @@ function generateMonth() {
 window.onload = function () {
   const button = document.getElementById('button-login');
   button.addEventListener('click', loginButton);
-  generateDay();
-  generateMonth();
-  generateYear();
+  // generateDay();
+  // generateMonth();
+  // generateYear();
 };
