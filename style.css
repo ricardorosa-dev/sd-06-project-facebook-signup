@@ -1,4 +1,4 @@
-/** { border: 1px solid red; } */
+* { border: 1px solid red; }
 body {
   box-sizing: border-box;
   margin: 0;
@@ -70,6 +70,7 @@ body {
 
 .left-content {
   width: 800px;
+  margin-left: 50px;
 }
 
 .facebook-slogan {
@@ -79,4 +80,15 @@ body {
 
 .right-content {
   width: 300px;
+  margin-right: 50px;
+}
+
+.nome-sobrenome {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.genero-input {
+  display: flex;
 }
