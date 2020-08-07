@@ -1,7 +1,12 @@
 .birthdate-container {
   display: flex;
   flex-flow: column wrap;
+  margin-top: 5px;
   width: 300px;
+}
+
+.birthdate-container label {
+  margin: 5px;
 }
 
 .birth-date {
@@ -28,8 +33,6 @@ body {
 
 .facebook-logo {
   display: flex;
-  justify-content: flex-start;
-  min-width: 200px;
 }
 
 .facebook-password {
@@ -43,6 +46,7 @@ body {
 
 .firstname {
   display: flex;
+  margin-right: 5px;
   width: 50%;
 }
 
@@ -104,6 +108,7 @@ body {
 .phone-email {
   display: flex;
   flex-grow: 1;
+  margin-bottom: 5px;
 }
 
 .right-content {
@@ -118,10 +123,11 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 65px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .totalName {
   display: flex;
   flex-flow: row nowrap;
+  margin: 5px 0;
 }
