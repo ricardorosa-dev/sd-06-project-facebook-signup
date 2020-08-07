@@ -44,3 +44,7 @@ header , body , img , form , input , button , footer , div , p , span , h1 , h2 
 .right-content {
   width: 300px;
 }
+
+.signup-form {
+display: flex;
+}
