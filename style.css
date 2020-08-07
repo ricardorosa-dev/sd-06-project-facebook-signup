@@ -19,7 +19,7 @@
 }
 
 .input-name {
-  display: inline-block;
+  display: inline-flex;
   width: 140px;
 }
 
@@ -28,10 +28,8 @@
 }
 
 .input-gender {
-  display: inline-block;
   text-align: left;
   width: 28%;
-
 }
 
 .label {
@@ -47,11 +45,6 @@
   width: 33%;
 }
 
-.input-gender {
-  flex-basis:1;
-}
-
 .gender-text {
   font-size: 0.85em;
 }
-
