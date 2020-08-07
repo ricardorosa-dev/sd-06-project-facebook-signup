@@ -20,17 +20,52 @@ function showErrorMsg() {
   }
 }
 
+function createHeyJoe(obj) {
+  const displayedMsg = `Olá ${obj.firstname} ${obj.lastname}, o seu cadastro foi feito no ${obj.phone_email}, você nasceu em ${obj.birthdate} e escolheu o gênero ${obj.gender}`;
+
+  const displayElement = document.createElement('p');
+  displayElement.appendChild(document.createTextNode(displayedMsg));
+
+  return displayElement;
+}
+
+function handleHeyJoeElement() {
+  const formInputs = document.querySelectorAll('.signup-form input[type=text]');
+  const radioInputs = document.querySelectorAll('.signup-form input[type=radio]');
+  const inputValues = {};
+
+  formInputs.forEach((input) => {
+    inputValues[input.name] = input.value;
+  })
+
+  radioInputs.forEach((radio) => {
+    if (radio.checked) {
+      inputValues[radio.name] = radio.value;
+    }
+  })
+
+  const heyJoeElement = createHeyJoe(inputValues);
+
+  const rightContentContainer = document.querySelector('.right-content');
+  rightContentContainer.innerHTML = '';
+  rightContentContainer.appendChild(heyJoeElement);
+  rightContentContainer.style.alignItems = 'center';
+  rightContentContainer.style.display = 'flex';
+}
+
 function validateForm(event) {
+  event.preventDefault();
   const formInputs = document.querySelectorAll('.signup-form input');
 
   let radioChecked = false;
   let radiosChecked = 0;
+  let emptyInputs = false;
 
   formInputs.forEach((input) => {
     if (input.type === 'text' || input.type === 'password') {
       if (input.value === '') {
-        event.preventDefault();
         showErrorMsg();
+        emptyInputs = true;
       }
     } else if (input.type === 'radio') {
       if (!input.checked) {
@@ -41,11 +76,15 @@ function validateForm(event) {
       }
 
       if (radiosChecked === 3 && !radioChecked) {
-        event.preventDefault();
         showErrorMsg();
+        emptyInputs = true;
       }
     }
   });
+
+  if (!emptyInputs) {
+    handleHeyJoeElement();
+  }
 }
 
 function handleSignUpForm() {
@@ -56,7 +95,6 @@ function handleSignUpForm() {
 
 function addInputField() {
   const checkingInputField = document.getElementById('input-customized-gender');
-  
 
   if (!checkingInputField) {
     const inputField = document.createElement('input');
@@ -81,14 +119,15 @@ function removeInputField() {
 
 function handleCustomGender() {
   const customizeGender = document.getElementById('personalizado');
-  const femenineGender = document.getElementById('feminino');
+  const feminineGender = document.getElementById('feminino');
   const masculineGender = document.getElementById('masculino');
 
   customizeGender.addEventListener('change', addInputField);
-  femenineGender.addEventListener('change', removeInputField);
+  feminineGender.addEventListener('change', removeInputField);
   masculineGender.addEventListener('change', removeInputField);
-
 }
+
+
 
 window.onload = () => {
   handleLoginButton();
