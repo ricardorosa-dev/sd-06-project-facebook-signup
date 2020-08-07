@@ -33,3 +33,7 @@
 body {
   margin: auto;
 }
+
+.full-name {
+  display: flex;
+}
