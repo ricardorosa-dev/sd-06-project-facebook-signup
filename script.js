@@ -31,4 +31,6 @@ buttonLogin.addEventListener('click', function () {
   window.alert(emailInput.value);
 });
 
-buttonSignUp.addEventListener('click', function () { checkEmpty()});
+buttonSignUp.addEventListener('click', function () { 
+  checkEmpty();
+});
