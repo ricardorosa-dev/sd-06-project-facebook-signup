@@ -4,15 +4,15 @@ body {
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178);
   align-items: center;
+  background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: center;
 }
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .left-content {
