@@ -8,9 +8,8 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
-  width: 1100px;
 }
 
 .facebook-logo {
@@ -38,4 +37,47 @@
 
 .form-control {
   align-self: flex-end;
+}
+
+.campo-de-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fullName {
+  display: flex;
+  justify-content: center;
+}
+
+.firstname {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 145px;
+}
+
+.lastname {
+  margin-bottom: 10px;
+  width: 145px;
+}
+
+.phone_email {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.password {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.birthdate {
+  margin-bottom: 10px;
+}
+
+.gender {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
