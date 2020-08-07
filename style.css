@@ -45,19 +45,19 @@ body {
 
 .right-content form {
   display: flex; /* Para satisfazer posicionamento do requisito 11 */
-  justify-content: space-between; /* Para satisfazer posicionamento do requisito 12 */
   flex-wrap: wrap; /* Para satisfazer posicionamento do requisito 13 */
+  justify-content: space-between; /* Para satisfazer posicionamento do requisito 12 */
 }
 
 .right-content form input {
   width: 45%; /* Para satisfazer posicionamento do requisito 12 */
 }
 
-/* O seletor nth-child() pega o enésimo elemento filho - no caso aqui pega do 3 ao 6 elemento filho */
-.right-content form input:nth-child(n+3):nth-child(-n+5) {
-  width: 100%; /* Para satisfazer posicionamento do requisito 13 e 14*/
+/*Seletor nth-child pega o n-ésimo elemento filho - aqui pega do 3 ao 4 elemento filho */
+.right-content form input:nth-child( n+3 ):nth-child( -n+4 ) {
+  width: 100%; /* Para satisfazer posicionamento do requisito 13 e 14 */
 }
 
 .right-content form label {
-  width: 100%; /* Para satisfazer posicionamento do requisito 15*/
+  width: 100%; /* Para satisfazer posicionamento do requisito 15 */
 }
