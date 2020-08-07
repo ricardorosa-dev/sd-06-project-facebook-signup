@@ -11,4 +11,9 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+}
+
+.form-control {
+  align-self: flex-end;
 }
