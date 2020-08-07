@@ -1,4 +1,4 @@
-* {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@
 
 .facebook-login {
   align-items: center;
-  color: #fff;
+  color: white;
   display: flex;
   flex-wrap: wrap;
 }
@@ -28,6 +28,7 @@
   flex-direction: column;
   margin: 15px;
 }
+
 .form-control button {
   background-color: #4267b2;
   border: 1px solid #29487d;
@@ -39,17 +40,20 @@
   align-self: flex-end;
 }
 
-.form-group label{
+.form-group label {
   margin-bottom: 5px;
 }
-.form-group input{
+
+.form-group input {
   border: none;
   height: 25px;
 }
-.form-group p{
+
+.form-group p {
   margin-top: 5px;
 }
-.form-group:nth-child(2) {
+
+.form-group:nth-child( 2 ) {
   position: relative;
   top: 7px;
 }
