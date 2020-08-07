@@ -10,9 +10,18 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+<<<<<<< HEAD
+=======
+}
+
+.facebook-logo {
+  display: flex;
+  margin-left: 0;
+>>>>>>> 5723c80eeb9a03bcca66da7cee6e66c2537bcd98
 }
 
 .top-bar img {
+  justify-content: flex-start;
   width: 200px;
 }
 
@@ -20,8 +29,7 @@ body {
   align-items: center;
   color: white;
   display: flex;
-  flex-wrap: wrap;
-
+  justify-content: flex-end;
 }
 
 .form-group {
@@ -30,7 +38,6 @@ body {
   margin: 15px;
 }
 
-/* comentário para sincronização */
 .form-control button {
   background-color: #4267b2;
   border: 1px solid #29487d;
@@ -70,7 +77,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-.left-content{
-  width: 800px;
+.left-content {
   background-color: red;
+  width: 800px;
 }
