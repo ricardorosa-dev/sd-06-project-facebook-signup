@@ -35,3 +35,7 @@
 .full-name {
   display: flex;
 }
+
+.options {
+  display: flex;
+}
