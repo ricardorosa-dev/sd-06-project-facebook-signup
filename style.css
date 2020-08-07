@@ -8,8 +8,8 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  padding: 15px;
   justify-content: space-between;
+  padding: 15px;
 }
 
 .top-bar img {
@@ -56,11 +56,21 @@ body {
 }
 
 .form-group:nth-child( 2 ) {
- position: relative;
+  position: relative;
 }
 
-.form-group span{
-  position: absolute;
+.form-group span {
   bottom: -20px;
   left: 0;
+  position: absolute;
+}
+
+/*Main-Container*/
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+.left-content{
+  width: 800px;
+  background-color: red;
 }
