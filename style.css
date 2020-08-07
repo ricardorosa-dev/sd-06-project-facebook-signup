@@ -6,18 +6,20 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
+  justify-content: space-around;
+}
 
+.facebook-logo {
+  width: auto;
 }
 
 .facebook-login {
   color: white;
   display: flex;
-  flex-direction: column;
+  
 }
-
-.facebook-logo {
-  width: auto;
+ 
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
