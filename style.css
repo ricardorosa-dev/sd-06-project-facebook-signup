@@ -8,7 +8,7 @@
 }
 
 .form-group {
-  align-content: flex-end;  
+  align-content: flex-end;
   display: flex;
   flex-direction: column;
 }
