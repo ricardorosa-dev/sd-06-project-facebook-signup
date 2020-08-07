@@ -40,10 +40,10 @@ body {
 }
 
 .form-control button {
-  margin: 0 5px;
   background-color: #4267b2;
   border-radius: 5px;
   color: white;
+  margin: 0 5px;
   text-align: center;
 }
 
