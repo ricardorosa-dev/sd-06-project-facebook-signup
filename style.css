@@ -10,6 +10,7 @@ body {
   color: white;
   display: flex;
   height: 5.2em;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -22,7 +23,6 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 2%;
-  width: 55%;
 }
 
 .form-group {
