@@ -1,6 +1,6 @@
-let loginButton = document.querySelector("#button-login");
-let emailTelephoneInput = document.querySelector("#user-email-phone");
+const loginButton = document.querySelector('#button-login');
+const emailTelephoneInput = document.querySelector('#user-email-phone');
 
-loginButton.addEventListener("click", function(){
+loginButton.addEventListener('click', function () {
 	alert(emailTelephoneInput.value);
 });
