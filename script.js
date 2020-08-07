@@ -2,6 +2,7 @@ const buttonLogin = document.getElementById('button-login');
 const buttonSignUp = document.getElementById('facebook-register');
 const emailInput = document.getElementById('user-email-phone');
 const form = document.getElementById('formSignUp');
+const altGender = document.getElementById('other');
 
 function invalidFields() {
   const invalid = document.createElement('div');
@@ -29,4 +30,15 @@ buttonLogin.addEventListener('click', function () {
 
 buttonSignUp.addEventListener('click', function () {
   checkEmpty();
+});
+
+altGender.addEventListener('change', function () {
+  if (document.getElementById('other').checked === true) {
+    const elementInput = document.createElement('input');
+    const genderOptions = document.getElementsByClassName('gender')[0];
+    elementInput.type = "text";
+    elementInput.name = "gender-custom";
+    elementInput.placeholder = "Gênero (opcional)";
+    genderOptions.appendChild(elementInput);
+  }
 });
