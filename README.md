@@ -145,7 +145,7 @@ Caso você faça o _download_ de bibliotecas externas, utilize o diretório _lib
 
   Pontos importantes:
   * O formulário deve estar alinhado a direita dentro da barra azul
-  * Existe formulário possui uma classe chamada facebook-login
+  * Este formulário possui uma classe chamada facebook-login
   * O formulário deve ser um flex container
 
 
