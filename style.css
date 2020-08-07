@@ -37,5 +37,10 @@
 
 .subscription-form {
   display: flex;
+  flex-flow: column nowrap;
+}
+
+.subscription-form-1 {
+  display: flex;
   flex-flow: row nowrap;
 }

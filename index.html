@@ -16,11 +16,11 @@
     <form method="get" class="facebook-login">
       <div class="form-group">
         <label id="user-email-phone-label" for="email">Email ou telefone</label>
-        <input id="user-email-phone" type="text" value="email" required>
+        <input id="user-email-phone" type="text" placeholder="email" required>
       </div>
       <div class="form-group">
         <label id="user-password-label" for="senha">Senha</label>
-        <input id="user-password" type="text" value="senha" required>
+        <input id="user-password" type="text" placeholder="senha" required>
 			</div>
 			<div class="form-control">
 				<button type="button" id="button-login">Entrar</button>
@@ -34,10 +34,13 @@
     </div>
     <div class="right-content">
       <h1>Abra uma conta</h1>
-      <p id="quick-easy">É rápido e fácil.</p>
+      <div id="quick-easy">É rápido e fácil.</div>
       <form class="subscription-form">
-        <input name="firstname" placeholder="Nome">
-        <input name="lastname" placeholder="Sobrenome">
+        <div class="subscription-form-1">
+          <input name="firstname" placeholder="Nome">
+          <input name="lastname" placeholder="Sobrenome">
+        </div>
+        <input name="phone_mail" placeholder="Celular ou email">
       </form>
     </div>
   </section>
