@@ -7,13 +7,13 @@
   padding: 20px 0;
 }
 img {
-  align-self: start;
+  display: flex;
+  align-items: ;
 }
 
 .form-group {
   align-content: flex-end;
   display: flex;
-  flex-direction: column;
 }
 
 .form-control {
