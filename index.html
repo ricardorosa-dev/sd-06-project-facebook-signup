@@ -13,7 +13,7 @@
 		<img class="facebook-logo"
 			src="imgs/facebook-logo.png"
       alt="Logo Facebook">
-    <form action="get" class="facebook-login">
+    <form method="get" class="facebook-login">
       <div class="form-group">
         <label id="user-email-phone-label" for="email">Email ou telefone</label>
         <input id="user-email-phone" type="text" value="email" required>
@@ -21,9 +21,13 @@
       <div class="form-group">
         <label id="user-password-label" for="senha">Senha</label>
         <input id="user-password" type="text" value="senha" required>
+			</div>
+			<div class="form-control">
+				<button type="button" id="button-login">Entrar</button>
       </div>
     </form>
   </header>
+<script src="script.js"></script>
 </body>
 
 </html>

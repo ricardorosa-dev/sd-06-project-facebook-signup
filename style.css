@@ -5,6 +5,10 @@
   justify-content: space-around;
 }
 
+.form-control {
+  align-self: flex-end;
+}
+
 .form-group {
   display: flex;
   flex-flow: column wrap;
