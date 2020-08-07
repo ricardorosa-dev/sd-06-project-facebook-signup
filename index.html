@@ -11,23 +11,21 @@
   <body>
     <!--header start-->
     <header class="top-bar">
-      <div class="facebook-logo-container" background-color="# 00">
         <img id="facebook-logo" src="imgs/facebook-logo.png">
-      </div>
-      <form class="facebook-login">
-        <div class="form-group">
-          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-          <input id="user-email-phone" type="text" class="email">
-        </div>
-        <div class="form-group">
-          <label id="user-password-label" for="user-password">Senha</label>
-          <input id="user-password" type="password" class="password">
-        </div>
-        <div class="form-control">
-          <button id="button-login" type="submit">Entrar</button>
-        </div>
-        <a class="esqueceu" href="">Esqueceu sua conta?</a>
-      </form>
+        <form class="facebook-login">
+          <div class="form-group">
+            <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+            <input id="user-email-phone" type="text" class="email">
+          </div>
+          <div class="form-group">
+            <label id="user-password-label" for="user-password">Senha</label>
+            <input id="user-password" type="password" class="password">
+          </div>
+          <div class="form-control">
+            <button id="button-login" type="submit">Entrar</button>
+          </div>
+          <!-- <a class="esqueceu" href="">Esqueceu sua conta?</a> -->
+        </form>
     </header>
     <!--header end-->
     <!--Inicio do conteúdo de baixo da página-->
@@ -48,7 +46,20 @@
           </div>
           <input type="text" name="phone_email" placeholder="Celular ou email">
           <input type="password" name="password" placeholder="Nova senha">
-
+          <label id="label-birthdate" for="">Data de nascimento</label>
+          <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
+          <label for="" id="label-gender">Gênero</label>
+          <div class="gender-radio">
+            <label for="masculino">
+              <input id="masculino" type="radio" name="gender" >Masculino
+            </label>
+            <label for="feminino">
+              <input id="feminino" type="radio" name="gender" >Feminino
+            </label>
+            <label for="custom">
+              <input id="custom" type="radio" name="gender" >Personalizado
+            </label>
+          </div>
         </form>
       </div>
     </div>
