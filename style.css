@@ -22,11 +22,6 @@
   justify-content: flex-end;
 }
 
-.formulario {
-  align-items: center;
-  display: flex;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
