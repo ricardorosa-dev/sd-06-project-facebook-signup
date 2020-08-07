@@ -125,7 +125,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 Caso você faça o _download_ de bibliotecas externas, utilize o diretório _libs_ (a partir da raiz do projeto) para colocar os arquivos (*.css, *.js, etc...) baixados.
 
-### 1 - Crie uma barra azul na parte superior da página com a classe top-bar
+- [x] 1 - Crie uma barra azul na parte superior da página com a classe top-bar
 
   Pontos importantes:
   * Esta barra deve possuir a classe top-bar
@@ -133,7 +133,7 @@ Caso você faça o _download_ de bibliotecas externas, utilize o diretório _lib
   * A classe top-bar deve possuir a propriedade `background-color: rgb(66, 103, 178)`
 
 
-### 2 - A barra superior deve conter o logotipo do Facebook no canto esquerdo com a classe facebook-logo
+- [x] 2 - A barra superior deve conter o logotipo do Facebook no canto esquerdo com a classe facebook-logo
 
   Pontos importantes:
   * O logotipo deve estar alinhado a esquerda dentro da barra azul
@@ -141,7 +141,7 @@ Caso você faça o _download_ de bibliotecas externas, utilize o diretório _lib
   * O atributo src do logotipo deve apontar para imgs/facebook-logo.png
 
 
-### 3 - A barra superior deve conter um formulário de autenticação no canto direito
+- [x] 3 - A barra superior deve conter um formulário de autenticação no canto direito
 
   Pontos importantes:
   * O formulário deve estar alinhado a direita dentro da barra azul
@@ -149,7 +149,7 @@ Caso você faça o _download_ de bibliotecas externas, utilize o diretório _lib
   * O formulário deve ser um flex container
 
 
-### 4 - Crie uma classe no CSS chamada form-group
+- [x] 4 - Crie uma classe no CSS chamada form-group
 
   Pontos importantes:
   * Essa classe deve possuir a propriedade `diplay: flex`
