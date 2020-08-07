@@ -4,15 +4,15 @@ body {
 }
 
 .top-bar {
+    align-items: flex-end;
     background-color: rgb(66, 103, 178);
     color: white;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    left: 0;
+    padding: 20px 50px;
+    top: 0;
+    width: 100%;
 }
 
 .facebook-login {
@@ -24,18 +24,17 @@ label {
     font: arial;
 }
 
-input[type='submit'],
 label {
-    margin-top: 1rem;
     background-color: rgb(66, 103, 178);
-    margin: 1px solid black;
     color: white;
+    margin-top: 1rem;
+    margin: 1px solid black;
 }
 
 .img {
     border: 0;
-    width: 537px;
     height: 195px;
+    width: 537px;
 }
 
 .form-group {
@@ -56,7 +55,9 @@ label {
     width: 800px;
 }
 
-.right-content {}
+.right-content {
+    width: 300px;
+}
 
 
 /* O botão deve estar alinhado a
