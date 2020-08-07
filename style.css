@@ -27,15 +27,12 @@ body {
 }
 
 .form-control {
+  align-self: flex-end;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin: 0 8px;
-}
-
-.form-control {
-  align-self: flex-end;
 }
 
 .form-group button {
