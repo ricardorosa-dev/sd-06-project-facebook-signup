@@ -22,4 +22,25 @@
 
 .main-content {
   display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form-sign {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-birthday {
+  display: flex;
+  flex-direction: column;
 }
