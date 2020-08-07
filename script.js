@@ -23,6 +23,11 @@ register.addEventListener('click', function () {
   }
 });
 const personalized = document.querySelector('#personalizado');
-personalized.addEventListener('click', function() {
-  console.log('testando');
+personalized.addEventListener('click', function () {
+  const newField = document.createElement('input');
+  newField.type = 'text';
+  newField.name = 'gender-custom';
+  newField.placeholder = 'Gênero (opcional)';
+  const genderFather = document.querySelector('.other-fields');
+  genderFather.insertBefore(newField, document.querySelector('#facebook-register'));
 });
