@@ -3,7 +3,13 @@ body {
   padding: 0;
 }
 
+.facebook-login {
+	align-self: center;
+	display: flex;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
-  display: flex;
+	display: flex;
+	justify-content: space-around;
 }
