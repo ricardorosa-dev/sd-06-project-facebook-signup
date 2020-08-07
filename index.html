@@ -34,9 +34,16 @@
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form class="main-form" action="" method="GET">
-          <input name="firstname" type="text" required="required" placeholder="Nome">
-          <input name="lastname" type="text" required="required" placeholder="Sobrenome">
-          <input name="phone_email" type="text" required="required" placeholder="Celular ou email">
+          <did class="full-name">
+            <input name="firstname" type="text" required="required" placeholder="Nome">
+            <input name="lastname" type="text" required="required" placeholder="Sobrenome">
+          </did>
+          <div class="contact">
+            <input name="phone_email" type="text" required="required" placeholder="Celular ou email">
+          </div>
+          <div class="new-password">
+            <input name="password" type="password" required="required" placeholder="Nova senha">
+          </div>
         </form>
       </div>
     </main>
