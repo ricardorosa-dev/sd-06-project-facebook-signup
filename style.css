@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -10,39 +11,48 @@ body {
   justify-content: space-around;
   padding: 15px;
 }
+
 .top-bar img {
   width: 200px;
 }
+
 .facebook-login {
   align-items: center;
   color: white;
   display: flex;
   flex-wrap: wrap;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
   margin: 15px;
 }
+
 .form-control button {
   background-color: #4267b2;
   border: 1px solid #29487d;
   color: white;
   padding: 4px;
 }
+
 .form-control {
   align-self: flex-end;
 }
+
 .form-group label {
   margin-bottom: 5px;
 }
+
 .form-group input {
   border: none;
   height: 25px;
 }
+
 .form-group p {
   margin-top: 5px;
 }
+
 .form-group:nth-child( 2 ) {
   position: relative;
   top: 7px;
