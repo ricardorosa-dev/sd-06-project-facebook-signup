@@ -2,26 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Project Facebook Signup</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Project Facebook Signup</title>
 </head>
 
 <body>
-    <Header class="top-bar">
-
-        <img class="facebook-logo" alt="Logo-Facebook" src="imgs/facebook-logo.png">
-        <form class="facebook-login">
-            <label id="user-email-phone-label" class="form-group" for="user-email-phone"">Email ou telefone
-            <input type="text" id="user-email-phone" name="name-usu" placeholder="Usuario"></label>
-            <label id="user-password-label" class="form-group" for="user-password">Senha
-            <input type="password" id="user-password" name="pass" placeholder="Senha"></label>
-            <button id="" type="submit">Entrar</button>
-        </form>
-
-    </Header>
-
+  <Header class="top-bar">
+    <img class="facebook-logo" alt="Logo-Facebook" src="imgs/facebook-logo.png">
+    <form class="facebook-login">
+      <div class="form-group">
+        <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+        <input type="text" id="user-email-phone" name="name-usu" placeholder="Usuario">
+      </div>
+      <div class="form-group">
+        <label id="user-password-label" class="form-group" for="user-password">Senha </label>
+        <input type="text" id="user-password" name="senha" placeholder="Senha">
+      </div>
+      <div class="form-control">
+        <button id="button-login" type="submit">Entrar</button>
+      </div>
+    </form>
+  </Header>
+  <script type="text/javascript" src="/script.js"></script>
 </body>
 
 </html>
