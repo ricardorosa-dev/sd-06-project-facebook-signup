@@ -7,3 +7,10 @@
   align-items: flex-start;
   display: flex;
 }
+.facebook-login {
+  display: flex;
+  flex-direction: row;  
+}
+.input {
+    justify-content: center;
+}
