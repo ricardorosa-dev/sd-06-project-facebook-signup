@@ -8,11 +8,16 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
   padding: 15px;
 }
 
+.facebook-logo {
+  display: flex;
+  margin-left: 0;
+}
+
 .top-bar img {
+  justify-content: flex-start;
   width: 200px;
 }
 
@@ -20,7 +25,7 @@ body {
   align-items: center;
   color: white;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .form-group {
@@ -28,8 +33,6 @@ body {
   flex-direction: column;
   margin: 15px;
 }
-
-/* comentário para sincronização */
 
 .form-control button {
   background-color: #4267b2;
