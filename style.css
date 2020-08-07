@@ -22,3 +22,7 @@ header , body , img , form , input , button , footer , div , p , span , h1 , h2 
 .form-control {
   align-self: flex-end;
 }
+
+.main-content {
+  display: flex;
+}
