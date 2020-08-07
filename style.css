@@ -1,18 +1,18 @@
 body {
-  background-color: lightgoldenrodyellow;
-  margin: 0;
-  padding: 0;
-  max-width: 1366px;
-  max-height: 768px;
-  display: flex;
   align-items: center;
+  background-color: lightgoldenrodyellow;
+  display: flex;
   flex-direction: column;
+  margin: 0;
+  max-height: 768px;
+  max-width: 1366px;
+  padding: 0;
 }
 
 .top-bar {
   align-items: center;
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
   justify-content: space-between;
   height: 83px;
   width: 100%;
@@ -23,6 +23,6 @@ body {
 }
 
 .form-group {
-  display: flex;
   align-items: center;
+  display: flex;
 }
