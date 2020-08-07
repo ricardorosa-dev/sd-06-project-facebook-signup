@@ -8,27 +8,27 @@
   <script src="script.js"></script>
   <title>Document</title>
 </head>
-
 <body>
   <header class="top-bar">
     <div>
-      <img src="imgs/facebook-logo.png" alt="facebook logo" class="facebook-logo"></a>
+      <a href="https://www.facebook.com/"><img src="imgs/facebook-logo.png" alt="facebook logo" class="facebook-logo"></a>
     </div>
     <div>
       <form action="#" method="GET" class="facebook-login">
-        <div class="facebook-login-input">
-          <label for="email-telefone">Email ou telefone</label>
-          <input type="text" name="email-telefone" id="email-telefone" required="required">
+        <div class="form-group">
+          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" name="email-telefone" id="user-email-phone" required="required">
         </div>
-        <div class="facebook-login-input">
-          <label for="password">Senha</label>
-          <input type="password" name="password" id="password" required="required">
-          <a href="#"><p class="linkSenha" >Esqueceu a conta?</p></a>
+        <div class="form-group">
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input type="password" name="password" id="user-password" required="required">
+          <a href="#"><p>Esqueceu a conta?</p></a>
         </div>
-        <button type="submit">Entrar</button>
+        <div class="form-group">
+          <button type="submit">Entrar</button>
+        </div>
       </form>
     </div>
   </header>
-
 </body>
 </html>
