@@ -1,6 +1,6 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
-  color: #fff;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -14,6 +14,7 @@
 .form-control {
   align-self: flex-end;
 }
+
 .facebook-login {
   align-items: center;
   display: flex;
@@ -22,21 +23,21 @@
   justify-content: space-around;
   width: 900px;
 }
-#button-login {
+
+.button-login {
   background-color: #4c6396;
-  border-color: ;
   border-radius: 5px;
-  color: #fff;
+  color: white;
   font-family: Helvetica, sans-serif, Impact;
   margin: 12px;
   width: 90px;
 }
 
-#button-login:hover {
+.button-login:hover {
   background-color: #335294;
 }
 
-#pass-forget {
+.pass-forget {
   font-size: 0.7em;
-  opacity: 70%;
+  opacity: 0.7;
 }
