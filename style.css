@@ -12,8 +12,8 @@
 }
 
 .form-control {
-  display: flex;
   align-items: center;
+  display: flex;
   margin: 10px;
 }
 
