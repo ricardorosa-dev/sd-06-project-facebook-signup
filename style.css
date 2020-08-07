@@ -7,5 +7,5 @@ body {
 .top-bar {
   align-items: center; /* Alinhar conteudo no meio da barra - vertical */
   background-color: rgb(66, 103, 178); /* Requisito 1 */
-  display: flex; /* Requisito 1*/
+  display: flex; /* Requisito 1 */
 }
