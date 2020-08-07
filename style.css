@@ -79,3 +79,7 @@ a {
 .quick-easy {
   color: black;
 }
+
+.nome {
+  display: flex;
+}
