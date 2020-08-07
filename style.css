@@ -6,4 +6,14 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-around;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.facebook-login-input {
+  display: flex;
+  flex-direction: column;
 }
