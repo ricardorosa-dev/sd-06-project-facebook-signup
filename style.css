@@ -1,15 +1,17 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .facebook-login {
   align-items: center;
   display: flex;
+  flex-direction: column;
 }
 
 .form-group {
-  align-items: center;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
