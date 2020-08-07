@@ -24,7 +24,10 @@ body {
 }
 
 .main-content {
-  background: linear-gradient(white, #D3D8E8);
+  background: linear-gradient(white, #d3d8e8);
   display: flex;
-  height: 200px;
+}
+
+.left-content {
+  width: 800px;
 }
