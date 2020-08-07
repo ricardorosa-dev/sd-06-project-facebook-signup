@@ -8,6 +8,8 @@
 
 .facebook-login {
     font-size: 12px;
+    margin-right: 0;
+    display: inline;
 }
 
 body {
@@ -19,4 +21,12 @@ body {
     color: #fff;
     margin-bottom: 6px;
     text-align: left;
+}
+
+.page-content {
+    width: 980px;
+    padding-top: 13px;
+    display: flex;
+    align-content: center;
+    margin: 0 auto;
 }
