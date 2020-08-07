@@ -17,6 +17,11 @@ body {
   flex-direction: column;
 }
 
+.main-content {
+	display: flex;
+	flex-direction: row;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
