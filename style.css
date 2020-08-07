@@ -114,7 +114,7 @@ html {
   justify-content: space-between;
 }
 
-.radio label {
+.radio_group .radio label {
   color: #1d2129;
   font-size: 12px;
   width: 33%;
