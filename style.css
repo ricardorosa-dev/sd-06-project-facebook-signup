@@ -6,11 +6,18 @@
 .facebook-logo {
   align-items: flex-start;
   display: flex;
+  margin-top: 0;
+  width: 190px;
+
 }
 .facebook-login {
   display: flex;
   flex-direction: row;  
 }
 .input {
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2em;
+  padding-left: 10px;
 }
