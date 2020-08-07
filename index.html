@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" lang="en">
   <title>Facebook - Log In or Sign Up</title>
@@ -14,15 +15,12 @@
     </div>
     <form class="facebook-login" method="POST" enctype="multipart/form-data">
       <div class="form-group">
-        <label for="user-email-phone" id="user-email-phone-label">Email ou telefone
-        </label>
+        <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
         <input type="text" id="user-email-phone">
       </div>
       <div class="form-group">
-        <label for="user-password" id="user-password-label">Senha
-        </label>
+        <label for="user-password" id="user-password-label">Senha</label>
         <input type="password" id="user-password">
-        <!-- <a href="#">Forgot account?</a> Commentei essa linha porque do jeito que eles pedem, não vai ficar legal com o forgot account -->
       </div>
       <div class="form-control">
         <button id="button-login" type="submit">Entrar</button>
@@ -47,7 +45,12 @@
         <input id="birth" name="birth" type="text">
     </form>
   </article>
-
+  <script>
+    document.querySelector('#button-login').addEventListener('click', (e) => {
+      const EMAILORPHONE = document.querySelector('#user-email-phone').value;
+      alert(EMAILORPHONE);
+    });
+  </script>
 </body>
 
 </html>
