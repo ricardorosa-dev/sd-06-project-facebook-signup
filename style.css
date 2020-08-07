@@ -48,6 +48,6 @@ body {
   width: 120px;
 }
 
-form input[name='phone_email'] , form input[name='password'] {
+.right-content input:nth-of-type( 3 ) , .right-content input:nth-of-type( 4 ) {
   width: 100%;
 }
