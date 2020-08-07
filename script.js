@@ -5,7 +5,6 @@ function clickbutton() {
   alert(userEmailPhone.value);
 }
 
-
 window.onload = function () {
   buttonLogin.addEventListener('click', clickbutton);
 };

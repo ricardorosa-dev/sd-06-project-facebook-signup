@@ -3,8 +3,7 @@ body {
   padding: 0;
 }
 
-/* Rodrigo */
-
+/* RODRIGO */
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -20,8 +19,8 @@ body {
 }
 
 .form-group {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
 }
 
 .form-control {
@@ -29,8 +28,7 @@ body {
   display: flex;
 }
 
-/* Cleyton */
-
+/* CLEYTON */
 .main-content {
   display: flex;
   flex-direction: row;
@@ -43,3 +41,22 @@ body {
   width: 800px;
 }
 
+.right-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.birthdate {
+  display: flex;
+  flex-direction: column;
+}
