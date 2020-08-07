@@ -1,160 +1,131 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: 'Lucida Grande', tahoma,verdana,arial,sans-serif;
+/* Estilização da página */
+body {
+	background: linear-gradient(180deg, #ffffff, #f7f7f7, #dfe3ee);
+	box-sizing: border-box;
+	font-family: 'Lucida Grande', tahoma,verdana,arial,sans-serif;
+	margin: none;
+	padding: none;
 }
-
 /* Estilização do 'Esqueceu a conta?' - Parte 01 */
 .remember-password {
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 10px;
-  text-align: left;
-  color: lightgray;
+	color: lightgray;
+	cursor: pointer;
+	font-size: 10px;
+	text-align: left;
+	text-decoration: none;
 }
-
 /* Estilização do 'Esqueceu a conta?' - Parte 02 */
 .remember-password:hover {
-  color: lightgray;
-  text-decoration: underline;
+	color: lightgray;
+	text-decoration: underline;
 }
-
-/* Estilização da cor de fundo da página */
-body {
-  background: linear-gradient(180deg, #ffffff, #f7f7f7, #dfe3ee);
-}
-
 /* Remoção do estilo das elementos 'li' */
 li {
-  list-style: none;
+	list-style: none;
 }
-
 /* Estilização do 'header' (barra superior) */
 .top-bar {
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  height: 68px;
-  padding: 5px;
+	background-color: rgb(66, 103, 178);
+	display: flex;
+	height: 68px;
+	padding: 5px;
 }
-
 /* Estilização dos elementos 'div' contidos no 'header' */
 .top-bar div {
-  font-size: 10px;
-  padding: 5px;
+	font-size: 10px;
+	padding: 5px;
 }
-
 /*  Estilização dos elementos forms */
 .facebook-login {
-  display: flex;
-  align-items: baseline;
+	margin-left: 20px;
 }
-
 /* Estilização dos elementos 'label' contidos no 'header' */
 .top-bar label {
-  color:white;
-  padding: 2px;
+	color: white;
+	padding: 2px;
 }
-
 /* Estilização da logomarca Facebook (Estabelecendo espaçamentos)*/
-.facebook-logo-div { 
-  flex-shrink: 0;
-  margin-left: 12%;
-  margin-right: 24.5%;
-  padding-top: 0px;
+.facebook-logo-div {
+	flex-shrink: 0;
+	margin-left: 12%;
+	margin-right: 24.5%;
+	padding-top: none;
 }
-
 /* Estilização do elemento 'div' (Estabelecendo espaçamentos)*/
-.facebook-login { 
-margin-left: 20px;  
-}
-
 /* Botão 'Entrar' do formulário*/
-.login-button { 
-  background-color: #4267b2;
-  border-radius: 3px;
-  cursor: pointer;
-  opacity: 0.8;
-  border-color: #29487d;
-  border: 1px solid gray;
-  opacity: 0.8;
+.login-button {
+	background-color: #4267b2;
+	border: 1px solid gray;
+	border-color: #29487d;
+	border-radius: 3px;
+	cursor: pointer;
+	opacity: 0.8;
 }
-
 .login-button:hover {
-  opacity: 1;
+	opacity: 1;
 }
-
 /* Estilização do input do botão 'Entrar'*/
 .login-button-input {
-  border-top: 10px;
-  padding: 2px 2px 2px 2px;
-  color: white;
-  background: none;
-  border: 0;
-  cursor: pointer;
-  font-size: 11px;
-  font-weight: bold;
+	background: none;
+	border: 0;
+	border-top: 10px;
+	color: white;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 2px 2px 2px 2px;
 }
-
 /* Estilização do corpo da página*/
 .main-container {
-  display: flex;
-  padding-top: 10px;
+	display: flex;
+	padding-top: 10px;
 }
-
 /* Estilização da parte esquerda da página*/
 .section-left {
-  display: flex;
-  flex-direction: column;
-  padding-left: 4%; 
+	display: flex;
+	flex-direction: column;
+	padding-left: 4%;
 }
-
 /* Estilização do elemento 'h2' da parte esquerda da página*/
-.section-left h2 {
-  color: #0e385f;
-  font-weight: bold;
+.selection-left-title {
+	color: #0e385f;
+	font-weight: bold;
 }
-
 /* Estilização da imagem da parte esquerda da página*/
 .network-img {
-  min-width: 400px;
-  flex-shrink: 0;
- }
-
+	flex-shrink: 0;
+	min-width: 400px;
+}
 /* Declaração da classe tooltip para exibir descrição ao passar o cursor na logomarca facebook'*/
 .tooltip {
-  position: relative;
-  display: flex;
+	display: flex;
+	position: relative;
 }
-
 /* Estilização dos termos de serviço - Parte 01 */
 .terms-class {
-  text-decoration: none;
-  cursor: pointer;
-  color: #385898;
+	color: #385898;
+	cursor: pointer;
+	text-decoration: none;
 }
-
 /* Estilização dos termos de serviço - Parte 02 */
 .terms-class:hover {
-  color: #385898;
-  text-decoration: underline;
+	color: #385898;
+	text-decoration: underline;
 }
-
 .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 190px;
-  height: 15px;
-  background-color: black;
-  border: 1px solid white;
-  color: #fff;
-  text-align: center;
-  position: absolute;
-  z-index: 1;
-  top: 80%;
-  left: 50%;
-  margin-left: -60px;
+	background-color: black;
+	border: 1px solid white;
+	color: #fff;
+	height: 15px;
+	left: 50%;
+	margin-left: -60px;
+	position: absolute;
+	text-align: center;
+	top: 80%;
+	visibility: hidden;
+	width: 190px;
+	z-index: 1;
 }
-
 .tooltip:hover .tooltiptext {
-  visibility: visible;
+	visibility: visible;
 }
