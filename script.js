@@ -3,8 +3,8 @@ function buttonLogin() {
   const inputEmail = document.getElementById('user-email-phone');
 
   botaoEntrar.addEventListener('click', function () {
-   window.alert(inputEmail.value);
-});
+    window.alert(inputEmail.value);
+  });
 }
 
 window.onload = function () {
