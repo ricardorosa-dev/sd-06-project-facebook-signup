@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   padding: 0;
 }
@@ -25,7 +25,3 @@
 .form-control {
   align-self: flex-end;
 }
-
-
-
-
