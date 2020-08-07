@@ -7,12 +7,12 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  padding-left: 13%;
-  padding-right: 13%;
+  padding-left: 170px;
+  padding-right: 170px;
 }
 
 .facebook-logo {
-  margin-top: 18px;
+  padding-top: 38px;
 }
 
 .facebook-login {
@@ -28,7 +28,7 @@ body {
 
 .form-control {
   align-self: flex-end;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .main-content {
@@ -45,6 +45,17 @@ body {
   font-size: 20px;
   font-weight: 900;
   line-height: 29px;
+  margin-left: 190px;
+  margin-top: 30px;
   width: 400px;
   word-spacing: -1px;
+}
+
+.face-net {
+  margin-left: 190px;
+  margin-top: -30px;
+}
+
+.right-content {
+  width: 300px;
 }
