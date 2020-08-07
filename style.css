@@ -34,5 +34,11 @@ body {
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+}
+
+.name-inputs {
+  display: flex;
 }
