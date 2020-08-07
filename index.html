@@ -10,6 +10,18 @@
     <header>
       <div class="top-bar">
         <img class="facebook-logo" src="imgs/facebook-logo.png">
+        <div class="login-password">
+          <form class="facebook-login">
+            <div>
+              <label for="">E-mail ou telefone</label>
+              <input name="login" required="required" type="text">
+          </div>
+          <div>
+            <label for="">Senha</label>
+            <input name="password" required="required" type="text">
+        </div>
+          </form>
+        </div>
       </div>
       </header>
     <div class="main-content">
@@ -22,8 +34,8 @@
         <div class="quick-easy">É rápido e fácil.</div>
         <form action="" method="GET">
           <div class="form-name">
-            <input type="text" name="firstname" id="name" placeholder="Nome">
-            <input type="text" name="lastname" id="" placeholder="Sobrenome">
+            <input type="text" name="firstname" id="name" placeholder="Nome" autocomplete="off">
+            <input type="text" name="lastname" id="" placeholder="Sobrenome" autocomplete="off">
           </div>
         </form>
       </div>
