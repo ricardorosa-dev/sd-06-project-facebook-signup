@@ -13,8 +13,8 @@ header , body , img , form , input , button , footer , div , p , span , h1 , h2 
 .header-content {
   display: flex;
   justify-content: space-between;
-  width: 1100px;
   margin: 0 auto;
+  width: 1100px;
 }
 
 .facebook-login {
@@ -32,10 +32,15 @@ header , body , img , form , input , button , footer , div , p , span , h1 , h2 
 
 .main-content {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
   width: 1100px;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
