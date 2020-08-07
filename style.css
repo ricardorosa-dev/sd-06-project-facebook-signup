@@ -85,7 +85,7 @@ form label {
 .main-content {
   background-color: #e9ebee;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
 }
 
@@ -105,4 +105,9 @@ form label {
   margin-top: 40px;
   width: 400px;
   word-spacing: -1px;
+}
+
+.right-content {
+  background-color: orange;
+  width: 300px;
 }
