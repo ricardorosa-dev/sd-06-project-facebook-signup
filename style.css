@@ -1,4 +1,4 @@
-header, body, img, form, input, button, footer, div, p, span, h1, h2, h3 {
+header , body , img , form , input , button , footer , div , p , span , h1 , h2 , h3 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,4 +12,9 @@ header, body, img, form, input, button, footer, div, p, span, h1, h2, h3 {
 
 .facebook-login {
   display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
