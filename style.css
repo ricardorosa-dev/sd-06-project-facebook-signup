@@ -53,3 +53,13 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.left-content {
+  width: 800px;
+}
