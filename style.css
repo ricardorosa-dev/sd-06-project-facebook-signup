@@ -11,7 +11,6 @@ header {
   height: 82px;
   justify-content: space-between;
   margin: 0 auto;
-  position: absolute;
   width: 100%;
 }
 
@@ -39,5 +38,16 @@ header img {
 
 .main-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
