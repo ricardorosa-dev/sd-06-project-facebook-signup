@@ -36,6 +36,19 @@ body {
   display: flex;
 }
 
-.lef-content {
+.left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.full-name {
+  display: flex;
+}
+
+.form-register {
+  display:flex;
+  flex-direction: column;
 }
