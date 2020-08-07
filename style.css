@@ -11,6 +11,7 @@ body {
 
 .login-password {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-content {
@@ -25,7 +26,12 @@ body {
   width: 800px;
 }
 
-.form-content {
+.form-group {
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
 }
