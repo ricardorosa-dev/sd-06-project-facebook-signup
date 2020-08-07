@@ -8,11 +8,11 @@
   display: flex;
   margin-top: 0;
   width: 190px;
-
 }
+
 .facebook-login {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
 }
 .input {
   display: flex;
