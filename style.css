@@ -27,6 +27,12 @@ body {
 }
 
 .button-login {
+<<<<<<< HEAD
+  background-color:rgb(66, 103, 178) ;
+  border:1px solid black;
+  color: #fff;
+  font-weight: bold;
+=======
   background-color: rgb(66, 103, 178);
   border: 1px solid black;
   color: white;
@@ -48,6 +54,7 @@ body {
 
 .right-content {
   width: 300px;
+>>>>>>> bc8095635c6e9a8803c10322fad7b2ae4e0d91ca
 }
 
 .right-content form {
