@@ -18,9 +18,11 @@ body {
 }
 
 .left-content {
-  width: 800px;
+  max-width: 800px;
 }
 
 .right-content {
-  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
 }
