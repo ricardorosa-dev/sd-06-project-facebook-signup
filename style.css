@@ -19,14 +19,13 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 25px;
 }
 
 .right-content {
   width: 300px;
 }
 
-<<<<<<< HEAD
-=======
 .form-name {
   display: flex;
   flex-wrap: wrap;
@@ -38,15 +37,9 @@ body {
   width: 150px;
 }
 
->>>>>>> a708e04a032c801aa7904c924302c085518e9969
 .facebook-login {
   display: flex;
 }
-
-<<<<<<< HEAD
-/* .login-password {
-  display: flex;
-} */
 
 .form-group {
   display: flex;
@@ -57,8 +50,11 @@ body {
   display: flex;
   align-self: flex-end;
 }
-=======
+
 .login-password {
   display: flex;
 }
->>>>>>> a708e04a032c801aa7904c924302c085518e9969
+
+.facebook-logo {
+  display: flex;
+}
