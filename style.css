@@ -6,9 +6,8 @@
   justify-content: space-around;
   padding: 20px 10px;
 }
-img {
-  display: flex;
-  align-items: flex-start
+.facebook-logo {
+  justify-content: flex-start;
 }
 
 .form-group {
