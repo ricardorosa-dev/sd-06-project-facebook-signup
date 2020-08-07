@@ -36,9 +36,9 @@ altGender.addEventListener('change', function () {
   if (document.getElementById('other').checked === true) {
     const elementInput = document.createElement('input');
     const genderOptions = document.getElementsByClassName('gender')[0];
-    elementInput.type = "text";
-    elementInput.name = "gender-custom";
-    elementInput.placeholder = "Gênero (opcional)";
+    elementInput.type = 'text';
+    elementInput.name = 'gender-custom';
+    elementInput.placeholder = 'Gênero (opcional)';
     genderOptions.appendChild(elementInput);
   }
 });
