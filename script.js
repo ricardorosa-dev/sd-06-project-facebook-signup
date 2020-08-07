@@ -9,4 +9,4 @@ function buttonLogin() {
 
 window.onload = function () {
 	buttonLogin();
-}
+};
