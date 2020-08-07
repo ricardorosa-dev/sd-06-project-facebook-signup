@@ -38,10 +38,23 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form action="">
                 <div class="linha">
-                    <input class="firstname" value="firstname" placeholder="Nome" type="text">
-                    <input class="lastname" value="lastname" placeholder="Sobrenome" type="text">
+                    <input class="firstname" name="firstname" placeholder="Nome" type="text">
+                    <input class="lastname" name="lastname" placeholder="Sobrenome" type="text">
                 </div>
-                <input value="phone_email" placeholder="Celular ou email" type="text">
+                <div>
+                    <input name="phone_email" placeholder="Celular ou email" type="text">
+                    <input name="password" placeholder="Nova senha" type="password">
+                </div>                
+                <div>
+                    <label id="label-birthdate" >Data de nascimento</label>
+                    <input name="birthdate" placeholder="dd/mm/aaaa" type="date">
+                </div>
+                <div>
+                    <label id="label-gender" for="">Gênero</label>
+                    <label for="female"><input type="radio" name="Feminino" id="female">Feminino</label>
+                    <label for="male"><input type="radio" name="Masculino" id="male">Masculino</label>
+                    <label for="personalized"><input type="radio" name="Personalizado" id="personalized">Personalizado</label>
+                </div>
             </form>
         </div>
     </div>
