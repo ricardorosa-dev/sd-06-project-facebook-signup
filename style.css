@@ -1,3 +1,5 @@
+
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -21,6 +23,35 @@
   width: 140px;
 }
 
-.input-contact {
+.input-contact  {
   width: 292px;
 }
+
+.input-gender {
+  display: inline-block;
+  width: 28%;
+  text-align: left;
+
+}
+
+.label {
+  display: block;
+}
+
+.gender-control {
+  display: flex;
+}
+
+.gender-type {
+  width: 33%;
+  display: flex
+}
+
+.input-gender{
+  flex-basis:1;
+}
+
+.gender-text {
+  font-size: 0.85em;
+}
+
