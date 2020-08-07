@@ -77,4 +77,5 @@ header label {
 
 .gender {
   display: flex;
+  align-items: center;
 }
