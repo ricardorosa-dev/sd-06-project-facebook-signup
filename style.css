@@ -68,3 +68,12 @@ body {
   left: 0;
   position: absolute;
 }
+
+.main-content {
+  display: flex;
+  background-image: linear-gradient(white, rgb(233, 235, 238) );
+}
+
+.left-content {
+  width: 800px;
+}
