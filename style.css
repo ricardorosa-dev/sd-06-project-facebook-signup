@@ -1,4 +1,25 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header-content-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 60%;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
+  display: flex;
+  width: 100%;
+}
+
+.facebook-login {
   display: flex;
 }
