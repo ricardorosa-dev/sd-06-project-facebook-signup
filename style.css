@@ -3,39 +3,39 @@ body {
     font-size: 12px;
 }
 
-.facebook-login {
+​ .facebook-login {
     display: flex;
 }
 
-.form-control {
+​ .form-control {
     align-self: flex-end;
 }
 
-.form-group {
+​ .form-group {
     display: flex;
     flex-direction: column;
 }
 
-.img {
+​ .img {
     border: 0;
     height: 195px;
     width: 537px;
 }
 
-.left-content {
+​ .left-content {
     width: 800px;
 }
 
-.main-content {
+​ .main-content {
     display: flex;
     flex-direction: row;
 }
 
-.right-content {
+​ .right-content {
     width: 300px;
 }
 
-.top-bar {
+​ .top-bar {
     align-items: flex-end;
     background-color: rgb(66, 103, 178);
     color: white;
@@ -46,3 +46,5 @@ body {
     top: 0;
     width: 100%;
 }
+
+;
