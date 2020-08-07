@@ -30,5 +30,12 @@
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+}
+
+.form-sign {
+  display: flex;
+  flex-direction: row;
 }
