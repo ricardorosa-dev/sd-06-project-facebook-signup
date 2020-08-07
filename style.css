@@ -17,7 +17,7 @@ body {
 .facebook-logo {
   float: left;
   margin-top: 15px;
-  width: 170px;
+  width: 180px;
 }
 
 .form-group {
@@ -46,7 +46,7 @@ body {
 .form-control {
   align-self: center;
   margin-left: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 }
 p {
   margin: 0;
@@ -60,21 +60,23 @@ a {
 
 .main-content {
   display: flex;
-<<<<<<< HEAD
-  justify-content: space-around;
-=======
   flex-direction: row;
+  justify-content: space-between;
   width: 100%;
->>>>>>> 2285b85357e8b3d539bb0a4ff5f3405891c7f0a5
 }
 
 .left-content {
   width: 800px;
 }
-<<<<<<< HEAD
 
 .right-content {
   width: 300px;
-} 
-=======
->>>>>>> 2285b85357e8b3d539bb0a4ff5f3405891c7f0a5
+}
+
+.quick-easy {
+
+}
+
+.right-content {
+  width: 300px;
+}
