@@ -30,3 +30,7 @@ body {
   color: white;
   font-weight: bold;
 }
+
+.main-content {
+  display: flex;
+}
