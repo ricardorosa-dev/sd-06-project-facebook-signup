@@ -7,3 +7,8 @@
 .facebook-logo {
   justify-content: flex-start;
 }
+
+.facebook-login {
+  display: flex;
+  justify-content: flex-end;
+}
