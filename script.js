@@ -10,21 +10,15 @@ function invalidFields() {
 }
 
 function checkEmpty() {
-  let isEmpty = 0;
-
   if (document.getElementById('firstname').value === '') {
-    isEmpty = 1;
+    invalidFields();
   } else if (document.getElementById('lastname').value === '') {
-    isEmpty = 1;
+    invalidFields();
   } else if (document.getElementById('phone_email').value === '') {
-    isEmpty = 1;
+    invalidFields();
   } else if (document.getElementById('password').value === '') {
-    isEmpty = 1;
+    invalidFields();
   } else if (document.getElementById('birthdate').value === '') {
-    isEmpty = 1;
-  }
-
-  if (isEmpty === 1) {
     invalidFields();
   }
 }
