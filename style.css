@@ -44,3 +44,8 @@
   display: flex;
   flex-flow: row nowrap;
 }
+
+.subscription-form-2 {
+  display: flex;
+  flex-flow: row ;
+}
