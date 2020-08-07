@@ -1,8 +1,9 @@
 function handleLoginButton() {
   const loginBtn = document.getElementById('button-login');
+  const userEmailPhone = document.getElementById('user-email-phone');
 
   loginBtn.onclick = () => {
-    alert('Email ou telefone');
+    alert(userEmailPhone.value);
   };
 }
 
@@ -21,7 +22,7 @@ function showErrorMsg() {
 }
 
 function createHeyJoe(obj) {
-  const displayedMsg = `Olá ${obj.firstname} ${obj.lastname}, o seu cadastro foi feito no ${obj.phone_email}, você nasceu em ${obj.birthdate} e escolheu o gênero ${obj.gender}`;
+  const displayedMsg = `Olá, ${obj.firstname} ${obj.lastname}, o seu cadastro foi feito no ${obj.phone_email}, você nasceu em ${obj.birthdate} e escolheu o gênero ${obj.gender}`;
 
   const displayElement = document.createElement('p');
   displayElement.appendChild(document.createTextNode(displayedMsg));
