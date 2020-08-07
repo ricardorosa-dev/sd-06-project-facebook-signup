@@ -11,6 +11,11 @@ body {
 
 .facebook-login {
   display: flex;
+  float: right;
+}
+
+.facebook-logo{
+  float: left;
 }
 
 .form-group {
