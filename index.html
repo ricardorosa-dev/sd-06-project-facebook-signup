@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Projeto | Facebook sing up</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <header>
+    <nav class="top-bar">
+      <div class="container">
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
+        <form action="">
+          <label for="email">Email or Phone</label>
+          <input type="email" name="email" id="email">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
+        </form>
+        <button type="submit">Log In</button>
+        <a href="#">Forgot account?</a>
+      </div>
+    </nav>
+  </header>
+  <main class="main-content">
+    <div class="container">
+      <div class="image-map">
+        <img src="imgs/networking.png" alt="">
+      </div>
+      <div class="form-singup">
+        <h2>Sing Up</h2>
+        <h3>It’s quick and easy.</h3>
+        <form action="">
+          <input type="text" name="first-name" id="first-name" placeholder="First name">
+          <input type="text" name="last-name" id="last-name" placeholder="Last name">
+          <input type="text" name='email-phone' id="email-phone" placeholder="Mobile number or email">
+          <input type="password" name="new-password" id='new-password' placeholder="New password">
+        </form>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
