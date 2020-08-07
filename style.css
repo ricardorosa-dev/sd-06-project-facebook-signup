@@ -13,12 +13,13 @@ body {
 .facebook-login {
   align-self: center;
   display: flex;
-  margin-right: 180px;
+  margin-right: 220px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-right: 18px;
 }
 
 .form-control {
@@ -26,5 +27,29 @@ body {
 }
 
 .facebook-logo {
-  margin-left: 150px;
+  margin-left: 185px;
+}
+
+.label-login {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.input-login {
+  height: 22px;
+}
+
+.button-log {
+  background-color: rgb(67, 106, 184);
+  border: 1px solid black;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-weight: 900;
+  padding: 5px;
+}
+
+.button-log:hover {
+  background-color: rgb(50, 88, 165);
 }
