@@ -12,6 +12,7 @@ body {
 .left-content {
   display: flex;
   width: 800px;
+  flex-wrap: wrap;
 }
 
 .top-bar {
@@ -26,6 +27,13 @@ body {
 
 .form-name {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 400px;
+}
+
+.form-name input {
+  width: 150px;
 }
 
 .facebook-login {
