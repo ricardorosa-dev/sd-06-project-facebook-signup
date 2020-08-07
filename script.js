@@ -21,7 +21,6 @@ personalizeRadio.addEventListener('click', function () {
   const input = document.createElement('input');
   input.name = 'gender-custom';
   input.placeholder = 'Gênero (opcional)';
-  const genderField = document.querySelector('.subscription-form-2');
   const subscriptionForm = document.querySelector('.subscription-form');
   subscriptionForm.insertBefore(input, facebookRegister);
 });
