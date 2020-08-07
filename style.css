@@ -23,8 +23,11 @@ body {
 }
 
 .form-group {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+}
+
+.form-control {
+  align-self: flex-end
 }
