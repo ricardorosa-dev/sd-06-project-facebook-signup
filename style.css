@@ -5,6 +5,7 @@
 }
 
 .top-bar {
+<<<<<<< HEAD
     display: flex;
     background-color: rgb(66, 103, 178);    
 }
@@ -13,3 +14,21 @@
     display: flex;
     justify-content: left;
 }
+=======
+  background-color: rgb(66, 103, 178);
+  display: flex;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+>>>>>>> 2e278dc149132de71f0b9404ecae85f7ed178788
