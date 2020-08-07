@@ -33,3 +33,16 @@
 .left-content {
   width: 800px;
 }
+
+.right-content {
+  width: 300px;
+}
+
+.create-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-lastname {
+  display: flex;
+}
