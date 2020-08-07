@@ -49,3 +49,25 @@ body {
 .right-content {
   width: 300px;
 }
+
+.right-content form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.right-content form div {
+  margin: 5px 0;
+}
+
+.name {
+  display: flex;
+}
+
+.input-info {
+  width: 100%;
+}
+
+.gender {
+  font-size: small;
+}
