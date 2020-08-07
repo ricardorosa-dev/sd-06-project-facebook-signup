@@ -7,21 +7,17 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  padding-bottom: 82px;
-}
+  padding-left: 100px;
+  padding-right: 100px;
 
-.top-items {
-  display: flex;
-  margin-left: 10vh;
-  margin-right: 10vh;
 }
 
 .facebook-login {
+  color: white;
   display: flex;
+  flex-direction: column;
 }
 
 .facebook-logo {
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
+  width: auto;
 }
