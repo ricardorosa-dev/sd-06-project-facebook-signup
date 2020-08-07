@@ -31,13 +31,24 @@ body {
     margin-left: 20px;
 }
 
-.header-container {
+.main-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 auto;
     position: relative;
     width: 50%;
     zoom: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.left-content {
+    width: 800px;
+    flex-direction: column;
+}
+
+.right-content {
+    width: 300px;
 }
 
 .facebook-text {
@@ -75,4 +86,8 @@ body {
 .form-group {
     display: flex;
     flex-direction: column;
+}
+
+.form-control {
+    align-self: flex-end
 }

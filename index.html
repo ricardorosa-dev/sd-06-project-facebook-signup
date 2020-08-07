@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bulma.min.css">
     <title>Facebook
     </title>
 </head>
 
 
 <body>
-    <!-- MENU -->
+    <!-- HEADER -->
     <div class="top-bar">
         <div class="menu">
             <img class="facebook-logo" src="/imgs/facebook-logo.png" alt="">
@@ -30,8 +31,8 @@
                         </label>
                     </div>
                     <div>
-                        <label class="login-button" for="btn">
-                          <input value="Entrar" type="submit" class="login-button-input">
+                        <label class="form-control" for="btn">
+                          <button id="button-login">Entrar</button>
                         </label>
                     </div>
                 </form>
@@ -39,21 +40,19 @@
         </div>
     </div>
 
-    <!-- HEADER -->
-    <div class="header-container">
-        <div class="header">
-            <div class="facebook-text">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</div>
-            <div class="img"><img src="imgs/networking.png" alt="connect"></div>
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <!--LEFT CONTENT-->
+        <div class="left-content">
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <div class="facebook-slogan"><img src="imgs/networking.png" alt="connect"></div>
         </div>
+        <!--RIGHT CONTENT-->
+        <div class="right-content">
+            <h1>Abra uma conta</h1>
+            <form action="">É rápido e fácil.
 
-        <!-- PHOTOS -->
-        <div class="photo-grid-item">
-            <div class="text-conta">
-                <h2>Abra uma conta</h2>
-            </div>
-            <div class="small-text">
-                <h4>É rápido e fácil.</h4>
-            </div>
+            </form>
         </div>
     </div>
     <form action="">
@@ -70,7 +69,9 @@
     </div>
     </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
+<!<!---->
+<<h1
