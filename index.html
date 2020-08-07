@@ -5,22 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook – entre ou cadastre-se</title>
-    <link rel='stylesheet' type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div class='top-bar'>
+    <header class="top-bar">
         <div class="page-content">
-            <img src='' alt='Logotipo do Facebook' class="facebook-logo">
+            <img src='' alt="Logotipo do Facebook" class="facebook-logo">
+            <!-- Não encontrei uma imagem de logotipo para inserir aqui -->
             <form class="facebook-login">
-                <p class="login-text">Email ou telefone</p>
-                <input type="email">
-                <p class="login-text">Senha</p>
-                <input type="password">
+                <div class="form-group">
+                    <label id="user-email-phone-label" class="login-text">Email ou telefone</label>
+                    <input type="email" class="textbox" id="user-email-phone">
+                </div>
+                <div class="form-group">
+                    <label id="user-password-label" class="login-text">Senha</label>
+                    <input type="password" class="textbox" id="user-password">
+                </div>
+                <div class="form-control">
+                    <button id="button-login" onclick="login()">Entrar</button>
+                    <!-- O botão está posicionado de acordo com o solicitado no README, mas ainda não está centralizado da forma que deveria, tentei arrumar mas sem sucesso
+                    
+                    Falta criar o JS-->
+                </div>
             </form>
         </div>
-    </div>
+    </header>
+    <main class="main-content">
+        <div class="page-content">
+            <div>
+                <!-- ### 9 - Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content -->
+                <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+                <img src="imgs/networking.png" alt="Conexão entre pessoas" id="facebook-networking">
+                <div class="right-content">
+                    <!-- Precisa posicionar este container inteiro à direita do container left-content -->
+                    <h1>Abra uma conta</h1>
+                    <div class="quick-easy">
+                        <p>É rápido e fácil.</p>
+                        <form>
+                            <!-- ### 11 - Crie um campo de entrada de texto para o nome do usuário dentro do formulário criado no requisito 10
 
+                            Pontos importantes:
+                            * O campo deve ter o atributo name com o valor "firstname"
+                            * O campo deve ter um placeholder com o valor "Nome" -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

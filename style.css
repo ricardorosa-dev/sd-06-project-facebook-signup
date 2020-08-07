@@ -2,28 +2,88 @@
     background-color: rgb(66, 103, 178);
     display: flex;
     height: 82px;
+    flex-direction: row;
 }
 
 .facebook-login {
     font-size: 12px;
     margin-right: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .login-text {
-    color: #fff;
+    color: white;
     margin-bottom: 6px;
     text-align: left;
+    padding-left: 14px;
 }
 
 .page-content {
+    /* Essa classe foi criada porque identifiquei no próprio site do facebook que eles possuem essa margem de 980px onde todo o conteúdo inserido fica contido nele e centralizado na página.*/
     align-content: center;
     display: flex;
     margin: 0 auto;
     padding-top: 13px;
     width: 980px;
+}
+
+.textbox {
+    /* Classe criada para estilizar as caixas de input do login */
+    height: 14px;
+    max-width: 142px;
+    padding: 3px 3px 4px 3px;
+    border: solid 1px rgb(29, 42, 91);
+    margin-left: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    align-self: flex-end;
+}
+
+#button-login {
+    background-color: rgb(66, 103, 178);
+    border: 1px solid rgb(41, 72, 125);
+    border-radius: 2px;
+    font-weight: 700;
+    padding: 2px 6px 2px 6px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.left-content {
+    width: 800px;
+}
+
+#facebook-slogan {
+    color: rgb(14, 56, 95);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    width: 450px;
+    margin-top: 40px;
+}
+
+.right-content {
+    width: 300px;
+    align-self: flex-end;
 }
