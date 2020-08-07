@@ -23,24 +23,17 @@ body {
 }
 
 
-.input-container {
+.facebook-login {
   /* width: 300px;
   height: 55px;*/
   /* background-color: burlywood;  */
   display: flex;
   color: white;
+  border: 1px solid red;
   /* align-items: baseline; */
 }
 
-.user-email-container {
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-  padding: 15px;
-  margin-right: -10px;
-}
-
-.password-container {
+.form-group {
   display: flex;
   flex-direction: column;
   font-size: 12px;
@@ -75,8 +68,9 @@ form label {
   padding-bottom: 3px;
 }
 
-.form-button {
-  display: flex;
+.form-control {
+  align-self: flex-end;
+  /* display: flex; */
 }
 .button-login {
   background: #4466ad;
@@ -85,9 +79,10 @@ form label {
   color: white;
   font-size: 12px;
   padding: 5px 10px;
-  align-self: center;
   font-weight: bold;
-  margin-top: 8px;
+  /* align-self: center; */
+  /* margin-top: 8px; */
+  margin-bottom: 21px;
 }
 
 .main-container {
