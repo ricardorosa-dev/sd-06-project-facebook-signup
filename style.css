@@ -32,6 +32,10 @@ body {
   flex-direction: column;
 }
 
+.form-control {
+  align-self: flex-end;
+}
+
 .facebook-logo {
   border: 2px solid yellow;
 }
