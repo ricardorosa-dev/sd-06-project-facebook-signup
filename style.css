@@ -52,10 +52,15 @@ body {
   width: 300px;
 }
 
-.right-content form > div:first-child {
+.right-content form .fullname-container {
   display: flex;
 }
 
 .label-birthdate , .label-gender {
   display: block;
+}
+
+.invalid-warning {
+  color: rgb(253, 6, 6);
+  font-weight: 700;
 }
