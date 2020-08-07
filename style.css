@@ -1,9 +1,10 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
 }
-.container {
-  width: 300px;
-  height: 700px;
-  background-color: red;
+
+.facebook-login {
+  display: flex;
+  align-items: center;
 }
