@@ -11,11 +11,6 @@
   margin-right: 4px;
 }
 
-.facebook-logo {
-  background-color: tomato;
-  align-self: flex-start;
-}
-
 .form-control {
   align-self: flex-end;
 }
@@ -37,7 +32,3 @@
   background-color: #335294;
 }
 
-.pass-forget {
-  font-size: 0.7em;
-  opacity: 0.7;
-}
