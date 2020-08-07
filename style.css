@@ -26,8 +26,13 @@ body {
 .main-content {
   background: linear-gradient(white, #d3d8e8);
   display: flex;
+  justify-content: space-around;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
