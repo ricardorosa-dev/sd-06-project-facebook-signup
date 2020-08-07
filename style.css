@@ -6,6 +6,10 @@ body {
   font-family: sans-serif;
 }
 
+.d-flex {
+  display: flex;
+}
+
 /* .header-content-container {
   align-items: center;
   display: flex;
@@ -52,6 +56,6 @@ body {
   display: flex;
 }
 
-form .label-birthdate {
+.label-birthdate , .label-gender {
   display: block;
 }
