@@ -44,11 +44,16 @@ body {
 .right-content {
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .form-content {
   display: flex;
   flex-direction: column;
+}
+
+.full-name {
+  display: flex;
 }
 
 .phone-password {
@@ -59,4 +64,10 @@ body {
 .birthdate {
   display: flex;
   flex-direction: column;
+}
+
+.gender {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
