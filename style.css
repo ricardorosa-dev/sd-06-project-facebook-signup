@@ -42,9 +42,20 @@ body {
 
 .right-content {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .name {
+  display: flex;
+}
+
+.gender {
   display: flex;
 }
 

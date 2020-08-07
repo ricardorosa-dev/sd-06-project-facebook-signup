@@ -38,7 +38,7 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p id="quick-easy">É rápido e fácil.</p>
-        <form>
+        <form class="sign-in-form">
           <div class=name>
             <input type="text" name="firstname" placeholder="Nome">
             <input type="text" name="lastname" placeholder="Sobrenome">
@@ -48,12 +48,14 @@
           <label id="label-birthdate">Data de nascimento</label>
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
           <label id="label-gender">Gênero</label>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Feminino</label><br>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Masculino</label><br>
-          <input type="radio" id="other" name="gender" value="other">
-          <label for="other">Personalizado</label>
+          <div class="gender">
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Feminino</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Masculino</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Personalizado</label>
+          </div>
           <button id="facebook-register" type="submit">Cadastre-se</button>
         </form>
       </div>
