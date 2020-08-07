@@ -1,0 +1,16 @@
+.facebook-logo {
+  background-color: white;
+  height: 90%;
+}
+
+.left-header, .left-content-wrapper {
+  display: flex;
+  justify-content: left;
+}
+
+.top-bar {
+  display: flex;
+  height: 80px;
+  background-color: rgb(58 , 85 , 159);
+  color: white;
+}
