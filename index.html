@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" lang="en">
   <title>Facebook - Log In or Sign Up</title>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -11,7 +12,7 @@
     <div class="left-header">
       <img src="./imgs/facebook-logo.png" class="facebook-logo">
     </div>
-    <form class="login-data" method="POST" enctype="multipart/form-data">
+    <form class="facebook-login" method="POST" enctype="multipart/form-data">
       <div class="email-or-phone">
         <label for="user-email-phone-label">Email or Phone
         </label>
@@ -20,15 +21,17 @@
       <div class="label-password">
         <label for="password">Password
         </label>
-        <input type="password" id="password">
+        <input type="password" id="user-password-label">
+        <a href="#">Forgot account?</a>
       </div>
       <button class="button-login" id="button-login" type="submit">Entrar</button>
     </form>
   </header>
+
   <article class="left-content-wrapper">
+    <img id="facebook-networking" src="./imgs/networking.png">
     <section class="fb-description">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
       sua vida.</section>
-    <img id="facebook-networking" src="networking.png">
   </article>
   <article class="right-content-wrapper">
     <h2>Abra uma Conta</h2>

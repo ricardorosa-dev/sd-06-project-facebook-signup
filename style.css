@@ -1,36 +1,44 @@
-* {
-  margin: 0;
-  padding: 0;
+.facebook-logo {
+  width: 180px;
 }
 
- .facebook-logo {
-  /* height: 100%; */
-  width: 180px;
-} 
-
-.left-header, .left-content-wrapper {
-  display: flex;
-  justify-content: left;
+.left-content-wrapper , .left-header {
   align-items: center;
+  display: flex;
+  justify-content: flex-start;
   margin-top: 15px;
 }
 
 .top-bar {
+  background-color: rgb(66 , 103 , 178);
+  color: white;
   display: flex;
   height: 80px;
-  background-color: rgb(66, 103, 178);
-  color: white;
   justify-content: space-around;
 }
 
-.login-data {
-  display: flex;
+.facebook-login {
   align-self: center;
+  display: flex;
 }
 
 .email-or-phone {
   display: flex;
   flex-direction: column;
+}
+
+a {
+  color: #9cb4d8;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 4px;
+  text-decoration: none;
+}
+
+input {
+  height: 19px;
+  margin-right: 15px;
+  padding-left: 3px;
 }
 
 .label-password {
@@ -39,7 +47,15 @@
 }
 
 .button-login {
-  height: 20px;
+  align-self: center;
   background-color: #4267b2;
   border-color: #29487d;
+  color: white;
+  padding: 3px 5px;
+}
+
+header label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
