@@ -17,8 +17,8 @@ body {
 }
 
 .facebook-logo {
-  width: 170px;
   float: left;
+  width: 170px;
 }
 
 .email-senha {
@@ -47,4 +47,19 @@ body {
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
+}
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+  float: right;
+  height: 42px;
+  padding-left: 10px;
 }

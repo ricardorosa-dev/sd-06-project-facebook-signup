@@ -12,29 +12,18 @@
       <img class="facebook-logo" src="imgs/facebook-logo.png">
     </div>
     <form class="facebook-login" action="form.html" method="GET">
-      <table class="email-senha">
-        <tr>
-          <td>
-            <label for="email-tel" id="email-tel">Email ou telefone</label>
-          </td>
-          <td>
-            <label for="password">Senha</label>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input class="input-header" type="text" name="email-ou-tel" id="email-tel">
-          </td>
-          <td>
-            <input class="input-header" type="text" name="senha" id="password">
-          </td>
-          <td>
-            <label for="entrar" id="loginbutton">
-              <input class="button-login" value="Entrar" type="submit" id="entrar">
-            </label>
-          </td>
-        </tr>
-      </table>
+      <div class="form-group">
+        <label for="email-tel" id="ser-email-phone-label">Email ou telefone</label>
+        <input class="input-header" type="text" name="email-ou-tel" id="user-email-phone">
+      </div>
+      <div class="form-group">
+        <label for="password" id="user-password-label">Senha</label>
+        <input class="input-header" type="text" name="senha" id="id user-password">
+      </div>
+      <div class="form-control">
+        <label for="entrar" id="loginbutton">
+        <input class="button-login" value="Entrar" type="submit" id="entrar">
+      </div>
     </form>
   </header>
   <script src="./script.js"></script>
