@@ -7,3 +7,8 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.left-content {
+  display: flex;
+  width: 800px;
+}
