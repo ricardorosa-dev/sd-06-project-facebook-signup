@@ -1,5 +1,5 @@
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 .top-bar {
@@ -8,7 +8,7 @@ body {
   display: flex;
   height: 82px;
   justify-content: space-around;
-  margin: 0px;
+  margin: 0;
 }
 
 .facebook-logo {
@@ -24,11 +24,10 @@ body {
 
 .form-group {
   border: black 1px solid;
-  color: #fff;
+  color: white;
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   font-family: inherit;
-  font-weight: normal;
   justify-content: center;
   padding-left: 1px;
 }
