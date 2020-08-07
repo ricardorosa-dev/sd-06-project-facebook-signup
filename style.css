@@ -10,5 +10,13 @@
 
 .form-group {
   display: flex;
+}
+
+.password, .email {
+  display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }
