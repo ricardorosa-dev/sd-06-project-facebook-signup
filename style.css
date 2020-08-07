@@ -1,0 +1,44 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.top-bar {
+    background-color: rgb(66, 103, 178);
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.facebook-login {
+    display: flex;
+}
+
+label {
+    display: block;
+    font: arial;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+    background-color: rgb(66, 103, 178);
+    margin: 1px solid black;
+    color: white;
+}
+
+.img {
+    border: 0;
+    width: 537px;
+    height: 195px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
