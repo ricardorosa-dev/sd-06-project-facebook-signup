@@ -27,6 +27,11 @@ body {
   justify-content: space-between;
 }
 
+.radio-buttons {
+  display: flex;
+  font-size: 15px;
+}
+
 .right-content {
   width: 300px;
 }
