@@ -73,6 +73,7 @@ a {
 
 .right-content {
   width: 300px;
+  flex-direction: column;
 }
 
 .quick-easy {
