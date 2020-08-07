@@ -28,8 +28,13 @@
   width: 300px;
 }
 
-.firstLine {
+.nameLine {
   display: flex;
+}
+
+.dateLine {
+  display: flex;
+  flex-direction: column;
 }
 
 .left-content {
