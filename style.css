@@ -31,3 +31,7 @@
 .right-content {
   width: 300px;
 }
+
+.main-form {
+  display: flex;
+}
