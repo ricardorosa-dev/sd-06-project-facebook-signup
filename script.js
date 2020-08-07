@@ -54,7 +54,44 @@ function handleSignUpForm() {
   signUpForm.addEventListener('submit', validateForm);
 }
 
+function addInputField() {
+  const checkingInputField = document.getElementById('input-customized-gender');
+  
+
+  if (!checkingInputField) {
+    const inputField = document.createElement('input');
+    inputField.name = 'gender-custom';
+    inputField.id = 'input-customized-gender';
+    inputField.placeholder = 'Gênero (opcional)';
+
+    const callingForm = document.querySelector('.signup-form');
+    const callingButton = document.querySelector('#facebook-register');
+
+    callingForm.insertBefore(inputField, callingButton);
+  }
+}
+
+function removeInputField() {
+  const checkingInputField = document.getElementById('input-customized-gender');
+
+  if (checkingInputField) {
+    checkingInputField.remove();
+  }
+}
+
+function handleCustomGender() {
+  const customizeGender = document.getElementById('personalizado');
+  const femenineGender = document.getElementById('feminino');
+  const masculineGender = document.getElementById('masculino');
+
+  customizeGender.addEventListener('change', addInputField);
+  femenineGender.addEventListener('change', removeInputField);
+  masculineGender.addEventListener('change', removeInputField);
+
+}
+
 window.onload = () => {
   handleLoginButton();
   handleSignUpForm();
+  handleCustomGender();
 };
