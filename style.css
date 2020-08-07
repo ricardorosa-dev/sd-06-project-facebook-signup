@@ -3,6 +3,38 @@ body {
     font-size: 12px;
 }
 
+.facebook-login {
+    display: flex;
+}
+
+.form-control {
+    align-self: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    border: 0;
+    height: 195px;
+    width: 537px;
+}
+
+.left-content {
+    width: 800px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-content {
+    width: 300px;
+}
+
 .top-bar {
     align-items: flex-end;
     background-color: rgb(66, 103, 178);
@@ -14,54 +46,3 @@ body {
     top: 0;
     width: 100%;
 }
-
-.facebook-login {
-    display: flex;
-}
-
-label {
-    display: block;
-    font: arial;
-}
-
-label {
-    background-color: rgb(66, 103, 178);
-    color: white;
-    margin-top: 1rem;
-    margin: 1px solid black;
-}
-
-.img {
-    border: 0;
-    height: 195px;
-    width: 537px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-control {
-    align-self: flex-end;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: row;
-}
-
-.left-content {
-    width: 800px;
-}
-
-.right-content {
-    width: 300px;
-}
-
-
-/* O botão deve estar alinhado a
-     direita do campo de entrada para senha
-Ao clicar no botão com o id #button-login deve 
-exibir um alert com o valor do campo "Email ou telefone"
-} */
