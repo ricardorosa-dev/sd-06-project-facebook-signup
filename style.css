@@ -1,0 +1,28 @@
+body {
+  background-color: lightgoldenrodyellow;
+  margin: 0;
+  padding: 0;
+  max-width: 1366px;
+  max-height: 768px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-bar {
+  align-items: center;
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+  height: 83px;
+  width: 100%;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
