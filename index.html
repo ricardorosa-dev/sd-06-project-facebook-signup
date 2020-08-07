@@ -16,11 +16,11 @@
     <form class="facebook-login" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-        <input type="text" id="user-email-phone">
+        <input required type="text" id="user-email-phone">
       </div>
       <div class="form-group">
         <label for="user-password" id="user-password-label">Senha</label>
-        <input type="password" id="user-password">
+        <input required type="password" id="user-password">
       </div>
       <div class="form-control">
         <button id="button-login" type="submit">Entrar</button>
@@ -30,19 +30,21 @@
 
   <div class="main-content">
     <article class="left-content">
-      <img id="facebook-networking" src="./imgs/networking.png">
       <section class="fb-description" id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</section>
+      <img id="facebook-networking" src="imgs/networking.png">
     </article>
-    <article class="right-content-wrapper">
-      <h2>Abra uma Conta</h2>
-      <section>É rápido e fácil.</section>
+    <article class="right-content">
+      <h1>Abra uma Conta</h1>
+      <section class="quick-easy">É rápido e fácil.</section>
       <form class="sign-in-data">
-        <input placeholder="Nome" id="name" name="name" type="text">
-        <input placeholder="Sobrenome" id="surname" name="surname" type="text">
-        <input placeholder="Celular ou email" id="phone-email-sign" name="phone-email-sign" type="text">
-        <input placeholder="Nova Senha" id="password" name="password" type="password">
+        <div class="names">
+          <input required placeholder="Nome" id="name" name="firstname" type="text">
+          <input required placeholder="Sobrenome" id="surname" name="lastname" type="text">  
+        </div>        
+        <input required placeholder="Celular ou email" id="phone-email-sign" name="phone-email-sign" type="text">
+        <input required placeholder="Nova Senha" id="password" name="password" type="password">
         <label for="birth">Data de nascimento
-          <input id="birth" name="birth" type="text">
+          <input required id="birth" name="birth" type="text">
       </form>
     </article>
   </div>
