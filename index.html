@@ -39,28 +39,29 @@
       </p>
       <form action="">
         <div>
-          <input type="text" placeholder="Nome" name="firstname">
-          <input type="text" placeholder="Sobrenome" name="lastname">
+          <input type="text" placeholder="Nome" name="firstname" required>
+          <input type="text" placeholder="Sobrenome" name="lastname" required>
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="phone_email" placeholder="Celular ou email" required>
+        <input type="password" name="password" placeholder="Nova senha" required>
         <label class="label-birthdate" id="label-birthdate" for="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         <label class="label-gender" id="label-gender">Gênero</label>
         <div class="d-flex">
           <div class="d-flex">
-            <input type="radio" name="F" id="gen-fem">
+            <input type="radio" name="gender" id="gen-fem" value="Feminino" checked>
             <label for="gen-fem">Feminino</label>
           </div>
           <div class="d-flex">
-            <input type="radio" name="M" id="gen-masc">
+            <input type="radio" name="gender" id="gen-masc" value="Masculino">
             <label for="gen-masc">Masculino</label>
           </div>
           <div class="d-flex">
-            <input type="radio" name="O" id="gen-others">
+            <input type="radio" name="gender" id="gen-others" value="Personalizado">
             <label for="gen-others">Personalizado</label>
           </div>
         </div>
+        <button id="facebook-register" type="submit">Cadastre-se</button>
       </form>
     </section>
   </main>
