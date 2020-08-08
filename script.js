@@ -25,7 +25,7 @@ function validate() {
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
 
-const perso = document.querySelector('#p');
+const person = document.querySelector('#p');
 const femi = document.querySelector('#f');
 const masc = document.querySelector('#m');
 const todos = document.querySelector('.generos');
@@ -45,7 +45,7 @@ masc.addEventListener('click', function () {
   }
 });
 
-perso.addEventListener('click', function () {
+person.addEventListener('click', function () {
   gambiarra += 1;
   if (gambiarra === 1) {
     const novoInput = document.createElement('input');
