@@ -80,3 +80,19 @@ body {
   text-shadow: 0 1px 2px black;
   width: 174px;
 }
+
+.container_signin-data {
+  display: flex;
+}
+
+.subcontainer_firstname-lastname {
+  display: flex;
+}
+
+input {
+  width: 100%;
+}
+
+.subcontainer_gender {
+  display: flex;
+}
