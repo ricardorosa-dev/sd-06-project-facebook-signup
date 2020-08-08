@@ -38,16 +38,16 @@
         <h1>Abra uma conta</h1> <!-- Texto - Incluido no Requisito 10-->
         <p class='quick-easy'>É rápido e fácil.</p> <!-- Texto - Incluido no Requisito 10-->
         <form> <!-- Form - Incluido no Requisito 10-->
-          <input type='text' name='firstname' placeholder='Nome'> <!-- Input Nome - Incluido no Requisito 11-->
-          <input type='text' name='lastname' placeholder='Sobrenome'> <!-- Input Sobrenome - Incluido no Requisito 12-->
-          <input type='text' name='phone_email' placeholder='Celular ou email'> <!-- Input Email ou Telefone - Incluido no Requisito 13-->
-          <input type='password' name='password' placeholder='Nova senha'> <!-- Input Nova Senha - Incluido no Requisito 14-->
+          <input type='text' name='firstname' placeholder='Nome' required> <!-- Input Nome - Incluido no Requisito 11-->
+          <input type='text' name='lastname' placeholder='Sobrenome' required> <!-- Input Sobrenome - Incluido no Requisito 12-->
+          <input type='text' name='phone_email' placeholder='Celular ou email' required> <!-- Input Email ou Telefone - Incluido no Requisito 13-->
+          <input type='password' name='password' placeholder='Nova senha' required> <!-- Input Nova Senha - Incluido no Requisito 14-->
           <label for='birthdate'>Data de nascimento</label> <!-- Label - Incluido no Requisito 15-->
-          <input type='date' name='birthdate' placeholder='dd/mm/aaaa'> <!-- Input Data de nascimento - Incluido no Requisito 15-->
+          <input type='date' name='birthdate' placeholder='dd/mm/aaaa' required> <!-- Input Data de nascimento - Incluido no Requisito 15-->
           <label>Gênero</label> <!-- Label - Incluido no Requisito 16-->
-          <label><input type='radio' name='genero-radio' value='Feminino'>Feminino</label> <!-- Input Radio Feminino - Incluido no Requisito 16-->
-          <label><input type='radio' name='genero-radio' value='Masculino'>Masculino</label> <!-- Input Radio Masculino - Incluido no Requisito 16-->
-          <label><input type='radio' name='genero-radio' value='Personalizado'>Personalizado</label> <!-- Input Radio Personalizado - Inc. no Requisito 16-->
+          <label><input type='radio' name='genero-radio' value='Feminino' required>Feminino</label> <!-- Input Radio Feminino - Incluido no Requisito 16-->
+          <label><input type='radio' name='genero-radio' value='Masculino' required>Masculino</label> <!-- Input Radio Masculino - Incluido no Requisito 16-->
+          <label><input type='radio' name='genero-radio' value='Personalizado' required>Personalizado</label> <!-- Input Radio Perso. - Inc. no Requisito 16-->
           <input type='submit' id='facebook-register' value='Cadastre-se'> <!-- Input Submit - Incluido no Requisito 17-->
         </form>
       </div>
