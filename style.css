@@ -39,6 +39,6 @@
   display: flex;
 }
 
-.radio input {
-  margin: 0;
+.genero {
+  display: flex;
 }
