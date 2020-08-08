@@ -33,23 +33,6 @@ body {
   font-weight: 700;
 }
 
-.main-content {
-  display: flex;
-  justify-content: center;
-}
-
-.left-content {
-  width: 800px;
-}
-
-.facebook-slogan {
-  text-align: center;
-}
-
-.right-content {
-  width: 300px;
-}
-
 .right-content form {
   display: flex;
   flex-direction: column;
