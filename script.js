@@ -9,6 +9,9 @@ function addGenderField() {
   const GENDERCUSTOMINPUT = document.createElement('input');
   GENDERCUSTOMINPUT.classList.add('sign-in');
   GENDERCUSTOMINPUT.id = 'custom-gender';
+  GENDERCUSTOMINPUT.name = 'gender-custom';
+  GENDERCUSTOMINPUT.placeholder = 'Gênero (opcional)';
+  GENDERCUSTOMINPUT.type = 'text';
   document.querySelector('.sign-in-data').insertBefore(GENDERCUSTOMINPUT, document.querySelector('#facebook-register'));
 }
 
@@ -17,10 +20,10 @@ document.querySelector('#button-login').addEventListener('click', () => {
   alert(EMAILORPHONE);
 });
 document.querySelector('#facebook-register').addEventListener('click', () => {
-  let invalidForm = true;
+  let invalidForm = false;
   document.querySelectorAll('.sign-in').forEach((element) => {
     if (element.value === '') {
-      invalidForm = false;
+      invalidForm = true;
     }
   });
   if (invalidForm) {
