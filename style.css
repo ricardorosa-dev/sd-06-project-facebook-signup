@@ -3,7 +3,9 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
+
 
 .main-content {
   display: flex;
