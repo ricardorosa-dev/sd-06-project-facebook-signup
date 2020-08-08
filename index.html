@@ -57,32 +57,7 @@
       </form>
     </article>
   </div>
-  <script>
-
-    function addFeedback() {
-      const FEEDBACKMESSAGE = document.createElement('div');
-      FEEDBACKMESSAGE.innerText = "Campos inválidos";
-      FEEDBACKMESSAGE.classList.add("feedback-bad-action");
-      document.querySelector('.sign-in-data').insertBefore(FEEDBACKMESSAGE, document.querySelector('.names'));
-    }
-    document.querySelector('#button-login').addEventListener('click', (e) => {
-      const EMAILORPHONE = document.querySelector('#user-email-phone').value;
-      alert(EMAILORPHONE);
-    });
-    document.querySelector('#facebook-register').addEventListener('click', (e) => {
-      let invalidForm = true;
-      document.querySelectorAll('.sign-in').forEach(element => {
-        if (element.value === '') {
-          validForm = false;
-        }
-      });
-      if (invalidForm) {
-        if (! document.querySelector('.feedback-bad-action')) {
-          addFeedback();
-        }
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
