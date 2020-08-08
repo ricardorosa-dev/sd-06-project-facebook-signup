@@ -1,3 +1,17 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+}
+
+label {
+  margin: 1%;
+}
+
+input {
+  margin: 0.5%;
+  padding: 0.5%;
+}
+
 .facebook-login {
   display: flex;
 }
@@ -25,6 +39,7 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .top-bar {
