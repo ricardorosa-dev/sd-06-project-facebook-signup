@@ -43,19 +43,20 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form class="form-content">
         <div class="name-field">
-          <input type="text" name="firstname" id="" placeholder="Nome">
-          <input type="text" name="lastname" id="" placeholder="Sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" required="required">
+          <input type="text" name="lastname" placeholder="Sobrenome" required="required">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="phone_email" placeholder="Celular ou email" required="required">
+        <input type="password" name="password" placeholder="Nova senha" required="required">
         <label id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required="required">
         <label id="label-gender">Gênero</label>
         <div class="label-gender">
-          <label for="feminino"><input type="radio" name="genero" id="feminino" value="feminino" checked>Feminino</label>
-          <label for="masculino"><input type="radio" name="genero" id="masculino" value="masculino">Masculino</label>
-          <label for="personalizado"><input type="radio" name="genero" id="personalizado" value="personalizado">Personalizado</label>
+          <label for="feminino"><input type="radio" name="genero" id="feminino" value="feminino" checked required="required">Feminino</label>
+          <label for="masculino"><input type="radio" name="genero" id="masculino" value="masculino" required="required">Masculino</label>
+          <label for="personalizado"><input type="radio" name="genero" id="personalizado" value="personalizado" required="required" class="personalizado">Personalizado</label>
         </div>
+        <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
 
     </section>
