@@ -18,15 +18,18 @@ buttonEnter.addEventListener('click', function () {
 });
 
 // Exibir uma mensagem de "Campos inválidos" se pelo menos um campo não esteja preenchido
-const inputElements = document.querySelectorAll('.input-element');
 buttonRegister.addEventListener('click', function (e) {
   e.preventDefault();
+  const inputElements = document.querySelectorAll('.input-element');
   for (let index = 0; index < inputElements.length; index += 1) {
     if (inputElements[index].value === '') {
       const messageDiv = document.querySelector('.empty-input');
       messageDiv.innerHTML = 'Campos inválidos';
-    }
+      return false;
+    } 
   }
+  const rightContentDiv = document.querySelector('.right-content');
+  rightContentDiv.remove();
 });
 
 // Exibir um capo de texto caso o usuário clique em "personalizado"
@@ -35,3 +38,4 @@ optionCustomized.addEventListener('click', function () {
   const divCustomizedOption = document.querySelector('.gender-customized');
   divCustomizedOption.style.display = 'block';
 });
+
