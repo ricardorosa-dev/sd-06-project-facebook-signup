@@ -14,7 +14,6 @@ body {
 
 .facebook-logo {
   justify-content: flex-start;
-  width: 175px;
 }
 
 .facebook-login {
@@ -64,7 +63,6 @@ body {
 
 .main-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -83,16 +81,16 @@ body {
   width: 300px;
 }
 
-.nome-sobrenome {
+.name-lastname {
   display: flex;
   justify-content: space-around;
   padding: 20px;
 }
 
-.genero-input {
+.gender-input {
   display: flex;
 }
 
-.genero-personalizado {
+.gender-customized {
   display: none;
 }
