@@ -5,28 +5,27 @@ const radioButtonMasculino = document.querySelector('#male');
 const radioButtonFeminino = document.querySelector('#female');
 const containerRadioButtons = document.querySelector('.radio');
 const customGender = document.createElement('input');
+const personalized = document.querySelector('#personalizado');
 
-buttonTop.addEventListener('click', function () {  
+buttonTop.addEventListener('click', function () {
   alert(email.value);
 });
 
 radioButtonPersonalizado.addEventListener('change', function () {
-    customGender.placeholder = "Gênero (opcional)";
-    customGender.name = "gender-custom";
-    customGender.id = "personalizado"
-    containerRadioButtons.appendChild(customGender);    
+  customGender.placeholder = 'Gênero (opcional)';
+  customGender.name = 'gender-custom';
+  customGender.id = 'personalizado';
+  containerRadioButtons.appendChild(customGender);
 });
 
-radioButtonMasculino.addEventListener('change', function () {
-    let personalized = document.querySelector('#personalizado');
-    if (personalized !== null) {
-        containerRadioButtons.removeChild(personalized);
-    }       
+radioButtonMasculino.addEventListener('change', function () {    
+  if (personalized !== null) {
+    containerRadioButtons.removeChild(personalized);
+  }
 });
 
-radioButtonFeminino.addEventListener('change', function () {
-    let personalized = document.querySelector('#personalizado');
-    if (personalized !== null) {
-        containerRadioButtons.removeChild(personalized);
-    }       
+radioButtonFeminino.addEventListener('change', function () {    
+  if (personalized !== null) {
+    containerRadioButtons.removeChild(personalized);
+  }
 });
