@@ -23,7 +23,7 @@ body {
 
 .facebook-logo {
   display: flex;
-  margin: 25px;
+  margin: 25px 0;
   width: 150px;
 }
 
