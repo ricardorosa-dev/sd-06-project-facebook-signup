@@ -9,14 +9,19 @@ body {
   justify-content: space-between;
 }
 
+
 .facebook-login {
   display: flex;
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
   justify-content: center;
+  padding: 10px;
 }
 
 .form-control {
