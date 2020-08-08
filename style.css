@@ -95,6 +95,16 @@ input {
   width: 100%;
 }
 
+.right-content input {
+  box-sizing: border-box;
+}
+
 .subcontainer_gender {
   display: flex;
+}
+
+.subcontainer_signin-data {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
 }
