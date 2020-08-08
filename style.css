@@ -22,7 +22,6 @@ body {
   flex-grow: 1;
   flex-wrap: wrap;
   justify-content: flex-end;
-  padding-right: 10px;
 }
 
 .facebook-login div {
