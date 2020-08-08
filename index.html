@@ -19,10 +19,11 @@
                         <input id="user-email-phone" type="text" name ="login">
                     </div>
                     <div id="user-password-label" class="form-group">
-                        <label for="user-password">Senha</label><input id="user-password" type="text">
+                        <label for="user-password">Senha</label>
+                        <input id="user-password" type="password">
                     </div>
                     <div class="form-control">
-                        <button id="button-login">Entrar</button>
+                        <button onclick="alertUserPin()" id="button-login">Entrar</button>
                     </div>
                 </form>
             </div>
@@ -38,16 +39,20 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form class="create-user" action="">
                 <div class="name-lastname">
-                    <input type="text" name="firstname" placeholder="Nome">
-                    <input type="text" name="lastname" placeholder="Sobrenome">
+                    <input type="text" name="firstname" placeholder="Nome" required>
+                    <input type="text" name="lastname"
+                    placeholder="Sobrenome" required>
                 </div>
-                <input type="text" name="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" placeholder="Nova senha">
-                <label for="birthdate" id ="label-birthdate">Data de nascimento<br><input id="birthdate" type="date" name="birthdate" placeholder="dd/mm/aaaa"></label>
+                <input type="text" name="phone_email" placeholder="Celular ou email" required
+                maxlength="11">
+                <input type="password" name="password" placeholder="Nova senha" required>
+                <label for="birthdate" id ="label-birthdate">Data de nascimento<br>
+                    <input id="birthdate" type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
+                </label>
                 <div id="label-gender">Gênero<br>
                     <label for="femele">Feminino<input id="femele" type="radio" name="gender"></label>
                     <label for="male">Masculino<input id="male" type="radio" name="gender"></label>
-                    <label for="personalize">Personalizado<input id="personalize" type="radio" name="gender"></label>
+                    <label for="personalize">Personalizado<input id="personalize" type="radio" name="gender" required></label>
                 </div>
                 <button id ="facebook-register" type="submit">Cadastre-se</button>
             </form>
