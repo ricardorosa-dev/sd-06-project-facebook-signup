@@ -31,7 +31,8 @@ customGenderInput.addEventListener('click', function () {
     customInput.name = 'gender-custom';
     customInput.placeholder = 'Gênero (opcional)';
     customInput.id = 'gender-custom';
-    document.querySelector('.input-gender-container').appendChild(customInput);
+    customInput.className = 'input-form';
+    document.querySelector('.gender-container').parentNode.appendChild(customInput);
   }
 });
 

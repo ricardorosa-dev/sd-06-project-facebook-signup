@@ -84,17 +84,52 @@ body {
 
 .register-container .input-container {
   display: flex;
+  flex-direction: column;
+  margin-top: 16px;
   width: 100%;
-}
-
-.register-container .input-container input:first-child {
-  margin-right: 16px;
 }
 
 .register-container .input-form {
+  border: 1px solid #999;
+  border-radius: 4px;
   box-sizing: border-box;
-  height: 28px;
+  height: 34px;
   margin-top: 16px;
   padding: 4px 8px;
   width: 100%;
+}
+
+.register-container .input-form:hover {
+  border: 1px solid rgb(66, 103, 178);
+}
+
+.register-container .birthdate {
+  margin-top: 4px;
+}
+
+.register-container label {
+  font-size: 14px;
+}
+
+.register-container .form-labels {
+  color: #777;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gender-container {
+  margin-top: 6px;
+}
+
+.invalid-input {
+  color: rgb(165, 43, 43);
+  font-size: 12px;
+}
+
+.facebook-register {
+  background-color: rgb(86, 149, 62);
+  border-radius: 6px;
+  color: #eee;
+  font-weight: 700;
+  padding: 16px 24px;
 }
