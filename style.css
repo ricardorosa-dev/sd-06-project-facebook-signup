@@ -1,5 +1,7 @@
 body {
+  background: linear-gradient(white, rgb(211, 216, 232));
   font-family: Helvetica, Arial, sans-serif;
+  height: 100vh;
   margin: 0;
 }
 
