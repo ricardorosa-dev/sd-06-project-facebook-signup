@@ -41,21 +41,21 @@
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form>
+      <form class="form-content">
         <div class="name-field">
           <input type="text" name="firstname" id="" placeholder="Nome">
           <input type="text" name="lastname" id="" placeholder="Sobrenome">
         </div>
-        <div class="form-content">
-          <input type="text" name="phone_email" placeholder="Celular ou email">
-          <input type="password" name="password" placeholder="Nova senha">
-          <label id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <input type="text" name="phone_email" placeholder="Celular ou email">
+        <input type="password" name="password" placeholder="Nova senha">
+        <label id="label-birthdate">Data de nascimento</label>
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <label id="label-gender">Gênero</label>
+        <div class="label-gender">
+          <label for="feminino"><input type="radio" name="genero" id="feminino" checked>Feminino</label>
+          <label for="masculino"><input type="radio" name="genero" id="masculino">Masculino</label>
+          <label for="personalizado"><input type="radio" name="genero" id="personalizado">Personalizado</label>
         </div>
-        <label id="label-gender">Gênero</label> <br>
-          <input type="radio" name="genero" id="feminino">Feminino
-          <input type="radio" name="genero" id="masculino">Masculino
-          <input type="radio" name="genero" id="personalizado">Personalizado
       </form>
 
     </section>
