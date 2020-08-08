@@ -39,7 +39,8 @@
       <div class="right-content">
         <h1 class="font title">Abra uma conta</h1>
         <p class="font quick-easy">É rápido e fácil.</p>
-        <form id="form_register" method="POST" action="#">
+        <form id="form_register" method="" action="">
+          <p id="field_error"></p>
           <div class="input_group">
             <input type="text" class="fname" name="firstname" placeholder="Nome" required>
             <input type="text" class="lname" name="lastname" placeholder="Sobrenome" required>
@@ -54,7 +55,7 @@
             <label id="label-gender">Gênero</label>
             <div class="radio_group">
               <div class="radio">
-                <input type="radio" id="female" name="gender" value="Feminino">
+                <input type="radio" id="female" name="gender" value="Feminino" required>
                 <label for="female">Feminino</label><br>
               </div>
               <div class="radio">
