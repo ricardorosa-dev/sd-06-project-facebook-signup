@@ -50,7 +50,7 @@ person.addEventListener('click', function () {
   if (gambiarra === 1) {
     const novoInput = document.createElement('input');
     novoInput.type = 'text';
-    novoInput.name = 'gender';
+    novoInput.name = 'gender-custom';
     novoInput.placeholder = 'Gênero (opcional)';
     novoInput.id = 'gender-custom';
     todos.appendChild(novoInput);
