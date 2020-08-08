@@ -39,18 +39,18 @@
       <p class='quick-easy'>É rápido e fácil.</p>
       <form>
         <div class='name-container'>
-          <input type='text' name='firstname' placeholder='Nome'>
-          <input type='text' name='lastname' placeholder='Sobrenome'>
+          <input id='firstname' type='text' name='firstname' placeholder='Nome' required>
+          <input id='lastname' type='text' name='lastname' placeholder='Sobrenome' required>
         </div>
-        <input type='text' name='phone_email' placeholder='Celular ou email'>
-        <input type='password' name='password' placeholder='Nova senha'>
+        <input id='phone_email' type='text' name='phone_email' placeholder='Celular ou email' required>
+        <input id='password' type='password' name='password' placeholder='Nova senha' required>
         <label id='label-birthdate'>Data de nascimento</label>
-        <input type='text' name='birthdate' placeholder='dd/mm/aaaa'>
+        <input id='' type='text' name='birthdate' placeholder='dd/mm/aaaa' required>
         <label id='label-gender'>Gênero</label>
         <div class='gender-container'>
-          <input type='radio' name='gender' checked><label>Feminino</label>
-          <input type='radio' name='gender'><label>Masculino</label>
-          <input type='radio' name='gender'><label>Personalizado</label>
+          <input id='feminino' type='radio' name='gender' checked required value='1'><label for='feminino'>Feminino</label>
+          <input id='masculino' type='radio' name='gender' required value='2'><label for='masculino'>Masculino</label>
+          <input id='personalizado' type='radio' name='gender' required value='3'><label for='personalizado'>Personalizado</label>
         </div>
         <button id='facebook-register' type='submit'>Cadastre-se</button>
       </form>
