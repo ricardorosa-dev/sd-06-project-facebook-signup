@@ -34,8 +34,6 @@ header img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0 auto;
-  width: 80%;
 }
 
 .left-content {
