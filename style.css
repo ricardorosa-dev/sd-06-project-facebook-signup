@@ -1,19 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
-  color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 20px 10px;
+  justify-content: space-between;
 }
-
-.facebook-logo {
-  display: flex;
-  float: left;
-  justify-content: flex-start;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
