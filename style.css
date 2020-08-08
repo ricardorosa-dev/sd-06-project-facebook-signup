@@ -27,13 +27,11 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: 80%;
+  justify-content: space-between;
 }
 
 .left-content {
-  width: 800px;
+  width: 700px;
 }
 
 .right-content {
