@@ -11,18 +11,17 @@
       <img class="facebook-logo" src="imgs/facebook-logo.png">
       <form class="facebook-login" action="form.html" method="GET">
         <div class="form-group">
-          <label for="email-tel" id="ser-email-phone-label">Email ou telefone</label>
+          <label for="email-tel" id="user-email-phone-label">Email ou telefone</label>
           <input class="input-header" type="text" name="email-ou-tel" id="user-email-phone">
         </div>
 
         <div class="form-group">
-          <label for="password" id="user-password-label">Senha</label>
+          <label for="password" id="user-password">Senha</label>
           <input class="input-header" type="text" name="senha" id="id user-password-label">
         </div>
 
         <div class="form-control">
-          <label for="entrar" id="loginbutton">
-          <input class="button-login" value="Entrar" type="submit" id="button-login">
+          <button class="button-login" type="submit" id="button-login">Entrar</button>
         </div>
       </form>
   </header>
@@ -34,11 +33,26 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <h2 class="quick-easy">É rápido e fácil.</h4>
-      <form action="">
-        <input type="text" class="input-register" id="firstname" name="firstname" placeholder="Nome" required>
-        <input type="text" class="input-register" id="lastname" name="lastname" placeholder="Sobrenome" required>
-
+      <form action="" class="form-right-content">
+        <div class="nome-sobrenome">
+          <input type="text" class="input-register" id="firstname" name="firstname" placeholder="Nome" required>
+          <input type="text" class="input-register" id="lastname" name="lastname" placeholder="Sobrenome" required>
+        </div>
+        <input class ="input-right-content" type="text" id="phoneemail" name="phone_email" placeholder="Celular ou email" required>
+        <input class ="input-right-content" type="password" id="password" name="password" placeholder="Nova Senha" required>
+        <label for="" id="label-birthdate">Data de Nascimento</label>
+        <input class ="input-right-content" type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
+        <label id="label-gender"required>Gênero<br>
+        <input type="radio" id="female" name="gender"required>
+        <label for="female">Feminino</label>
+        <input type="radio" id="male" name="gender" required>
+        <label for="male">Masculino</label>
+        <input type="radio" id="custom" name="gender" required>
+        <label for="custom">Personalizado</label>
         <button type="submit" id="facebook-register">Cadastre-se</button>
+      </form>
+    </div>
+  </div>
       </form>
     </div>
   </div>
