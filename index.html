@@ -37,22 +37,22 @@
 	<div class="right-content">
 		<h1>Abra uma conta</h1>
 		<p classe="quick-easy">É rápido e fácil.</p>
-		<form action="">
+		<form class="sign-form" action="">
 			<div class="nameLine">
-			  <input type="text" name="firstname" placeholder="Nome">
-			  <input type="text" name="lastname" placeholder="Sobrenome">
+			  <input type="text" name="firstname" placeholder="Nome" required >
+			  <input type="text" name="lastname" placeholder="Sobrenome" required>
 			</div>
-			<input type="text" name="phone_email" placeholder="Celular ou email">
-			<input type="password" name="password" id="" placeholder="Nova senha">
+			<input type="text" name="phone_email" placeholder="Celular ou email"required>
+			<input type="password" name="password" id="" placeholder="Nova senha"required>
 			<div class="dateLine">
 			  <label for="" id="label-birthdate">Data de nascimento</label>
-			  <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+			  <input type="text" name="birthdate" placeholder="dd/mm/aaaa"required>
 			</div>
 			<label for="gender" id="label-gender">Gênero</label>
 			<div class="genderDiv">
-				<input type="radio" name="genderRadio" id="">Feminino</input>
-				<input type="radio" name="genderRadio" id="">Masculino</input>
-				<input type="radio" name="genderRadio" id="">Personalizado</input>
+				<input type="radio" name="genderRadio" value="Feminino" required>Feminino
+				<input type="radio" name="genderRadio" value="Masculino" required >Masculino
+				<input type="radio" name="genderRadio" value="Personalizado" required >Personalizado
 			</div>
 			<button id="facebook-register" type="submit">Cadastre-se</button>
 		</form>
