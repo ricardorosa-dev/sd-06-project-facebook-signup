@@ -1,4 +1,5 @@
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
@@ -16,7 +17,6 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
 
 .form-control {
@@ -24,16 +24,12 @@
 }
 
 .facebook-login {
-  align-items: flex-end;
   display: flex;
-  height: 40px;
-  justify-content: space-around;
-  width: 900px;
 }
 
 .button-login {
   background-color: #4c6396;
-  border-radius: 5px;
+  border-radius: 6px;
   color: white;
   margin: 12px;
   width: 90px;
@@ -42,15 +38,13 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .left-content {
-  float: left;
   width: 800px;
 }
 
 .right-content {
-  float: right;
   width: 300px;
 }
