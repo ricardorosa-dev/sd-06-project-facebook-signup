@@ -170,7 +170,7 @@ input:focus {
   display: flex;
 }
 
-.radio-input-container input {
+.signup-form .radio-input-container input {
   margin: 0;
   padding: 0;
 }
@@ -217,12 +217,25 @@ footer {
   padding-top: 10px;
 }
 
+.footer-content a {
+  color: rgb(6, 6, 129);
+  font-weight: 500;
+  margin-right: 6px;
+  text-decoration: none;
+}
+
 .page-language {
   font-size: 12px;
 }
 
 .page-language button {
   padding: 0 6px;
+}
+
+.page-options a {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 2px 0;
 }
 
 .page-language a:first-child {
@@ -234,21 +247,8 @@ hr {
   border: 1px solid rgb(212, 208, 208);
 }
 
-.footer-content a {
-  color: rgb(6, 6, 129);
-  font-weight: 500;
-  margin-right: 6px;
-  text-decoration: none;
-}
-
 .page-options {
   margin-bottom: 6px;
-}
-
-.page-options a {
-  display: inline-block;
-  margin-right: 12px;
-  padding: 2px 0;
 }
 
 .copyright p {
