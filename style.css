@@ -31,7 +31,6 @@ body {
 /* CLEYTON */
 .main-content {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
@@ -49,7 +48,7 @@ body {
 
 .form-content {
   display: flex;
-  flex-direction: column;
+  flex-flow: wrap column;
 }
 
 .full-name {
@@ -64,9 +63,4 @@ body {
 .birthdate {
   display: flex;
   flex-direction: column;
-}
-
-.gender {
-  display: flex;
-  flex-flow: row wrap;
 }
