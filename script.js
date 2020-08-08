@@ -15,19 +15,27 @@ const functionalities = {
   },
   verifyFields: function verifyFields() {
     const allInputs = document.querySelectorAll('.right-content form input');
-    let i = 0;
+    verificadorText = functionalities.verifyTextInputs(allInputs);
+    verificadorBool = functionalities.verifyBooleansInputs(allInputs);
+    functionalities.selectorOfAction(verificadorText, verificadorBool);
+  },
+  verifyTextInputs: function verifyTextInputs(allInputs) {
     let verificadorText = 0;
-    let verificadorBool = 0;
+    let i = 0;
     while (verificadorText === 0 && i < allInputs.length - 4) {
       verificadorText += (allInputs[i].value === '') ? 1 : 0;
       i += 1;
     }
-    i = 0;
+    return verificadorText;
+  }, 
+  verifyBooleanInputs: function verifyBooleans(allInputs) {
+    let verificadorBool = 0;
+    let i = allInputs.length-4;
     while (verificadorBool <= 2 && i < allInputs.length - 1) {
       verificadorBool += (allInputs[i].checked === false) ? 1 : 0;
       i += 1;
     }
-    functionalities.selectorOfAction(verificadorText, verificadorBool);
+    return verificadorBool;
   },
   selectorOfAction: function selectorOfAction(checkText, checkBool) { // Para evitar complexidade
     if (checkText !== 0 || checkBool !== 2) {
