@@ -30,6 +30,11 @@ body {
   width: 537px;
 }
 
+.input-container {
+  display: flex;
+
+}
+
 .left-content {
   width: 800px;
 }
