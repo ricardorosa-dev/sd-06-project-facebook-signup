@@ -86,3 +86,8 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
+.formNewAccount {
+  display: flex;
+  flex-direction: column;
+}
