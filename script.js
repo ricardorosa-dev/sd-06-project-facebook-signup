@@ -18,6 +18,8 @@ customGenderInput.addEventListener('click', function () {
 });
 
 
-function checkInputs () {
+function checkInputs() {
   const allInputs = document.querySelectorAll('input');
+  return allInputs;
 }
+checkInputs();
