@@ -5,6 +5,9 @@ body {
 }
 
 header {
+}
+
+.top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -12,11 +15,8 @@ header {
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
+  
 }
-
-/* .top-bar {
-
-} */
 
 header img {
   margin-top: 17px;
