@@ -63,27 +63,27 @@ function checkInputs(inputs) {
   return checked;
 }
 
-// function removeRightContent() {
-//   const rightDiv = document.querySelector('.right-content');
-//   rightDiv.innerHTML = '';
-// }
+function removeRightContent() {
+  const rightDiv = document.querySelector('.right-content');
+  rightDiv.innerHTML = '';
+}
 
 function fillRightDiv(inputs) {
-  const formTitle = document.querySelector('#form-header');
-  const passwordInput = document.querySelector('#password');
+  const rightDiv = document.querySelector('.right-content');
   const name = inputs[0].value;
   const lastname = inputs[1].value;
-  // const emailPhone = inputs[2].value;
-  // const birthdate = inputs[4].value;
-  // const gender = inputs[5].value;
+  const emailPhone = inputs[2].value;
+  const birthdate = inputs[4].value;
+  const gender = inputs[5].value;
 
-  formTitle.innerHTML = `Olá, ${name} ${lastname}`;
-  passwordInput.value = '';
-
+  const displayP = document.createElement('p');
+  const message = `Olá, ${name} ${lastname}, o seu cadastro foi feito no ${emailPhone}, você nasceu em ${birthdate} e escolheu o gênero ${gender}!`;
+  displayP.appendChild(document.createTextNode(message));
+  rightDiv.appendChild(displayP);
   // const title = document.createElement('h2');
   // title.innerHTML = `Olá, ${name} ${lastname}`;
   // title.className = 'title';
-  // const paragraph1 = document.createElement('p');
+
   // paragraph1.innerHTML = emailPhone;
   // paragraph1.className = 'paragraph';
   // const paragraph2 = document.createElement('p');
@@ -104,7 +104,7 @@ registerButton.addEventListener('click', function (event) {
   document.querySelector('#invalid-inputs').innerHTML = '';
   const inputs = getInputs();
   if (checkInputs(inputs)) {
-    // removeRightContent();
+    removeRightContent();
     fillRightDiv(inputs);
   }
 });
