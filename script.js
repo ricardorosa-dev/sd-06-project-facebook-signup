@@ -29,7 +29,7 @@ botaoRegistro.addEventListener('click', validate);
 const perso = document.querySelector('#p');
 const feminino = document.querySelector('#f');
 const masculino = document.querySelector('#m');
-let todos = document.querySelector('.generos');
+const todos = document.querySelector('.generos');
 let clickInCustomGender = 0;
 
 // perso.addEventListener('click', function () {
@@ -38,7 +38,6 @@ let clickInCustomGender = 0;
 //   novoInput.name = 'gender';
 //   novoInput.className = 'gender-custom'
 //   novoInput.placeholder = 'Gênero (opcional)';
-//   
 // });
 
 perso.addEventListener('click', function () {
@@ -67,36 +66,3 @@ masculino.addEventListener('click', function () {
     document.querySelector('#gender-custom').parentNode.removeChild(document.querySelector('#gender-custom'));
   }
 });
-
-// const loginButton = document.querySelector('#button-login');
-// const fGender = document.querySelector('#feminine');
-// const mGender = document.querySelector('#masculine');
-// const customGenderInput = document.querySelector('#custom');
-// const registerButton = document.querySelector('#facebook-register');
-// let clickInCustomGender = 0;
-// loginButton.addEventListener('click', function () {
-//   alert(emailInput.value);
-// });
-// fGender.addEventListener('click', function () {
-//   clickInCustomGender = 0;
-//   if (document.querySelector('#gender-custom')) {
-//     document.querySelector('#gender-custom').parentNode.removeChild(document.querySelector('#gender-custom'));
-//   }
-// });
-// mGender.addEventListener('click', function () {
-//   clickInCustomGender = 0;
-//   if (document.querySelector('#gender-custom')) {
-//     document.querySelector('#gender-custom').parentNode.removeChild(document.querySelector('#gender-custom'));
-//   }
-// });
-// customGenderInput.addEventListener('click', function () {
-//   clickInCustomGender += 1;
-//   if (clickInCustomGender === 1) {
-//     const customInput = document.createElement('input');
-//     customInput.name = 'gender-custom';
-//     customInput.placeholder = 'Gênero (opcional)';
-//     customInput.id = 'gender-custom';
-//     customInput.className = 'input-form';
-//     document.querySelector('.gender-container').parentNode.appendChild(customInput);
-//   }
-// });
