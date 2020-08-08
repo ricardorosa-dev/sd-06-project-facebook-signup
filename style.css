@@ -18,11 +18,7 @@ body {
 
 .facebook-logo {
   justify-content: flex-start;
-  width: 190px;
-}
-
-.logo-align {
-  margin-left: 12%;
+  width: 180px;
 }
 
 .facebook-login {
@@ -49,14 +45,6 @@ body {
   font-weight: 800;
   height: 22px;
   margin-left: 10px;
-}
-
-.header-form-align-left {
-  margin-right: 20%;
-}
-
-.main-form-align-left {
-  margin-right: 14%;
 }
 
 .main-content {
@@ -96,11 +84,11 @@ header form input {
   margin-bottom: 8px;
 }
 
-.right-content form > :first-of-type input {
+.right-content form> :first-of-type input {
   width: 135px;
 }
 
-.right-content form > :nth-child( n + 2 ) input {
+.right-content form> :nth-child( n + 2) input {
   width: 295px;
 }
 
@@ -123,10 +111,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.small-align {
-  margin-bottom: 20px;
-}
-
 .left-content small {
   color: rgb(12, 43, 105);
   font-size: 20px;
@@ -136,5 +120,4 @@ h1 {
 .left-content-img-small-justify {
   margin-left: 100px;
   margin-top: 45px;
-  width: 450px;
 }
