@@ -1,5 +1,7 @@
 body {
+  background-color: rgb(233, 236, 240);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
   margin: 0;
   padding: 0;
 }
@@ -9,6 +11,7 @@ body {
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
+  font-size: 15px;
   height: 5.2em;
   width: 100%;
 }
@@ -16,6 +19,10 @@ body {
 .facebook-logo {
   justify-content: flex-start;
   width: 190px;
+}
+
+.logo-align {
+  margin-left: 12%;
 }
 
 .facebook-login {
@@ -27,8 +34,111 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
 }
 
 .form-control {
   align-self: flex-end;
+}
+
+.form-control button {
+  background-color: rgb(79, 113, 206);
+  border: 0.8px solid rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  color: white;
+  font-weight: 800;
+  height: 22px;
+  margin-left: 10px;
+}
+
+.header-form-align-left {
+  margin-right: 20%;
+}
+
+.main-form-align-left {
+  margin-right: 14%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  justify-content: flex-end;
+  width: 300px;
+}
+
+label {
+  font-size: 12px;
+}
+
+header form input {
+  border: 1px solid black;
+  height: 16px;
+  margin-top: 2px;
+  width: 110px;
+}
+
+.main-content-form {
+  display: flex;
+}
+
+.right-content form input {
+  border: 0.6px solid rgb(201, 201, 201);
+  border-radius: 2.5px;
+  height: 25px;
+  margin-bottom: 8px;
+}
+
+.right-content form> :first-of-type input {
+  width: 135px;
+}
+
+.right-content form> :nth-child(n + 2) input {
+  width: 295px;
+}
+
+.form-space {
+  justify-content: space-between;
+}
+
+input:focus {
+  outline: 0;
+}
+
+button:focus {
+  background-color: rgb(6, 32, 105);
+  outline: 0;
+}
+
+button:hover {
+  background-color: rgb(53, 85, 173);
+}
+
+h1 {
+  color: rgb(32, 31, 32);
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+
+.small-align {
+  margin-bottom: 20px;
+}
+
+.left-content small {
+  color: rgb(12, 43, 105);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.left-content-img-small-justify {
+  margin-left: 100px;
+  margin-top: 45px;
+  width: 450px;
 }

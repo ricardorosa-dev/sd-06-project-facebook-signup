@@ -10,21 +10,57 @@
 
 <body>
   <Header class="top-bar">
-    <img class="facebook-logo top-bar" alt="Logo-Facebook" src="imgs/facebook-logo.png">
-      <form class="facebook-login top-bar">
-        <div class="form-group">
-          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-          <input type="text" id="user-email-phone" name="name-usu" placeholder="Usuario">
-        </div>
-        <div class="form-group">
-          <label id="user-password-label" for="user-password">Senha</label>
-          <input type="text" id="user-password" name="senha" placeholder="Senha">
-        </div>
-        <div class="form-control">
-          <button id="button-login" type="submit">Entrar</button>
-      </form>
+    <div class="logo-align">
+      <img class="facebook-logo top-bar" alt="Logo-Facebook" src="imgs/facebook-logo.png">
+    </div>
+    <form class="facebook-login top-bar header-form-align-left">
+      <div class="form-group">
+        <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+        <input type="text" id="user-email-phone" name="name-usu">
+      </div>
+      <div class="form-group">
+        <label id="user-password-label" for="user-password">Senha</label>
+        <input type="text" id="user-password" name="senha">
+      </div>
+      <div class="form-control">
+        <button id="button-login" type="submit">Entrar</button>
+    </form>
+
     </div>
   </Header>
+  <section class="main-content">
+    <section class="left-content left-content-img-small-justify">
+      <div class="">
+        <small id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem
+          parte da
+          sua vida.
+        </small>
+      </div>
+      <img id="facebook-networking" src="/imgs/networking.png" alt="imagem conexões">
+    </section>
+    <section class="right-content main-form-align-left">
+      <h1>Abra uma conta</h1>
+      <div class="small-align">
+        <small id="quick-easy">É rápido e fácil.</small>
+      </div>
+      <form class="">
+        <div class="main-content-form form-space">
+          <div>
+            <input type="text" name="firstname" placeholder="Nome">
+          </div>
+          <div>
+            <input type="text" name="lastname" placeholder="Sobrenome">
+          </div>
+        </div>
+        <div>
+          <input type="text" name="phone_email" placeholder="Celular ou email">
+        </div>
+        <div>
+          <input type="password" name="password" placeholder="Nova senha">
+        </div>
+      </form>
+    </section>
+  </section>
   <script type="text/javascript" src="/script.js"></script>
 </body>
 
