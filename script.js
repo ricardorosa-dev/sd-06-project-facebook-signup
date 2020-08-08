@@ -1,6 +1,7 @@
 window.onload = function () {
   const formButton = document.querySelector('#button-login');
   formButton.addEventListener('click', function () {
-    alert('Email ou telefone');
+    const inputEmailValue = document.querySelector('#user-email-phone');
+    alert(inputEmailValue.value);
   });
 };
