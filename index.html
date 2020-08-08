@@ -33,27 +33,27 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="">
         <div class="name">
-          <input type="text" name="firstname" id="" placeholder="Nome">
-          <input type="text" name="lastname" id="" placeholder="Sobrenome">
+          <input type="text" required name="firstname" id="" placeholder="Nome">
+          <input type="text" required name="lastname" id="" placeholder="Sobrenome">
         </div>
         <div>
-          <input type="text" name="phone_email" id="cel_number" class="input-info" placeholder="Celular ou email">
+          <input type="text" required name="phone_email" id="cel_number" class="input-info" placeholder="Celular ou email">
         </div>
         <div>
-          <input type="password" name="password" id="" class="input-info" placeholder="Nova senha">
+          <input type="password" required name="password" id="" class="input-info" placeholder="Nova senha">
         </div>
         <div>
           <label for="" id="label-birthdate">Data de nascimento</label><br>
-          <input type="date" name="birthdate" id="" placeholder="dd/mm/aaaa">
+          <input type="date" required name="birthdate" id="" placeholder="dd/mm/aaaa">
         </div>
         <div>
           <fieldset>
             <legend id="label-gender">Gênero</legend>
-            <input type="radio" name="gender" id="male">
+            <input type="radio" required name="gender" id="male">
             <label class="gender" for="male">Masculino</label>
-            <input type="radio" name="gender" id="female">
+            <input type="radio" required name="gender" id="female">
             <label class="gender" for="female">Feminino</label>
-            <input type="radio" name="gender" id="custom">
+            <input type="radio" required name="gender" id="custom">
             <label class="gender" for="custom">Personalizado</label>
           </fieldset>
         </div>
@@ -61,6 +61,6 @@
       </form>
     </div>
   </section>
-  <script src="script.js">Data de nascimento</script>
+  <script src="script.js"></script>
 </body>
 </html>

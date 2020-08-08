@@ -3,6 +3,11 @@ body {
   padding: 0;
 }
 
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
