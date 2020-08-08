@@ -33,8 +33,8 @@ body {
 }
 
 .control {
-  display: flex;
   align-content: center;
+  display: flex;
 }
 
 .form-group {
@@ -95,13 +95,10 @@ body {
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
-  flex: 1;
   width: 300px;
 }
 
 .main-form {
   display: flex;
   flex-direction: column;
-  flex-flow: row;
-  flex-wrap: wrap;
 }
