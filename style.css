@@ -96,19 +96,19 @@ body {
   width: 300px;
 }
 
-.nome-sobrenome{
+.nome-sobrenome {
   display: flex;
 }
 
-.nome-sobrenome input{
+.nome-sobrenome input {
   width: 100px;
 }
 
-.form-right-content{
+.form-right-content {
   display: flex;
   flex-direction: column;
 }
 
-.input-right-content{
+.input-right-content {
   width: 208px;
 }
