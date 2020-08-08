@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(241 , 243 , 248);
+  background-color: rgb(241, 243, 248);
   box-sizing: border-box;
   font-family: sans-serif;
   font-size: 13px;
@@ -87,12 +87,7 @@ body {
   font-size: 30px;
 }
 
-.main-content .right-content h1 {
-  font-size: 30px;
-}
-
 .main-content .right-content p {
   font-size: 19px;
   font-weight: 500;
 }
-
