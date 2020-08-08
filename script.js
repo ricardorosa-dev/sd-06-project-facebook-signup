@@ -20,5 +20,34 @@ function removeCustom() {
   }
 }
 
+function getInputs() {
+  const arrayAux = document.querySelectorAll('input');
+  const inputs = [];
+
+  for (let i = 2; i < arrayAux.length; i += 1) {
+    if (arrayAux[i].type !== 'radio') {
+      inputs.push(arrayAux[i]);
+    } else if (arrayAux[i] === 'radio' && arrayAux[i].checked) {
+      inputs.push(arrayAux[i]);
+    }
+  }
+  return inputs;
+}
+
+function checkValues(inputs) {
+  for (let i = 0; i < inputs.length; i += 1) {
+    if (inputs[i].value === '') {
+      document.querySelector('.input-error').innerHTML = 'Campos inválidos';
+    }
+  }
+}
+
 document.querySelector('#Feminino').addEventListener('click', removeCustom);
 document.querySelector('#Masculino').addEventListener('click', removeCustom);
+
+const submitButton = document.querySelector('#facebook-register');
+submitButton.addEventListener('click', function (event) {
+  event.preventDefault();
+  const teste = getInputs();
+  checkValues(teste);
+});

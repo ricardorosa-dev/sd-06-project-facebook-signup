@@ -35,7 +35,7 @@
         O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
       </p>
       <div>
-        <img id="facebook-networking" src="imgs/networking.png" alt="Networking">
+        <img id="facebook-networking" src="imgs/networking.png" alt="Networking">ent.querySelector('.input-error').innerHTML = 'Campos inválidos'
       </div>
     </section>
     <section class="right-content">
@@ -43,21 +43,22 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form class="form-content">
         <div class="name-field">
-          <input type="text" name="firstname" placeholder="Nome" required="required">
-          <input type="text" name="lastname" placeholder="Sobrenome" required="required">
+          <input type="text" name="firstname" placeholder="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" required="required">
-        <input type="password" name="password" placeholder="Nova senha" required="required">
+        <input type="text" name="phone_email" placeholder="Celular ou email">
+        <input type="password" name="password" placeholder="Nova senha">
         <label id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required="required">
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
         <div class="radio-container">
           <label id="label-gender">Gênero</label>
           <div class="label-gender">
-            <label for="Feminino"><input type="radio" name="genero" id="Feminino" value="Feminino" checked required="required">Feminino</label>
-            <label for="Masculino"><input type="radio" name="genero" id="Masculino" value="Masculino" required="required">Masculino</label>
-            <label for="Personalizado"><input type="radio" name="genero" id="Personalizado" value="Personalizado" required="required" class="Personalizado">Personalizado</label>
+            <label for="Feminino"><input type="radio" name="genero" id="Feminino" value="Feminino" checked >Feminino</label>
+            <label for="Masculino"><input type="radio" name="genero" id="Masculino" value="Masculino">Masculino</label>
+            <label for="Personalizado"><input type="radio" name="genero" id="Personalizado" value="Personalizado" class="Personalizado">Personalizado</label>
           </div>
         </div>
+        <p class="input-error"></p>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
 
