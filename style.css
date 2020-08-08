@@ -3,6 +3,11 @@ body {
   padding: 0;
 }
 
+.divMessage {
+  color: rgb(253, 6, 6);
+  font-weight: 700;
+}
+
 .facebook-login {
   align-self: center;
   display: flex;
