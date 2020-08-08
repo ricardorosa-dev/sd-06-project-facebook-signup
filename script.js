@@ -6,7 +6,7 @@ btn.addEventListener('click', function () {
 });
 
 function messageInvalid() {
-  const messageError = document.querySelector('.divMessage')
+  const messageError = document.querySelector('.divMessage');
   messageError.innerText = 'Campos inválidos';
 }
 
