@@ -115,3 +115,7 @@ form {
 .right-content p {
   margin: 0 0 15px;
 }
+
+.right-content form {
+  height: 100%;
+}

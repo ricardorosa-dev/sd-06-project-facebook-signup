@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="libs/bulma.min.css">
+  <link rel="stylesheet" href="libs/pikaday.css">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
@@ -46,12 +47,12 @@
         <div class="field is-horizontal">
           <div class="field-body">
             <div class="field">
-              <p class="control">
+              <p class="control mb-0">
                 <input class="input is-normal" type="text" name="firstname" placeholder="Nome">
               </p>
             </div>
             <div class="field">
-              <p class="control">
+              <p class="control mb-0">
                 <input class="input" type="text" name="lastname" placeholder="Sobrenome">
               </p>
             </div>
@@ -60,7 +61,7 @@
         <div class="field is-horizontal">
           <div class="field-body">
             <div class="field">
-              <p class="control">
+              <p class="control mb-0">
                 <input class="input is-normal" type="text" name="phone_email" placeholder="Celular ou email">
               </p>
             </div>
@@ -69,15 +70,22 @@
         <div class="field is-horizontal">
           <div class="field-body">
             <div class="field">
-              <p class="control">
+              <p class="control mb-2">
                 <input class="input is-normal" type="password" name="password" placeholder="Nova senha">
               </p>
             </div>
           </div>
         </div>
+        <div class="field">
+          <label class="label is-size-6" id="label-birthdate">Data de nascimento</label>
+          <div class="control">
+            <input class="input" type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+          </div>
+        </div>
       </form>
     </div>
   </main>
-  <script src="script.js"></script>
+  <script src="libs/pikaday.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
