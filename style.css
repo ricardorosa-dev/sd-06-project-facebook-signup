@@ -13,15 +13,22 @@ body {
 .top-bar {
   align-items: center; /* Alinhar conteudo no meio da barra - vertical */
   background-color: rgb(59, 89, 152); /* Benchmark do facebook rgb(66, 103, 178); */
-  background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%); /* face */
+
+  /* face linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%);*/
+  background-image:  rgb(66, 103, 178);
   border-bottom: 1px solid rgb(19, 55, 131); /* Benchmark do facebook */
   display: flex; /* Requisito 1 */
   height: 82px; /* Benchmark do facebook */
-  justify-content: center; /* Requisito 3 */
+  justify-content: space-around; /* Requisito 3 */
   margin: 0 auto; /* Benchmark do facebook */
   min-height: 42px; /* Benchmark do facebook */
   padding-top: 13px; /* Benchmark do facebook */
   position: relative; /* Benchmark do facebook */
+}
+
+.top-bar-subcontainer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-bar form {
@@ -116,6 +123,29 @@ header a {
   width: 100%;
 }
 
+.right-content form label {
+  width: 100%;
+}
+
 .names {
   display: flex;
+}
+
+.right-content form .radios {
+  width: 100%;
+}
+
+.right-content form .radios input {
+  width: 10%;
+}
+
+.right-content form .radios label {
+  width: 10%;
+}
+
+.right-content form button {
+  background-color: green;
+  border-radius: 5%;
+  color: white;
+  width: 60%;
 }
