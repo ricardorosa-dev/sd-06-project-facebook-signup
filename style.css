@@ -41,3 +41,7 @@ body {
 .names {
   display: flex;
 }
+
+.radios-gender {
+  display: flex;
+}
