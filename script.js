@@ -6,4 +6,4 @@ function alertUser() {
     alert(botao.value);
   }
 }
-//alertUser();
+alertUser();
