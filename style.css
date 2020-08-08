@@ -1,20 +1,20 @@
 body {
-  background-image:linear-gradient(rgb(255, 255, 255), rgb(211, 216, 232));
+  background-image: linear-gradient(white, rgb(211, 216, 232));
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   height: 760px;
   margin: 0;
 }
 
-h1{
-  color:rgb(51, 51, 51);
-  font-size:36px;
-  font-weight:600;
-  line-height:48.24px;
+h1 {
+  color: rgb(51, 51, 51);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48.24px;
   margin-bottom: 0;
 }
 
-.quick-easy{
+.quick-easy {
   color: rgb(29, 33, 41);
   font-size: 19px;
   font-weight: 400;
@@ -31,15 +31,23 @@ h1{
 }
 
 .facebook-logo {
-  height: 74px;
-  width: 167px;
+  cursor: pointer;
+  height: 80px;
+  width: 190px;
 }
 
-.email-senha {
+.email {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
-  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.senha {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
 
 .input-header {
@@ -54,13 +62,15 @@ h1{
 }
 
 .button-login {
-  background-color: #4267b2;
-  border: 1px solid rgb(71, 70, 70);
+  background-color: rgb(66, 103, 178);
+  border: 1px solid rgb(41, 72, 125);
   border-radius: 2px;
   color: white;
+  cursor: pointer;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 18px;
+  padding: 2px 6px;
 }
 
 .form-group {
@@ -117,12 +127,12 @@ h1{
 }
 
 .nome-sobrenome input {
+  border: solid 1px rgb(189, 199, 216);
   border-color: rgb(189, 199, 216);
   border-radius: 5px;
-  border: solid 1px rgb(189, 199, 216);
-  color:rgb(28, 30, 33);
-  font-size:18px;
-  height:25px;
+  color: rgb(28, 30, 33);
+  font-size: 18px;
+  height: 25px;
   padding: 5px;
   width: 140px;
 }
@@ -138,15 +148,19 @@ h1{
 }
 
 .input-right-content {
+  border: solid 1px rgb(189, 199, 216);
   border-color: rgb(189, 199, 216);
   border-radius: 5px;
-  border: solid 1px rgb(189, 199, 216);
-  color:rgb(28, 30, 33);
-  font-size:18px;
-  height:25px;
+  color: rgb(28, 30, 33);
+  font-size: 18px;
+  height: 25px;
   margin-top: 7px;
   padding: 5px;
   width: 300px;
+}
+
+.data-nascimento {
+  width: 180px;
 }
 
 .gender {
@@ -155,49 +169,52 @@ h1{
   margin-bottom: 7px;
 }
 
-.label-gender{
+.label-gender {
   margin-bottom: 15px;
 }
 
-.gender-choices{
+.gender-choices {
   color: #1d2129;
   font-size: 14.5px;
-  padding: 0px 10px 0px 3px;
+  padding: 0 10px 0 3px;
 }
 
-.labelcinza{
+.labelcinza {
   color: rgb(144, 148, 156);
-  font-size:16px;
-  font-weight:700;
-  height:21px;
-  line-height:21.44px;
+  font-size: 16px;
+  font-weight: 700;
+  height: 21px;
+  line-height: 21.44px;
   margin-top: 20px;
 }
 
 .right-content button {
   background: linear-gradient(#67ae55, #578843);
-  border-radius: 5px;
   border: 1px solid;
-  color: white;
   border-color: rgb(44, 81, 21);
-  font: 700 17.3333px Arial;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font: 700 17.5px Arial, Helvetica, sans-serif;
   line-height: 23.94px;
-  margin: 10px 0px 0px 10px;
+  margin: 10px 0 0 10px;
   padding: 7px 20px;
   text-align: center;
-  text-shadow:rgba(0, 0, 0, 0.5) 0px 1px 2px;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
   width: 194px;
 }
 
-.termos{
+.termos {
   color: #777;
   font-size: 11px;
   width: 316px;
 }
-a{
+
+a {
+  color: rgb(56, 88, 152);
   text-decoration: none;
-  color: rgb(56, 88, 152);;
 }
-a:hover{
+
+a:hover {
   text-decoration: underline;
 }
