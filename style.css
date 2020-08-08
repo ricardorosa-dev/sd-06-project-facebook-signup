@@ -11,7 +11,6 @@
 .form-control {
   align-self: flex-end;
   display: flex;
-  vertical-align: middle;
 }
 
 .form-group {
@@ -28,7 +27,7 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .top-bar {
@@ -42,6 +41,5 @@
 .right-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   width: 300px;
 }
