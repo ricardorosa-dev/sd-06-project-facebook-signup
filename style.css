@@ -31,9 +31,13 @@ body {
 }
 
 .left-content {
-  width: 700px;
+  width: 800px;
 }
 
 .right-content {
   width: 300px;
+}
+
+.names {
+  display: flex;
 }
