@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  font-family: Lato, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -10,6 +10,7 @@ body {
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
+  color: #ffffff;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -18,7 +19,7 @@ body {
 
 .form-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .form-container {
@@ -56,7 +57,17 @@ body {
 }
 
 .form-element3 {
-  margin-top: 45px;
+  margin-top: 10px;
+}
+
+.form-element3 > #button-login {
+  background-color: #4267B2;
+  color: #ffffff;
+  font-weight: bold;
+  height: 24px;
+  padding: 2px 6px;
+  text-align: center;
+  width: 50px;
 }
 
 .form-control {
@@ -77,15 +88,132 @@ body {
   width: 300px;
 }
 
+.right-content > h1 {
+  color: #333333;
+  font-size: 36px;
+  height: 43px;
+  margin: 0 0 5px;
+  width: 399px;
+}
+
+.right-content > p {
+  color: #333333;
+  font-size: 19px;
+  height: 23px;
+  margin: 0 0 20px;
+  width: 399px;
+}
+
 .full-name {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .inputName {
   align-items: flex-start;
 }
 
+.inputName > #name {
+  border-radius: 5px;
+  height: 39px;
+  width: 194px;
+}
+
+.spaceName {
+  padding: 5px;
+}
+
 .inputLastName {
   align-items: flex-end;
+}
+
+.inputLastName > #lastname {
+  border-radius: 5px;
+  height: 39px;
+  width: 194px;
+}
+
+.email > #email-phone {
+  border-radius: 5px;
+  height: 39px;
+  margin-top: 9px;
+  width: 399px;
+}
+
+.password > #password {
+  border-radius: 5px;
+  height: 39px;
+  margin-top: 9px;
+  width: 399px;
+}
+
+.birthday > #birth {
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 9px;
+  width: 196px;
+}
+
+.label-gender {
+  margin-top: 10px;
+}
+
+.gender > #masculino {
+  color: #1D2129;
+  font-size: 18px;
+  height: 20px;
+  padding: 0 10px 0 3px;
+  width: 52.02px;
+}
+
+.gender > #feminino {
+  color: #1D2129;
+  font-size: 18px;
+  height: 20px;
+  width: 73.03px;
+}
+
+.gender > #personalizado {
+  color: #1D2129;
+  font-size: 18px;
+  height: 20px;
+  width: 75.02;
+}
+
+.spaceName1 {
+  padding: 10px;
+}
+
+.gender {
+  display: flex;
+  margin-top: 10px;
+}
+
+.Gender > #label-gender {
+  color: #90949C;
+  font-size: 16px;
+  font-weight: bold;
+  height: 21px;
+  margin: 10px 0 5px;
+  width: 399px;
+}
+
+.birthday > #label-birthdate {
+  color: #90949C;
+  font-size: 16px;
+  font-weight: bold;
+  height: 21px;
+  margin: 10px 0 5px;
+  width: 399px;
+}
+
+.buttonForm > #facebook-register {
+  background-color: #69A74E;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 19px;
+  height: 39px;
+  margin: 10px 0;
+  padding-bottom: 7px 20px;
+  width: 194px;
 }
