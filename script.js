@@ -62,6 +62,7 @@ perso.addEventListener('click', function () {
     customInput.placeholder = 'Gênero (opcional)';
     customInput.id = 'gender-custom';
     customInput.className = 'input-form';
-    todos.appendChild(customInput);
+    // todos.appendChild(customInput);
+    document.querySelector('.generos').parentNode.appendChild(customInput);
   }
 });
