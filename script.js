@@ -32,6 +32,6 @@ perso.addEventListener('click', function () {
   novoInput.type = 'text';
   novoInput.name = 'gender';
   novoInput.placeholder = 'Gênero (opcional)';
-  customInput.id = 'gender-custom';
+  novoInput.id = 'gender-custom';
   todos.appendChild(novoInput);
 });
