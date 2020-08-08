@@ -1,10 +1,12 @@
-const buttonLogin = document.getElementById('button-login');
+const btnLogin = document.getElementById('button-login');
 const userEmailPhone = document.getElementById('user-email-phone');
+const invalidMessage = document.getElementById('invalid-input');
+const btnSingUp = document.getElementById('facebook-register');
 
-function clickbutton() {
+function clickButton() {
   alert(userEmailPhone.value);
 }
 
 window.onload = function () {
-  buttonLogin.addEventListener('click', clickbutton);
+  btnLogin.addEventListener('click', clickButton);
 };
