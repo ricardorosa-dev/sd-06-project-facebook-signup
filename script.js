@@ -16,3 +16,8 @@ customGenderInput.addEventListener('click', function () {
   customInput.placeholder = 'Gênero (opcional)';
   document.querySelector('.input-gender-container').appendChild(customInput);
 });
+
+
+function checkInputs () {
+  const allInputs = document.querySelectorAll('input');
+}
