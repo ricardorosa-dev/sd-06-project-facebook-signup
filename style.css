@@ -14,12 +14,14 @@ body {
 }
 
 .facebook-logo {
+  justify-content: flex-start;
   margin-left: 16%;
   width: 190px;
 }
 
 .facebook-login {
   display: flex;
+  justify-content: flex-end;
   margin-bottom: 2%;
 }
 
@@ -30,12 +32,4 @@ body {
 
 .form-control {
   align-self: flex-end;
-}
-
-.flex-start {
-  justify-content: flex-start;
-}
-
-.flex-end {
-  justify-content: flex-end;
 }
