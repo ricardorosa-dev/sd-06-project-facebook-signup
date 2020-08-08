@@ -8,7 +8,6 @@ function personalizedGender() {
     const newGenre = document.createElement('input');
     newGenre.name = 'gender-custom';
     newGenre.id = 'gender-custom';
-    newGenre.type = 'text';
     newGenre.placeholder = 'Gênero (opcional)';
     document.querySelector('.label-gender').parentNode.appendChild(newGenre);
   }
