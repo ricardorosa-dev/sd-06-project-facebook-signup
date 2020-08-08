@@ -23,8 +23,8 @@ buttonRegister.addEventListener('click', function (e) {
   e.preventDefault();
   for (let index = 0; index < inputElements.length; index += 1) {
     if (inputElements[index].value === '') {
-        const messageDiv = document.querySelector('.empty-input');
-        messageDiv.innerHTML = 'Campos inválidos';
-      }
+      const messageDiv = document.querySelector('.empty-input');
+      messageDiv.innerHTML = 'Campos inválidos';
     }
+  }
 });
