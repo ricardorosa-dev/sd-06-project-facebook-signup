@@ -5,9 +5,9 @@ document.querySelector('#button-login').addEventListener('click', function () {
 
 function personalizedGender() {
   const newGenre = document.createElement('input');
-  newGenre.type = 'text';
   newGenre.name = 'gender';
+  newGenre.type = 'text';
   newGenre.placeholder = 'Gênero (opcional)';
-  document.querySelector('.label-gender').appendChild(newGenre);
+  document.querySelector('.form-content').lastElementChild.previousElementSibling.appendChild(newGenre);
 }
-document.querySelector('.personalizado').addEventListener('click', personalizedGender);
+document.querySelector('.Personalizado').addEventListener('click', personalizedGender);
