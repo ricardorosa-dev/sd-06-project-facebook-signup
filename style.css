@@ -12,7 +12,7 @@ header {
   height: 80px;
   justify-content: space-between;
   margin: 0 auto;
-  width: 980px;
+  max-width: 980px;
 }
 
 form {
@@ -22,10 +22,11 @@ form {
 .logo {
   align-items: center;
   display: flex;
+  margin-top: 10px;
 }
 
 .logo img {
-  width: 170px;
+  width: 160px;
 }
 
 .facebook-login {
