@@ -28,3 +28,7 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.left-content {
+  width: 800px;
+}
