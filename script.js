@@ -3,10 +3,11 @@ document.querySelector('#button-login').addEventListener('click', function () {
   alert(inputEmail);
 });
 
-function personalizedGenre() {
+function personalizedGender() {
   const newGenre = document.createElement('input');
   newGenre.type = 'text';
-  newGenre.name = 'gender-custom';
+  newGenre.name = 'gender';
+  newGenre.placeholder = "Gênero (opcional)";
   document.querySelector('.label-gender').appendChild(newGenre);
 }
-document.querySelector('.personalizado').addEventListener('click', personalizedGenre);
+document.querySelector('.personalizado').addEventListener('click', personalizedGender);
