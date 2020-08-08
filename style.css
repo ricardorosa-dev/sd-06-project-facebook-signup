@@ -9,8 +9,8 @@
 
 .facebook-logo {
   display: flex;
-  justify-content: flex-start;
   float: left;
+  justify-content: flex-start;
 }
 
 .form-group {
