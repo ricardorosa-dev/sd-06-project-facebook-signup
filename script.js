@@ -5,12 +5,11 @@ btnLogIn.addEventListener('click', () => {
 });
 
 const btnRadioPersonal = document.querySelector('#personalizado');
-const spanPersonal = document.querySelector('#text-area-personalizado');
-// const btnRegister = document.querySelector('#facebook-register');
+const spanPersonal = document.querySelector('#input-personalizado');
 btnRadioPersonal.addEventListener('click', () => {
   event.preventDefault();
-  const txtArea = document.createElement('textarea');
-  txtArea.placeholder = 'Gênero (opcional)';
-  txtArea.name = 'gender-custom';
-  spanPersonal.appendChild(txtArea);
+  const inputGender = document.createElement('input');
+  inputGender.placeholder = 'Gênero (opcional)';
+  inputGender.name = 'gender-custom';
+  spanPersonal.appendChild(inputGender);
 });
