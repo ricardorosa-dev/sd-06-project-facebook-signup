@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8" lang="en">
   <title>Facebook - Log In or Sign Up</title>
-  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -38,16 +37,16 @@
       <section class="quick-easy">É rápido e fácil.</section>
       <form class="sign-in-data">
         <div class="names">
-          <input required placeholder="Nome" id="name" name="firstname" type="text">
-          <input required placeholder="Sobrenome" id="surname" name="lastname" type="text">
+          <input required="required" placeholder="Nome" id="name" class="names-item sign-in" name="firstname" type="text">
+          <input required="required" placeholder="Sobrenome" id="surname" class="names-item sign-in" name="lastname" type="text">
         </div>
-        <input required placeholder="Celular ou email" id="phone-email-sign" name="phone_email" type="text">
-        <input required placeholder="Nova senha" id="password" name="password" type="password">
+        <input required="required" class="sign-in" placeholder="Celular ou email" id="phone-email-sign" name="phone_email" type="text">
+        <input required="required" class="sign-in" placeholder="Nova senha" id="password" name="password" type="password">
         <label for="birth" id="label-birthdate">Data de nascimento</label>
-        <input required id="birth" placeholder="dd/mm/aaaa" name="birthdate" type="date">
+        <input required="required" class="sign-in" id="birth" placeholder="dd/mm/aaaa" name="birthdate" type="date">
         <label for="" id="label-gender">Gênero</label>
         <div class="gender">
-          <input required id="feminino" type="radio" name="gender" value="Feminino"/>
+          <input id="feminino" checked type="radio" name="gender" value="Feminino"/>
           <label for="feminino">Feminino</label>
           <input type="radio" id="masculino" name="gender" value="Masculino"/>
           <label for="masculino">Masculino</label>

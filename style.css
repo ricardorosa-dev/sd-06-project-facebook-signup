@@ -67,12 +67,17 @@ header label {
 
 .names {
   display: flex;
+  width: 289px;
+}
+
+.names-item {
+  overflow-y: auto;
 }
 
 .sign-in-data input {
   height: 30px;
   margin: 5px;
-  width: 100%;
+  width: 90%;
 }
 
 .gender {
