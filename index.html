@@ -21,14 +21,14 @@
                     <input id="user-password" type="password">
                 </div>
                 <div class="form-control">
-                    <button id="button-login">Entrar</button>
+                    <button id="button-login"class="button-login">Entrar</button>
                 </div>
             </form>
         </div>
     </div>
     <div class="main-content">
         <div class="left-content">
-            <p id="facebook-slogan">
+            <p id="facebook-slogan" class="facebook-slogan">
                 O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
             </p>
             <img id="facebook-networking" src="imgs/networking.png">
@@ -36,7 +36,7 @@
         <div class="right-content">
             <h1 class="right-content">Abra uma conta</h1>
             <small class="quick-easy">É rápido e fácil.</small>
-            <form action="">
+            <form class="register-form">
                 <div class="linha">
                     <input class="firstname" name="firstname" placeholder="Nome" type="text" required>
                     <input class="lastname" name="lastname" placeholder="Sobrenome" type="text" required>
@@ -58,10 +58,11 @@
                         <label for="personalized"><input name="gender" type="radio" id="personalized" value="Personalizado" required>Personalizado</label>
                     </div>
                 </div>
-                <button id="facebook-register" type="submit">Cadastre-se</button>
+                <button id="facebook-register" class="facebook-register" type="submit">Cadastre-se</button>
             </form>
         </div>
     </div>
+    <script src="libs/js/just-validate.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
