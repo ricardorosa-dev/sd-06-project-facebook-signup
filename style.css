@@ -1,5 +1,7 @@
 body {
   font-family: Montserrat, sans-serif;
+  height: 768px;
+  width: 1366px;
 }
 
 .top-bar {
@@ -48,3 +50,5 @@ body {
 .right-content {
   width: 300px;
 }
+
+
