@@ -52,16 +52,54 @@ function getInputs() {
 }
 
 function checkInputs(inputs) {
+  let checked = true;
   inputs.forEach(function (item) {
     if (!item.value) {
       document.querySelector('#invalid-inputs').innerHTML = 'Campos inválidos';
+      checked = false;
     }
   });
+  return checked;
+}
+
+function removeRightContent() {
+  const rightDiv = document.querySelector('.right-content');
+  rightDiv.innerHTML = '';
+}
+
+function fillRightDiv(inputs) {
+  const rightDiv = document.querySelector('.right-content');
+  const name = inputs[0].value;
+  const lastname = inputs[1].value;
+  const emailPhone = inputs[2].value;
+  const birthdate = inputs[4].value;
+  const gender = inputs[5].value;
+
+  const title = document.createElement('h2');
+  title.innerHTML = `Olá, ${name} ${lastname}`;
+  title.className = 'title';
+  const paragraph1 = document.createElement('p');
+  paragraph1.innerHTML = emailPhone;
+  paragraph1.className = 'paragraph';
+  const paragraph2 = document.createElement('p');
+  paragraph2.innerHTML = birthdate;
+  paragraph2.className = 'paragraph';
+  const paragraph3 = document.createElement('p');
+  paragraph3.innerHTML = gender;
+  paragraph3.className = 'paragraph';
+
+  rightDiv.appendChild(title);
+  rightDiv.appendChild(paragraph1);
+  rightDiv.appendChild(paragraph2);
+  rightDiv.appendChild(paragraph3);
 }
 
 registerButton.addEventListener('click', function (event) {
   document.querySelector('#invalid-inputs').innerHTML = '';
   const inputs = getInputs();
-  checkInputs(inputs);
+  if (checkInputs(inputs)) {
+    removeRightContent();
+    fillRightDiv(inputs);
+  }
   event.preventDefault();
 });
