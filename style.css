@@ -258,3 +258,18 @@ hr {
   font-size: 85%;
   font-weight: 700;
 }
+
+/* JS ADDED ELEMENTS */
+.error-msg {
+  bottom: 40px;
+  color: red;
+  font-weight: 700;
+  position: absolute;
+  right: -40px;
+}
+
+.heyJoe {
+  font-weight: 700;
+  margin-top: 50%;
+  text-align: center;
+}

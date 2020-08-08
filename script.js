@@ -15,6 +15,7 @@ function showErrorMsg() {
 
     const errorMsgContainer = document.createElement('p');
     errorMsgContainer.setAttribute('id', 'error-msg');
+    errorMsgContainer.setAttribute('class', 'error-msg');
     errorMsgContainer.appendChild(document.createTextNode('Campos inválidos'));
 
     signUpForm.appendChild(errorMsgContainer);
@@ -22,7 +23,7 @@ function showErrorMsg() {
 }
 
 function createHeyJoe(obj) {
-  const displayedMsg = `Olá, ${obj.firstname} ${obj.lastname}, o seu cadastro foi feito no ${obj.phone_email}, você nasceu em ${obj.birthdate} e escolheu o gênero ${obj.gender}`;
+  const displayedMsg = `Olá, ${obj.firstname} ${obj.lastname}, o seu cadastro foi feito no ${obj.phone_email}, você nasceu em ${obj.birthdate} e escolheu o gênero ${obj.gender}!`;
 
   const displayElement = document.createElement('p');
   displayElement.appendChild(document.createTextNode(displayedMsg));
@@ -46,6 +47,7 @@ function handleHeyJoeElement() {
   });
 
   const heyJoeElement = createHeyJoe(inputValues);
+  heyJoeElement.setAttribute('class', 'heyJoe');
 
   const rightContentContainer = document.querySelector('.right-content');
   rightContentContainer.innerHTML = '';
