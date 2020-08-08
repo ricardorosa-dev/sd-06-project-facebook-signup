@@ -5,9 +5,7 @@ const passwordInput = document.querySelector('#user-password');
 const customGenderInput = document.querySelector('#custom');
 
 loginButton.addEventListener('click', function () {
-  if (emailInput.value && passwordInput.value) {
-    alert(emailInput.value);
-  }
+  alert(emailInput.value);
 });
 
 customGenderInput.addEventListener('click', function () {
