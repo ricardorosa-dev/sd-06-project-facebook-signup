@@ -1,5 +1,4 @@
 body {
-  text-align: left;
   font-size: 12px; /* Benchmark do facebook */
   direction: ltr; /* Benchmark do facebook */
   display: block; /* Benchmark do facebook */
@@ -7,14 +6,15 @@ body {
   margin: 0; /* Benchmark do facebook */
   overflow-y: scroll; /* Benchmark do facebook */
   padding: 0; /* Benchmark do facebook */
+  text-align: left;
 }
 
 /* Classe da Barra Superior */
 .top-bar {
   align-items: center; /* Alinhar conteudo no meio da barra - vertical */
-  background-color: rgb(66, 103, 178); /* Requisito 1 */
+  /* background-color: rgb(66, 103, 178); Requisito 1 */
   background-color: rgb(59, 89, 152); /* Benchmark do facebook */
-  background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%); /* Benchmark do facebook */
+  background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%); /* face */
   border-bottom: 1px solid rgb(19, 55, 131); /* Benchmark do facebook */
   display: flex; /* Requisito 1 */
   height: 82px; /* Benchmark do facebook */
@@ -22,18 +22,18 @@ body {
   margin: 0 auto; /* Benchmark do facebook */
   min-height: 42px; /* Benchmark do facebook */
   padding-top: 13px; /* Benchmark do facebook */
-  position: relaive; /* Benchmark do facebook */
+  position: relative; /* Benchmark do facebook */
 }
 
-.top-bar a {
-  width: 800px;
+header a {
   text-align: left;
+  width: 800px;
 }
 
 .top-bar form {
-  width: 300px;
-  text-align: left;
   padding-left: 14px;
+  text-align: left;
+  width: 300px;
 }
 
 header a {
@@ -44,7 +44,7 @@ header a {
 
 .top-bar form label {
   color: #fff; /* Benchmark do facebook */
-  font-weight: normal; /* Benchmark do facebook */
+  /* font-weight: normal; Benchmark do facebook */
   padding-bottom: 5px;
   padding-left: 1px;
   text-align: left; /* Benchmark do facebook */
@@ -83,7 +83,7 @@ header a {
 .left-content p {
   color: rgb(14, 56, 95); /* Benchmark do facebook */
   font-size: 20px; /* Benchmark do facebook */
-  font-weight: bold; /* Benchmark do facebook */
+  /* font-weight: bold; Benchmark do facebook */
   line-height: 29px; /* Benchmark do facebook */
   margin-top: 40px; /* Benchmark do facebook */
   width: 450px; /* Benchmark do facebook */
@@ -91,8 +91,8 @@ header a {
 }
 
 .left-content img {
-  width: 537px; /* Benchmark do facebook */
   height: 195px; /* Benchmark do facebook */
+  width: 537px; /* Benchmark do facebook */
 }
 
 /* Requisito 10 */
@@ -101,15 +101,15 @@ header a {
 }
 
 .right-content .header {
-  padding-top: 20px; /* Benchmark do facebook */
   padding-bottom: 20px; /* Benchmark do facebook */
+  padding-top: 20px; /* Benchmark do facebook */
 }
 
-.right-content .header h1 {
-  font-weight: 600; /* Benchmark do facebook fwb */
+.right-content .header .title {
   color: rgb(51, 51, 51); /* Benchmark do facebook fbc */
-  font-size: 36px; /* Benchmark do facebook _521lp _59d _521lq */
   margin-bottom: 5px; /* Benchmark do facebook mbs */
+  font-size: 36px; /* Benchmark do facebook _521lp _59d _521lq */
+  font-weight: 600; /* Benchmark do facebook fwb */
 }
 
 .right-content form {
