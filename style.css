@@ -9,23 +9,23 @@ body {
   color: white;
   display: flex;
   flex-direction: row;
-  font-family: 'Lucida Grande', tahoma,verdana,arial,sans-serif;
-  justify-content: space-between;
+  font-family: Lucida Grande, tahoma, verdana, arial, sans-serif;
   font-size: 10px;
+  justify-content: space-between;
   padding: 5px;
 }
 
 .top-bar label {
-  color:white;
+  color: white;
   padding: 2px;
 }
 
 .remember-password {
-  text-decoration: none;
   cursor: pointer;
+  color: lightgray;
   font-size: 10px;
   text-align: left;
-  color: lightgray;
+  text-decoration: none;  
 }
 
 .remember-password:hover {
@@ -42,7 +42,6 @@ li {
   flex-shrink: 0;
   margin-left: 12%;
   margin-right: 24.5%;
-  padding-top: 0px;
 }
 
 .facebook-login {
@@ -50,13 +49,12 @@ li {
   margin-left: 20px;
 }
 
-.button-login-label { 
+.button-login-label {
   background-color: #4267b2;
-  border-radius: 3px;
-  cursor: pointer;
-  opacity: 0.8;
   border-color: #29487d;
   border: 1px solid gray;
+  border-radius: 3px;
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -65,12 +63,12 @@ li {
 }
 
 .button-login {
-  border-top: 10px;
   background: none;
-  color: white;  
+  border-top: 10px;
+  color: white;
   cursor: pointer;
   font-size: 11px;
-  padding: 2px 2px 2px 2px;
+  padding: 2px;
 }
 
 .main-content {
@@ -82,7 +80,7 @@ li {
   width: 800px;
   display: flex;
   flex-direction: column;
-  padding-left: 4%; 
+  padding-left: 4%;
 }
 
 .right-content {
