@@ -31,23 +31,24 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="#">
+      <form action="#" class="facebook-form" method="GET">
         <div class="name-surname">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" data-validate-field='nome'>
+          <input type="text" name="lastname" placeholder="Sobrenome" data-validate-field='sobrenome'>
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha"><br>
+        <input type="text" name="phone_email" placeholder="Celular ou email" data-validate-field='phone'>
+        <input type="password" name="password" placeholder="Nova senha" data-validate-field='password'><br>
         <label for="" id="label-birthdate">Data de nascimento</label><br>
-        <input type="date" name="birthdate" placeholder="dd/mm/aaaa"><br>
+        <input type="date" name="birthdate" placeholder="dd/mm/aaaa" data-validate-field='date'><br>
         <label id="label-gender">Gênero</label><br>
-        <input type="radio" name="genero" value="Feminino">Feminino
-        <input type="radio" name="genero" value="Masculino">Masculino
-        <input type="radio" name="genero" value="Personalizado">Personalizado
+        <input type="radio" name="genero" value="Feminino" data-validate-field='radio'>Feminino
+        <input type="radio" name="genero" value="Masculino" data-validate-field='radio'>Masculino
+        <input type="radio" name="genero" value="Personalizado" data-validate-field='radio'>Personalizado
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
   </div>
+  <script src="libs/just-validate.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
