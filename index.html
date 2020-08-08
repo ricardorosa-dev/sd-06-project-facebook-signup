@@ -40,15 +40,24 @@
       <h1>Abra uma conta</h1>
       <h2 class="quick-easy">É rápido e fácil.</h2>
       <form>
-        <input type="text" name="firstname" placeholder="Nome">
-        <input type="text" name="lastname" placeholder="Sobrenome">
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="firstname" placeholder="Nome" required>
+        <input type="text" name="lastname" placeholder="Sobrenome" required>
+        <input type="text" name="phone_email" placeholder="Celular ou email" required>
+        <input type="password" name="password" placeholder="Nova senha" required>
         <div>
-          <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
+          <label id="label-birthdate" for="birthdate" required>Data de nascimento</label>
+          <input type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
-        <button type="submit" id="facebook-register">Cadastre-se</button>
+        <div>
+          <label id="label-gender" for="">Gênero</label>
+          <input type="radio" name="" id="woman">
+          <label id="label-gender" for="woman">Feminino</label>
+          <input type="radio" name="" id="man">
+          <label id="label-gender" for="man">Masculino</label>
+          <input type="radio" name="" id="customized">
+          <label id="label-gender" for="customized">Personalizado</label>
+        </div>
+        <button type="submit" id="facebook-register" required>Cadastre-se</button>
       </form>
     </section>
   </section>
