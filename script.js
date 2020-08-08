@@ -72,29 +72,29 @@ function fillRightDiv(inputs) {
   const name = inputs[0].value;
   const lastname = inputs[1].value;
   const fullname = `${name} ${lastname}`;
-  const emailPhone = inputs[2].value;
-  const birthdate = inputs[4].value;
-  const gender = inputs[5].value;
+  // const emailPhone = inputs[2].value;
+  // const birthdate = inputs[4].value;
+  // const gender = inputs[5].value;
 
   rightDiv.innerHTML = `Olá, ${fullname}`;
 
   // const title = document.createElement('h2');
   // title.innerHTML = `Olá, ${fullname}`;
   // title.className = 'title';
-  const paragraph1 = document.createElement('p');
-  paragraph1.innerHTML = emailPhone;
-  paragraph1.className = 'paragraph';
-  const paragraph2 = document.createElement('p');
-  paragraph2.innerHTML = birthdate;
-  paragraph2.className = 'paragraph';
-  const paragraph3 = document.createElement('p');
-  paragraph3.innerHTML = gender;
-  paragraph3.className = 'paragraph';
+  // const paragraph1 = document.createElement('p');
+  // paragraph1.innerHTML = emailPhone;
+  // paragraph1.className = 'paragraph';
+  // const paragraph2 = document.createElement('p');
+  // paragraph2.innerHTML = birthdate;
+  // paragraph2.className = 'paragraph';
+  // const paragraph3 = document.createElement('p');
+  // paragraph3.innerHTML = gender;
+  // paragraph3.className = 'paragraph';
 
   // rightDiv.appendChild(title);
-  rightDiv.appendChild(paragraph1);
-  rightDiv.appendChild(paragraph2);
-  rightDiv.appendChild(paragraph3);
+  // rightDiv.appendChild(paragraph1);
+  // rightDiv.appendChild(paragraph2);
+  // rightDiv.appendChild(paragraph3);
 }
 
 registerButton.addEventListener('click', function (event) {
