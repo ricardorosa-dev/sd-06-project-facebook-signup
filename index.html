@@ -2,66 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Facebook</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Facebook</title>
 </head>
 
 <body>
-    <header class="top-bar">
-        <div class="img-container">
-            <img src="imgs/facebook-logo.png" class="facebook-logo" />
-        </div>
-        <form class="facebook-login">
-            <div class="form-group">
-                <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-                <input type="text" id="user-email-phone" />
-            </div>
-            <div class="form-group">
-                <label id="user-password-label" for="">Senha</label>
-                <input type="password" id="user-password" />
-            </div>
-            <div class="form-control">
-                <button id="button-login">Entrar</button>
-            </div>
-        </form>
-    </header>
+	<header class="top-bar">
+		<div class="img-container">
+			<img src="imgs/facebook-logo.png" class="facebook-logo" />
+		</div>
+		<form class="facebook-login">
+			<div class="form-group">
+				<label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+				<input type="text" id="user-email-phone" />
+			</div>
+			<div class="form-group">
+				<label id="user-password-label" for="">Senha</label>
+				<input type="password" id="user-password" />
+			</div>
+			<div class="form-control">
+				<button id="button-login">Entrar</button>
+			</div>
+		</form>
+	</header>
 
-    <section class='main-content'>
-        <div class="left-content">
-            <p id="facebook-slogan">
-                O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
-            </p>
-            <img src="imgs/networking.png" id="facebook-networking">
-        </div>
-        <div class="right-content">
-          <h1>
-            Abra uma conta
-          </h1>
-          <p class="quick-easy">
-            É rápido e fácil.    
-          </p>
-          <form action="">
-            <div class="name-inputs">
-              <input name="firstname" placeholder="Nome" type="text" required>
-              <input name="lastname" placeholder="Sobrenome" type="text" required>
-            </div>
-            <input name="phone_email" placeholder="Celular ou Email" type="text" required>
-            <input name="password" placeholder="Nova senha" type="password" required>
-            <div class="user-birthdate">
-              <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-              <input id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" type="text" required>
-            </div>
-            <div class="user-gender">
-              <label for="" id="label-gender">
-                Gênero
-              </label>
-            </div>
-          </form>
+	<section class='main-content'>
+		<div class="left-content">
+			<p id="facebook-slogan">
+				O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+			</p>
+			<img src="imgs/networking.png" id="facebook-networking">
+		</div>
+		<div class="right-content">
+			<h1>
+				Abra uma conta
+			</h1>
+			<p class="quick-easy">
+				É rápido e fácil.
+			</p>
+			<form action="">
+				<div class="name-inputs">
+					<input name="firstname" placeholder="Nome" type="text" required>
+					<input name="lastname" placeholder="Sobrenome" type="text" required>
+				</div>
+				<input name="phone_email" placeholder="Celular ou Email" type="text" required>
+				<input name="password" placeholder="Nova senha" type="password" required>
+				<div class="user-birthdate">
+					<label for="birthdate" id="label-birthdate">Data de nascimento</label>
+					<input id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" type="text" required>
+				</div>
+				<div class="user-gender">
+					<label for="" id="label-gender">
+						Gênero
+					</label>
+				</div>
+			</form>
 
-        </div>
-    </section>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
