@@ -110,3 +110,8 @@ body {
 .input-right-content {
   width: 208px;
 }
+
+.gender {
+  align-items: center;
+  display: flex;
+}
