@@ -84,3 +84,8 @@ header label {
   align-items: center;
   display: flex;
 }
+
+.feedback-bad-action {
+  color: red;
+  font-weight: 600;
+}
