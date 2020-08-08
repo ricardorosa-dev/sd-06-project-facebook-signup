@@ -1,6 +1,5 @@
 const loginButton = document.querySelector('#button-login');
 const emailInput = document.querySelector('#user-email-phone');
-const passwordInput = document.querySelector('#user-password');
 
 const customGenderInput = document.querySelector('#custom');
 
