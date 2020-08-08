@@ -41,14 +41,15 @@
         </section>
         <input type='text' placeholder='Celular ou email' name='phone_email'>
         <input type='password' placeholder='Nova senha' name='password'><br>
-        <label id='label-birthdate'>Data de Nascimento</label><br>
-        <input type='text' name='birthdate' placeholder='dd/mm/aaaa'><br>
+        <label id='label-birthdate'>Data de nascimento</label><br>
+        <input type='date' name='birthdate' placeholder='dd/mm/aaaa'><br>
         <label id='label-gender'>Gênero</label><br>
         <section class='gender'>
-          <input name='gender' type='radio'><label>Feminino</label>
-          <input name='gender' type='radio'><label>Masculino</label>
-          <input name='gender' type='radio'><label>Personalizado</label><br>
+          <input name='gender' type='radio' value='Feminino'><label>Feminino</label>
+          <input name='gender' type='radio' value='Masculino'><label>Masculino</label>
+          <input name='gender' type='radio' value='Personalizado'><label>Personalizado</label><br>
         </section>
+
         <button type='submit' id='facebook-register'>Cadastre-se</button>
       </form>
     </section>
