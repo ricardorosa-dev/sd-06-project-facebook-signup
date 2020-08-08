@@ -1,6 +1,4 @@
-let btn = document.getElementById('button-login');
-let emailortel = document.getElementById('user-email-phone').value;
+document.getElementById('button-login').addEventListener('click', function() {
+    alert(document.getElementById('user-email-phone').value);
+});
 
-function showAlert () {
-    alert('emailortel');  
-}

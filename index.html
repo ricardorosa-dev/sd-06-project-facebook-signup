@@ -9,28 +9,42 @@
         <title>Clone Facebook Login Page</title>
     </head>
     <body>
-        <header>
-            <div class="top-bar">
-                <div class="logo-container">
-                  <img src="imgs/facebook-logo.png" alt="Facebook Logo" class="facebook-logo">
-                </div>
-                <form class="facebook-login">
-                    <div class="form-container">
-                        <div class="form-group">
-                            <label for="user-email-phone-label">Email ou telefone</label>
-                            <input type="text" name="telandemail" id="user-email-phone">
-                        </div>
-                        <div class="form-group">   
-                            <label for="user-password-label">Senha</label>
-                            <input type="text" name="password" id="user-password">
-                        </div>
-                        <div class="form-control">
-                            <button type="submit" id="button-login" onclick="showAlert()">Entrar</button>
-                        </div>
-                    </div>
-                   
-                 </form>
+        <header class="top-bar">
+            <div class="logo-container">
+              <img src="imgs/facebook-logo.png" alt="Facebook Logo" class="facebook-logo">
             </div>
-        </header>
+        
+            <form class="facebook-login">
+                <div class="form-container">
+                   <div class="form-group">
+                      <label for="user-email-phone-label">Email ou telefone</label>
+                      <input type="text" name="telandemail" id="user-email-phone">
+                    </div>
+                    <div class="form-group">   
+                      <label for="user-password-label">Senha</label>
+                      <input type="text" name="password" id="user-password">
+                    </div>
+                    <div class="form-control">
+                       <button type="submit" id="button-login" required="required">Entrar</button>
+                    </div>
+                </div>
+            </form>
+        </header>        
+        <section class="main-content">
+            <div class="left-content">
+                <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+                <img src="imgs/networking.png" alt="Facebook Networking" id="facebook-networking">
+                </div>
+                <div class="right-content">
+                    <h1>Abra uma conta</h1>
+                    <div class="quick-easy">
+                        <p>É rápido e fácil</p>
+                    </div>
+                    <form action="">
+                        
+                    </form>
+                </div>
+                
+            </section>    
     </body>
 </html>
