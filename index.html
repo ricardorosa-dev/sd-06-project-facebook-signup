@@ -49,24 +49,24 @@
           <h3 class="quick-easy">É rápido e fácil.</h3>
           <form action="" method="GET">
             <div class="name-form">
-              <input type="text" name="firstname" placeholder="Nome">
-              <input type="text" name="lastname" placeholder="Sobrenome"> <!-- requisito 12 Este input deve ficar ao lado do input nome -->
+              <input type="text" name="firstname" placeholder="Nome" required>
+              <input type="text" name="lastname" placeholder="Sobrenome" required>
             </div>
-            <input type="text" name="phone_email" placeholder="Celular ou email"> <!-- requisito 13 Este input deve ficar abaixo dos inputs nome e sobrenome -->
-            <input type="password" name="password" placeholder="Nova senha">
+            <input type="text" name="phone_email" placeholder="Celular ou email" required>
+            <input type="password" name="password" placeholder="Nova senha" required>
             <br>
             <label for="" id="label-birthdate">Data de nascimento</label>
             <br>
-            <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
+            <input type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
 ​            <br>
             <div>
               <label for="genre" id="label-gender">Gênero</label>
               <div class="form-gender">
-                <input type="radio" name="genre" id="female" value="Feminino">
+                <input type="radio" name="genre" id="female" value="Feminino" required>
                 <label for="female">Feminino</label>
-                <input type="radio" name="genre" id="male" value="Masculino">
+                <input type="radio" name="genre" id="male" value="Masculino" required>
                 <label for="male">Masculino</label>
-                <input type="radio" name="genre" id="others" value="Personalizado">
+                <input type="radio" name="genre" id="others" value="Personalizado" required>
                 <label for="others">Personalizado</label>
               </div>
             </div>
