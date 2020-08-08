@@ -12,9 +12,9 @@
 
 .facebook-login {
   display: flex;
+  justify-content: space-between;
   margin-right: 10%;
   width: 400px;
-  justify-content: space-between;
 }
 
 .form-group {
@@ -28,11 +28,11 @@
 }
 
 .main-content {
+  background-image: url('imgs/FUNDO-AZUL-CLARO.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
-  background-image: url(imgs/FUNDO-AZUL-CLARO.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .left-content {
