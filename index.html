@@ -16,11 +16,11 @@
             </div>
             <div class="facebook-login ">
                 <div class="form-group">
-                    <label id="user-email-phone-label">Email ou telefone:</label>
+                    <label id="user-email-phone-label">Email ou telefone</label>
                     <input type="text" id="user-email-phone" name="emailTelefone">
                 </div>
                 <div class="form-group">
-                    <label id="user-password-label " for="pass">Senha</label>
+                    <label id="user-password-label" for="pass">Senha</label>
                     <input id="user-password" type="password" name="password" minlength="8" required>
                 </div>
 
@@ -32,21 +32,21 @@
         </header>
         <section class="main-content">
             <div class="left-content">
-                <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+                <p id="facebook-slogan">O Facebook ajuda você a se conectar e
+                     compartilhar com as pessoas que fazem parte da sua vida.
                 </p>
-                <img class="img" src="imgs/networking.png">
+                <img class="img" id="facebook-networking"  src="imgs/networking.png">
             </div>
             <div class="right-content" class="registrationContainer">
-                <h1>Abra uma Conta</h1>
-                <p>É rápido e fácil</p>
-                <div class="inputs">
-                    <input type="text" id="name" name="name">
-                    <input type="text" id="lastName" name="lastName">
+                <h1>Abra uma conta</h1>
+                <p class="quick-easy">É rápido e fácil.</p>
+                <form class="inputs">
+                    <input type="text" id="name" name="firstname" placeholder="Nome">
+                    <input type="text" name="lastname" placeholder="Sobrenome">
                     <input type="text" id="emailOrCell" name="emailOrCell">
                     <input type="password" name="password" minlength="8" required>
                     <input type="password" name="password" minlength="8" required>
-                </div>
-            </div>
+                </form>
             </div>
         </section>
     </body>
