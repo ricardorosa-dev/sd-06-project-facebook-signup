@@ -84,11 +84,11 @@ header form input {
   margin-bottom: 8px;
 }
 
-.right-content form> :first-of-type input {
+.right-content form > :first-of-type input {
   width: 135px;
 }
 
-.right-content form> :nth-child( n + 2) input {
+.right-content form > :nth-child( n + 2 ) input {
   width: 295px;
 }
 
