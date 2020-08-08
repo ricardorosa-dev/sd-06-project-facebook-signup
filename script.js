@@ -40,19 +40,6 @@ let clickInCustomGender = 0;
 //   novoInput.placeholder = 'Gênero (opcional)';
 // });
 
-perso.addEventListener('click', function () {
-  clickInCustomGender += 1;
-  if (clickInCustomGender === 1) {
-    const customInput = document.createElement('input');
-    customInput.name = 'gender-custom';
-    customInput.placeholder = 'Gênero (opcional)';
-    customInput.id = 'gender-custom';
-    customInput.className = 'input-form';
-    todos.appendChild(customInput);
-    // document.querySelector('.generos').parentNode.appendChild(customInput);
-  }
-});
-
 feminino.addEventListener('click', function () {
   clickInCustomGender = 0;
   if (document.querySelector('#gender-custom')) {
@@ -64,5 +51,17 @@ masculino.addEventListener('click', function () {
   clickInCustomGender = 0;
   if (document.querySelector('#gender-custom')) {
     document.querySelector('#gender-custom').parentNode.removeChild(document.querySelector('#gender-custom'));
+  }
+});
+
+perso.addEventListener('click', function () {
+  clickInCustomGender += 1;
+  if (clickInCustomGender === 1) {
+    const customInput = document.createElement('input');
+    customInput.name = 'gender-custom';
+    customInput.placeholder = 'Gênero (opcional)';
+    customInput.id = 'gender-custom';
+    customInput.className = 'input-form';
+    todos.appendChild(customInput);
   }
 });
