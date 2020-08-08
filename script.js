@@ -5,47 +5,45 @@ btn.addEventListener('click', function () {
   alert(valor);
 });
 
-window.onload = function(){
-  new window.JustValidate('.forms', {
+  new JustValidate ('.forms', {
     rules: {
       firstname: {
-        required: true
+        required: true,
       },
       lastname: {
-        required: true
+        required: true,
       },
       phone_email: {
-        required: true
+        required: true,
       },
       password: {
-        required: true
+        required: true,
       },
       birthdate: {
-        required: true
+        required: true,
       },
       genero: {
-        required: true
-      }
+        required: true,
+      },
     },
     messages: {
       firstname: {
-        required: "Campos inválidos"
+        required: 'Campos inválidos'
       },
       lastname: {
-        required: "Campos inválidos"
+        required: 'Campos inválidos'
       },
       phone_email: {
-        required: "Campos inválidos"
+        required: 'Campos inválidos'
       },
       password: {
-        required: "Campos inválidos"
+        required: 'Campos inválidos'
       },
       birthdate: {
-        required: "Campos inválidos"
+        required: 'Campos inválidos'
       },
       genero: {
-        required: "Campos inválidos"
-      }
-    }
-  })
-}
+        required: 'Campos inválidos'
+      },
+    },
+  });
