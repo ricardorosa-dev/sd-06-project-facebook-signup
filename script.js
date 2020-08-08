@@ -62,20 +62,23 @@ function checkInputs(inputs) {
   return checked;
 }
 
-function removeRightContent() {
-  const rightDiv = document.querySelector('.right-content');
-  rightDiv.innerHTML = '';
-}
+// function removeRightContent() {
+//   const rightDiv = document.querySelector('.right-content');
+//   rightDiv.innerHTML = '';
+// }
 
 function fillRightDiv(inputs) {
-  const rightDiv = document.querySelector('.right-content');
+  const formTitle = document.querySelector('#form-header');
+  const passwordInput = document.querySelector('#password');
   const name = inputs[0].value;
   const lastname = inputs[1].value;
-  const emailPhone = inputs[2].value;
-  const birthdate = inputs[4].value;
-  const gender = inputs[5].value;
+  // const emailPhone = inputs[2].value;
+  // const birthdate = inputs[4].value;
+  // const gender = inputs[5].value;
 
-  rightDiv.innerHTML = `<p>Olá, ${name} ${lastname} ${emailPhone} ${birthdate} ${gender}</p>`;
+  formTitle.innerHTML = `Olá, ${name} ${lastname}`;
+  passwordInput.value = '';
+
   // const title = document.createElement('h2');
   // title.innerHTML = `Olá, ${name} ${lastname}`;
   // title.className = 'title';
@@ -96,11 +99,11 @@ function fillRightDiv(inputs) {
 }
 
 registerButton.addEventListener('click', function (event) {
+  event.preventDefault();
   document.querySelector('#invalid-inputs').innerHTML = '';
   const inputs = getInputs();
   if (checkInputs(inputs)) {
-    removeRightContent();
+    // removeRightContent();
     fillRightDiv(inputs);
   }
-  event.preventDefault();
 });
