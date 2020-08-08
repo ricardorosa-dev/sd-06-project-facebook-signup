@@ -8,7 +8,7 @@ login.addEventListener('click', function () {
   alert(name.value);
 });
 
-submitBtn.addEventListener ('click', function() {
+submitBtn.addEventListener('click', function () {
   let count = 0;
   for (let i = 2; i < (inputArray.length - 3); i += 1) {
     const resultCheck = inputArray[i].checkValidity();
