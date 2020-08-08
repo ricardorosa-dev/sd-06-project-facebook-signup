@@ -36,3 +36,8 @@
 .info {
   display: flex;
 }
+
+.datas {
+  display: flex;
+  flex-direction: column;
+}
