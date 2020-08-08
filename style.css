@@ -37,9 +37,9 @@ body {
 }
 
 .left-content {
-  width: 800px;
   display: flex;
   flex-wrap: wrap;
+  width: 800px;
 }
 
 .facebook-slogan {
