@@ -75,7 +75,7 @@ function fillRightDiv(inputs) {
   const birthdate = inputs[4].value;
   const gender = inputs[5].value;
 
-  rightDiv.innerHTML = `Olá, ${name} ${lastname} ${emailPhone} ${birthdate} ${gender}`;
+  rightDiv.innerHTML = `<p>Olá, ${name} ${lastname} ${emailPhone} ${birthdate} ${gender}</p>`;
   // const title = document.createElement('h2');
   // title.innerHTML = `Olá, ${name} ${lastname}`;
   // title.className = 'title';
