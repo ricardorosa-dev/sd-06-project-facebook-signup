@@ -12,8 +12,8 @@ body {
 /* Classe da Barra Superior */
 .top-bar {
   align-items: center; /* Alinhar conteudo no meio da barra - vertical */
-  background-color: gb(66, 103, 178); /* Benchmark do facebook rrgb(59, 89, 152); */
-  background-image:  linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%);
+  background-color: rgb(66, 103, 178); /* Benchmark do facebook rrgb(59, 89, 152); */
+  background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%);
   border-bottom: 1px solid rgb(19, 55, 131); /* Benchmark do facebook */
   display: flex; /* Requisito 1 */
   height: 82px; /* Benchmark do facebook */
