@@ -1,9 +1,5 @@
-const botao = document.querySelector('#user-email-phone');
-function alertUser() {
-  if (botao.value === '') {
-    alert('Por favor, digite um Email ou Celular');
-  } else {
-    alert(botao.value);
-  }
-}
-alertUser();
+const botao = document.querySelector('#button-login');
+const inputEmailPhone = document.querySelector('#user-email-phone');
+botao.addEventListener('click', function () {
+  alert(inputEmailPhone.value);
+});
