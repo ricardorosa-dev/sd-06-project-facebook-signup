@@ -55,8 +55,8 @@ body {
 }
 
 .form-control {
-  margin-left: 10px;
   align-self: flex-end;
+  margin-left: 10px;
 }
 
 .main-content {
