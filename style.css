@@ -84,9 +84,11 @@ body {
 
 .register-container .input-container {
   display: flex;
-  flex-direction: column;
-  margin-top: 16px;
   width: 100%;
+}
+
+.register-container .input-container input:first-child {
+  margin-right: 16px;
 }
 
 .register-container .input-form {
@@ -115,6 +117,12 @@ body {
   color: #777;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.input-container-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
 }
 
 .gender-container {
