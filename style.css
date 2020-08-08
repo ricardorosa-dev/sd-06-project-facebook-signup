@@ -161,7 +161,7 @@ body {
   margin-top: 8px;
 }
 
-.birthday > .birth {
+.birthday>.birth {
   border-radius: 5px;
   height: 30px;
   margin-top: 9px;
@@ -172,7 +172,7 @@ body {
   margin-top: 10px;
 }
 
-.gender > .masculino {
+.gender>.masculino {
   color: #1d2129;
   font-size: 18px;
   height: 20px;
@@ -180,14 +180,14 @@ body {
   width: 52.02px;
 }
 
-.gender > .feminino {
+.gender>.feminino {
   color: #1d2129;
   font-size: 18px;
   height: 20px;
   width: 73.03px;
 }
 
-.gender > .personalizado {
+.gender>.personalizado {
   color: #1d2129;
   font-size: 18px;
   height: 20px;
@@ -207,7 +207,7 @@ body {
   margin-top: 8px;
 }
 
-.Gender > .label-gender {
+.Gender>.label-gender {
   color: #90949c;
   font-size: 16px;
   font-weight: 900;
@@ -216,7 +216,7 @@ body {
   width: 399px;
 }
 
-.birthday > .label-birthdate {
+.birthday>.label-birthdate {
   color: #90949c;
   font-size: 16px;
   font-weight: 900;
@@ -225,7 +225,7 @@ body {
   width: 399px;
 }
 
-.buttonForm > .facebook-register {
+.buttonForm>.facebook-register {
   background-color: #69a74e;
   border-radius: 5px;
   color: white;

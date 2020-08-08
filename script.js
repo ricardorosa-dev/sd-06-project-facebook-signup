@@ -15,7 +15,7 @@ const log = document.getElementById('log');
 
 function logSubmit(event) {
   const arrayDateForm = [nameForm, lastnameForm, emailPhoneForm, passwordForm, birthForm];
-  arrayDateForm.forEach(element => {
+  arrayDateForm.forEach((element) => {
     element.value = '';
     log.innerHTML = 'Campos inválidos';
     event.preventDefault();
