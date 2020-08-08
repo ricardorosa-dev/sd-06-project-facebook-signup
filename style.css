@@ -1,7 +1,25 @@
 body {
+  background-image:linear-gradient(rgb(255, 255, 255), rgb(211, 216, 232));
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
+  height: 760px;
   margin: 0;
+}
+
+h1{
+  color:rgb(51, 51, 51);
+  font-size:36px;
+  font-weight:600;
+  line-height:48.24px;
+  margin-bottom: 0;
+}
+
+.quick-easy{
+  color: rgb(29, 33, 41);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 25.46px;
+  margin-top: 0;
 }
 
 .top-bar {
@@ -14,7 +32,7 @@ body {
 
 .facebook-logo {
   height: 74px;
-  width: 187px;
+  width: 167px;
 }
 
 .email-senha {
@@ -99,8 +117,20 @@ body {
 }
 
 .nome-sobrenome input {
-  width: 100px;
+  border-color: rgb(189, 199, 216);
+  border-radius: 5px;
+  border: solid 1px rgb(189, 199, 216);
+  color:rgb(28, 30, 33);
+  font-size:18px;
+  height:25px;
+  padding: 5px;
+  width: 140px;
 }
+
+.nome-sobrenome .lastname {
+  margin-left: 7px;
+}
+
 
 .form-right-content {
   display: flex;
@@ -108,10 +138,66 @@ body {
 }
 
 .input-right-content {
-  width: 208px;
+  border-color: rgb(189, 199, 216);
+  border-radius: 5px;
+  border: solid 1px rgb(189, 199, 216);
+  color:rgb(28, 30, 33);
+  font-size:18px;
+  height:25px;
+  margin-top: 7px;
+  padding: 5px;
+  width: 300px;
 }
 
 .gender {
   align-items: center;
   display: flex;
+  margin-bottom: 7px;
+}
+
+.label-gender{
+  margin-bottom: 15px;
+}
+
+.gender-choices{
+  color: #1d2129;
+  font-size: 14.5px;
+  padding: 0px 10px 0px 3px;
+}
+
+.labelcinza{
+  color: rgb(144, 148, 156);
+  font-size:16px;
+  font-weight:700;
+  height:21px;
+  line-height:21.44px;
+  margin-top: 20px;
+}
+
+.right-content button {
+  background: linear-gradient(#67ae55, #578843);
+  border-radius: 5px;
+  border: 1px solid;
+  color: white;
+  border-color: rgb(44, 81, 21);
+  font: 700 17.3333px Arial;
+  line-height: 23.94px;
+  margin: 10px 0px 0px 10px;
+  padding: 7px 20px;
+  text-align: center;
+  text-shadow:rgba(0, 0, 0, 0.5) 0px 1px 2px;
+  width: 194px;
+}
+
+.termos{
+  color: #777;
+  font-size: 11px;
+  width: 316px;
+}
+a{
+  text-decoration: none;
+  color: rgb(56, 88, 152);;
+}
+a:hover{
+  text-decoration: underline;
 }

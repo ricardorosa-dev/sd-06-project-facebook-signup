@@ -36,20 +36,30 @@
       <form action="" class="form-right-content">
         <div class="nome-sobrenome">
           <input type="text" class="input-register" id="firstname" name="firstname" placeholder="Nome" required>
-          <input type="text" class="input-register" id="lastname" name="lastname" placeholder="Sobrenome" required>
+          <input type="text" class="input-register lastname" id="lastname" name="lastname" placeholder="Sobrenome" required>
         </div>
         <input class ="input-right-content" type="text" id="phoneemail" name="phone_email" placeholder="Celular ou email" required>
         <input class ="input-right-content" type="password" id="password" name="password" placeholder="Nova senha" required>
-        <label for="" id="label-birthdate">Data de nascimento</label>
+        <label for="" id="label-birthdate" class="labelcinza">Data de nascimento</label>
         <input class ="input-right-content" type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
-        <label id="label-gender"required>Gênero<br>
+        <label id="label-gender" class="labelcinza label-gender">Gênero</label>
         <div class="gender">
           <input required id="feminino" type="radio" name="gender" value="Feminino"/>
-          <label for="feminino">Feminino</label>
+          <label class="gender-choices" for="feminino">Feminino</label>
           <input type="radio" id="masculino" name="gender" value="Masculino"/>
-          <label for="masculino">Masculino</label>
+          <label class="gender-choices" for="masculino">Masculino</label>
           <input type="radio" id="personalizado" name="gender" value="Personalizado"/>
-          <label for="personalizado">Personalizado</label>
+          <label class="gender-choices" for="personalizado">Personalizado</label>
+        </div>
+        <div class="termos">
+          <p>Ao clicar em Cadastre-se, você concorda com nossos
+          <a href="/legal/terms/update" id="terms-link" target="_blank" rel="nofollow">Termos</a>
+          ,
+          <a href="/about/privacy/update" id="privacy-link" target="_blank" rel="nofollow">Política de Dados</a>
+          e
+          <a href="/policies/cookies/" id="cookie-use-link" target="_blank" rel="nofollow">Política de Cookies</a>
+          . Você pode receber notificações por SMS e pode cancelar isso quando quiser.
+          </p>
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
