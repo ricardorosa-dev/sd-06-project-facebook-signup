@@ -61,7 +61,6 @@ body {
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
   width: 800px;
 }
 
@@ -96,7 +95,7 @@ h1 {
   display: flex;
 }
 
-.first-name , .last-name , .email {
+.first-name , .last-name , .email , .new-password {
   border: 1px solid darkgray;
   border-radius: 5px;
   height: 15px;
@@ -116,6 +115,11 @@ h1 {
 }
 
 .email::placeholder {
+  color: darkgray;
+  font-size: 18px;
+}
+
+.new-password::placeholder {
   color: darkgray;
   font-size: 18px;
 }
