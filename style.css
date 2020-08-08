@@ -8,13 +8,16 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 15px;
 }
 
 .facebook-logo {
   display: flex;
-  margin-left: 0;
+  height: 60px;
+  margin-left: 25px;
+  margin-top: 17px;
+  width: 170px;
 }
 
 .top-bar img {
@@ -26,7 +29,12 @@ body {
   align-items: center;
   color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.control {
+  display: flex;
+  align-content: center;
 }
 
 .form-group {
@@ -86,5 +94,14 @@ body {
   background-color: chocolate;
   display: flex;
   flex-flow: column;
+  flex-wrap: wrap;
+  flex: 1;
   width: 300px;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
