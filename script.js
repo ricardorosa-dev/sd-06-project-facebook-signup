@@ -15,7 +15,7 @@ btRegister.addEventListener('click', function () {
   const passField = document.getElementsByName('password')[0].value === '';
   const birthdate = document.getElementsByName('birthdate')[0].value === '';
   // const passField = document.getElementsByName('password')[0].value === '';
-  const list = [fnameField, lnameField, celField, passField, birthdate]
+  const list = [fnameField, lnameField, celField, passField, birthdate];
   for (let i = 0; i < list.length; i += 1) {
     if (list[i] === true) {
       const errorMsg = document.createElement('p');
