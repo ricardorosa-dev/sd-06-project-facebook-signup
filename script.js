@@ -25,8 +25,8 @@ const input = document.createElement('input');
   subscriptionForm.insertBefore(input, facebookRegister);
 }); */
 
-const aux = document.querySelectorAll('.subscription-form-2')[0];
-aux.addEventListener('click', function (event) {
+const form2 = document.querySelectorAll('.subscription-form-2')[0];
+form2.addEventListener('click', function (event) {
   const subscriptionForm = document.querySelector('.subscription-form');
   if (event.target.value === 'Personalizado') {
     const input = document.createElement('input');
