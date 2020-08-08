@@ -15,8 +15,8 @@ const functionalities = {
   },
   verifyFields: function verifyFields() {
     const allInputs = document.querySelectorAll('.right-content form input');
-    verificadorText = functionalities.verifyTextInputs(allInputs);
-    verificadorBool = functionalities.verifyBooleansInputs(allInputs);
+    const verificadorText = functionalities.verifyTextInputs(allInputs);
+    const verificadorBool = functionalities.verifyBooleansInputs(allInputs);
     functionalities.selectorOfAction(verificadorText, verificadorBool);
   },
   verifyTextInputs: function verifyTextInputs(allInputs) {
@@ -27,10 +27,10 @@ const functionalities = {
       i += 1;
     }
     return verificadorText;
-  }, 
+  },
   verifyBooleanInputs: function verifyBooleans(allInputs) {
     let verificadorBool = 0;
-    let i = allInputs.length-4;
+    let i = allInputs.length - 4;
     while (verificadorBool <= 2 && i < allInputs.length - 1) {
       verificadorBool += (allInputs[i].checked === false) ? 1 : 0;
       i += 1;
