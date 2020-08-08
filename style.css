@@ -93,59 +93,63 @@ body {
   background-color: chocolate;
   display: flex;
   flex-flow: column;
-  flex-wrap: wrap;
   width: 300px;
 }
 
 .main-form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
 .firstname {
   border-color: #bdc7d8;
   border-radius: 5px;
   margin: 0;
-  max-width: 172px;
   padding: 8px 10px;
+  width: 120px;
 }
 
 .lastname {
   border-color: #bdc7d8;
   border-radius: 5px;
   margin: 0;
-  max-width: 172px;
   padding: 8px 10px;
+  width: 120px;
 }
 
 .phone_email {
   border-color: #bdc7d8;
   border-radius: 5px;
   margin: 0;
-  max-width: 172px;
   padding: 8px 10px;
+  width: 264px;
 }
 
 .password {
   border-color: #bdc7d8;
   border-radius: 5px;
   margin: 0;
-  max-width: 172px;
   padding: 8px 10px;
+  width: 264px;
 }
 
 .label-birthdate {
   border-color: #bdc7d8;
   border-radius: 5px;
   margin: 0;
-  max-width: 172px;
-  padding: 8px 10px;
+  text-align: left;
+  width: 172px;
 }
 
 .birthdate {
   border-color: #bdc7d8;
   border-radius: 5px;
   margin: 0;
-  max-width: 172px;
+  width: 240px;
   padding: 8px 10px;
+}
+
+.option-gender {
+  font-size: 14px;
 }
