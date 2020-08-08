@@ -25,7 +25,9 @@ body {
 }
 
 .form-control {
+  padding-bottom: 10px;
   align-self: flex-end;
+
 }
 
 p {
