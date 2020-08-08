@@ -56,6 +56,7 @@ body {
 }
 
 .form-group p {
+  flex-direction: column;
   margin-top: 5px;
 }
 
@@ -73,7 +74,7 @@ body {
   background-image: linear-gradient(white, rgb(233, 235, 238));
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .left-content {
@@ -86,5 +87,4 @@ body {
   display: flex;
   flex-flow: column;
   width: 300px;
-
 }
