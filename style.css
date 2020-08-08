@@ -96,20 +96,16 @@ header form input {
   margin-bottom: 8px;
 }
 
-.right-content form> :first-of-type input {
+.right-content form > :first-of-type input {
   width: 135px;
 }
 
-.right-content form> :nth-child(n + 2) input {
+.right-content form > :nth-child( n + 2 ) input {
   width: 295px;
 }
 
 .form-space {
   justify-content: space-between;
-}
-
-input:focus {
-  outline: 0;
 }
 
 button:focus {
@@ -124,7 +120,7 @@ button:hover {
 h1 {
   color: rgb(32, 31, 32);
   font-size: 35px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .small-align {
