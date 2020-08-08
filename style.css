@@ -67,3 +67,11 @@ body {
 .inputGrow {
   width: 292px;
 }
+
+.genderLabel {
+  padding-right: 250px;
+}
+
+.radio {
+  width: 12px;
+}
