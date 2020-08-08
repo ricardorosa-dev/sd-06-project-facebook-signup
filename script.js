@@ -58,7 +58,7 @@ perso.addEventListener('click', function () {
   clickInCustomGender += 1;
   if (clickInCustomGender === 1) {
     const customInput = document.createElement('input');
-    customInput.name = 'gender-custom';
+    customInput.name = 'gender';
     customInput.placeholder = 'Gênero (opcional)';
     customInput.id = 'gender-custom';
     customInput.className = 'input-form';
