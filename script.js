@@ -8,6 +8,7 @@ function personalizedGender() {
   newGenre.name = 'gender';
   newGenre.type = 'text';
   newGenre.placeholder = 'Gênero (opcional)';
-  document.querySelector('.form-content').lastElementChild.previousElementSibling.appendChild(newGenre);
+  const botao = document.querySelector('#facebook-register');
+  document.querySelector('.form-content').insertBefore(newGenre, botao);
 }
 document.querySelector('.Personalizado').addEventListener('click', personalizedGender);
