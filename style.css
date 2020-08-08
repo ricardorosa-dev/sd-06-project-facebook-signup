@@ -72,3 +72,7 @@ body {
 .right-content div:nth-of-type( 2 ) > input {
   width: 5%;
 }
+
+span {
+  display: none;
+}
