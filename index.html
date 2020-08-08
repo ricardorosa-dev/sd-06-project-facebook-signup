@@ -39,20 +39,28 @@
 		<p classe="quick-easy">É rápido e fácil.</p>
 		<form class="sign-form" action="">
 			<div class="nameLine">
-			  <input type="text" name="firstname" placeholder="Nome" required >
-			  <input type="text" name="lastname" placeholder="Sobrenome" required>
+			  <input type="text" name="firstname" placeholder="Nome" required oninvalid="this.setCustomValidity('Campos inválidos')"
+			  onchange="try{setCustomValidity('')}catch(e){}">
+			  <input type="text" name="lastname" placeholder="Sobrenome" required oninvalid="this.setCustomValidity('Campos inválidos')"
+			  onchange="try{setCustomValidity('')}catch(e){}">
 			</div>
-			<input type="text" name="phone_email" placeholder="Celular ou email"required>
-			<input type="password" name="password" id="" placeholder="Nova senha"required>
+			<input type="text" name="phone_email" placeholder="Celular ou email"required oninvalid="this.setCustomValidity('Campos inválidos')"
+			onchange="try{setCustomValidity('')}catch(e){}">
+			<input type="password" name="password" id="" placeholder="Nova senha"required oninvalid="this.setCustomValidity('Campos inválidos')"
+			onchange="try{setCustomValidity('')}catch(e){}">
 			<div class="dateLine">
 			  <label for="" id="label-birthdate">Data de nascimento</label>
-			  <input type="text" name="birthdate" placeholder="dd/mm/aaaa"required>
+			  <input type="text" name="birthdate" placeholder="dd/mm/aaaa"required oninvalid="this.setCustomValidity('Campos inválidos')"
+			  onchange="try{setCustomValidity('')}catch(e){}">
 			</div>
 			<label for="gender" id="label-gender">Gênero</label>
 			<div class="genderDiv">
-				<input type="radio" name="genderRadio" value="Feminino" required>Feminino
-				<input type="radio" name="genderRadio" value="Masculino" required >Masculino
-				<input type="radio" name="genderRadio" value="Personalizado" required >Personalizado
+				<input type="radio" name="genderRadio" value="Feminino" required oninvalid="this.setCustomValidity('Campos inválidos')"
+				onchange="try{setCustomValidity('')}catch(e){}">Feminino
+				<input type="radio" name="genderRadio" value="Masculino" required oninvalid="this.setCustomValidity('Campos inválidos')"
+				onchange="try{setCustomValidity('')}catch(e){}">Masculino
+				<input type="radio" name="genderRadio" value="Personalizado" required oninvalid="this.setCustomValidity('Campos inválidos')"
+				onchange="try{setCustomValidity('')}catch(e){}">Personalizado
 			</div>
 			<button id="facebook-register" type="submit">Cadastre-se</button>
 		</form>
