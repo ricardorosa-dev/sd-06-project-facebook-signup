@@ -71,15 +71,13 @@ function fillRightDiv(inputs) {
   const rightDiv = document.querySelector('.right-content');
   const name = inputs[0].value;
   const lastname = inputs[1].value;
-  const fullname = `${name} ${lastname}`;
-  // const emailPhone = inputs[2].value;
-  // const birthdate = inputs[4].value;
-  // const gender = inputs[5].value;
+  const emailPhone = inputs[2].value;
+  const birthdate = inputs[4].value;
+  const gender = inputs[5].value;
 
-  rightDiv.innerHTML = `Olá, ${fullname}`;
-
+  rightDiv.innerHTML = `Olá, ${name} ${lastname} ${emailPhone} ${birthdate} ${gender}`;
   // const title = document.createElement('h2');
-  // title.innerHTML = `Olá, ${fullname}`;
+  // title.innerHTML = `Olá, ${name} ${lastname}`;
   // title.className = 'title';
   // const paragraph1 = document.createElement('p');
   // paragraph1.innerHTML = emailPhone;
