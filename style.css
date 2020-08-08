@@ -8,12 +8,13 @@ label {
 }
 
 input {
-  margin: 0.5%;
-  padding: 0.5%;
+  margin: 1%;
+  padding: 1%;
 }
 
 .facebook-login {
   display: flex;
+  float: right;
 }
 
 .facebook-logo {
