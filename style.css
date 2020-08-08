@@ -107,6 +107,7 @@ input:focus {
 /* IMG+TEXT */
 .left-content {
   left: 0;
+  order: 1;
   position: absolute;
   width: 800px;
 }
@@ -121,6 +122,7 @@ input:focus {
 /* SIGNUP FORM */
 .right-content {
   font-family: Arial, Helvetica, sans-serif;
+  order: 2;
   position: absolute;
   right: 80px;
   width: 300px;
