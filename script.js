@@ -27,7 +27,10 @@ const functionalities = {
       verificadorBool += (allInputs[i].checked === false) ? 1 : 0;
       i += 1;
     }
-    if (verificadorText !== 0 || verificadorBool !== 2) {
+    functionalities.selectorOfAction(verificadorText, verificadorBool);
+  },
+  selectorOfAction: function selectorOfAction(checkText, checkBool) { // Para evitar complexidade
+    if (checkText !== 0 || checkBool !== 2) {
       window.alert('Campos inválidos');
     } else {
       functionalities.changeContent();
@@ -48,7 +51,7 @@ const functionalities = {
     let gender;
     if (allInputs[5].checked === true) {
       gender = ('<br>').concat(allInputs[5].value);
-    } else if (allInputs[6].checked == true) {
+    } else if (allInputs[6].checked === true) {
       gender = ('<br>').concat(allInputs[6].value);
     } else {
       gender = ('<br>').concat(allInputs[7].value);
