@@ -19,7 +19,7 @@ function logSubmit(event) {
     element.value = '';
     log.innerHTML = 'Campos inválidos';
     event.preventDefault();
-    });
+  });
 }
 
 const maleForm = document.getElementById('masculino');
@@ -27,7 +27,7 @@ const femaleForm = document.getElementById('feminino');
 const otherForm = document.getElementById('personalizado');
 
 function logSubmitGender(event) {
-  if  (maleForm.value || femaleForm.value || otherForm.value === ''){
+  if (maleForm.value || femaleForm.value || otherForm.value === '') {
     log.innerHTML = 'Campos inválidos';
     event.preventDefault();
   }
@@ -35,7 +35,7 @@ function logSubmitGender(event) {
 const getGender = document.querySelector('.Gender');
 const buttonForm = document.getElementById('facebook-register');
 function makeDivPersonal(event) {
-  if  (otherForm.value !== ''){
+  if (otherForm.value !== '') {
     const inputPersonal = document.createElement('input');
     inputPersonal.name = 'gender-custom';
     inputPersonal.placeholder = 'Gênero (opcional)';
