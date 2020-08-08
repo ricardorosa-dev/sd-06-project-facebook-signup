@@ -13,11 +13,6 @@
   display: flex;
 }
 
-.form-full-name {
-  display: flex;
-  justify-content: space-around;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
