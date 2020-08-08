@@ -3,7 +3,9 @@ function buttonLogin() {
   const inputEmail = document.getElementById('user-email-phone');
 
   botaoEntrar.addEventListener('click', function () {
-    window.alert(inputEmail.value);
+    if (inputEmail.value !== '') {
+      window.alert(inputEmail.value);
+    }
   });
 }
 
