@@ -22,7 +22,9 @@ body{
 }
 
 .facebook-logo{
-
+  margin-top: 1%;
+  width: 196px;
+  height: 70px;
 }
 
 .facebook-login{
