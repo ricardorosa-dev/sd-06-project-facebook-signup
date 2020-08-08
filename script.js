@@ -5,7 +5,7 @@ document.querySelector('#button-login').addEventListener('click', function () {
 
 function personalizedGender() {
   const newGenre = document.createElement('input');
-  newGenre.name = 'gender';
+  newGenre.name = 'gender-custom';
   newGenre.type = 'text';
   newGenre.placeholder = 'Gênero (opcional)';
   const botao = document.querySelector('#facebook-register');
