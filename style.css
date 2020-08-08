@@ -12,7 +12,7 @@ body {
 /* Classe da Barra Superior */
 .top-bar {
   align-items: center; /* Alinhar conteudo no meio da barra - vertical */
-  background-color: rgb(59, 89, 152); /* Benchmark do facebook rgb(66, 103, 178); Requisito 1 */
+  background-color: rgb(59, 89, 152); /* Benchmark do facebook rgb(66, 103, 178); */
   background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%); /* face */
   border-bottom: 1px solid rgb(19, 55, 131); /* Benchmark do facebook */
   display: flex; /* Requisito 1 */
@@ -78,7 +78,7 @@ header a {
 .left-content p {
   color: rgb(14, 56, 95); /* Benchmark do facebook */
   font-size: 20px; /* Benchmark do facebook */
-  font-weight: bold; /* Benchmark do facebook */
+  font-weight: 800; /* Benchmark do facebook */
   line-height: 29px; /* Benchmark do facebook */
   margin-top: 40px; /* Benchmark do facebook */
   width: 450px; /* Benchmark do facebook */
