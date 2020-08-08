@@ -14,7 +14,7 @@
     <form class='facebook-login' action=''>
       <section class='form-group'>
         <label for='email' id='user-email-phone-label'>E-mail ou telefone</label>
-        <input name='email' id='user-email-phone' type='email'>
+        <input name='email' id='user-email-phone' type='text'>
       </section>
       <section class='form-group'>
         <label for='password' id='user-password-label'>Senha</label>
@@ -34,22 +34,21 @@
     </section>
     <section class='right-content'>
       <h1>Abra uma conta</h1>
-      <p class='quick-easy'>É rápido e fácil</p>
+      <h2 class='quick-easy'>É rápido e fácil</h2>
       <form action=''>
-        <input type='text' placeholder='Nome' name='firstname'>
-        <input type='text' placeholder='Sobrenome' name='lastname'>
+        <input type='text' placeholder='Nome' name='firstname'><input type='text' placeholder='Sobrenome' name='lastname'>
         <input type='text' placeholder='Celular ou email' name='phone_email'>
         <input type='password' placeholder='Nova senha' name='password'>
-        <label for='birthdate' id='label-birthdate'>Data de Nasciemnto</label>
+        <label for='birthdate' id='label-birthdate'>Data de Nasciemnto</label><br>
         <input type='text' name='birthdate' placeholder='dd/mm/aaaa'>
-        <label for='' id='label-gender'>Gênero</label>
-        <input type='radio' value='Feminino'>
-        <label for=''>Feminino</label>
-        <input type='radio' value='Masculino'>
-        <label for=''>Masculino</label>
-        <input type='radio' value='Personalizado'>
-        <label for=''>Personalizado</label>
-        <input type='submit' id='facebook-register' value='Cadastre-se'>
+        <label for='' id='label-gender'>Gênero</label><br>
+        <input name='gender' type='radio' value='Feminino'>
+        <label for='gender'>Feminino</label>
+        <input name='gender' type='radio' value='Masculino'>
+        <label for='genedr'>Masculino</label>
+        <input name='gender' type='radio' value='Personalizado'>
+        <label for='gender'>Personalizado</label>
+        <button type='submit' id='facebook-register'>Cadastre-se</button>
       </form>
     </section>
   </section>

@@ -1,5 +1,6 @@
 .facebook-login {
   display: flex;
+  justify-content: space-around;
 }
 
 .facebook-logo {
@@ -10,7 +11,7 @@
 
 .form-control {
   align-self: flex-end;
-  display: flex;
+  align-content: center;
 }
 
 .form-group {
@@ -19,15 +20,13 @@
 }
 
 .left-content {
-  display: flex;
-  flex-direction: column;
   width: 800px;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .top-bar {
@@ -39,7 +38,5 @@
 }
 
 .right-content {
-  display: flex;
-  flex-direction: column;
   width: 300px;
 }
