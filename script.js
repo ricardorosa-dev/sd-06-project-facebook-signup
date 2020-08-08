@@ -1,4 +1,7 @@
 const inputs = document.querySelectorAll('input');
+const rightContent = document.querySelector('.right-content');
+let chosenGender;
+let optionalGender = document.querySelector('span:first-of-type > input');
 const buttonLogin = document.querySelector('#button-login');
 const submitButton = document.querySelector('#facebook-register');
 const customizedButton = inputs[9];
@@ -9,6 +12,15 @@ maleFemaleButtons.push(inputs[8]);
 buttonLogin.addEventListener('click', function () {
   alert(inputs[0].value);
 });
+
+function showFormContent() {
+  let formContent = `Olá, ${inputs[2].value} ${inputs[3].value} `;
+  formContent += `${inputs[4].value} `;
+  formContent += `${inputs[6].value} `;
+  formContent += chosenGender.isEmpty() ? `${optionalGender} ` : `${chosenGender} `;
+
+  return formContent;
+}
 
 submitButton.addEventListener('click', function (event) {
   const errorMessage = document.querySelector('span');
@@ -32,11 +44,14 @@ submitButton.addEventListener('click', function (event) {
   if (isEmpty) {
     event.preventDefault();
   }
+
+  rightContent.innerHTML = showFormContent();
 });
 
-customizedButton.addEventListener('change', function () {
+customizedButton.addEventListener('change', function (event) {
   const span = document.querySelector('span:first-of-type');
   span.style.display = 'inline';
+  chosenGender = event.target.value;
 });
 
 for (let i = 0; i < maleFemaleButtons.length; i += 1) {
@@ -45,3 +60,7 @@ for (let i = 0; i < maleFemaleButtons.length; i += 1) {
     span.style.display = 'none';
   });
 }
+
+optionalGender.addEventListener('change', function () {
+  optionalGender = document.querySelector('span:first-of-type > input').value;
+});
