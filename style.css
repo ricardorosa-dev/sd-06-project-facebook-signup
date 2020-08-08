@@ -16,7 +16,6 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  float: right;
   justify-content: flex-end;
 }
 
@@ -38,4 +37,19 @@
   color: white;
   margin: 12px;
   width: 90px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-content {
+  float: left;
+  width: 800px;
+}
+.right-content {
+  float: right;
+  width: 300px;
 }
