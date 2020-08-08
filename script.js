@@ -14,8 +14,8 @@ function messageInvalid() {
 
 function validate() {
   const inputs = document.querySelectorAll('input');
-  var valido = true;
-  for (const i in inputs) {
+  let valido = true;
+  for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       valido = false;
     }
