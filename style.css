@@ -3,6 +3,11 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.9em;
   height: 640px;
+  width: auto;
+}
+
+button {
+  padding: 2%;
 }
 
 .right-content input {
