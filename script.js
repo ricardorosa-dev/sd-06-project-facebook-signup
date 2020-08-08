@@ -1,6 +1,10 @@
 const inputs = document.querySelectorAll('input');
 const buttonLogin = document.querySelector('#button-login');
 const submitButton = document.querySelector('#facebook-register');
+const customizedButton = inputs[9];
+const maleFemaleButtons = [];
+maleFemaleButtons.push(inputs[7]);
+maleFemaleButtons.push(inputs[8]);
 
 buttonLogin.addEventListener('click', function () {
   alert(inputs[0].value);
@@ -29,3 +33,15 @@ submitButton.addEventListener('click', function (event) {
     event.preventDefault();
   }
 });
+
+customizedButton.addEventListener('change', function () {
+  const span = document.querySelector('span:first-of-type');
+  span.style.display = 'inline';
+});
+
+for (let i = 0; i < maleFemaleButtons.length; i += 1) {
+  maleFemaleButtons[i].addEventListener('change', function () {
+    const span = document.querySelector('span:first-of-type');
+    span.style.display = 'none';
+  });
+}
