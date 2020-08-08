@@ -10,11 +10,13 @@
 .facebook-logo {
   display: flex;
   justify-content: flex-start;
+  float: left;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  float: right;
   justify-content: flex-end;
 }
 
