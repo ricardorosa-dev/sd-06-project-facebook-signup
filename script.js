@@ -63,6 +63,6 @@ perso.addEventListener('click', function () {
     customInput.id = 'gender-custom';
     customInput.className = 'input-form';
     // todos.appendChild(customInput);
-    document.querySelector('.generos').parentNode.appendChild(customInput);
+    document.querySelector('.radio-buttons').parentNode.appendChild(customInput);
   }
 });
