@@ -8,7 +8,7 @@ function alertEmail() {
 buttonEnter.addEventListener('click', alertEmail);
 
 const btRegister = document.getElementById('facebook-register');
-btRegister.addEventListener('click', function (event) {
+btRegister.addEventListener('click', function () {
   // event.preventDefault();
   const fnameField = document.getElementsByName('firstname')[0].value !== '';
   const lnameField = document.getElementsByName('lastname')[0].value !== '';
@@ -23,7 +23,7 @@ btRegister.addEventListener('click', function (event) {
       }
     }
     return result;
-  }
+  };
   const list = [fnameField, lnameField, celField, passField, birthdate, sexField];
   let formOk = true;
   for (let i = 0; i < list.length; i += 1) {
