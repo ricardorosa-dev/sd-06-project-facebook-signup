@@ -7,7 +7,7 @@ function personalizedGender() {
   const newGenre = document.createElement('input');
   newGenre.type = 'text';
   newGenre.name = 'gender';
-  newGenre.placeholder = "Gênero (opcional)";
+  newGenre.placeholder = 'Gênero (opcional)';
   document.querySelector('.label-gender').appendChild(newGenre);
 }
 document.querySelector('.personalizado').addEventListener('click', personalizedGender);
