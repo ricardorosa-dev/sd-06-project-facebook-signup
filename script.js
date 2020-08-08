@@ -31,7 +31,7 @@ function verifyData() {
 function verifyGender() {
   let errorCounter = 0;
   const valGender = [genderFemale.checked, genderMale.checked, genderOther.checked];
-  
+
   if (valGender[0] === false && valGender[1] === false && valGender[2] === false) {
     errorCounter += 1;
   }
