@@ -10,7 +10,7 @@ body {
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
-  color: #ffffff;
+  color: white;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -61,13 +61,22 @@ body {
 }
 
 .form-element3 > #button-login {
-  background-color: #4267B2;
-  color: #ffffff;
-  font-weight: bold;
+  background-color: #4267b2;
+  color: white;
+  font-weight: 900;
   height: 24px;
   padding: 2px 6px;
   text-align: center;
   width: 50px;
+}
+
+.left-content > #facebook-slogan {
+  color: #333;
+  font-size: 28px;
+  font-weight: 900;
+  height: 138px;
+  padding: 42px 0 24px;
+  width: 456px;
 }
 
 .form-control {
@@ -85,11 +94,12 @@ body {
 }
 
 .right-content {
+  margin-top: 50px;
   width: 300px;
 }
 
-.right-content > h1 {
-  color: #333333;
+.count {
+  color: #333;
   font-size: 36px;
   height: 43px;
   margin: 0 0 5px;
@@ -97,7 +107,7 @@ body {
 }
 
 .right-content > p {
-  color: #333333;
+  color: #333;
   font-size: 19px;
   height: 23px;
   margin: 0 0 20px;
@@ -147,6 +157,10 @@ body {
   width: 399px;
 }
 
+.birthday {
+  margin-top: 8px;
+}
+
 .birthday > #birth {
   border-radius: 5px;
   height: 30px;
@@ -159,7 +173,7 @@ body {
 }
 
 .gender > #masculino {
-  color: #1D2129;
+  color: #1d2129;
   font-size: 18px;
   height: 20px;
   padding: 0 10px 0 3px;
@@ -167,14 +181,14 @@ body {
 }
 
 .gender > #feminino {
-  color: #1D2129;
+  color: #1d2129;
   font-size: 18px;
   height: 20px;
   width: 73.03px;
 }
 
 .gender > #personalizado {
-  color: #1D2129;
+  color: #1d2129;
   font-size: 18px;
   height: 20px;
   width: 75.02;
@@ -189,10 +203,14 @@ body {
   margin-top: 10px;
 }
 
+.Gender {
+  margin-top: 8px;
+}
+
 .Gender > #label-gender {
-  color: #90949C;
+  color: #90949c;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 900;
   height: 21px;
   margin: 10px 0 5px;
   width: 399px;
@@ -201,16 +219,16 @@ body {
 .birthday > #label-birthdate {
   color: #90949C;
   font-size: 16px;
-  font-weight: bold;
+  font-weight:900;
   height: 21px;
   margin: 10px 0 5px;
   width: 399px;
 }
 
 .buttonForm > #facebook-register {
-  background-color: #69A74E;
+  background-color: #69a74e;
   border-radius: 5px;
-  color: #ffffff;
+  color: white;
   font-size: 19px;
   height: 39px;
   margin: 10px 0;
