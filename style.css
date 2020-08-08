@@ -14,17 +14,12 @@ header {
   width: 100%;
 }
 
-/* .top-bar {
-
-} */
-
 header img {
   margin-top: 17px;
 }
 
 .facebook-login {
   display: flex;
-
 }
 
 .form-group {
@@ -50,4 +45,8 @@ header img {
 
 .right-content {
   width: 300px;
+}
+
+.name-form {
+  display: flex;
 }
