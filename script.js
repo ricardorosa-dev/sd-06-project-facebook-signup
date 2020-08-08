@@ -3,7 +3,7 @@ function alertUser() {
   if (botao.value === '') {
     alert('Por favor, digite um Email ou Celular');
   } else {
-  alert(botao.value);
-}
+    alert(botao.value);
+  }
 }
 alertUser();
