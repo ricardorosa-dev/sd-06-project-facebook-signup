@@ -6,12 +6,12 @@ btn.addEventListener('click', function () {
   alert(valor);
 });
 
- function person() {
-  if (document.getElementById('p').checked == true) {
-    const customInput = document.createElement('input');
-    customInput.name = 'gender-custom';
-    customInput.placeholder = 'Gênero (opcional)';
-    customInput.id = 'gender-custom';
-    document.querySelector('.checkPerson').appendChild(customInput);
+document.querySelector('#p').addEventListener('click', function () {
+  if (document.querySelector('.radio-buttons').lastElementChild.className === '') {
+    const aux = document.createElement('input');
+    aux.placeholder = 'Gênero (opcional)';
+    aux.name = 'gender-custom';
+    aux.className = 'gender-custom-input';
+    document.querySelector('.radio-buttons').appendChild(newField);
   }
- }
+});
