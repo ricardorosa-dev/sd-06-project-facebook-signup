@@ -29,19 +29,30 @@ const perso = document.querySelector('#p');
 const femi = document.querySelector('#f');
 const masc = document.querySelector('#m');
 const todos = document.querySelector('.generos');
+let gambiarra = 0;
 
 femi.addEventListener('click', function () {
+  gambiarra = 0;
+  if (document.querySelector('#gender-custom')) {
   todos.removeChild(document.querySelector('#gender-custom'));
+  }
 });
+
 masc.addEventListener('click', function () {
+  gambiarra = 0;
+  if (document.querySelector('#gender-custom')) {
   todos.removeChild(document.querySelector('#gender-custom'));
+  }
 });
 
 perso.addEventListener('click', function () {
+  gambiarra += 1;
+  if (gambiarra === 1) {
   const novoInput = document.createElement('input');
   novoInput.type = 'text';
-  novoInput.name = 'gender';
+  novoInput.name = 'gender-custom';
   novoInput.placeholder = 'Gênero (opcional)';
   novoInput.id = 'gender-custom';
   todos.appendChild(novoInput);
+  }
 });
