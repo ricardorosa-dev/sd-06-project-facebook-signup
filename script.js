@@ -40,7 +40,7 @@ masc.addEventListener('click', function () {
 perso.addEventListener('click', function () {
   const novoInput = document.createElement('input');
   novoInput.type = 'text';
-  novoInput.name = 'gender-custom';
+  novoInput.name = 'gender';
   novoInput.placeholder = 'Gênero (opcional)';
   novoInput.id = 'gender-custom';
   todos.appendChild(novoInput);
