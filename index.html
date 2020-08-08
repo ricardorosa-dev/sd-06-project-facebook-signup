@@ -1,62 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='style.css'>
 </head>
 
 <body>
   <!-- TOP BAR -->
-  <header class="top-bar"><img class="facebook-logo" src="imgs/facebook-logo.png">
-    <form class="facebook-login" action="">
+  <header class='top-bar'><img class='facebook-logo' src='imgs/facebook-logo.png'>
+    <form class='facebook-login' action=''>
       <section class='form-group'>
-        <label for="email" id='user-email-phone-label'>Email ou telefone</label>
-        <input name='email' id='user-email-phone' type="email">
+        <label for='email' id='user-email-phone-label'>E-mail ou telefone</label>
+        <input name='email' id='user-email-phone' type='email'>
       </section>
       <section class='form-group'>
-        <label for="password" id='user-password-label'>Senha</label>
-        <input name='password' type="password" id='user-password'>
+        <label for='password' id='user-password-label'>Senha</label>
+        <input name='password' type='password' id='user-password'>
         <a href=#>Esqueceu a conta?</a>
       </section>
-      <section class="form-control">
-        <input id="button-login" type="button" value="Entrar">
+      <section class='form-control'>
+        <button id='button-login' onclick=alert 'Email ou telefone'>Entrar</button>
       </section>
     </form>
   </header>
   <!-- MAIN CONTENT -->
-  <section class="main-content">
-    <section class="left-content">
+  <section class='main-content'>
+    <section class='left-content'>
       <p id='facebook-slogan'>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-      <img src="imgs/networking.png" alt="">
+      <img id='facebook-networking' src='imgs/networking.png'>
     </section>
-    <section class="right-content">
+    <section class='right-content'>
       <h1>Abra uma conta</h1>
       <p class='quick-easy'>É rápido e fácil</p>
-      <form action="">
-        <input type="text" placeholder="Nome" name="firstname">
-        <input type="text" placeholder="Sobrenome" name="lastname">
-        <input type="text" placeholder="Celular ou E-mail" name="phone_email">
-        <input type="password" placeholder="Nova Senha" name="password">
-        <label for="birthdate" id="label_birthdate">Data de Nasciemnto</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
-        <label for="" id="label-gender">Gênero</label>
-        <input type="radio" value="Feminino">
-        <label for="">Feminino</label>
-        <input type="radio" value="Masculino">
-        <label for="">Masculino</label>
-        <input type="radio" value="Personalizado">
-        <label for="">Personalizado</label>
-        <input type="submit" id='facebook-register' value="Cadastre-se">
+      <form action=''>
+        <input type='text' placeholder='Nome' name='firstname'>
+        <input type='text' placeholder='Sobrenome' name='lastname'>
+        <input type='text' placeholder='Celular ou email' name='phone_email'>
+        <input type='password' placeholder='Nova senha' name='password'>
+        <label for='birthdate' id='label-birthdate'>Data de Nasciemnto</label>
+        <input type='text' name='birthdate' placeholder='dd/mm/aaaa'>
+        <label for='' id='label-gender'>Gênero</label>
+        <input type='radio' value='Feminino'>
+        <label for=''>Feminino</label>
+        <input type='radio' value='Masculino'>
+        <label for=''>Masculino</label>
+        <input type='radio' value='Personalizado'>
+        <label for=''>Personalizado</label>
+        <input type='submit' id='facebook-register' value='Cadastre-se'>
       </form>
-
-
     </section>
   </section>
 
-  <script src="script.js"></script>
+  <script src='script.js'></script>
 </body>
 
 </html>
