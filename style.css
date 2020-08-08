@@ -50,8 +50,3 @@ body {
 .name-lastname {
   display: flex;
 }
-
-.aux {
-  display: flex;
-  flex-direction: column;
-}
