@@ -8,6 +8,11 @@ body {
   display: flex;
 }
 
+.facebook-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .form-control {
   align-self: flex-end;
 }
@@ -42,7 +47,7 @@ body {
   box-sizing: border-box;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   left: 0;
   padding: 20px 50px;
   top: 0;
