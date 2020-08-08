@@ -4,15 +4,77 @@ body {
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178);
-}
-
-.top-bar , .main-content {
   align-items: center;
+  background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: center;
 }
 
-.container {
-  width: 960px;
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.facebook-logo {
+  justify-content: flex-start;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.form-group label {
+  color: white;
+  margin: 0 10px;
+}
+
+.form-group input {
+  background-color: white;
+  border-color: rgb(36, 62, 114);
+  border-width: 1px;
+  padding: 0.25rem;
+}
+
+.form-group a {
+  color: rgb(163, 173, 192);
+  text-decoration: none;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-control button {
+  background-color: rgb(66, 103, 178);
+  border-color: black;
+  border-width: 1px;
+  color: white;
+  font-weight: 700;
+  padding: 4px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.fullName {
+  display: flex;
+}
+
+.birth {
+  display: flex;
+  flex-direction: column;
 }
