@@ -48,8 +48,10 @@
           <h1>Abra uma conta</h1>
           <h3 class="quick-easy">É rápido e fácil.</h3>
           <form action="" method="GET">
-            <input type="text" name="firstname" placeholder="Nome">
-            <input type="text" name="lastname" placeholder="Sobrenome"> <!-- requisito 12 Este input deve ficar ao lado do input nome -->
+            <div class="name-form">
+              <input type="text" name="firstname" placeholder="Nome">
+              <input type="text" name="lastname" placeholder="Sobrenome"> <!-- requisito 12 Este input deve ficar ao lado do input nome -->
+            </div>
             <input type="text" name="phone_email" placeholder="Celular ou email"> <!-- requisito 13 Este input deve ficar abaixo dos inputs nome e sobrenome -->
             <input type="password" name="password" placeholder="Nova senha">
             <br>
@@ -68,6 +70,7 @@
             <button type="submit" id="facebook-register">Cadastre-se</button>
             <!-- requisito 18 validar o botão no java script -->
             <!-- requisito 19 novos campos de formulario via java script -->
+            <!-- requisito 20 caso todos os campos preenchidos corretamente exibir os valores preenchidos, subistituindo os do enuciado. -->
 ​
           </form>
         </div>
