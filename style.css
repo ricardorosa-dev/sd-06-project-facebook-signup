@@ -141,3 +141,9 @@ body {
   font-weight: 700;
   padding: 16px 24px;
 }
+
+.signup-message {
+  color: rgb(29, 56, 109);
+  font-weight: 700;
+  text-align: center;
+}

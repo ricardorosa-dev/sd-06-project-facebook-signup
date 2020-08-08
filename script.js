@@ -77,26 +77,11 @@ function fillRightDiv(inputs) {
   const gender = inputs[5].value;
 
   const displayP = document.createElement('p');
+  displayP.className = 'signup-message';
   const message = `Olá, ${name} ${lastname}, o seu cadastro foi feito no ${emailPhone}, você nasceu em ${birthdate} e escolheu o gênero ${gender}!`;
   displayP.appendChild(document.createTextNode(message));
   rightDiv.appendChild(displayP);
-  // const title = document.createElement('h2');
-  // title.innerHTML = `Olá, ${name} ${lastname}`;
-  // title.className = 'title';
-
-  // paragraph1.innerHTML = emailPhone;
-  // paragraph1.className = 'paragraph';
-  // const paragraph2 = document.createElement('p');
-  // paragraph2.innerHTML = birthdate;
-  // paragraph2.className = 'paragraph';
-  // const paragraph3 = document.createElement('p');
-  // paragraph3.innerHTML = gender;
-  // paragraph3.className = 'paragraph';
-
-  // rightDiv.appendChild(title);
-  // rightDiv.appendChild(paragraph1);
-  // rightDiv.appendChild(paragraph2);
-  // rightDiv.appendChild(paragraph3);
+  rightDiv.style.alignItems = 'center';
 }
 
 registerButton.addEventListener('click', function (event) {
