@@ -16,16 +16,14 @@
         <img class="facebook-logo" width=170px src="imgs/facebook-logo.png" alt="Logomarca do facebook">
             <form class="facebook-login" action="get">
                 <div class="form-group">
-                    <label for="login">Email ou telefone<br>
-                        <input style="margin-top: 3px;" type="text" name="login" id="user-email-phone">
-                    </label>
+                    <label id="user-email-phone-label">Email ou telefone</label>
+                    <input style="margin-top: 3px;" type="text" name="login" id="user-email-phone">
                 </div>
                 <div class="form-group">
-                    <label id="user-password-label" for="pwd">Senha<br>
-                        <input type="password" name="password" id="user-password" style="margin-top: 3px;" style="margin-bottom: 5px;">
-                          <li><a class="remember-password" href="https://www.facebook.com/recover/initiate?lwv=110&ars=royal_blue_bar">Esqueceu a conta?</a></li>
-                        </label>
-                    </div>
+                    <label id="user-password-label">Senha</label>
+                    <input id="user-password" type="password" name="password" style="margin-top: 3px;" style="margin-bottom: 5px;">
+                    <li><a class="remember-password" href="https://www.facebook.com/recover/initiate?lwv=110&ars=royal_blue_bar">Esqueceu a conta?</a></li>
+                </div>
                 <div class="form-control">
                     <label class="button-login-label" for="btn">
                         <button id="button-login">Entrar</button>
@@ -39,13 +37,13 @@
         <!--LEFT CONTENT-->
         <div class="left-content">
             <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-            <div class="facebook-slogan"><img src="imgs/networking.png" width="500px" alt="Pessoas conectadas"></div>
+            <img id="facebook-networking" src="imgs/networking.png" width="500px" alt="Pessoas conectadas">
         </div>
         <!--RIGHT CONTENT-->
         <div class="right-content">
             <div class="validade-form">
                 <h1 class="title">Abra uma conta</h1>
-                <h2 class="subtitle">É rápido e fácil.</h2>
+                <h2 class="subtitle  quick-easy">É rápido e fácil.</h2>
                 <form action="get">
                         <div class="field" style="display:flex;">
                             <div class="control">
@@ -60,7 +58,7 @@
                                 <input class="input" required="required" name="phone_email" type="text " placeholder="Celular ou email">
                             </div>
                             <div class="control" style="padding-top: 15px;">
-                                <input class="input" required="required" name="password" type="password " placeholder="Nova Senha">
+                                <input class="input" required="required" name="password" type="password" placeholder="Nova senha">
                             </div>
                         </div>
                         <div class="field">
@@ -71,19 +69,13 @@
                         </div>
                         <label class="label" id="label-gender" style="font-size: 12px;" style="color:gray; ">Gênero</label>
                         <div class="field">
-                            <div class="control ">
-                                <label for="female" class="radio">
-                                    <input type="radio" name="gender" id="female">
-                                    Feminino
-                                </label>
-                                <label for="male" class="radio">
-                                    <input type="radio" name="gender" id="male">
-                                    Masculino
-                                </label>
-                                <label for="other" class="radio">
-                                    <input type="radio" name="gender" id="other">
-                                    Personalizado
-                                </label>
+                            <div class="control">
+                                <input type="radio" name="gender" id="female" value="Feminino">
+                                <label for="female" class="radio">Feminino</label> 
+                                <input type="radio" name="gender" id="male" value="Masculino">
+                                <label for="male" class="radio">Masculino</label>
+                                <input type="radio" name="gender" id="other" value="Personalizado">
+                                <label for="other" class="radio">Personalizado</label>
                             </div>
                         </div>
                         <div class="field" id="gender-area" style="display: none;">
@@ -95,17 +87,17 @@
                             </select>
                             <p>O seu pronome fica visível para todos.</p>
                             <div class="control">
-                                <input class="input" name="gender-custom" required="required" type=" text " placeholder="Gênero (opcional)">
+                                <input class="input" name="gender-custom" required="required" type="text" placeholder="Gênero (opcional)">
                             </div>
                         </div>
                          <p style="font-size: 12px;">
                             Ao clicar em Cadastre-se, você concorda com nossos
-                            <a class="terms-class " href="https://www.facebook.com/legal/terms/update ">Termos</a>,<br>
-                            <a class="terms-class " href="https://www.facebook.com/about/privacy/update ">Política de Dados</a> e
-                            <a class="terms-class " href="https://www.facebook.com/policies/cookies/ ">Política de Cookies</a>. Você pode receber<br>notificações por SMS e pode cancelar isso quando quiser.
+                            <a class="terms-class" href="https://www.facebook.com/legal/terms/update ">Termos</a>,<br>
+                            <a class="terms-class" href="https://www.facebook.com/about/privacy/update ">Política de Dados</a> e
+                            <a class="terms-class" href="https://www.facebook.com/policies/cookies/ ">Política de Cookies</a>. Você pode receber<br>notificações por SMS e pode cancelar isso quando quiser.
                         </p>
                         <div class="control ">
-                            <button id="facebook-register" class="button is-success sign-button " type="submit ">Cadastre-se</button>
+                            <button id="facebook-register" class="button is-success sign-button" type="submit">Cadastre-se</button>
                             <p style="font-size: 12px;"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form ">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
                         </div>
                 </form>

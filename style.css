@@ -40,8 +40,6 @@ li {
 .facebook-logo {
   align-self: center;
   flex-shrink: 0;
-  margin-left: 12%;
-  margin-right: 24.5%;
 }
 
 .facebook-login {
@@ -107,5 +105,16 @@ li {
 }
 
 .form-control {
-  justify-content: center;
+  justify-content: flex-end;
+}
+
+.terms-class {
+  color: #385898;
+  cursor: pointer;
+  text-decoration: none; 
+}
+
+.terms-class:hover {
+  color: #385898;
+  text-decoration: underline;
 }
