@@ -6,16 +6,16 @@ btn.addEventListener('click', function () {
 });
 
 function messageInvalid() {
-  let formulario = document.querySelector('.forms');
-  let messageError = document.createElement('div');
+  const formulario = document.querySelector('.forms');
+  const messageError = document.createElement('div');
   messageError.innerText = 'Campos inválidos';
   formulario.appendChild(messageError);
 }
 
 function validate() {
-  let inputs = document.querySelectorAll('input');
-  let valido = true;
-  for (let i in inputs) {
+  const inputs = document.querySelectorAll('input');
+  var valido = true;
+  for (const i in inputs) {
     if (inputs[i].value === '') {
       valido = false;
     }
@@ -24,5 +24,5 @@ function validate() {
     messageInvalid();
   }
 }
-let botaoRegistro = document.querySelector('#facebook-register');
+const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
