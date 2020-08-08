@@ -6,6 +6,7 @@ body {
   padding: 0;
   text-decoration: none;
 }
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -19,34 +20,41 @@ body {
   display: flex;
   flex-direction: row;
 }
+
 .form-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   width: 40%;
 }
+
 .top-bar .form-container {
   justify-content: flex-end;
 }
+
 .facebook-logo img {
   display: flex;
   justify-content: flex-start;
   margin-left: 200px;
   width: 60%;
 }
+
 .facebook-login {
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
+
 .facebook-login input {
   border: 1px solid black;
   margin-bottom: 15px;
   width: 100px;
 }
+
 .space {
   padding: 15px;
 }
+
 .form-element3 {
   margin-top: 45px;
 }
@@ -58,7 +66,7 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
 }
 
 .left-content {
@@ -68,13 +76,16 @@ body {
 .right-content {
   width: 300px;
 }
+
 .full-name {
   display: flex;
   justify-content: center;
 }
+
 .inputName {
   align-items: flex-start;
 }
+
 .inputLastName {
   align-items: flex-end;
 }
