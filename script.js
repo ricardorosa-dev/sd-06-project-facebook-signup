@@ -10,6 +10,7 @@ document.querySelector('#p').addEventListener('click', function () {
     const aux = document.createElement('input');
     aux.placeholder = 'Gênero (opcional)';
     aux.name = 'gender-custom';
+    aux.className = 'gender-custom-input';
     document.querySelector('.radio-buttons').appendChild(aux);
   }
 });
