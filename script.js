@@ -33,7 +33,7 @@ console.log(todos);
 perso.addEventListener('click', function () {
   let novoInput = document.createElement('input');
   novoInput.type = 'text';
-  novoInput.name = 'gender-custom';
+  novoInput.name = 'gender';
   novoInput.placeholder = 'Gênero (opcional)';
   todos.appendChild(novoInput);
 });
