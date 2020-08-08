@@ -82,7 +82,7 @@ li {
 }
 
 .right-content {
-  width: 400px;
+  width: 300px;
 }
 
 .facebook-slogan {
@@ -105,7 +105,7 @@ li {
 }
 
 .form-control {
-  justify-content: flex-end;
+  align-self: flex-end;
 }
 
 .terms-class {
