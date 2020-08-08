@@ -40,10 +40,14 @@ function verifyGender() {
 }
 
 function validateData() {
-  const totalError = verifyData + verifyGender;
+  const totalError = verifyData() + verifyGender();
 
   if (totalError > 0) {
-    registerForm.innerHTML = 'Campos inválidos';
+    const message = document.createElement('p');
+    message.id = 'error-msg';
+    message.className = 'error-msg';
+    message.appendChild(document.createTextNode('Campos inválidos'));
+    registerForm.appendChild(message);
   }
 }
 
