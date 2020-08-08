@@ -51,27 +51,34 @@ body {
 }
 
 .main-content {
+  background: linear-gradient(0deg, rgba(85, 100, 149, 0.239) 0%, white 93%);
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .left-content {
-  flex-wrap: wrap;
-  max-width: 800px;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  width: 800px;
 }
 
 .right-content {
+  margin-right: 360px;
   width: 300px;
 }
 
 .fb-slogan {
   color: #0e385f;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 900;
   line-height: 29px;
+  margin-right: 110px;
   margin-top: 40px;
   text-align: left;
-  width: 450px;
+  width: 500px;
 }
 
 h1 {
@@ -90,9 +97,9 @@ h1 {
 }
 
 .first-name , .last-name , .email {
-  border: 1px solid black;
+  border: 1px solid darkgray;
   border-radius: 5px;
-  height: 12px;
+  height: 15px;
   margin-bottom: 10px;
   margin-right: 11px;
   padding: 12px;
