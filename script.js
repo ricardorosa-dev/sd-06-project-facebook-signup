@@ -26,11 +26,21 @@ const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
 
 const perso = document.querySelector('#p');
+const femi = document.querySelector('#f');
+const masc = document.querySelector('#m');
 const todos = document.querySelector('.generos');
+
+femi.addEventListener('click', function () {
+    todos.removeChild(document.querySelector('#gender-custom'));
+});
+masc.addEventListener('click', function () {
+    todos.removeChild(document.querySelector('#gender-custom'));
+});
+
 perso.addEventListener('click', function () {
   const novoInput = document.createElement('input');
   novoInput.type = 'text';
-  novoInput.name = 'gender';
+  novoInput.name = 'gender-custom';
   novoInput.placeholder = 'Gênero (opcional)';
   novoInput.id = 'gender-custom';
   todos.appendChild(novoInput);
