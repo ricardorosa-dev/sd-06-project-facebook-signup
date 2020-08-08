@@ -5,7 +5,9 @@ btn.addEventListener('click', function () {
   alert(valor);
 });
 
-  new JustValidate ('.forms', {
+let JustValidate = new JustValidate;
+
+JustValidate('.forms', {
     rules: {
       firstname: {
         required: true,
@@ -28,22 +30,22 @@ btn.addEventListener('click', function () {
     },
     messages: {
       firstname: {
-        required: 'Campos inválidos'
+        required: 'Campos inválidos',
       },
       lastname: {
-        required: 'Campos inválidos'
+        required: 'Campos inválidos',
       },
       phone_email: {
-        required: 'Campos inválidos'
+        required: 'Campos inválidos',
       },
       password: {
-        required: 'Campos inválidos'
+        required: 'Campos inválidos',
       },
       birthdate: {
-        required: 'Campos inválidos'
+        required: 'Campos inválidos',
       },
       genero: {
-        required: 'Campos inválidos'
+        required: 'Campos inválidos',
       },
     },
   });
