@@ -12,7 +12,7 @@ const functionalities = {
       const optionalGenderElement = document.querySelector('#gender-opt');
       optionalGenderElement.classList = 'g-custom';
     }
-  }
+  },
 };
 
 window.onload = function () {
