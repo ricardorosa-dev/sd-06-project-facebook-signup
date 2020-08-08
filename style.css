@@ -53,6 +53,6 @@ body {
   display: flex;
 }
 
-.gender-form label, .gender-form input {
+.gender-form label , .gender-form input {
   margin-right: 12px;
 }
