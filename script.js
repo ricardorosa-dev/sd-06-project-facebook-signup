@@ -29,7 +29,7 @@ botaoRegistro.addEventListener('click', validate);
 const perso = document.querySelector('#p');
 const feminino = document.querySelector('#f');
 const masculino = document.querySelector('#m');
-const todos = document.querySelector('.generos');
+// const todos = document.querySelector('.generos');
 let clickInCustomGender = 0;
 
 // perso.addEventListener('click', function () {
@@ -58,7 +58,7 @@ perso.addEventListener('click', function () {
   clickInCustomGender += 1;
   if (clickInCustomGender === 1) {
     const customInput = document.createElement('input');
-    customInput.name = 'gender';
+    customInput.name = 'gender-custom';
     customInput.placeholder = 'Gênero (opcional)';
     customInput.id = 'gender-custom';
     customInput.className = 'input-form';
