@@ -4,9 +4,6 @@ body {
   padding: 0;
 }
 
-header {
-}
-
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -24,7 +21,7 @@ header img {
 
 .facebook-login {
   display: flex;
-
+  margin-left: auto;
 }
 
 .form-group {
@@ -50,4 +47,12 @@ header img {
 
 .right-content {
   width: 300px;
+}
+
+.name-form {
+  display: flex;
+}
+
+.form-gender {
+  display: flex;
 }
