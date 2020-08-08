@@ -48,3 +48,11 @@ body {
 .first-last-name {
   display: flex;
 }
+
+.gender-form {
+  display: flex;
+}
+
+.gender-form label, .gender-form input {
+  margin-right: 12px;
+}
