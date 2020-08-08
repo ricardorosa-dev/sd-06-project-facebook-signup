@@ -43,9 +43,7 @@ function validateData() {
   const totalError = verifyData + verifyGender;
 
   if (totalError > 0) {
-    const message = document.createElement('p');
-    message.innerText = 'Campos inválidos';
-    registerForm.appendChild(message);
+    registerForm.innerHTML= 'Campos inválidos';
   }
 }
 
