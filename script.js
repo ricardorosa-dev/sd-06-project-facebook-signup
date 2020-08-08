@@ -6,10 +6,8 @@ btn.addEventListener('click', function () {
 });
 
 function messageInvalid() {
-  const formulario = document.querySelector('.forms');
-  const messageError = document.createElement('div');
+  const messageError = document.querySelector('.divMessage')
   messageError.innerText = 'Campos inválidos';
-  formulario.appendChild(messageError);
 }
 
 function validate() {
