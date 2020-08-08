@@ -12,7 +12,7 @@ header {
   height: 80px;
   justify-content: space-between;
   margin: 0 auto;
-  width: 980px;
+  max-width: 980px;
 }
 
 form {
@@ -22,10 +22,11 @@ form {
 .logo {
   align-items: center;
   display: flex;
+  margin-top: 10px;
 }
 
 .logo img {
-  width: 170px;
+  width: 160px;
 }
 
 .facebook-login {
@@ -79,13 +80,14 @@ form {
 .main-content {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 
-.left-content p , .main-content img {
-  padding: 0 165px;
+.left-content {
+  width: 800px;
 }
 
-.main-content img {
+.left-content img {
   width: 500px;
 }
 
@@ -98,10 +100,6 @@ form {
   margin-top: 40px;
   text-align: left;
   width: 420px;
-}
-
-.left-content {
-  width: 800px;
 }
 
 .right-content {
