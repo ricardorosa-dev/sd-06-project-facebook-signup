@@ -5,47 +5,24 @@ btn.addEventListener('click', function () {
   alert(valor);
 });
 
-let JustValidate = new JustValidate;
+function messageInvalid() {
+  let formulario = document.querySelector('.forms');
+  let messageError = document.createElement('div');
+  messageError.innerText = 'Campos inválidos';
+  formulario.appendChild(messageError);
+}
 
-JustValidate('.forms', {
-    rules: {
-      firstname: {
-        required: true,
-      },
-      lastname: {
-        required: true,
-      },
-      phone_email: {
-        required: true,
-      },
-      password: {
-        required: true,
-      },
-      birthdate: {
-        required: true,
-      },
-      genero: {
-        required: true,
-      },
-    },
-    messages: {
-      firstname: {
-        required: 'Campos inválidos',
-      },
-      lastname: {
-        required: 'Campos inválidos',
-      },
-      phone_email: {
-        required: 'Campos inválidos',
-      },
-      password: {
-        required: 'Campos inválidos',
-      },
-      birthdate: {
-        required: 'Campos inválidos',
-      },
-      genero: {
-        required: 'Campos inválidos',
-      },
-    },
-  });
+function validate() {
+  let inputs = document.querySelectorAll('input');
+  let valido = true;
+  for (let i in inputs) {
+    if (inputs[i].value === '') {
+      valido = false;
+    }
+  }
+  if (!valido) {
+    messageInvalid();
+  }
+}
+let botaoRegistro = document.querySelector('#facebook-register');
+botaoRegistro.addEventListener('click', validate);
