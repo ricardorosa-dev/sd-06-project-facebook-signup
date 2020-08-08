@@ -15,12 +15,29 @@ facebookRegister.addEventListener('click', function () {
     }
   }
 });
-
+/*
 const personalizeRadio = document.getElementById('personalizado');
 personalizeRadio.addEventListener('click', function () {
-  const input = document.createElement('input');
+const input = document.createElement('input');
   input.name = 'gender-custom';
   input.placeholder = 'Gênero (opcional)';
   const subscriptionForm = document.querySelector('.subscription-form');
   subscriptionForm.insertBefore(input, facebookRegister);
+}); */
+
+const aux = document.querySelectorAll('.subscription-form-2')[0];
+aux.addEventListener('click', function (event) {
+  const subscriptionForm = document.querySelector('.subscription-form');
+  if (event.target.value === 'Personalizado') {
+    const input = document.createElement('input');
+    input.name = 'gender-custom';
+    input.placeholder = 'Gênero (opcional)';
+    subscriptionForm.insertBefore(input, facebookRegister);
+  } else
+    if (event.target.value === 'Feminino' || event.target.value === 'Masculino') {
+      const aux = document.getElementsByName('gender-custom')[0];
+      if (aux !== undefined) {
+        subscriptionForm.removeChild(aux);
+      }
+    }
 });
