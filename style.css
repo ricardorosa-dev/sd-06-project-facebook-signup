@@ -55,10 +55,8 @@ body {
 }
 
 .form-control {
+  margin-left: 10px;
   align-self: flex-end;
-  float: right;
-  height: 42px;
-  padding-left: 10px;
 }
 
 .main-content {
