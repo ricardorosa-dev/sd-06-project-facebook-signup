@@ -93,6 +93,14 @@ body {
   margin-top: 40px;
 }
 
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
 .main-title {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 36px;
