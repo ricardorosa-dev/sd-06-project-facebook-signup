@@ -14,9 +14,10 @@ const functionalities = {
     }
   },
   verifyFields: function verifyFields() {
+    event.preventDefault();
     const allInputs = document.querySelectorAll('.right-content form input');
     const verificadorText = functionalities.verifyTextInputs(allInputs);
-    const verificadorBool = functionalities.verifyBooleansInputs(allInputs);
+    const verificadorBool = functionalities.verifyBooleanInputs(allInputs);
     functionalities.selectorOfAction(verificadorText, verificadorBool);
   },
   verifyTextInputs: function verifyTextInputs(allInputs) {
