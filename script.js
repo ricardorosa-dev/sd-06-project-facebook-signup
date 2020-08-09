@@ -1,5 +1,5 @@
 let errors = 0;
-let info = [];
+const info = [];
 
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
@@ -43,7 +43,7 @@ function verifyErrors() {
 function getInfo() {
   for (let i = 0; i < document.forms[1].elements.length - 2; i += 1) {
     if (document.forms[1].elements[i].value === ' ') {
-      continue;
+      errors = 0;
     } else {
       info.push(document.forms[1].elements[i].value);
     }
