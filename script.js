@@ -12,15 +12,13 @@ function messageInvalid() {
 
 function validate() {
   const inputs = document.querySelectorAll('input');
-  let valido = true;
+  let auxBol = true;
   for (let i = 0; i < inputs.length; i += 1) {
-    if (inputs[i].value === '') {
-      valido = false;
-    }
+    if (inputs[i].value === '') auxBol = false;
+    
   }
-  if (!valido) {
-    messageInvalid();
-  }
+  if (!auxBol) messageInvalid();
+  
 }
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
