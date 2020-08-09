@@ -5,28 +5,22 @@ btn.addEventListener('click', function () {
   alert(valor);
 });
 
-// document.querySelector('#p').addEventListener('click', function () {
-//   if (document.querySelector('.radio-buttons').lastElementChild.className === '') {
-//     const aux = document.createElement('input');
-//     aux.placeholder = 'Gênero (opcional)';
-//     aux.name = 'gender-custom';
-//     aux.className = 'gender-custom-input';
-//     document.querySelector('.radio-buttons').appendChild(aux);
-//   }
-// });
 function messageInvalid() {
   const messageError = document.querySelector('.divMessage');
   messageError.innerText = 'Campos inválidos';
 }
 
 function validate() {
-  const aux = '';
   const inputs = document.querySelectorAll('input');
-  let auxBol = true;
-  for (let index = 0; index < inputs.length; index += 1) {
-    if (inputs[index].value === aux) auxBol = false;
+  let valido = true;
+  for (let i = 0; i < inputs.length; i += 1) {
+    if (inputs[i].value === '') {
+      valido = false;
+    }
   }
-  if (!auxBol) messageInvalid();
+  if (!valido) {
+    messageInvalid();
+  }
 }
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
