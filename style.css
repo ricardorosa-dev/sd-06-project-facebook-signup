@@ -32,6 +32,10 @@ small {
   font-weight: 600;
 }
 
+.gender-custom label {
+  font-weight: 600;
+}
+
 .top-bar input {
   width: 90%;
 }
@@ -137,4 +141,18 @@ small {
 
 .button-login:hover {
   background-color: rgb(66, 103, 178);
+}
+
+.formMessage {
+  color: rgb(170, 36, 36);
+  display: none;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.gender-custom {
+  display: none;
+  flex-direction: column;
+  margin: 10px 0;
 }

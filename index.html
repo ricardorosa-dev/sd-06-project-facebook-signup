@@ -34,23 +34,27 @@
     <section class='right-content'>
       <h1>Abra uma conta</h1>
       <small class='quick-easy'>É rápido e fácil.</small>
-      <form action=''>
+      <form class='formRegister'>
         <section class='full-name'>
-          <input type='text' placeholder='Nome' name='firstname' size="13">
-          <input type='text' placeholder='Sobrenome' name='lastname' size="13">
+          <input type='text' placeholder='Nome' name='firstname' required='required'>
+          <input type='text' placeholder='Sobrenome' name='lastname' required='required'>
         </section>
-        <input type='text' placeholder='Celular ou email' name='phone_email'>
-        <input type='password' placeholder='Nova senha' name='password'><br>
+        <input type='text' placeholder='Celular ou email' name='phone_email' required='required'>
+        <input type='password' placeholder='Nova senha' name='password' required='required'><br>
         <label class='label-birthdate' id='label-birthdate'>Data de nascimento</label><br>
-        <input type='date' name='birthdate' placeholder='dd/mm/aaaa'><br>
+        <input type='date' name='birthdate' placeholder='dd/mm/aaaa' required='required'><br>
         <label class='label-gender' id='label-gender'>Gênero</label><br>
         <section class='gender'>
-          <input name='gender' type='radio' value='Feminino'><label>Feminino</label>
-          <input name='gender' type='radio' value='Masculino'><label>Masculino</label>
-          <input name='gender' type='radio' value='Personalizado'><label>Personalizado</label><br>
+          <input name='gender' type='radio' value='Feminino' required='required'><label>Feminino</label>
+          <input name='gender' type='radio' value='Masculino' required='required'><label>Masculino</label>
+          <input name='gender' type='radio' value='Personalizado' required='required'><label>Personalizado</label><br>
         </section>
-
+        <section class='gender-custom'>
+          <label>Personalizado</label>
+          <input type='text' name='gender-custom' placeholder='Gênero (opcional)'>
+        </section>
         <button class='facebook-register' type='submit' id='facebook-register'>Cadastre-se</button>
+        <span class='formMessage'>Campos inválidos</span>
       </form>
     </section>
   </section>
