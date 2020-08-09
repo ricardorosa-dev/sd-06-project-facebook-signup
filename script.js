@@ -16,7 +16,7 @@ buttonLogin.addEventListener('click', function () {
 function showFormContent() {
   const isEmpty = chosenGender === 'empty';
   const date = inputs[6].value;
-  const formattedDate = `${date.substring(0, 4)}/${date.substring(5, 7)}/${date.substring(8, 10)}`;
+  const formattedDate = `${date.substring(0, 4)}-${date.substring(5, 7)}-${date.substring(8, 10)}`;
   let formContent = `Olá, ${inputs[2].value} ${inputs[3].value} `;
   formContent += `${inputs[4].value} `;
   formContent += `${formattedDate} `;
