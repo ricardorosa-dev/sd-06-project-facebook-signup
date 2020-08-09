@@ -1,27 +1,33 @@
 body {
-  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  height: 100vw;
+  margin: 0 auto;
+  width: 100vw;
 }
 
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  height: 4%;
+  justify-content: space-between;
+}
+
+.facebook-logo {
+  display: flex;
+  margin-left: 25%;
 }
 
 .facebook-login {
   display: flex;
+  margin-right: 25%;
 }
 
-.email {
+.form-group {
   display: flex;
   flex-direction: column;
-  margin: 4.5px 20px;
-}
-
-.senha {
-  display: flex;
-  flex-direction: column;
-  margin: 4px 15px;
+  padding: 10px;
 }
 
 label {
