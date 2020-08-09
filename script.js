@@ -31,7 +31,7 @@ window.onload = function () {
   loginBtn.addEventListener('click', loginAlert);
 
   const signUpBtn = document.getElementById('facebook-register');
-  signUpBtn.addEventListener('click', function(event) {
+  signUpBtn.addEventListener('click', function (event) {
     event.preventDefault();
     validateInputs();
   });
