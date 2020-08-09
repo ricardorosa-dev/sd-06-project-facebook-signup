@@ -1,19 +1,38 @@
+.birthdate {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
 body {
-  background-color: rgb(241, 243, 248);
-  box-sizing: border-box;
-  font-family: sans-serif;
-  font-size: 13px;
   margin: 0;
   padding: 0;
 }
 
-.top-bar {
-  align-items: center;
-  background-color: rgb(66, 103, 178);
+.form-group {
   display: flex;
-  height: 80px;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.form-content {
+  display: flex;
+  flex-flow: wrap column;
 }
 
 .facebook-login {
@@ -41,23 +60,18 @@ body {
   margin: 0 3px;
 }
 
-.form-control {
-  align-self: flex-end;
-}
-
 .form-control button {
   background-color: #3b5998;
   border-color: #3b5998;
   border-radius: 4px;
   color: white;
   font-weight: 800;
+  align-self: flex-end;
 }
 
-.main-content {
+.full-name {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .left-content {
@@ -66,10 +80,13 @@ body {
   width: 800px;
 }
 
-.right-content {
-  align-self: flex-start;
-  margin-right: 200px;
-  width: 300px;
+.login-password {
+  display: flex;
+}
+
+.main-content {
+  flex-wrap: wrap;
+  margin: 10px;
 }
 
 .main-content .left-content img {
@@ -86,4 +103,26 @@ body {
 .main-content .right-content p {
   font-size: 19px;
   font-weight: 500;
+}
+
+.phone-password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.right-content {
+  align-self: flex-start;
+  margin-right: 200px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
 }
