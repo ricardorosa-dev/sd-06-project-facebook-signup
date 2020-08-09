@@ -26,6 +26,22 @@ function validateInputs() {
   }
 }
 
+function createCustomGenderField() {
+  const customGenderField = document.createElement('input');
+  customGenderField.name = 'gender-custom';
+  customGenderField.placeholder = 'Gênero (opcional)';
+  customGenderField.classList.add('gender');
+  return customGenderField;
+}
+
+function handleCustomGender() {
+  if (document.getElementById('custom').checked) {
+    const customGenderField = createCustomGenderField();
+    const signUpForm = document.getElementById('gender-selection');
+    signUpForm.after(customGenderField);
+  }
+}
+
 window.onload = function () {
   const loginBtn = document.querySelector('#button-login');
   loginBtn.addEventListener('click', loginAlert);
@@ -34,5 +50,6 @@ window.onload = function () {
   signUpBtn.addEventListener('click', function (event) {
     event.preventDefault();
     validateInputs();
+    handleCustomGender();
   });
 };
