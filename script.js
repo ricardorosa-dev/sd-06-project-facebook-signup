@@ -10,13 +10,16 @@ loginButton.addEventListener('click', function () {
 
 const facebookRegister = document.querySelector('#facebook-register');
 facebookRegister.addEventListener('click', function () {
+  const form = document.querySelector('.subscription-form');
+  const p = document.createElement('p');
+  p.innerHTML = 'Campos inválidos';
   const inputTextArray = document.querySelectorAll('.input-text-verification');
   if (!femaleGender.checked && !maleGender.checked && !customGender.checked) {
-    alert('Campos inválidos');
+    form.appendChild(p);
   } else {
     for (let index = 0; index < inputTextArray.length; index += 1) {
       if (inputTextArray[index].value === '') {
-        alert('Campos inválidos');
+        form.appendChild(p);
         break;
       }
     }
