@@ -1,12 +1,11 @@
 function substituir() {
-  var gend;
   for (let index = 0; index < document.querySelectorAll('.radio').length; index += 1) {
     if (document.querySelectorAll('.radio')[index].checked === true) {
-      gend = document.querySelectorAll('.radio')[index].value;
+      document.querySelectorAll('.radio')[index].id = 'checked'; 
     }
   }
   const right = document.querySelector('.right-content');
-  right.innerHTML = 'Olá, ' + document.querySelector('.firstname').value + ' ' + document.querySelector('.lastname').value + ' <br> E-mail ou telefone: ' + document.querySelector('.phone_email').value + ' <br> Data de Nascimento: ' + document.querySelector('.birthdate').value + '<br> Gênero: ' + gend;
+  right.innerHTML = 'Olá, ' + document.querySelector('.firstname').value + ' ' + document.querySelector('.lastname').value + ' E-mail ou telefone: ' + document.querySelector('.phone_email').value + ' Data de Nascimento: ' + document.querySelector('.birthdate').value + 'Gênero: ' + document.querySelector('#checked').value;
 }
 
 window.onload = function () {
