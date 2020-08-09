@@ -56,6 +56,10 @@ body {
   width: 142px;
 }
 
+.form-control {
+  align-self: flex-end;
+}
+
 .facebook-login-container {
   display: flex;
 }
