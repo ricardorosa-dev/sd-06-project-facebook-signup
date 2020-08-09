@@ -37,6 +37,6 @@
   flex-direction: row;
 }
 
-.invalid, .genderCustom {
+.invalid , .genderCustom {
   display: none;
 }
