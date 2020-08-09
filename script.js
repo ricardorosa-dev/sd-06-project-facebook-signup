@@ -39,5 +39,4 @@ new JustValidate('.js-form', {
         }
       });
     },
-  });
-
+});
