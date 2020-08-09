@@ -1,10 +1,10 @@
 new JustValidate('.js-form', {
   rules: {
     name: {
-      required: true
+      required: true,
     },
     lastname: {
-      required:true
+      required: true,
     },
     contact: {
       required: true
@@ -12,14 +12,14 @@ new JustValidate('.js-form', {
     password: {
       required:true,
       strength: {
-        default: true
+        default: true,
         }
     },
       date: {
-        required: true
+        required: true,
       },
       gender: {
-        required: true
+        required: true,
       }
     },
   messages: {
