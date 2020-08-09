@@ -5,7 +5,7 @@ document.getElementById('button-login').addEventListener('click', function () {
 });
 
 function radioCheck() {
-  if(document.forms[1].elements[5].checked) {
+  if (document.forms[1].elements[5].checked) {
     document.forms[1].elements[6].value = ' ';
     document.forms[1].elements[7].value = ' ';
   } else if (document.forms[1].elements[6].checked) {
