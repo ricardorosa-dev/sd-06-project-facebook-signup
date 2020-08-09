@@ -22,7 +22,7 @@ window.onload = function () {
         other.placeholder = 'Gênero (opcional)';
         document.querySelector('.option-gender').appendChild(other);
       } else {
-        document.querySelector('.option-gender').removeChild(document.querySelector('.other-gender'));
+        document.querySelector('.other-gender').parentNode.removeChild(document.querySelector('.other-gender'));
       }
     });
   }
