@@ -12,9 +12,6 @@ window.onload = () => {
       },
       password: {
         required: true,
-        strength: {
-          default: true,
-        },
       },
       date: {
         required: true,
@@ -22,10 +19,6 @@ window.onload = () => {
       gender: {
         required: true,
       },
-    },
-    messages: {
-      name: 'Campos Invalidos',
-      lastname: 'Campos Invalidos',
     },
   });
 }
