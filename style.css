@@ -90,3 +90,7 @@ body {
 .name-surname-container {
   display: flex;
 }
+
+.gender-options {
+  display: flex;
+}
