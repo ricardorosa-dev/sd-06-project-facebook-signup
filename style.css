@@ -234,3 +234,8 @@ body {
 fieldset {
   border: 0;
 }
+
+.signUp-error {
+  color: red;
+}
+
