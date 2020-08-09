@@ -21,7 +21,7 @@ window.onload = function () {
     document.querySelectorAll('.radio')[index].addEventListener('change', function () {
       if (document.querySelectorAll('.radio')[2].checked === true) {
         document.querySelector('.option-gender').appendChild(other);
-      } else if (document.querySelector('.other-gender')){
+      } else if (document.querySelector('.other-gender')) {
         document.querySelector('.option-gender').removeChild(document.querySelector('.other-gender'));
       }
     });
