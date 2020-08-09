@@ -16,7 +16,7 @@ window.onload = function () {
     const invalid = document.querySelector('#invalid');
     if (name.value === '' || lastname.value === '' || phone.value === '' || password.value === '' || birth.value === '') {
       invalid.innerText = 'Campos inválidos';
-    }else {
+    } else {
       invalid.innerText = '';
     }
   });
