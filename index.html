@@ -44,18 +44,18 @@
       </p>
       <form action="">
         <div class="name-inputs">
-          <input name="firstname" placeholder="Nome" type="text" required>
-          <input name="lastname" placeholder="Sobrenome" type="text" required>
+          <input id="fName-input" name="firstname" placeholder="Nome" type="text" required>
+          <input id="lName-input" name="lastname" placeholder="Sobrenome" type="text" required>
         </div>
-        <input name="phone_email" placeholder="Celular ou email" type="text" required>
-        <input name="password" placeholder="Nova senha" type="password" required>
+        <input id="celular-email-input" name="phone_email" placeholder="Celular ou email" type="text" required>
+        <input id="password-input" name="password" placeholder="Nova senha" type="password" required>
         <div class="user-birthdate">
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
           <input id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" type="text" required>
         </div>
         <div class="user-gender">
           <label id="label-gender">Gênero</label><br />
-          <input type="radio" name="gender" value="Feminino" id="gender-female">
+          <input type="radio" name="gender" value="Feminino" id="gender-female" required>
           <label for="gender-female">Feminino</label>
           <input type="radio" name="gender" value="Masculino" id="gender-male">
           <label for="gender-male">Masculino</label>
@@ -65,6 +65,7 @@
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
 
+      <section id="answers" class="answers"></section>
     </div>
   </section>
 
