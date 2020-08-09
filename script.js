@@ -13,7 +13,7 @@ new JustValidate('.js-form', {
       required: true,
       strength: {
         default: true,
-        },
+      },
     },
     date: {
       required: true,
