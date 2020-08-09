@@ -87,6 +87,6 @@ body {
   width: 300px;
 }
 
-.name-surname {
+.name-surname-container{
   display: flex;
 }
