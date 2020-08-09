@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico" type="image/x-icon">
     <title>Facebook – entre ou cadastre-se</title>
     <link rel="stylesheet" href="style.css">
@@ -15,14 +15,22 @@
           <form class="facebook-login">
             <div class="form-group">
               <label id="user-email-phone-label" for="">Email ou telefone</label>
-              <input id="user-email-phone" name="login" required="required" type="text">
+              <input
+              id="user-email-phone"
+              name="login"
+              required="required"
+              type="text">
             </div>
             <div class="form-group">
               <label id="user-password-label" for="">Senha</label>
-              <input id="user-password" name="password" required="required" type="password" />
+              <input
+              id="user-password"
+              name="password"
+              required="required"
+              type="password">
             </div>
             <div class="form-control">
-              <button id="button-login">Entrar</button>
+              <button id="button-login" class="btn-login">Entrar</button>
             </div>
           </form>
         </div>
@@ -41,34 +49,79 @@
         <div class="quick-easy">É rápido e fácil.</div>
         <form action="" method="GET" class="form-content">
           <div class="full-name">
-            <input type="text" name="firstname" id="name" placeholder="Nome" autocomplete="off">
-            <input type="text" name="lastname" id="" placeholder="Sobrenome" autocomplete="off">
+            <input
+            type="text"
+            name="firstname"
+            id="name"
+            placeholder="Nome"
+            autocomplete="off"
+            required>
+            <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Sobrenome"
+            autocomplete="off"
+            required>
           </div>
           <div class="phone-password">
-            <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" autocomplete="off">
-            <input type="password" name="password" id="" placeholder="Nova senha">
+            <input
+            type="text"
+            name="phone_email"
+            id="phone_email"
+            placeholder="Celular ou email"
+            autocomplete="off"
+            required>
+            <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Nova senha"
+            required>
           </div>
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
           <div class="birthdate">
-            <label for="" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" id="" placeholder="dd/mm/aaaa">
+            <input
+            type="text"
+            name="birthdate"
+            id="birthdate"
+            placeholder="dd/mm/aaaa"
+            autocomplete="off"
+            required>
           </div>
           <label for="gender" id="label-gender">Gênero</label>
-          <div class="gender">
-            <input type="radio" name="gender" id="female" value="Feminino">
+          <div class="gender" id="gender">
+            <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="Feminino"
+            required>
             <label for="female">Feminino</label>
-            <input type="radio" name="gender" id="male" value="Masculino">
+            <input
+            type="radio"
+            name="gender"
+            id="male"
+            value="Masculino"
+            required>
             <label for="male">Masculino</label>
-            <input type="radio" name="gender" id="custom" value="Personalizado">
+            <input
+            type="radio"
+            name="gender"
+            id="custom"
+            value="Personalizado"
+            required>
             <label for="custom">Personalizado</label>
           </div>
           <div class="custom-option"></div>
           <div>
             <p class="invalid-input"></p>
-            <button id="facebook-register" type="submit">Cadastre-se</button>
+            <button id="facebook-register" class='btn-register' type="submit">Cadastre-se</button>
           </div>
         </form>
       </div>
     </div>
+    <footer></footer>
     <script src="script.js"></script>
   </body>
 </html>
