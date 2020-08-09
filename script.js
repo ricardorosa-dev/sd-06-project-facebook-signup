@@ -15,13 +15,13 @@ new JustValidate('.js-form', {
         default: true,
         },
     },
-      date: {
-        required: true,
-      },
-      gender: {
-        required: true,
-      },
+    date: {
+      required: true,
     },
+    gender: {
+      required: true,
+    },
+  },
   messages: {
     name: 'Campos Invalidos',
     lastname: 'Campos Invalidos'
