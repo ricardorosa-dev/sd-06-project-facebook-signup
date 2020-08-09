@@ -6,3 +6,4 @@ window.onload = function () {
   const button = document.getElementById('button-login');
   button.addEventListener('click', loginButton);
 };
+
