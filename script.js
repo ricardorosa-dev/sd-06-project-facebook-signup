@@ -25,16 +25,18 @@ submitBtn.addEventListener('click', function () {
     registerForm.appendChild(paragraph);
   }
 
+  let radioChecked = false;
   for (let i = 0; i < radioArray.length; i += 1) {
     if (radioArray[i].checked) {
-      const radioChecked = radioArray[i].value;
+      radioChecked = radioArray[i].value;
     }
   }
 
-  const personalizadoInput = document.createElement('input');
-  personalizadoInput.name = 'gender-custom';
-  personalizadoInput.placeholder = 'Gênero(opcional)';
-  personalizadoInput.className = 'gender-input';
-  genderContainer[0].appendChild(personalizadoInput);
-
+  if (radioChecked === 'Personalizado') {
+    const personalizadoInput = document.createElement('input');
+    personalizadoInput.name = 'gender-custom';
+    personalizadoInput.placeholder = 'Gênero(opcional)';
+    personalizadoInput.className = 'gender-input';
+    genderContainer[0].appendChild(personalizadoInput);
+  }
 });
