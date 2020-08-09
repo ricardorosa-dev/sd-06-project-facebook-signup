@@ -1,5 +1,6 @@
 body {
   box-sizing: border-box;
+  color: white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   margin: 0;
@@ -16,14 +17,46 @@ body {
 }
 
 .logo-container {
-  align-items: center;
   display: flex;
-  height: 300px;
   justify-content: flex-start;
-  width: 600px;
+  width: 40%;
 }
 
 .facebook-logo {
   height: auto;
   width: 30%;
+  margin-left: 30%;
+}
+
+.facebook-login {
+  width: 40%;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  margin-bottom: 5px;
+  width: 80%;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-control button {
+  background: #4267b2;
+  border: 1px solid #375695;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  height: 25px;
+  margin-bottom: 5px;
 }
