@@ -4,15 +4,14 @@ window.onload = function () {
   const gender = document.querySelectorAll('.radio');
   for (let index = 0; index < gender.length; index += 1) {
     gender[index].addEventListener('change', function () {
-      const box = document.querySelector('.option-gender');
-      const other = document.createElement("input");
+      const other = document.createElement('input');
       if (gender[2].checked === true) {
         other.name = 'gender-custom';
         other.className = 'other-gender';
         other.placeholder = 'Gênero (opcional)';
-        box.appendChild(other);
+        document.querySelector('.option-gender').appendChild(other);
       } else {
-        box.removeChild(document.querySelector('.other-gender'));
+        document.querySelector('.option-gender').removeChild(document.querySelector('.other-gender'));
       }
     });
   }
@@ -22,13 +21,8 @@ window.onload = function () {
   const cadast = document.querySelector('#facebook-register');
   cadast.addEventListener('click', function (event) {
     event.preventDefault();
-    const name = document.querySelector('.firstname');
-    const lastname = document.querySelector('.lastname');
-    const phone = document.querySelector('.phone_email');
-    const password = document.querySelector('.password');
-    const birth = document.querySelector('.birthdate');
     const invalid = document.querySelector('#invalid');
-    if (name.value === '' || lastname.value === '' || phone.value === '' || password.value === '' || birth.value === '') {
+    if (document.querySelector('.firstname').value === '' || document.querySelector('.lastname').value === '' || document.querySelector('.phone_email').value === '' || document.querySelector('.password').value === '' || document.querySelector('.birthdate').value === '') {
       invalid.innerText = 'Campos inválidos';
     } else {
       invalid.innerText = '';
