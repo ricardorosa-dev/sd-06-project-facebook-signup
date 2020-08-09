@@ -32,7 +32,7 @@ header {
   padding-top: 20px;
 }
 
-.facebook-login input {
+.facebook-login input:focus {
   border: 1px solid black;
   border-radius: 2px;
   margin-right: 10px;
@@ -118,6 +118,6 @@ h1 {
   display: flex;
 }
 
-.name-lastname input {
+.name-lastname input:focus {
   width: 150px;
 }
