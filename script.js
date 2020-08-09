@@ -35,7 +35,7 @@ submitBtn.addEventListener('click', function () {
   if (radioChecked === 'Personalizado') {
     const personalizadoInput = document.createElement('input');
     personalizadoInput.name = 'gender-custom';
-    personalizadoInput.placeholder = 'Gênero(opcional)';
+    personalizadoInput.placeholder = 'Gênero (opcional)';
     personalizadoInput.className = 'gender-input';
     genderContainer[0].appendChild(personalizadoInput);
   }
