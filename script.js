@@ -4,8 +4,12 @@ function substituir() {
       document.querySelectorAll('.radio')[index].id = 'checked';
     }
   }
+  const newBox = document.createElement('p');
   const right = document.querySelector('.right-content');
-  right.innerHTML = `Olá, ${document.querySelector('.firstname').value} ${document.querySelector('.lastname').value} E-mail ou telefone: ${document.querySelector('.phone_email').value} Data de Nascimento: ${document.querySelector('.birthdate').value} Gênero: ${document.querySelector('#checked').value}`;
+  const text = `Olá, ${document.querySelector('.firstname').value} ${document.querySelector('.lastname').value} E-mail ou telefone: ${document.querySelector('.phone_email').value} Data de Nascimento: ${document.querySelector('.birthdate').value} Gênero: ${document.querySelector('#checked').value}`;
+  right.innerHTML = '';
+  newBox.appendChild(document.createTextNode(text));
+  right.appendChild(newBox);
 }
 
 window.onload = function () {
