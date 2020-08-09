@@ -1,11 +1,14 @@
 document.getElementById('button-login').addEventListener('click', () => alert(document.getElementById('user-email-phone').value));
 
 function setNewErrorMsg(formField) {
-  formField.setCustomValidity('Campos inválidos');
-  formField.addEventListener('focus', () => {
-    formField.setCustomValidity('');
-  });
+  if (formField.value === '') {
+    document.querySelector('#error-field').innerHTML = 'Campos inválidos';
+  }
 }
 
 const formFields = document.querySelectorAll('.form-input');
-formFields.forEach(setNewErrorMsg);
+
+document.querySelector('#facebook-register').addEventListener('click', () => {
+  event.preventDefault();
+  formFields.forEach(setNewErrorMsg);
+});

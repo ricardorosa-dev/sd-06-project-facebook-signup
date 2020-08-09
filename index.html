@@ -41,24 +41,25 @@
       <h4 class="quick-easy">É rápido e fácil.</h4>
       <form action="" class="form-register" method="get">
         <div class="full-name">
-          <input type="text" name="firstname" class="form-input" placeholder="Nome" title="Campos inválidos" required>
-          <input type="text" name="lastname" class="form-input" placeholder="Sobrenome" required>
+          <input type="text" name="firstname" class="form-input" placeholder="Nome" title="Campos inválidos">
+          <input type="text" name="lastname" class="form-input" placeholder="Sobrenome">
         </div>
-        <input type="text" class="form-input" name="phone_email" placeholder="Celular ou email"  required>
-        <input type="password" name="password" placeholder="Nova senha"  required>
+        <input type="text" class="form-input" name="phone_email" placeholder="Celular ou email" >
+        <input type="password" name="password" placeholder="Nova senha" >
         <label id="label-birthdate" for="">Data de nascimento</label>
-        <input type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
+        <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
         <label for="" id="label-gender">Gênero</label>
         <div class="gender-radio">
           <label for="female">
           </label>
-          <input id="female" class="form-input" type="radio" name="gender" value="Feminino" required>Feminino
+          <input id="female" class="form-input" type="radio" name="gender" value="Feminino">Feminino
           <label for="male">
           </label>
           <input id="male" type="radio" name="gender" value="Masculino">Masculino
           <label for="custom-gender">
           </label>
           <input id="custom-gender" type="radio" name="gender" value="Personalizado">Personalizado
+          <span id="error-field"></span>
         </div>
         <button id="facebook-register" class="form__btn btn btn-primary" type="submit">Cadastre-se</button>
       </form>
