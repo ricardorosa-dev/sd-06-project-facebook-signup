@@ -1,5 +1,6 @@
 let errors = 0;
 const info = [];
+let date = document.forms[1].elements[4].value;
 
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
@@ -15,6 +16,10 @@ document.forms[1].elements[6].addEventListener('click', function () {
 
 document.forms[1].elements[7].addEventListener('click', function () {
   document.getElementById('gender-custom').style.display = 'block';
+});
+
+document.forms[1].elements[4].addEventListener('change', function () {
+  date = `${date.substring(0, 4)}-${date.substring(5, 7)}-${date.substring(8, 10)}`;
 });
 
 function radioCheck() {
