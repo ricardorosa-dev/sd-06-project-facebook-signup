@@ -1,7 +1,7 @@
 //  Variáveis
 const buttonEnter = document.querySelector('#button-login');
-// const nameInput = document.querySelector('#firstname');
-// const lastnameInput = document.querySelector('#lastname');
+const nameInput = document.querySelector('#firstname');
+const lastnameInput = document.querySelector('#lastname');
 // const phoneOrEmailInput = document.querySelector('#phone_email');
 // const passwordInput = document.querySelector('#password');
 // const birthdateInput = document.querySelector('#birthdate');
@@ -10,6 +10,7 @@ const buttonEnter = document.querySelector('#button-login');
 // const personalizedInput = document.querySelector('#gender-personalized');
 // const formRegister = document.querySelector('#form-register');
 const buttonRegister = document.querySelector('#facebook-register');
+const mainContentDiv = document.querySelector('.main-content');
 
 //  Criar um alerta ao clicar em 'Entrar'
 buttonEnter.addEventListener('click', function () {
@@ -30,6 +31,10 @@ buttonRegister.addEventListener('click', function (e) {
   }
   const rightContentDiv = document.querySelector('.right-content');
   rightContentDiv.remove();
+  const completedForm = document.createElement('div');
+  completedForm.className = 'right-content';
+  completedForm.innerHTML = 'Olá, ' + nameInput.value + ' ' + lastnameInput.value;
+  mainContentDiv.appendChild(completedForm);
 });
 
 // Exibir um capo de texto caso o usuário clique em "personalizado"
@@ -38,4 +43,3 @@ optionCustomized.addEventListener('click', function () {
   const divCustomizedOption = document.querySelector('.gender-customized');
   divCustomizedOption.style.display = 'block';
 });
-
