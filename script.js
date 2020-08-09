@@ -7,7 +7,7 @@ new JustValidate('.js-form', {
       required: true,
     },
     contact: {
-      required: true
+      required: true,
     },
     password: {
       required:true,
