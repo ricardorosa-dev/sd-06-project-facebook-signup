@@ -31,10 +31,10 @@ window.onload = function () {
   });
   document.querySelector('#facebook-register').addEventListener('click', function (event) {
     event.preventDefault();
-    if (document.querySelector('.firstname').value === '' || document.querySelector('.lastname').value === '' || document.querySelector('.phone_email').value === '' || document.querySelector('.password').value === '' || document.querySelector('.birthdate').value === '') {
-      document.querySelector('#invalid').innerText = 'Campos inválidos';
-    } else {
+    if (document.querySelector('.firstname').value !== '' || document.querySelector('.lastname').value !== '' || document.querySelector('.phone_email').value !== '' || document.querySelector('.password').value !== '' || document.querySelector('.birthdate').value !== '') {
       substituir();
+    } else {
+      document.querySelector('#invalid').innerText = 'Campos inválidos';
     }
   });
 };
