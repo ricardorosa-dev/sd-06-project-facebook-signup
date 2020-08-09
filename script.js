@@ -28,6 +28,7 @@ buttonRegister.addEventListener('click', function (e) {
       return false;
     }
   }
+  return true;
 //  const rightContentDiv = document.querySelector('.right-content');
 //  rightContentDiv.remove();
 });
@@ -38,4 +39,3 @@ optionCustomized.addEventListener('click', function () {
   const divCustomizedOption = document.querySelector('.gender-customized');
   divCustomizedOption.style.display = 'block';
 });
-
