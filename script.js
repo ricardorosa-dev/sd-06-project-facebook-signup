@@ -1,3 +1,16 @@
+function substituir() {
+  var gend;
+  for (let index = 0; index < document.querySelectorAll('.radio').length; index += 1) {
+    if (document.querySelectorAll('.radio')[index].checked === true) {
+      gend = document.querySelectorAll('.radio')[index].value;
+    }
+  }
+  const right = document.querySelector('.right-content');
+  right.innerHTML = '<h1>Olá, ' + document.querySelector('.firstname').value+ ' '+ document.querySelector('.lastname').value +'</h1>' + ' <br> E-mail ou telefone: ' + document.querySelector('.phone_email').value + ' <br> Data de Nascimento: ' + document.querySelector('.birthdate').value + '<br> Gênero: ' + gend;
+
+  ;
+}
+
 window.onload = function () {
   for (let index = 0; index < document.querySelectorAll('.radio').length; index += 1) {
     document.querySelectorAll('.radio')[index].addEventListener('change', function () {
@@ -21,19 +34,7 @@ window.onload = function () {
       document.querySelector('#invalid').innerText = 'Campos inválidos';
     } else {
       document.querySelector('#invalid').innerText = '';
-      substituir();
+      substituir()
     }
   });
 };
-
-function substituir () {
-  for (let index = 0; index < document.querySelectorAll('.radio').length; index += 1) {
-    if (document.querySelectorAll('.radio')[index].checked === true) {
-      var gend = document.querySelectorAll('.radio')[index].value
-    }
-  }
-  const right = document.querySelector(".right-content");
-  right.innerHTML = '<h1>Olá, ' + document.querySelector('.firstname').value+ ' '+ document.querySelector('.lastname').value +'</h1>' + ' <br> E-mail ou telefone: ' + document.querySelector('.phone_email').value + ' <br> Data de Nascimento: ' + document.querySelector('.birthdate').value + '<br> Gênero: ' + gend;
-
-  ;
-}
