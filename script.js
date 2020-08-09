@@ -4,22 +4,21 @@ window.onload = function () {
   entrar.addEventListener('click', function () {
     alert(text.value);
   });
-  const cadast = document.querySelector("#facebook-register");
+  const cadast = document.querySelector('#facebook-register');
 
-  cadast.addEventListener("click", function(event){
+  cadast.addEventListener('click', function (event) {
     event.preventDefault();
-    const name = document.querySelector(".firstname");
-    const lastname = document.querySelector(".lastname");
-    const phone = document.querySelector(".phone_email");
-    const password = document.querySelector(".password");
-    const birth = document.querySelector(".birthdate");
-    const gender = document.querySelectorAll(".radio");
-    const invalid = document.querySelector("#invalid");
-      if(name.value == "" || lastname.value == "" || phone.value == "" || password.value == "" || birth.value == ""){
-        invalid.innerText = "Campos inválidos";
-      }
-      else{
-        invalid.innerText = "";
-      }
-  })
+    const name = document.querySelector('.firstname');
+    const lastname = document.querySelector('.lastname');
+    const phone = document.querySelector('.phone_email');
+    const password = document.querySelector('.password');
+    const birth = document.querySelector('.birthdate');
+    const invalid = document.querySelector('#invalid');
+    if (name.value === '' || lastname.value === '' || phone.value === '' || password.value === '' || birth.value === '') {
+        invalid.innerText = 'Campos inválidos';
+    }
+    else {
+        invalid.innerText = '';
+    }
+  });
 };
