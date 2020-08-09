@@ -112,7 +112,7 @@ width: 100%;
   color: rgb(255, 255, 255);
   cursor: pointer;
   display: inline-block;
-  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
   font-weight: bold;
   letter-spacing:.5px;
   position: relative;
