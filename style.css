@@ -38,9 +38,9 @@ body {
 }
 
 .form-group input {
+  border: 1px solid #375695;
   margin-bottom: 5px;
   width: 80%;
-  border: 1px solid #375695;
 }
 
 .form-group label {
