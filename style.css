@@ -24,13 +24,13 @@ body {
 
 .facebook-logo {
   height: auto;
-  width: 30%;
   margin-left: 30%;
+  width: 30%;
 }
 
-.facebook-login {
-  width: 40%;
+.facebook-login {  
   display: flex;
+  width: 40%;
 }
 
 .form-group {
@@ -56,7 +56,7 @@ body {
   border: 1px solid #375695;
   color: white;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 700;
   height: 25px;
   margin-bottom: 5px;
 }
