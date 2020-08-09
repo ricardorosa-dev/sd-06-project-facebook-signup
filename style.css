@@ -21,8 +21,8 @@ body {
 }
 
 .top-bar img {
-  justify-content: flex-start;
-  width: 200px;
+  height: 75px;
+
 }
 
 .facebook-login {
