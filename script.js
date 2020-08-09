@@ -13,16 +13,16 @@ function substituir() {
 }
 
 window.onload = function () {
+  const other = document.createElement('input');
+  other.className = 'other-gender';
+  other.name = 'gender-custom';
+  other.placeholder = 'Gênero (opcional)';
   for (let index = 0; index < document.querySelectorAll('.radio').length; index += 1) {
     document.querySelectorAll('.radio')[index].addEventListener('change', function () {
-      const other = document.createElement('input');
       if (document.querySelectorAll('.radio')[2].checked === true) {
-        other.name = 'gender-custom';
-        other.className = 'other-gender';
-        other.placeholder = 'Gênero (opcional)';
         document.querySelector('.option-gender').appendChild(other);
-      } else {
-        document.querySelector('.other-gender').parentNode.removeChild(document.querySelector('.other-gender'));
+      } else if (document.querySelector('.other-gender')){
+        document.querySelector('.option-gender').removeChild(document.querySelector('.other-gender'));
       }
     });
   }
