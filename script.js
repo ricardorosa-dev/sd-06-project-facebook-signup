@@ -26,5 +26,4 @@ new JustValidate('.js-form', {
     name: 'Campos Invalidos',
     lastname: 'Campos Invalidos',
   },
-
 });
