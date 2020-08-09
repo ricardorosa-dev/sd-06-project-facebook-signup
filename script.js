@@ -26,8 +26,7 @@ function buttonSubmit() {
     if (fNameInput.value === '') {
       answers.innerText = 'Campos inválidos';
     } else if (lNameInput.value === '') {
-      answers.appendChild(createSpan);
-      createSpan.innerText = 'Campos inválidos';
+      answers.innerText = 'Campos inválidos';
     } else if (celularEmailInput.value === '') {
       answers.innerHTML = 'Campos inválidos';
     } else if (passwordInput.value === '') {
