@@ -6,9 +6,7 @@ function substituir() {
     }
   }
   const right = document.querySelector('.right-content');
-  
-  right.innerHTML = '<h1>Olá, ' + document.querySelector('.firstname').value + ' ' + document.querySelector('.lastname').value + '</h1>' + ' <br> E-mail ou telefone: ' + document.querySelector('.phone_email').value + ' <br> Data de Nascimento: ' + document.querySelector('.birthdate').value + '<br> Gênero: ' + gend;
-  ;
+  right.innerHTML = 'Olá, ' + document.querySelector('.firstname').value + ' ' + document.querySelector('.lastname').value + ' <br> E-mail ou telefone: ' + document.querySelector('.phone_email').value + ' <br> Data de Nascimento: ' + document.querySelector('.birthdate').value + '<br> Gênero: ' + gend;
 }
 
 window.onload = function () {
@@ -34,7 +32,7 @@ window.onload = function () {
       document.querySelector('#invalid').innerText = 'Campos inválidos';
     } else {
       document.querySelector('#invalid').innerText = '';
-      substituir()
+      substituir();
     }
   });
 };
