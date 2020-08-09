@@ -3,7 +3,6 @@ const name = document.getElementById('user-email-phone');
 const submitBtn = document.getElementById('facebook-register');
 const inputArray = document.querySelectorAll('input');
 const registerForm = document.querySelector('.register-form');
-const radioArray = document.getElementsByName('gender');
 const genderContainer = document.getElementsByClassName('gender-container');
 const personalizedRadio = document.getElementById('personalizado');
 
