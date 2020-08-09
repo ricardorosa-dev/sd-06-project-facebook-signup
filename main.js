@@ -19,28 +19,28 @@ METHOD('#gender-pers').onchange = () => {
   }
 };
 
-function addErrorMsg(count) {
-  const TEXT = document.createElement('p');
+function addErrorMsg(check) {
+  if (check) {
+    const TEXT = document.createElement('p');
+    count += 1;
 
-  if (count <= 1) {
-    TEXT.innerHTML = 'Campos inválidos';
-    GENDER.appendChild(TEXT);
+    if (count <= 1) {
+      TEXT.innerHTML = 'Campos inválidos';
+      GENDER.appendChild(TEXT);
+    }
   }
 }
 
 BTNREGISTER.onclick = () => {
   let check = false;
 
-  for (const item of Object.values(INPUT)) {
+  INPUT.forEach((item) => {
     if (item.id !== 'user-email-phone' && item.id !== 'user-password') {
-      if (item.value == '') {
+      if (item.value === '') {
         check = true;
       }
     }
-  }
+  });
 
-  if (check) {
-    count += 1;
-    addErrorMsg(count);
-  }
+  addErrorMsg(check);
 };
