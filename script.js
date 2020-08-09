@@ -23,7 +23,7 @@ function validate() {
   const aux = '';
   const inputs = document.querySelectorAll('input');
   let auxBol = true;
-  for (let index = 0; i < inputs.length; i += 1) {
+  for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === aux) auxBol = false;
   }
   if (!auxBol) messageInvalid();
