@@ -1,4 +1,4 @@
-new JustValidate('.js-form', {
+JustValidate('.js-form', {
   rules: {
     name: {
       required: true,
