@@ -24,17 +24,7 @@ new JustValidate('.js-form', {
   },
   messages: {
     name: 'Campos Invalidos',
-    lastname: 'Campos Invalidos'
+    lastname: 'Campos Invalidos',
   },
 
-  submitHandler: function (form, values, ajax) {
-    ajax({
-      url: 'https://just-validate-api.herokuapp.com/submit',
-      method: 'POST',
-      data: values,
-      async: true,
-      callback: function (response) {
-      }
-    });
-  },
 });
