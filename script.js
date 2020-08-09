@@ -16,10 +16,10 @@ new JustValidate('.js-form', {
         }
     },
       date: {
-        required:true
+        required: true
       },
       gender: {
-        required:true
+        required: true
       }
     },
   messages: {
