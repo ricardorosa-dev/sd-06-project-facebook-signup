@@ -3,7 +3,8 @@ const name = document.getElementById('user-email-phone');
 const submitBtn = document.getElementById('facebook-register');
 const inputArray = document.querySelectorAll('input');
 const registerForm = document.querySelector('.register-form');
-
+const genderCustomCtn = document.querySelector('.gender-custom-container');
+const radioGenderPersonalized = document.querySelector('#personalizado');
 
 login.addEventListener('click', function () {
   alert(name.value);
@@ -23,4 +24,13 @@ submitBtn.addEventListener('click', function () {
     paragraph.innerText = 'Campos inválidos';
     registerForm.appendChild(paragraph);
   }
+});
+
+radioGenderPersonalized.addEventListener('click', function () {
+  const inputGenderCustom = document.createElement('input');
+  inputGenderCustom.name = 'gender-custom';
+  inputGenderCustom.type = 'text';
+  inputGenderCustom.placeholder = 'Gênero (opcional)';
+  inputGenderCustom.className = 'gender-custom';
+  genderCustomCtn.appendChild(inputGenderCustom);
 });
