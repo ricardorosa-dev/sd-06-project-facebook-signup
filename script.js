@@ -9,9 +9,14 @@ login.addEventListener('click', function () {
 const submitBtn = document.getElementById('facebook-register');
 const inputArray = document.querySelectorAll('input');
 const registerForm = document.querySelector('.register-form');
+const rightContent = document.getElementsByClassName('right-content');
 let invalid = false;
 
-submitBtn.addEventListener('click', function () {
+submitBtn.addEventListener('click', function (event) {
+  event.preventDefault();
+  const firstName = document.getElementById('firstname').value;
+  const lastName = document.getElementById('lastname').value;
+  const mailOrTel = document.getElementById('phone_email').value;
   let count = 0;
   for (let i = 2; i < (inputArray.length - 3); i += 1) {
     const resultCheck = inputArray[i].checkValidity();
@@ -25,6 +30,15 @@ submitBtn.addEventListener('click', function () {
     paragraph.innerText = 'Campos inválidos';
     registerForm.appendChild(paragraph);
     invalid = true;
+  } else {
+    const pMailOrTel = document.createElement('p');
+    pMailOrTel.innerHTML = mailOrTel;
+    rightContent[0].insertBefore(pMailOrTel, rightContent[0].firstChild);
+    const pName = document.createElement('p');
+    const ola = 'Olá, ';
+    const space = ' ';
+    pName.innerHTML = (ola + firstName + space + lastName);
+    rightContent[0].insertBefore(pName, rightContent[0].firstChild);
   }
 });
 
