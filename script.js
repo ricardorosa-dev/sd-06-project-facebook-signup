@@ -1,29 +1,31 @@
-JustValidate('.js-form', {
-  rules: {
-    name: {
-      required: true,
-    },
-    lastname: {
-      required: true,
-    },
-    contact: {
-      required: true,
-    },
-    password: {
-      required: true,
-      strength: {
-        default: true,
+window.onload = () => {
+  new JustValidate('.js-form', {
+    rules: {
+      name: {
+        required: true,
+      },
+      lastname: {
+        required: true,
+      },
+      contact: {
+        required: true,
+      },
+      password: {
+        required: true,
+        strength: {
+          default: true,
+        },
+      },
+      date: {
+        required: true,
+      },
+      gender: {
+        required: true,
       },
     },
-    date: {
-      required: true,
+    messages: {
+      name: 'Campos Invalidos',
+      lastname: 'Campos Invalidos',
     },
-    gender: {
-      required: true,
-    },
-  },
-  messages: {
-    name: 'Campos Invalidos',
-    lastname: 'Campos Invalidos',
-  },
-});
+  });
+}
