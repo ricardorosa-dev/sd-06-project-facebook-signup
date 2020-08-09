@@ -5,6 +5,7 @@ const inputArray = document.querySelectorAll('input');
 const registerForm = document.querySelector('.register-form');
 const radioArray = document.getElementsByName('gender');
 const genderContainer = document.getElementsByClassName('gender-container');
+const personalizedRadio = document.getElementById('personalizado');
 
 login.addEventListener('click', function () {
   alert(name.value);
@@ -24,19 +25,12 @@ submitBtn.addEventListener('click', function () {
     paragraph.innerText = 'Campos inválidos';
     registerForm.appendChild(paragraph);
   }
+});
 
-  let radioChecked = false;
-  for (let i = 0; i < radioArray.length; i += 1) {
-    if (radioArray[i].checked) {
-      radioChecked = radioArray[i].value;
-    }
-  }
-
-  if (radioChecked === 'Personalizado') {
-    const personalizadoInput = document.createElement('input');
-    personalizadoInput.name = 'gender-custom';
-    personalizadoInput.placeholder = 'Gênero (opcional)';
-    personalizadoInput.className = 'gender-input';
-    genderContainer[0].appendChild(personalizadoInput);
-  }
+personalizedRadio.addEventListener('click', function () {
+  const personalizedInput = document.createElement('input');
+  personalizedInput.name = 'gender-custom';
+  personalizedInput.placeholder = 'Gênero (opcional)';
+  personalizedInput.className = 'gender-input';
+  genderContainer[0].appendChild(personalizedInput);
 });
