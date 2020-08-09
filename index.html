@@ -33,22 +33,24 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="#" class="facebook-form" method="GET">
         <div class="name-surname">
-          <input type="text" name="firstname" placeholder="Nome" data-validate-field='nome'>
-          <input type="text" name="lastname" placeholder="Sobrenome" data-validate-field='sobrenome'>
+          <input type="text" name="firstname" placeholder="Nome" required='required'>
+          <input type="text" name="lastname" placeholder="Sobrenome" required='required'>
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" data-validate-field='phone'>
-        <input type="password" name="password" placeholder="Nova senha" data-validate-field='password'><br>
+        <input type="text" name="phone_email" placeholder="Celular ou email" required='required'>
+        <input type="password" name="password" placeholder="Nova senha" required='required'><br>
         <label for="" id="label-birthdate">Data de nascimento</label><br>
-        <input type="date" name="birthdate" placeholder="dd/mm/aaaa" data-validate-field='date'><br>
+        <input type="date" name="birthdate" placeholder="dd/mm/aaaa" required='required'><br>
         <label id="label-gender">Gênero</label><br>
-        <input type="radio" name="genero" value="Feminino" data-validate-field='radio'>Feminino
-        <input type="radio" name="genero" value="Masculino" data-validate-field='radio'>Masculino
-        <input type="radio" name="genero" value="Personalizado" data-validate-field='radio'>Personalizado
+        <input type="radio" name="genero" value="Feminino" required='required'>Feminino
+        <input type="radio" name="genero" value="Masculino" required='required'>Masculino
+        <input type="radio" name="genero" value="Personalizado" required='required'>Personalizado
         <button type="submit" id="facebook-register">Cadastre-se</button>
+        <div class="invalid" id="invalidos">
+          <p>Campos inválidos</p>
+        </div>
       </form>
     </div>
   </div>
-  <script src="libs/just-validate.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
