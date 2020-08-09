@@ -1,6 +1,6 @@
 const inputs = document.querySelectorAll('input');
 const rightContent = document.querySelector('.right-content');
-let chosenGender;
+let chosenGender = 'empty';
 let optionalGender = document.querySelector('span:first-of-type > input');
 const buttonLogin = document.querySelector('#button-login');
 const submitButton = document.querySelector('#facebook-register');
@@ -14,10 +14,11 @@ buttonLogin.addEventListener('click', function () {
 });
 
 function showFormContent() {
+  const isEmpty = chosenGender === 'empty';
   let formContent = `Olá, ${inputs[2].value} ${inputs[3].value} `;
   formContent += `${inputs[4].value} `;
   formContent += `${inputs[6].value} `;
-  formContent += chosenGender.isEmpty() ? `${optionalGender} ` : `${chosenGender} `;
+  formContent += isEmpty ? 'vazio ' : `${chosenGender} `;
 
   return formContent;
 }
@@ -27,8 +28,14 @@ submitButton.addEventListener('click', function (event) {
   let isEmpty = true;
 
   for (let i = 2; i < inputs.length - 3; i += 1) {
-    if (inputs[0].checked || inputs[1].checked || inputs[2].checked) {
+    if (inputs[7].checked || inputs[8].checked || inputs[9].checked) {
       isEmpty = false;
+
+      if (inputs[7].checked || inputs[8].checked) {
+        chosenGender = inputs[i].value;
+      } else {
+        chosenGender = optionalGender;
+      }
     }
 
     if (inputs[i].value === '') {
@@ -61,6 +68,6 @@ for (let i = 0; i < maleFemaleButtons.length; i += 1) {
   });
 }
 
-optionalGender.addEventListener('change', function () {
+optionalGender.addEventListener('input', function () {
   optionalGender = document.querySelector('span:first-of-type > input').value;
 });
