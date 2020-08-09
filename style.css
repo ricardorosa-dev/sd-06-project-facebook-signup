@@ -192,6 +192,7 @@ body {
 
 .label-gender {
   color: #90949c;
+  display: block;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -201,11 +202,9 @@ body {
 .gender {
   color: #1d2129;
   font-family: inherit;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 18px;
   margin-left: 0;
-  padding: 0 10px 0 3px;
 }
 
 .facebook-register {
