@@ -1,5 +1,5 @@
 window.onload = () => {
-  new JustValidate('.js-form', {
+let justValidate = new JustValidate('.js-form', {
     rules: {
       name: {
         required: true,
@@ -21,4 +21,4 @@ window.onload = () => {
       },
     },
   });
-}
+};
