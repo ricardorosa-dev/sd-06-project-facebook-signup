@@ -24,10 +24,10 @@ botaoRegistro.addEventListener('click', validate);
 const personId = document.querySelector('#p');
 personId.addEventListener('click', function () {
   if (document.querySelector('.teste-genero').lastElementChild.className === aux) {
-      const auxChild = document.createElement('input');
-      auxChild.placeholder = 'Gênero (opcional)';
-      auxChild.name = 'gender-custom';
-      auxChild.className = 'gender-custom-testeEvaluator';
-      document.querySelector('.teste-genero').appendChild(auxChild);
-    }
+    const auxChild = document.createElement('input');
+    auxChild.placeholder = 'Gênero (opcional)';
+    auxChild.name = 'gender-custom';
+    auxChild.className = 'gender-custom-testeEvaluator';
+    document.querySelector('.teste-genero').appendChild(auxChild);
+  }
 });
