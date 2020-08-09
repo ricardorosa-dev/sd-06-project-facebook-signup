@@ -2,7 +2,6 @@ body {
   box-sizing: border-box;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
   margin: 0;
   padding: 0;
 }
@@ -28,7 +27,7 @@ body {
   width: 30%;
 }
 
-.facebook-login {  
+.facebook-login {
   display: flex;
   width: 40%;
 }
@@ -41,9 +40,11 @@ body {
 .form-group input {
   margin-bottom: 5px;
   width: 80%;
+  border: 1px solid #375695;
 }
 
 .form-group label {
+  font-size: 12px;
   margin-bottom: 5px;
 }
 
@@ -59,4 +60,22 @@ body {
   font-weight: 700;
   height: 25px;
   margin-bottom: 5px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: flex-start;
+  line-height: 30px;
+  width: 800px;
+}
+
+.slogan-container {
+  margin: 20px 0 0 300px;
+  width: 60%;
 }
