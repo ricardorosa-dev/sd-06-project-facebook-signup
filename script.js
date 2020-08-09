@@ -51,7 +51,10 @@ submitButton.addEventListener('click', function (event) {
   if (isEmpty) {
     event.preventDefault();
   } else {
-    rightContent.innerHTML = showFormContent();
+    const p = document.createElement('p');
+    p.innerText = showFormContent();
+    rightContent.innerHTML = '';
+    rightContent.appendChild(p);
   }
 });
 
