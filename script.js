@@ -1,6 +1,6 @@
 const inputs = document.querySelectorAll('input');
 const rightContent = document.querySelector('.right-content');
-let chosenGender = 'empty';
+let chosenGender = '';
 let optionalGender = document.querySelector('span:first-of-type > input');
 const buttonLogin = document.querySelector('#button-login');
 const submitButton = document.querySelector('#facebook-register');
@@ -50,9 +50,9 @@ submitButton.addEventListener('click', function (event) {
 
   if (isEmpty) {
     event.preventDefault();
+  } else {
+    rightContent.innerHTML = showFormContent();
   }
-
-  rightContent.innerHTML = showFormContent();
 });
 
 customizedButton.addEventListener('change', function (event) {
