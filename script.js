@@ -18,6 +18,7 @@ const facebookRegister = document.getElementById('facebook-register');
 facebookRegister.addEventListener('click', function () {
   if (facebookRegister === validateForm) {
     return true;
+  } else {
+    return alert('Campos inválidos');
   }
-  alert('Campos inválidos');
 });
