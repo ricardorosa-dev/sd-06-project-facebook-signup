@@ -15,6 +15,11 @@ body {
   width: 100%;
 }
 
+.top-bar-width {
+margin: auto;
+width: 80%;
+}
+
 .facebook-logo {
   justify-content: flex-start;
   width: 180px;
@@ -34,7 +39,7 @@ body {
 
 .form-control {
   align-self: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding-left: 10px;
 }
 
@@ -50,7 +55,9 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%;
 }
 
 .left-content {
