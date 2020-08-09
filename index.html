@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="lib/bulma.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
 
     <main class="main-content">
         <article class="left-content">
-            <p id="facebook-slogan">
+            <p id="facebook-slogan" class="left-title">
                 O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
             </p>
             <img id="facebook-networking" src="imgs/networking.png" alt="">
@@ -21,32 +22,47 @@
         <article class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form action="">
-                <input type="text" name="firstname" class="input-name" placeholder="Nome">
-                <input type="text" name="lastname" class="input-name" placeholder="Sobrenome">
-                <input type="text" name="phone_email" placeholder="Celular ou email" class="input-contact">
-                <input type="text" name="password" placeholder="Nova Senha" class="input-contact">
-                <label for="birthdate" id="label-birthdate" class="label">Data de nascimento</label>
-                <input type="date" id="input-birthdate" class="input-contact" name="birthdate" placeholder="dd/mm/aaaa">
-                <span class="gender-control">
-                    <label class="gender-type">
-                        <input type="radio" id="fem" name="gender" value="Feminino" class="input-gender">
-                        <label class="gender-text" for="fem">Feminino</label>
-                    </label>
-                    <label class="gender-type">
-                        <input type="radio" id="Mas" name="gender" value="Masculino" class="input-gender">
+            <form action="#" class="js-form form">
+                <div class="form-group-2">
+                    <div class="form-control">
+                        <input type="text" name="firstname" class="input-name input" placeholder="Nome" data-validate-field="name">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="lastname" class="input-name input" placeholder="Sobrenome" data-validate-field="lastname">
+                    </div>
+                </div>
+                <input type="text" name="phone_email" placeholder="Celular ou email" class="input input-contact form__input form-control" data-validate-field="contact">
+                <input type="password" name="password" data-validate-field="password" placeholder="Nova senha" class="input-contact input">
+                <label for="birthdate" id="label-birthdate" class="label subtitle-forms">Data de nascimento</label>
+                <input type="date" id="input-birthdate" data-validate-field="date" class="input input-contact" name="birthdate" placeholder="dd/mm/aaaa">
+                <label for="gender" class="subtitle-forms label">Gênero</label>
+                <div class="form-group-2">
+                    <div class="gender-type">
+                        <div class="form-control">
+                            <input type="radio" id="fem" name="gender" data-validate-field="gender" value="Feminino" class="input-gender">
+                            <label class="gender-text" for="fem">Feminino</label>
+                        </div>
+                    </div>
+
+                <div class="gender-type">
+                    <div class="form-control">
+                        <input type="radio" id="Mas" name="gender" value="Masculino" data-validate-field="gender" class="input-gender">
                         <label class="gender-text" for="Mas">Masculino</label>
-                    </label>
-                    <label class="gender-type">
-                        <input type="radio" id="Per"  name="gender" value="Personalizado" class="input-gender">
-                        <label class="gender-text" for="Per">Personalizado</label>
-                    </label>
-                </span>
-                <button type="submit" id="facebook-register">Cadastre-se</button>
+                    </div>
+                </div>
+                    <div class="gender-type">
+                        <div class="form-control">
+                            <input type="radio" id="Per"  name="gender" data-validate-field="gender" value="Personalizado" class="input-gender">
+                            <label class="gender-text" for="Per">Personalizado</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="button is-success" type="submit" id="facebook-register">Cadastre-se</button>
             </form>
         </article>
 
     </main>
-
+    <script src="lib/just-validate.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,56 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+body {
+    background: #fff;
+    color: rgb(28, 30, 33);
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    unicode-bidi: embed;
+}
+
+main {
+ background:linear-gradient(white, #D3D8E8);
+}
+
+.left-title {
+    color: rgb(14, 56, 95);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 40px;
+    width: 450px;
+    word-spacing: -1px;
+}
+
+.quick-easy {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.subtitle-forms {
+  font-size: 16px;
+  color: rgb(144, 148, 156);
+}
+
+.form-group-2 {
+  display: flex;
+  flex-flow: nowrap;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -17,7 +70,7 @@
 }
 
 .input-name {
-  display: inline-flex;
+  display: flex;
   width: 140px;
 }
 
@@ -27,7 +80,7 @@
 
 .input-gender {
   text-align: left;
-  width: 28%;
+
 }
 
 .label {
@@ -36,6 +89,7 @@
 
 .gender-control {
   display: flex;
+  width: 100%;
 }
 
 .gender-type {
@@ -44,5 +98,6 @@
 }
 
 .gender-text {
-  font-size: 0.85em;
+  font-size: 0.7em;
+  font-weight: bold;
 }
