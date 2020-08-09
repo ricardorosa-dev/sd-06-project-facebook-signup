@@ -5,4 +5,31 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-around;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  margin: 4.5px 20px;
+}
+
+.senha {
+  display: flex;
+  flex-direction: column;
+  margin: 4px 15px;
+}
+
+label {
+  color: white;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.forgotPassword {
+  color: white;
 }
