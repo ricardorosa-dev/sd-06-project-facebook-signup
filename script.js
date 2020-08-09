@@ -6,7 +6,7 @@ function substituir() {
   }
   const newBox = document.createElement('p');
   const right = document.querySelector('.right-content');
-  const text = `Olá, ${document.querySelector('.firstname').value} ${document.querySelector('.lastname').value} E-mail ou telefone: ${document.querySelector('.phone_email').value} Data de Nascimento: ${document.querySelector('.birthdate').value} Gênero: ${document.querySelector('#checked').value}`;
+  const text = `Olá, ${document.querySelector('.firstname').value} ${document.querySelector('.lastname').value}, E-mail ou telefone: ${document.querySelector('.phone_email').value} Data de Nascimento: ${document.querySelector('.birthdate').value} Gênero: ${document.querySelector('#checked').value}`;
   right.innerHTML = '';
   newBox.appendChild(document.createTextNode(text));
   right.appendChild(newBox);
@@ -34,7 +34,6 @@ window.onload = function () {
     if (document.querySelector('.firstname').value === '' || document.querySelector('.lastname').value === '' || document.querySelector('.phone_email').value === '' || document.querySelector('.password').value === '' || document.querySelector('.birthdate').value === '') {
       document.querySelector('#invalid').innerText = 'Campos inválidos';
     } else {
-      document.querySelector('#invalid').innerText = '';
       substituir();
     }
   });
