@@ -7,11 +7,20 @@ body {
   width: 180px;
 }
 
-.left-content-wrapper , .left-header {
+.left-content , .left-header {
   align-items: center;
   display: flex;
   justify-content: flex-start;
   margin-top: 15px;
+}
+
+.left-content {
+  flex-direction: column;
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
 }
 
 .top-bar {
@@ -32,14 +41,6 @@ body {
   flex-direction: column;
 }
 
-a {
-  color: #9cb4d8;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  margin-top: 4px;
-  text-decoration: none;
-}
-
 input {
   height: 19px;
   margin-right: 15px;
@@ -58,4 +59,33 @@ header label {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   margin-bottom: 5px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.names {
+  display: flex;
+  width: 289px;
+}
+
+.names-item {
+  overflow-y: auto;
+}
+
+.sign-in-data input {
+  height: 30px;
+  margin: 5px;
+  width: 90%;
+}
+
+.gender {
+  align-items: center;
+  display: flex;
+}
+
+.feedback-bad-action {
+  color: red;
+  font-weight: 600;
 }
