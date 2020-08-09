@@ -18,7 +18,7 @@
       </section>
       <section class='form-group'>
         <label id='user-password-label'>Senha</label>
-        <input type='password' id='user-password'>
+        <input type='current-password' id='user-password'>
       </section>
       <section class='form-control'>
         <button id='button-login'>Entrar</button>
@@ -34,15 +34,15 @@
     <section class='right-content'>
       <h1>Abra uma conta</h1>
       <small class='quick-easy'>É rápido e fácil.</small>
-      <form action=''>
+      <form class="formRegister" action=''>
         <section class='full-name'>
-          <input type='text' placeholder='Nome' name='firstname' size="13">
-          <input type='text' placeholder='Sobrenome' name='lastname' size="13">
+          <input class="name" type='text' placeholder='Nome' name='firstname' size="13">
+          <input class="surname" type='text' placeholder='Sobrenome' name='lastname' size="13">
         </section>
-        <input type='text' placeholder='Celular ou email' name='phone_email'>
-        <input type='password' placeholder='Nova senha' name='password'><br>
+        <input class="phone_email" type='text' placeholder='Celular ou email' name='phone_email'>
+        <input class="password" type='current-password' placeholder='Nova senha' name='password'><br>
         <label id='label-birthdate'>Data de nascimento</label><br>
-        <input type='date' name='birthdate' placeholder='dd/mm/aaaa'><br>
+        <input class="birthdate" type='date' name='birthdate' placeholder='dd/mm/aaaa'><br>
         <label id='label-gender'>Gênero</label><br>
         <section class='gender'>
           <input name='gender' type='radio' value='Feminino'><label>Feminino</label>
@@ -50,7 +50,7 @@
           <input name='gender' type='radio' value='Personalizado'><label>Personalizado</label><br>
         </section>
 
-        <button type='submit' id='facebook-register'>Cadastre-se</button>
+        <button class="facebook-register" type='submit' id='facebook-register'>Cadastre-se</button>
       </form>
     </section>
   </section>
