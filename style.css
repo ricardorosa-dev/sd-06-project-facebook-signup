@@ -17,18 +17,22 @@ body {
     unicode-bidi: embed;
 }
 
-main {
- background:linear-gradient(white, #D3D8E8);
-}
-
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
 }
 
+.main-background-content {
+  background:linear-gradient(white, #D3D8E8);
+  min-width: 980px;
+}
+
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin: auto;
+  max-width: 980px;
+  width:90%;
 }
 
 .left-content {
@@ -105,7 +109,7 @@ width: 100%;
 .button {
   border: 1px solid;
   border-radius: 5px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   display: inline-block;
   font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
@@ -118,7 +122,6 @@ width: 100%;
 .button-green {
   background: linear-gradient(rgb(103, 174, 85), rgb(87, 136, 67));
   background-color: rgb(105, 167, 78);
+  border-color: rgb(59, 110, 34) rgb(59, 110, 34) rgb(44, 81, 21);
   box-shadow: inset 0 1px 1px rgb(164, 227, 136);
-  border-color: #3b6e22 #3b6e22 #2c5115;
-
 }

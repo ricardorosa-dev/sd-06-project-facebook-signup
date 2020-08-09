@@ -11,57 +11,58 @@
     <header class="top-bar">
 
     </header>
-
-    <main class="main-content">
-        <article class="left-content">
-            <p id="facebook-slogan" class="left-title">
-                O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
-            </p>
-            <img id="facebook-networking" src="imgs/networking.png" alt="">
-        </article>
-        <article class="right-content">
-            <h1>Abra uma conta</h1>
-            <p class="quick-easy">É rápido e fácil.</p>
-            <form action="#" class="js-form form">
-                <div class="form-group-2">
-                    <div class="form-control">
-                        <input type="text" name="firstname" class="input-name input" placeholder="Nome" data-validate-field="name">
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="lastname" class="input-name input" placeholder="Sobrenome" data-validate-field="lastname">
-                    </div>
-                </div>
-                <input type="text" name="phone_email" placeholder="Celular ou email" class="input input-contact form__input form-control" data-validate-field="contact">
-                <input type="password" name="password" data-validate-field="password" placeholder="Nova senha" class="input-contact input">
-                <label for="birthdate" id="label-birthdate" class="label subtitle-forms">Data de nascimento</label>
-                <input type="date" id="input-birthdate" data-validate-field="date" class="input input-contact" name="birthdate" placeholder="dd/mm/aaaa">
-                <label for="gender" class="subtitle-forms label">Gênero</label>
-                <div class="form-group-2">
-                    <div class="gender-type">
+    <div class="main-background-content">
+        <main class="main-content">
+            <article class="left-content">
+                <p id="facebook-slogan" class="left-title">
+                    O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+                </p>
+                <img id="facebook-networking" src="imgs/networking.png" alt="">
+            </article>
+            <article class="right-content">
+                <h1>Abra uma conta</h1>
+                <p class="quick-easy">É rápido e fácil.</p>
+                <form action="#" class="js-form form">
+                    <div class="form-group-2">
                         <div class="form-control">
-                            <input type="radio" id="fem" name="gender" data-validate-field="gender" value="Feminino" class="input-gender">
-                            <label class="gender-text" for="fem">Feminino</label>
+                            <input type="text" name="firstname" class="input-name input" placeholder="Nome" data-validate-field="name">
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="lastname" class="input-name input" placeholder="Sobrenome" data-validate-field="lastname">
                         </div>
                     </div>
+                    <input type="text" name="phone_email" placeholder="Celular ou email" class="input input-contact form__input form-control" data-validate-field="contact">
+                    <input type="password" name="password" data-validate-field="password" placeholder="Nova senha" class="input-contact input">
+                    <label for="birthdate" id="label-birthdate" class="label subtitle-forms">Data de nascimento</label>
+                    <input type="date" id="input-birthdate" data-validate-field="date" class="input input-contact" name="birthdate" placeholder="dd/mm/aaaa">
+                    <label for="gender" class="subtitle-forms label">Gênero</label>
+                    <div class="form-group-2">
+                        <div class="gender-type">
+                            <div class="form-control">
+                                <input type="radio" id="fem" name="gender" data-validate-field="gender" value="Feminino" class="input-gender">
+                                <label class="gender-text" for="fem">Feminino</label>
+                            </div>
+                        </div>
 
-                <div class="gender-type">
-                    <div class="form-control">
-                        <input type="radio" id="Mas" name="gender" value="Masculino" data-validate-field="gender" class="input-gender">
-                        <label class="gender-text" for="Mas">Masculino</label>
-                    </div>
-                </div>
                     <div class="gender-type">
                         <div class="form-control">
-                            <input type="radio" id="Per"  name="gender" data-validate-field="gender" value="Personalizado" class="input-gender">
-                            <label class="gender-text" for="Per">Personalizado</label>
+                            <input type="radio" id="Mas" name="gender" value="Masculino" data-validate-field="gender" class="input-gender">
+                            <label class="gender-text" for="Mas">Masculino</label>
                         </div>
                     </div>
-                </div>
-                <button class="button is-success button-green" type="submit" id="facebook-register">Cadastre-se</button>
-            </form>
-        </article>
+                        <div class="gender-type">
+                            <div class="form-control">
+                                <input type="radio" id="Per"  name="gender" data-validate-field="gender" value="Personalizado" class="input-gender">
+                                <label class="gender-text" for="Per">Personalizado</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button is-success button-green" type="submit" id="facebook-register">Cadastre-se</button>
+                </form>
+            </article>
 
-    </main>
+        </main>
+    </div>
     <script src="lib/just-validate.min.js"></script>
     <script src="script.js"></script>
 </body>
