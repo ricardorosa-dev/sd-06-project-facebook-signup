@@ -17,6 +17,7 @@ submitBtn.addEventListener('click', function (event) {
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
   const mailOrTel = document.getElementById('phone_email').value;
+  const date = document.getElementById('birthdate').value;
   let count = 0;
   for (let i = 2; i < (inputArray.length - 3); i += 1) {
     const resultCheck = inputArray[i].checkValidity();
@@ -31,6 +32,9 @@ submitBtn.addEventListener('click', function (event) {
     registerForm.appendChild(paragraph);
     invalid = true;
   } else {
+    const pDate = document.createElement('p');
+    pDate.innerHTML = date;
+    rightContent[0].insertBefore(pDate, rightContent[0].firstChild);
     const pMailOrTel = document.createElement('p');
     pMailOrTel.innerHTML = mailOrTel;
     rightContent[0].insertBefore(pMailOrTel, rightContent[0].firstChild);
