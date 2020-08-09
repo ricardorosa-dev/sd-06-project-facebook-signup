@@ -219,7 +219,7 @@ body {
 }
 
 @media screen and ( max-width : 568px ) {
-  
+
   .fc-wrap {
     background-color: rgb(53, 70, 146);
     text-align: center;
@@ -294,7 +294,7 @@ body {
   .form-group span {
     display: none;
   }
-  
+
   .main-content {
     display: none;
   }
