@@ -20,12 +20,12 @@ function messageInvalid() {
 }
 
 function validate() {
-  let aux = '';
+  const aux = '';
   const inputs = document.querySelectorAll('input');
   let auxBol = true;
-  inputs.array.forEach(element => {
-    if (inputs[element].value === aux)  auxBol = false;
-  });
+  for (let index = 0; i < inputs.length; i += 1) {
+    if (inputs[index].value === aux) auxBol = false;
+  }
   if (!auxBol) messageInvalid();
 }
 const botaoRegistro = document.querySelector('#facebook-register');
