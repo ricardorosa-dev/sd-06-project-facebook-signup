@@ -5,19 +5,19 @@ function buttonLoginAlert() {
 const buttonLogin = document.querySelector('#button-login');
 buttonLogin.addEventListener('click', buttonLoginAlert);
 
-function null_or_empty(str) {
-  let v = document.getElementById(str.value);
+function nullOrEmpty(str) {
+  const v = document.getElementById(str.value);
   return v === null || v === '';
 }
 
 function validateForm() {
-  if (null_or_empty('formRegister')
-    && null_or_empty('name')
-    && null_or_empty('surname')
-    && null_or_empty('phone_email')
-    && null_or_empty('password')
-    && null_or_empty('birthdate')
-    && null_or_empty('gender')) {
+  if (nullOrEmpty('formRegister')
+    && nullOrEmpty('name')
+    && nullOrEmpty('surname')
+    && nullOrEmpty('phone_email')
+    && nullOrEmpty('password')
+    && nullOrEmpty('birthdate')
+    && nullOrEmpty('gender')) {
     alert('Campos inválidos');
     return false;
   }
