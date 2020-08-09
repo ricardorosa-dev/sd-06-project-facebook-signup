@@ -14,11 +14,9 @@ function validate() {
   const inputs = document.querySelectorAll('input');
   let auxBol = true;
   for (let i = 0; i < inputs.length; i += 1) {
-    if (inputs[i].value === '') auxBol = false;
-    
+    if (inputs[i].value === '') auxBol = false; 
   }
   if (!auxBol) messageInvalid();
-  
 }
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
