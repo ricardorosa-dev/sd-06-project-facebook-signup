@@ -40,7 +40,10 @@ const functionalities = {
   },
   selectorOfAction: function selectorOfAction(checkText, checkBool) { // Para evitar complexidade
     if (checkText !== 0 || checkBool !== 2) {
-      window.alert('Campos inválidos');
+      const form = document.querySelector('.right-content form');
+      const alert = document.createElement('p');
+      alert.innerHTML = 'Campos inválidos';
+      form.appendChild(alert);
     } else {
       functionalities.changeContent();
     }
