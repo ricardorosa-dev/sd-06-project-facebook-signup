@@ -8,35 +8,85 @@
 </head>
 <body>
   <div class="top-menu-container">
+    <header class="top-bar">
+      
+      <div>
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
+      </div>
+      
+      <form class="facebook-login" action="" method="get">
+      <div class="form-group">
+        <label for="login">Email ou telefone</label>
+        <input id="login" name="login" required="required" type="text">
+      </div>
 
-  <header class="top-bar">
-    
-    <div>
-      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
-    </div>
-    
-    <form class="facebook-login" action="" method="get">
+      <div class="form-group">
+        <label for="senha" >Senha</label>
+        <input id="senha" name="password" required="required" type="text">
+        <a class="esqueceu-conta" href="#">Esqueceu a conta?</a>
+      </div>
 
-    <div class="form-group">
-      <label for="login">E-mail ou telefone</label>
-      <input id="login" name="login" required="required" type="text">
-    </div>
+      <div class="form-button">
+          <button id="button-login">Entrar</button>
+      </div>
+      </form>
 
-    <div class="form-group">
-      <label for="senha" >Senha</label>
-      <input id="senha" name="password" required="required" type="text">
-      <a class="esqueceu-conta" href="#">Esqueceu a conta?</a>
-    </div>
-
-    <div class="form-button">
-        <button id="button-login">Entrar</button>
-    </div>
-
-    </form>
-  </header>
-
-  <!-- Aqui começa o main container -->
+    </header>
   </div>
+
+  <div class="main-content">
+
+    <div class="left-content">
+      <div class="left-content-text">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</div>
+      <div><img src="./imgs/networking.png" alt="networking"></div>
+    </div>
+
+    <div class="right-content">
+      <div class="form-title">Abra uma conta</div>
+      <div class="form-subtitle">É rápido e fácil.</div>
+
+      <form action="">
+        <input type="text" name="first-name" class="form-input" id="first-name" placeholder="Nome">
+
+        <input type="text" name="last-name" class="form-input" id="last-name" placeholder="Sobrenome">
+
+        <input type="text" name="email-phone" class="form-input" id="email-phone" placeholder="Celular ou email">
+
+        <input type="password" name="password" class="form-input" id="password" placeholder="Nova senha">
+
+        <span class="birth-day-text">Data de Nascimento</span>
+
+        <select name="" id="">
+          <option value="" disabled>Dia</option>
+        </select>
+
+        <select name="" id="">
+          <option value="" disabled>Mês</option>
+        </select>
+        
+        <select name="" id="">
+          <option value="" disabled>Ano</option>
+        </select>
+
+        <span><img src="./imgs/question-mark.png" alt="tip"></span>
+
+        <span class="gender-text">Gênero</span>
+        <input type="radio" name="female" id="female"><label>Feminino</label>
+        <input type="radio" name="male" id="male"><label>Masculino</label>
+        <input type="radio" name="custom" id="custom"><label>Personalizado</label>
+
+        <span><img src="./imgs/question-mark.png" alt="tip"></span>
+
+        <p class="register-text">Ao clicar em Cadastre-se, você concorda com nossos <a href="https://www.facebook.com/legal/terms/update">Termos</a>, <a href="https://www.facebook.com/about/privacy/update">Política de Dados</a> e <a href="https://www.facebook.com/policies/cookies/">Política de Cookies</a>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+
+        <input class="register-button" type="button" value="Cadastre-se">
+
+        <p class="create-page-text"><a class="create-page-text2" href="https://www.facebook.com/pages/create/?ref_type=registration_form">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
+      </form>
+    </div>
+
+  </div>
+
 
 </body>
 </html>
