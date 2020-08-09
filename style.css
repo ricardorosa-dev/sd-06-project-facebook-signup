@@ -23,12 +23,12 @@ body {
 
 .facebook-logo {
   height: auto;
-  margin-left: 30%;
   width: 30%;
 }
 
 .facebook-login {
   display: flex;
+  justify-content: flex-end;
   width: 40%;
 }
 
@@ -64,13 +64,13 @@ body {
 
 .main-content {
   display: flex;
+  margin-top: 20px;
 }
 
 .left-content {
   color: #0e385f;
   font-size: 20px;
   font-weight: 700;
-  justify-content: flex-start;
   line-height: 30px;
   width: 800px;
 }
@@ -78,4 +78,11 @@ body {
 .slogan-container {
   margin: 20px 0 0 300px;
   width: 60%;
+}
+
+.right-content {
+  color: #1c1e21;
+  font-size: 18px;
+  margin-left: 200px;
+  width: 300px;
 }
