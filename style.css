@@ -39,3 +39,8 @@
 .options {
   display: flex;
 }
+
+.radios {
+  display: flex;
+  flex-wrap: nowrap;
+}
