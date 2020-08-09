@@ -28,7 +28,6 @@ body {
   display: flex;
   font-size: 14px;
   justify-content: space-between;
-  margin-right: 15px;
 }
 
 .label-email {
