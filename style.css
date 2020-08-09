@@ -29,7 +29,7 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: auto;
   max-width: 980px;
   width:90%;

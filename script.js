@@ -1,20 +1,20 @@
 new JustValidate('.js-form', {
-    rules: {
-      name: {
-        required: true
-      },
-      lastname: {
-        required:true
-      },
-      contact: {
-        required: true
-      },
-      password: {
-        required:true,
-        strength: {
-          default: true
+  rules: {
+    name: {
+      required: true
+    },
+    lastname: {
+      required:true
+    },
+    contact: {
+      required: true
+    },
+    password: {
+      required:true,
+      strength: {
+        default: true
         }
-      },
+    },
       date: {
         required:true
       },
@@ -22,21 +22,20 @@ new JustValidate('.js-form', {
         required:true
       }
     },
-    messages: {
-      name: 'Campos Invalidos',
-      lastname: 'Campos Invalidos'
-    },
+  messages: {
+    name: 'Campos Invalidos',
+    lastname: 'Campos Invalidos'
+  },
 
-    submitHandler: function (form, values, ajax) {
-
-      ajax({
-        url: 'https://just-validate-api.herokuapp.com/submit',
-        method: 'POST',
-        data: values,
-        async: true,
-        callback: function(response)  {
-          console.log(response)
-        }
-      });
-    },
+  submitHandler: function (form, values, ajax) {
+    ajax({
+      url: 'https://just-validate-api.herokuapp.com/submit',
+      method: 'POST',
+      data: values,
+      async: true,
+      callback: function(response)  {
+      console.log(response)
+      }
+    });
+  },
 });
