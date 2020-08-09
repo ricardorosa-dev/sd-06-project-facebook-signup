@@ -15,10 +15,9 @@ window.onload = function () {
     const birth = document.querySelector('.birthdate');
     const invalid = document.querySelector('#invalid');
     if (name.value === '' || lastname.value === '' || phone.value === '' || password.value === '' || birth.value === '') {
-        invalid.innerText = 'Campos inválidos';
-    }
-    else {
-        invalid.innerText = '';
+      invalid.innerText = 'Campos inválidos';
+    }else {
+      invalid.innerText = '';
     }
   });
 };
