@@ -26,10 +26,10 @@ buttonRegister.addEventListener('click', function (e) {
       const messageDiv = document.querySelector('.empty-input');
       messageDiv.innerHTML = 'Campos inválidos';
       return false;
-    } 
+    }
   }
-  const rightContentDiv = document.querySelector('.right-content');
-  rightContentDiv.remove();
+//  const rightContentDiv = document.querySelector('.right-content');
+//  rightContentDiv.remove();
 });
 
 // Exibir um capo de texto caso o usuário clique em "personalizado"
