@@ -21,7 +21,7 @@ function validate() {
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
 
-function personalGender() {
+
   const personId = document.querySelector('#p');
   personId.addEventListener('click', function () {
     if (document.querySelector('.teste-genero').lastElementChild.className === aux) {
@@ -32,7 +32,3 @@ function personalGender() {
       document.querySelector('.teste-genero').appendChild(auxChild);
     }
   });
-  personalGender();
-}
-
-
