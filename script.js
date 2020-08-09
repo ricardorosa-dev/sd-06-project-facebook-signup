@@ -10,7 +10,7 @@ new JustValidate('.js-form', {
       required: true,
     },
     password: {
-      required:true,
+      required: true,
       strength: {
         default: true,
         },
