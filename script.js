@@ -5,7 +5,7 @@ login.addEventListener('click', function () {
   alert(name.value);
 });
 
-//submit form
+// submit form
 const submitBtn = document.getElementById('facebook-register');
 const inputArray = document.querySelectorAll('input');
 const registerForm = document.querySelector('.register-form');
@@ -29,7 +29,7 @@ submitBtn.addEventListener('click', function () {
 });
 
 
-//radios
+// radios
 let personalizedGender = false;
 const personalizedInput = document.createElement('input');
 const personalizedRadio = document.getElementById('personalizado');
@@ -49,14 +49,14 @@ personalizedRadio.addEventListener('click', function () {
 });
 
 maleRadio.addEventListener('click', function () {
-  if(personalizedGender) {
+  if (personalizedGender) {
     personalizedInput.style.display = 'none';
     personalizedGender = false;
   }
 });
 
 femaleRadio.addEventListener('click', function () {
-  if(personalizedGender) {
+  if (personalizedGender) {
     personalizedInput.style.display = 'none';
     personalizedGender = false;
   }
