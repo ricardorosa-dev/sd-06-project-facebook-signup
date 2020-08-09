@@ -1,7 +1,13 @@
 body {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
   margin: 0;
   padding: 0;
+}
+
+.ou-nova {
+  display: none;
 }
 
 .top-bar {
@@ -202,4 +208,139 @@ body {
   box-shadow: rgb(164, 227, 136) 0 1px;
   color: white;
   font-weight: 700;
+}
+
+.form-group input::placeholder {
+  color: white;
+}
+
+.warning {
+  display: none;
+}
+
+@media screen and (max-width: 568px) {
+  .fc-wrap{
+    background-color: rgb(53, 70, 146);
+    text-align: center;
+    width: 100%;
+  }
+
+  .top-bar {
+    align-items: center;
+    background-color: red;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+  }
+
+  .facebook-login {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form-group {
+    flex-wrap: wrap;
+    margin: 0 2%;
+    padding: 0;
+    width: 70%;
+  }
+  .form-group label {
+    display: none;
+  }
+
+  .form-group:first-of-type {
+    margin-top: 35px;
+  }
+
+  .form-group input {
+    background-color: rgb(236, 236, 236);
+    border-radius: 1px;
+    border: 1px solid rgb(184, 184, 184);
+    height: 35px;
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  .form-group input::placeholder {
+    color: rgb(77, 77, 77);
+  }
+
+  .form-control {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .control {
+    width: 70%;
+  }
+
+  .form-control button {
+    background-color: #0c6fe0;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+  }
+
+  .form-group span {
+    display: none;
+  }
+  .main-content {
+    display: none;
+  }
+
+  .ou-nova {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .line {
+    background-color: #ccc;
+    display: block;
+    height: 1px;
+    width: 70%;
+  }
+
+  .ou-nova span {
+    background-color: white;
+    padding: 0 20px;
+    position: relative;
+    top: -10px;
+    z-index: 99;
+  }
+
+  .ou-nova button {
+    background-color: rgb(55, 177, 31);
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-weight: 800;
+    margin-top: 20px;
+    padding: 10px 15px;
+  }
+
+  .ou-nova p {
+    color: #668bcc;
+    font-weight: 800;
+  }
+
+  .warning {
+    background-color: rgb(241, 241, 191);
+    border-bottom: 1px solid rgb(231, 231, 219);
+    color: rgb(109, 109, 39);
+    display: inline-block;
+    font-weight: 600;
+    padding: 5px;
+    width: 100%;
+  }
 }

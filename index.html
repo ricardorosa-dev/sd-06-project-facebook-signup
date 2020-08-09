@@ -8,15 +8,18 @@
 </head>
 <body>
   <nav class="top-bar">
+      <div class="fc-wrap">
         <img src="imgs/facebook-logo.png" class="facebook-logo" alt="Logotipo Facebook">
+      </div>
+      <div class="warning">Você deve se conectar primeiro.</div>
       <form class="facebook-login">
         <div class="form-group">
           <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-          <input type="text" id="user-email-phone" name="email">
+          <input type="text" id="user-email-phone" name="email" placeholder="Número de celular ou email">
         </div>
         <div class="form-group">
           <label for="user-password" id="user-password-label">Senha</label>
-          <input type="password" id="user-password" name="passwords">
+          <input type="password" id="user-password" name="passwords" placeholder="Senha">
         <span>Esqueceu a senha ?</span>
         </div>
         <div class="form-control">
@@ -25,6 +28,12 @@
           </div>
         </div>
       </form>
+    <div class="ou-nova">
+      <div class="line"></div>
+      <span>ou</span>
+      <button href="/">Criar nova conta</button>
+      <p>Esqueceu a senha ?</p>
+    </div>
   </nav>
   <section class="main-content">
     <div class="left-content">
