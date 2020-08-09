@@ -1,4 +1,5 @@
 let errors = 0;
+let info = [];
 
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
@@ -32,10 +33,27 @@ function radioCheck() {
 function verifyErrors() {
   errors = 0;
   radioCheck();
-  for (let i = 0; i < document.forms[1].elements.length - 1; i += 1) {
+  for (let i = 0; i < document.forms[1].elements.length - 2; i += 1) {
     if (document.forms[1].elements[i].value === '') {
       errors += 1;
     }
+  }
+}
+
+function getInfo() {
+  for (let i = 0; i < document.forms[1].elements.length - 2; i += 1) {
+    if (document.forms[1].elements[i].value === ' ') {
+      continue;
+    } else {
+      info.push(document.forms[1].elements[i].value);
+    }
+  }
+}
+
+function showInfo() {
+  document.getElementById('right').innerHTML = `Olá, ${info[0]} ${info[1]}<br>`;
+  for (let i = 2; i < info.length; i += 1) {
+    document.getElementById('right').innerHTML += `${info[i]}<br>`;
   }
 }
 
@@ -46,5 +64,8 @@ document.getElementById('facebook-register').addEventListener('click', function 
     document.getElementById('invalidos').style.display = 'block';
   } else {
     document.getElementById('invalidos').style.display = 'none';
+    getInfo();
+    document.getElementById('right').innerHTML = '';
+    showInfo();
   }
 });
