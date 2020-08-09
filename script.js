@@ -11,7 +11,7 @@ loginButton.addEventListener('click', function () {
 const facebookRegister = document.querySelector('#facebook-register');
 facebookRegister.addEventListener('click', function () {
   const inputTextArray = document.querySelectorAll('.input-text-verification');
-  if (! femaleGender.checked && ! maleGender.checked && ! customGender.checked) {
+  if (!femaleGender.checked && !maleGender.checked && !customGender.checked) {
     alert('Campos inválidos');
   } else {
     for (let index = 0; index < inputTextArray.length; index += 1) {
@@ -20,7 +20,7 @@ facebookRegister.addEventListener('click', function () {
         break;
       }
     }
-  }  
+  }
 });
 /*
 const personalizeRadio = document.getElementById('personalizado');
