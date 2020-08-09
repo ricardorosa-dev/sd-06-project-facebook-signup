@@ -33,7 +33,7 @@ new JustValidate('.js-form', {
       method: 'POST',
       data: values,
       async: true,
-      callback: function (response)  {
+      callback: function (response) {
       }
     });
   },
