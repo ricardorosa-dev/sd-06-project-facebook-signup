@@ -12,9 +12,7 @@ function isEmpty(inputs) {
     if (inputs[i].value !== '') {
       boolean += 1;
     }
-
   }
-  console.log('done');
   if (boolean < 5) {
     generateErrorElement();
   }
