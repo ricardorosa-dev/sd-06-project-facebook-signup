@@ -38,11 +38,6 @@ function radioCheck() {
   }
 }
 
-function dateConverter() {
-  convertedDate = `${date.value.substring(0, 2)}/${date.value.substring(3, 5)}/${date.value.substring(6, 10)}`;
-  date.value = convertedDate;
-}
-
 function verifyErrors() {
   errors = 0;
   radioCheck();
@@ -70,7 +65,6 @@ function showInfo() {
 
 document.getElementById('facebook-register').addEventListener('click', function () {
   event.preventDefault();
-  dateConverter();
   verifyErrors();
   if (errors > 0) {
     document.getElementById('invalidos').style.display = 'block';
