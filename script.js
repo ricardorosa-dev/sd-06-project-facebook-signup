@@ -70,10 +70,13 @@ const functionalities = {
     }
     // Criando na DOM
     const newContentString = name.concat(emailPhone).concat(birthDate).concat(gender);
-    const newContent = document.createElement('p');
-    newContent.innerHTML = newContentString;
+
+    /* const newContent = document.createElement('p');
+    newContent.innerHTML = newContentString; */
     const rightContent = document.querySelector('.right-content');
-    rightContent.appendChild(newContent);
+    
+    /* rightContent.appendChild(newContent); */
+    rightContent.innerHTML = newContentString;
   },
 };
 
