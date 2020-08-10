@@ -7,15 +7,27 @@ const customGender = document.querySelector('#personalizado');
 loginButton.addEventListener('click', function () {
   alert(emailTelephoneInput.value);
 });
-//Substituir o conteúdo do container com a classe right-content
-function printData () {
+
+function removeData() {
+  const rightContent = document.querySelector('.right-content');
+  while(rightContent.firstChild) {
+    rightContent.firstChild.remove();
+  }
+}
+
+function printData() {
   const rightContent = document.querySelector('.right-content');
   const inputTextArray = document.querySelectorAll('.input-text-verification');
   const p = document.createElement('p');
-  p.innerHTML = 'Olá ' + inputTextArray[0].value + ' ' + inputTextArray[1].value + ', <br>';
+  p.innerHTML = 'Olá ';
+  p.innerHTML += inputTextArray[0].value;
+  p.innerHTML += ' ';
+  p.innerHTML += inputTextArray[1].value;
+  p.innerHTML += ', <br>';
   for (let index = 2; index < inputTextArray.length; index += 1) {
     if (inputTextArray[index].name !== 'password') {
-      p.innerHTML += inputTextArray[index].value + '<br>'
+      p.innerHTML += inputTextArray[index].value;
+      p.innerHTML += '<br>';
     }
   }
   if (femaleGender.checked) {
@@ -26,15 +38,8 @@ function printData () {
   } else {
     p.innerHTML += 'Personalizado';
   }
-  removeData ();
+  removeData();
   rightContent.appendChild(p);
-}
-//Remove os dados da classe right-content
-function removeData () {
-  const rightContent = document.querySelector('.right-content');
-  while(rightContent.firstChild) {
-    rightContent.firstChild.remove();
-  }
 }
 
 const facebookRegister = document.querySelector('#facebook-register');
