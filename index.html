@@ -44,7 +44,7 @@
             <div class="validade-form">
                 <h1 class="title">Abra uma conta</h1>
                 <h2 class="subtitle  quick-easy">É rápido e fácil.</h2>
-                <form action="get">
+                <form action="#">
                         <div class="field" style="display:flex;">
                             <div class="control">
                                 <input class="input" name="firstname" required="required" type=" text " placeholder="Nome">
@@ -70,24 +70,24 @@
                         <label class="label" id="label-gender" style="font-size: 12px;" style="color:gray; ">Gênero</label>
                         <div class="field">
                             <div class="control">
-                                <input type="radio" name="gender" id="female" value="Feminino">
+                                <input type="radio" required="required" name="gender" id="female" value="Feminino">
                                 <label for="female" class="radio">Feminino</label>
-                                <input type="radio" name="gender" id="male" value="Masculino">
+                                <input type="radio" required="required" name="gender" id="male" value="Masculino">
                                 <label for="male" class="radio">Masculino</label>
-                                <input type="radio" name="gender" id="other" value="Personalizado">
+                                <input type="radio" required="required" name="gender" id="other" value="Personalizado">
                                 <label for="other" class="radio">Personalizado</label>
                             </div>
                         </div>
                         <div class="field" id="gender-area" style="display: none;">
-                            <select name="gender" id="genders">
-                                <option selected=1 disabled=1 value="0">Selecione seu pronome</option>
+                            <select required="required" name="gender" id="genders">
+                                <option id="gender-option" selected=1 disabled=1 value="0">Selecione seu pronome</option>
                                 <option value=1>Feminino: "Deseje a ela um feliz aniversário!"</option>
                                 <option value=2>Masculino: "Deseje a ele um feliz aniversário!"</option>
                                 <option value=6>Neutro: "Deseje a ele(a) um feliz aniversário!"</option>
                             </select>
                             <p>O seu pronome fica visível para todos.</p>
                             <div class="control">
-                                <input class="input" name="gender-custom" required="required" type="text" placeholder="Gênero (opcional)">
+                                <input class="input" name="gender-custom" type="text" placeholder="Gênero (opcional)">
                             </div>
                         </div>
                          <p style="font-size: 12px;">
@@ -102,9 +102,6 @@
                         </div>
                 </form>
             </div>
-            <p class="create-text-area" style="display:none;">
-                Texto Para Ser Exibido
-            </p>
         </div>
     <script src="script.js "></script>
 </body>
