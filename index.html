@@ -8,24 +8,27 @@
     <link rel="stylesheet" type="text/css" href="css/pikaday.css"/>
   </head>
   <body>
-    <header class="top-bar">
-      <div>
-        <img class="facebook-logo" src="imgs/facebook-logo.png">
-      </div>
-      <form class="facebook-login" action="" method="GET">
-        <div class="form-group">
-          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-          <input nome="email" type="text" required="required" id="user-email-phone">
+    <section class="main-header">
+      <header class="top-bar">
+        <div>
+          <img class="facebook-logo" src="imgs/facebook-logo.png">
         </div>
-        <div class="form-group">
-          <label for="user-password" id="user-password-label">Senha</label>
-          <input nome="senha" type="password" required="required" id="user-password">
-        </div>
-        <div class="form-control">
-          <button id="button-login">Entrar</button>
-        </div>
-      </form>
-    </header>
+        <form class="facebook-login" action="" method="GET">
+          <div class="form-group">
+            <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+            <input nome="email" type="text" required="required" id="user-email-phone">
+          </div>
+          <div class="form-group">
+            <label for="user-password" id="user-password-label">Senha</label>
+            <input nome="senha" type="password" required="required" id="user-password">
+            <span class="esqueceu-conta">Esqueceu a conta?</span>
+          </div>
+          <div class="form-control">
+            <button id="button-login">Entrar</button>
+          </div>
+        </form>
+      </header>
+    </section>
     <main class="main-content">
       <div class="left-content">
         <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
@@ -51,9 +54,12 @@
           </div>
           <label class="options" id="label-gender">Gênero</label>
           <div class="radios">
-            <input name="sexo" type="radio" value="Feminino"> Feminino
-            <input name="sexo" type="radio" value="Masculino"> Masculino
-            <input name="sexo" type="radio" value="Personalizado"> Personalizado
+            <input id="feminino" name="sexo" type="radio" value="Feminino" required="required">
+            <label for="feminino">Feminino</label>
+            <input id="masculino" name="sexo" type="radio" value="Masculino" required="required">
+            <label for="masculino">Masculino</label>
+            <input id="personalizado" name="sexo" type="radio" value="Personalizado" required="required">
+            <label for="personalizado">Personalizado</label>
           </div>
           <div>
             <button id="facebook-register" type="submit">Cadastre-se</button>

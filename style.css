@@ -1,12 +1,72 @@
+.main-header {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  margin: auto;
+  width: 60%;
+  padding-top: 15px;
+  padding-bottom: 7px;
+  font-size: 12px;
 }
 
 .facebook-login {
   display: flex;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#user-email-phone {
+  width: 150px;
+  margin-top: 5px;
+  padding-top: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  background-color: rgb(238, 255, 249);
+}
+
+#user-password {
+  width: 150px;
+  margin-top: 5px;
+  padding-top: 3px;
+  margin-left: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  background-color: rgb(238, 255, 249);
+}
+
+#user-password-label {
+  margin-left: 15px;
+}
+
+.esqueceu-conta{
+  margin-left: 15px;
+  padding-top: 5px;
+  color: rgba(255, 255, 255, 0.644);
+}
+
+#button-login {
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  margin-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  color: white;
+  background-color: rgb(66, 103, 178);
+  font-family: inherit;
+  font-weight: bold;
+  float: right;
+  margin-bottom: 19px;
+  border-radius: 3px;
+}
+
+.facebook-logo {
+  width: 170px;
+  padding-bottom: 5px;
 }
 
 .form-group {
