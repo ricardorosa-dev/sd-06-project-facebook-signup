@@ -7,7 +7,7 @@ function generateErrorElement() {
 }
 
 function isEmpty(inputs) {
-  let boolean = 0
+  let boolean = 0;
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value !== '') {
       boolean += 1;
@@ -18,7 +18,7 @@ function isEmpty(inputs) {
   if (boolean < 5) {
     generateErrorElement();
   }
-  return boolean
+  return boolean;
 }
 
 function validateInputs() {
