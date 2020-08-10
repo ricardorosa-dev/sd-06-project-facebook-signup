@@ -19,7 +19,7 @@ document.querySelector('#gender-custom').addEventListener('click', () => {
     id: 'gender-custom-input',
     type: 'text',
     placeholder: 'Gênero (opcional)',
-    name: 'gender-custom'
+    name: 'gender-custom',
   });
   document.querySelector('#gender-custom-span').appendChild(customGenderInput);
 });
