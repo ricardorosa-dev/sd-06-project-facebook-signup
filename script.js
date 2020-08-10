@@ -48,7 +48,7 @@ function checkValues(inputs) {
 function changeRightContent(teste) {
   const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = '';
-  rightContent.innerText = `Olá ${teste[0].value} ${teste[1].value}
+  rightContent.innerText = `Olá, ${teste[0].value} ${teste[1].value},
   Telefone ou email: ${teste[2].value}
   Data de nascimento: ${teste[4].value}
   Genero: ${teste[5].value}`;
