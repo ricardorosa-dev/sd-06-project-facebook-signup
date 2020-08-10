@@ -19,12 +19,13 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: flex-end;
 }
+
 .facebook-logo {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .form-control {
