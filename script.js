@@ -10,6 +10,8 @@ const genderMale = document.querySelector('#male');
 const genderOther = document.querySelector('#other');
 const buttonFacebookRegister = document.querySelector('#facebook-register');
 const message = document.querySelector('#error-msg');
+const genderCustom = document.querySelector('#gender-custom');
+const genderOptions = document.querySelector('.gender-options');
 
 buttonLogin.addEventListener('click', function () {
   alert(userLogin.value);
@@ -40,6 +42,7 @@ function verifyGender() {
 }
 
 function validateData() {
+  event.preventDefault();
   const totalError = verifyData() + verifyGender();
 
   if (totalError > 0) {
@@ -48,3 +51,12 @@ function validateData() {
 }
 
 buttonFacebookRegister.addEventListener('click', validateData);
+genderOptions.addEventListener('click', () => {
+  const targetEvent = event.target;
+
+  if (targetEvent.id === 'other') {
+    genderCustom.className = '';
+  } else {
+    genderCustom.className = 'disable';
+  }
+});
