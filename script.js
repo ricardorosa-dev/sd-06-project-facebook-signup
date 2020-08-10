@@ -11,15 +11,15 @@ function nullOrEmpty(field) {
 }
 
 function validateForm() {
-  if (!nullOrEmpty('name')
-    && !nullOrEmpty('surname')
-    && !nullOrEmpty('phone_email')
-    && !nullOrEmpty('password')
-    && !nullOrEmpty('birthdate')
-    && !nullOrEmpty('gender')) {
+  return !nullOrEmpty('name') && !nullOrEmpty('surname') && !nullOrEmpty('phone_email') && !nullOrEmpty('password') && !nullOrEmpty('birthdate') && !nullOrEmpty('gender');
+}
+
+const facebookRegister = document.getElementById('facebook-register');
+facebookRegister.addEventListener('click', function (event) {
+  if (validateForm()) {
     return true;
   }
   const msInvalidField = document.getElementById('msInvalidField');
   msInvalidField.style.display = 'block';
-  return false;
-}
+  event.preventDefault();
+});
