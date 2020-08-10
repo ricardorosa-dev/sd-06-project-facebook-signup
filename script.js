@@ -16,7 +16,7 @@ function addCampo() {
   for (let i = 0; i < radios.length; i += 1) {
     radios[i].addEventListener('click', function () {
       if (radios[i].value === 'Personalizado') {
-        gender.appendChild(inputGender);
+        gender.insertBefore(inputGender, button);
       } else {
         inputGender.remove();
       }
