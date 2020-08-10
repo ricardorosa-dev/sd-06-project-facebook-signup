@@ -49,10 +49,10 @@ function getDivInformations(inputs) {
   const emailOrPhone = inputs[4].value;
   const birthDate = inputs[6].value;
   const genderChoice = inputs[getTheGender() + 7].value;
-  const createNewParagraph = document.createElement('p');
+  const createNewDiv = document.createElement('div');
   const textMessage = `Olá, ${name}  ${lastname} ,seu cadastro foi feito em: ${emailOrPhone} ,nasceu na data: ${birthDate} .Possui o gênero ${genderChoice}.`;
-  createNewParagraph.innerText = textMessage;
-  rightContent.appendChild(createNewParagraph);
+  createNewDiv.innerHTML = textMessage;
+  rightContent.appendChild(createNewDiv);
 }
 function checkFirstCondition() {
   for (let x = 0; x < radioSelection.length - 1; x += 1) {
