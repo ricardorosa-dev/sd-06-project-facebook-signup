@@ -5,14 +5,17 @@ window.onload = function () {
     alert(inputEmailValue.value);
   });
 };
-
 const newUserButton = document.querySelector('#facebook-register');
 const camps = document.querySelectorAll('.required');
-newUserButton.addEventListener('click', function () {
+
+function campValidate() {
   for (let i = 0; i < camps.length; i += 1) {
     if (camps[i].value === '') {
-      alert('Campos inválidos');
-      break;
+      camps[i].placeholder = 'Campos inválidos';
     }
   }
+}
+
+newUserButton.addEventListener('click', function () {
+  campValidate();
 });
