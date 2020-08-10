@@ -1,7 +1,6 @@
 let errors = 0;
 const info = [];
 const date = document.forms[1].elements[4];
-let convertedDate = 0;
 
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
@@ -32,11 +31,6 @@ function radioCheck() {
   }
 }
 
-function dateConverter() {
-  convertedDate = `${date.value[8]}${date.value[9]}/${date.value[5]}${date.value[6]}/${date.value[0]}${date.value[1]}${date.value[2]}${date.value[3]}`;
-  info.push(convertedDate);
-}
-
 function verifyErrors() {
   errors = 0;
   radioCheck();
@@ -49,10 +43,8 @@ function verifyErrors() {
 
 function getInfo() {
   for (let i = 0; i < document.forms[1].elements.length - 2; i += 1) {
-    if (document.forms[1].elements[i].value !== ' ' && i !== 4) {
+    if (document.forms[1].elements[i].value !== ' ') {
       info.push(document.forms[1].elements[i].value);
-    } else if (i === 4) {
-      dateConverter();
     }
   }
 }
