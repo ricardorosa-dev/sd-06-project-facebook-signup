@@ -4,34 +4,22 @@ function loginButton() {
 
 function validateRadio() {
   const radio = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
-  if (radio[0].checked || radio[1].checked || radio[2].checked) {
-    return true;
-  }
-  return false;
+  return radio[0].checked || radio[1].checked || radio[2].checked ? true : false;
 }
 
 function validateDate() {
   const date = document.querySelectorAll('form')[1].querySelectorAll('input[type=date]')[0];
-  if (date.value !== '') {
-    return true;
-  }
-  return false;
+  return date.value !== '' ? true : false;
 }
 
 function validateText() {
   const text = document.querySelectorAll('form')[1].querySelectorAll('input[type=text]');
-  if (text[0].value !== '' && text[1].value !== '' && text[2].value !== '') {
-    return true;
-  }
-  return false;
+  return text[0].value !== '' && text[1].value !== '' && text[2].value !== '' ? true : false;
 }
 
 function validatePassword() {
   const password = document.querySelectorAll('form')[1].querySelectorAll('input[type=password]')[0];
-  if (password.value !== '') {
-    return true;
-  }
-  return false;
+  return password.value !== '' ? true : false;
 }
 
 function validate(event) {
