@@ -9,13 +9,13 @@ function setNewErrorMsg(formField) {
 }
 
 document.querySelector('#facebook-register').addEventListener('click', () => {
-  if(fullForm) {
+  if (fullForm) {
     event.preventDefault();
     formFields.forEach(setNewErrorMsg);
   } else {
     const firstName = document.querySelector('#first-name').value;
     const lastName = document.querySelector('#last-name').value;
-    document.querySelector('.right-content').innerHTML = `Olá ${firstName} ${lastName}`
+    document.querySelector('.right-content').innerHTML = `Olá ${firstName} ${lastName}`;
   }
 });
 
