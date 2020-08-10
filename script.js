@@ -22,15 +22,9 @@ genderOptionOther.addEventListener('click', function () {
 buttonLogin.addEventListener('click', function () {
   alert(inputEmailPhone.value);
 });
-buttonRegister.addEventListener('click', function (event) {
-  event.preventDefault();
-  if(checkAllConditions()){
-    getDivInformations(getAllInputs);
-  } 
-});
 function checkAllInputs(inputs) {
-  for (let i = 2 ; i < inputs.length - 1 ; i += 1) {
-    if(inputs[i].value === '') {
+  for (let i=2; i<inputs.length-1; i+=1) {
+    if (inputs[i].value === '') {
       return false;
     }
   }
@@ -55,17 +49,24 @@ function checkAllConditions() {
     return true;
   }
   if (genderFather.style.display === 'none' && checkAllInputs(getAllInputs) ) {
-    for (let x = 0; x < radioSelection.length; x +=1 ) {
-      if(radioSelection[x].checked) {
+    for (let x=0; x<radioSelection.length; x+=1 ) {
+      if (radioSelection[x].checked) {
         return true;
       }
     }
   }
+  return false;
 }
 function getTheGender(){
-  for (let j = 0; j < radioSelection.length; j += 1) {
-    if(radioSelection[j].checked) {
-    return j;
+  for (let j=0; j<radioSelection.length; j+=1) {
+    if (radioSelection[j].checked) {
+      return j;
     }
   }
 }
+buttonRegister.addEventListener('click', function (event) {
+  event.preventDefault();
+  if (checkAllConditions()){
+    getDivInformations(getAllInputs);
+  }
+});
