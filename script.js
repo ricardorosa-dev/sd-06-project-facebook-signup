@@ -18,11 +18,11 @@ function removeData() {
 
 function printData() {
   const p = document.createElement('p');
-  p.innerHTML = '"Olá ';
+  p.innerHTML = 'Olá, ';
   p.innerHTML += inputTextArray[0].value;
   p.innerHTML += ' ';
   p.innerHTML += inputTextArray[1].value;
-  p.innerHTML += '"<br>';
+  p.innerHTML += '<br>';
   p.innerHTML += inputTextArray[2].value;
   p.innerHTML += '<br>';
   p.innerHTML += inputTextArray[4].value;
