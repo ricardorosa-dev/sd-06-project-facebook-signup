@@ -17,11 +17,24 @@ function isFilled(inputs, e) {
 
 function isFilledInputs(e, inputs) {
   for (let i = 0; i < inputs.length; i += 1) {
-    isFilled(inputs[i],e);
+    isFilled(inputs[i], e);
     if (inputs[i].value === '' && inputs[i] === e.currentTarget) {
       inputs[i].setAttribute('filled', 'false');
     }
   }
+}
+
+function removeErrorElement() {
+  const errorElement = document.querySelector('.error');
+  if (errorElement.length > 0) {
+    errorElement.parentElement.removeChild(errorElement);
+  }
+}
+
+function showData() {
+  const dataMap = getData();
+  removeDataContainer();
+  createDataContainer(dataMap);
 }
 
 function setFilledState(inputs) {
@@ -30,8 +43,7 @@ function setFilledState(inputs) {
     const currentState = inputs[i].getAttribute('filled');
     if (currentState !== 'true') {
       generateErrorElement();
-    }
-    else {
+    } else {
       filledElements += 1;
     }
   }
@@ -49,16 +61,10 @@ function validateInputs(e, inputs) {
   }
 }
 
-function removeErrorElement() {
-  const errorElement = document.querySelector('.error');
-  if (errorElement.length > 0) {
-    errorElement.parentElement.removeChild(errorElement);
-  }
-}
 
 function getData() {
   const inputs = document.querySelectorAll('main input');
-  let dataMap = new Map();
+  const dataMap = new Map();
   for (let i = 0; i < inputs.length; i += 1) {
     if (i <= 4) {
       dataMap.set(inputs[i].name, inputs[i].value);
@@ -72,23 +78,18 @@ function getData() {
 
 function createDataContainer(map) {
   const rightContainer = document.getElementsByClassName('right-content')[0];
-  for (const value of map.values()) {
+  map.forEach((value,key,map) => {
     const newElement = document.createElement('div');
     newElement.classList = 'new-element';
     newElement.innerText = value;
     rightContainer.appendChild(newElement);
-  }
+  });
+
 }
 
 function removeDataContainer() {
   const forms = document.getElementById('signUp');
   document.getElementsByClassName('right-content')[0].removeChild(forms);
-}
-
-function showData() {
-  const dataMap = getData();
-  removeDataContainer();
-  createDataContainer(dataMap);
 }
 
 function initAttributes(inputs) {
