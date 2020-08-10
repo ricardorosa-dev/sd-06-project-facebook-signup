@@ -7,35 +7,35 @@
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
+  font-size: 12px;
   justify-content: space-between;
   margin: auto;
-  width: 60%;
-  padding-top: 15px;
   padding-bottom: 7px;
-  font-size: 12px;
+  padding-top: 15px;
+  width: 60%;
 }
 
 .facebook-login {
-  display: flex;
   color: white;
+  display: flex;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #user-email-phone {
-  width: 150px;
+  background-color: rgb(238, 255, 249);
+  border: 1px solid rgba(0, 0, 0, 0.192);
   margin-top: 5px;
   padding-top: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.192);
-  background-color: rgb(238, 255, 249);
+  width: 150px;
 }
 
 #user-password {
-  width: 150px;
+  background-color: rgb(238, 255, 249);
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  margin-left: 15px;
   margin-top: 5px;
   padding-top: 3px;
-  margin-left: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.192);
-  background-color: rgb(238, 255, 249);
+  width: 150px;
 }
 
 #user-password-label {
@@ -43,30 +43,30 @@
 }
 
 .esqueceu-conta{
+  color: rgba(255, 255, 255, 0.644);
   margin-left: 15px;
   padding-top: 5px;
-  color: rgba(255, 255, 255, 0.644);
 }
 
 #button-login {
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
-  margin-left: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.192);
-  color: white;
   background-color: rgb(66, 103, 178);
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  border-radius: 3px;
+  color: white;
+  float: right;
   font-family: inherit;
   font-weight: bold;
-  float: right;
   margin-bottom: 19px;
-  border-radius: 3px;
+  margin-left: 15px;
+  padding-bottom: 2.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2.5px;
 }
 
 .facebook-logo {
-  width: 170px;
   padding-bottom: 5px;
+  width: 170px;
 }
 
 .form-group {
