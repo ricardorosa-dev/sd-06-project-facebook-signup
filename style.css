@@ -14,8 +14,7 @@
 .facebook-logo {
   align-self: flex-start;
   display: flex;
-  flex-direction: column;
-  margin-left: 100px;
+  margin-left: 0;
 }
 
 .form-control {
