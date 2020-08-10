@@ -2,27 +2,45 @@ function loginButton() {
   alert(document.getElementById('user-email-phone').value);
 }
 
+function validateRadio() {
+  const radio = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]')
+  if (radio[0].checked || radio[1].checked || radio[2].checked) {
+    return true;
+  }
+  return false;
+}
+
+function validateDate() {
+  const date = document.querySelectorAll('form')[1].querySelectorAll('input[type=date]')[0];
+  if (date.value !== '') {
+    return true;
+  }
+  return false;
+}
+
+function validateText() {
+  const text = document.querySelectorAll('form')[1].querySelectorAll('input[type=text]');
+  if (text[0].value !== '' && text[1].value !== '' && text[2].value !== '') {
+    return true;
+  }
+  return false;
+}
+
+function validatePassword() {
+  const password = document.querySelectorAll('form')[1].querySelectorAll('input[type=password]')[0];
+  if (password.value !== '') {
+    return true;
+  }
+  return false;
+}
+
 function validate() {
-  const inputsArray = document.getElementsByTagName('input');
-
-  for (let i = 0; i < inputsArray.length; i += 1) {
-
-    let radio = false;
-    if (inputsArray[i].type === 'radio') {
-      if (inputsArray[i].checked === true) {
-        radio = true;
-        console.log('radio');
-      }
-    } else {
-      if (inputsArray[i].value === '') {
-        alert ('Campos inválidos');
-        console.log(inputsArray[i]);
-        break;
-      }
-    }
-    if (radio === false) {
-      alert ('Campos inválidos');
-    }
+  const radio = validateRadio();
+  const password = validatePassword();
+  const text = validateText();
+  const date = validateDate();
+  if (!radio || !password || !text || !date) {
+    alert('Campos inválidos');
   }
 }
 
