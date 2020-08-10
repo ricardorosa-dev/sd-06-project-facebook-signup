@@ -113,3 +113,7 @@ form {
 .right-content form {
   height: 100%;
 }
+
+.radio {
+  font-size: 0.9rem;
+}
