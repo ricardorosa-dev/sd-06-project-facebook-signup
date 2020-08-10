@@ -53,3 +53,9 @@ body {
 .right-content {
   width: 300px;
 }
+
+.input-birthdate {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
