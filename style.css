@@ -10,14 +10,13 @@ body {
 ​
 .img-container {
   justify-content: flex-start;
+}
+
 .img-container img {
   width: 150px;
 }
 ​
-  width: 150px;
-}
-​
-.facebook-login {
+​.facebook-login {
   align-content: center;
   display: flex;
   flex-grow: 1;
