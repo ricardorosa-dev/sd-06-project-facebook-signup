@@ -40,13 +40,13 @@ function isAnyFieldEmpty() {
 }
 
 function replaceRightContent() {
-  let userInfo = {
-  name : document.querySelector('#first-name').value,
-  lastName : document.querySelector('#last-name').value,
-  email : document.querySelector('#user-email').value,
-  birth : document.querySelector('#user-birthdate').value,
-  gender : document.querySelector('#selected-gender').value,
-  }
+  const userInfo = {
+    name: document.querySelector('#first-name').value,
+    lastName: document.querySelector('#last-name').value,
+    email: document.querySelector('#user-email').value,
+    birth: document.querySelector('#user-birthdate').value,
+    gender: document.querySelector('#selected-gender').value,
+  };
   document.querySelector('.right-content').innerText = `
   Nome: ${userInfo.name} ${userInfo.lastName}
   Email: ${userInfo.email}
