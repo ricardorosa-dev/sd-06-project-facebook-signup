@@ -249,8 +249,8 @@ body {
 
   .form-control button {
     background-color: #0c6fe0;
-    border-radius: 3px;
     border: none;
+    border-radius: 3px;
     width: 100%;
   }
 
@@ -267,8 +267,8 @@ body {
 
   .form-group input {
     background-color: rgb(236, 236, 236);
-    border-radius: 1px;
     border: 1px solid rgb(184, 184, 184);
+    border-radius: 1px;
     height: 35px;
     padding-left: 10px;
     width: 100%;
@@ -307,8 +307,8 @@ body {
 
   .ou-nova button {
     background-color: rgb(55, 177, 31);
-    border-radius: 3px;
     border: none;
+    border-radius: 3px;
     color: white;
     font-weight: 800;
     margin-top: 20px;
