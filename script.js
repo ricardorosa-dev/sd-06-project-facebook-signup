@@ -20,14 +20,12 @@ function validate() {
 }
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
-
-const personId = document.querySelector('#p');
-personId.addEventListener('click', function () {
-  if (document.querySelector('.teste-genero').lastElementChild.className === aux) {
-    const auxChild = document.createElement('input');
-    auxChild.placeholder = 'Gênero (opcional)';
-    auxChild.name = 'gender-custom';
-    auxChild.className = 'gender-custom-testeEvaluator';
-    document.querySelector('.teste-genero').appendChild(auxChild);
-  }
-});
+ 
+const perso = document.querySelector('#p');
+const todos = document.querySelector('.generos');
+perso.addEventListener('click', function () {
+  const novoInput = document.createElement('input');
+  novoInput.type = 'text';
+  novoInput.name = 'gender-custom';
+  novoInput.placeholder = 'Gênero (opcional)';
+  todos.appendChild(novoInput);
