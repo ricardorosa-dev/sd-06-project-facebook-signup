@@ -29,4 +29,4 @@ perso.addEventListener('click', function () {
   novoInput.name = 'gender-custom';
   novoInput.placeholder = 'Gênero (opcional)';
   todos.appendChild(novoInput);
-  });
+});
