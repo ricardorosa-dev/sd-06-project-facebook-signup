@@ -34,3 +34,9 @@
 .right-content {
   width: 300px;
 }
+
+.form-signup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
