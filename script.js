@@ -21,12 +21,13 @@ function createTableInfo() {
   const birthday = document.querySelector('.birthdate').value;
   // recupera o valor do radio button , precisa fazer teste para saber ql esta marcado
   const valido = document.getElementsByName('gender');
+  const gender;
   if (valido[0].checked) {
-      gender = valido[0].value;
+    gender = valido[0].value;
   } else if (valido[1].checked) {
     gender = valido[1].value;
   } else if (valido[2].checked) {
-    gender = document.getElementById('ender-custom-id').value;
+    gender = document.getElementById('gender-custom-id').value;
   }
   // recupera o pai para a gente add a nova rightcontent
   const pai = document.querySelector('.main-content');
@@ -82,7 +83,7 @@ function handleCustomGender() {
 
 function delCustomGender() {
   if (document.getElementById('gender-custom-id')) {
-    document.getElementById('gender-custom-id').remove()
+    document.getElementById('gender-custom-id').remove();
   }
 }
 
