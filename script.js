@@ -29,8 +29,7 @@ function validate(event) {
   const text = validateText();
   const date = validateDate();
   if (!radio || !password || !text || !date) {
-
-    if (document.getElementById('validateDiv').childNodes.length !== 0){
+    if (document.getElementById('validateDiv').childNodes.length !== 0) {
       const oldP = document.getElementsByTagName('p');
       document.getElementById('validateDiv').removeChild(oldP);
     }
@@ -45,7 +44,7 @@ function otherButton() {
   const radio = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
   const divOther = document.getElementById('other-option');
   if (radio[2].checked) {
-    if (divOther.childNodes.length !== 0){
+    if (divOther.childNodes.length !== 0) {
       const oldInput = document.getElementsByTagName('input');
       divOther.removeChild(oldInput);
     }
