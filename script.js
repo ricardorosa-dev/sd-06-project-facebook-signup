@@ -37,9 +37,8 @@ function validate(event) {
 
 function otherButton() {
   const radio = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
-  
   if (radio[2].checked) {
-    let input = document.createElement('input');
+    const input = document.createElement('input');
     input.setAttribute('type', 'text');
     input.setAttribute('name', 'gender-custom');
     input.setAttribute('placeholder', 'Gênero (opcional)');
