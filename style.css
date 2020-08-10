@@ -1,3 +1,23 @@
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  align-items: flex-end;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
 body {
   background: white;
   color: rgb(28, 30, 33);
@@ -12,11 +32,6 @@ body {
 h1 {
   font-size: 36px;
   font-weight: 800;
-}
-
-.top-bar {
-  background-color: rgb(66, 103, 178);
-  display: flex;
 }
 
 .main-background-content {
@@ -60,23 +75,6 @@ h1 {
   font-size: 16px;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group-2 {
-  display: flex;
-  flex-flow: nowrap;
-}
-
-.form-control {
-  display: flex;
-  flex-flow: nowrap;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
 .input-name {
   display: flex;
   width: 140px;
@@ -88,7 +86,6 @@ h1 {
 
 .input-gender {
   text-align: left;
-
 }
 
 .label {

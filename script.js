@@ -1,3 +1,7 @@
+const buttonLogin = document.getElementById('button-login');
+buttonLogin.addEventListener('click', function () {
+  alert('Email ou telefone');
+});
 function generateErrorElement() {
   const errorElement = document.querySelector('.error');
   if (errorElement == null) {
