@@ -1,17 +1,16 @@
 function generateErrorElement() {
-  const  parentElement = document.querySelector('#signUp');
-  const  errorElement = document.createElement('div');
+  const parentElement = document.querySelector('#signUp');
+  const errorElement = document.createElement('div');
   errorElement.classList = 'error';
   errorElement.innerText = 'Campos inválidos';
   parentElement.append(errorElement);
 }
 
-function isEmpty (nodeElement, action,once) {
+function isEmpty(nodeElement, action, once) {
   for (let i = 0; nodeElement.length; i += 1) {
-    if (nodeElement[i].value ==='') {
+    if (nodeElement[i].value === '') {
       action;
-      console.log('done')
-      if (once == true) {
+      if (once === true) {
         break;
       }
     }
@@ -27,8 +26,8 @@ function validateInputs() {
 }
 
 function buttonEvents() {
-  let buttonConclude = document.getElementById('facebook-register');
-  buttonConclude.addEventListener('click', function (e) {
+  const buttonConclude = document.getElementById('facebook-register');
+  buttonConclude.addEventListener('click', function () {
     validateInputs();
   });
 }
