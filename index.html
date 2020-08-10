@@ -37,19 +37,19 @@
         <p class="quick-easy">É rápido e fácil.</p>
         <form id="cadastro">
           <div class="register">
-            <input id="firstname" name="firstname" placeholder="Nome">
-            <input id="lastname" name="lastname" placeholder="Sobrenome">
+            <input required="required" name="firstname" placeholder="Nome">
+            <input required="required" name="lastname" placeholder="Sobrenome">
           </div>
           <div>
-            <input id="phone_email" name="phone_email" placeholder="Celular ou email">
-            <input id="password" type="password" name="password" placeholder="Nova senha">
+            <input required="required" name="phone_email" placeholder="Celular ou email">
+            <input required="required" type="password" name="password" placeholder="Nova senha">
             <div>
               <label id="label-birthdate">Data de nascimento</label>
-              <input id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
+              <input required="required" name="birthdate" placeholder="dd/mm/aaaa">
             </div>
             <label id="label-gender">Gênero</label>
             <div>
-              <input id="feminino" value="feminino" name="gender" type="radio"><label for="feminino">Feminino</label>
+              <input required="required" id="feminino" value="feminino" name="gender" type="radio"><label for="feminino">Feminino</label>
               <input id="masculino" value="masculino" name="gender" type="radio"><label for="masculino">Masculino</label>
               <input id="personalizado" value="personalizado" name="gender" type="radio"><label for="personalizado">Personalizado</label>
             </div>
