@@ -1,5 +1,6 @@
 const buttonLogin = document.querySelector('#button-login');
 const emailValue = document.querySelector('#user-email-phone');
+const button = document.querySelector('#facebook-register');
 
 buttonLogin.addEventListener('click', function () {
   alert(emailValue.value);
