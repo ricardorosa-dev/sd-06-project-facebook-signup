@@ -41,9 +41,9 @@ body {
 }
 
 .right-content {
-  margin-right: 50px;
   display: flex;
   flex-direction: column;
+  margin-right: 50px;
   width: 300px;
 }
 
