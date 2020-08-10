@@ -85,9 +85,40 @@ body {
 
 .right-content {
     width: 300px;
-  
 }
 
 .facebook-logo {
     float: left;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.register-form input {
+    border-radius: 5px;
+    border: 1px solid rgb(189, 199, 216);
+    height: 21px;
+    margin: 2px 0 4px 0;
+    padding: 8px 10px 8px 10px;
+ }
+
+form .form-row label {
+    margin-left: 4px;
+}
+
+.form-name {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-name input{
+    width: 146px;
 }

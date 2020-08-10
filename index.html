@@ -24,9 +24,7 @@
                 </div>
                 <div class="form-control">
                     <button id="button-login" onclick="login()">Entrar</button>
-                    <!-- O botão está posicionado de acordo com o solicitado no README, mas ainda não está centralizado da forma que deveria, tentei arrumar mas sem sucesso
-                    
-                    Falta criar o JS-->
+                    <!--Falta criar o JS-->
                 </div>
             </form>
         </div>
@@ -44,20 +42,28 @@
             <div class="quick-easy">
                 <p>É rápido e fácil.</p>
             </div>
-            <form>
-                <input type="text" name="firstname" placeholder="Nome">
-                <input type="text" name="lastname" placeholder="Sobrenome">
+            <form class="register-form">
+                <div class="form-name">
+                    <input type="text" name="firstname" placeholder="Nome">
+                    <input type="text" name="lastname" placeholder="Sobrenome">
+                </div>
                 <input type="tel email" name="phone_email" placeholder="Celular ou email">
                 <input type="password" name="password" placeholder="Nova senha">
                 <label id="label-birthdate">Data de nascimento</label>
                 <input name="birthdate" placeholder="dd/mm/aaaa">
                 <label id="label-gender">Gênero</label>
-                <input type="radio" name="gender" value="feminino">
-                <label for="feminino">Feminino</label>
-                <input type="radio" name="gender" value="masculino">
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="gender" value="personalizado">
-                <label for="personalizado">Personalizado</label>
+                <div class="form-row">
+                    <input type="radio" name="gender" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+                <div class="form-row">
+                    <input type="radio" name="gender" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div class="form-row">
+                    <input type="radio" name="gender" value="personalizado">
+                    <label for="personalizado">Personalizado</label>
+                </div>
                 <input type="submit" id="facebook-register" value="Cadastre-se">
             </form>
 
