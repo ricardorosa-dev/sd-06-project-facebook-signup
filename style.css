@@ -27,11 +27,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  height: 498px;
   justify-content: center;
 }
 
 .left-content {
   width: 800px;
+}
+
+.left {
+  font-size: 3.5vh;
+  font-weight: 500;
+  margin-top: 6vh;
 }
 
 .right-content {
@@ -47,6 +54,36 @@
   flex-direction: column;
 }
 
-.submit {
-  width: 40%;
+.genders {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login {
+  background-color: rgb(58, 95, 168);
+  border: 1px solid black;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  padding: 2px 5px;
+}
+
+.login:hover {
+  background-color: rgb(66, 103, 178);
+}
+
+.cadastrar {
+  background-color: #69a74e;
+  background-image: linear-gradient(rgb(103, 174, 85), rgb(87, 136, 67));
+  border-color: rgb(59, 110, 34)  rgb(59, 110, 34) rgb(44, 81, 21) rgb(59, 110, 34);
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px #a4e388;
+  color: white;
+  cursor: pointer;
+  font-family: Freight Sans Bold, Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 126%;
+  padding: 7px 30px;
 }
