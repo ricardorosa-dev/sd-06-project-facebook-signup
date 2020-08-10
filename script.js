@@ -3,11 +3,10 @@ buttonLogin.addEventListener('click', function () {
   alert(document.querySelector('#user-email-phone').value);
 });
 
-const fields = [];
-
 const facebookRegister = document.querySelector('#facebook-register');
 facebookRegister.addEventListener('click', function (event) {
   event.preventDefault();
+  const fields = [];
   let success = true;
   let dataUser = 'Olá, ';
   fields.push(document.querySelector('#firstname').value);
