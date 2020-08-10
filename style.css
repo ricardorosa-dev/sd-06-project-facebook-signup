@@ -56,7 +56,6 @@
 
 .genders {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .login {
