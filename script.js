@@ -29,20 +29,31 @@ function validate(event) {
   const text = validateText();
   const date = validateDate();
   if (!radio || !password || !text || !date) {
+
+    if (document.getElementById('validateDiv').childNodes.length !== 0){
+      const oldP = document.getElementsByTagName('p');
+      document.getElementById('validateDiv').removeChild(oldP);
+    }
+
     const p = document.createElement('p');
     p.innerText = 'Campos inválidos';
-    document.getElementById('sign-up').appendChild(p);
+    document.getElementById('validateDiv').appendChild(p);
   }
 }
 
 function otherButton() {
   const radio = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
+  const divOther = document.getElementById('other-option');
   if (radio[2].checked) {
+    if (divOther.childNodes.length !== 0){
+      const oldInput = document.getElementsByTagName('input');
+      divOther.removeChild(oldInput);
+    }
     const input = document.createElement('input');
     input.setAttribute('type', 'text');
     input.setAttribute('name', 'gender-custom');
     input.setAttribute('placeholder', 'Gênero (opcional)');
-    document.getElementById('other-option').appendChild(input);
+    divOther.appendChild(input);
   }
 }
 
