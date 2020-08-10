@@ -23,10 +23,8 @@ facebookRegister.addEventListener('click', function (event) {
     fields.push('');
   }
   const result = document.querySelector('#result');
-  console.log(fields);
   for (let i = 0; i < fields.length; i += 1) {
     if (fields[i] === '') {
-      console.log(fields[i]);
       result.innerHTML = 'Campos inválidos';
     }
   }
