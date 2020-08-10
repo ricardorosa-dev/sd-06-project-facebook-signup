@@ -2,6 +2,11 @@ let error = 0;
 const inputsForm = document.querySelectorAll('.validaForm');
 const messageParagraph = document.createElement('p');
 messageParagraph.innerText = 'Campos inválidos';
+const inputPersonalOptional = document.querySelector('#personal');
+const optionFemaleCheck = document.querySelector('#feminino');
+const optionMaleCheck = document.querySelector('#masculino');
+const optionPersonalCheck = document.querySelector('#personalizado');
+const personalField = document.querySelector('#personal-field');
 
 const emailText = document.querySelector('#user-email-phone');
 const btnLogIn = document.querySelector('#button-login');
@@ -10,10 +15,10 @@ btnLogIn.addEventListener('click', () => {
 });
 
 function testRadioChecked() {
-  if (document.querySelector('#feminino').checked === false &&
-    document.querySelector('#masculino').checked === false &&
-    document.querySelector('#personalizado').checked === false) {
-    document.querySelector('#personal-field').appendChild(messageParagraph);
+  if (optionFemaleCheck.checked === false &&
+    optionMaleCheck.checked === false &&
+    optionPersonalCheck.checked === false) {
+    personalField.appendChild(messageParagraph);
   }
 }
 
@@ -30,12 +35,16 @@ document.querySelector('#facebook-register').addEventListener('click', () => {
   inputValidate();
   testRadioChecked();
   if (error > 0) {
-    document.querySelector('#personal-field').appendChild(messageParagraph);
+    personalField.appendChild(messageParagraph);
   }
 });
 
-function enableInputGenderOption() {
-  const personalChecked = document.querySelector('#personal');
-  personalChecked.setAttribute('type', 'text');
-}
-document.querySelector('#personalizado').addEventListener('change', enableInputGenderOption);
+optionFemaleCheck.addEventListener('click', () => {
+  inputPersonalOptional.style.display = 'none';
+});
+optionMaleCheck.addEventListener('click', () => {
+  inputPersonalOptional.style.display = 'none';
+});
+optionPersonalCheck.addEventListener('click', () => {
+  inputPersonalOptional.style.display = 'block';
+});
