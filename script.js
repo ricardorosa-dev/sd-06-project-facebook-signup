@@ -7,6 +7,35 @@ const customGender = document.querySelector('#personalizado');
 loginButton.addEventListener('click', function () {
   alert(emailTelephoneInput.value);
 });
+//Substituir o conteúdo do container com a classe right-content
+function printData () {
+  const rightContent = document.querySelector('.right-content');
+  const inputTextArray = document.querySelectorAll('.input-text-verification');
+  const p = document.createElement('p');
+  p.innerHTML = 'Olá ' + inputTextArray[0].value + ' ' + inputTextArray[1].value + ', <br>';
+  for (let index = 2; index < inputTextArray.length; index += 1) {
+    if (inputTextArray[index].name !== 'password') {
+      p.innerHTML += inputTextArray[index].value + '<br>'
+    }
+  }
+  if (femaleGender.checked) {
+    p.innerHTML += 'Feminino';
+  } else
+  if (maleGender.checked) {
+    p.innerHTML += 'Masculino';
+  } else {
+    p.innerHTML += 'Personalizado';
+  }
+  removeData ();
+  rightContent.appendChild(p);
+}
+//Remove os dados da classe right-content
+function removeData () {
+  const rightContent = document.querySelector('.right-content');
+  while(rightContent.firstChild) {
+    rightContent.firstChild.remove();
+  }
+}
 
 const facebookRegister = document.querySelector('#facebook-register');
 facebookRegister.addEventListener('click', function () {
@@ -23,6 +52,7 @@ facebookRegister.addEventListener('click', function () {
         break;
       }
     }
+    printData ();
   }
 });
 /*
