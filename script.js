@@ -9,7 +9,6 @@ const genderFemale = document.querySelector('#female');
 const genderMale = document.querySelector('#male');
 const genderOther = document.querySelector('#other');
 const buttonFacebookRegister = document.querySelector('#facebook-register');
-const registerForm = document.querySelector('#register-form');
 const message = document.querySelector('#error-msg');
 
 buttonLogin.addEventListener('click', function () {
