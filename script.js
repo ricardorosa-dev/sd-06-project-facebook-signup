@@ -2,7 +2,7 @@ const buttonLogin = document.getElementById('button-login');
 const buttonSignUp = document.getElementById('facebook-register');
 const emailInput = document.getElementById('user-email-phone');
 const form = document.getElementById('formSignUp');
-const altGender = document.getElementById('other');
+const altGender = document.getElementsByClassName('gender')[0];
 const ids = ['firstname', 'lastname', 'phone_email', 'password', 'birthdate'];
 const invalid = document.createElement('div');
 let isEmpty = 5;
@@ -30,11 +30,12 @@ function checkFields() {
 }
 
 function checkEmpty() {
+  isEmpty = 5;
   checkFields();
   if (isEmpty > 0) {
     invalidFields();
   }
-  if (isEmpty <= 0) {
+  if (isEmpty === 0) {
     buttonSignUp.type = 'submit';
     isEmpty = 5;
     if (wasEmpty === 1) {
@@ -61,5 +62,9 @@ altGender.addEventListener('change', function () {
     elementInput.name = 'gender-custom';
     elementInput.placeholder = 'Gênero (opcional)';
     genderOptions.appendChild(elementInput);
+    elementInput.classList.add('alt-gender');
+  } else {
+    const temp = document.getElementsByClassName('alt-gender');
+    altGender.removeChild(temp[0]);
   }
 });
