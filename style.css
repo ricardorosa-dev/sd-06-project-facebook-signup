@@ -7,7 +7,7 @@
 
 .facebook-login {
   align-items: flex-end;
-  display: flex;  
+  display: flex;
 }
 
 .form-group {
@@ -92,6 +92,7 @@ h1 {
 .label {
   display: block;
 }
+
 .gender-control {
   display: flex;
   width: 100%;
