@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Facebook - Log In or Sign Up</title>
+  <title>Facebook - entre ou cadastre-se</title>
   <link rel="shortcut icon" type="image/x-icon" href="/imgs/fbicon.png" />
 </head>
 <body>
@@ -36,21 +36,23 @@
       <h3 class="quick-easy">É rápido e fácil.</h3>
       <form action="" class="sign-in-form">
         <div>
-          <input type="text" name="firstname" id="" placeholder="Nome" class="first-name" size="21">
-          <input type="text" name="lastname" id="" placeholder="Sobrenome" class="last-name" size="21">
+          <input type="text" name="firstname" placeholder="Nome" class="first-name" size="21" required
+            oninvalid="this.setCustomValidity('Poe o nome aqui Anta!')"
+            oninput="this.setCustomValidity('')">
+          <input type="text" name="lastname" placeholder="Sobrenome" class="last-name" size="21" required>
         </div>
-        <input type="text" name="phone_email" id="" placeholder="Celular ou email" class="email" size="49">
-        <input type="password" name="password" id="" placeholder="Nova senha" class="new-password" size="49">
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="email" size="49" required>
+        <input type="password" name="password" placeholder="Nova senha" class="new-password" size="49"required>
         <label id="label-birthdate" class="lb-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" id="" placeholder="dd/mm/aaaa" class="input-birthdate" size="21">
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="input-birthdate" size="21" required>
         <div class="gender-container">
           <label for="" id="label-gender" class="lb-gender">Gênero</label>
           <div>
-            <input type="radio" name="gender" id="female" value="Feminino">
+            <input type="radio" name="gender" id="female" value="Feminino" required>
             <label for="female" id="">Feminino</label>
-            <input type="radio" name="gender" id="male" value="Masculino">
+            <input type="radio" name="gender" id="male" value="Masculino" required>
             <label for="male" id="">Masculino</label>
-            <input type="radio" name="gender" id="custom" value="Personalizado">
+            <input type="radio" name="gender" id="custom" value="Personalizado" required>
             <label for="custom" id="">Personalizado</label>
           </div>
         </div>
