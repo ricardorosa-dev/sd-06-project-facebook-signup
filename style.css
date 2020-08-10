@@ -220,19 +220,8 @@ body {
 
 @media screen and ( max-width : 568px ) {
 
-  .fc-wrap {
-    background-color: rgb(53, 70, 146);
-    text-align: center;
-    width: 100%;
-  }
-
-  .top-bar {
-    align-items: center;
-    background: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
+  .control {
+    width: 70%;
   }
 
   .facebook-login {
@@ -244,15 +233,32 @@ body {
     width: 100%;
   }
 
+  .fc-wrap {
+    background-color: rgb(53, 70, 146);
+    text-align: center;
+    width: 100%;
+  }
+
+  .form-control {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .form-control button {
+    background-color: #0c6fe0;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+  }
+
   .form-group {
     flex-wrap: wrap;
     margin: 0 2%;
     padding: 0;
     width: 70%;
-  }
-
-  .form-group label {
-    display: none;
   }
 
   .form-group:first-of-type {
@@ -272,27 +278,19 @@ body {
     color: rgb(77, 77, 77);
   }
 
-  .form-control {
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    margin-top: 15px;
-    width: 100%;
-  }
-
-  .control {
-    width: 70%;
-  }
-
-  .form-control button {
-    background-color: #0c6fe0;
-    border-radius: 3px;
-    border: none;
-    width: 100%;
+  .form-group label {
+    display: none;
   }
 
   .form-group span {
     display: none;
+  }
+
+  .line {
+    background-color: #ccc;
+    display: block;
+    height: 1px;
+    width: 70%;
   }
 
   .main-content {
@@ -305,21 +303,6 @@ body {
     flex-direction: column;
     margin-top: 20px;
     width: 100%;
-  }
-
-  .line {
-    background-color: #ccc;
-    display: block;
-    height: 1px;
-    width: 70%;
-  }
-
-  .ou-nova span {
-    background-color: white;
-    padding: 0 20px;
-    position: relative;
-    top: -10px;
-    z-index: 99;
   }
 
   .ou-nova button {
@@ -335,6 +318,23 @@ body {
   .ou-nova p {
     color: #668bcc;
     font-weight: 800;
+  }
+
+  .ou-nova span {
+    background-color: white;
+    padding: 0 20px;
+    position: relative;
+    top: -10px;
+    z-index: 99;
+  }
+
+  .top-bar {
+    align-items: center;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
   }
 
   .warning {
