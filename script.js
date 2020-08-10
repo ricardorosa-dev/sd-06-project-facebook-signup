@@ -22,13 +22,11 @@ function printData() {
   p.innerHTML += inputTextArray[0].value;
   p.innerHTML += ' ';
   p.innerHTML += inputTextArray[1].value;
-  p.innerHTML += ', <br>';
-  for (let index = 2; index < inputTextArray.length; index += 1) {
-    if (inputTextArray[index].name !== 'password') {
-      p.innerHTML += inputTextArray[index].value;
-      p.innerHTML += '<br>';
-    }
-  }
+  p.innerHTML += '<br>';
+  p.innerHTML += inputTextArray[2].value;
+  p.innerHTML += '<br>';
+  p.innerHTML += inputTextArray[4].value;
+  p.innerHTML += '<br>';
   if (femaleGender.checked) {
     p.innerHTML += 'Feminino';
   } else
