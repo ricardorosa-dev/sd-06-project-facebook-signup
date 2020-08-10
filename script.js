@@ -26,6 +26,7 @@ document.querySelector('#facebook-register').addEventListener('click', () => {
   const lastName = document.querySelector('#last-name').value;
   const userEmail = document.querySelector('#user-email').value;
   const userBirth = document.querySelector('#user-birthdate').value.split('-').reverse().join('-');
+
   let gender = document.querySelector('input:checked').value;
   const showInfo = document.querySelector('.right-content');
   gender = checkGender(gender);
