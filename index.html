@@ -8,22 +8,24 @@
   <title>Facebook | Login</title>
 </head>
 <body>
-  <div class='top-bar'>
-    <img src='imgs/facebook-logo.png' class='facebook-logo'>
-    <form class='facebook-login'>
-      <div class='form-group'>
-        <label id='user-email-phone-label'>Email ou telefone</label>
-        <input id='user-email-phone' type='text' name='emailOrPhone'>
-      </div>
-      <div class='form-group'>
-        <label id='user-password-label'>Senha</label>
-        <input id='user-password'type='password' name='password'>
-      </div>
-      <div class='form-control'>
-        <button id='button-login' class='button is-small is-link is-light' type='button'>Entrar</button>
-      </div>
-    </form>
-  </div>
+  <header>
+    <div class='top-bar'>
+      <img src='imgs/facebook-logo.png' class='facebook-logo'>
+      <form class='facebook-login'>
+        <div class='form-group'>
+          <label id='user-email-phone-label'>Email ou telefone</label>
+          <input id='user-email-phone' type='text' name='emailOrPhone'>
+        </div>
+        <div class='form-group'>
+          <label id='user-password-label'>Senha</label>
+          <input id='user-password'type='password' name='password'>
+        </div>
+        <div class='form-control'>
+          <button id='button-login' class='button is-small is-link is-light' type='button'>Entrar</button>
+        </div>
+      </form>
+    </div>
+  </header>
   <div class='main-content'>
     <div class='left-content'>
       <p class='left-paragraph' id='facebook-slogan'>
@@ -35,10 +37,14 @@
       <h1 class='title'>Abra uma conta</h1>
       <span class='quick-easy subtitle'>É rápido e fácil.</span>
       <form>
-        <input type='text' name='firstname' placeholder="Nome">
+        <div class='names'>
+          <input type='text' name='firstname' placeholder="Nome">
+          <input type='text' name='lastname' placeholder="Sobrenome">
+        </div>
       </form>
     </div>
   </div>
+
   </div>
   <script src='/script.js'></script>
 </body>
