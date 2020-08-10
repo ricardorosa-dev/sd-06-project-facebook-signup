@@ -1,20 +1,28 @@
-let error = 0;
-const inputsForm = document.querySelectorAll('.validaForm');
-const messageParagraph = document.createElement('p');
-messageParagraph.innerText = 'Campos inválidos';
 const inputPersonalOptional = document.createElement('input');
 inputPersonalOptional.type = 'text';
 inputPersonalOptional.name = 'gender-custom';
 inputPersonalOptional.placeholder = 'Gênero (opcional)';
+
 const optionFemaleCheck = document.querySelector('#feminino');
 const optionMaleCheck = document.querySelector('#masculino');
 const optionPersonalCheck = document.querySelector('#personalizado');
 const personalField = document.querySelector('#personal-field');
+personalField.style.display = 'none';
+personalField.appendChild(inputPersonalOptional);
+
+
+let error = 0;
+const inputsForm = document.querySelectorAll('.validaForm');
+const messageParagraph = document.createElement('p');
+messageParagraph.innerText = 'Campos inválidos';
+
 
 function handleGenderOptions(event) {
   const optionChecked = event.target;
   if (optionChecked.value === 'Personalizado') {
-    personalField.appendChild(inputPersonalOptional);
+    personalField.style.display = 'block';
+  } else {
+    personalField.style.display = 'none';
   }
 }
 
