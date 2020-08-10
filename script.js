@@ -27,7 +27,7 @@ function getInputs() {
   for (let i = 2; i < arrayAux.length; i += 1) {
     if (arrayAux[i].type !== 'radio') {
       inputs.push(arrayAux[i]);
-    } else if (arrayAux[i] === 'radio' && arrayAux[i].checked) {
+    } else if (arrayAux[i].type === 'radio' && arrayAux[i].checked) {
       inputs.push(arrayAux[i]);
     }
   }
@@ -35,11 +35,23 @@ function getInputs() {
 }
 
 function checkValues(inputs) {
+  let bool = true;
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       document.querySelector('.input-error').innerHTML = 'Campos inválidos';
+      bool = false;
     }
   }
+  return bool;
+}
+
+function changeRightContent(teste) {
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
+  rightContent.innerText = `Ola ${teste[0].value} ${teste[1].value}
+  Telefone ou email: ${teste[2].value}
+  Data de nascimento: ${teste[4].value}
+  Genero: ${teste[5].value}`;
 }
 
 document.querySelector('#Feminino').addEventListener('click', removeCustom);
@@ -49,5 +61,7 @@ const submitButton = document.querySelector('#facebook-register');
 submitButton.addEventListener('click', function (event) {
   event.preventDefault();
   const teste = getInputs();
-  checkValues(teste);
+  if (checkValues(teste)) {
+    changeRightContent(teste);
+  }
 });
