@@ -32,7 +32,7 @@ function checkContent() {
 function isAnyFieldEmpty() {
   if (checkContent()) {
     errorSpan.innerText = 'Campos inválidos';
-    data.forEach(element => {
+    data.forEach((element) => {
       element.addEventListener('click', () => {
         errorSpan.innerText = '';
         isEmpty = 0;
