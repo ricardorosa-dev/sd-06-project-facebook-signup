@@ -1,10 +1,10 @@
 const buttonLogin = document.querySelector('#button-login');
 const buttonRegister = document.querySelector('.facebook-register');
-const firstNameField = document.getElementsByName('.firstname')[0];
-const lastNameField = document.getElementsByName('.lastname')[0];
-const phoneEmailField = document.getElementsByName('.phone_email')[0];
-const passwordField = document.getElementsByName('.password')[0];
-const birthdateField = document.getElementsByName('.birthdate')[0];
+const firstNameField = document.getElementsByName('firstname')[0];
+const lastNameField = document.getElementsByName('lastname')[0];
+const phoneEmailField = document.getElementsByName('phone_email')[0];
+const passwordField = document.getElementsByName('password')[0];
+const birthdateField = document.getElementsByName('birthdate')[0];
 const genderField = document.getElementsByName('gender');
 
 
@@ -16,15 +16,23 @@ function formMessage() {
   document.querySelector('.formMessage').style.display = 'flex';
 }
 
+function formMessageCleaner() {
+  document.querySelector('.formMessage').style.display = 'none';
+}
+
 function checkFirstNameField() {
   if (firstNameField.value.length < 3) {
     formMessage();
+  } else {
+    formMessageCleaner();
   }
 }
 
 function checkLastNameField() {
   if (lastNameField.value.length < 3) {
     formMessage();
+  } else {
+    formMessageCleaner();
   }
 }
 
@@ -35,25 +43,47 @@ function checkPhoneEmailField() {
 
   if (regexEmail.test(phoneEmailField.value) === regexPhone.test(phoneEmailField.value)) {
     formMessage();
+  } else {
+    formMessageCleaner();
   }
 }
 
 function checkPasswordField() {
   if (passwordField.value.length < 8) {
     formMessage();
+  } else {
+    formMessageCleaner();
+  }
+}
+
+function checkDay() {
+  if (birthdateField.value.substr(0, 2) <= 0 || birthdateField.value.substr(0, 2) > 31) {
+    formMessage();
+  } else {
+    formMessageCleaner();
+  }
+}
+
+function checkMonth() {
+  if (birthdateField.value.substr(3, 2) <= 0 || birthdateField.value.substr(3, 2) > 12) {
+    formMessage();
+  } else {
+    formMessageCleaner();
+  }
+}
+
+function checkYear() {
+  if (birthdateField.value.substr(6, 4) <= 0 || birthdateField.value.substr(6, 4) > 2020) {
+    formMessage();
+  } else {
+    formMessageCleaner();
   }
 }
 
 function checkBirthdateField() {
-  if (birthdateField.value.substr(0, 2) <= 0 || birthdateField.value.substr(0, 2) > 31) {
-    formMessage();
-  } else
-  if (birthdateField.value.substr(3, 2) <= 0 || birthdateField.value.substr(3, 2) > 12) {
-    formMessage();
-  } else
-  if (birthdateField.value.substr(6, 4) <= 0 || birthdateField.value.substr(6, 4) > 2020) {
-    formMessage();
-  }
+  checkDay();
+  checkMonth();
+  checkYear();
 }
 
 function showGenderCustomInput() {
@@ -66,11 +96,16 @@ function showGenderCustomInput() {
 }
 
 function checkGenderField() {
+  let flagMessage = false;
   for (let index = 0; index < genderField.length; index += 1) {
-    if (
-      genderField[index].checked === false) {
-      formMessage();
+    if (genderField[index].checked !== flagMessage) {
+      flagMessage = true;
     }
+  }
+  if (flagMessage === true) {
+    formMessageCleaner();
+  } else {
+    formMessage();
   }
 }
 
@@ -83,8 +118,16 @@ function validateFormFields() {
   checkGenderField();
 }
 
+function stopSubmitAction(evt) {
+  validateFormFields();
+  evt.preventDefault();
+  /* if (generateReport === true) {
+     createReport();
+   }*/
+}
+
 buttonLogin.addEventListener('click', buttonLoginAlert);
-buttonRegister.addEventListener('click', validateFormFields);
+buttonRegister.addEventListener('click', stopSubmitAction);
 
 genderField[0].addEventListener('change', showGenderCustomInput);
 genderField[1].addEventListener('change', showGenderCustomInput);
