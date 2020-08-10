@@ -30,7 +30,7 @@ function checkAllInputs(inputs) {
   }
   return true;
 }
-function getTheGender(){
+function getTheGender() {
   for (let j = 0; j < radioSelection.length; j += 1) {
     if (radioSelection[j].checked) {
       return j;
@@ -56,8 +56,8 @@ function checkAllConditions() {
   if (genderFather.style.display !== 'none' && genderSelection.value !== '0' && checkAllInputs(getAllInputs)) {
     return true;
   }
-  if (genderFather.style.display === 'none' && checkAllInputs(getAllInputs) ) {
-    for (let x=0; x<radioSelection.length; x+=1 ) {
+  if (genderFather.style.display === 'none' && checkAllInputs(getAllInputs)) {
+    for (let x = 0; x < radioSelection.length ;x += 1) {
       if (radioSelection[x].checked) {
         return true;
       }
