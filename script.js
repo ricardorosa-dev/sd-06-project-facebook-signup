@@ -25,12 +25,16 @@ function removeErrorElement() {
   }
 }
 
+function isFilled(inputs,e) {
+  if (inputs.value !== '' && inputs === e.currentTarget) {
+    inputs.setAttribute('filled','true');
+  }
+}
+
 function isFilledInputs(e, inputs) {
   for (let i = 0; i < inputs.length; i += 1) {
-    if (inputs[i].value !== '' && inputs[i] === e.currentTarget) {
-      inputs[i].setAttribute('filled','true');
-    }
-    else if (inputs[i].value === '' && inputs[i] === e.currentTarget) {
+    isFilled(inputs[i],e);
+    if (inputs[i].value === '' && inputs[i] === e.currentTarget) {
       inputs[i].setAttribute('filled','false');
     }
   }
@@ -108,7 +112,6 @@ function buttonEvents() {
     alert('Email ou telefone');
   });
 }
-
 
 function inputEvents() {
   const inputs = document.querySelectorAll('main input');
