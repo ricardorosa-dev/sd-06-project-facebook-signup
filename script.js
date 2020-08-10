@@ -11,9 +11,14 @@ const optionMaleCheck = document.querySelector('#masculino');
 const optionPersonalCheck = document.querySelector('#personalizado');
 const personalField = document.querySelector('#personal-field');
 
-optionPersonalCheck.addEventListener('click', () => {
-  personalField.appendChild(inputPersonalOptional);
-});
+function handleGenderOptions(event) {
+  const optionChecked = event.target;
+  if (optionChecked.value === 'Personalizado') {
+    personalField.appendChild(inputPersonalOptional);
+  }
+}
+
+document.querySelector('.genderDiv').addEventListener('click', handleGenderOptions);
 
 const emailText = document.querySelector('#user-email-phone');
 const btnLogIn = document.querySelector('#button-login');
