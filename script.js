@@ -6,7 +6,6 @@ function generateErrorElement() {
   parentElement.append(errorElement);
 }
 
-
 function validateInputs() {
   const inputs = document.querySelectorAll('main input');
   const errorElements = document.querySelectorAll('.error');
