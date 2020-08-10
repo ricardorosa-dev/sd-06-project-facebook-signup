@@ -15,8 +15,8 @@ function setNewErrorMsg(formField) {
 function checkGender(gender) {
   if (gender === 'Personalizado') {
     gender = document.querySelector('#gender-custom-input').value;
-    return gender;
-  } return;
+  }
+  return gender;
 }
 
 document.querySelector('#facebook-register').addEventListener('click', () => {
