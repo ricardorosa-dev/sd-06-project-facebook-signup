@@ -74,8 +74,8 @@ const functionalities = {
     /* const newContent = document.createElement('p');
     newContent.innerHTML = newContentString; */
     const rightContent = document.querySelector('.right-content');
-    
-    /* rightContent.appendChild(newContent); */
+
+    // rightContent.appendChild(newContent);
     rightContent.innerHTML = newContentString;
   },
 };
