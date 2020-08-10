@@ -23,7 +23,7 @@ buttonLogin.addEventListener('click', function () {
   alert(inputEmailPhone.value);
 });
 function checkAllInputs(inputs) {
-  for (let i = 2 ; i < inputs.length - 1 ; i += 1) {
+  for (let i = 2; i < inputs.length - 1 ;i += 1) {
     if (inputs[i].value === '') {
       return false;
     }
@@ -31,11 +31,12 @@ function checkAllInputs(inputs) {
   return true;
 }
 function getTheGender(){
-  for (let j=0; j<radioSelection.length; j+=1) {
+  for (let j = 0; j < radioSelection.length; j += 1) {
     if (radioSelection[j].checked) {
       return j;
     }
   }
+  return true;
 }
 function getDivInformations(inputs) {
   while (rightContent.firstChild) {
@@ -47,7 +48,7 @@ function getDivInformations(inputs) {
   const birthDate = inputs[6].value;
   const genderChoice = inputs[getTheGender() + 7].value;
   const createNewParagraph = document.createElement('p');
-  const textMessage = `Olá, ${name}  ${lastname} ,seu cadastro foi feito em: ${emailOrPhone} ,nasceu na data: ${birthDate} .Possui o gênero ${genderChoice}.`
+  const textMessage = `Olá, ${name}  ${lastname} ,seu cadastro foi feito em: ${emailOrPhone} ,nasceu na data: ${birthDate} .Possui o gênero ${genderChoice}.`;
   createNewParagraph.innerText = textMessage;
   rightContent.appendChild(createNewParagraph);
 }
