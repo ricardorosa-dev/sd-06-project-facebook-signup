@@ -23,7 +23,7 @@ buttonLogin.addEventListener('click', function () {
   alert(inputEmailPhone.value);
 });
 function checkAllInputs(inputs) {
-  for (let i = 2; i < inputs.length - 1; i += 1) {
+  for (let i = 2; i < inputs.length - 4; i += 1) {
     if (inputs[i].value === '') {
       return false;
     }
@@ -53,7 +53,7 @@ function getDivInformations(inputs) {
   rightContent.appendChild(createNewParagraph);
 }
 function checkFirstCondition() {
-  for (let x = 0; x < radioSelection.length; x += 1) {
+  for (let x = 0; x < radioSelection.length - 1; x += 1) {
     if (radioSelection[x].checked) {
       return true;
     }
@@ -61,19 +61,13 @@ function checkFirstCondition() {
   return false;
 }
 function checkSecondCondition() {
-  if (genderFather.style.display !== 'none' && genderSelection.value !== '0' && checkAllInputs(getAllInputs)) {
+  if (genderFather.style.display !== 'none' && genderSelection.value !== '0') {
     return true;
   }
   return false;
 }
-function checkThirdCondition() {
-  if (genderFather.style.display === 'none' && checkAllInputs(getAllInputs)) {
-    checkFirstCondition();
-  }
-  return false;
-}
 function checkAllConditions() {
-  return checkFirstCondition() && checkSecondCondition() && checkThirdCondition();
+  return (checkFirstCondition() || checkSecondCondition()) && checkAllInputs(getAllInputs);
 }
 buttonRegister.addEventListener('click', function (event) {
   event.preventDefault();
