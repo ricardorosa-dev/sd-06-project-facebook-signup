@@ -33,11 +33,11 @@ h1 {
 }
 
 .left-content {
-  width: 800px;
+  min-width: 800px;
 }
 
 .right-content {
-  width: 300px;
+  min-width: 300px;
 }
 
 .left-title {
