@@ -12,3 +12,12 @@ document.querySelector('#facebook-register').addEventListener('click', () => {
   event.preventDefault();
   formFields.forEach(setNewErrorMsg);
 });
+
+document.querySelector('#custom-gender').addEventListener('click', () => {
+  let customGenderInput = document.createElement('input');
+  customGenderInput.id = 'custom-gender-input';
+  customGenderInput.setAttribute('type', 'text');
+  customGenderInput.setAttribute('placeholder', 'Gênero (opcional)');
+  console.log(customGenderInput)
+  document.querySelector('#custom-gender-span').appendChild(customGenderInput);
+});
