@@ -22,7 +22,7 @@ function validateInputs() {
   const inputs = document.querySelectorAll('main input');
   const errorElements = document.querySelectorAll('.error');
   if (errorElements.length === 0) {
-    isEmpty(inputs,generateErrorElement(),true);
+    isEmpty(inputs, generateErrorElement(), true);
   }
 }
 
