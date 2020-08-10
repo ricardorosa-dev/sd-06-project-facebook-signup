@@ -48,11 +48,29 @@ body {
   padding: 4px;
 }
 
+.main-form button {
+  background: linear-gradient(#67ae55, #578843);
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  border-radius: 3px;
+  box-shadow: rgb(164, 227, 136) 0 1px;
+  color: white;
+  font-weight: 700;
+}
+
 .form-control button:hover {
   background-color: #2c4f96;
   border: 1px solid #29487d;
   color: white;
   padding: 4px;
+}
+
+.main-form button:hover {
+  background: linear-gradient(#578843, #67ae55);
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  border-radius: 3px;
+  box-shadow: rgb(164, 227, 136) 0 1px;
+  color: white;
+  font-weight: 700;
 }
 
 .form-control {
@@ -190,24 +208,6 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-align: left;
-}
-
-/* .main-form button {
-  background: linear-gradient(#67ae55, #578843);
-  border-color: #3b6e22 #3b6e22 #2c5115;
-  border-radius: 3px;
-  box-shadow: rgb(164, 227, 136) 0 1px;
-  color: white;
-  font-weight: 700;
-} */
-
-.main-form button:hover {
-  background: linear-gradient(#578843, #67ae55);
-  border-color: #3b6e22 #3b6e22 #2c5115;
-  border-radius: 3px;
-  box-shadow: rgb(164, 227, 136) 0 1px;
-  color: white;
-  font-weight: 700;
 }
 
 .form-group input::placeholder {
