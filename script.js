@@ -1,16 +1,22 @@
 document.getElementById('button-login').addEventListener('click', () => alert(document.getElementById('user-email-phone').value));
-
+const formFields = document.querySelectorAll('.form-input');
+let fullForm = true;
 function setNewErrorMsg(formField) {
   if (formField.value === '') {
     document.querySelector('#error-field').innerHTML = 'Campos inválidos';
+    fullForm = false;
   }
 }
 
-const formFields = document.querySelectorAll('.form-input');
-
 document.querySelector('#facebook-register').addEventListener('click', () => {
-  event.preventDefault();
-  formFields.forEach(setNewErrorMsg);
+  if(fullForm) {
+    event.preventDefault();
+    formFields.forEach(setNewErrorMsg);
+  } else {
+    const firstName = document.querySelector('#first-name').value;
+    const lastName = document.querySelector('#last-name').value;
+    document.querySelector('.right-content').innerHTML = `Olá ${firstName} ${lastName}`
+  }
 });
 
 document.querySelector('#gender-custom').addEventListener('click', () => {
