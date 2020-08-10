@@ -3,8 +3,6 @@ const formFields = document.querySelectorAll('.form-input');
 
 const errorField = document.querySelector('#error-field');
 
-let gender = 'custom';
-
 function setNewErrorMsg(formField) {
   if (formField.value === '') {
     errorField.innerHTML = 'Campos inválidos';
@@ -24,6 +22,7 @@ function checkGender(gender) {
 document.querySelector('#facebook-register').addEventListener('click', () => {
   event.preventDefault();
   formFields.forEach(setNewErrorMsg);
+  let gender = 'custom';
   const firstName = document.querySelector('#first-name').value;
   const lastName = document.querySelector('#last-name').value;
   const userEmail = document.querySelector('#user-email').value;
