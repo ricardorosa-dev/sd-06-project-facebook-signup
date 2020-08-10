@@ -10,6 +10,7 @@ const genderMale = document.querySelector('#male');
 const genderOther = document.querySelector('#other');
 const buttonFacebookRegister = document.querySelector('#facebook-register');
 const registerForm = document.querySelector('#register-form');
+const message = document.querySelector('#error-msg');
 
 buttonLogin.addEventListener('click', function () {
   alert(userLogin.value);
@@ -43,11 +44,7 @@ function validateData() {
   const totalError = verifyData() + verifyGender();
 
   if (totalError > 0) {
-    const message = document.createElement('p');
-    message.id = 'error-msg';
-    message.className = 'error-msg';
-    message.appendChild(document.createTextNode('Campos inválidos'));
-    registerForm.appendChild(message);
+    message.innerText = 'Campos inválidos';
   }
 }
 
