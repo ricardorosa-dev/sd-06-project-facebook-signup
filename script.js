@@ -51,11 +51,24 @@ function inputValidate() {
   }
 }
 
+// Estrutura para substituir o right content
+function replaceRightContent(){
+  const fisrtName = document.querySelector('#firstName').value;
+  const lastName = document.querySelector('#lastName').value;
+  const telefoneEmail = document.querySelector('#telefoneEmail').value;
+  const dataNascimento = document.querySelector('#dataNascimento').value;
+  
+  let resultado = '';
+  resultado = "Olá "+fisrtName+" "+lastName+" "+telefoneEmail+" "+dataNascimento;
+  document.querySelector('.right-content').replaceWith(resultado);
+};
+
 // Estrutura validação radio check e inputs
 document.querySelector('#facebook-register').addEventListener('click', () => {
   event.preventDefault();
   inputValidate();
   testRadioChecked();
+  replaceRightContent();
   if (error > 0) {
     personalField.appendChild(messageParagraph);
   }
