@@ -1,4 +1,4 @@
-body, main, footer {
+body,main,footer {
   margin: 0;
   padding: 0;
 }
@@ -14,10 +14,10 @@ body, main, footer {
 }
 
 .facebook-login {
-    align-items: center;
-    display: flex;
-    float: right;
-    height: 82px;
+  align-items: center;
+  display: flex;
+  float: right;
+  height: 82px;
 }
 
 .facebook-logo {
@@ -72,8 +72,8 @@ body, main, footer {
 
 .right-content {
   background-color: aquamarine;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 300px;
 }
@@ -88,5 +88,5 @@ body, main, footer {
   display: flex;
   height: 82px;
   justify-content: center;
-  width: 100wh;
+  width: 100vw;
 }
