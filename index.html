@@ -3,88 +3,87 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Facebook</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Login Facebook</title>
   </head>
 
   <body>
-    <header>
-      <div class="top-bar">
-        <div class="img-container">
-          <img class="facebook-logo" src="imgs/facebook-logo.png">
-        </div>
-        <div class="form-container">
-          <form action="" class="facebook-login">
-            <div class="form-group form-element1">
-              <label>Email ou Telefone:</label>
-              <input type="email" name="email" id="user-email-phone">
-            </div>
-            <div class="space"></div>
-            <div class="form-group form-element form-element2">
-              <label>Senha:</label>
-              <input type="password" name="password" placeholder="Senha" id="user-password">
-            </div>
-            <div class="space"></div>
-            <div class="form-control form-element3">
-              <button class="button-login" id="button-login">Entrar</button>
-            </div>
-          </form>
-        </div>
+    <header id="flex-container" class="top-bar">
+      <div class="logo-container">
+        <img src="imgs/facebook-logo.png" class="facebook-logo">
       </div>
-      <div class="main-content">
-        <div class="left-content">
-          <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as
-            pessoas que fazem parte da sua vida.</p>
-          <img id="facebook-networking" src="imgs/networking.png">
+
+      <form action="#" class="facebook-login">
+        <div class="form-group">
+          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+          <input id="user-email-phone" type="text" required>
         </div>
-        <div class="right-content">
-          <h1 class="count">Abra uma conta</h1>
-          <p class="quick-easy">É rápido e fácil</p>
-          <form id="form">
-            <div class="full-name">
-              <div class="inputName">
-                <input type="text" name="firstname" value="" class="name" id="name" placeholder="Nome">
-              </div>
-              <div class="spaceName"></div>
-              <div class="inputLastName">
-                <input type="text" name="lastname" value="" class="lastname" id="lastname" placeholder="Sobrenome">
-              </div>
-            </div>
-            <div class="email">
-              <input type="email" name="phone_email" value="" id="email-phone" class="email-phone"
-                placeholder="Celular ou email">
-            </div>
-            <div class="password">
-              <input name="password" type="password" value="" id="password" class="senha" placeholder="Nova senha">
-            </div>
-            <div class="birthday">
-              <label class="label-birthdate" id="label-birthdate">Data de Nascimento</label>
-              <input name="birthdate" type="date" placeholder="dd/mm/aaaa" value="" class="birth" id="birth">
-            </div>
-            <div class="Gender">
-              <label class="label-gender" id="label-gender">Gênero</label><br>
-              <div class="gender">
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male" class="masculino" id="masculino">Masculino</label>
-                <div class="spaceName1"></div>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female" class="feminino" id="feminino">Feminino</label>
-                <div class="spaceName1"></div>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other" class="personalizado" id="personalizado">Personalizado</label>
-              </div>
-            </div>
-            <div class="buttonForm">
-              <button class="facebook-register" id="facebook-register" type="submit">Cadastre-se</button>
-            </div>
-            <p id="log"></p>
-          </form>
+
+        <div class="form-group">
+          <label for="user-password-label" id="user-password-label">Senha</label>
+          <input id="user-password" type="password" required>
         </div>
-      </div>
+
+        <div class="form-control">
+          <button id="button-login">Entrar</button>
+        </div>
+      </form>
     </header>
+
+    <div class="main-content">
+      <div class="left-content">
+        <div class="slogan-container">
+          <p id="facebook-slogan">
+            O Facebook ajuda você a se conectar e compartilhar com as pessoas
+            que fazem parte da sua vida.
+          </p>
+          <img id="facebook-networking" src="imgs/networking.png" alt="Facebook networking">
+        </div>
+      </div>
+
+      <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <span class="quick-easy">É rápido e fácil.</span>
+        <form action="#" id="register-form">
+          <div class="name-surname-container">
+            <input class="name" name="firstname" placeholder="Nome" type="text" required>
+            <input class="surname" name="lastname" placeholder="Sobrenome" type="text" required>
+          </div>
+
+          <div class="phone_email-container">
+            <input class="phone_email" name="phone_email" placeholder="Celular ou email" type="text" required>
+          </div>
+
+          <div class="password-container">
+            <input class="password" name="password" placeholder="Nova senha" type="password" required>
+          </div>
+
+          <div class="birthdate-container">
+            <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+            <input class="birthdate" name="birthdate" placeholder="dd/mm/aaaa" type="date" required>
+          </div>
+
+          <div class="gender-container">
+            <label class="label-gender" id="label-gender">Gênero</label>
+            <div class="gender-options">
+              <input id="gender-fem" name="gender" value="Feminino" type="radio" required>
+              <label for="gender-fem">Feminino</label>
+              <input id="gender-masc" name="gender" value="Masculino" type="radio" required>
+              <label for="gender-masc">Masculino</label>
+              <input id="gender-pers" name="gender" value="Personalizado" type="radio" required>
+              <label for="gender-pers">Personalizado</label>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button id="facebook-register" type="submit">Cadastre-se</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 
 </html>
