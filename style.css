@@ -4,24 +4,24 @@
 }
 
 .facebook-login {
-    font-size: 12px;
-    margin-right: 0;
     display: flex;
     flex-direction: row;
     float: right;
+    font-size: 12px;
+    margin-right: 0;
 }
 
 body {
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
 }
 
 .login-text {
     color: white;
     margin-bottom: 6px;
-    text-align: left;
     padding-left: 14px;
+    text-align: left;
 }
 
 .page-content {
@@ -33,11 +33,11 @@ body {
 
 .textbox {
     /* Classe criada para estilizar as caixas de input do login */
+    border: solid 1px rgb(29, 42, 91);
     height: 14px;
+    margin-left: 14px;
     max-width: 142px;
     padding: 3px 3px 4px 3px;
-    border: solid 1px rgb(29, 42, 91);
-    margin-left: 14px;
 }
 
 .form-group {
@@ -53,13 +53,13 @@ body {
     background-color: rgb(66, 103, 178);
     border: 1px solid rgb(41, 72, 125);
     border-radius: 2px;
-    font-weight: 700;
-    padding: 2px 6px 2px 6px;
     color: white;
     font-size: 12px;
-    text-align: center;
+    font-weight: 700;
     line-height: 18px;
     margin-left: 14px;
+    padding: 2px 6px 2px 6px;
+    text-align: center;
 }
 
 .main-content {
@@ -78,9 +78,9 @@ body {
     color: rgb(14, 56, 95);
     font-size: 20px;
     font-weight: 700;
+    margin-top: 40px;
     line-height: 29px;
     width: 450px;
-    margin-top: 40px;
 }
 
 .right-content {
@@ -102,22 +102,23 @@ body {
 }
 
 .register-form input {
-    border-radius: 5px;
     border: 1px solid rgb(189, 199, 216);
+    border-radius: 5px;
     height: 21px;
     margin: 2px 0 4px 0;
     padding: 8px 10px 8px 10px;
- }
+}
 
 form .form-row label {
     margin-left: 4px;
 }
 
 .form-name {
-    width: 300px;
     display: flex;
     flex-direction: row;
+    width: 300px;
 }
+
 .form-name input {
     flex: 1;
     min-width: 0;
