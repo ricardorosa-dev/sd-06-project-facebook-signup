@@ -8,17 +8,26 @@ const fields = [];
 const facebookRegister = document.querySelector('#facebook-register');
 facebookRegister.addEventListener('click', function (event) {
   event.preventDefault();
+  let success = true;
+  let dataUser = 'Olá, ';
   fields.push(document.querySelector('#firstname').value);
   fields.push(document.querySelector('#lastname').value);
   fields.push(document.querySelector('#phoneemail').value);
   fields.push(document.querySelector('#password').value);
   fields.push(document.querySelector('#birthdate').value);
+  dataUser += `${fields[0]} ${fields[1]}<br>`;
+  dataUser += `${fields[2]}<br>`;
+  dataUser += `${fields[4]}<br>`;
   if (document.querySelector('#feminino').checked === true) {
     fields.push(document.querySelector('#feminino').value);
+    dataUser += `${fields[5]}<br>`;
   } else if (document.querySelector('#masculino').checked === true) {
     fields.push(document.querySelector('#masculino').value);
+    dataUser += `${fields[5]}<br>`;
   } else if (document.querySelector('#personalizado').checked === true) {
     fields.push(document.querySelector('#personalizado').value);
+    dataUser += `${fields[5]}: `;
+    dataUser += document.querySelector('#gender-custom').value;
   } else {
     fields.push('');
   }
@@ -26,7 +35,12 @@ facebookRegister.addEventListener('click', function (event) {
   for (let i = 0; i < fields.length; i += 1) {
     if (fields[i] === '') {
       result.innerHTML = 'Campos inválidos';
+      success = false;
     }
+  }
+  if (success) {
+    const rightContent = document.querySelector('.right-content');
+    rightContent.innerHTML = dataUser;
   }
 });
 
