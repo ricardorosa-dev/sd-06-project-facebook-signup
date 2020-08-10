@@ -7,6 +7,7 @@ body {
   text-align: left;
 }
 
+/* BARRA SUPERIOR */
 /* Classe da Barra Superior */
 .top-bar {
   align-items: center; /* Alinhar conteudo no meio da barra - vertical */
@@ -63,6 +64,7 @@ header a {
   align-self: flex-end;
 }
 
+/* MAIN CONTENT */
 /* Requisito 8 */
 .main-content {
   background: linear-gradient(white, rgb(211, 216, 232));
@@ -102,6 +104,7 @@ header a {
   padding-top: 20px; /* Benchmark do facebook */
 }
 
+/* TITULO RIGHT CONTENT - Benchmark face */
 .right-content .header .title {
   color: rgb(51, 51, 51); /* Benchmark do facebook fbc */
   font-size: 36px; /* Benchmark do facebook _521lp _59d _521lq */
@@ -109,9 +112,16 @@ header a {
   margin-bottom: 5px; /* Benchmark do facebook mbs */
 }
 
+/* SUB-TITULO RIGHT CONTENT - Benchmark face*/
+.right-content .header p {
+  color: rgb(29, 33, 41);
+  font-size: 19px;
+}
+
 .right-content form {
   display: flex; /* Para satisfazer posicionamento do requisito 11 */
   flex-wrap: wrap; /* Para satisfazer posicionamento do requisito 13 */
+  padding-bottom: 30px; /* Benchmark face */
 }
 
 .right-content form input {
