@@ -2,6 +2,8 @@ const buttonLogin = document.querySelector('#button-login');
 const emailValue = document.querySelector('#user-email-phone');
 const form = document.querySelector('#formulary');
 const button = document.querySelector('#facebook-register');
+const inputs = document.querySelectorAll('#formulary input');
+
 
 buttonLogin.addEventListener('click', function () {
   alert(emailValue.value);
@@ -26,3 +28,18 @@ function addCampo() {
 }
 
 addCampo();
+
+function validateData() {
+  event.preventDefault()
+  let p = document.createElement('p');
+
+  for (let i = 0; i < inputs.length; i += 1) {
+    if (inputs[i].value === '') {
+      p.innerHTML = 'Campos invalidos'
+      form.appendChild(p)
+    }
+  }
+}
+
+button.addEventListener('click', validateData);
+
