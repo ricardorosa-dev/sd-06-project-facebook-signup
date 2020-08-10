@@ -37,6 +37,9 @@ function isAnyFieldEmpty() {
       });
     });
   }
+  if (isEmpty === 0) {
+    replaceRightContent()
+  } 
 }
 
 function replaceRightContent() {
@@ -47,16 +50,20 @@ function replaceRightContent() {
     birth: document.querySelector('#user-birthdate').value,
     gender: document.querySelector('#selected-gender').value,
   };
-  document.querySelector('.right-content').innerText = `
+  const righSideContent = document.querySelector('.right-content').childNodes;
+  righSideContent.forEach((element) => {
+    element.className += ' hidden';
+  })
+  document.querySelector('.right-content').appendChild(document.createElement('section'));
+  document.querySelector('section').innerText = `
   Nome: ${userInfo.name} ${userInfo.lastName}
   Email: ${userInfo.email}
-  Aniversario:${userInfo.birth}
-  Genero:${userInfo.gender}
+  Aniversario: ${userInfo.birth}
+  Genero: ${userInfo.gender}
   `;
 }
 
 document.querySelector('#facebook-register').addEventListener('click', () => {
   event.preventDefault();
   isAnyFieldEmpty();
-  replaceRightContent();
 });
