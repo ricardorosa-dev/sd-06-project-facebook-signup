@@ -14,7 +14,9 @@ function hideInvalidFieldsError() {
 }
 
 function validateInputs() {
+  //por conta da regra de negocio de testar 1 por 1, eu criei um conta para testar se todos os campos estavam limpos.
   const formInputs = document.forms['signUp-form'].getElementsByTagName('input');
+  let cont = 0;
   for (let index = 0; index < formInputs.length; index += 1) {
     const currentInput = formInputs[index];
     if (!currentInput.value) {
@@ -22,8 +24,11 @@ function validateInputs() {
       break;
     } else {
       hideInvalidFieldsError();
-      createTableInfo()
+      cont++
     }
+  }
+  if(cont==8){
+    createTableInfo()
   }
 }
 
