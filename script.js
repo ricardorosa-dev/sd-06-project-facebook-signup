@@ -8,8 +8,9 @@ function generateErrorElement() {
 
 function isEmpty(inputs) {
   for (let i = 0; i < inputs.length; i += 1) {
-    if (inputs[i] === '') {
+    if (inputs[i].value === '') {
       generateErrorElement();
+      break;
     }
   }
 }
