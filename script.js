@@ -5,6 +5,7 @@ const radioButtonMasculino = document.querySelector('#male');
 const radioButtonFeminino = document.querySelector('#female');
 const containerRadioButtons = document.querySelector('.radio');
 const customGender = document.createElement('input');
+const buttonSend = document.querySelector('#facebook-register');
 
 buttonTop.addEventListener('click', function () {
   alert(email.value);
@@ -28,5 +29,15 @@ radioButtonFeminino.addEventListener('change', function () {
   const personalized = document.querySelector('#personalizado');
   if (personalized !== null) {
     containerRadioButtons.removeChild(personalized);
+  }
+});
+
+buttonSend.addEventListener('click', () => {
+  const emptyInput = document.querySelectorAll('.containerInput input');
+  const span = document.querySelectorAll('.camposInvalidos');
+  for (let index = 0; index < emptyInput.length; index++) {
+    if (emptyInput[index].innerHTML === "") {
+      span.innerHTML = "campos inválidos"
+    }
   }
 });
