@@ -59,7 +59,7 @@ const functionalities = {
     const allInputs = document.querySelectorAll('.right-content form input');
     const name = ('Olá, ').concat(allInputs[0].value).concat(allInputs[1].value);
     const emailPhone = ('<br>').concat(allInputs[2].value);
-    const birthDate = ('<br>').concat(allInputs[4].value);
+    const birthDate = ('<br>').concat(allInputs[4].value.replace(/-/gi,'/'));
     let gender;
     if (allInputs[5].checked === true) {
       gender = ('<br>').concat(allInputs[5].value);
@@ -74,6 +74,9 @@ const functionalities = {
     newContent.innerHTML = newContentString;
     const rightContent = document.querySelector('.right-content');
     rightContent.appendChild(newContent);
+  },
+  convertDate: function convertDate(date) {
+    
   },
 };
 
