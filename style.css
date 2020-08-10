@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(191, 206, 231, 0.37);
+}
+
 .main-header {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -12,7 +16,7 @@
   margin: auto;
   padding-bottom: 7px;
   padding-top: 15px;
-  width: 60%;
+  width: 62.5%;
 }
 
 .facebook-login {
@@ -49,7 +53,7 @@
 }
 
 .button-login {
-  background-color: rgb(66, 103, 178);
+  background-color:  rgb(66, 103, 178);
   border: 1px solid rgba(0, 0, 0, 0.192);
   border-radius: 3px;
   color: white;
@@ -63,6 +67,11 @@
 .facebook-logo {
   padding-bottom: 5px;
   width: 170px;
+}
+
+.main-content {
+  margin: auto;
+  width: 62.5%;
 }
 
 .form-group {
@@ -81,10 +90,13 @@
 }
 
 .left-content {
+  margin: 0px;
   width: 800px;
 }
 
 .right-content {
+  float: right;
+  margin-right: 90px;
   width: 300px;
 }
 
