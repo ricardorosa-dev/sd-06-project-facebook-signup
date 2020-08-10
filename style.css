@@ -21,7 +21,7 @@ body {
   display: flex;
 }
 
-.form-group {
+.form-group , .form-control {
   display: flex;
   flex-direction: column;
   padding: 0 5px;
@@ -38,6 +38,6 @@ label {
 }
 
 .button {
-  height: 21px;
+  height: 20px;
   width: 40px;
 }
