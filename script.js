@@ -3,6 +3,7 @@ const emailPhone = document.querySelector('#user-email-phone');
 const btnSignup = document.querySelector('#facebook-register');
 const registerForm = document.querySelector('#register-form');
 const custom = document.querySelector('#custom');
+const gender = document.querySelector('.gender-container');
 
 btnLogin.addEventListener('click', function () {
   if (emailPhone.value !== '') {
@@ -24,9 +25,9 @@ btnSignup.addEventListener('click', function (e) {
   e.preventDefault();
 });
 
-custom.addEventListener('click', function () {
+custom.addEventListener('change', function () {
   const inputCustom = document.createElement('input');
   inputCustom.name = 'gender-custom';
   inputCustom.placeholder = 'Gênero (opcional)';
-  registerForm.insertBefore(inputCustom, registerForm.children[registerForm.children.length - 1]);
+  gender.appendChild(inputCustom);
 });
