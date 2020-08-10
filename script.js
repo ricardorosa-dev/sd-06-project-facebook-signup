@@ -31,6 +31,35 @@ function removeErrorElement() {
   }
 }
 
+function getData() {
+  const inputs = document.querySelectorAll('main input');
+  const dataMap = new Map();
+  for (let i = 0; i < inputs.length; i += 1) {
+    if (i <= 4) {
+      dataMap.set(inputs[i].name, inputs[i].value);
+    }
+    if (inputs[i].checked) {
+      dataMap.set(inputs[i].name, inputs[i].value);
+    }
+  }
+  return dataMap;
+}
+
+function createDataContainer(map) {
+  const rightContainer = document.getElementsByClassName('right-content')[0];
+  map.forEach((value) => {
+    const newElement = document.createElement('div');
+    newElement.classList = 'new-element';
+    newElement.innerText = value;
+    rightContainer.appendChild(newElement);
+  });
+}
+
+function removeDataContainer() {
+  const forms = document.getElementById('signUp');
+  document.getElementsByClassName('right-content')[0].removeChild(forms);
+}
+
 function showData() {
   const dataMap = getData();
   removeDataContainer();
@@ -59,36 +88,6 @@ function validateInputs(e, inputs) {
     isFilledInputs(e, inputs);
     setFilledState(inputs);
   }
-}
-
-
-function getData() {
-  const inputs = document.querySelectorAll('main input');
-  const dataMap = new Map();
-  for (let i = 0; i < inputs.length; i += 1) {
-    if (i <= 4) {
-      dataMap.set(inputs[i].name, inputs[i].value);
-    }
-    if (inputs[i].checked) {
-      dataMap.set(inputs[i].name, inputs[i].value);
-    }
-  }
-  return dataMap;
-}
-
-function createDataContainer(map) {
-  const rightContainer = document.getElementsByClassName('right-content')[0];
-  map.forEach((value,key,map) => {
-    const newElement = document.createElement('div');
-    newElement.classList = 'new-element';
-    newElement.innerText = value;
-    rightContainer.appendChild(newElement);
-  });
-}
-
-function removeDataContainer() {
-  const forms = document.getElementById('signUp');
-  document.getElementsByClassName('right-content')[0].removeChild(forms);
 }
 
 function initAttributes(inputs) {
