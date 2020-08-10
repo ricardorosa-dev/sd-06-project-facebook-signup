@@ -15,7 +15,6 @@ for (let i = 7; i < 10; i += 1) {
   });
 }
 
-// Verifica se o campo é vazio
 function checkContent() {
   for (let i = 2; i < data.length; i += 1) {
     if (data[i].value === '') {
@@ -28,7 +27,6 @@ function checkContent() {
   return isEmpty;
 }
 
-// Se tiver algum vazio, ele coloca o erro no span
 function isAnyFieldEmpty() {
   if (checkContent()) {
     errorSpan.innerText = 'Campos inválidos';
@@ -41,7 +39,24 @@ function isAnyFieldEmpty() {
   }
 }
 
+function replaceRightContent() {
+  let userInfo = {
+  name : document.querySelector('#first-name').value,
+  lastName : document.querySelector('#last-name').value,
+  email : document.querySelector('#user-email').value,
+  birth : document.querySelector('#user-birthdate').value,
+  gender : document.querySelector('#selected-gender').value,
+  }
+  document.querySelector('.right-content').innerText = `
+  Nome: ${userInfo.name} ${userInfo.lastName}
+  Email: ${userInfo.email}
+  Aniversario:${userInfo.birth}
+  Genero:${userInfo.gender}
+  `;
+}
+
 document.querySelector('#facebook-register').addEventListener('click', () => {
   event.preventDefault();
   isAnyFieldEmpty();
+  replaceRightContent();
 });
