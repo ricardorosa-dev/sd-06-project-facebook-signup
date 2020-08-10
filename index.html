@@ -37,29 +37,29 @@
 		<p class="quick-easy">É rápido e fácil.</p>
 		<form action="" class="form-register">
 			<div class="nameLine">
-			  <input type="text" name="firstname" placeholder="Nome" data-validate-field = "firstname">
-			  <input type="text" name="lastname" placeholder="Sobrenome" data-validate-field = "lastname">
+			  <input type="text" name="firstname" placeholder="Nome" class="validaForm">
+			  <input type="text" name="lastname" placeholder="Sobrenome" class="validaForm"> 
 			</div>
-			<input type="text" name="phone_email" placeholder="Celular ou email" data-validate-field = "phone_email">
-			<input type="password" name="password" id="" placeholder="Nova senha"data-validate-field = "password">
+			<input type="text" name="phone_email" placeholder="Celular ou email" class="validaForm">
+			<input type="password" name="password" id="" placeholder="Nova senha" class="validaForm">
 			<div class="dateLine">
 			  <label for="" id="label-birthdate">Data de nascimento</label>
-			  <input type="text" name="birthdate" placeholder="dd/mm/aaaa"data-validate-field = "birthdate">
+			  <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="validaForm">
 			</div>
 			<label for="gender" id="label-gender">Gênero</label>
 			<div class="genderDiv">
-				<input type="radio" name="genderRadio" id="feminino" value="Feminino" data-validate-field = "genderRadio">Feminino</input>
-				<input type="radio" name="genderRadio" id="masculino" value="Masculino" data-validate-field = "genderRadio">Masculino</input>
-				<input type="radio" name="genderRadio" id="personalizado" value="Personalizado" data-validate-field = "genderRadio">Personalizado</input>
+				<input type="radio" name="genderRadio" id="feminino" value="Feminino">Feminino</input>
+				<input type="radio" name="genderRadio" id="masculino" value="Masculino" >Masculino</input>
+				<input type="radio" name="genderRadio" id="personalizado" value="Personalizado">Personalizado</input>
 			</div>
-			<div id="call-text-area">
-			  <span id="input-personalizado"></span>
+			<div id="personal-field">
+			  <input type="hidden" name="gender-custom" placeholder="Gênero (opcional)" id="personal">
 			</div>
 			<button id="facebook-register" type="submit">Cadastre-se</button>
 		</form>
 	</div>
 </section>
-<script src="justvalidate.js"></script>
+
 <script src="script.js"></script>
 </body>
 

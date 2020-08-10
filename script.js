@@ -4,12 +4,30 @@ btnLogIn.addEventListener('click', () => {
   alert(emailText.value);
 });
 
-const btnRadioPersonal = document.querySelector('#personalizado');
-const spanPersonal = document.querySelector('#input-personalizado');
-btnRadioPersonal.addEventListener('click', () => {
-  event.preventDefault();
-  const inputGender = document.createElement('input');
-  inputGender.placeholder = 'Gênero (opcional)';
-  inputGender.name = 'gender-custom';
-  spanPersonal.appendChild(inputGender);
-});
+function testRadioChecked () {
+  if (document.querySelector('#feminino').checked == false && 
+      document.querySelector('#masculino').checked == false &&
+      document.querySelector('#personalizado').checked == false) {
+        alert('Campos inválidos')
+      }
+}
+
+const inputsForm = document.querySelectorAll('.validaForm')
+document.querySelector('#facebook-register').addEventListener('click', () => {
+  testRadioChecked();
+  for(let i = 0; i <= inputsForm.length -1; i ++) {
+    console.log(inputsForm[i].value)
+    if(inputsForm[i].value == '') {
+      alert('Campos Inválidos')
+    }
+  }
+})
+
+
+
+document.querySelector('#personalizado').addEventListener('focus', enableInputGenderOption)
+
+function enableInputGenderOption () {
+  const personalChecked = document.querySelector('#personal')
+  personalChecked.setAttribute('type', 'text')
+}
