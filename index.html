@@ -34,9 +34,78 @@
     </div>
     <div class="right-content">
       <h1>Abra uma conta</h1>
-      <h3 class="quick-easy">É rápido e fácil.</h3>
-      <form class="register-form"></form>
+      <small class="quick-easy">É rápido e fácil.</small>
+      <form action="" method="get">
+        <div class="form-group-1">
+          <input
+          type="text"
+          id="firstname"
+          class="input-control-1"
+          name="firstname"
+          placeholder="Nome" />
+          <input
+          type="text"
+          id="lastname"
+          class="input-control-1"
+          name="lastname"
+          placeholder="Sobrenome" />
+        </div>
+        <div class="form-group-2">
+          <input
+          type="text"
+          id="phone_email"
+          class="input-control-2"
+          name="phone_email"
+          placeholder="Celular ou email" />
+        </div>
+        <div class="form-group-2">
+          <input
+          type="password"
+          id="password"
+          class="input-control-2"
+          name="password"
+          placeholder="Nova senha" />
+        </div>
+        <div class="form-group-3">
+          <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+          <input
+          type="date"
+          id="birthdate"
+          class="input-control-3"
+          name="birthdate"
+          placeholder="dd/mm/aaaa" />
+        </div>
+        <div class="form-group-4">
+          <legend id="label-gender">Gênero</legend>
+          <div class="input-control-4">
+            <input
+            type="radio"
+            id="feminino"
+            name="gender-choice"
+            value ="op1" />
+            <label for="feminino">Feminino</label>
+            <input
+            type="radio"
+            id="masculino"
+            name="gender-choice"
+            value ="op2" />
+            <label for="masculino">Masculino</label>
+            <input
+            type="radio"
+            id="personalizado"
+            name="gender-choice"
+            value ="op3" />
+            <label for="personalizado">Personalizado</label>
+          </div>
+        </div>
+        <div id="input-personalizado"></div>
+        <div class="form-group-5">
+          <button type="submit" id="facebook-register" class="btn">Cadastre-se</button>
+        </div>
+        <div id="render-message" class='hidden'></div>
+      </form>
     </div>
+    <div id="render-output" class='hidden'></div>
   </section>
   <script src="script.js"></script>
 </body>
