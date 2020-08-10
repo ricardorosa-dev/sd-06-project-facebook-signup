@@ -1,3 +1,3 @@
 window.onload = () => {
-    alert('carregou');
+  alert('carregou');
 }
