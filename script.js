@@ -22,5 +22,16 @@ function validate() {
     messageInvalid();
   }
 }
+
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
+
+const perso = document.querySelector('#p');
+const todos = document.querySelector('.generos');
+perso.addEventListener('click', function () {
+  const novoInput = document.createElement('input');
+  novoInput.type = 'text';
+  novoInput.name = 'gender-custom';
+  novoInput.placeholder = 'Gênero (opcional)';
+  todos.appendChild(novoInput);
+});
