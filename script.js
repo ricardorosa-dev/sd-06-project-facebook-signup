@@ -52,14 +52,29 @@ function getDivInformations(inputs) {
   createNewParagraph.innerText = textMessage;
   rightContent.appendChild(createNewParagraph);
 }
+// function checkAllConditions() {
+//   if (genderFather.style.display !== 'none' && genderSelection.value !== '0' && checkAllInputs(getAllInputs)) {
+//     return true;
+//   }
+//   if (genderFather.style.display === 'none' && checkAllInputs(getAllInputs)) {
+//     for (let x = 0; x < radioSelection.length; x += 1) {
+//       if (radioSelection[x].checked) {
+//         return true;
+//       }
+//     }
+//   }
+//   return false;
+// }
 function checkAllConditions() {
-  if (genderFather.style.display !== 'none' && genderSelection.value !== '0' && checkAllInputs(getAllInputs)) {
-    return true;
-  }
-  if (genderFather.style.display === 'none' && checkAllInputs(getAllInputs)) {
-    for (let x = 0; x < radioSelection.length; x += 1) {
-      if (radioSelection[x].checked) {
-        return true;
+  if (checkAllInputs(getAllInputs)) {
+    if (genderFather.style.display !== 'none' && genderSelection.value !== '0') {
+      return true;
+    }
+    if (genderFather.style.display === 'none') {
+      for (let x = 0; x < radioSelection.length; x += 1) {
+        if (radioSelection[x].checked) {
+          return true;
+        }
       }
     }
   }
@@ -67,7 +82,7 @@ function checkAllConditions() {
 }
 buttonRegister.addEventListener('click', function (event) {
   event.preventDefault();
-  if (checkAllConditions()){
+  if (checkAllConditions()) {
     getDivInformations(getAllInputs);
   }
 });
