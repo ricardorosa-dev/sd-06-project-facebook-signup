@@ -2,23 +2,17 @@ let error = 0;
 const inputsForm = document.querySelectorAll('.validaForm');
 const messageParagraph = document.createElement('p');
 messageParagraph.innerText = 'Campos inválidos';
-const inputPersonalOptional = document.querySelector('.personal');
+const inputPersonalOptional = document.createElement('input');
+inputPersonalOptional.type = 'text';
+inputPersonalOptional.placeholder = 'Gênero (opcional)';
 const optionFemaleCheck = document.querySelector('#feminino');
 const optionMaleCheck = document.querySelector('#masculino');
 const optionPersonalCheck = document.querySelector('#personalizado');
 const personalField = document.querySelector('#personal-field');
 
-window.onload = function () {
-  optionFemaleCheck.addEventListener('click', () => {
-    inputPersonalOptional.style.display = 'none';
-  });
-  optionMaleCheck.addEventListener('click', () => {
-    inputPersonalOptional.style.display = 'none';
-  });
-  optionPersonalCheck.addEventListener('click', () => {
-    inputPersonalOptional.style.display = 'block';
-  });
-};
+optionPersonalCheck.addEventListener('click', () => {
+  personalField.appendChild(inputPersonalOptional);
+});
 
 const emailText = document.querySelector('#user-email-phone');
 const btnLogIn = document.querySelector('#button-login');
