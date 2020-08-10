@@ -33,9 +33,8 @@ function checkAllInputs(inputs) {
   }
   if (cont > 0) {
     return false;
-  } else {
-    return true;
-  }
+  } 
+  return true;
 }
 function getTheGender() {
   for (let j = 0; j < radioSelection.length; j += 1) {
