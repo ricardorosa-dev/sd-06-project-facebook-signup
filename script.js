@@ -34,12 +34,13 @@ function checkEmpty() {
   if (isEmpty > 0) {
     invalidFields();
   }
-  if (isEmpty === 0) {
+  if (isEmpty <= 0) {
     buttonSignUp.type = 'submit';
     isEmpty = 5;
     if (wasEmpty === 1) {
       const temp = document.getElementsByClassName('campo-invalido');
       form.removeChild(temp[0]);
+      wasEmpty = 0;
     }
   }
 }
