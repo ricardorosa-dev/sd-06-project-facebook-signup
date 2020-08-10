@@ -42,9 +42,7 @@ function getTheGender() {
   return true;
 }
 function getDivInformations(inputs) {
-  while (rightContent.firstChild) {
-    rightContent.removeChild(rightContent.firstChild);
-  }
+  rightContent.innerHTML = '';
   const name = inputs[2].value;
   const lastname = inputs[3].value;
   const emailOrPhone = inputs[4].value;
