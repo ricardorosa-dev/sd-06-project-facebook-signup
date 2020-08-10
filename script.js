@@ -18,18 +18,7 @@ function customOption() {
   genderCustom.appendChild(createCustom);
 }
 
-function validateForms() {
-  const arrayOfInputs = document.querySelectorAll('input');
-  let isValid = true;
-
-  for (let i = 0; i < arrayOfInputs.length; i += 1) {
-    if (arrayOfInputs[i].value === '') {
-      isValid = false;
-    };
-  };
-
-  window.onload = function () {
-    btnLogin.addEventListener('click', clickButton);
-    customRadio.addEventListener('change', customOption);
-  };
+window.onload = function () {
+  btnLogin.addEventListener('click', clickButton);
+  customRadio.addEventListener('change', customOption);
 };
