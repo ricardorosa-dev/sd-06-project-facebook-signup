@@ -23,7 +23,7 @@
       <div class="form-group">
         <label for="senha" >Senha</label>
         <input id="senha" name="password" required="required" type="text">
-        <a class="esqueceu-conta" href="#">Esqueceu a conta?</a>
+        <a class="forgot-account" href="#">Esqueceu a conta?</a>
       </div>
 
       <div class="form-button">
@@ -56,26 +56,38 @@
 
         <span class="birth-day-text">Data de Nascimento</span>
 
-        <select name="" id="">
-          <option value="" disabled>Dia</option>
+        <select name="day" id="day">
+          <option value="day" disabled>Dia</option>
         </select>
 
-        <select name="" id="">
-          <option value="" disabled>Mês</option>
+        <select name="month" id="month">
+          <option value="month" disabled>Mês</option>
         </select>
         
-        <select name="" id="">
-          <option value="" disabled>Ano</option>
+        <select name="year" id="year">
+          <option value="year" disabled>Ano</option>
         </select>
 
-        <span><img src="./imgs/question-mark.png" alt="tip"></span>
+        <span class="tip-1"><img src="./imgs/question-mark.png" alt="tip"></span>
 
         <span class="gender-text">Gênero</span>
-        <input type="radio" name="female" id="female"><label>Feminino</label>
-        <input type="radio" name="male" id="male"><label>Masculino</label>
-        <input type="radio" name="custom" id="custom"><label>Personalizado</label>
 
-        <span><img src="./imgs/question-mark.png" alt="tip"></span>
+        <span>
+          <input type="radio" name="gender">
+          <label class="female" >Feminino</label>
+        </span>
+
+        <span>
+          <input type="radio" name="gender">
+          <label class="male">Masculino</label>
+        </span>
+        
+        <span>
+          <input type="radio" name="gender">
+          <label class="custom">Personalizado</label>
+        </span>
+
+        <span class="tip-2"><img src="./imgs/question-mark.png" alt="tip"></span>
 
         <p class="register-text">Ao clicar em Cadastre-se, você concorda com nossos <a href="https://www.facebook.com/legal/terms/update">Termos</a>, <a href="https://www.facebook.com/about/privacy/update">Política de Dados</a> e <a href="https://www.facebook.com/policies/cookies/">Política de Cookies</a>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
 
@@ -86,7 +98,6 @@
     </div>
 
   </div>
-
 
 </body>
 </html>
