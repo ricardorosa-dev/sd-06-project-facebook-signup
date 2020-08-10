@@ -13,16 +13,15 @@ function addCampo() {
   const inputGender = document.createElement('input');
   inputGender.setAttribute('placeholder', 'Genero(opcional)');
 
-    for (let i = 0; i < radios.length; i += 1) {
-      radios[i].addEventListener('click', function () {
-          if (radios[i].value === 'Personalizado') {
-              form.insertBefore(inputGender, button);
-          } else {
-              inputGender.remove();
-          }
-      });
+  for (let i = 0; i < radios.length; i += 1) {
+    radios[i].addEventListener('click', function () {
+        if (radios[i].value === 'Personalizado') {
+            form.insertBefore(inputGender, button);
+        } else {
+            inputGender.remove();
+        }
+    });
   }
-}
+};
 
 addCampo();
-
