@@ -34,20 +34,20 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form class="main-form" action="" method="GET">
+        <form class="main-form js-form" action="" method="GET">
           <did class="full-name">
-            <input name="firstname" type="text" required="required" placeholder="Nome">
-            <input name="lastname" type="text" required="required" placeholder="Sobrenome">
+            <input data-validate-field="name" name="firstname" type="text" required="required" placeholder="Nome">
+            <input data-validate-field="name2" name="lastname" type="text" required="required" placeholder="Sobrenome">
           </did>
           <div class="contact">
-            <input name="phone_email" type="text" required="required" placeholder="Celular ou email">
+            <input name="phone_email" type="email" placeholder="Celular ou email"  data-validate-field="email">
           </div>
           <div class="new-password">
-            <input name="password" type="password" required="required" placeholder="Nova senha">
+            <input data-validate-field="password" name="password" type="password" required="required" placeholder="Nova senha">
           </div>
           <div>
             <label for="datepicker" id="label-birthdate">Data de nascimento</label>
-            <input name="birthdate" type="text" required="required" id="datepicker" placeholder="dd/mm/aaaa">
+            <input data-validate-field="date" name="birthdate" type="text" required="required" id="datepicker" placeholder="dd/mm/aaaa">
           </div>
           <label class="options" id="label-gender">Gênero</label>
           <div class="radios">
@@ -61,6 +61,7 @@
         </form>
       </div>
     </main>
+    <script src="js/just-validate.js"></script>
     <script src="js/pikaday.js"></script>
     <script src="script.js"></script>
   </body>
