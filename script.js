@@ -4,3 +4,4 @@ buttonLogin.addEventListener('click', () => {
   const emailPhoneValue = document.getElementById('user-email-phone').value;
   alert(emailPhoneValue);
 });
+
