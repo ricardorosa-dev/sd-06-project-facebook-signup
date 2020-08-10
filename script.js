@@ -1,7 +1,6 @@
 let errors = 0;
 const info = [];
 const date = document.forms[1].elements[4];
-let convertedDate = 0;
 
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
