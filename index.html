@@ -41,26 +41,24 @@
       <small class="quick-easy">É rápido e fácil.</small>
       <form action="" class="form-register" method="get">
         <div class="full-name">
-          <input type="text" id="first-name" name="firstname" class="form-input" placeholder="Nome">
-          <input type="text" id="last-name" name="lastname" class="form-input" placeholder="Sobrenome">
+          <input type="text" id="first-name" name="firstname" placeholder="Nome">
+          <input type="text" id="last-name" name="lastname" placeholder="Sobrenome">
         </div>
-        <input type="text" id="user-email" class="form-input" name="phone_email" placeholder="Celular ou email" >
-        <input type="password" class="form-input" name="password" placeholder="Nova senha">
+        <input type="text" id="user-email" name="phone_email" placeholder="Celular ou email" >
+        <input type="password" name="password" placeholder="Nova senha">
         <label id="label-birthdate" for="">Data de nascimento</label>
-        <input type="date" id="user-birthdate" class="form-input" name="birthdate" placeholder="dd/mm/aaaa">
+        <input type="date" id="user-birthdate" name="birthdate" placeholder="dd/mm/aaaa">
         <label for="" id="label-gender">Gênero</label>
         <div class="gender-radio">
           <label for="female">
           </label>
-          <input id="female" class="form-input" type="radio" name="gender" value="Feminino">Feminino
+          <input id="female" type="radio" name="gender" value="Feminino">Feminino
           <label for="male">
           </label>
           <input id="male" type="radio" name="gender" value="Masculino">Masculino
           <label for="custom-gender">
           </label>
           <input id="gender-custom" type="radio" name="gender" value="Personalizado">Personalizado
-          <span id="gender-custom-span"></span>
-          <span id="error-field"></span>
         </div>
         <button id="facebook-register" class="form__btn btn btn-primary" type="submit">Cadastre-se</button>
       </form>
