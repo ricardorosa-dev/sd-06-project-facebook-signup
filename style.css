@@ -41,3 +41,11 @@ label {
   height: 20px;
   width: 40px;
 }
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
