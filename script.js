@@ -34,13 +34,16 @@ function validatePassword() {
   return false;
 }
 
-function validate() {
+function validate(event) {
+  event.preventDefault();
   const radio = validateRadio();
   const password = validatePassword();
   const text = validateText();
   const date = validateDate();
   if (!radio || !password || !text || !date) {
-    alert('Campos inválidos');
+    const p = document.createElement('p');
+    p.innerText = 'Campos inválidos';
+    document.getElementById('sign-up').appendChild(p);
   }
 }
 
