@@ -5,7 +5,7 @@ function loginButton() {
 function validate() {
   const inputsArray = document.getElementsByTagName('input');
 
-  for (i = 0; i < inputsArray.length; i += 1) {
+  for (let i = 0; i < inputsArray.length; i += 1) {
 
     let radio = false;
     if (inputsArray[i].type === 'radio') {
