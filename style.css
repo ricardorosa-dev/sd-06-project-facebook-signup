@@ -10,9 +10,10 @@ body {
 ​
 .img-container {
   justify-content: flex-start;
+.img-container img {
+  width: 150px;
 }
 ​
-.img-container img {
   width: 150px;
 }
 ​
