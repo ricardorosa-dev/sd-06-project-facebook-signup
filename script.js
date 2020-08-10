@@ -23,7 +23,7 @@ buttonLogin.addEventListener('click', function () {
   alert(inputEmailPhone.value);
 });
 function checkAllInputs(inputs) {
-  for (let i = 2; i < inputs.length - 1 ;i += 1) {
+  for (let i = 2; i < inputs.length - 1; i += 1) {
     if (inputs[i].value === '') {
       return false;
     }
@@ -57,7 +57,7 @@ function checkAllConditions() {
     return true;
   }
   if (genderFather.style.display === 'none' && checkAllInputs(getAllInputs)) {
-    for (let x = 0; x < radioSelection.length ;x += 1) {
+    for (let x = 0; x < radioSelection.length; x += 1) {
       if (radioSelection[x].checked) {
         return true;
       }
