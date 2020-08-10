@@ -21,7 +21,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#user-email-phone {
+.user-email-phone {
   background-color: rgb(238, 255, 249);
   border: 1px solid rgba(0, 0, 0, 0.192);
   margin-top: 5px;
@@ -29,7 +29,7 @@
   width: 150px;
 }
 
-#user-password {
+.user-password {
   background-color: rgb(238, 255, 249);
   border: 1px solid rgba(0, 0, 0, 0.192);
   margin-left: 15px;
@@ -38,17 +38,17 @@
   width: 150px;
 }
 
-#user-password-label {
+.user-password-label {
   margin-left: 15px;
 }
 
-.esqueceu-conta{
+.esqueceu-conta {
   color: rgba(255, 255, 255, 0.644);
   margin-left: 15px;
   padding-top: 5px;
 }
 
-#button-login {
+.button-login {
   background-color: rgb(66, 103, 178);
   border: 1px solid rgba(0, 0, 0, 0.192);
   border-radius: 3px;
@@ -58,10 +58,7 @@
   font-weight: bold;
   margin-bottom: 19px;
   margin-left: 15px;
-  padding-bottom: 2.5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 2.5px;
+  padding: 2.5px 10px 2.5px 10px;
 }
 
 .facebook-logo {
