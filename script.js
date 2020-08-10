@@ -13,10 +13,13 @@ document.querySelector('#facebook-register').addEventListener('click', () => {
   formFields.forEach(setNewErrorMsg);
 });
 
-document.querySelector('#custom-gender').addEventListener('click', () => {
+document.querySelector('#gender-custom').addEventListener('click', () => {
   const customGenderInput = document.createElement('input');
-  customGenderInput.id = 'custom-gender-input';
-  customGenderInput.setAttribute('type', 'text');
-  customGenderInput.setAttribute('placeholder', 'Gênero (opcional)');
-  document.querySelector('#custom-gender-span').appendChild(customGenderInput);
+  Object.assign(customGenderInput, {
+    id: 'gender-custom-input',
+    type: 'text',
+    placeholder: 'Gênero (opcional)',
+    name: 'gender-custom'
+  });
+  document.querySelector('#gender-custom-span').appendChild(customGenderInput);
 });
