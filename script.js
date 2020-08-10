@@ -22,6 +22,7 @@ function validateInputs() {
       break;
     } else {
       hideInvalidFieldsError();
+      createTableInfo()
     }
   }
 }
@@ -48,6 +49,35 @@ function delCustomGender() {
   document.getElementById("gender-custom-id").remove()
   }
 }
+
+function createTableInfo(){
+  //recupera todos os valores
+  const firstName = document.querySelector(".input-first-name").value;
+  const lastName = document.querySelector(".input-last-name").value;
+  const cellNumber = document.getElementById("cel_number").value;
+  const birthday = document.querySelector(".birthdate").value
+  //recupera o valor do radio button , precisa fazer teste para saber ql esta marcado
+  const valido = document.getElementsByName("gender");
+  if (valido[0].checked) {
+      gender = valido[0].value;
+  }else if (valido[1].checked){
+      gender = valido[1].value;
+  }else if(valido[2].checked){
+      gender = document.getElementById("gender-custom-id").value;
+  }
+  //recupera o pai para a gente add a nova rightcontent
+  const pai = document.querySelector(".main-content");
+  //apaga o lado direito inteiro de uma vez
+  document.querySelector(".right-content").remove();
+  //cria nova div e add no pai
+  const div = document.createElement("div");
+  div.className = "right-content";
+  pai.appendChild(div);
+  //cria o novo paragrafo que é o resultado e add na div
+  const paragraph = document.createElement("h1");
+  div.appendChild(paragraph);
+  paragraph.innerText = "Olá, "+firstName+" "+lastName+" seu login é : "+cellNumber+" sua data de aniversario é : "+birthday+" e seu genero é : "+gender;
+};
 
 window.onload = function () {
   const loginBtn = document.querySelector('#button-login');
