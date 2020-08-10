@@ -43,7 +43,7 @@ function validateData() {
   const totalError = verifyData() + verifyGender();
 
   if (totalError > 0) {
-    message.innerText = 'Campos inválidos';
+    message.innerHTML = 'Campos inválidos';
   }
 }
 
