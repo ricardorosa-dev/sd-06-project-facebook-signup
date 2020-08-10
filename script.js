@@ -21,5 +21,5 @@ facebookRegister.addEventListener('click', function (event) {
   }
   const msInvalidField = document.getElementById('msInvalidField');
   msInvalidField.style.display = 'block';
-  event.preventDefault();
+  return event.preventDefault();
 });
