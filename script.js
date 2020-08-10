@@ -47,9 +47,23 @@ function validate(event) {
   }
 }
 
+function otherButton() {
+  const radio = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
+  
+  if (radio[2].checked) {
+    let input = document.createElement('input');
+    input.setAttribute('type', 'text');
+    input.setAttribute('name', 'gender-custom');
+    input.setAttribute('placeholder', 'Gênero (opcional)');
+    document.getElementById('other-option').appendChild(input);
+  }
+}
+
 window.onload = function () {
   const button = document.getElementById('button-login');
   const registerButton = document.getElementById('facebook-register');
+  const personalizedButton = document.getElementById('other');
   button.addEventListener('click', loginButton);
   registerButton.addEventListener('click', validate);
+  personalizedButton.addEventListener('click', otherButton);
 };
