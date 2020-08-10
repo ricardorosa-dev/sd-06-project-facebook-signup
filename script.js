@@ -9,7 +9,7 @@ function generateErrorElement () {
 function isEmpty (nodeElement, action,once) {
   for (let i = 0; nodeElement.length; i += 1) {
     if (nodeElement[i].value == '') {
-      action
+      action;
       console.log('done')
       if (once == true) {
         break;
@@ -27,8 +27,8 @@ function validateInputs () {
 }
 
 function buttonEvents () {
-  const buttonConclude = document.getElementById('facebook-register');
-  const buttonConclude.addEventListener('click', function (e) {
+  let buttonConclude = document.getElementById('facebook-register');
+  buttonConclude.addEventListener('click', function (e) {
     validateInputs();
   });
 }
