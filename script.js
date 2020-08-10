@@ -50,6 +50,7 @@ function getDivInformations(inputs) {
   const birthDate = inputs[6].value;
   const genderChoice = inputs[getTheGender() + 7].value;
   const createNewDiv = document.createElement('div');
+  createNewDiv.className = 'right-content';
   const textMessage = `Olá, ${name}  ${lastname} ,seu cadastro foi feito em: ${emailOrPhone} ,nasceu na data: ${birthDate} .Possui o gênero ${genderChoice}.`;
   createNewDiv.innerHTML = textMessage;
   rightContent.appendChild(createNewDiv);
