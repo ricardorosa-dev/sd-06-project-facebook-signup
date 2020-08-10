@@ -39,7 +39,7 @@ function radioCheck() {
 }
 
 function dateConverter() {
-  convertedDate = `${date.value.substring(6,10)}-${date.value.substring(3,5)}-${date.value.substring(0,2)}`
+  convertedDate = `${date.value.substring(6, 10)}-${date.value.substring(3, 5)}-${date.value.substring(0, 2)}`;
   date.value = convertedDate;
 }
 
