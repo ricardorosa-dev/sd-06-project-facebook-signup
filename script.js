@@ -1,23 +1,22 @@
 document.getElementById('button-login').addEventListener('click', () => alert(document.getElementById('user-email-phone').value));
 const formFields = document.querySelectorAll('.form-input');
 
-let errorField = document.querySelector('#error-field');
+const errorField = document.querySelector('#error-field');
 
 function setNewErrorMsg(formField) {
   if (formField.value === '') {
     errorField.innerHTML = 'Campos inválidos';
     formField.addEventListener('click', () => {
       errorField.innerHTML = '';
-    })
+    });
   }
 }
 
 function checkGender(gender) {
-  if (gender == 'Personalizado') {
+  if (gender === 'Personalizado') {
     gender = document.querySelector('#gender-custom-input').value;
-    console.log(gender) 
     return gender;
-  }
+  } return;
 }
 
 document.querySelector('#facebook-register').addEventListener('click', () => {
