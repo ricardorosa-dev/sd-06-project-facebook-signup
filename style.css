@@ -74,7 +74,7 @@ body {
     width: 800px;
 }
 
-#facebook-slogan {
+.left-content p{
     color: rgb(14, 56, 95);
     font-size: 20px;
     font-weight: 700;
