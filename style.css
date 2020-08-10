@@ -51,5 +51,7 @@ body {
 }
 
 .hidden {
+  border: black solid 1px;
+  
   /* display: none; */
 }
