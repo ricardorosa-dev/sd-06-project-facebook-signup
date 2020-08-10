@@ -287,3 +287,30 @@ form a{
 form a:hover{
   text-decoration: underline;
 }
+
+section.linguas {
+  padding: 30px 0px;
+  background-color:white;
+
+}
+section.linguas a{
+  font-size: 14px;
+  color: #365899;
+  padding-right: 15px;
+}
+
+section.linguas a.select-language{
+  color: #737373
+}
+
+section.linguas .center {
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+section.linguas .bottom {
+font-size: 14px;
+padding-right: 15px;
+}
