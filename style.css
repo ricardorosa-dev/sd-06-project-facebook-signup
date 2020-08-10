@@ -3,10 +3,6 @@ body {
   padding: 0;
 }
 
-.container {
-  width: 100%;
-}
-
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
