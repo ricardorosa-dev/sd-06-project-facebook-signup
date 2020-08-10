@@ -84,7 +84,6 @@ function createDataContainer(map) {
     newElement.innerText = value;
     rightContainer.appendChild(newElement);
   });
-
 }
 
 function removeDataContainer() {
