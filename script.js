@@ -9,6 +9,7 @@ const getAllInputs = document.querySelectorAll('input');
 const radioSelection = document.querySelectorAll('input[name="gender"]');
 const rightContent = document.querySelector('.right-content');
 const genderSelection = document.getElementById('genders');
+const invalidFieldP = document.getElementById('invalid-field');
 
 genderOptionFemale.addEventListener('click', function () {
   genderFather.style.display = 'none';
@@ -23,17 +24,13 @@ buttonLogin.addEventListener('click', function () {
   alert(inputEmailPhone.value);
 });
 function checkAllInputs(inputs) {
-  let cont = 0;
   for (let i = 2; i < inputs.length - 4; i += 1) {
     if (inputs[i].value === '') {
-      inputs[i].type = 'text';
-      inputs[i].value = 'Campos inválidos';
-      cont += 1;
+      invalidFieldP.innerHTML = 'Campos inválidos';
+      return false;
     }
   }
-  if (cont > 0) {
-    return false;
-  }
+  invalidFieldP.innerHTML = '';
   return true;
 }
 function getTheGender() {
