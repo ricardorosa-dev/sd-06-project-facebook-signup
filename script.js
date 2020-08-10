@@ -57,7 +57,7 @@ const functionalities = {
 
     // Montagem do conteúdo novo
     const allInputs = document.querySelectorAll('.right-content form input');
-    const name = ('Olá, ').concat(allInputs[0].value).concat(allInputs[1].value);
+    const name = ('Olá, ').concat(allInputs[0].value).concat(' ').concat(allInputs[1].value);
     const emailPhone = ('<br>').concat(allInputs[2].value);
     const birthDate = ('<br>').concat(allInputs[4].value);
     let gender;
@@ -70,13 +70,10 @@ const functionalities = {
     }
     // Criando na DOM
     const newContentString = name.concat(emailPhone).concat(birthDate).concat(gender);
-
-    /* const newContent = document.createElement('p');
-    newContent.innerHTML = newContentString; */
+    const newContent = document.createElement('p');
+    newContent.innerHTML = newContentString;
     const rightContent = document.querySelector('.right-content');
-
-    // rightContent.appendChild(newContent);
-    rightContent.innerHTML = newContentString;
+    rightContent.appendChild(newContent);
   },
 };
 
