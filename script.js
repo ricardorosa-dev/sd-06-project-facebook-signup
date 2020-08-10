@@ -68,7 +68,7 @@ if (genderFather.style.display === 'none' && checkAllInputs(getAllInputs)) {
   return false;
 }
 function checkAllConditions() {
-  return checkAllConditions() && checkSecondCondition();
+  return checkFirstCondition() && checkSecondCondition();
 }
 buttonRegister.addEventListener('click', function (event) {
   event.preventDefault();
