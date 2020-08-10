@@ -33,6 +33,7 @@ function handleGenderOption() {
     removeInput();
   }
 }
+
 const genderOption = document.querySelector('.form-group-4');
 genderOption.addEventListener('change', handleGenderOption);
 
@@ -113,7 +114,7 @@ const renderMessage = (input) => {
   renderMessageDiv.innerHTML = `<span>${input}</span>`;
 };
 
-const submitBtn = document.querySelector('button[type = submit]');
+const submitBtn = document.querySelector('#facebook-register');
 submitBtn.addEventListener('click', (event) => {
   event.preventDefault();
 
