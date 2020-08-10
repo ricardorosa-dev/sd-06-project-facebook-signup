@@ -41,9 +41,10 @@ body {
 }
 
 .right-content {
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 300px;
 }
 
 .sign-in-form {
@@ -57,6 +58,12 @@ body {
 
 .gender {
   display: flex;
+  flex-direction: column;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: row;
 }
 
 .background {
