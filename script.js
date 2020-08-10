@@ -27,21 +27,6 @@ function checkContent() {
   return isEmpty;
 }
 
-function isAnyFieldEmpty() {
-  if (checkContent()) {
-    errorSpan.innerText = 'Campos inválidos';
-    data.forEach((element) => {
-      element.addEventListener('click', () => {
-        errorSpan.innerText = '';
-        isEmpty = 0;
-      });
-    });
-  }
-  if (isEmpty === 0) {
-    replaceRightContent()
-  } 
-}
-
 function replaceRightContent() {
   const userInfo = {
     name: document.querySelector('#first-name').value,
@@ -53,7 +38,7 @@ function replaceRightContent() {
   const righSideContent = document.querySelector('.right-content').childNodes;
   righSideContent.forEach((element) => {
     element.className += ' hidden';
-  })
+  });
   document.querySelector('.right-content').appendChild(document.createElement('section'));
   document.querySelector('section').innerText = `
   Nome: ${userInfo.name} ${userInfo.lastName}
@@ -61,6 +46,21 @@ function replaceRightContent() {
   Aniversario: ${userInfo.birth}
   Genero: ${userInfo.gender}
   `;
+}
+
+function isAnyFieldEmpty() {
+  if (checkContent()) {
+    errorSpan.innerText = 'Campos inválidos';
+    data.forEach((element) => {
+      element.addEventListener('click', () => {
+        errorSpan.innerText = '';
+        isEmpty = 0;
+      });
+    });
+  }
+  if (isEmpty === 0) {
+    replaceRightContent();
+  }
 }
 
 document.querySelector('#facebook-register').addEventListener('click', () => {
