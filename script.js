@@ -31,7 +31,11 @@ function checkAllInputs(inputs) {
       cont += 1;
     }
   }
-  return cont > 0 ? false : true;
+  if (cont > 0) {
+    return false;
+  } else {
+    return true;
+  }
 }
 function getTheGender() {
   for (let j = 0; j < radioSelection.length; j += 1) {
