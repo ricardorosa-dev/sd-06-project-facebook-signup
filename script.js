@@ -3,7 +3,7 @@ function loginButton() {
 }
 
 function validateRadio() {
-  const radio = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]')
+  const radio = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
   if (radio[0].checked || radio[1].checked || radio[2].checked) {
     return true;
   }
