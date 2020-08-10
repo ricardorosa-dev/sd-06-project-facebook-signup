@@ -29,3 +29,21 @@ facebookRegister.addEventListener('click', function (event) {
     }
   }
 });
+
+const clickFeminino = document.querySelector('#feminino');
+clickFeminino.addEventListener('change', function () {
+  const divGender = document.querySelector('.gender-custom');
+  divGender.style.display = 'none';
+});
+
+const clickMasculino = document.querySelector('#masculino');
+clickMasculino.addEventListener('change', function () {
+  const divGender = document.querySelector('.gender-custom');
+  divGender.style.display = 'none';
+});
+
+const clickGender = document.querySelector('#personalizado');
+clickGender.addEventListener('change', function () {
+  const divGender = document.querySelector('.gender-custom');
+  divGender.style.display = 'block';
+});
