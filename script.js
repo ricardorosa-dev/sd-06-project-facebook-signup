@@ -59,13 +59,14 @@ function checkFirstCondition() {
   return false;
 }
 function checkSecondCondition() {
-if (genderFather.style.display === 'none' && checkAllInputs(getAllInputs)) {
-  for (let x = 0; x < radioSelection.length; x += 1) {
-    if (radioSelection[x].checked) {
-      return true;
+  if (genderFather.style.display === 'none' && checkAllInputs(getAllInputs)) {
+    for (let x = 0; x < radioSelection.length; x += 1) {
+      if (radioSelection[x].checked) {
+        return true;
+      }
     }
+    return false;
   }
-  return false;
 }
 function checkAllConditions() {
   return checkFirstCondition() && checkSecondCondition();
