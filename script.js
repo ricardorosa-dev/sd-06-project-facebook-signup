@@ -8,7 +8,9 @@ const birthdate = document.querySelector('#birthdate');
 const form = document.querySelector('#form');
 const submit = document.querySelector('#facebook-register');
 const message = document.querySelector('#message');
+const allGenders = document.querySelector('#genders');
 const inputs = [];
+const optional = document.querySelector('#optionalGender');
 
 function alerta() {
   alert(emailLogin.value);
@@ -35,7 +37,23 @@ function cadastrar(event) {
   }
 }
 
+function createGender() {
+  const nameGender = document.createElement('input');
+  nameGender.name = 'gender-custom';
+  nameGender.placeholder = 'Gênero (opcional)';
+  nameGender.className = 'input';
+  optional.appendChild(nameGender);
+}
+
+function personalize(event) {
+  const click = event.target;
+  if (click.value === 'Personalizado') {
+    createGender();
+  }
+}
+
 window.onload = function () {
   btnLogin.addEventListener('click', alerta);
   submit.addEventListener('click', cadastrar);
+  allGenders.addEventListener('click', personalize);
 };
