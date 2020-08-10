@@ -25,8 +25,8 @@ buttonLogin.addEventListener('click', function () {
 function checkAllInputs(inputs) {
   for (let i = 2; i < inputs.length - 4; i += 1) {
     if (inputs[i].value === '') {
-      inputs[i].type = "text";
-      inputs[i].value = "Campos inválidos";
+      inputs[i].type = 'text';
+      inputs[i].value = 'Campos inválidos';
       return false;
     }
   }
