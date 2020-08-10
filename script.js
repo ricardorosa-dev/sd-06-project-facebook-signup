@@ -5,15 +5,19 @@ let isEmpty = 0;
 const errorSpan = document.querySelector('#error-span');
 const selectedGenderSpan = document.querySelector('#selected-gender');
 
-for (let i = 7; i < 9; i += 1) {
+for (let i = 7; i < 10; i += 1) {
   data[i].addEventListener('click', () => {
     selectedGenderSpan.value = document.querySelector('input:checked').value;
+    if (selectedGenderSpan.value === 'Personalizado') {
+      selectedGenderSpan.classList.toggle('hidden');
+      selectedGenderSpan.value = '';
+    }
   });
 }
 
 // Verifica se o campo é vazio
 function checkContent() {
-  for (let i = 2; i < 7; i += 1) {
+  for (let i = 2; i < data.length; i += 1) {
     if (data[i].value === '') {
       isEmpty += 1;
     } if (selectedGenderSpan.value = '') {
