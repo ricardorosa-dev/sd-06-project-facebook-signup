@@ -10,7 +10,7 @@ function validateInputs() {
   const inputs = document.querySelectorAll('main input');
   const errorElements = document.querySelectorAll('.error');
   if (errorElements.length === 0) {
-    for (let i = 0; i < inputs.length ; i += 1) {
+    for (let i = 0; i < inputs.length; i += 1) {
       if (inputs[i] === '') {
         generateErrorElement();
       }
