@@ -118,7 +118,11 @@ form .form-row label {
     display: flex;
     flex-direction: row;
 }
+.form-name input {
+    flex: 1;
+    min-width: 0;
+}
 
-.form-name input{
-    width: 146px;
+.form-name input:first-child {
+    margin-right: 4px;
 }
