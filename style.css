@@ -43,12 +43,18 @@ label {
 }
 
 .button {
+  background-color: #69a74e;
+  margin: 20px 0;
+  padding: 7px 20px;
+}
+
+.form-control .button {
   height: 20px;
   width: 40px;
 }
 
 .main-content {
-  background-image: url('imgs/facebook_bg.jpg');
+  background-image: linear-gradient(white, rgb(211, 216, 232));
   display: flex;
   justify-content: center;
 }
@@ -144,4 +150,9 @@ body input {
 .subtitle {
   color: #1d2129;
   font-size: 19px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-start;
 }
