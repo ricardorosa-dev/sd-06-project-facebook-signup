@@ -51,8 +51,7 @@ function getInfo() {
   for (let i = 0; i < document.forms[1].elements.length - 2; i += 1) {
     if (document.forms[1].elements[i].value !== ' ' && i !== 4) {
       info.push(document.forms[1].elements[i].value);
-    }
-    if (i === 4) {
+    } else if (i === 4) {
       dateConverter();
     }
   }
@@ -67,7 +66,6 @@ function showInfo() {
 
 document.getElementById('facebook-register').addEventListener('click', function () {
   event.preventDefault();
-  dateConverter();
   verifyErrors();
   if (errors > 0) {
     document.getElementById('invalidos').style.display = 'block';
