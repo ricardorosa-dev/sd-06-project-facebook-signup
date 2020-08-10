@@ -7,6 +7,26 @@ function alertEmail() {
 
 buttonEnter.addEventListener('click', alertEmail);
 
+const radioFields = document.querySelectorAll('input[name="gender"]');
+radioFields.forEach((field) => {
+  field.addEventListener('click', function () {
+    if (field.id === 'personalizado' && field.checked) {
+      const newfield = document.createElement('input');
+      newfield.type = 'text';
+      newfield.className = 'normal_inp';
+      newfield.placeholder = 'Gênero (opcional)';
+      newfield.name = 'gender-custom';
+
+      const addGenderField = document.querySelector('#person-field');
+      addGenderField.innerHTML = '';
+      addGenderField.appendChild(newfield);
+    } else {
+      const addGenderField = document.querySelector('#person-field');
+      addGenderField.innerHTML = '';
+    }
+  });
+});
+
 const btRegister = document.getElementById('facebook-register');
 btRegister.addEventListener('click', function () {
   // event.preventDefault();
