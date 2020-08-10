@@ -22,10 +22,13 @@ body {
 }
 
 .form-group {
-  align-self: flex-end;
   display: flex;
   flex-direction: column;
   padding: 0 5px;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 label {
