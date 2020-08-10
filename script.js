@@ -20,7 +20,8 @@ function checkContent() {
   for (let i = 2; i < data.length; i += 1) {
     if (data[i].value === '') {
       isEmpty += 1;
-    } if (selectedGenderSpan.value = '') {
+    }
+    if (selectedGenderSpan.value === '') {
       isEmpty += 1;
     }
   }
@@ -34,6 +35,7 @@ function isAnyFieldEmpty() {
     data.forEach(element => {
       element.addEventListener('click', () => {
         errorSpan.innerText = '';
+        isEmpty = 0;
       });
     });
   }
