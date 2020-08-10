@@ -26,7 +26,7 @@ function validate() {
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
 
-const person = document.querySelector('#p');
+const perso = document.querySelector('#p');
 const todos = document.querySelector('.generos');
 perso.addEventListener('click', function () {
   const novoInput = document.createElement('input');
