@@ -117,3 +117,10 @@ form {
 .radio {
   font-size: 0.9rem;
 }
+
+.right-content button {
+  background-color: #69a74e;
+  border: 1px solid seagreen;
+  color: white;
+  padding: 0 40px;
+}
