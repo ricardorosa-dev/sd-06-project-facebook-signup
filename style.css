@@ -65,6 +65,18 @@ h1 {
   word-spacing: -1px;
 }
 
+.form-group-2 {
+  display: flex;
+  flex-flow: nowrap;
+}
+
+.form-control-3 {
+  display: flex;
+  flex-flow: nowrap;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
 .quick-easy {
   font-size: 19px;
   margin-bottom: 15px;
@@ -78,6 +90,10 @@ h1 {
 .input-name {
   display: flex;
   width: 140px;
+}
+
+.form-control-3 {
+
 }
 
 .input-contact {
