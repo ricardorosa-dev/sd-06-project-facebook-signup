@@ -21,5 +21,3 @@ submitButton.addEventListener('click', function () {
     }
   }
 });
-
-
