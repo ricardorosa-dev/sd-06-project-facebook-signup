@@ -3,26 +3,22 @@ function loginButton() {
 }
 
 function validate() {
-  const inputsArray = document.getElementsByTagName('input');
-
-  for (i = 0; i < inputsArray.length; i += 1) {
-
-    let radio = false;
+  const inputsArray = document.querySelectorAll('form')[1].querySelectorAll('input');
+  let radio = false;
+  for (let i = 0; i < inputsArray.length; i += 1) {
     if (inputsArray[i].type === 'radio') {
       if (inputsArray[i].checked === true) {
         radio = true;
-        console.log('radio');
       }
     } else {
       if (inputsArray[i].value === '') {
-        alert ('Campos inválidos');
-        console.log(inputsArray[i]);
+        alert('Campos inválidos');
         break;
       }
-    }
-    if (radio === false) {
-      alert ('Campos inválidos');
-    }
+    }   
+  }
+  if (radio === false) {
+    alert('Campos inválidos');
   }
 }
 
