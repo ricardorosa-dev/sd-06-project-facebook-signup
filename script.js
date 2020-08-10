@@ -39,7 +39,7 @@ function isFilledInputs(e, inputs) {
   }
 }
 
-function getData () {
+function getData() {
   const inputs = document.querySelectorAll('main input');
   let dataMap = new Map();
   for (let i = 0; i < inputs.length; i += 1) {
@@ -53,7 +53,7 @@ function getData () {
   return dataMap
 }
 
-function createDataContainer (map) {
+function createDataContainer(map) {
   const rightContainer = document.getElementsByClassName('right-content')[0];
   for (let value of map.values()) {
     let newElement = document.createElement('div');
@@ -63,7 +63,7 @@ function createDataContainer (map) {
   }
 }
 
-function removeDataContainer () {
+function removeDataContainer() {
  const forms = document.getElementById('signUp');
  console.log(forms);
  document.getElementsByClassName('right-content')[0].removeChild(forms);
