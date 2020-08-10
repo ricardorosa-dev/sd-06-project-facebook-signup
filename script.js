@@ -1,24 +1,39 @@
-window.onload = () => {
-  let justValidate = new JustValidate('.js-form', {
-    rules: {
-      name: {
-        required: true,
-      },
-      lastname: {
-          required: true,
-      },
-      contact: {
-          required: true,
-      },
-      password: {
-          required: true,
-      },
-      date: {
-        required: true,
-      },
-      gender: {
-        required: true,
-      },
-    },
+function generateErrorElement () {
+  parentElement = document.querySelector('#signUp');
+  errorElement = document.createElement('div');
+  errorElement.classList = 'error';
+  errorElement.innerText = 'Campos inválidos';
+  parentElement.append(errorElement);
+}
+
+function isEmpty (nodeElement, action,once) {
+  for (let i = 0; nodeElement.length; i += 1) {
+    if (nodeElement[i].value == '') {
+      action
+      console.log('done')
+      if (once == true) {
+        break;
+      }
+    }
+  }
+}
+
+function validateInputs () {
+  inputs = document.querySelectorAll('main input');
+  errorElements = document.querySelectorAll('.error');
+
+  if (errorElements.length == 0) {
+    isEmpty(inputs,generateErrorElement(),true);
+  }
+}
+
+function buttonEvents () {
+  buttonConclude = document.getElementById('facebook-register');
+  buttonConclude.addEventListener('click', function (e) {
+    validateInputs ();
   });
+}
+
+window.onload = () => {
+  buttonEvents ();
 };

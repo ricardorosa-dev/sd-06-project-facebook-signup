@@ -66,6 +66,8 @@ h1 {
 }
 
 .form-control {
+  display: flex;
+  flex-flow: nowrap;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -99,7 +101,7 @@ h1 {
 }
 
 .gender-text {
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 800;
 }
 
