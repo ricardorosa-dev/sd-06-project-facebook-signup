@@ -35,7 +35,7 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <small class="quick-easy">É rápido e fácil.</small>
-      <form action="#" class="datas">
+      <form id="form" action="#" class="datas">
         <div class="info">
           <div class="field control">
             <input id="name" class="input" type="text" name="firstname" placeholder="Nome">
@@ -45,10 +45,10 @@
           </div>
         </div>
         <div class="field">
-          <input class="input" type="text" name="phone_email" placeholder="Celular ou email">
+          <input id="email" class="input" type="text" name="phone_email" placeholder="Celular ou email">
         </div>
         <div class="field">
-          <input class="input" type="password" name="password" placeholder="Nova senha">
+          <input id="password" class="input" type="password" name="password" placeholder="Nova senha">
         </div>
         <div class="field">
           <label class="label" id="label-birthdate" for="birthdate">Data de nascimento</label>
@@ -76,6 +76,7 @@
         <div class="control">
           <button id="facebook-register" class="cadastrar" type="submit">Cadastre-se</button>
         </div>
+        <div id="message"></div>
       </form>
     </div>
   </section>
