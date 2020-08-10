@@ -3,10 +3,6 @@ document.getElementById('button-login').addEventListener('click', () => alert(do
 function setNewErrorMsg(formField) {
   if (formField.value === '') {
     document.querySelector('#error-field').innerHTML = 'Campos inválidos';
-  } else {
-    const registerName = document.querySelector('#first-name').value;
-    const registerLastname = document.querySelector('#last-name').value;
-    document.querySelector('.right-content').innerHTML = `Olá, ${registerName} ${registerLastname}`;
   }
 }
 
