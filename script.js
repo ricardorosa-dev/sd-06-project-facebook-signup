@@ -43,13 +43,15 @@ function getTheGender() {
 }
 function getDivInformations(inputs) {
   rightContent.innerHTML = '';
+  const textParagraph = document.createElement('p');
   const name = inputs[2].value;
   const lastname = inputs[3].value;
   const emailOrPhone = inputs[4].value;
   const birthDate = inputs[6].value;
   const genderChoice = inputs[getTheGender() + 7].value;
   const textMessage = `Olá, ${name}  ${lastname} ,seu cadastro foi feito em: ${emailOrPhone} ,nasceu na data: ${birthDate} .Possui o gênero ${genderChoice}.`;
-  rightContent.innerHTML = textMessage;
+  textParagraph.appendChild(document.createTextNode(textMessage));
+  rightContent.appendChild(textParagraph);
 }
 function checkFirstCondition() {
   for (let x = 0; x < radioSelection.length - 1; x += 1) {
