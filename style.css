@@ -62,9 +62,11 @@ input {
   font-size: 12px;
   font-weight: 700;
   margin-bottom: 4px;
+  order: 0;
 }
 
 .form-group input {
+  order: 1;
   padding: 2px;
 }
 
