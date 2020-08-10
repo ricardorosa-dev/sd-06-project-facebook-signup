@@ -30,16 +30,15 @@ function addCampo() {
 addCampo();
 
 function validateData() {
-  event.preventDefault()
-  let p = document.createElement('p');
+  event.preventDefault();
+  const p = document.createElement('p');
 
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
-      p.innerHTML = 'Campos invalidos'
-      form.appendChild(p)
+      p.innerHTML = 'Campos invalidos';
+      form.appendChild(p);
     }
   }
 }
 
 button.addEventListener('click', validateData);
-
