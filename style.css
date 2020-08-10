@@ -1,7 +1,9 @@
 body {
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
-  margin: 0;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .top-bar {
@@ -44,8 +46,30 @@ label {
 
 .main-content {
   display: flex;
+  justify-content: center;
 }
 
 .left-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
   width: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.left-content p {
+  color: rgb(29, 56, 109);
+  font-size: 20px;
+  font-weight: 700;
+  width: 60%;
+}
+
+.title {
+  line-height: 50px;
 }
