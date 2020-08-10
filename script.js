@@ -2,11 +2,42 @@ function generateErrorElement() {
   let errorElement = document.querySelector('.error');
   const parentElement = document.querySelector('#signUp');
   if (errorElement == null) {
-
     errorElement = document.createElement('div');
     errorElement.classList = 'error';
     errorElement.innerText = 'Campos inválidos';
     parentElement.append(errorElement);
+  }
+}
+
+function isFilled(inputs, e) {
+  if (inputs.value !== '' && inputs === e.currentTarget) {
+    inputs.setAttribute('filled', 'true');
+  }
+}
+
+function isFilledInputs(e, inputs) {
+  for (let i = 0; i < inputs.length; i += 1) {
+    isFilled(inputs[i],e);
+    if (inputs[i].value === '' && inputs[i] === e.currentTarget) {
+      inputs[i].setAttribute('filled', 'false');
+    }
+  }
+}
+
+function setFilledState(inputs) {
+  let filledElements = 0;
+  for (let i = 0; i < inputs.length; i += 1) {
+    const currentState = inputs[i].getAttribute('filled');
+    if (currentState !== 'true') {
+      generateErrorElement();
+    }
+    else {
+      filledElements += 1;
+    }
+  }
+  if (filledElements >= (inputs.length) - 2) {
+    removeErrorElement();
+    showData();
   }
 }
 
@@ -25,78 +56,44 @@ function removeErrorElement() {
   }
 }
 
-function isFilled(inputs,e) {
-  if (inputs.value !== '' && inputs === e.currentTarget) {
-    inputs.setAttribute('filled','true');
-  }
-}
-
-function isFilledInputs(e, inputs) {
-  for (let i = 0; i < inputs.length; i += 1) {
-    isFilled(inputs[i],e);
-    if (inputs[i].value === '' && inputs[i] === e.currentTarget) {
-      inputs[i].setAttribute('filled','false');
-    }
-  }
-}
-
-function getData () {
+function getData() {
   const inputs = document.querySelectorAll('main input');
   let dataMap = new Map();
   for (let i = 0; i < inputs.length; i += 1) {
     if (i <= 4) {
-      dataMap.set(inputs[i].name,inputs[i].value);
+      dataMap.set(inputs[i].name, inputs[i].value);
     }
     if (inputs[i].checked) {
-      dataMap.set(inputs[i].name,inputs[i].value)
+      dataMap.set(inputs[i].name, inputs[i].value);
     }
   }
-  return dataMap
+  return dataMap;
 }
 
-function createDataContainer (map) {
+function createDataContainer(map) {
   const rightContainer = document.getElementsByClassName('right-content')[0];
-  for (let value of map.values()) {
-    let newElement = document.createElement('div');
+  for (const value of map.values()) {
+    const newElement = document.createElement('div');
     newElement.classList = 'new-element';
     newElement.innerText = value;
     rightContainer.appendChild(newElement);
   }
 }
 
-function removeDataContainer () {
- const forms = document.getElementById('signUp');
- console.log(forms);
- document.getElementsByClassName('right-content')[0].removeChild(forms);
+function removeDataContainer() {
+  const forms = document.getElementById('signUp');
+  document.getElementsByClassName('right-content')[0].removeChild(forms);
 }
 
 function showData() {
   const dataMap = getData();
-  console.log(dataMap);
   removeDataContainer();
   createDataContainer(dataMap);
 }
 
-function setFilledState(inputs) {
-  let filledElements = 0;
-  for (let i = 0; i < inputs.length; i += 1) {
-    const  currentState = inputs[i].getAttribute('filled');
-    if(currentState !== 'true') {
-      generateErrorElement();
-    }
-    else {
-      filledElements += 1;
-    }
-  }
-  if (filledElements >= (inputs.length)-2) {
-    removeErrorElement();
-    showData();
-  }
-}
-
 function initAttributes(inputs) {
   for (let i = 0; i < inputs.length; i += 1) {
-    inputs[i].setAttribute('filled','false');
+    inputs[i].setAttribute('filled', 'false');
   }
 }
 
@@ -105,6 +102,7 @@ function buttonEvents() {
   const buttonLogin = document.getElementById('button-login');
   const buttonConclude = document.getElementById('facebook-register');
   buttonConclude.addEventListener('click', function (e) {
+    initAttributes(inputs);
     validateInputs(e, inputs);
     e.preventDefault();
   });
