@@ -32,26 +32,36 @@
         </div>
     </header>
     <main class="main-content">
-        <div class="page-content">
-            <div>
-                <!-- ### 9 - Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content -->
-                <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-                <img src="imgs/networking.png" alt="Conexão entre pessoas" id="facebook-networking">
-                <div class="right-content">
-                    <!-- Precisa posicionar este container inteiro à direita do container left-content -->
-                    <h1>Abra uma conta</h1>
-                    <div class="quick-easy">
-                        <p>É rápido e fácil.</p>
-                        <form>
-                            <!-- ### 11 - Crie um campo de entrada de texto para o nome do usuário dentro do formulário criado no requisito 10
-
-                            Pontos importantes:
-                            * O campo deve ter o atributo name com o valor "firstname"
-                            * O campo deve ter um placeholder com o valor "Nome" -->
-                        </form>
-                    </div>
-                </div>
+        <div class="left-content">
+            <!-- ### 9 - Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content -->
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem
+                parte da sua vida.</p>
+            <img src="imgs/networking.png" alt="Conexão entre pessoas" id="facebook-networking">
+        </div>
+        <div class="right-content">
+            <!-- Precisa posicionar este container inteiro à direita do container left-content -->
+            <h1>Abra uma conta</h1>
+            <div class="quick-easy">
+                <p>É rápido e fácil.</p>
             </div>
+            <form>
+                <input type="text" name="firstname" placeholder="Nome">
+                <input type="text" name="lastname" placeholder="Sobrenome">
+                <input type="tel email" name="phone_email" placeholder="Celular ou email">
+                <input type="password" name="password" placeholder="Nova senha">
+                <label id="label-birthdate">Data de nascimento</label>
+                <input name="birthdate" placeholder="dd/mm/aaaa">
+                <label id="label-gender">Gênero</label>
+                <input type="radio" name="gender" value="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="gender" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="gender" value="personalizado">
+                <label for="personalizado">Personalizado</label>
+                <input type="submit" id="facebook-register" value="Cadastre-se">
+            </form>
+
+        </div>
         </div>
     </main>
 </body>
