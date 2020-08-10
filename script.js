@@ -4,6 +4,7 @@ const messageParagraph = document.createElement('p');
 messageParagraph.innerText = 'Campos inválidos';
 const inputPersonalOptional = document.createElement('input');
 inputPersonalOptional.type = 'text';
+inputPersonalOptional.name = 'gender-custom';
 inputPersonalOptional.placeholder = 'Gênero (opcional)';
 const optionFemaleCheck = document.querySelector('#feminino');
 const optionMaleCheck = document.querySelector('#masculino');
