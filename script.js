@@ -3,21 +3,20 @@ const emailTelephoneInput = document.querySelector('#user-email-phone');
 const femaleGender = document.querySelector('#feminino');
 const maleGender = document.querySelector('#masculino');
 const customGender = document.querySelector('#personalizado');
+const rightContent = document.querySelector('.right-content');
+const inputTextArray = document.querySelectorAll('.input-text-verification');
 
 loginButton.addEventListener('click', function () {
   alert(emailTelephoneInput.value);
 });
 
 function removeData() {
-  const rightContent = document.querySelector('.right-content');
-  while(rightContent.firstChild) {
+  while (rightContent.firstChild) {
     rightContent.firstChild.remove();
   }
 }
 
 function printData() {
-  const rightContent = document.querySelector('.right-content');
-  const inputTextArray = document.querySelectorAll('.input-text-verification');
   const p = document.createElement('p');
   p.innerHTML = 'Olá ';
   p.innerHTML += inputTextArray[0].value;
@@ -47,7 +46,6 @@ facebookRegister.addEventListener('click', function () {
   const form = document.querySelector('.subscription-form');
   const p = document.createElement('p');
   p.innerHTML = 'Campos inválidos';
-  const inputTextArray = document.querySelectorAll('.input-text-verification');
   if (!femaleGender.checked && !maleGender.checked && !customGender.checked) {
     form.appendChild(p);
   } else {
@@ -57,7 +55,7 @@ facebookRegister.addEventListener('click', function () {
         break;
       }
     }
-    printData ();
+    printData();
   }
 });
 /*
