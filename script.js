@@ -6,12 +6,27 @@ function generateErrorElement() {
   parentElement.append(errorElement);
 }
 
+
+
 function isEmpty(inputs) {
+  let boolean = 0
   for (let i = 0; i < inputs.length; i += 1) {
-    if (inputs[i].value === '') {
-      generateErrorElement();
-      break;
+    if (inputs[i].value !== '') {
+      boolean += 1;
     }
+
+  }
+  console.log('done');
+  if (boolean < 5) {
+    generateErrorElement();
+  }
+  return boolean
+}
+
+function removeErrorElement() {
+  const errorElement = document.querySelector('.error')
+  if (errorElement.length > 0 ) {
+    errorElement.parentElement.removeChild(errorElement);
   }
 }
 
@@ -21,12 +36,14 @@ function validateInputs() {
   if (errorElements.length === 0) {
     isEmpty(inputs);
   }
+
 }
 
 function buttonEvents() {
   const buttonConclude = document.getElementById('facebook-register');
-  buttonConclude.addEventListener('click', function () {
+  buttonConclude.addEventListener('click', function (e) {
     validateInputs();
+
   });
 }
 
