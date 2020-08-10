@@ -33,7 +33,7 @@ function checkAllInputs(inputs) {
   }
   if (cont > 0) {
     return false;
-  } 
+  }
   return true;
 }
 function getTheGender() {
