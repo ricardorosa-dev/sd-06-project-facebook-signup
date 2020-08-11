@@ -1,5 +1,3 @@
-'use strict';
-
 const buttonEnter = document.querySelector('.button-login');
 const textEmailTel = document.getElementById('user-email-phone');
 
