@@ -41,8 +41,7 @@ function buttonRegisterCharge() {
     event.preventDefault();
     if (chechRadio() === true) {
       formValues();
-    }
-    else {
+    } else {
       putMenssagem();
     }
   });
