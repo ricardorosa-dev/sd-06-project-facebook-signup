@@ -159,7 +159,6 @@ function stopSubmitAction(evt) {
 
 buttonLogin.addEventListener('click', buttonLoginAlert);
 buttonRegister.addEventListener('click', stopSubmitAction);
-
-genderField[0].addEventListener('change', showGenderCustomInput);
-genderField[1].addEventListener('change', showGenderCustomInput);
-genderField[2].addEventListener('change', showGenderCustomInput);
+for (let index = 0; index < genderField.length; index += 1) {
+  genderField[index].addEventListener('change', showGenderCustomInput);
+}
