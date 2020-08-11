@@ -139,9 +139,9 @@ function generateWelcomeMessage() {
 function createWelcomeMessageContent() {
   document.querySelector('.right-content-welcome').style.display = 'flex';
   document.querySelector('.right-content').style.alignSelf = 'center';
-  document.querySelector('.welcome-message-content').innerHTML = `Olá ${firstNameField.value} ${lastNameField.value}
-  Celuler ou email: ${phoneEmailField.value}
-  Data de nasciemto: ${birthdateField.value}
+  document.querySelector('.right-content-welcome').innerHTML = `Olá ${firstNameField.value} ${lastNameField.value}<br>
+  Celular ou email: ${phoneEmailField.value}<br>
+  Data de nascimento: ${birthdateField.value}<br
   Gênero: ${getGenderValue()}`;
   generateWelcomeMessage();
 }
