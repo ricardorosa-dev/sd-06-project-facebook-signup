@@ -49,7 +49,7 @@ buttonSend.addEventListener('click', (event) => {
   }
 });
 
-const substitute = function () {
+document.querySelector('.register-form').onsubmit = function () {
   const firstName = document.querySelector('.firstname').value;
   const lastName = document.querySelector('.lastname').value;
   const mail = document.querySelector('.email').value;
@@ -59,13 +59,13 @@ const substitute = function () {
   for (let index = 0; index < gender.length; index += 1) {
     if (gender[index].checked) {
       selectedRadio = gender[index].value;
-    };
-  };
+    }
+  }
   const divContent = document.querySelector('.right-content');
   const nDivContent = divContent.children.length;
   for (let index = 0; index < nDivContent; index += 1) {
     divContent.removeChild(divContent.children[0]);
-  };
+  }
   const paragrafo = document.createElement('p');
   paragrafo.innerHTML = `
   Olá, ${firstName} ${lastName}
@@ -74,4 +74,4 @@ const substitute = function () {
   ${selectedRadio}
   `;
   divContent.appendChild(paragrafo);
-}
+};
