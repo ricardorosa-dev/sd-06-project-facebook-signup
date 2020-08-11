@@ -125,7 +125,8 @@ function createWelcomeMessageContent() {
 
 function generateWelcomeMessage() {
   if (document.querySelector('.formMessage').style.display === 'none') {
-    document.querySelector('.right-content').style.display = 'none';
+    document.querySelector('.open-account').style.display = 'none';
+    document.querySelector('.quick-easy').style.display = 'none';
     createWelcomeMessageContent();
   }
 }
