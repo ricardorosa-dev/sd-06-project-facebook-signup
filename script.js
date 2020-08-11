@@ -1,3 +1,5 @@
+'use strict';
+
 const buttonEnter = document.querySelector('.button-login');
 const textEmailTel = document.getElementById('user-email-phone');
 
@@ -39,9 +41,8 @@ function genderFieldFunc() {
 
 function insertContent(list) {
   document.querySelector('.right-content').innerHTML = '';
-  const data = `"Olá, ${list[0]} ${list[1]}, ${list[2]}, ${list[4]}, ${list[5]}"`;
   const p = document.createElement('p');
-  p.appendChild(document.createTextNode(data));
+  p.innerHTML = `Olá, ${list[0]} ${list[1]}, e-mail ${list[2]}, nascido em ${list[4]}, gênero ${list[5]}.`;
   document.querySelector('.right-content').appendChild(p);
   // p.innerHTML = `Olá, ${list[0]} ${list[1]}, ${list[2]}, ${list[4]}, ${list[5]}`;
   // document.querySelector('.right-content').appendChild(p);
