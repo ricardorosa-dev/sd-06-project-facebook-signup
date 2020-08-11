@@ -12,6 +12,7 @@ const buttonFacebookRegister = document.querySelector('#facebook-register');
 const message = document.querySelector('#error-msg');
 const genderCustom = document.querySelector('#gender-custom');
 const genderOptions = document.querySelector('.gender-options');
+const rightContent = document.querySelector('.right-content');
 
 buttonLogin.addEventListener('click', function () {
   alert(userLogin.value);
@@ -41,16 +42,41 @@ function verifyGender() {
   return errorCounter;
 }
 
+function selectedGender() {
+  let selected;
+  
+  if (genderFemale.checked) {
+    selected = 'Feminino';
+  } else if (genderMale.checked) {
+    selected = 'Masculino';
+  } else if (genderOther.checked) {
+    selected = `Personalizado ${genderCustom.value}.`;
+  }
+  return selected;
+}
+
+function consolidate() {
+  const consolidateText = `Olá, ${fName.value} ${lName.value}.
+  Seu usuário será ${phoneEmail.value}.
+  Sua data de nascimento é ${birth.value}.
+  O gênero selecionado é ${selectedGender()}`;
+  return consolidateText;
+}
+
 function validateData() {
   event.preventDefault();
   const totalError = verifyData() + verifyGender();
 
   if (totalError > 0) {
     message.innerHTML = 'Campos inválidos';
+  } else {
+    rightContent.innerHTML = consolidate();
+    rightContent.style.display = 'block';
   }
 }
 
 buttonFacebookRegister.addEventListener('click', validateData);
+
 genderOptions.addEventListener('click', () => {
   const targetEvent = event.target;
 
