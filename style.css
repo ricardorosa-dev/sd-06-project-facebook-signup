@@ -98,12 +98,6 @@ small {
   width: 300px;
 }
 
-.right-content-welcome {
-  display: none;
-  font-size: 1.3rem;
-  font-weight: 900;
-}
-
 .facebook-register {
   background: linear-gradient(#67ae55, #578843);
   background-color: #69a74e;
