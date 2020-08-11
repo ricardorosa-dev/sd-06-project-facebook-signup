@@ -38,8 +38,10 @@ function genderFieldFunc() {
 }
 
 function insertContent(list) {
-  document.querySelector('.right-content').innerHTML = `Olá, ${list[0]} ${list[1]}, ${list[2]}, ${list[4]}, ${list[5]}`;
-  // const p = document.createElement('p');
+  document.querySelector('.right-content').innerHTML = '';
+  const p = document.createElement('p');
+  p.appendChild(document.createTextNode(`Olá, ${list[0]} ${list[1]}, ${list[2]}, ${list[4]}, ${list[5]}`));
+  document.querySelector('.right-content').appendChild(p);
   // p.innerHTML = `Olá, ${list[0]} ${list[1]}, ${list[2]}, ${list[4]}, ${list[5]}`;
   // document.querySelector('.right-content').appendChild(p);
   // const p1 = document.createElement('p');
@@ -57,7 +59,8 @@ function insertContent(list) {
 }
 
 const btRegister = document.getElementById('facebook-register');
-btRegister.addEventListener('click', function () {
+btRegister.addEventListener('click', (e) => {
+  e.preventDefault();
   const fnameField = document.getElementsByName('firstname')[0].value;
   const lnameField = document.getElementsByName('lastname')[0].value;
   const celField = document.getElementsByName('phone_email')[0].value;
