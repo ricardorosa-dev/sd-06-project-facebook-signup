@@ -1,132 +1,132 @@
 .top-bar {
-    background-color: rgb(66, 103, 178);
-    height: 82px;
-    display: flex;
-    justify-content: space-between;
+    background-color: rgb(66, 103, 178);  
+    height: 82px;  
+    display: flex;  
+    justify-content: space-between;  
 }
 
 .facebook-login {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    float: right;
-    font-size: 12px;
-    margin-right: 0;
+    color: white;  
+    display: flex;  
+    flex-direction: row;  
+    float: right;  
+    font-size: 12px;  
+    margin-right: 0;  
 }
 
 body {
-    font-size: 12px;
-    line-height: 1.34;
-    margin: 0;
-    padding: 0;
+    font-size: 12px;  
+    line-height: 1.34;  
+    margin: 0;  
+    padding: 0;  
 }
 
 .login-text {
-    color: white;
-    margin-bottom: 6px;
-    padding-left: 14px;
-    text-align: left;
+    color: white;  
+    margin-bottom: 6px;  
+    padding-left: 14px;  
+    text-align: left;  
 }
-    /*Essa classe "page-content" foi criada porque identifiquei no próprio site do facebook que eles possuem essa margem de 980px onde todo o conteúdo inserido fica contido nele e centralizado na página.*/
+  
 .page-content  {
-    margin: 0 auto;
-    padding-top: 13px;
-    width: 980px;
+    margin: 0 auto;  
+    padding-top: 13px;  
+    width: 980px;  
 }
-    /*Classe "textbox" criada para estilizar as caixas de input do login*/
+ 
 .textbox  {
-    border: 1px solid rgb(29, 42, 91);
-    height: 14px;
-    margin-left: 14px;
-    max-width: 142px;
-    padding: 3px 3px 4px 3px;
+    border: 1px solid rgb(29, 42, 91);  
+    height: 14px;  
+    margin-left: 14px;  
+    max-width: 142px;  
+    padding: 3px 3px 4px;  
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+    display: flex;  
+    flex-direction: column;  
 }
 
 .form-control {
-    align-self: flex-end;
+    align-self: flex-end;  
 }
 
 .button-login {
-    background-color: rgb(66, 103, 178);
-    border: 1px solid rgb(41, 72, 125);
-    border-radius: 2px;
-    color: white;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 18px;
-    margin-left: 14px;
-    padding: 2px 6px 2px 6px;
-    text-align: center;
+    background-color: rgb(66, 103, 178);  
+    border: 1px solid rgb(41, 72, 125);  
+    border-radius: 2px;  
+    color: white;  
+    font-size: 12px;  
+    font-weight: 700;  
+    line-height: 18px;  
+    margin-left: 14px;  
+    padding: 2px 6px;  
+    text-align: center;  
 }
 
 .main-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-    width: 980px;
+    display: flex;  
+    flex-direction: row;  
+    justify-content: center;  
+    margin: auto;  
+    width: 980px;  
 }
 
 .left-content {
-    display: flex;
-    width: 800px;
+    display: flex;  
+    width: 800px;  
 }
 
 .left-content p {
-    color: rgb(14, 56, 95);
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 40px;
-    line-height: 29px;
-    width: 450px;
+    color: rgb(14, 56, 95);  
+    font-size: 20px;  
+    font-weight: 700;  
+    margin-top: 40px;  
+    line-height: 29px;  
+    width: 450px;  
 }
 
 .right-content {
-    width: 300px;
+    width: 300px;  
 }
 
 .facebook-logo {
-    float: left;
+    float: left;  
 }
 
 .register-form {
-    display: flex;
-    flex-direction: column;
+    display: flex;  
+    flex-direction: column;  
 }
 
 .form-row {
-    display: flex;
-    flex-direction: row;
+    display: flex;  
+    flex-direction: row;  
 }
 
 .register-form input {
-    border: 1px solid rgb(189, 199, 216);
-    border-radius: 5px;
-    height: 21px;
-    margin: 2px 0 4px 0;
-    padding: 8px 10px 8px 10px;
+    border: 1px solid rgb(189, 199, 216);  
+    border-radius: 5px;  
+    height: 21px;  
+    margin: 2px 0 4px;
+    padding: 8px 10px;
 }
 
 form .form-row label {
-    margin-left: 4px;
+    margin-left: 4px;  
 }
 
 .form-name {
-    display: flex;
-    flex-direction: row;
-    width: 300px;
+    display: flex;  
+    flex-direction: row;  
+    width: 300px;  
 }
 
 .form-name input {
-    flex: 1;
-    min-width: 0;
+    flex: 1;  
+    min-width: 0;  
 }
 
 .form-name input:first-child {
-    margin-right: 4px;
+    margin-right: 4px;  
 }
