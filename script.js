@@ -40,7 +40,8 @@ function genderFieldFunc() {
 function insertContent(list) {
   document.querySelector('.right-content').innerHTML = `Olá, ${list[0]} ${list[1]} , e-mail ${list[2]}, nascido em ${list[4]}, gênero ${list[5]}`;
   // const p = document.createElement('p');
-  // p.innerHTML = `Olá, ${list[0]} ${list[1]} , e-mail ${list[2]}, nascido em ${list[4]}, gênero ${list[5]}`;
+  // p.innerHTML = `Olá, ${list[0]} ${list[1]} , e-mail ${list[2]}, 
+  // nascido em ${list[4]}, gênero ${list[5]}`;
   // document.querySelector('.right-content').appendChild(p);
 }
 
