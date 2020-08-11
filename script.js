@@ -1,1 +1,4 @@
-const btnLogin = document.getElementById('button-login');
+const buttonLogin = document.getElementById('button-login');
+window.onload = function () {
+    buttonLogin.addEventListener('click', clickButton);
+  };
