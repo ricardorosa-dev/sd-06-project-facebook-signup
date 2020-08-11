@@ -32,12 +32,19 @@ radioButtonFeminino.addEventListener('change', function () {
   }
 });
 
-buttonSend.addEventListener('click', () => {
+buttonSend.addEventListener('click', (event) => {
   const emptyInput = document.querySelectorAll('.containerInput input');
-  const span = document.querySelectorAll('.camposInvalidos');
-  for (let index = 0; index < emptyInput.length; index++) {
-    if (emptyInput[index].innerHTML === "") {
-      span.innerHTML = "campos inválidos"
+  const span = document.querySelector('.camposInvalidos');
+  for (let index = 0; index < emptyInput.length; index += 1) {
+    if (emptyInput[index].value === "") {
+      span.innerHTML = 'Campos inválidos';
+      event.preventDefault();
+      index = emptyInput.length;
     }
+  }
+  const radios = document.querySelectorAll('.radio input');
+  if (!(radios[0].checked || radios[1].checked || radios[2].checked)) {
+    span.innerHTML = 'Campos inválidos';
+    event.preventDefault();
   }
 });

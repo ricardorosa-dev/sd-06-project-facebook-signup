@@ -104,3 +104,7 @@ body {
 .quick-easy {
   font-size: 1em;
 }
+
+.camposInvalidos {
+  color: red;
+}
