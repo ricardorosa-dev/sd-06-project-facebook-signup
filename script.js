@@ -23,13 +23,13 @@ function createDataContainer(map) {
   mainContainer.appendChild(rightContainer);
   const newElement = document.createElement('h1');
   newElement.classList = 'new-element';
-  newElement.innerText = `Olá, ${map.get('firstname')} ${map.get('lastname')}`
+  newElement.innerText = `Olá, ${map.get('firstname')} ${map.get('lastname')}`;
   rightContainer.appendChild(newElement);
 }
 
 function removeDataContainer() {
   const parentElemen = document.getElementsByClassName('main-content')[0];
-  let childElement = document.getElementById('article');
+  const childElement = document.getElementById('article');
   parentElemen.removeChild(childElement);
 }
 
