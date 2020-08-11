@@ -76,16 +76,22 @@ h1 {
   width: 300px;
 }
 
-.form-group-1 .input-control-1 {
+.input-control-1 {
+  display: flex;
+  height: 30px;
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
-  padding: 2px;
-  width: 48%;
+  max-width: 150px;
+  padding: 0;
+  width: 50%;
 }
 
 .form-group-2 {
   display: flex;
+  height: 40px;
+  max-width: 300px;
+  width: 100%;
 }
 
 .form-group-2 .input-control-2 {
@@ -114,13 +120,17 @@ h1 {
 
 .form-group-4 {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
 }
 
-.form-group-4 .input-control-4 {
-  display: flex;
+.form-group-4 .label-gender {
   font-size: 14px;
   font-weight: 700;
+  width: 300px;
+}
+
+.form-group-4 .input-group-4 {
+  font-size: 12px;
   margin-bottom: 10px;
   margin-left: 5px;
   padding: 2px;
