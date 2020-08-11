@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   <script src="script.js" defer></script>
   <title>Facebook</title>
 
@@ -50,7 +51,7 @@
           </div>
           <div class="input_group">
             <label id="label-birthdate">Data de nascimento</label>
-            <input type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" maxlength="10" required>
           </div>
           <div class="input_group">
             <label id="label-gender">Gênero</label>
@@ -76,7 +77,15 @@
       </div>
     </section>
   </main>
+  <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script>
+    var picker = new Pikaday({
+      field: document.querySelector('input[name="birthdate"]'),
+      format: "DD/MM/YYYY"
+    });
 
+  </script>
 </body>
 
 </html>
