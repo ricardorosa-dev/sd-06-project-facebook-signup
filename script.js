@@ -119,7 +119,7 @@ function buttonEvents() {
     e.preventDefault();
   });
   buttonLogin.addEventListener('click', function () {
-    alert('Email ou telefone');
+    alert(document.getElementById('user-email-phone').value);
   });
 }
 
