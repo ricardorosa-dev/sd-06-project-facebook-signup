@@ -51,4 +51,3 @@ function OptionalGenre() {
 }
 
 clickPersonalizado.addEventListener('click', OptionalGenre);
-//só um comentário para desbugar o Code Climate
