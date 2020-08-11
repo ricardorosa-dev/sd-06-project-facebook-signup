@@ -90,18 +90,27 @@ const getRadio = () => {
   }
   return allRadio;
 };
+// formatar a data padrão yyyy-MM-dd
+const parseDate = (date) => {
+  const day = date.slice(-2);
+  const month = date.slice(5, 7);
+  const year = date.slice(0, 4);
+  const formatDate = `${year}-${month}-${day}`;
+  return formatDate;
+};
 // obter valor do input tipo date da right-content
 const getDate = () => {
   const allDate = [];
   const inputDate = document.querySelector('input[type=date]').value;
-
   if (inputDate === null || inputDate === '') {
     allDate.push(null);
   } else {
-    allDate.push(inputDate);
+    const formatDate = parseDate(inputDate);
+    allDate.push(formatDate);
   }
   return allDate;
 };
+
 // CONJUNTO DE FUNÇÕES PARA MONTAR E APRESENTAR MENSAGENS
 // substituir conteúdo pela mensagem na div right-content
 const renderOutput = (input) => {
@@ -138,7 +147,7 @@ submitBtn.addEventListener('click', (event) => {
     const MessageString = 'Campos inválidos';
     renderMessage(MessageString);
   } else {
-    const okMessage = `Olá ${allInputs[0]} ${allInputs[1]}, seu Email ou telefone é ${allInputs[2]} e você selecionou o gênero ${allInputs[4]}.`;
+    const okMessage = `Olá ${allInputs[0]} ${allInputs[1]}, seu email ou telefone é ${allInputs[2]}, selecionou o gênero ${allInputs[4]} e se inscreveu em ${allInputs[5]}.`;
     renderOutput(okMessage);
   }
 });
