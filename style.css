@@ -4,14 +4,45 @@ body {
   width: 1366px;
 }
 
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  flex-direction: row;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  height: 90px;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  align-items: flex-end;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+.form-control button {
+  background-color: #4267b2;
+  border-radius: 5px;
+  color: white;
+  margin: 0 5px;
+  text-align: center;
+}
+
 .main-content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.hidden {
-  display: none;
 }
 
 .left-content {
@@ -137,37 +168,6 @@ h1 {
   padding: 2px;
 }
 
-.top-bar {
-  align-items: center;
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  flex-direction: row;
-  font-family: Montserrat, sans-serif;
-  font-size: 12px;
-  height: 90px;
-  justify-content: space-between;
-}
-
-.facebook-login {
-  align-items: flex-end;
-  display: flex;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin: 0 5px;
-}
-
-.form-control {
-  align-self: flex-end;
-  display: flex;
-}
-
-.form-control button {
-  background-color: #4267b2;
-  border-radius: 5px;
-  color: white;
-  margin: 0 5px;
-  text-align: center;
+.hidden {
+  display: none;
 }
