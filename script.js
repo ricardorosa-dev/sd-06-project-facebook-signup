@@ -1,5 +1,5 @@
-function buttonLogin() {
-  buttonLogin = document.querySelector('#button-login');
+function buttonLoginCharge() {
+  const buttonLogin = document.querySelector('#button-login');
   buttonLogin.addEventListener('click', function () {
     const inputUser = document.querySelector('input#user-email-phone').value;
     alert(inputUser);
@@ -35,12 +35,12 @@ function chechRadio() {
   return valueGender;
 }
 
-function buttonRegister() {
-  buttonRegister = document.querySelector('#facebook-register');
+function buttonRegisterCharge() {
+  const buttonRegister = document.querySelector('#facebook-register');
   buttonRegister.addEventListener('click', function () {
     if (chechRadio() === true) {
       formValues();
-      }
+    }
     else {
       putMenssagem();
     }
@@ -48,6 +48,6 @@ function buttonRegister() {
 }
 
 window.onload = function () {
-  buttonLogin();
-  buttonRegister();
+  buttonLoginCharge();
+  buttonRegisterCharge();
 };
