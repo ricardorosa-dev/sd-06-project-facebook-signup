@@ -55,16 +55,10 @@ function selectedGender() {
   return selected;
 }
 
-function formatData() {
-  const data = birth.value;
-  const newData = `${data.substr(8, 2)}/${data.substr(5, 2)}/${data.substr(0, 4)}`;
-  return newData;
-}
-
 function consolidate() {
   const consolidateText = `Olá, ${fName.value} ${lName.value}.
   Seu usuário será ${phoneEmail.value}.
-  Sua data de nascimento é ${formatData()}.
+  Sua data de nascimento é ${birth.value}.
   O gênero selecionado é ${selectedGender()}`;
   return consolidateText;
 }
