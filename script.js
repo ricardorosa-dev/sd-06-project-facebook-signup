@@ -48,3 +48,30 @@ buttonSend.addEventListener('click', (event) => {
     event.preventDefault();
   }
 });
+
+function substitute() {
+  const name = document.querySelector('.firstname').value + ' ' +document.querySelector('.lastname').value;
+  console.log(name);
+  const email = document.querySelector('.email').value;
+  const birthDate = document.querySelector('.birthdate').value;
+  const gender = document.getElementsByName('gender');
+  let selectedRadio;
+  for (let index = 0; index < gender.length; index++) {
+    if (gender[index].checked) {
+      selectedRadio = gender[index].value
+    }    
+  }
+  const divContent = document.querySelector('.right-content');
+  const nDivContent = divContent.children.length;
+  for (let index = 0; index < nDivContent; index += 1) {
+    divContent.removeChild(divContent.children[0]);
+  }
+  const paragrafo = document.createElement("p");
+  paragrafo.innerHTML = 
+  `Olá, ${name}
+  ${email}
+  ${birthDate}
+  ${selectedRadio}
+  `;
+  divContent.appendChild(paragrafo);
+}

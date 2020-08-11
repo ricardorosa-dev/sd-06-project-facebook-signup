@@ -36,28 +36,28 @@
         <div class="right-content">
             <h1 class="right-content">Abra uma conta</h1>
             <small class="quick-easy">É rápido e fácil.</small>
-            <form class="register-form">
+            <form class="register-form" onsubmit="substitute()">
                 <div class="containerInput">
                     <div class="linha">
                         <input class="firstname" name="firstname" placeholder="Nome" type="text">
                         <input class="lastname" name="lastname" placeholder="Sobrenome" type="text">
                     </div>
                     <div>
-                        <input name="phone_email" placeholder="Celular ou email" type="text">
+                        <input class=" email" name="phone_email" placeholder="Celular ou email" type="text">
                         <input name="password" placeholder="Nova senha" type="password">
                     </div>
                     <div>
                         <label id="label-birthdate" >Data de nascimento</label>
                         <br>
-                        <input name="birthdate" placeholder="dd/mm/aaaa" type="date">
+                        <input class="birthdate" name="birthdate" placeholder="dd/mm/aaaa" type="date">
                     </div>
                 </div>
                 <div class="radio">
                     <label id="label-gender" for="">Gênero</label>
                     <div class="genero">
-                        <label for="female"><input name="gender" type="radio" id="female" value="Feminino">Feminino</label>
-                        <label for="male"><input name="gender" type="radio" id="male" value="Masculino">Masculino</label>
-                        <label for="personalized"><input name="gender" type="radio" id="personalized" value="Personalizado">Personalizado</label>
+                        <label class="gender" for="female"><input name="gender" type="radio" id="female" value="Feminino">Feminino</label>
+                        <label class="gender" for="male"><input name="gender" type="radio" id="male" value="Masculino">Masculino</label>
+                        <label class="gender" for="personalized"><input name="gender" type="radio" id="personalized" value="Personalizado">Personalizado</label>
                     </div>
                 </div>
                 <button id="facebook-register" class="facebook-register" type="submit">Cadastre-se</button>
