@@ -3,13 +3,12 @@ const emailValue = document.querySelector('#user-email-phone');
 const form = document.querySelector('#formulary');
 const button = document.querySelector('#facebook-register');
 const inputs = document.querySelectorAll('#formulary input');
+const radios = document.getElementsByName('gender');
 
 
 buttonLogin.addEventListener('click', function () {
   alert(emailValue.value);
 });
-
-const radios = document.getElementsByName('gender');
 
 function addCampo() {
   const inputGender = document.createElement('input');
@@ -31,19 +30,21 @@ addCampo();
 
 function validateData() {
   const p = document.createElement('p');
-  event.preventDefault();
-
+  
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       p.innerHTML = 'Campos invalidos';
       form.appendChild(p);
+      event.preventDefault();
     }
   }
 
   if (!(radios[0].checked || radios[1].checked || radios[2].checked)) {
     p.innerHTML = 'Campos invalidos';
     form.appendChild(p);
+    event.preventDefault();    
   }
+
 }
 
 button.addEventListener('click', validateData);
