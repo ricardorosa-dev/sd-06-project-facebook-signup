@@ -1,9 +1,9 @@
 const picker = new Pikaday({
   field: document.getElementById('birthdate'),
   format: 'YYYY-MM-DD',
-  onSelect: function () {
+  onSelect: () => {
     picker.value = this.getMoment().format('YYYY-MM-DD');
-  }
+  },
 });
 
 function returnData(fields) {
