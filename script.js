@@ -128,6 +128,14 @@ function getGenderValue() {
   return gender;
 }
 
+function createWelcomeMessageContent() {
+  document.querySelector('.right-content').style.alignSelf = 'center';
+  document.querySelector('.right-content').innerHTML = `Olá ${firstNameField.value} ${lastNameField.value}<br>
+  Celular ou email: ${phoneEmailField.value}<br>
+  Data de nascimento: ${birthdateField.value}<br
+  Gênero: ${getGenderValue()}`;
+}
+
 function generateWelcomeMessage() {
   if (document.querySelector('.formMessage').style.display === 'none') {
     document.querySelector('.formRegister').remove();
@@ -135,14 +143,6 @@ function generateWelcomeMessage() {
     document.querySelector('.quick-easy').remove();
     createWelcomeMessageContent();
   }
-}
-
-function createWelcomeMessageContent() {
-  document.querySelector('.right-content').style.alignSelf = 'center';
-  document.querySelector('.right-content').innerHTML = `Olá ${firstNameField.value} ${lastNameField.value}<br>
-  Celular ou email: ${phoneEmailField.value}<br>
-  Data de nascimento: ${birthdateField.value}<br
-  Gênero: ${getGenderValue()}`;
 }
 
 function stopSubmitAction(evt) {
