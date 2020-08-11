@@ -37,11 +37,14 @@ function chechRadio() {
 
 function buttonRegisterCharge() {
   const buttonRegister = document.querySelector('#facebook-register');
-  buttonRegister.addEventListener('click', function () {
+  buttonRegister.addEventListener('click', function (event) {
+    event.preventDefault();
     if (chechRadio() === true) {
       formValues();
     }
-    putMenssagem();
+    else {
+      putMenssagem();
+    }
   });
 }
 
