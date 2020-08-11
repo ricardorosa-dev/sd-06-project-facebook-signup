@@ -15,8 +15,11 @@ function createInput() {
 
 function addInput() {
   const extraGender = document.querySelector('#input-personalizado');
-  const inputElement = createInput();
-  extraGender.appendChild(inputElement);
+
+  if (extraGender.hasChildNodes() === false) {
+    const inputElement = createInput();
+    extraGender.appendChild(inputElement);
+  }
 }
 
 function removeInput() {
@@ -27,7 +30,8 @@ function removeInput() {
 }
 
 function handleGenderOption() {
-  if (document.getElementById('personalizado').checked) {
+  const customize = document.getElementById('personalizado');
+  if (customize.checked) {
     addInput();
   } else {
     removeInput();
@@ -94,17 +98,11 @@ const getDate = () => {
   return allDate;
 };
 
-const renderOutput = (inputs) => {
-  const renderOutputDiv = document.querySelector('#render-output');
+const renderOutput = (input) => {
   const rightContentDiv = document.querySelector('.right-content');
 
-  renderOutputDiv.classList.remove('hidden');
-  rightContentDiv.classList.remove('right-content');
-  rightContentDiv.classList.add('hidden');
-
-  for (let i = 0; i < inputs.length; i += 1) {
-    renderOutputDiv.innerHTML += `<div><p>${inputs[i]}</p></div>`;
-  }
+  rightContentDiv.innerHTML = '';
+  rightContentDiv.innerHTML = `<p>${input}</p>`;
 };
 
 const renderMessage = (input) => {
@@ -129,15 +127,12 @@ submitBtn.addEventListener('click', (event) => {
       testResult += 1;
     }
   }
-  const OutputArray = [];
 
   if (testResult !== 0) {
     const MessageString = 'Campos inválidos';
     renderMessage(MessageString);
   } else {
-    OutputArray[0] = `Olá ${allInputs[0]} ${allInputs[1]}`;
-    OutputArray[1] = allInputs[2];
-    OutputArray[2] = allInputs[4];
-    renderOutput(OutputArray);
+    const okMessage = `Olá ${allInputs[0]} ${allInputs[1]}, seu Email ou telefone é ${allInputs[2]} e você selecionou o gênero ${allInputs[4]}.`;
+    renderOutput(okMessage);
   }
 });
