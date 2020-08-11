@@ -118,12 +118,23 @@ function validateFormFields() {
   checkGenderField();
 }
 
+function createWelcomeMessageContent() {
+  document.querySelector('.right-content-welcome').style.display = 'flex';
+  document.querySelector('.welcome-message-content').innerHTML = `Olá ${firstNameField.value} ${lastNameField.value}`;
+}
+
+function generateWelcomeMessage() {
+  if (document.querySelector('.formMessage').style.display === 'none') {
+    document.querySelector('.right-content').style.display = 'none';
+    createWelcomeMessageContent();
+  }
+}
+
+
 function stopSubmitAction(evt) {
   validateFormFields();
   evt.preventDefault();
-  /* if (generateReport === true) {
-     createReport();
-   }*/
+  generateWelcomeMessage();
 }
 
 buttonLogin.addEventListener('click', buttonLoginAlert);

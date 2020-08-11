@@ -2,8 +2,6 @@ body {
   background-image: linear-gradient(white, #d3d8e8);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.9em;
-  height: 640px;
-  width: auto;
 }
 
 button {
@@ -97,6 +95,11 @@ small {
 
 .right-content {
   width: 300px;
+}
+
+.right-content-welcome {
+  display: none;
+  align-self: center;
 }
 
 .facebook-register {
