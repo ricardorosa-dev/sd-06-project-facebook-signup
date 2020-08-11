@@ -61,7 +61,6 @@ function createTableInfo(){
   const lastName = document.querySelector(".input-last-name").value;
   const cellNumber = document.getElementById("cel_number").value;
   const birthday = document.querySelector(".birthdate").value
-  //recupera o valor do radio button , precisa fazer teste para saber ql esta marcado
   const valido = document.getElementsByName("gender");
   if (valido[0].checked) {
       gender = valido[0].value;
