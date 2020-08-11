@@ -30,14 +30,19 @@ function addCampo() {
 addCampo();
 
 function validateData() {
-  event.preventDefault();
   const p = document.createElement('p');
+  event.preventDefault();
 
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       p.innerHTML = 'Campos invalidos';
       form.appendChild(p);
     }
+  }
+
+  if (!(radios[0].checked || radios[1].checked || radios[2].checked)) {
+    p.innerHTML = 'Campos invalidos';
+    form.appendChild(p);
   }
 }
 
