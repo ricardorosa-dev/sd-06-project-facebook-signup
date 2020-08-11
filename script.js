@@ -20,6 +20,7 @@ function createTableInfo() {
   const cellNumber = document.getElementById('cel_number').value;
   const birthday = document.querySelector('.birthdate').value;
   const valido = document.getElementsByName('gender');
+  let gender;
   if (valido[0].checked) {
     gender = valido[0].value;
   } else if (valido[1].checked) {
@@ -36,7 +37,7 @@ function createTableInfo() {
   div.className = 'right-content';
   pai.appendChild(div);
   // cria o novo paragrafo que é o resultado e add na div
-  const paragraph = document.createElement("h1");
+  const paragraph = document.createElement('h1');
   div.appendChild(paragraph);
   paragraph.innerText = `Olá Sr.${firstName} ${lastName}.
   seu login é : ${cellNumber}.
