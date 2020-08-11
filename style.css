@@ -4,6 +4,7 @@
 }
 
 .facebook-login {
+    color: white;
     display: flex;
     flex-direction: row;
     float: right;
@@ -12,7 +13,8 @@
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.34;
     margin: 0;
     padding: 0;
 }
@@ -33,7 +35,7 @@ body {
 
 .textbox {
     /* Classe criada para estilizar as caixas de input do login */
-    border: solid 1px rgb(29, 42, 91);
+    border: 1px solid rgb(29, 42, 91);
     height: 14px;
     margin-left: 14px;
     max-width: 142px;
@@ -65,7 +67,7 @@ body {
 .main-content {
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: space-around;
     margin: auto;
     width: 980px;
 }
@@ -74,7 +76,7 @@ body {
     width: 800px;
 }
 
-.left-content p{
+.left-content p {
     color: rgb(14, 56, 95);
     font-size: 20px;
     font-weight: 700;
