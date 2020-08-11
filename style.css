@@ -47,13 +47,18 @@ form {
   text-decoration: none;
 }
 
+.form-group a:hover {
+  text-decoration: underline;
+}
+
 .form-group label {
   color: white;
   margin-bottom: 3px;
 }
 
 .form-group input {
-  width: 150px;
+  height: 20px;
+  width: 120px;
 }
 
 
@@ -63,10 +68,12 @@ form {
 
 .form-control button {
   background-color: rgb(66, 103, 178);
-  border: 1px solid black;
-  border-radius: 3px;
+  border: 1px solid rgb(66, 65, 65);
+  border-radius: 2px;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  height: 20px;
   margin-bottom: 24px;
 }
 
@@ -106,7 +113,7 @@ form {
 }
 
 .right-content p {
-  margin: 0 0 15px;
+  margin: 0;
 }
 
 .right-content form {
@@ -122,4 +129,9 @@ form {
   border: 1px solid seagreen;
   color: white;
   padding: 0 40px;
+}
+
+.right-content .message-form {
+  font-size: 0.6em;
+  margin-bottom: 5px;
 }
