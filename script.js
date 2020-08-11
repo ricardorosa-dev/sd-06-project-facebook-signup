@@ -1,5 +1,5 @@
 function buttonLogin() {
-  const buttonLogin = document.querySelector('#button-login');
+  buttonLogin = document.querySelector('#button-login');
   buttonLogin.addEventListener('click', function () {
     const inputUser = document.querySelector('input#user-email-phone').value;
     alert(inputUser);
@@ -34,12 +34,13 @@ function chechRadio() {
   }
   return valueGender;
 }
+
 function buttonRegister() {
-  const buttonRegister = document.querySelector('#facebook-register');
+  buttonRegister = document.querySelector('#facebook-register');
   buttonRegister.addEventListener('click', function () {
     if (chechRadio() === true) {
       formValues();
-    }
+      }
     else {
       putMenssagem();
     }
