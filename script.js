@@ -140,17 +140,14 @@ function getGenderValue() {
 
 function createWelcomeMessageContent() {
   document.querySelector('.right-content').style.alignSelf = 'center';
-  document.querySelector('.right-content').innerHTML = `Olá ${firstNameField.value} ${lastNameField.value}<br>
+  document.querySelector('.right-content').innerHTML = `Olá, ${firstNameField.value} ${lastNameField.value}<br>
   Celular ou email: ${phoneEmailField.value}<br>
-  Data de nascimento: ${birthdateField.value}<br
+  Data de nascimento: ${birthdateField.value}<br>
   Gênero: ${getGenderValue()}`;
 }
 
 function generateWelcomeMessage() {
   if (document.querySelector('.formMessage').style.display === 'none') {
-    document.querySelector('.formRegister').remove();
-    document.querySelector('.open-account').remove();
-    document.querySelector('.quick-easy').remove();
     createWelcomeMessageContent();
   }
 }
