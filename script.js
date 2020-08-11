@@ -52,16 +52,22 @@ function inputValidate() {
 }
 
 // Estrutura para substituir o right content
-function replaceRightContent(){
+function replaceRightContent() {
   const fisrtName = document.querySelector('#firstName').value;
   const lastName = document.querySelector('#lastName').value;
   const telefoneEmail = document.querySelector('#telefoneEmail').value;
   const dataNascimento = document.querySelector('#dataNascimento').value;
-  
+
   let resultado = '';
-  resultado = "Olá "+fisrtName+" "+lastName+" "+telefoneEmail+" "+dataNascimento;
+  if (optionFemaleCheck.checked) {
+    resultado = `Olá, ${fisrtName} ${lastName} ${telefoneEmail} ${dataNascimento} Feminino`;
+  } else if (optionMaleCheck.checked) {
+    resultado = `Olá, ${fisrtName} ${lastName} ${telefoneEmail} ${dataNascimento} Masculino`;
+  } else {
+    resultado = `Olá, ${fisrtName} ${lastName} ${telefoneEmail} ${dataNascimento} Personalizado`;
+  }
   document.querySelector('.right-content').replaceWith(resultado);
-};
+}
 
 // Estrutura validação radio check e inputs
 document.querySelector('#facebook-register').addEventListener('click', () => {
