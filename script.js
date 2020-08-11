@@ -40,8 +40,20 @@ function genderFieldFunc() {
 function insertContent(list) {
   document.querySelector('.right-content').innerHTML = '';
   const p1 = document.createElement('p');
-  p1.innerHTML = `Olá, ${list[0]} ${list[1]}<br>${list[2]}<br>${list[4]}<br>${list[5]}`;
+  p1.innerHTML = `Olá, ${list[0]} ${list[1]}`;
   document.querySelector('.right-content').appendChild(p1);
+
+  const p2 = document.createElement('p');
+  p2.innerHTML = `${list[2]}`;
+  document.querySelector('.right-content').appendChild(p2);
+
+  const p3 = document.createElement('p');
+  p3.innerHTML = `${list[4]}`;
+  document.querySelector('.right-content').appendChild(p3);
+
+  const p4 = document.createElement('p');
+  p4.innerHTML = `${list[5]}`;
+  document.querySelector('.right-content').appendChild(p4);
 }
 
 const btRegister = document.getElementById('facebook-register');

@@ -132,3 +132,18 @@ html {
 .right-content form button:hover {
   background-image: linear-gradient(rgb(121, 168, 121), rgb(44, 87, 44));
 }
+
+.terms_msg {
+  color: #777;
+  font-size: 11px;
+}
+
+.terms_msg a {
+  color: #385898;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.terms_msg a:hover {
+  text-decoration: underline;
+}
