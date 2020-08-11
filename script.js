@@ -22,14 +22,14 @@ function checkValidInputs() {
   return true;
 }
 
-function createUser () {
+function createUser() {
   const newUser = {
     firstName: document.querySelector('.input-first-name').value,
     lastName: document.querySelector('.input-last-name').value,
     cellNumber: document.getElementById('cel_number').value,
     birthday: document.querySelector('.birthdate').value,
     gender: document.querySelector('input[name="gender"]:checked').value,
-  }
+  };
   return newUser;
 }
 
@@ -52,10 +52,8 @@ function createTableInfo() {
     seu login é: ${userData.cellNumber},
     sua data de aniversário é: ${userData.birthday}
     e seu gênero é: ${userData.gender}`;
-  } else {
-    if (!document.getElementById('invalid-fields')) {
-      showInvalidFieldsError();
-    }
+  } else if (!document.getElementById('invalid-fields')) {
+    showInvalidFieldsError();
   }
 }
 
