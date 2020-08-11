@@ -9,8 +9,11 @@
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
 }
 
 .form-control {
@@ -78,12 +81,6 @@ body {
   line-height: 28px;
   margin-top: 40px;
   width: 75%;
-}
-
-.form-group {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.8em;
 }
 
 .inputs-login {
