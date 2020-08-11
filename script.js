@@ -1,6 +1,9 @@
-
-flatpickr('#birthdate', {
-  dateFormat: 'd-m-Y'
+const picker = new Pikaday({
+  field: document.getElementById('birthdate'),
+  format: 'YYYY-MM-DD',
+  onSelect: function () {
+    picker.value = this.getMoment().format('YYYY-MM-DD');
+  }
 });
 
 function returnData(fields) {
