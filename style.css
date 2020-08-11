@@ -57,7 +57,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(174, 191, 223));
+  background-image: linear-gradient(white, rgb(174, 191, 223));
   background-repeat: no-repeat;
   background-size: auto;
   color: rgba(0, 0, 0, 0.82);
@@ -70,7 +70,7 @@ body {
   height: 64px;
 }
 
-.facebook-slogan{
+.facebook-slogan {
   color: rgb(28, 28, 92, 0.9);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25em;
@@ -162,8 +162,8 @@ label {
 .label-birthdate {
   color: rgba(0, 0, 0, 0.466);
   font-weight: 800;
-  margin-top: 15px;
   margin-bottom: 5px;
+  margin-top: 15px;
 }
 
 .facebook-register {
@@ -173,17 +173,17 @@ label {
   border-color: #3b6e22 #3b6e22 #2c5115;
   border-radius: 5px;
   box-shadow: inset 0 1px 1px #a4e388;
-  color: #fff;
+  color: white;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+  font-family: Freight Sans Bold, Helvetica, Arial, sans-serif;
   font-size: 19px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
   line-height: 126%;
   min-width: 194px;
   padding: 7px 20px;
   position: relative;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
