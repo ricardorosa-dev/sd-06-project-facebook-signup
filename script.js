@@ -13,47 +13,6 @@ function hideInvalidFieldsError() {
   errorSpan.innerHTML = '';
 }
 
-function validateInputs() {
-  const formInputs = document.forms['signUp-form'].getElementsByTagName('input');
-  let cont = 0;
-  for (let index = 0; index < formInputs.length; index += 1) {
-    const currentInput = formInputs[index];
-    if (!currentInput.value) {
-      showInvalidFieldsError();
-      break;
-    } else {
-      hideInvalidFieldsError();
-      cont = cont + 1;
-    }
-  }
-  if (cont===8) {
-    createTableInfo();
-  }
-}
-
-function createCustomGenderField() {
-  const customGenderField = document.createElement('input');
-  customGenderField.name = 'gender-custom';
-  customGenderField.placeholder = 'Gênero (opcional)';
-  customGenderField.classList.add('gender');
-  customGenderField.id = 'gender-custom-id';
-  return customGenderField;
-}
-
-function handleCustomGender() {
-  if (document.getElementById('custom').checked) {
-    const customGenderField = createCustomGenderField();
-    const signUpForm = document.getElementById('gender-selection');
-    signUpForm.after(customGenderField);
-  }
-}
-
-function delCustomGender() {
-  if (document.getElementById('gender-custom-id')) {
-    document.getElementById('gender-custom-id').remove();
-  }
-}
-
 function createTableInfo() {
   // recupera todos os valores
   const firstName = document.querySelector('.input-first-name').value;
@@ -83,6 +42,47 @@ function createTableInfo() {
   seu login é : ${cellNumber}.
   sua data de nascimento é : ${birthday}.
   e o genero selecionado foi : ${gender}`;
+}
+
+function validateInputs() {
+  const formInputs = document.forms['signUp-form'].getElementsByTagName('input');
+  let cont = 0;
+  for (let index = 0; index < formInputs.length; index += 1) {
+    const currentInput = formInputs[index];
+    if (!currentInput.value) {
+      showInvalidFieldsError();
+      break;
+    } else {
+      hideInvalidFieldsError();
+      cont += 1;
+    }
+  }
+  if (cont === 8) {
+    createTableInfo();
+  }
+}
+
+function createCustomGenderField() {
+  const customGenderField = document.createElement('input');
+  customGenderField.name = 'gender-custom';
+  customGenderField.placeholder = 'Gênero (opcional)';
+  customGenderField.classList.add('gender');
+  customGenderField.id = 'gender-custom-id';
+  return customGenderField;
+}
+
+function handleCustomGender() {
+  if (document.getElementById('custom').checked) {
+    const customGenderField = createCustomGenderField();
+    const signUpForm = document.getElementById('gender-selection');
+    signUpForm.after(customGenderField);
+  }
+}
+
+function delCustomGender() {
+  if (document.getElementById('gender-custom-id')) {
+    document.getElementById('gender-custom-id').remove();
+  }
 }
 
 window.onload = function () {
