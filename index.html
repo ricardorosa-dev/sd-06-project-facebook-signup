@@ -15,7 +15,7 @@
       <img src="imgs/facebook-logo.png" alt="logo" class="facebook-logo">
     </div>
     <div>
-      <form action="" class="facebook-login">
+      <form method="" action="" class="facebook-login">
         <div class="form-group">
           <label for="users" id="user-email-phone-label">Email ou telefone</label>
           <input type="text" name="users" id="user-email-phone">
@@ -45,7 +45,7 @@
             <input type="text" class="fname" name="firstname" placeholder="Nome" required>
             <input type="text" class="lname" name="lastname" placeholder="Sobrenome" required>
             <input type="text" class="normal_inp" name="phone_email" placeholder="Celular ou email" required>
-            <input type="password" class="normal_inp" name="password" placeholder="Nova senha" required>
+            <input type="password" class="normal_inp" name="password" placeholder="Nova senha" minlength="3" maxlength="8" required>
           </div>
           <div class="input_group">
             <label id="label-birthdate">Data de nascimento</label>
@@ -56,15 +56,15 @@
             <div class="radio_group">
               <div class="radio">
                 <input type="radio" id="feminino" name="gender" value="Feminino" required>
-                <label for="female">Feminino</label><br>
+                <label for="feminino">Feminino</label>
               </div>
               <div class="radio">
                 <input type="radio" id="masculino" name="gender" value="Masculino">
-                <label for="male">Masculino</label><br>
+                <label for="masculino">Masculino</label>
               </div>
               <div class="radio">
                 <input type="radio" id="personalizado" name="gender" value="Personalizado">
-                <label for="other">Personalizado</label>
+                <label for="personalizado">Personalizado</label>
               </div>
             </div>
             <div id="person-field"></div>

@@ -27,33 +27,42 @@ radioFields.forEach((field) => {
   });
 });
 
+function genderFieldFunc() {
+  let selected = '';
+  for (let i = 0; i < 3; i += 1) {
+    if (document.getElementsByName('gender')[i].checked) {
+      selected = document.getElementsByName('gender')[i].value;
+    }
+  }
+  return selected;
+}
+
+function insertContent(list) {
+  document.querySelector('.right-content').innerHTML = '';
+  const newDiv = document.createElement('div');
+  newDiv.innerHTML += `Olá, ${list[0]} ${list[1]} <br> ${list[2]} <br> ${list[4]} <br> ${list[5]}`;
+  document.querySelector('.right-content').appendChild(newDiv);
+}
+
 const btRegister = document.getElementById('facebook-register');
 btRegister.addEventListener('click', function () {
-  // event.preventDefault();
-  const fnameField = document.getElementsByName('firstname')[0].value !== '';
-  const lnameField = document.getElementsByName('lastname')[0].value !== '';
-  const celField = document.getElementsByName('phone_email')[0].value !== '';
-  const passField = document.getElementsByName('password')[0].value !== '';
-  const birthdate = document.getElementsByName('birthdate')[0].value !== '';
-  const sexField = function () {
-    let result = false;
-    for (let i = 0; i < 3; i += 1) {
-      if (document.getElementsByName('gender')[i].checked) {
-        result = true;
-      }
-    }
-    return result;
-  };
-  const list = [fnameField, lnameField, celField, passField, birthdate, sexField];
+  const fnameField = document.getElementsByName('firstname')[0].value;
+  const lnameField = document.getElementsByName('lastname')[0].value;
+  const celField = document.getElementsByName('phone_email')[0].value;
+  const passField = document.getElementsByName('password')[1].value;
+  const birthdate = document.getElementsByName('birthdate')[0].value;
+  const genderField = genderFieldFunc();
+
+  const list = [fnameField, lnameField, celField, passField, birthdate, genderField];
   let formOk = true;
   for (let i = 0; i < list.length; i += 1) {
-    if (list[i] === false) {
+    if (list[i] === '') {
       formOk = false;
       break;
     }
   }
   if (formOk === true) {
-    document.getElementsByClassName('right-content')[0].innerHTML = 'Tudo Certo';
+    insertContent(list);
   } else {
     const errorMsg = document.getElementById('field_error');
     errorMsg.style.color = 'red';
