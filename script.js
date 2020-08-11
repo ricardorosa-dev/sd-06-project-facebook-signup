@@ -38,10 +38,10 @@ function genderFieldFunc() {
 }
 
 function insertContent(list) {
-  document.querySelector('.right-content').innerHTML = '';
-  const p = document.createElement('p');
-  p.innerHTML = `Olá, ${list[0]} ${list[1]}, ${list[2]}, ${list[4]}, ${list[5]}`;
-  document.querySelector('.right-content').appendChild(p);
+  document.querySelector('.right-content').innerHTML = `Olá, ${list[0]} ${list[1]}, ${list[2]}, ${list[4]}, ${list[5]}`;
+  // const p = document.createElement('p');
+  // p.innerHTML = `Olá, ${list[0]} ${list[1]}, ${list[2]}, ${list[4]}, ${list[5]}`;
+  // document.querySelector('.right-content').appendChild(p);
   // const p1 = document.createElement('p');
   // p1.innerHTML = `Olá, ${list[0]} ${list[1]}`;
   // document.querySelector('.right-content').appendChild(p1);
