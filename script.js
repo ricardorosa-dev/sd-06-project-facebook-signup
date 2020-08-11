@@ -31,3 +31,28 @@ document.getElementById('facebook-register').addEventListener('click', function 
     document.querySelector('.sign-in-form').append(invalidMsg);
   }
 });
+
+document.getElementById('custom').addEventListener('click', () => {
+  const inputCustom = document.createElement('input');
+  inputCustom.placeholder = 'Gênero (opcional)';
+  inputCustom.className = 'gender-custom';
+  inputCustom.name = 'gender-custom';
+  inputCustom.size = '49';
+  if (document.querySelector('.gender-custom')) {
+    // Não fazer nada.
+  } else {
+    document.getElementById('facebook-register').previousElementSibling.append(inputCustom);
+  }
+});
+
+document.getElementById('male').addEventListener('click', () => {
+  if (document.querySelector('.gender-custom')) {
+    document.querySelector('.gender-custom').remove();
+  }
+});
+
+document.getElementById('female').addEventListener('click', () => {
+  if (document.querySelector('.gender-custom')) {
+    document.querySelector('.gender-custom').remove();
+  }
+});

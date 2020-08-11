@@ -36,24 +36,24 @@
       <h3 class="quick-easy">É rápido e fácil.</h3>
       <form action="" class="sign-in-form">
         <div>
-          <input type="text" name="firstname" placeholder="Nome" class="first-name" size="21" required
-            oninvalid="this.setCustomValidity('Poe o nome aqui Anta!')"
-            oninput="this.setCustomValidity('')">
+          <input type="text" name="firstname" placeholder="Nome" class="first-name" size="21"  required>
           <input type="text" name="lastname" placeholder="Sobrenome" class="last-name" size="21" required>
         </div>
         <input type="text" name="phone_email" placeholder="Celular ou email" class="email" size="49" required>
         <input type="password" name="password" placeholder="Nova senha" class="new-password" size="49" required>
-        <label id="label-birthdate" class="lb-birthdate">Data de nascimento</label>
+        <div>
+          <label id="label-birthdate" class="lb-birthdate">Data de nascimento</label>
+        </div>
         <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="input-birthdate" size="21" required>
         <div class="gender-container">
           <label for="" id="label-gender" class="lb-gender">Gênero</label>
           <div>
             <input type="radio" name="gender" id="female" value="Feminino" required>
-            <label for="female" id="">Feminino</label>
+            <label for="female" id="" class="lb-gender-options">Feminino</label>
             <input type="radio" name="gender" id="male" value="Masculino" required>
-            <label for="male" id="">Masculino</label>
+            <label for="male" id="" class="lb-gender-options">Masculino</label>
             <input type="radio" name="gender" id="custom" value="Personalizado" required>
-            <label for="custom" id="">Personalizado</label>
+            <label for="custom" id="" class="lb-gender-options">Personalizado</label>
           </div>
         </div>
         <button type="submit" id="facebook-register" class="sign-button">Cadastre-se</button>

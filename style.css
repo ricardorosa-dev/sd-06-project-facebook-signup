@@ -98,10 +98,11 @@ h1 {
   display: flex;
 }
 
-.first-name , .last-name , .email , .new-password , .input-birthdate {
+.first-name , .last-name , .email , .new-password , .input-birthdate , .gender-custom {
   border: 1px solid darkgray;
   border-radius: 5px;
   height: 15px;
+  letter-spacing: 1px;
   margin-bottom: 10px;
   margin-right: 11px;
   padding: 12px;
@@ -136,6 +137,7 @@ h1 {
   color: rgb(144, 144, 144);
   font-size: 18px;
   font-weight: 900;
+  margin-bottom: 8px;
 }
 
 .gender-container {
@@ -159,4 +161,27 @@ h1 {
 
 .sign-button:hover {
   background: linear-gradient(#89d675, #61974b);
+}
+
+.lb-gender-options {
+  color: rgb(30, 30, 30);
+  font-size: 18px;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.invalidfield {
+  color: rgb(120, 120, 120);
+  font-weight: 900;
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
+
+.gender-custom::placeholder {
+  color: darkgray;
+  font-size: 18px;
+}
+
+.gender-custom {
+  margin-top: 10px;
 }
