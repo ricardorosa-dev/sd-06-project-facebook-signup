@@ -118,10 +118,24 @@ function validateFormFields() {
   checkGenderField();
 }
 
+function getGenderValue() {
+  let gender;
+  for (let index = 0; index < genderField.length; index += 1) {
+    if (genderField[index].checked === true) {
+      gender = genderField[index].value;
+    }
+  }
+  return gender;
+}
+
 function createWelcomeMessageContent() {
   document.querySelector('.right-content-welcome').style.display = 'flex';
   document.querySelector('.right-content').style.alignSelf = 'center';
-  document.querySelector('.welcome-message-content').innerHTML = `Olá ${firstNameField.value} ${lastNameField.value}`;
+  document.querySelector('.welcome-message-content').innerHTML = `Olá ${firstNameField.value} ${lastNameField.value}
+  Celuler ou email: ${phoneEmailField.value}
+  Data de nasciemto: ${birthdateField.value}
+  Gênero: ${getGenderValue()}`;
+  generateWelcomeMessage();
 }
 
 function generateWelcomeMessage() {
@@ -129,14 +143,13 @@ function generateWelcomeMessage() {
     document.querySelector('.formRegister').remove();
     document.querySelector('.open-account').remove();
     document.querySelector('.quick-easy').remove();
-    createWelcomeMessageContent();
   }
 }
 
 function stopSubmitAction(evt) {
   validateFormFields();
   evt.preventDefault();
-  generateWelcomeMessage();
+  createWelcomeMessageContent();
 }
 
 buttonLogin.addEventListener('click', buttonLoginAlert);
