@@ -125,6 +125,7 @@ body {
 }
 
 .right-content form div {
+  box-sizing: border-box;
   margin: 5px 0;
 }
 
@@ -142,7 +143,7 @@ body {
   height: 20px;
   margin-right: 15px;
   padding: 8px 10px;
-  width: 150px;
+  width: 50%;
 }
 
 .input-last-name {
@@ -154,7 +155,7 @@ body {
   font-size: 18px;
   height: 20px;
   padding: 8px 10px;
-  width: 150px;
+  width: 50%;
 }
 
 .input-info {
@@ -166,7 +167,7 @@ body {
   font-size: 18px;
   height: 20px;
   padding: 8px 10px;
-  width: 340px;
+  width: 90%;
 }
 
 .label-birthdate {
@@ -175,6 +176,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
+  /* width: 50%; */
 }
 
 .birthdate {
@@ -187,7 +189,7 @@ body {
   height: 20px;
   margin-top: 10px;
   padding: 8px 10px;
-  width: 340px;
+  width: 90%;
 }
 
 .label-gender {
@@ -202,7 +204,7 @@ body {
 .gender {
   color: #1d2129;
   font-family: inherit;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   margin-left: 0;
 }
@@ -215,7 +217,7 @@ body {
   border-radius: 5px;
   box-shadow: inset 0 1px 1px #a4e388;
   color: white;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -228,13 +230,9 @@ body {
 
 .facebook-register:hover {
   background: #6bad5a;
-
-}
-
-fieldset {
-  border: 0;
 }
 
 .signUp-error {
   color: red;
+  font-weight: 700;
 }

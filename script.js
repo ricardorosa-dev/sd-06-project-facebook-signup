@@ -7,56 +7,54 @@ function showInvalidFieldsError() {
   const errorMessage = document.createElement('p');
   const signUpBtn = document.getElementById('facebook-register');
   errorMessage.innerHTML = 'Campos inválidos';
+  errorMessage.id = 'invalid-fields';
   signUpBtn.after(errorMessage);
+}
+
+function checkValidInputs() {
+  const formInputs = document.forms['signUp-form'].getElementsByTagName('input');
+  for (let index = 0; index < formInputs.length; index += 1) {
+    const currentInput = formInputs[index];
+    if (!currentInput.value) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function createUser () {
+  const newUser = {
+    firstName: document.querySelector('.input-first-name').value,
+    lastName: document.querySelector('.input-last-name').value,
+    cellNumber: document.getElementById('cel_number').value,
+    birthday: document.querySelector('.birthdate').value,
+    gender: document.querySelector('input[name="gender"]:checked').value,
+  }
+  return newUser;
 }
 
 function createTableInfo() {
   if (checkValidInputs()) {
     // recupera todos os valores
-    const firstName = document.querySelector('.input-first-name').value;
-    const lastName = document.querySelector('.input-last-name').value;
-    const cellNumber = document.getElementById('cel_number').value;
-    const birthday = document.querySelector('.birthdate').value;
-    // recupera o valor do radio button , precisa fazer teste para saber ql esta marcado
-    const radioInputs = document.getElementsByName('gender');
-    const gender = (function() {
-      for (let index = 0; index < radioInputs.length; index += 1) {
-        if (radioInputs[index].checked) {
-          return radioInputs[index].value;
-        }
-      }
-    })();
-    console.log(gender);
-    // recupera o pai para a gente add a nova rightcontent
-    const mainDiv = document.querySelector('.main-content');
-    // apaga o lado direito inteiro de uma vez
+    const userData = createUser();
+    // Recover main div
+    const mainContainer = document.querySelector('.main-content');
+    // Remove right-content div from main container
     document.querySelector('.right-content').remove();
-    // cria nova div e add no pai
+    // Create new div for user info and append it to main container
     const userInfoDiv = document.createElement('div');
     userInfoDiv.className = 'right-content';
-    mainDiv.appendChild(userInfoDiv);
-    // cria o novo paragrafo que é o resultado e add na div
+    mainContainer.appendChild(userInfoDiv);
+    // Create a new element to show user info
     const paragraph = document.createElement('h1');
     userInfoDiv.appendChild(paragraph);
-    paragraph.innerText = `Olá, ${firstName} ${lastName}, seu login é: ${cellNumber}, sua data
-    de aniversário é: ${birthday} e seu gênero é: ${gender}`;
+    paragraph.innerText = `Olá, ${userData.firstName} ${userData.lastName},
+    seu login é: ${userData.cellNumber},
+    sua data de aniversário é: ${userData.birthday}
+    e seu gênero é: ${userData.gender}`;
   } else {
-    showInvalidFieldsError();
-  }
-}
-
-function checkValidInputs() {
-  // por conta da regra de negocio de testar 1 por 1, eu criei um conta
-  // para testar se todos os campos estavam limpos.
-  const formInputs = document.forms['signUp-form'].getElementsByTagName('input');
-  console.log(formInputs);
-  for (let index = 0; index < formInputs.length; index += 1) {
-    const currentInput = formInputs[index];
-    console.log(currentInput);
-    if (!currentInput.value) {
-      return false;
-    } else {
-      return true;
+    if (!document.getElementById('invalid-fields')) {
+      showInvalidFieldsError();
     }
   }
 }
