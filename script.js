@@ -1,11 +1,3 @@
-const picker = new Pikaday({
-  field: document.getElementById('birthdate'),
-  format: 'YYYY-MM-DD',
-  onSelect: () => {
-    picker.value = this.getMoment().format('YYYY-MM-DD');
-  },
-});
-
 function returnData(fields) {
   const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = '';
