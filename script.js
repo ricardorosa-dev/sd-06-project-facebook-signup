@@ -2,7 +2,7 @@ const buttonEnter = document.querySelector('.button-login');
 const textEmailTel = document.getElementById('user-email-phone');
 
 function alertEmail() {
-  alert(`E-mail: ${textEmailTel.value}`);
+  alert(textEmailTel.value);
 }
 
 buttonEnter.addEventListener('click', alertEmail);
