@@ -40,27 +40,27 @@
             <div class="right-content">
                 <h1>Abra uma conta</h1>
                 <p class="quick-easy">É rápido e fácil.</p>
-                <form class="inputs">
+                <form name = 'inputs'class="inputs" method="GET"> 
                     <div class="input-container">
-                    <input type="text" id="name" name="firstname" placeholder="Nome">
-                    <input type="text" name="lastname" placeholder="Sobrenome">
+                    <input type="text" id="name" name="firstname" placeholder="Nome" class="input-text" required>
+                    <input type="text" name="lastname" placeholder="Sobrenome" class="input-text" required>
                 </div>
-                    <input type="text" placeholder="Celular ou email" name="phone_email">
-                    <input type="password" name="password" placeholder="Nova senha">
-                    <input type="password" name="password" placeholder="Nova senha"/>
+                    <input type="text" placeholder="Celular ou email" name="phone_email" class="input-text" required/>
+                    <input type="password" name="password" placeholder="Nova senha" class="input-text" required/>
+                    <input type="password" name="password" placeholder="Nova senha" class="input-text" required/>
                     <label id="label-birthdate">Data de nascimento</label>
-                    <input type="date" name="birthdate" placeholder="dd/mm/aaaa"/>
-                    <input type="password" class="input-form" name="password" placeholder="Nova senha" />
-                    <input type="date" class="input-form" name="birthdate" placeholder="dd/mm/aaaa" />
+                    <input type="date" name="birthdate" placeholder="dd/mm/aaaa" class="input-text" required/>
+                    <input type="password" class="input-form" name="password" class="input-text" required/>
+                    <input type="date" class="input-form" name="birthdate" placeholder="dd/mm/aaaa" class="input-text" required/>
                     <div class="input-gender-container">
                     <label for="" id="label-gender">Gênero</label>
                     <div class="gender-container">
                     <label for="feminine">Feminino</label>
-                    <input type="radio" name="gender" id="feminine" />
+                    <input type="radio" name="gender" id="feminine" required/>
                     <label for="masculine">Masculino</label>
-                    <input type="radio" name="gender" id="masculine" />
+                    <input type="radio" name="gender" id="masculine" required/>
                     <label>Personalizado</label>
-                    <input type="radio" name="gender" id="others" />
+                    <input type="radio" name="gender" id="others" required/>
                     <button id="facebook-register" type="submit">Cadastre-se</button>
                 </form>
             </div>
