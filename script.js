@@ -30,7 +30,7 @@ addCampo();
 
 function validateData() {
   const p = document.createElement('p');
-  
+
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       p.innerHTML = 'Campos invalidos';
@@ -42,9 +42,8 @@ function validateData() {
   if (!(radios[0].checked || radios[1].checked || radios[2].checked)) {
     p.innerHTML = 'Campos invalidos';
     form.appendChild(p);
-    event.preventDefault();    
+    event.preventDefault();
   }
-
 }
 
 button.addEventListener('click', validateData);
