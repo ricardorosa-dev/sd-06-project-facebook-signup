@@ -1,8 +1,3 @@
-window.onload = function() {
-  buttonLogin();
-  buttonRegister();
-};
-
 function buttonLogin() {
   const buttonLogin = document.querySelector('#button-login');
   buttonLogin.addEventListener('click', function () {
@@ -26,12 +21,12 @@ function formValues() {
   }
   if (valueUndefined === true) {
     putMenssagem();
-    }
+  }
 }
 
 function chechRadio() {
-  const valueGender = false;
-  let gender = document.querySelectorAll('.gender');
+  let valueGender = false;
+  const gender = document.querySelectorAll('.gender');
   for (let i = 0; i < gender.length; i += 1) {
     if (gender[i].checked === true) {
       valueGender = true;
@@ -43,10 +38,15 @@ function buttonRegister() {
   const buttonRegister = document.querySelector('#facebook-register');
   buttonRegister.addEventListener('click', function () {
     if (chechRadio() === true) {
-      formValues()
-      }
+      formValues();
+    }
     else {
       putMenssagem();
     }
   });
 }
+
+window.onload = function () {
+  buttonLogin();
+  buttonRegister();
+};
