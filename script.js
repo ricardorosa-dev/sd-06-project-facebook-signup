@@ -6,6 +6,8 @@ const lastnameField = document.getElementsByName('lastname')[0].value !== '';
 const phoMailField = document.getElementsByName('phone_email')[0].value !== '';
 const passwField = document.getElementsByName('password')[0].value !== '';
 const birthField = document.getElementsByName('birthdate')[0].value !== '';
+const clickPersonalizado = document.getElementById('optional');
+const divOptionalGenre = document.getElementById('newGender');
 
 function alertEmail() {
   alert(textEmailTel.value);
@@ -39,3 +41,13 @@ buttonRegister.addEventListener('click', function () {
     errorMsg.innerHTML = 'Campos inválidos';
   }
 });
+
+function OptionalGenre() {
+  const newElement = document.createElement('input');
+  newElement.type = 'text';
+  newElement.name = 'gender-custom';
+  newElement.placeholder = 'Gênero (opcional)';
+  divOptionalGenre.appendChild(newElement);
+}
+
+clickPersonalizado.addEventListener('click', OptionalGenre);
