@@ -5,7 +5,7 @@ buttonLogin.addEventListener('click', function () {
 });
 
 function putMenssagem() {
-  let mensagem = document.createElement('p');
+  const mensagem = document.createElement('p');
   mensagem.innerHTML = 'Campos inválidos';
   document.querySelector('#form').appendChild(mensagem);
 }
@@ -14,16 +14,17 @@ function formValues() {
   const valuesInput = document.querySelectorAll('right-content input');
   let valueUndefined = false;
   for (let i = 0; i < valuesInput.length - 3; i += 1) {
-    if (valuesInput[i].value === "") {
+    if (valuesInput[i].value === '') {
       valueUndefined = true;
     }
   }
   if (valueUndefined === true) {
-    putMenssagem();}
+    putMenssagem();
+    }
 }
 
 function chechRadio() {
-  let valueGender = false;
+  const valueGender = false;
   let gender = document.querySelectorAll('.gender');
   for (let i = 0; i < gender.length; i += 1) {
     if (gender[i].checked === true) {
