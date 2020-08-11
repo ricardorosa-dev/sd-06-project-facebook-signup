@@ -1,13 +1,19 @@
-const buttonLogin = document.querySelector('#button-login');
-buttonLogin.addEventListener('click', function () {
-  const inputUser = document.querySelector('input#user-email-phone').value;
-  alert(inputUser);
-});
+window.onload = function() {
+  buttonLogin();
+  buttonRegister();
+};
+
+function buttonLogin() {
+  const buttonLogin = document.querySelector('#button-login');
+  buttonLogin.addEventListener('click', function () {
+    const inputUser = document.querySelector('input#user-email-phone').value;
+    alert(inputUser);
+  });
+}
 
 function putMenssagem() {
-  const mensagem = document.createElement('p');
+  const mensagem = document.querySelector('.error');
   mensagem.innerHTML = 'Campos inválidos';
-  document.querySelector('#form').appendChild(mensagem);
 }
 
 function formValues() {
@@ -33,13 +39,14 @@ function chechRadio() {
   }
   return valueGender;
 }
-
-const buttonRegister = document.querySelector('#facebook-register');
-buttonRegister.addEventListener('click', function () {
-  if (chechRadio() === true) {
-    formValues()
-  }
-  else {
-    putMenssagem();
-  }
-});
+function buttonRegister() {
+  const buttonRegister = document.querySelector('#facebook-register');
+  buttonRegister.addEventListener('click', function () {
+    if (chechRadio() === true) {
+      formValues()
+      }
+    else {
+      putMenssagem();
+    }
+  });
+}
