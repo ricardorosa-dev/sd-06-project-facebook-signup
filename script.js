@@ -1,3 +1,7 @@
+flatpickr("#birthdate", {
+  dateFormat: "d-m-Y",
+});
+
 function returnData(fields) {
   const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = '';
