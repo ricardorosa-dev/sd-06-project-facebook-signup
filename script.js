@@ -128,6 +128,14 @@ function getGenderValue() {
   return gender;
 }
 
+function generateWelcomeMessage() {
+  if (document.querySelector('.formMessage').style.display === 'none') {
+    document.querySelector('.formRegister').remove();
+    document.querySelector('.open-account').remove();
+    document.querySelector('.quick-easy').remove();
+  }
+}
+
 function createWelcomeMessageContent() {
   document.querySelector('.right-content-welcome').style.display = 'flex';
   document.querySelector('.right-content').style.alignSelf = 'center';
@@ -136,14 +144,6 @@ function createWelcomeMessageContent() {
   Data de nasciemto: ${birthdateField.value}
   Gênero: ${getGenderValue()}`;
   generateWelcomeMessage();
-}
-
-function generateWelcomeMessage() {
-  if (document.querySelector('.formMessage').style.display === 'none') {
-    document.querySelector('.formRegister').remove();
-    document.querySelector('.open-account').remove();
-    document.querySelector('.quick-easy').remove();
-  }
 }
 
 function stopSubmitAction(evt) {
