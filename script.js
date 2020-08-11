@@ -33,14 +33,14 @@ function validateData() {
 
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
-      p.innerHTML = 'Campos invalidos';
+      p.innerHTML = 'Campos inválidos';
       form.appendChild(p);
       event.preventDefault();
     }
   }
 
   if (!(radios[0].checked || radios[1].checked || radios[2].checked)) {
-    p.innerHTML = 'Campos invalidos';
+    p.innerHTML = 'Campos inválidos';
     form.appendChild(p);
     event.preventDefault();
   }
