@@ -17,7 +17,7 @@ radioFields.forEach((field) => {
       newfield.placeholder = 'Gênero (opcional)';
       newfield.name = 'gender-custom';
 
-      const addGenderField = document.querySelector('#person-field');
+      const addGenderField = document.querySelector('#dperson-fiel');
       addGenderField.innerHTML = '';
       addGenderField.appendChild(newfield);
     } else {
