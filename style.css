@@ -20,7 +20,6 @@
 
 .form-control {
   align-self: flex-end;
-  align-self: center;
 }
 
 .main-content {
@@ -37,7 +36,6 @@
 
 .right-content {
   width: 300px;
-  width: 500px;
 }
 
 .full-name {
@@ -74,7 +72,6 @@ body {
 
 .facebook-logo {
   align-self: center;
-  justify-self: left;
   height: 64px;
 }
 
