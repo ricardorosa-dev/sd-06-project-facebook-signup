@@ -26,7 +26,7 @@ function validateInputs() {
       cont = cont + 1;
     }
   }
-  if ( cont === 8 ){
+  if (cont===8) {
     createTableInfo();
   }
 }
@@ -49,32 +49,32 @@ function handleCustomGender() {
 }
 
 function delCustomGender() {
-  if ( document.getElementById('gender-custom-id' )){
+  if (document.getElementById('gender-custom-id')) {
     document.getElementById('gender-custom-id').remove();
   }
 }
 
-function createTableInfo(){
+function createTableInfo() {
   // recupera todos os valores
   const firstName = document.querySelector('.input-first-name').value;
   const lastName = document.querySelector('.input-last-name').value;
   const cellNumber = document.getElementById('cel_number').value;
-  const birthday = document.querySelector('.birthdate').value
+  const birthday = document.querySelector('.birthdate').value;
   const valido = document.getElementsByName('gender');
   if (valido[0].checked) {
     gender = valido[0].value;
   } else if (valido[1].checked) {
     gender = valido[1].value;
-  } else if(valido[2].checked) {
+  } else if (valido[2].checked) {
     gender = document.getElementById('gender-custom-id').value;
   }
   // recupera o pai para a gente add a nova rightcontent
   const pai = document.querySelector('.main-content');
   // apaga o lado direito inteiro de uma vez
-  document.querySelector(".right-content").remove();
+  document.querySelector('.right-content').remove();
   // cria nova div e add no pai
-  const div = document.createElement("div");
-  div.className = "right-content";
+  const div = document.createElement('div');
+  div.className = 'right-content';
   pai.appendChild(div);
   // cria o novo paragrafo que é o resultado e add na div
   const paragraph = document.createElement("h1");
@@ -83,7 +83,7 @@ function createTableInfo(){
   seu login é : ${cellNumber}.
   sua data de nascimento é : ${birthday}.
   e o genero selecionado foi : ${gender}`;
-};
+}
 
 window.onload = function () {
   const loginBtn = document.querySelector('#button-login');
