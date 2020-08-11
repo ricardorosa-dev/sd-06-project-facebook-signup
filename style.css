@@ -70,7 +70,7 @@ body {
   height: 64px;
 }
 
-#facebook-slogan{
+.facebook-slogan{
   color: rgb(28, 28, 92, 0.9);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25em;
@@ -96,7 +96,7 @@ body {
   width: 140px;
 }
 
-#button-login {
+.button-login {
   background-color: rgb(81, 118, 192);
   border: 1px solid rgb(6, 55, 128, 0.8);
   color: white;
@@ -108,7 +108,7 @@ body {
   padding-right: 5px;
 }
 
-#button-login:hover {
+.button-login:hover {
   background-color: rgb(40, 76, 146);
   cursor: pointer;
 }
@@ -159,14 +159,14 @@ label {
   width: 85%;
 }
 
-#label-birthdate {
+.label-birthdate {
   color: rgba(0, 0, 0, 0.466);
   font-weight: 800;
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
-#facebook-register {
+.facebook-register {
   background: linear-gradient(#67ae55, #578843);
   background-color: #69a74e;
   border: 1px solid;
@@ -176,14 +176,14 @@ label {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
   font-size: 19px;
-  font-weight: bold !important;
+  font-weight: bold;
   letter-spacing: 1px;
-  line-height: 126%;  
+  line-height: 126%;
   min-width: 194px;
   padding: 7px 20px;
   position: relative;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0,0,0,.5);}
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
 }
