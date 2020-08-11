@@ -77,6 +77,8 @@ h1 {
 }
 
 .input-control-1 {
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
   display: flex;
   height: 30px;
   margin-bottom: 5px;
@@ -95,6 +97,8 @@ h1 {
 }
 
 .form-group-2 .input-control-2 {
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
   flex: 1 1 auto;
   margin-bottom: 5px;
   margin-left: 5px;
@@ -115,10 +119,12 @@ h1 {
 }
 
 .form-group-3 label {
+  color: rgb(28, 30, 33);
   margin-left: 5px;
 }
 
 .form-group-4 {
+  color: rgb(28, 30, 33);
   display: flex;
   flex-flow: column;
 }
