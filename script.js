@@ -15,7 +15,7 @@ function createInput() {
   inputElement.className = 'gender-custom';
   return inputElement;
 }
-// adicionar elemento quando opção personalizado e já não existir
+// adicionar elemento quando opção personalizado E input não existir
 function addInput() {
   const extraGender = document.querySelector('#input-personalizado');
 
@@ -110,7 +110,6 @@ const getDate = () => {
   }
   return allDate;
 };
-
 // CONJUNTO DE FUNÇÕES PARA MONTAR E APRESENTAR MENSAGENS
 // substituir conteúdo pela mensagem na div right-content
 const renderOutput = (input) => {
