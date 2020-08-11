@@ -1,6 +1,8 @@
 .top-bar {
+  background-color: rgb(66, 103, 178);
   background-image: linear-gradient(rgb(76, 108, 172), rgb(49, 81, 145));
   border-bottom: 1px solid  black;
+  display: flex;
 }
 
 .facebook-login {
@@ -17,6 +19,7 @@
 }
 
 .form-control {
+  align-self: flex-end;
   align-self: center;
 }
 
@@ -29,10 +32,11 @@
 }
 
 .left-content {
-  width: 750px;
+  width: 800px;
 }
 
 .right-content {
+  width: 300px;
   width: 500px;
 }
 
@@ -70,6 +74,7 @@ body {
 
 .facebook-logo {
   align-self: center;
+  justify-self: left;
   height: 64px;
 }
 
