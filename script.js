@@ -38,12 +38,11 @@ function chechRadio() {
 function buttonRegisterCharge() {
   const buttonRegister = document.querySelector('#facebook-register');
   buttonRegister.addEventListener('click', function () {
-    if (chechRadio() === true) {
-      formValues(); 
-  }
-    else {
-      putMenssagem();
+    if (chechRadio() === true)
+    {
+      formValues();
     }
+    putMenssagem();
   });
 }
 
