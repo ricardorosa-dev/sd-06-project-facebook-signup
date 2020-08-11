@@ -44,7 +44,7 @@ function verifyGender() {
 
 function selectedGender() {
   let selected;
-  
+
   if (genderFemale.checked) {
     selected = 'Feminino';
   } else if (genderMale.checked) {
