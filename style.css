@@ -1,8 +1,8 @@
 .top-bar {
-    background-color: rgb(66, 103, 178);  
-    height: 82px;  
-    display: flex;  
-    justify-content: space-between;  
+    background-color: rgb(66, 103, 178); 
+    display: flex;    
+    height: 82px;    
+    justify-content: space-between;
 }
 
 .facebook-login {
@@ -78,12 +78,12 @@ body {
 }
 
 .left-content p {
-    color: rgb(14, 56, 95);  
-    font-size: 20px;  
-    font-weight: 700;  
-    margin-top: 40px;  
-    line-height: 29px;  
-    width: 450px;  
+    color: rgb(14, 56, 95);   
+    font-size: 20px;    
+    font-weight: 700;    
+    line-height: 29px;   
+    margin-top: 40px;     
+    width: 450px;    
 }
 
 .right-content {
