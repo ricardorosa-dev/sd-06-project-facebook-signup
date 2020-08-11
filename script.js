@@ -111,11 +111,21 @@ function checkGenderField() {
 
 function validateFormFields() {
   checkFirstNameField();
-  checkLastNameField();
-  checkPhoneEmailField();
-  checkPasswordField();
-  checkBirthdateField();
-  checkGenderField();
+  if (document.querySelector('.formMessage').style.display === 'none') {
+    checkLastNameField();
+  }
+  if (document.querySelector('.formMessage').style.display === 'none') {
+    checkPhoneEmailField();
+  }
+  if (document.querySelector('.formMessage').style.display === 'none') {
+    checkPasswordField();
+  }
+  if (document.querySelector('.formMessage').style.display === 'none') {
+    checkBirthdateField();
+  }
+  if (document.querySelector('.formMessage').style.display === 'none') {
+    checkGenderField();
+  }
 }
 
 function getGenderValue() {
