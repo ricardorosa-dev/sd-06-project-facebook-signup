@@ -29,7 +29,6 @@ function createDataContainer(map) {
 
 function removeDataContainer() {
   const parentElemen = document.getElementsByClassName('main-content')[0];
-  console.log(parentElemen)
   let childElement = document.getElementById('article');
   parentElemen.removeChild(childElement);
 }
