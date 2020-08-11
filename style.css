@@ -2,6 +2,7 @@
     background-color: rgb(66, 103, 178);
     height: 82px;
     display: flex;
+    justify-content: space-between;
 }
 
 .facebook-login {
@@ -72,6 +73,7 @@ body {
 }
 
 .left-content {
+    display: flex;
     width: 800px;
 }
 
