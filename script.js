@@ -36,7 +36,7 @@ buttonSend.addEventListener('click', (event) => {
   const emptyInput = document.querySelectorAll('.containerInput input');
   const span = document.querySelector('.camposInvalidos');
   for (let index = 0; index < emptyInput.length; index += 1) {
-    if (emptyInput[index].value === "") {
+    if (emptyInput[index].value === '') {
       span.innerHTML = 'Campos inválidos';
       event.preventDefault();
       index = emptyInput.length;
