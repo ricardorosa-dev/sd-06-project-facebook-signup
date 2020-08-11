@@ -133,6 +133,7 @@ function generateWelcomeMessage() {
     document.querySelector('.formRegister').remove();
     document.querySelector('.open-account').remove();
     document.querySelector('.quick-easy').remove();
+    createWelcomeMessageContent();
   }
 }
 
@@ -142,13 +143,12 @@ function createWelcomeMessageContent() {
   Celular ou email: ${phoneEmailField.value}<br>
   Data de nascimento: ${birthdateField.value}<br
   Gênero: ${getGenderValue()}`;
-  generateWelcomeMessage();
 }
 
 function stopSubmitAction(evt) {
   validateFormFields();
   evt.preventDefault();
-  createWelcomeMessageContent();
+  generateWelcomeMessage();
 }
 
 buttonLogin.addEventListener('click', buttonLoginAlert);
