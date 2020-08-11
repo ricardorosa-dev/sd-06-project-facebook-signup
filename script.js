@@ -1,5 +1,5 @@
-flatpickr("#birthdate", {
-  dateFormat: "d-m-Y",
+flatpickr('#birthdate', {
+  dateFormat: 'd-m-Y'
 });
 
 function returnData(fields) {
