@@ -288,29 +288,64 @@ form a:hover{
   text-decoration: underline;
 }
 
-section.linguas {
-  padding: 30px 0px;
-  background-color:white;
-
-}
-section.linguas a{
-  font-size: 14px;
-  color: #365899;
-  padding-right: 15px;
+.lang-section{
+  width: 980px;
+  height: 136px;
+  margin: 0 auto;
 }
 
-section.linguas a.select-language{
-  color: #737373
+.lang-list{
+  display: flex;
+  justify-content: flex-start;
+  height: 28px;
+  padding-top: 8px;
+  list-style: none;
+  color: rgb(56, 88, 152);
 }
 
-section.linguas .center {
-  padding-bottom: 10px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-bottom: 1px solid #ccc;
+.lang-list:first-child{
+  color: rgb(115, 115, 115);
 }
 
-section.linguas .bottom {
-font-size: 14px;
-padding-right: 15px;
+.select-lang{
+  padding-left: 10px;
+}
+
+.select-lang a{
+  text-decoration: none;
+}
+
+.plus-sign{
+  background-color:rgb(245, 246, 247);
+  border: 1px solid rgb(204, 208, 213);
+  border-radius: 2px;
+  padding: 4px 8px 0 8px;
+  margin-left: 8px;
+  color:rgb(75, 79, 86);
+  cursor:pointer;
+  height:14px;
+}
+
+.lang-list-bottom{
+  display: flex;
+  
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.select-lang-bottom{
+  padding-right: 20px;
+  color: rgb(56, 88, 152);  
+  line-height:19.2px;
+}
+
+.select-lang-bottom a{
+  text-decoration: none;
+}
+
+.facebook-text-bottom{
+  color:rgb(115, 115, 115);
+  font-size:11px;
+  line-height:14.74px;
+  padding-left: 40px;
 }
