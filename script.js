@@ -9,26 +9,29 @@ function generateErrorElement() {
   }
 }
 
-function isFilled(inputs, e) {
-  if (inputs.value !== '' && inputs === e.currentTarget) {
-    inputs.setAttribute('filled', 'true');
-  }
-}
-
-function isFilledInputs(e, inputs) {
-  for (let i = 0; i < inputs.length; i += 1) {
-    isFilled(inputs[i], e);
-    if (inputs[i].value === '' && inputs[i] === e.currentTarget) {
-      inputs[i].setAttribute('filled', 'false');
-    }
-  }
-}
-
 function removeErrorElement() {
   const errorElement = document.querySelector('.error');
   if (errorElement.length > 0) {
     errorElement.parentElement.removeChild(errorElement);
   }
+}
+
+function createDataContainer(map) {
+  const rightContainer = document.createElement('article');
+  const mainContainer = document.getElementsByClassName('main-content')[0];
+  rightContainer.classList = 'right-content';
+  mainContainer.appendChild(rightContainer);
+  const newElement = document.createElement('h1');
+  newElement.classList = 'new-element';
+  newElement.innerText = `Olá, ${map.get('firstname')} ${map.get('lastname')}`
+  rightContainer.appendChild(newElement);
+}
+
+function removeDataContainer() {
+  const parentElemen = document.getElementsByClassName('main-content')[0];
+  console.log(parentElemen)
+  let childElement = document.getElementById('article');
+  parentElemen.removeChild(childElement);
 }
 
 function getData() {
@@ -43,21 +46,6 @@ function getData() {
     }
   }
   return dataMap;
-}
-
-function createDataContainer(map) {
-  const rightContainer = document.getElementsByClassName('right-content')[0];
-  map.forEach((value) => {
-    const newElement = document.createElement('div');
-    newElement.classList = 'new-element';
-    newElement.innerText = value;
-    rightContainer.appendChild(newElement);
-  });
-}
-
-function removeDataContainer() {
-  const forms = document.getElementById('signUp');
-  document.getElementsByClassName('right-content')[0].removeChild(forms);
 }
 
 function showData() {
@@ -82,6 +70,21 @@ function setFilledState(inputs) {
   }
 }
 
+function isFilled(inputs, e) {
+  if (inputs.value !== '' && inputs === e.currentTarget) {
+    inputs.setAttribute('filled', 'true');
+  }
+}
+
+function isFilledInputs(e, inputs) {
+  for (let i = 0; i < inputs.length; i += 1) {
+    isFilled(inputs[i], e);
+    if (inputs[i].value === '' && inputs[i] === e.currentTarget) {
+      inputs[i].setAttribute('filled', 'false');
+    }
+  }
+}
+
 function validateInputs(e, inputs) {
   const errorElements = document.querySelectorAll('.error');
   if (errorElements.length === 0) {
@@ -93,6 +96,16 @@ function validateInputs(e, inputs) {
 function initAttributes(inputs) {
   for (let i = 0; i < inputs.length; i += 1) {
     inputs[i].setAttribute('filled', 'false');
+  }
+}
+
+function inputEvents() {
+  const inputs = document.querySelectorAll('main input');
+  for (let i = 0; i < inputs.length; i += 1) {
+    inputs[i].addEventListener('blur', function (e) {
+      isFilledInputs(e, inputs);
+      setFilledState(inputs);
+    });
   }
 }
 
@@ -108,16 +121,6 @@ function buttonEvents() {
   buttonLogin.addEventListener('click', function () {
     alert('Email ou telefone');
   });
-}
-
-function inputEvents() {
-  const inputs = document.querySelectorAll('main input');
-  for (let i = 0; i < inputs.length; i += 1) {
-    inputs[i].addEventListener('blur', function (e) {
-      isFilledInputs(e, inputs);
-      setFilledState(inputs);
-    });
-  }
 }
 
 window.onload = () => {
