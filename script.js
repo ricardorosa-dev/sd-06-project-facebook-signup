@@ -137,7 +137,6 @@ function generateWelcomeMessage() {
 }
 
 function createWelcomeMessageContent() {
-
   document.querySelector('.right-content').style.alignSelf = 'center';
   document.querySelector('.right-content').innerHTML = `Olá ${firstNameField.value} ${lastNameField.value}<br>
   Celular ou email: ${phoneEmailField.value}<br>
