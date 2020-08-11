@@ -2,7 +2,7 @@ const buttonEnter = document.querySelector('.button-login');
 const textEmailTel = document.getElementById('user-email-phone');
 
 function alertEmail() {
-  alert(textEmailTel.value);
+  alert(`E-mail: ${textEmailTel.value}`);
 }
 
 buttonEnter.addEventListener('click', alertEmail);
@@ -42,15 +42,12 @@ function insertContent(list) {
   const p1 = document.createElement('p');
   p1.innerHTML = `Olá, ${list[0]} ${list[1]}`;
   document.querySelector('.right-content').appendChild(p1);
-
   const p2 = document.createElement('p');
   p2.innerHTML = `${list[2]}`;
   document.querySelector('.right-content').appendChild(p2);
-
   const p3 = document.createElement('p');
   p3.innerHTML = `${list[4]}`;
   document.querySelector('.right-content').appendChild(p3);
-
   const p4 = document.createElement('p');
   p4.innerHTML = `${list[5]}`;
   document.querySelector('.right-content').appendChild(p4);
