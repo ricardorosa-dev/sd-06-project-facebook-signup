@@ -126,9 +126,6 @@ function createWelcomeMessageContent() {
 
 function generateWelcomeMessage() {
   if (document.querySelector('.formMessage').style.display === 'none') {
-    /*document.querySelector('.formRegister').style.display = 'none';
-    document.querySelector('.open-account').style.display = 'none';
-    document.querySelector('.quick-easy').style.display = 'none';*/
     document.querySelector('.formRegister').remove();
     document.querySelector('.open-account').remove();
     document.querySelector('.quick-easy').remove();
