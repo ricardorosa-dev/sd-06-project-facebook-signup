@@ -92,9 +92,9 @@ header form input {
 }
 
 .right-content form > :nth-child( n + 2 ) input {
-    display: flex;
-    flex-flow: row;
-    width: 295px;
+  display: flex;
+  flex-flow: row;
+  width: 295px;
 }
 
 .form-space {
