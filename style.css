@@ -92,10 +92,9 @@ header form input {
 }
 
 .right-content form > :nth-child( n + 2 ) input {
-  .personal_genere{
     display: flex;
     flex-flow: row;
-  } width: 295px;
+    width: 295px;
 }
 
 .form-space {
@@ -123,12 +122,13 @@ h1 {
   font-weight: 800;
   width: 500px;
 }
-.subscription-form{
+
+.subscription-form {
   display: flex;
   flex-flow: column nowrap;
 }
 
-.personal_genere{
+.personal_genere {
   display: flex;
   flex-flow: row;
 }
