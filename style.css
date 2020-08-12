@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  min-height: 100vh;
   padding: 0;
 }
 
@@ -28,6 +29,7 @@ body {
 .main-content {
   background: linear-gradient(white, #d3d8e8);
   display: flex;
+  flex-grow: 1;
   justify-content: space-around;
 }
 

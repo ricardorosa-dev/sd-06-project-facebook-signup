@@ -7,11 +7,14 @@ buttonLogin.addEventListener('click', () => {
   alert(login);
 });
 
-function storageValues(param) {
-  if (param.type !== 'radio') {
-    localStorage.setItem(param.name, param.value);
-  } else if (param.checked) {
-    localStorage.setItem(param.name, param.value);
+function storageValues() {
+  const inputs = document.querySelectorAll('#register-form input');
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].type !== 'radio') {
+      localStorage.setItem(inputs[index].name, inputs[index].value);
+    } else if (inputs[index].checked) {
+      localStorage.setItem(inputs[index].name, inputs[index].value);
+    }
   }
 }
 
@@ -23,23 +26,31 @@ function criarDiv() {
   <p>${localStorage.getItem('gender')}</p>`;
 }
 
-submitButton.addEventListener('click', function () {
+function validate() {
   const inputs = document.querySelectorAll('#register-form input');
-  const registerForm = document.querySelector('#register-form p');
   for (let index = 0; index < inputs.length; index += 1) {
     if (!inputs[index].checkValidity()) {
-      if (registerForm) {
-        registerForm.remove();
-      }
-      const paragraph = document.createElement('p');
-      paragraph.innerHTML = 'Campos inválidos';
-      document.querySelector('#register-form').appendChild(paragraph);
+      return true;
       break;
     } else {
-      storageValues(inputs[index]);
+      return false;
     }
   }
-  criarDiv();
+}
+
+submitButton.addEventListener('click', function () {
+  const registerForm = document.querySelector('#register-form p');
+  if (validate()) {
+    if (registerForm) {
+      registerForm.remove();
+    }
+    const paragraph = document.createElement('p');
+    paragraph.innerHTML = 'Campos inválidos';
+    document.querySelector('#register-form').appendChild(paragraph);
+  } else {
+    storageValues();
+    criarDiv();
+  }
 });
 
 genderCustom.onclick = () => {
