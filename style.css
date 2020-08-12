@@ -102,7 +102,6 @@ body {
 
 .form-row {
   display: flex;
-  flex-direction: row;
 }
 
 .register-form input {
@@ -114,6 +113,7 @@ body {
 }
 
 form .form-row label {
+  display: flex;
   margin-left: 4px;
 }
 
