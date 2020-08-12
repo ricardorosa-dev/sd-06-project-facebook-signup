@@ -1,3 +1,4 @@
+// Botão Entrar
 const buttonLogin = document.getElementById('button-login');
 buttonLogin.addEventListener('click', function () {
   const inputEmail = document.getElementById('user-email-phone').value;
@@ -5,20 +6,28 @@ buttonLogin.addEventListener('click', function () {
   inputEmail.innerHTML = '';
 });
 
+// CONJUNTO DE FUNÇÕES PARA TRATAR GENDER-CUSTON.
+// criar elemento que receberá texto.
 function createInput() {
   const inputElement = document.createElement('input');
+  inputElement.type = 'text';
   inputElement.name = 'gender-custom';
   inputElement.placeholder = 'Gênero (opcional)';
   inputElement.className = 'gender-custom';
   return inputElement;
 }
 
+// adicionar elemento quando opção personalizado E input não existir.
 function addInput() {
   const extraGender = document.querySelector('#input-personalizado');
-  const inputElement = createInput();
-  extraGender.appendChild(inputElement);
+
+  if (extraGender.hasChildNodes() === false) {
+    const inputElement = createInput();
+    extraGender.appendChild(inputElement);
+  }
 }
 
+// remover elemento quando opção for diferente de personalizado.
 function removeInput() {
   const extraGender = document.querySelector('#input-personalizado');
   if (extraGender.hasChildNodes()) {
@@ -26,20 +35,25 @@ function removeInput() {
   }
 }
 
+// tratar addEventListener, testar se personalizado e chamar função adequada.
 function handleGenderOption() {
-  if (document.getElementById('personalizado').checked) {
+  const customize = document.getElementById('personalizado');
+  if (customize.checked) {
     addInput();
   } else {
     removeInput();
   }
 }
 
+// escutar addEventListener e chamar a função que vai tratar.
 const genderOption = document.querySelector('.form-group-4');
 genderOption.addEventListener('change', handleGenderOption);
 
+// CONJUNTO DE FUNÇÕES PARA OBTER VALORES DOS INPUTS.
+// obter valores dos inputs tipo text da right-content.
 const getText = () => {
   const allText = [];
-  const inputText = document.querySelectorAll('input[type=text]');
+  const inputText = document.querySelectorAll('.selected-input');
 
   for (let i = 0; i < inputText.length; i += 1) {
     const input = inputText[i].value;
@@ -52,9 +66,10 @@ const getText = () => {
   return allText;
 };
 
+// obter valor do input tipo password da right-content.
 const getPassword = () => {
   const allPassword = [];
-  const inputPassword = document.querySelector('input[type=password]').value;
+  const inputPassword = document.querySelector('#password').value;
 
   if (inputPassword === null || inputPassword === '') {
     allPassword.push(null);
@@ -64,6 +79,7 @@ const getPassword = () => {
   return allPassword;
 };
 
+// obter valor do input tipo radio selecionada da right-content.
 const getRadio = () => {
   const allRadio = [];
   const inputRadio = document.querySelectorAll('input[type=radio]');
@@ -71,7 +87,7 @@ const getRadio = () => {
   let count = 1;
   for (let i = 0; i < inputRadio.length; i += 1) {
     if (inputRadio[i].checked) {
-      const radio = inputRadio[i].labels[0].innerHTML;
+      const radio = inputRadio[i].value;
       allRadio.push(radio);
       count -= 1;
     }
@@ -83,37 +99,35 @@ const getRadio = () => {
   return allRadio;
 };
 
-const getDate = () => {
-  const allDate = [];
-  const inputDate = document.querySelector('input[type=date]').value;
-
-  if (inputDate === null || inputDate === '') {
-    allDate.push(null);
-  } else {
-    allDate.push(inputDate);
-  }
-  return allDate;
-};
-
-const renderOutput = (inputs) => {
-  const renderOutputDiv = document.querySelector('#render-output');
+// CONJUNTO DE FUNÇÕES PARA MONTAR E APRESENTAR AS MENSAGENS OK OU NOK.
+// limpar conteudo atual da div right-content.
+function cleanRightContentDiv() {
   const rightContentDiv = document.querySelector('.right-content');
+  rightContentDiv.innerHTML = '';
+}
 
-  renderOutputDiv.classList.remove('hidden');
-  rightContentDiv.classList.remove('right-content');
-  rightContentDiv.classList.add('hidden');
+// criar o elementoP que receberá a mensagem quando tudo OK.
+function createElementP() {
+  const pElement = document.createElement('p');
+  return pElement;
+}
 
-  for (let i = 0; i < inputs.length; i += 1) {
-    renderOutputDiv.innerHTML += `<div><p>${inputs[i]}</p></div>`;
-  }
-};
+// mostrar mensagem de OK na div right-content.
+function showElementP(input) {
+  const rightContentDiv = document.querySelector('.right-content');
+  const pElement = createElementP();
+  pElement.appendChild(document.createTextNode(input));
+  rightContentDiv.appendChild(pElement);
+}
 
+// mostrar mensagem de NOK (campos inválidos).
 const renderMessage = (input) => {
   const renderMessageDiv = document.querySelector('#render-message');
   renderMessageDiv.classList.remove('hidden');
   renderMessageDiv.innerHTML = `<span>${input}</span>`;
 };
 
+// addEventListener do botão, chamar funções, testar inputs e montar mensagens.
 const submitBtn = document.querySelector('#facebook-register');
 submitBtn.addEventListener('click', (event) => {
   event.preventDefault();
@@ -121,8 +135,7 @@ submitBtn.addEventListener('click', (event) => {
   const allText = getText();
   const allPassword = getPassword();
   const allRadio = getRadio();
-  const allDate = getDate();
-  const allInputs = allText.concat(allPassword, allRadio, allDate);
+  const allInputs = allText.concat(allPassword, allRadio);
 
   let testResult = 0;
   for (let i = 0; i < allInputs.length; i += 1) {
@@ -130,15 +143,13 @@ submitBtn.addEventListener('click', (event) => {
       testResult += 1;
     }
   }
-  const OutputArray = [];
 
   if (testResult !== 0) {
-    const MessageString = 'Campos inválidos';
-    renderMessage(MessageString);
+    const messageNok = 'Campos inválidos';
+    renderMessage(messageNok);
   } else {
-    OutputArray[0] = `Olá ${allInputs[0]} ${allInputs[1]}`;
-    OutputArray[1] = allInputs[2];
-    OutputArray[2] = allInputs[4];
-    renderOutput(OutputArray);
+    const messageOK = `Olá, ${allInputs[0]} ${allInputs[1]}, você nasceu em ${allInputs[3]}, seu email ou telefone é ${allInputs[2]} e selecionou o gênero ${allInputs[5]}.`;
+    cleanRightContentDiv();
+    showElementP(messageOK);
   }
 });
