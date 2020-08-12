@@ -74,13 +74,10 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: space-around;
-  padding: 0 20% 0 10%;
+  justify-content: center;
 }
 
 .left-content {
-  display: flex;
-  flex-wrap: wrap;
   width: 800px;
 }
 
