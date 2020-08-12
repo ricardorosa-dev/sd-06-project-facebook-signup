@@ -6,7 +6,7 @@ const alternativeGender = document.getElementById('input-gender-custon');
 function newElement() {
   const newInput = document.createElement('input');
   newInput.setAttribute('type', 'text');
-  newInput.setAttribute('name', 'gender-custon');
+  newInput.setAttribute('name', 'gender-custom');
   newInput.setAttribute('placeholder', 'Gênero (opcional)');
   alternativeGender.appendChild(newInput);
 }
