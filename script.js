@@ -2,7 +2,6 @@ const getRegisterBtn = document.querySelector('#facebook-register-btn');
 const getAllInputText = document.querySelectorAll('.input-text-verify');
 const getAllInputRadio = document.querySelectorAll('.input-radio-verify');
 const getRightContent = document.querySelector('.right-content');
-const getMainContent = document.querySelector('.main-content');
 
 const alertFieldLogin = () => {
   const getBtnLogin = document.querySelector('#button-login');
@@ -36,7 +35,7 @@ function validateRegisterBtn() {
     const checkedTextInputs = checkIfNotEmpty(getAllInputText);
     const checkedRadioInputs = checkIfchecked(getAllInputRadio);
     if (checkedTextInputs === true && checkedRadioInputs.value !== '') {
-      getMainContent.removeChild(getRightContent);
+      getRightContent.remove();
     }
 
     e.preventDefault();
