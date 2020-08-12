@@ -12,17 +12,12 @@ function messageInvalid() {
 
 function validate() {
   const inputs = document.querySelectorAll('input');
-  let valido = true;
-  console.log(inputs);
+  // console.log(inputs);
   for (let i = 0; i < inputs.length; i += 1) {
-    
     if (inputs[i].value === '') {
       messageInvalid();
     }
   }
-  // if (valido === false) {
-  //   messageInvalid();
-  // }
 }
 
 const botaoRegistro = document.querySelector('#facebook-register');
