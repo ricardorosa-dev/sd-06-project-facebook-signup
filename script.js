@@ -68,9 +68,9 @@ document.querySelector('.register-form').onsubmit = function () {
   }
   const paragrafo = document.createElement('p');
   paragrafo.innerHTML = `
-  Olá, ${firstName} ${lastName}
-  ${mail}
-  ${birthDate}
+  Olá, ${firstName} ${lastName} <br>
+  ${mail} <br>
+  ${birthDate} <br>
   ${selectedRadio}
   `;
   divContent.appendChild(paragrafo);
