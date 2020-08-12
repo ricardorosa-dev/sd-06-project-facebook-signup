@@ -12,43 +12,50 @@
     <form class="facebook-login" method="GET">
       <div class="form-group">
         <label id="user-email-phone-label" for="email">Email ou telefone</label>
-        <input id="user-email-phone" type="text" placeholder="email ou telefone" required>
+        <input id="user-email-phone" type="text" placeholder="email ou telefone">
       </div>
       <div class="form-group">
         <label id="user-password-label" for="senha">Senha</label>
-        <input id="user-password" type="text" placeholder="senha" minlength="8" required>
+        <input id="user-password" type="text" placeholder="senha">
 			</div>
 			<div class="form-control">
 				<button type="button" id="button-login">Entrar</button>
       </div>
     </form>
   </header>
+
   <section class="main-content">
     <div class="left-content">
       <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img id="facebook-networking" src="imgs/networking.png">
     </div>
     <div class="right-content">
+
       <h1>Abra uma conta</h1>
       <div class="quick-easy">É rápido e fácil.</div>
-      <form class="subscription-form" method="GET">
-        <div class="subscription-form-1">
-          <input class="input-text-verify" name="firstname" placeholder="Nome" value="nome">
-          <input class="input-text-verify" name="lastname" placeholder="Sobrenome" value="sobrenome">
-        </div>
-        <input class="input-text-verify" name="phone_email" placeholder="Celular ou email" value="cel ou email">
-        <input class="input-text-verify" name="password" type="password" placeholder="Nova senha" required value="senha">
-        <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-        <input class="input-text-verify" name="birthdate" placeholder="dd/mm/aaaa" value="data">
-        <label id="label-gender" for="">Gênero</label>
-        <div class="subscription-form-2">
-          <input class="input-radio-verify" id="feminino" type="radio" name="gender" value='Feminino' checked>
-          <label for="feminino">Feminino</label>
-          <input class="input-radio-verify" id="masculino" type="radio" name="gender" value='Masculino'>
-          <label for="masculino">Masculino</label>
-          <input class="input-radio-verify" id="personalizado" type="radio" name="gender" value='Personalizado'>
-          <label for="personalizado">Personalizado</label>
-        </div>
+
+      <form method="GET">
+
+        <input class="input-text-verify" name="firstname" placeholder="Nome">
+        <input class="input-text-verify" name="lastname" placeholder="Sobrenome">
+
+        <input class="input-text-verify" name="phone_email" placeholder="Celular ou email">
+        <input class="input-text-verify" name="password" type="password" placeholder="Nova senha">
+
+        <label for="birthdate">Data de nascimento</label>
+        <input class="input-text-verify" id="birthdate" placeholder="DD/MM/AAAA">
+
+        <label>Gênero</label>
+
+        <input class="input-radio-verify" id="feminino" type="radio" name="gender" value='Feminino' checked>
+        <label>Feminino</label>
+
+        <input class="input-radio-verify" id="masculino" type="radio" name="gender" value='Masculino'>
+        <label>Masculino</label>
+
+        <input class="input-radio-verify" id="personalizado" type="radio" name="gender" value='Personalizado'>
+        <label>Personalizado</label>
+
         <button id="facebook-register-btn" type="submit">Cadastre-se</button>
       </form>
     </div>
