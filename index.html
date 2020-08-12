@@ -32,17 +32,25 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <div class="quick-easy">É rápido e fácil.</div>
-      <form method="GET">
 
+      <form class="register-form" method="GET">
+
+      <div class="nameInput">
         <input class="input-text-verify" name="firstname" placeholder="Nome">
         <input class="input-text-verify" name="lastname" placeholder="Sobrenome">
+      </div>
 
+      <div>
         <input class="input-text-verify" name="phone_email" placeholder="Celular ou email">
         <input class="input-text-verify" name="password" type="password" placeholder="Nova senha">
+      </div>
 
+      <div>
         <label id="label-birthdate" for="birthdate">Data de nascimento</label>
         <input class="input-text-verify" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
+      </div>
 
+      <div>
         <label>Gênero</label>
 
         <input class="input-radio-verify" type="radio" name="gender" value='Feminino'>
@@ -53,8 +61,11 @@
 
         <input class="input-radio-verify" type="radio" name="gender" value='Personalizado'>
         <label>Personalizado</label>
+      </div>
 
+      <div>
         <button id="facebook-register-btn" type="submit">Cadastre-se</button>
+      </div>
       </form>
     </div>
     </div>

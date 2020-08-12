@@ -41,3 +41,13 @@ body {
 .right-content {
   width: 300px;
 }
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameInput {
+  display: flex;
+  flex-direction: row;
+}
