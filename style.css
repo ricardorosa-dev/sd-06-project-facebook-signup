@@ -57,6 +57,7 @@ label {
   background-image: linear-gradient(white, rgb(211, 216, 232));
   display: flex;
   justify-content: center;
+  width: 100vw;
 }
 
 .left-content {
@@ -88,7 +89,7 @@ label {
   display: flex;
 }
 
-body input {
+.main-content input {
   border: 1px solid #bdc7d8;
   border-radius: 5px;
 }
