@@ -51,7 +51,7 @@ body {
   align-self: flex-end;
 }
 
-.button-login {
+#button-login {
   background-color: rgb(66, 103, 178);
   border: 1px solid rgb(41, 72, 125);
   border-radius: 2px;
