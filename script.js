@@ -20,6 +20,8 @@ function validate() {
   }
 }
 
+// **Tendo como referência o código da dupla Matheus e Ana Flávia, pego de seus respectivos pull request**
+
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
 
