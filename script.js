@@ -31,10 +31,8 @@ function validate() {
   for (let index = 0; index < inputs.length; index += 1) {
     if (!inputs[index].checkValidity()) {
       return true;
-      break;
-    } else {
-      return false;
     }
+    return false;
   }
 }
 
