@@ -61,6 +61,6 @@ body {
   display: flex;
 }
 
-/* .invisible {
+.invisible {
   display: none;
-} */
+}

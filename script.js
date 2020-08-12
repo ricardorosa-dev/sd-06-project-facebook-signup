@@ -8,6 +8,7 @@ const mGenderRagio = document.getElementById('gender-male');
 const pGenderRadio = document.getElementById('gender-personalized');
 const answers = document.getElementById('answers');
 const genderInput = document.getElementById('gender-input');
+const genderDiv = document.getElementsByClassName('user-gender')[0];
 
 function buttonLogin() {
   const botaoEntrar = document.getElementById('button-login');
@@ -43,8 +44,12 @@ function buttonSubmit() {
 }
 
 function showGenderCustom() {
-  pGenderRadio.addEventListener('select', function () {
-    genderInput.classList.toggle('invisible');
+  genderDiv.addEventListener('change', function (e) {
+    if (e.target.value === 'Personalizado') {
+      genderInput.classList.remove('invisible');
+    } else {
+      genderInput.classList.add('invisible');
+    }
   });
 }
 
