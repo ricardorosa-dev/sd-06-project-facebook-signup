@@ -88,8 +88,8 @@ body {
 .right-content {
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
   margin-right: 280px;
+  margin-top: 5px;
   width: 300px;
 }
 
