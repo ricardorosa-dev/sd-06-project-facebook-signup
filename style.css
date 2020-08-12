@@ -74,7 +74,7 @@ label {
   width: 300px;
 }
 
-.newRight-Content {
+span {
   color: black;
   display: flex;
   font-family: Rubik, sans-serif;

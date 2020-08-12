@@ -45,19 +45,20 @@ function checkGender() {
 }
 
 function changeContentOfRightContent() {
+  const rightContent = document.querySelector('.right-content');
   const userName = document.querySelectorAll('.signUp')[0];
   const userSurName = document.querySelectorAll('.signUp')[1];
   const emailOrPhone = document.querySelectorAll('.signUp')[2];
   const birthdate = document.querySelectorAll('.signUp')[4];
   const gender = checkGender();
-  const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = '';
-  rightContent.innerHTML =
+  const paragraph = document.createElement('span');
+  paragraph.innerHTML =
   `Olá, ${userName.value} ${userSurName.value} <br>
   Email: ${emailOrPhone.value} <br>
   Data de Nascimento: ${birthdate.value} <br>
   ${gender}`;
-  rightContent.className = 'newRight-Content';
+  rightContent.appendChild(paragraph);
 }
 
 loginButton.addEventListener('click', () => {
