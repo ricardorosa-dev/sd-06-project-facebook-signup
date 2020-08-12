@@ -7,6 +7,22 @@ buttonLogin.addEventListener('click', () => {
   alert(login);
 });
 
+function storageValues(param) {
+  if (param.type !== 'radio') {
+    localStorage.setItem(param.name, param.value);
+  } else if (param.checked) {
+    localStorage.setItem(param.name, param.value);
+  }
+}
+
+function criarDiv() {
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = `<h2>Olá, ${localStorage.getItem('firstname')} ${localStorage.getItem('lastname')}</h2>
+  <p>${localStorage.getItem('phone_email')}</p>
+  <p>${localStorage.getItem('birthdate')}</p>
+  <p>${localStorage.getItem('gender')}</p>`;
+}
+
 submitButton.addEventListener('click', function () {
   const inputs = document.querySelectorAll('#register-form input');
   const registerForm = document.querySelector('#register-form p');
@@ -37,21 +53,4 @@ genderCustom.onclick = () => {
   genderDiv.placeholder = 'Gênero (opcional)';
   genderDiv.className = 'display-block';
   document.querySelector('#register-form').insertBefore(genderDiv, submitButton);
-};
-
-function storageValues (param) {
-  if (param.type != 'radio') {
-    localStorage.setItem(param.name, param.value);
-  } else if (param.checked) {
-    localStorage.setItem(param.name, param.value);
-  }
-};
-
-function criarDiv() {
-  const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = `<h2>Olá, ${localStorage.getItem('firstname')} ${localStorage.getItem('lastname')}</h2> 
-  
-  <p>${localStorage.getItem('phone_email')}</p>
-  <p>${localStorage.getItem('birthdate')}</p>
-  <p>${localStorage.getItem('gender')}</p>`;
 };
