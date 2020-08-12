@@ -25,6 +25,7 @@ function validatePassword() {
 function saveContent() {
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
+  const fullName = `${firstName} ${lastName}`;
   const phoneEmail = document.getElementById('phone_email').value;
   const birthDate = document.getElementById('birthdate').value;
   let radioButtonOption = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
@@ -33,8 +34,7 @@ function saveContent() {
       radioButtonOption = radioButtonOption[i].value;
     }
   }
-  localStorage.setItem('firstName', firstName);
-  localStorage.setItem('lastName', lastName);
+  localStorage.setItem('fullName', fullName);
   localStorage.setItem('phone_email', phoneEmail);
   localStorage.setItem('birthdate', birthDate);
   localStorage.setItem('gender', radioButtonOption);
@@ -45,9 +45,7 @@ function newContent() {
   const divValidate = document.getElementById('validateDiv');
   if (divValidate !== 'Campos inválidos') {
     divRight.innerHTML = '';
-    const firstName = localStorage.getItem('firstName');
-    const lastName = localStorage.getItem('lastName');
-    const fullName = `${firstName} ${lastName}`;
+    const fullName = localStorage.getItem('fullName');
     const phoneEmail = localStorage.getItem('phone_email');
     const birthdate = localStorage.getItem('birthdate');
     const gender = localStorage.getItem('gender');
