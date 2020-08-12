@@ -13,30 +13,31 @@ alertFieldLogin();
 function checkIfNotEmpty(inputsText) {
   for (let i = 0; i < inputsText.length; i += 1) {
     if (inputsText[i].value === '') {
-      alert('Preencha todos os campos !');
+      inputsText[i].style.border = '1px solid red';
+      inputsText[i].value = 'Preencha o campo !';
+      return false;
     }
   }
-  return 1;
+  return true;
 }
 
-function checkIfChecked(inputsRadio) {
+function checkIfchecked(inputsRadio) {
   for (let i = 0; i < inputsRadio.length; i += 1) {
-    if (inputsRadio[i].checked === true) {
-      alert('Selecione ao menos uma opção !');
+    if (inputsRadio[i].value === '') {
+      return false;
     }
   }
-  return 1;
+  return true;
 }
 
 function validateRegisterBtn() {
   getRegisterBtn.addEventListener('click', function (e) {
     const checkedTextInputs = checkIfNotEmpty(getAllInputText);
-    const checkedRadioInputs = checkIfChecked(getAllInputRadio);
-
-    if (checkedTextInputs === 1 && checkedRadioInputs === 1) {
-      const removeRightContent = () => getRightContent.remove();
-      removeRightContent();
+    const checkedRadioInputs = checkIfchecked(getAllInputRadio);
+    if (checkedTextInputs === true && checkedRadioInputs.value !== '') {
+      getRightContent.remove();
     }
+
     e.preventDefault();
   });
 }
