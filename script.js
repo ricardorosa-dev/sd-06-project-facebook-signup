@@ -130,13 +130,11 @@ function validateCustomInputRemoval(inputsGender) {
 }
 
 function generateCustomInputEvent(inputsGender) {
-
   inputsGender[2].addEventListener('click', function (e) {
     generateCustomInput(inputsGender[2]);
   });
   validateCustomInputRemoval(inputsGender);
 };
-
 
 function inputEvents() {
   const inputs = document.querySelectorAll('main input');
@@ -167,5 +165,4 @@ function buttonEvents() {
 window.onload = () => {
   buttonEvents();
   inputEvents();
-
 };
