@@ -12,14 +12,10 @@ function messageInvalid() {
 
 function validate() {
   const inputs = document.querySelectorAll('input');
-  let valido = true;
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
-      valido = false;
+      messageInvalid();
     }
-  }
-  if (!valido) {
-    messageInvalid();
   }
 }
 
