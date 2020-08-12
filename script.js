@@ -1,6 +1,7 @@
 const buttonLogin = document.querySelector('#button-login');
 const submitButton = document.querySelector('#facebook-register');
 const registerForm = document.querySelector('#register-form p');
+const genderCustom = document.querySelector('#personalizado');
 
 buttonLogin.addEventListener('click', () => {
   const login = document.querySelector('#user-email-phone').value;
@@ -21,3 +22,12 @@ submitButton.addEventListener('click', function () {
     }
   }
 });
+
+genderCustom.onclick = () => {
+  const genderDiv = document.createElement('input');
+  genderDiv.type = 'text';
+  genderDiv.name = 'gender-custom';
+  genderDiv.placeholder = 'Gênero (opcional)';
+  genderDiv.className = 'display-block'
+  document.querySelector('#register-form').insertBefore(genderDiv, submitButton);
+}
