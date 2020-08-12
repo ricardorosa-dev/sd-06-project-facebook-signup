@@ -1,6 +1,6 @@
 const userEmailPhone = document.getElementById('user-email-phone');
 const btnLogin = document.getElementById('button-login');
-const invalidMessage = document.querySelector('.invalid-input')
+const invalidMessage = document.querySelector('.invalid-input');
 const genderOptions = document.getElementById('gender');
 const genderCustom = document.querySelector('.custom-option');
 const btnSingUp = document.getElementById('facebook-register');

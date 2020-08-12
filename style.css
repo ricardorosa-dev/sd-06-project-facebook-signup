@@ -1,9 +1,9 @@
 body {
   background-image: linear-gradient(rgb(246, 247, 248), rgb(167, 193, 245) 300%);
   font-family: Helvetica, Arial, sans-serif;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  height: 100vh;
 }
 
 /* RODRIGO */
