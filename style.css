@@ -1,7 +1,13 @@
+body {
+  margin: 0px;
+  background-color: rgba(173, 173, 173, 0.808);
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .facebook-login {
@@ -21,14 +27,22 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  width: auto;
 }
 
 .left-content {
+  background-color: rgba(173, 173, 173, 0.808);
+  color: white;
+  font-weight: 600;
   width: 800px;
 }
 
 .right-content {
+  background-color: rgba(173, 173, 173, 0.808);
+  color: white;
+  font-weight: 600;
+  padding: 10px;
   width: 300px;
 }
 
@@ -39,4 +53,42 @@
 
 .invalid , .genderCustom {
   display: none;
+}
+
+.small-input {
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 10px;
+  width: 120px;
+}
+
+.gender-radio {
+  display: flex;
+  margin: 10px;
+}
+
+.password-input {
+  margin-bottom: 10px;
+  width: 260px;
+}
+
+.btn-entrar {
+  background-color: rgb(66, 103, 178);
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+button.btn-cadastre {
+  background-color: rgba(30, 112, 6, 0.877);
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  margin-left: 10px;
 }
