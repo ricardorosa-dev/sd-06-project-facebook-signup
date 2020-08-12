@@ -12,25 +12,24 @@ function deleteInvalidMsg() {
   }
 }
 
-document.getElementById('facebook-register').addEventListener('click', function () {
-  deleteInvalidMsg();
-  const password = document.querySelector('.new-password').value.length;
-  const inputs = document.querySelectorAll('input');
-  for (let i = 2; i < inputs.length; i += 1) {
-    if (inputs[i].value === null) {
-      document.querySelector('.sign-in-form').append(invalidMsg);
-    }
-  }
-  if (document.getElementById('male').checked || document.getElementById('female').checked ||
-        document.getElementById('custom').checked) {
-    // Não fazer nada.
+function loginSuccess() {
+  const firstName = document.querySelector('.first-name').value;
+  const lastName = document.querySelector('.last-name').value;
+  const email = document.querySelector('.email').value;
+  const birthdate = document.querySelector('.input-birthdate').value;
+  const divRight = document.querySelector('.right-content');
+  let genderText;
+  if (document.getElementById('male').checked) {
+    genderText = 'Masculino';
+  } else if (document.getElementById('female').checked) {
+    genderText = 'Feminino';
   } else {
-    document.querySelector('.sign-in-form').append(invalidMsg);
+    genderText = 'Personalizado';
   }
-  if (password === 0) {
-    document.querySelector('.sign-in-form').append(invalidMsg);
-  }
-});
+  divRight.innerHTML = `<p class="loginSuccess">Olá, ${firstName}
+  ${lastName}<br><br>Email/Telefone:<br>${email}<br><br>Data de Nascimento:<br>
+  ${birthdate}<br><br>Gênero:<br>${genderText}</p>`;
+}
 
 document.getElementById('custom').addEventListener('click', () => {
   const inputCustom = document.createElement('input');
@@ -38,9 +37,7 @@ document.getElementById('custom').addEventListener('click', () => {
   inputCustom.className = 'gender-custom';
   inputCustom.name = 'gender-custom';
   inputCustom.size = '49';
-  if (document.querySelector('.gender-custom')) {
-    // Não fazer nada.
-  } else {
+  if (!(document.querySelector('.gender-custom'))) {
     document.getElementById('facebook-register').previousElementSibling.append(inputCustom);
   }
 });
@@ -57,24 +54,19 @@ document.getElementById('female').addEventListener('click', () => {
   }
 });
 
-function loginSuccess() {
-  const firstName = document.querySelector('.first-name').value;
-  const lastName = document.querySelector('.last-name').value;
-  const email = document.querySelector('.email').value;
-  const birthdate = document.querySelector('.input-birthdate').value;
-  const divRight = document.querySelector('.right-content');
-  let genderText;
-  if (document.getElementById('male').checked) {
-    genderText = 'Masculino';
-  } else if (document.getElementById('female').checked) {
-    genderText = 'Feminino';
+document.getElementById('facebook-register').addEventListener('click', function () {
+  deleteInvalidMsg();
+  const password = document.querySelector('.new-password').value.length;
+  const inputs = document.querySelectorAll('input');
+  if ((!inputs[2].value) || (!inputs[3].value) || (!inputs[4].value) || (!inputs[5].value) ||
+  (!inputs[6].value)) {
+    document.querySelector('.sign-in-form').append(invalidMsg);
+  } else if (!(document.getElementById('male').checked || document.getElementById('female').checked ||
+    document.getElementById('custom').checked)) {
+    document.querySelector('.sign-in-form').append(invalidMsg);
+  } else if (password === 0) {
+    document.querySelector('.sign-in-form').append(invalidMsg);
   } else {
-    genderText = 'Personalizado';
+    loginSuccess();
   }
-  divRight.innerHTML = `<p class = "loginSuccess">Olá, ${firstName} ${lastName}<br><br>Email/Telefone:<br>${email}<br><br>Data de Nascimento:<br>${birthdate}<br><br>Gênero:<br>${genderText}</p>`;
-}
-
-document.getElementById('facebook-register').addEventListener('click', (event) => {
-  event.preventDefault();
-  loginSuccess();
 });
