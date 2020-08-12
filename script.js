@@ -41,28 +41,21 @@ function saveContent() {
 }
 
 function newContent() {
-  const divRight = document.getElementsByClassName('right-content');
+  const divRight = document.querySelector('.right-content');
   const divValidate = document.getElementById('validateDiv');
-  if (divValidate !== '') {
+  if (divValidate === 'Campos inválidos') {
+  } else {
     divRight.innerHTML = '';
-    const helloText = document.createElement('p');
     const firstName = localStorage.getItem('firstName');
     const lastName = localStorage.getItem('lastName');
     const fullName = `${firstName} ${lastName}`;
-    helloText.innerText = `Olá, ${fullName}`;
-    divRight.appendChild(helloText);
-    const johnDoeTelephone = document.createElement('p');
     const phoneEmail = localStorage.getItem('phone_email');
-    johnDoeTelephone.innerText = phoneEmail.value;
-    divRight.appendChild(johnDoeTelephone);
-    const johnDoeBirthDate = document.createElement('p');
     const birthdate = localStorage.getItem('birthdate');
-    johnDoeBirthDate.innerText = birthdate.value;
-    divRight.appendChild(johnDoeBirthDate);
-    const johnDoeGender = document.createElement('p');
     const gender = localStorage.getItem('gender');
-    johnDoeGender.innerText = gender.value;
-    divRight.appendChild(johnDoeGender);
+    divRight.innerText = `Olá, ${fullName},
+    Telefone ou email: ${phoneEmail}
+    Data de nascimento: ${birthdate}
+    Genero: ${gender}`;
   }
 }
 
@@ -77,7 +70,6 @@ function validate(event) {
       const oldP = document.getElementsByTagName('p');
       document.getElementById('validateDiv').removeChild(oldP);
     }
-
     const p = document.createElement('p');
     p.innerText = 'Campos inválidos';
     document.getElementById('validateDiv').appendChild(p);
