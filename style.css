@@ -49,15 +49,14 @@ body {
 }
 
 /* CLEYTON */
-
-/* .slogan {
+.slogan {
   color: rgb(14, 56, 95);
   font-size: 20px;
   font-weight: 700;
   line-height: 29px;
   margin-top: 40px;
   width: 450px;
-} */
+}
 
 .title {
   color: rgb(51, 51, 51);
@@ -80,7 +79,6 @@ body {
 }
 
 .left-content {
-  align-self: flex-start;
   display: flex;
   flex-wrap: wrap;
   width: 800px;
