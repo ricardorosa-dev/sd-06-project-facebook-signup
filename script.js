@@ -103,11 +103,11 @@ function generateCustomInput() {
   const buttonArea = document.querySelector('.button-area');
   newInput.type = Text;
   newInput.name = 'gender-custom';
-  newInput.placeholder = "Gênero (opcional)";
+  newInput.placeholder = 'Gênero (opcional)';
   newInput.classList = 'input-gender input';
   newInput.id = 'custom-input';
-  newInput.style.marginBottom = '10px'
-  buttonArea.insertAdjacentElement("beforebegin", newInput);
+  newInput.style.marginBottom = '10px';
+  buttonArea.insertAdjacentElement('beforebegin', newInput);
 }
 
 function removeCustomInput() {
@@ -119,26 +119,24 @@ function removeCustomInput() {
 function validateCustomInputRemoval(inputsGender) {
   for (let i = 0; i < inputsGender.length; i += 1) {
     inputsGender[i].addEventListener('change', () => {
-      const customInput = document.getElementById("custom-input");
-      if(!inputsGender[2].checked) {
-        if(customInput) {
-          removeCustomInput();
-        }
+      const customInput = document.getElementById('custom-input');
+      if (!inputsGender[2].checked && customInput) {
+        removeCustomInput();
       }
     });
   }
 }
 
 function generateCustomInputEvent(inputsGender) {
-  inputsGender[2].addEventListener('click', function (e) {
+  inputsGender[2].addEventListener('click', function () {
     generateCustomInput(inputsGender[2]);
   });
   validateCustomInputRemoval(inputsGender);
-};
+}
 
 function inputEvents() {
   const inputs = document.querySelectorAll('main input');
-  const inputsGender = document.querySelectorAll('.input-gender')
+  const inputsGender = document.querySelectorAll('.input-gender');
   for (let i = 0; i < inputs.length; i += 1) {
     inputs[i].addEventListener('blur', function (e) {
       isFilledInputs(e, inputs);
