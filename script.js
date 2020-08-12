@@ -4,7 +4,7 @@ const inputsForm = document.querySelectorAll('.validaForm');
 const messageParagraph = document.createElement('p');
 messageParagraph.innerText = 'Campos inválidos';
 
-// Estrutura  para input customização de gênero
+// Estrutura  para input customização de gênero.
 const inputPersonalOptional = document.createElement('input');
 inputPersonalOptional.type = 'text';
 inputPersonalOptional.name = 'gender-custom';
