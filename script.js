@@ -27,17 +27,17 @@ function saveContent() {
   const lastName = document.getElementById('lastname').value;
   const phoneEmail = document.getElementById('phone_email').value;
   const birthDate = document.getElementById('birthdate').value;
-  const radioButtonOption = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
-  for (let i = 0; i < radioButtonOption.length; i+=1) {
+  let radioButtonOption = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
+  for (let i = 0; i < radioButtonOption.length; i += 1) {
     if (radioButtonOption[i].checked) {
       radioButtonOption = radioButtonOption[i].value;
     }
-  }  
+  }
   localStorage.setItem('firstName', firstName);
   localStorage.setItem('lastName', lastName);
   localStorage.setItem('phone_email', phoneEmail);
   localStorage.setItem('birthdate', birthDate);
-  localStorage.setItem('gender', radioButtonOptionSave);
+  localStorage.setItem('gender', radioButtonOption);
 }
 
 function newContent() {
@@ -48,7 +48,7 @@ function newContent() {
     const helloText = document.createElement('p');
     const firstName = localStorage.getItem('firstName');
     const lastName = localStorage.getItem('lastName');
-    helloText.innerText = "Olá, " + firstName + " " + lastName;
+    helloText.innerText = 'Olá, ' + firstName + ' ' + lastName;
     divRight.appendChild(helloText);
     const johnDoeTelephone = document.createElement('p');
     const phoneEmail = localStorage.getItem('phone_email');
@@ -102,11 +102,11 @@ function otherButton() {
   }
 }
 
-window.onload = function() {
+window.onload = function () {
   const button = document.getElementById('button-login');
   const registerButton = document.getElementById('facebook-register');
   const personalizedButton = document.getElementById('other');
   button.addEventListener('click', loginButton);
   registerButton.addEventListener('click', validate);
   personalizedButton.addEventListener('click', otherButton);
-}
+};
