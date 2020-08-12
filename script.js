@@ -43,9 +43,7 @@ function saveContent() {
 function newContent() {
   const divRight = document.querySelector('.right-content');
   const divValidate = document.getElementById('validateDiv');
-  if (divValidate === 'Campos inválidos') {
-    document.location.reload(true);
-  } else {
+  if (divValidate !== 'Campos inválidos') {
     divRight.innerHTML = '';
     const firstName = localStorage.getItem('firstName');
     const lastName = localStorage.getItem('lastName');
