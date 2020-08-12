@@ -1,15 +1,19 @@
 const btnLogin = document.querySelector('#button-login');
 const inputBox = document.querySelector('#user-email-phone');
-const genderCuston = document.querySelector('#gender-person');
+const genderCuston = document.getElementById('gender-person');
+const alternativeGender = document.getElementById('input-gender-custon');
 
-btnLogin.addEventListener('click', function () {
-  alert(inputBox.value);
-});
-
-genderCuston.addEventListener('checked', function () {
-  let newInput = document.createElement('input');
+function newElement() {
+  const newInput = document.createElement('input');
   newInput.setAttribute('type', 'text');
   newInput.setAttribute('name', 'gender-custon');
   newInput.setAttribute('placeholder', 'Gênero (opcional)');
-  document.getElementById('input-gender-custon').appendChild(newInput);
-})
+  alternativeGender.appendChild(newInput);
+}
+
+window.onload = function () {
+  genderCuston.addEventListener('click', newElement);
+  btnLogin.addEventListener('click', function () {
+    alert(inputBox.value);
+  });
+};
