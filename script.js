@@ -76,4 +76,3 @@ buttonRegister.addEventListener('click', function (event) {
     getDivInformations(getAllInputs);
   }
 });
-
