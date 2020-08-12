@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-date {
+  flex-direction: column;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  justify-content: space-around;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+}
