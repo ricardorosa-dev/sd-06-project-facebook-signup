@@ -5,10 +5,6 @@
   justify-content: space-between;
 }
 
-.facebook-logo {
-  display: flex;
-}
-
 .facebook-login {
   color: white;
   display: flex;
@@ -95,6 +91,7 @@ body {
 }
 
 .facebook-logo {
+  display: flex;
   float: left;
 }
 
