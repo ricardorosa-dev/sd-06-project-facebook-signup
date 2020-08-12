@@ -44,6 +44,7 @@ function newContent() {
   const divRight = document.querySelector('.right-content');
   const divValidate = document.getElementById('validateDiv');
   if (divValidate === 'Campos inválidos') {
+    
   } else {
     divRight.innerHTML = '';
     const firstName = localStorage.getItem('firstName');
