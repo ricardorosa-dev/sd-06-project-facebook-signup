@@ -107,4 +107,4 @@ window.onload = function () {
   button.addEventListener('click', loginButton);
   registerButton.addEventListener('click', validate);
   personalizedButton.addEventListener('click', otherButton);
-};
+}
