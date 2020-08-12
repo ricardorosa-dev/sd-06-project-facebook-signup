@@ -1,8 +1,11 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  font-family: inherit;
   height: 82px;
+  margin: 0 auto;
   justify-content: space-between;
+  padding-top: 13px;
 }
 
 .facebook-login {
@@ -45,6 +48,7 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 0 0 0 14px;
 }
 
 .form-control {
@@ -93,6 +97,7 @@ body {
 .facebook-logo {
   display: flex;
   float: left;
+  margin-left: 20px;
 }
 
 .register-form {
@@ -101,8 +106,14 @@ body {
 }
 
 .form-row {
+  color: #1d2129;
   display: flex;
+  font-family: inherit;
   font-size: 12px;
+  font-weight: normal;
+  line-height: 12px;
+  padding: 0 10px 0 3px;
+  vertical-align: middle;
 }
 
 .register-form input {
@@ -132,3 +143,20 @@ form .form-row label {
 .form-name input:first-child {
   margin-right: 4px;
 }
+
+#facebook-register {
+  background: #67ae55;
+  background-color: #69a74e;
+  border: 1px solid;
+  border-color: #3b6e22;
+  border-radius: 5px;
+  box-shadow: #3b6e22;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font: arial;
+  font-size: 19px;
+  height: 30px;
+  position: relative;
+  width: 150px;
+  }
