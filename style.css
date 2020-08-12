@@ -81,6 +81,7 @@ body {
   align-self: flex-start;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 155px;
   width: 800px;
 }
 
@@ -88,6 +89,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 5px;
+  margin-right: 280px;
   width: 300px;
 }
 
