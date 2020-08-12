@@ -5,6 +5,7 @@ body {
 
 header {
   background-color: rgb(66, 103, 178);
+  width: 100vw;
 }
 
 .top-bar {
@@ -38,7 +39,6 @@ header {
 
 label {
   color: white;
-  font-family: inherit;
   font-size: 13px;
 }
 
