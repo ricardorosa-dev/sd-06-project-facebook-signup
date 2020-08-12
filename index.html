@@ -37,15 +37,19 @@
             <div class="quick-easy">
                 <p>É rápido e fácil.</p>
             </div>
-            <form class="register-form">
+            <form action="get" class="register-form">
                 <div class="form-name">
                     <input type="text" name="firstname" placeholder="Nome">
                     <input type="text" name="lastname" placeholder="Sobrenome">
                 </div>
-                <input type="tel email" name="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" placeholder="Nova senha">
-                <label for="" id="label-birthdate" class="label-birthdate">Data de nascimento</label><br>
-                <input type="text" name="birthdate" class="birthdate" placeholder="dd/mm/aaaa">
+                <div>
+                    <input type="tel email" name="phone_email" placeholder="Celular ou email">
+                    <input type="password" name="password" placeholder="Nova senha">
+                </div>
+                <div class="user-birth-date">
+                    <label for="" id="label-birthdate" class="label-birthdate">Data de nascimento</label><br>
+                    <input type="text" name="birthdate" class="birthdate" placeholder="dd/mm/aaaa">
+                </div>
                 <label id="label-gender">Gênero</label>
                 <div class='form-row gender-form'>
                     <div class="form-row">
