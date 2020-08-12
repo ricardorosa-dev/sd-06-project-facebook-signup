@@ -3,6 +3,7 @@ const emailInput = document.querySelector('#user-email-phone');
 const allInputFields = document.querySelectorAll('.signUp');
 const allRadioButtons = document.querySelectorAll('.signUpButton');
 const signUpButton = document.querySelector('#facebook-register');
+const customGender = document.querySelectorAll('.signUpButton')[2];
 
 function checkAllSignUpFields() {
   for (let i = 0; i < allInputFields.length; i += 1) {
@@ -42,4 +43,13 @@ signUpButton.addEventListener('click', (event) => {
       createInvalidFieldsMessage();
     }
   }
+});
+
+customGender.addEventListener('click', () => {
+  const custonGenderField = document.createElement('input');
+  custonGenderField.type = 'text';
+  custonGenderField.classList.add('customGenderInputField');
+  custonGenderField.name = 'gender-custom';
+  custonGenderField.placeholder = 'Gênero (opcional)';
+  document.querySelector('.gender').appendChild(custonGenderField);
 });
