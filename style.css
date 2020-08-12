@@ -81,14 +81,12 @@ body {
   align-self: flex-start;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 155px;
   width: 800px;
 }
 
 .right-content {
   display: flex;
   flex-direction: column;
-  margin-right: 280px;
   margin-top: 5px;
   width: 300px;
 }
