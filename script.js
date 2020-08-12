@@ -29,7 +29,7 @@ function saveContent() {
   obj.fullname = `${firstName} ${lastName}`;
   obj.phone_email = document.getElementById('phone_email').value;
   obj.birthdate = document.getElementById('birthdate').value;
-  let radioButtonOption = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
+  const radioButtonOption = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
   for (let i = 0; i < radioButtonOption.length; i += 1) {
     if (radioButtonOption[i].checked) {
       obj.gender = radioButtonOption[i].value;
