@@ -5,11 +5,11 @@ const inputsValidate = document.querySelectorAll('.validate-inputs');
 const radioBtns = document.querySelectorAll('.radio-inputs');
 const btnCustomGender = document.querySelector('#personalizado');
 
-btnLogin.addEventListener('click', function() {
+btnLogin.addEventListener('click', function () {
   alert(mailEntry.value);
 });
 
-btnSignup.addEventListener('click', function() {
+btnSignup.addEventListener('click', function () {
   let temErro = 0;
   for (let i = 0; i < inputsValidate.length; i += 1) {
     if (inputsValidate[i].value === '') {
@@ -26,7 +26,7 @@ btnSignup.addEventListener('click', function() {
   }
 });
 
-btnCustomGender.addEventListener('click', function() {
+btnCustomGender.addEventListener('click', function () {
   const radioGender = document.querySelector('.gender-radio');
   const newInput = document.createElement('input');
   newInput.type = 'text';
