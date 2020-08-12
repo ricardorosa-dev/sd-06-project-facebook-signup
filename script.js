@@ -56,3 +56,25 @@ document.getElementById('female').addEventListener('click', () => {
     document.querySelector('.gender-custom').remove();
   }
 });
+
+function loginSuccess() {
+  const firstName = document.querySelector('.first-name').value;
+  const lastName = document.querySelector('.last-name').value;
+  const email = document.querySelector('.email').value;
+  const birthdate = document.querySelector('.input-birthdate').value;
+  const divRight = document.querySelector('.right-content');
+  let genderText;
+  if (document.getElementById('male').checked) {
+    genderText = 'Masculino';
+  } else if (document.getElementById('female').checked) {
+    genderText = 'Feminino';
+  } else {
+    genderText = 'Personalizado';
+  }
+  divRight.innerHTML = `<p class = "loginSuccess">Olá, ${firstName} ${lastName}<br><br>Email/Telefone:<br>${email}<br><br>Data de Nascimento:<br>${birthdate}<br><br>Gênero:<br>${genderText}</p>`;
+}
+
+document.getElementById('facebook-register').addEventListener('click', (event) => {
+  event.preventDefault();
+  loginSuccess();
+});
