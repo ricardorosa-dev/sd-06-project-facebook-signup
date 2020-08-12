@@ -15,12 +15,16 @@ function checkAllSignUpFields() {
 }
 
 function checkAllRadioButtons() {
+  let counter = 0;
   for (let i = 0; i < allRadioButtons.length; i += 1) {
-    if (allRadioButtons[i].checked === false) {
-      return false;
+    if (allRadioButtons[i].checked) {
+      counter += 1;
     }
   }
-  return true;
+  if (counter > 0) {
+    return true;
+  }
+  return false;
 }
 
 function createInvalidFieldsMessage() {
@@ -29,6 +33,31 @@ function createInvalidFieldsMessage() {
   invalidFields.innerText = 'Campos inválidos';
   invalidFields.style.color = 'red';
   invalidFields.classList.add('invalidFields');
+}
+
+function checkGender() {
+  for (let i = 0; i < allRadioButtons.length; i += 1) {
+    if (allRadioButtons[i].checked) {
+      return allRadioButtons[i].value;
+    }
+  }
+  return '';
+}
+
+function changeContentOfRightContent() {
+  const userName = document.querySelectorAll('.signUp')[0];
+  const userSurName = document.querySelectorAll('.signUp')[1];
+  const emailOrPhone = document.querySelectorAll('.signUp')[2];
+  const birthdate = document.querySelectorAll('.signUp')[4];
+  const gender = checkGender();
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
+  rightContent.innerHTML =
+  `Olá, ${userName.value} ${userSurName.value} <br>
+  Email: ${emailOrPhone.value} <br>
+  Data de Nascimento: ${birthdate.value} <br>
+  ${gender}`;
+  rightContent.className = 'newRight-Content';
 }
 
 loginButton.addEventListener('click', () => {
@@ -42,6 +71,9 @@ signUpButton.addEventListener('click', (event) => {
     if (!invalidFields) {
       createInvalidFieldsMessage();
     }
+  } else {
+    event.preventDefault();
+    changeContentOfRightContent();
   }
 });
 
