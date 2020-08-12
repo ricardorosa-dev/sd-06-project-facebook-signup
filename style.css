@@ -3,6 +3,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
 /* RODRIGO */
@@ -48,10 +49,6 @@ body {
 }
 
 /* CLEYTON */
-footer {
-  height: 140px;
-}
-
 .slogan {
   color: rgb(14, 56, 95);
   font-size: 20px;
