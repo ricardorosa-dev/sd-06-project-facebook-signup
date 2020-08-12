@@ -1,12 +1,12 @@
-// função para tratar evento do botão para exibir alert
+// função para tratar evento do botão para exibir alert.
 const buttonLogin = document.getElementById('button-login');
 buttonLogin.addEventListener('click', function () {
   const inputEmail = document.getElementById('user-email-phone').value;
   window.alert(inputEmail);
   inputEmail.innerHTML = '';
 });
-// CONJUNTO DE FUNÇÕES PARA TRATAR GENDER-CUSTON
-// criar elemento que receberá texto
+// CONJUNTO DE FUNÇÕES PARA TRATAR GENDER-CUSTON.
+// criar elemento que receberá texto.
 function createInput() {
   const inputElement = document.createElement('input');
   inputElement.type = 'text';
@@ -15,7 +15,7 @@ function createInput() {
   inputElement.className = 'gender-custom';
   return inputElement;
 }
-// adicionar elemento quando opção personalizado E input não existir
+// adicionar elemento quando opção personalizado E input não existir.
 function addInput() {
   const extraGender = document.querySelector('#input-personalizado');
 
@@ -24,14 +24,14 @@ function addInput() {
     extraGender.appendChild(inputElement);
   }
 }
-// remover elemento quando opção diferente de personalizado
+// remover elemento quando opção for diferente de personalizado.
 function removeInput() {
   const extraGender = document.querySelector('#input-personalizado');
   if (extraGender.hasChildNodes()) {
     extraGender.removeChild(extraGender.firstChild);
   }
 }
-// tratar addEventListener, testar se personalizado chamando função adequada
+// tratar addEventListener, testar se personalizado e chamar função adequada.
 function handleGenderOption() {
   const customize = document.getElementById('personalizado');
   if (customize.checked) {
@@ -40,11 +40,11 @@ function handleGenderOption() {
     removeInput();
   }
 }
-// escutar addEventListener e chamar a função que vai tratar
+// escutar addEventListener e chamar a função que vai tratar.
 const genderOption = document.querySelector('.form-group-4');
 genderOption.addEventListener('change', handleGenderOption);
-// CONJUNTO DE FUNÇÕES PARA OBTER VALORES DOS INPUTS
-// obter valores dos inputs tipo text da right-content
+// CONJUNTO DE FUNÇÕES PARA OBTER VALORES DOS INPUTS.
+// obter valores dos inputs tipo text da right-content.
 const getText = () => {
   const allText = [];
   const inputText = document.querySelectorAll('.selected-input');
@@ -59,7 +59,7 @@ const getText = () => {
   }
   return allText;
 };
-// obter valor do input tipo password da right-content
+// obter valor do input tipo password da right-content.
 const getPassword = () => {
   const allPassword = [];
   const inputPassword = document.querySelector('#password').value;
@@ -71,7 +71,7 @@ const getPassword = () => {
   }
   return allPassword;
 };
-// obter valores dos inputs tipo radio da right-content
+// obter valor do input tipo radio selecionada da right-content.
 const getRadio = () => {
   const allRadio = [];
   const inputRadio = document.querySelectorAll('input[type=radio]');
@@ -90,7 +90,7 @@ const getRadio = () => {
   }
   return allRadio;
 };
-// formatar a data padrão yyyy-MM-dd
+// formatar a data padrão yyyy-MM-dd.
 const parseDate = (date) => {
   const day = date.slice(-2);
   const month = date.slice(5, 7);
@@ -98,7 +98,7 @@ const parseDate = (date) => {
   const formatDate = `${year}-${month}-${day}`;
   return formatDate;
 };
-// obter valor do input tipo date da right-content
+// obter valor do input tipo date da right-content.
 const getDate = () => {
   const allDate = [];
   const inputDate = document.querySelector('input[type=date]').value;
@@ -110,21 +110,21 @@ const getDate = () => {
   }
   return allDate;
 };
-// CONJUNTO DE FUNÇÕES PARA MONTAR E APRESENTAR MENSAGENS
-// substituir conteúdo pela mensagem na div right-content
+// CONJUNTO DE FUNÇÕES PARA MONTAR E APRESENTAR AS MENSAGENS OK OU NOK.
+// substituir conteúdo pela mensagem de OK na div right-content.
 const renderOutput = (input) => {
   const rightContentDiv = document.querySelector('.right-content');
 
   rightContentDiv.innerHTML = '';
   rightContentDiv.innerHTML = `<p>${input}</p>`;
 };
-// apresentar mensagem de campos inválidos
+// apresentar mensagem de NOK (campos inválidos).
 const renderMessage = (input) => {
   const renderMessageDiv = document.querySelector('#render-message');
   renderMessageDiv.classList.remove('hidden');
   renderMessageDiv.innerHTML = `<span>${input}</span>`;
 };
-// escutar addEventListener do botão, testar se inputs OK e montar mensagens.
+// addEventListener do botão, chamar funções, testar inputs e montar mensagens.
 const submitBtn = document.querySelector('#facebook-register');
 submitBtn.addEventListener('click', (event) => {
   event.preventDefault();
