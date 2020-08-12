@@ -77,7 +77,6 @@ body {
 .right-content {
   display: flex;
   flex-direction: column;
-  margin-right: 360px;
   width: 300px;
 }
 
