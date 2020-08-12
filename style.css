@@ -102,6 +102,7 @@ body {
 
 .form-row {
   display: flex;
+  font-size: 12px;
 }
 
 .register-form input {
