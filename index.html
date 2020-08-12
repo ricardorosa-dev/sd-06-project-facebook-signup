@@ -8,10 +8,8 @@
 </head>
 <body>
 	<header class="top-bar">
-		<img class="facebook-logo"
-			src="imgs/facebook-logo.png"
-      alt="Logo Facebook">
-    <form method="get" class="facebook-login">
+		<img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo Facebook">
+    <form class="facebook-login">
       <div class="form-group">
         <label id="user-email-phone-label" for="email">Email ou telefone</label>
         <input id="user-email-phone" type="text" placeholder="email ou telefone" required>
@@ -33,25 +31,25 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <div class="quick-easy">É rápido e fácil.</div>
-      <form class="subscription-form" method="GET">
+      <form class="subscription-form">
         <div class="subscription-form-1">
-          <input class="input-text-verification" name="firstname" placeholder="Nome" >
-          <input class="input-text-verification" name="lastname" placeholder="Sobrenome" >
+          <input class="input-text-verify" name="firstname" placeholder="Nome" value="nome">
+          <input class="input-text-verify" name="lastname" placeholder="Sobrenome" value="sobrenome">
         </div>
-        <input class="input-text-verification" name="phone_email" placeholder="Celular ou email" >
-        <input class="input-text-verification" name="password" type="password" placeholder="Nova senha" required>
+        <input class="input-text-verify" name="phone_email" placeholder="Celular ou email" value="cel ou email">
+        <input class="input-text-verify" name="password" type="password" placeholder="Nova senha" required value="senha">
         <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-        <input class="input-text-verification" name="birthdate" placeholder="dd/mm/aaaa">
+        <input class="input-text-verify" name="birthdate" placeholder="dd/mm/aaaa" value="data">
         <label id="label-gender" for="">Gênero</label>
         <div class="subscription-form-2">
-          <input class="input-radio-verification" id="feminino" type="radio" name="gender" value='Feminino'>
+          <input class="input-radio-verify" id="feminino" type="radio" name="gender" value='Feminino' checked>
           <label for="feminino">Feminino</label>
-          <input class="input-radio-verification" id="masculino" type="radio" name="gender" value='Masculino'>
+          <input class="input-radio-verify" id="masculino" type="radio" name="gender" value='Masculino'>
           <label for="masculino">Masculino</label>
-          <input class="input-radio-verification" id="personalizado" type="radio" name="gender" value='Personalizado'>
+          <input class="input-radio-verify" id="personalizado" type="radio" name="gender" value='Personalizado'>
           <label for="personalizado">Personalizado</label>
         </div>
-        <button id="facebook-register" type="submit">Cadastre-se</button>
+        <button id="facebook-register-btn" type="submit">Cadastre-se</button>
       </form>
     </div>
   </section>
