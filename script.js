@@ -65,10 +65,9 @@ function saveContent() {
   const phoneEmail = document.getElementById('phone_email').value;
   const birthDate = document.getElementById('birthdate').value;
   const radioButtonOption = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
-  const radioButtonOptionSave;
   for (let i = 0; i < radioButtonOption.length; i+=1) {
     if (radioButtonOption[i].checked) {
-      radioButtonOptionSave = radioButtonOption[i].value;
+      radioButtonOption = radioButtonOption[i].value;
     }
   localStorage.setItem('firstName', firstName);
   localStorage.setItem('lastName', lastName);
