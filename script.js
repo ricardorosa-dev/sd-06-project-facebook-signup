@@ -90,36 +90,25 @@ const getRadio = () => {
   }
   return allRadio;
 };
-// formatar a data padrão yyyy-MM-dd.
-// const parseDate = (date) => {
-//   const day = date.slice(-2);
-//   const month = date.slice(5, 7);
-//   const year = date.slice(0, 4);
-//   const formatDate = `${year}-${month}-${day}`;
-//   return formatDate;
-// };
-// obter valor do input tipo date da right-content.
-// const getDate = () => {
-//   const allDate = [];
-//   const inputDate = document.querySelector('input[type=date]').value;
-//   if (inputDate === null || inputDate === '') {
-//     allDate.push(null);
-//   } else {
-//     // const formatDate = parseDate(inputDate);
-//     // allDate.push(formatDate);
-//     allDate.push(inputDate);
-//   }
-//   return allDate;
-// };
 // CONJUNTO DE FUNÇÕES PARA MONTAR E APRESENTAR AS MENSAGENS OK OU NOK.
-// substituir conteúdo pela mensagem de OK na div right-content.
-const renderOutput = (input) => {
+// limpar conteudo atual da div right-content.
+function cleanRightContentDiv() {
   const rightContentDiv = document.querySelector('.right-content');
-
   rightContentDiv.innerHTML = '';
-  rightContentDiv.innerHTML = `<p>${input}</p>`;
-};
-// apresentar mensagem de NOK (campos inválidos).
+}
+// criar o elementoP que receberá a mensagem quando tudo OK.
+function createElementP() {
+  const pElement = document.createElement('p');
+  return pElement;
+}
+// mostrar mensagem de OK na div right-content.
+function showElementP(input) {
+  const rightContentDiv = document.querySelector('.right-content');
+  const pElement = createElementP();
+  pElement.appendChild(document.createTextNode(input));
+  rightContentDiv.appendChild(pElement);
+}
+// mostrar mensagem de NOK (campos inválidos).
 const renderMessage = (input) => {
   const renderMessageDiv = document.querySelector('#render-message');
   renderMessageDiv.classList.remove('hidden');
@@ -133,8 +122,6 @@ submitBtn.addEventListener('click', (event) => {
   const allText = getText();
   const allPassword = getPassword();
   const allRadio = getRadio();
-  // const allDate = getDate();
-  // const allInputs = allText.concat(allPassword, allRadio, allDate);
   const allInputs = allText.concat(allPassword, allRadio);
 
   let testResult = 0;
@@ -145,10 +132,11 @@ submitBtn.addEventListener('click', (event) => {
   }
 
   if (testResult !== 0) {
-    const MessageString = 'Campos inválidos';
-    renderMessage(MessageString);
+    const messageNok = 'Campos inválidos';
+    renderMessage(messageNok);
   } else {
-    const okMessage = `Olá ${allInputs[0]} ${allInputs[1]}, você nasceu em ${allInputs[3]}, seu email ou telefone é ${allInputs[2]} e selecionou o gênero ${allInputs[5]}.`;
-    renderOutput(okMessage);
+    const messageOK = `Olá ${allInputs[0]} ${allInputs[1]}, você nasceu em ${allInputs[3]}, seu email ou telefone é ${allInputs[2]} e selecionou o gênero ${allInputs[5]}.`;
+    cleanRightContentDiv();
+    showElementP(messageOK);
   }
 });
