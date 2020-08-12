@@ -23,37 +23,28 @@ function validatePassword() {
 }
 
 function saveContent() {
+  const obj = {};
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
-  const fullName = `${firstName} ${lastName}`;
-  const phoneEmail = document.getElementById('phone_email').value;
-  const birthDate = document.getElementById('birthdate').value;
+  obj.fullname = `${firstName} ${lastName}`;
+  obj['phone_email'] = document.getElementById('phone_email').value;
+  obj.birthdate = document.getElementById('birthdate').value;
   let radioButtonOption = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
   for (let i = 0; i < radioButtonOption.length; i += 1) {
     if (radioButtonOption[i].checked) {
-      radioButtonOption = radioButtonOption[i].value;
+      obj.gender = radioButtonOption[i].value;
     }
   }
-  localStorage.setItem('fullName', fullName);
-  localStorage.setItem('phone_email', phoneEmail);
-  localStorage.setItem('birthdate', birthDate);
-  localStorage.setItem('gender', radioButtonOption);
+  return obj;
 }
 
-function newContent() {
+function newContent(obj) {
   const divRight = document.querySelector('.right-content');
-  const divValidate = document.getElementById('validateDiv');
-  if (divValidate !== 'Campos inválidos') {
-    divRight.innerHTML = '';
-    const fullName = localStorage.getItem('fullName');
-    const phoneEmail = localStorage.getItem('phone_email');
-    const birthdate = localStorage.getItem('birthdate');
-    const gender = localStorage.getItem('gender');
-    divRight.innerText = `Olá, ${fullName},
-    Telefone ou email: ${phoneEmail}
-    Data de nascimento: ${birthdate}
-    Genero: ${gender}`;
-  }
+  divRight.innerHTML = '';
+  divRight.innerHTML = `Ola, ${obj['fullname']},
+  Telefone ou email: ${obj['phone_email']}
+  Data de nascimento: ${obj['birthdate']}
+  Genero: ${obj['gender']}`;
 }
 
 function validate(event) {
@@ -71,8 +62,8 @@ function validate(event) {
     p.innerText = 'Campos inválidos';
     document.getElementById('validateDiv').appendChild(p);
   } else {
-    saveContent();
-    newContent();
+    const info = saveContent();
+    newContent(info);
   }
 }
 
