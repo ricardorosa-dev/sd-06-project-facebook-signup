@@ -22,43 +22,6 @@ function validatePassword() {
   return password.value !== '';
 }
 
-function validate(event) {
-  event.preventDefault();
-  const radio = validateRadio();
-  const password = validatePassword();
-  const text = validateText();
-  const date = validateDate();
-  if (!radio || !password || !text || !date) {
-    if (document.getElementById('validateDiv').childNodes.length !== 0) {
-      const oldP = document.getElementsByTagName('p');
-      document.getElementById('validateDiv').removeChild(oldP);
-    }
-
-    const p = document.createElement('p');
-    p.innerText = 'Campos inválidos';
-    document.getElementById('validateDiv').appendChild(p);
-  } else {
-    saveContent();
-    newContent();
-  }
-}
-
-function otherButton() {
-  const radio = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
-  const divOther = document.getElementById('other-option');
-  if (radio[2].checked) {
-    if (divOther.childNodes.length !== 0) {
-      const oldInput = document.getElementsByTagName('input');
-      divOther.removeChild(oldInput);
-    }
-    const input = document.createElement('input');
-    input.setAttribute('type', 'text');
-    input.setAttribute('name', 'gender-custom');
-    input.setAttribute('placeholder', 'Gênero (opcional)');
-    divOther.appendChild(input);
-  }
-}
-
 function saveContent() {
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
@@ -100,7 +63,45 @@ function newContent() {
     divRight.appendChild(johnDoeGender);
   }
 }
-window.onload = function () {
+
+function validate(event) {
+  event.preventDefault();
+  const radio = validateRadio();
+  const password = validatePassword();
+  const text = validateText();
+  const date = validateDate();
+  if (!radio || !password || !text || !date) {
+    if (document.getElementById('validateDiv').childNodes.length !== 0) {
+      const oldP = document.getElementsByTagName('p');
+      document.getElementById('validateDiv').removeChild(oldP);
+    }
+
+    const p = document.createElement('p');
+    p.innerText = 'Campos inválidos';
+    document.getElementById('validateDiv').appendChild(p);
+  } else {
+    saveContent();
+    newContent();
+  }
+}
+
+function otherButton() {
+  const radio = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
+  const divOther = document.getElementById('other-option');
+  if (radio[2].checked) {
+    if (divOther.childNodes.length !== 0) {
+      const oldInput = document.getElementsByTagName('input');
+      divOther.removeChild(oldInput);
+    }
+    const input = document.createElement('input');
+    input.setAttribute('type', 'text');
+    input.setAttribute('name', 'gender-custom');
+    input.setAttribute('placeholder', 'Gênero (opcional)');
+    divOther.appendChild(input);
+  }
+}
+
+window.onload = function() {
   const button = document.getElementById('button-login');
   const registerButton = document.getElementById('facebook-register');
   const personalizedButton = document.getElementById('other');
