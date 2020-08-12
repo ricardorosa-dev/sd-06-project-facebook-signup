@@ -98,6 +98,8 @@ outline: 0;
 }
 
 .right-content form > :nth-child( n + 2 ) input {
+  display: flex;
+  flex-flow: row;
   width: 295px;
 }
 
@@ -127,11 +129,16 @@ h1 {
   width: 500px;
 }
 
-small {
-font-size: 18px;
-font-weight: 0;
+<<<<<<< HEAD
+
+=======
+.subscription-form {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-::placeholder {
-padding-left: 6px;
+.personal_genere {
+  display: flex;
+  flex-flow: row;
 }
+>>>>>>> 9be99d01d5ddfafd29863c55cd5e5b5253b25017
