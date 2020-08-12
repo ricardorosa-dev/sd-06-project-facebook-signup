@@ -17,7 +17,7 @@ header {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  width: 980px;
+  width: 1250px;
 }
 
 .facebook-logo {
@@ -77,7 +77,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   margin: auto;
-  width: 980px;
+  width: 1250px;
 }
 
 .left-content {
