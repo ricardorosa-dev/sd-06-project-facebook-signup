@@ -48,7 +48,7 @@ function newContent() {
     const helloText = document.createElement('p');
     const firstName = localStorage.getItem('firstName');
     const lastName = localStorage.getItem('lastName');
-    helloText.innerText = 'Olá, ' + firstName + ' ' + lastName;
+    helloText.innerText = `Olá, ${firstName} ${lastName}`;
     divRight.appendChild(helloText);
     const johnDoeTelephone = document.createElement('p');
     const phoneEmail = localStorage.getItem('phone_email');
