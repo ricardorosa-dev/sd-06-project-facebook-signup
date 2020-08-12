@@ -8,7 +8,7 @@ function validateRadio() {
 }
 
 function validateDate() {
-  const date = document.querySelectorAll('form')[1].querySelectorAll('input[type=date]')[0];
+  const date = document.querySelectorAll('form')[1].querySelectorAll('input[type=text]')[3];
   return date.value !== '';
 }
 
