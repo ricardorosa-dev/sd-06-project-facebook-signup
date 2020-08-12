@@ -135,7 +135,7 @@ submitBtn.addEventListener('click', (event) => {
     const messageNok = 'Campos inválidos';
     renderMessage(messageNok);
   } else {
-    const messageOK = `Olá ${allInputs[0]} ${allInputs[1]}, você nasceu em ${allInputs[3]}, seu email ou telefone é ${allInputs[2]} e selecionou o gênero ${allInputs[5]}.`;
+    const messageOK = `Olá, ${allInputs[0]} ${allInputs[1]}, você nasceu em ${allInputs[3]}, seu email ou telefone é ${allInputs[2]} e selecionou o gênero ${allInputs[5]}.`;
     cleanRightContentDiv();
     showElementP(messageOK);
   }
