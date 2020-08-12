@@ -3,8 +3,8 @@
   display: flex;
   font-family: inherit;
   height: 82px;
-  margin: 0 auto;
   justify-content: space-between;
+  margin: 0 auto;
   padding-top: 13px;
 }
 
@@ -110,7 +110,6 @@ body {
   display: flex;
   font-family: inherit;
   font-size: 12px;
-  font-weight: normal;
   line-height: 12px;
   padding: 0 10px 0 3px;
   vertical-align: middle;
@@ -144,17 +143,17 @@ form .form-row label {
   margin-right: 4px;
 }
 
-#facebook-register {
+.facebook-register {
   background: #67ae55;
   background-color: #69a74e;
   border: 1px solid;
   border-color: #3b6e22;
   border-radius: 5px;
-  box-shadow: #3b6e22;
-  color: #fff;
+  box-shadow: seagreen;
+  color: white;
   cursor: pointer;
   display: inline-block;
-  font: arial;
+  font: inherit;
   font-size: 19px;
   height: 30px;
   position: relative;
