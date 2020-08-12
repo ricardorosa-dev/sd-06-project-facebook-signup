@@ -1,4 +1,4 @@
-const getRegisterBtn = document.querySelector('#facebook-register-btn');
+const getRegisterBtn = document.querySelector('#facebook-register');
 const getAllInputText = document.querySelectorAll('.input-text-verify');
 const getAllInputRadio = document.querySelectorAll('.input-radio-verify');
 const getRightContent = document.querySelector('.right-content');
