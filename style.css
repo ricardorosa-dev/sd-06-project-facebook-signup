@@ -129,9 +129,6 @@ h1 {
   width: 500px;
 }
 
-<<<<<<< HEAD
-
-=======
 .subscription-form {
   display: flex;
   flex-flow: column nowrap;
@@ -141,4 +138,12 @@ h1 {
   display: flex;
   flex-flow: row;
 }
->>>>>>> 9be99d01d5ddfafd29863c55cd5e5b5253b25017
+
+small {
+font-size: 18px;
+font-weight: 0;
+}
+
+::placeholder {
+padding-left: 6px;
+}
