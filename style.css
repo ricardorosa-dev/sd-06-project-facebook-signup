@@ -149,7 +149,6 @@ form .form-row label {
   border: 1px solid;
   border-color: #3b6e22;
   border-radius: 5px;
-  box-shadow: seagreen;
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -159,3 +158,4 @@ form .form-row label {
   position: relative;
   width: 150px;
   }
+  
