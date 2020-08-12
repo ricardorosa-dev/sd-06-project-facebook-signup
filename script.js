@@ -19,3 +19,12 @@ btn.addEventListener('click', function () {
     }
   }
 });
+const perso = document.getElementById('others');
+const localPerso = document.createElement('input');
+localPerso.name = 'genre-custom';
+localPerso.placeholder = 'Gênero(opcional)';
+const contaiGender = document.getElementsByClassName('gender-container')[0];
+perso.addEventListener('click', function () {
+  contaiGender.appendChild(localPerso);
+  contaiGender.insertBefore(localPerso, btn);
+});
