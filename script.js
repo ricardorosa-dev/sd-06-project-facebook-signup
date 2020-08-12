@@ -27,7 +27,7 @@ function saveContent() {
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
   obj.fullname = `${firstName} ${lastName}`;
-  obj['phone_email'] = document.getElementById('phone_email').value;
+  obj.phone_email = document.getElementById('phone_email').value;
   obj.birthdate = document.getElementById('birthdate').value;
   let radioButtonOption = document.querySelectorAll('form')[1].querySelectorAll('input[type=radio]');
   for (let i = 0; i < radioButtonOption.length; i += 1) {
@@ -41,10 +41,10 @@ function saveContent() {
 function newContent(obj) {
   const divRight = document.querySelector('.right-content');
   divRight.innerHTML = '';
-  divRight.innerHTML = `Ola, ${obj['fullname']},
-  Telefone ou email: ${obj['phone_email']}
-  Data de nascimento: ${obj['birthdate']}
-  Genero: ${obj['gender']}`;
+  divRight.innerHTML = `Ola, ${obj.fullname},
+  Telefone ou email: ${obj.phone_email}
+  Data de nascimento: ${obj.birthdate}
+  Genero: ${obj.gender}`;
 }
 
 function validate(event) {
