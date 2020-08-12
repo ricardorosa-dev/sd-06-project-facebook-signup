@@ -12,7 +12,6 @@ function messageInvalid() {
 
 function validate() {
   const inputs = document.querySelectorAll('input');
-  // console.log(inputs);
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       messageInvalid();
@@ -20,48 +19,40 @@ function validate() {
   }
 }
 
-// **Tendo como referência o código da dupla Matheus e Ana Flávia, pego de seus respectivos pull request**
-
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
+
+// **Tendo como referência o código da dupla Matheus e Ana Flávia, pego de seus respectivos pull request**
 
 const perso = document.querySelector('#p');
 const feminino = document.querySelector('#f');
 const masculino = document.querySelector('#m');
-// const todos = document.querySelector('.generos');
-let clickInCustomGender = 0;
-
-// perso.addEventListener('click', function () {
-//   let novoInput = document.createElement('input');
-//   novoInput.type = 'text';
-//   novoInput.name = 'gender';
-//   novoInput.className = 'gender-custom'
-//   novoInput.placeholder = 'Gênero (opcional)';
-// });
+const todos = document.querySelector('.generos');
+let genderClick = 0;
 
 feminino.addEventListener('click', function () {
-  clickInCustomGender = 0;
-  if (document.querySelector('#gender-custom')) {
-    document.querySelector('#gender-custom').parentNode.removeChild(document.querySelector('#gender-custom'));
+  genderClick = 0;
+  let gender = document.querySelector('#otherGender');
+  if (gender) {
+    gender.remove(gender);
   }
 });
 
 masculino.addEventListener('click', function () {
-  clickInCustomGender = 0;
-  if (document.querySelector('#gender-custom')) {
-    document.querySelector('#gender-custom').parentNode.removeChild(document.querySelector('#gender-custom'));
+  genderClick = 0;
+  let gender = document.querySelector('#otherGender');
+  if (gender) {
+    gender.remove(gender);
   }
 });
 
 perso.addEventListener('click', function () {
-  clickInCustomGender += 1;
-  if (clickInCustomGender === 1) {
-    const customInput = document.createElement('input');
-    customInput.name = 'gender-custom';
-    customInput.placeholder = 'Gênero (opcional)';
-    customInput.id = 'gender-custom';
-    customInput.className = 'input-form';
-    // todos.appendChild(customInput);
-    document.querySelector('.radio-buttons').parentNode.appendChild(customInput);
+  genderClick += 1;
+  if (genderClick === 1) {
+    const personalizado = document.createElement('input');
+    personalizado.name = 'otherGender';
+    personalizado.placeholder = 'Gênero (opcional)';
+    personalizado.id = 'otherGender';
+    todos.appendChild(personalizado);
   }
 });
