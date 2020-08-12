@@ -27,7 +27,7 @@ function criarDiv() {
 }
 
 function validate() {
-  const boolean = false;
+  let boolean = false;
   const inputs = document.querySelectorAll('#register-form input');
   for (let index = 0; index < inputs.length; index += 1) {
     if (!inputs[index].checkValidity()) {
