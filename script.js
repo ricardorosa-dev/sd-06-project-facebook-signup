@@ -41,7 +41,7 @@ function replaceRightContent() {
   });
   document.querySelector('.right-content').appendChild(document.createElement('section'));
   document.querySelector('section').innerText = `
-  Ola, ${userInfo.name} ${userInfo.lastName}
+  Olá, ${userInfo.name} ${userInfo.lastName}
   Email: ${userInfo.email}
   Aniversario: ${userInfo.birth}
   Genero: ${userInfo.gender}
