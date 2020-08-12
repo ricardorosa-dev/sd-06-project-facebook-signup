@@ -98,14 +98,56 @@ function initAttributes(inputs) {
   }
 }
 
+function generateCustomInput() {
+  const newInput = document.createElement('input');
+  const buttonArea = document.querySelector('.button-area');
+  newInput.type = Text;
+  newInput.name = 'gender-custom';
+  newInput.placeholder = "Gênero (opcional)";
+  newInput.classList = 'input-gender input';
+  newInput.id = 'custom-input';
+  newInput.style.marginBottom = '10px'
+  buttonArea.insertAdjacentElement("beforebegin", newInput);
+}
+
+function removeCustomInput() {
+  const customInput = document.querySelector('#custom-input');
+  const parentElement = customInput.parentNode;
+  parentElement.removeChild(customInput);
+}
+
+function validateCustomInputRemoval(inputsGender) {
+  for (let i = 0; i < inputsGender.length; i += 1) {
+    inputsGender[i].addEventListener('change', () => {
+      const customInput = document.getElementById("custom-input");
+      if(!inputsGender[2].checked) {
+        if(customInput) {
+          removeCustomInput();
+        }
+      }
+    });
+  }
+}
+
+function generateCustomInputEvent(inputsGender) {
+
+  inputsGender[2].addEventListener('click', function (e) {
+    generateCustomInput(inputsGender[2]);
+  });
+  validateCustomInputRemoval(inputsGender);
+};
+
+
 function inputEvents() {
   const inputs = document.querySelectorAll('main input');
+  const inputsGender = document.querySelectorAll('.input-gender')
   for (let i = 0; i < inputs.length; i += 1) {
     inputs[i].addEventListener('blur', function (e) {
       isFilledInputs(e, inputs);
       setFilledState(inputs);
     });
   }
+  generateCustomInputEvent(inputsGender);
 }
 
 function buttonEvents() {
@@ -125,4 +167,5 @@ function buttonEvents() {
 window.onload = () => {
   buttonEvents();
   inputEvents();
+
 };
