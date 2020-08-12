@@ -96,11 +96,10 @@ window.onload = function () {
     validateInputs();
   });
 
-  const male = document.getElementById('male')
-  const female = document.getElementById('female')
-  const custom = document.getElementById('custom')
-  male.addEventListener("click" , delCustomGender)
-  female.addEventListener("click" , delCustomGender)
-  custom.addEventListener("click" , handleCustomGender)
-
+  const male = document.getElementById('male');
+  const female = document.getElementById('female');
+  const custom = document.getElementById('custom');
+  male.addEventListener('click', delCustomGender);
+  female.addEventListener('click', delCustomGender);
+  custom.addEventListener('click', handleCustomGender);
 };
