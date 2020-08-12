@@ -78,6 +78,9 @@ body {
 }
 
 .left-content {
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
   width: 800px;
 }
 
