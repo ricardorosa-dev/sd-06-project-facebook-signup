@@ -32,6 +32,7 @@ function saveContent() {
     if (radioButtonOption[i].checked) {
       radioButtonOption = radioButtonOption[i].value;
     }
+  }  
   localStorage.setItem('firstName', firstName);
   localStorage.setItem('lastName', lastName);
   localStorage.setItem('phone_email', phoneEmail);
