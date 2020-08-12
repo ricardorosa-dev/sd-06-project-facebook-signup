@@ -2,6 +2,7 @@ const loginButton = document.querySelector('#button-login');
 const submitButton = document.querySelector('#facebook-register');
 const emailPhoneInput = document.querySelector('#user-email-phone');
 const createAccountForm = document.querySelector('#create-account-form');
+const customInput = document.querySelector('#custom-input');
 
 function validateTextInput(formInputs) {
   let inputTextValidate = true;
@@ -25,6 +26,16 @@ function validateRadioInput(formInputs) {
 
 window.onload = function () {
   loginButton.addEventListener('click', () => alert(emailPhoneInput.value));
+  customInput.addEventListener('click', () => {
+    const customOptions = document.querySelector('#custom-options');
+    if (customOptions.children.length === 0) {
+      const genderCustom = document.createElement('input');
+      genderCustom.name = 'gender-custom';
+      genderCustom.placeholder = 'Gênero (opcional)';
+      genderCustom.className = 'input';
+      customOptions.appendChild(genderCustom);
+    }
+  });
   submitButton.addEventListener('click', (event) => {
     const formInputs = createAccountForm.getElementsByTagName('input');
     const errorMsg = document.querySelector('#isFormValid');
