@@ -54,21 +54,19 @@ document.getElementById('female').addEventListener('click', () => {
   }
 });
 
-document.getElementById('facebook-register').addEventListener('click', function (event) {
+document.getElementById('facebook-register').addEventListener('click', function () {
   deleteInvalidMsg();
   const password = document.querySelector('.new-password').value.length;
   const inputs = document.querySelectorAll('input');
   if ((!inputs[2].value) || (!inputs[3].value) || (!inputs[4].value) || (!inputs[5].value) ||
   (!inputs[6].value)) {
     document.querySelector('.sign-in-form').append(invalidMsg);
-    event.preventDefault();
   } else if (!(document.getElementById('male').checked || document.getElementById('female').checked ||
     document.getElementById('custom').checked)) {
     document.querySelector('.sign-in-form').append(invalidMsg);
-    event.preventDefault();
   } else if (password === 0) {
     document.querySelector('.sign-in-form').append(invalidMsg);
-    event.preventDefault();
+  } else {
+    loginSuccess();
   }
-  loginSuccess();
 });
