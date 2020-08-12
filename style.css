@@ -36,3 +36,8 @@ body {
 .right-content {
   width: 300px;
 }
+
+.name-box {
+  display: inline-block;
+  width: 45%;
+}
