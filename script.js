@@ -59,13 +59,11 @@ function textMsgIfValidate() {
   const birthdate = newUser.elements.birthdate.value;
   const gender = newUser.elements.gender.value;
   clearRightContent();
-  const welcomeMsg = document.createElement('p');
-  rightContent.appendChild(welcomeMsg);
-  welcomeMsg.innerHTML = `Olá, ${firstName} ${lastName}!
+  rightContent.innerHTML = `Olá, ${firstName} ${lastName}!
   O seu login é ${phoneEmail},
   sua data de nascimento é ${birthdate} e
   selecionou o gênero ${gender}.`;
-  return welcomeMsg;
+  return rightContent;
 }
 
 window.onload = () => {
