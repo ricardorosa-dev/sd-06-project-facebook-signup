@@ -92,6 +92,6 @@ altGender.addEventListener('change', function () {
     const temp = document.getElementsByClassName('alt-gender');
     if (temp.length) {
       altGender.removeChild(temp[0]);
-    }    
+    }
   }
 });
