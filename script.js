@@ -5,7 +5,6 @@ const inputsValidate = document.querySelectorAll('.validate-inputs');
 const radioBtns = document.querySelectorAll('.radio-inputs');
 const btnCustomGender = document.querySelector('#personalizado');
 
-
 btnLogin.addEventListener('click', function () {
   alert(mailEntry.value);
 });
@@ -19,7 +18,7 @@ btnSignup.addEventListener('click', function () {
     }
   }
   if (radioBtns[0].checked === false && radioBtns[1].checked === false &&
-      radioBtns[2].checked === false) {
+    radioBtns[2].checked === false) {
     temErro = 1;
   }
   if (temErro === 1) {
