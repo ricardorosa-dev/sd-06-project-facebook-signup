@@ -26,7 +26,7 @@ body {
 }
 
 .user-email-phone {
-  background-color: rgb(238, 255, 249);
+  background-color: rgb(246, 255, 252);
   border: 1px solid rgba(0, 0, 0, 0.192);
   margin-top: 5px;
   padding-top: 3px;
@@ -34,7 +34,7 @@ body {
 }
 
 .user-password {
-  background-color: rgb(238, 255, 249);
+  background-color: rgb(246, 255, 252);
   border: 1px solid rgba(0, 0, 0, 0.192);
   margin-left: 15px;
   margin-top: 5px;
@@ -59,7 +59,7 @@ body {
   color: white;
   float: right;
   font-family: inherit;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
   margin-left: 15px;
   padding: 2.5px 10px;
 }
@@ -73,6 +73,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin: auto;
+  padding-bottom: 100px;
   width: 62.5%;
 }
 
@@ -92,7 +93,6 @@ body {
 
 .right-content {
   float: right;
-  margin-right: 90px;
   width: 300px;
 }
 

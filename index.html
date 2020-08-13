@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Entrar no Facebook</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/pikaday.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bulma-rtl.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/st.css"/>
   </head>
   <body>
     <section class="main-header">
@@ -31,38 +33,39 @@
     </section>
     <main class="main-content">
       <div class="left-content">
-        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas<br>que fazem parte da sua vida.</p>
-        <img id="facebook-networking" src="imgs/networking.png">
+        <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <img class="img" id="facebook-networking" src="imgs/networking.png">
       </div>
       <div class="right-content">
-        <h1>Abra uma conta</h1>
+        <h1 class="abra-conta">Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form class="main-form js-form" action="" method="GET">
           <did class="full-name">
-            <input data-validate-field="name" name="firstname" type="text" required="required" placeholder="Nome">
-            <input data-validate-field="name2" name="lastname" type="text" required="required" placeholder="Sobrenome">
+            <input class="input is-mediun input-nome" data-validate-field="name" name="firstname" type="text" required="required" placeholder="Nome">
+            <input class="input is-mediun input-sobrenome" data-validate-field="name2" name="lastname" type="text" required="required" placeholder="Sobrenome">
           </did>
           <div class="contact">
-            <input name="phone_email" type="email" placeholder="Celular ou email"  data-validate-field="email">
+            <input class="input is-mediun celular-email" name="phone_email" type="email" placeholder="Celular ou email"  data-validate-field="email">
+          </div>
+          <div class="contact">
+            <input class="input is-mediun celular-email" name="phone_email2" type="email" placeholder="Insfira novamente o email ou o celular"  data-validate-field="email2">
           </div>
           <div class="new-password">
-            <input data-validate-field="password" name="password" type="password" required="required" placeholder="Nova senha">
+            <input class="input is-mediun input-senha" data-validate-field="password" name="password" type="password" required="required" placeholder="Nova senha">
           </div>
           <div>
-            <label for="datepicker" id="label-birthdate">Data de nascimento</label>
-            <input data-validate-field="date" name="birthdate" type="text" required="required" id="datepicker" placeholder="dd/mm/aaaa">
+            <label class="label-birthdate" for="datepicker" id="label-birthdate">Data de nascimento</label>
+            <input class="input is-mediun input-date" data-validate-field="date" name="birthdate" type="text" required="required" id="datepicker" placeholder="dd/mm/aaaa">
           </div>
           <label class="options" id="label-gender">Gênero</label>
-          <div class="radios">
-            <input id="feminino" name="sexo" type="radio" value="Feminino" required="required">
-            <label for="feminino">Feminino</label>
-            <input id="masculino" name="sexo" type="radio" value="Masculino" required="required">
-            <label for="masculino">Masculino</label>
-            <input id="personalizado" name="sexo" type="radio" value="Personalizado" required="required">
-            <label for="personalizado">Personalizado</label>
+          <div class="radios control">
+            <label class="radio" for="feminino"><input id="feminino" name="sexo" type="radio" value="Feminino" required="required">Feminino</label>
+            <label class="radio" for="masculino"><input id="masculino" name="sexo" type="radio" value="Masculino" required="required">Masculino</label>
+            <label class="radio" for="personalizado"><input id="personalizado" name="sexo" type="radio" value="Personalizado" required="required">Personalizado</label>
           </div>
+          <p class="termos-politica">Ao clicar em cadrastre-se, você concorda com os nossos termos e que leu a nossa Política de Dados, incluindo o nosso uso de Cookies.</p>
           <div>
-            <button id="facebook-register" type="submit">Cadastre-se</button>
+            <button class="button-cadastro" id="facebook-register" type="submit">Cadastre-se</button>
           </div>
         </form>
       </div>
