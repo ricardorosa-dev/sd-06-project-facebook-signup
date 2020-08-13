@@ -2,8 +2,12 @@
 const buttonLogin = document.getElementById('button-login');
 buttonLogin.addEventListener('click', function () {
   const inputEmail = document.getElementById('user-email-phone').value;
+  if (inputEmail === "") {
+    window.alert("Por favor, preencha seu email");
+  } else {
   window.alert(inputEmail);
   inputEmail.innerHTML = '';
+  }
 });
 
 // CONJUNTO DE FUNÇÕES PARA TRATAR GENDER-CUSTON.
@@ -20,7 +24,6 @@ function createInput() {
 // adicionar elemento quando opção personalizado E input não existir.
 function addInput() {
   const extraGender = document.querySelector('#input-personalizado');
-
   if (extraGender.hasChildNodes() === false) {
     const inputElement = createInput();
     extraGender.appendChild(inputElement);
@@ -35,19 +38,16 @@ function removeInput() {
   }
 }
 
-// tratar addEventListener, testar se personalizado e chamar função adequada.
-function handleGenderOption() {
+// escutar addEventListener e chamar a função que vai tratar.
+const genderOption = document.querySelector('.form-group-4');
+genderOption.addEventListener('change', function() {
   const customize = document.getElementById('personalizado');
   if (customize.checked) {
     addInput();
   } else {
     removeInput();
   }
-}
-
-// escutar addEventListener e chamar a função que vai tratar.
-const genderOption = document.querySelector('.form-group-4');
-genderOption.addEventListener('change', handleGenderOption);
+});
 
 // CONJUNTO DE FUNÇÕES PARA OBTER VALORES DOS INPUTS.
 // obter valores dos inputs tipo text da right-content.
@@ -83,7 +83,6 @@ const getPassword = () => {
 const getRadio = () => {
   const allRadio = [];
   const inputRadio = document.querySelectorAll('input[type=radio]');
-
   let count = 1;
   for (let i = 0; i < inputRadio.length; i += 1) {
     if (inputRadio[i].checked) {
@@ -92,7 +91,6 @@ const getRadio = () => {
       count -= 1;
     }
   }
-
   if (count === 1) {
     allRadio.push(null);
   }
