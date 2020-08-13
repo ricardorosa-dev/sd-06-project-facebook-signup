@@ -6,33 +6,61 @@
 }
 
 .birthdate-container label {
-  margin: 5px;
+  color: gray;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 20px 0 5px;
 }
 
 .birth-date {
+  border: 1px solid rgb(211, 221, 238);
+  border-radius: 3px;
+  color: rgb(44, 44, 44);
   display: flex;
-  width: 50%;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  width: 60%;
 }
 
 body {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .button-login {
+  background-color: rgb(101, 132, 196);
+  border: 1px solid  rgb(71, 94, 139);
+  color: white;
   display: flex;
   flex-flow: column wrap;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+}
+
+.confirmation-form {
+  color: gray;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 20px 0 5px;
 }
 
 .facebook-login {
-  align-items: center;
   display: flex;
   flex-flow: row;
-  margin-right: 10px;
+  width: 30%;
 }
 
 .facebook-logo {
   display: flex;
+}
+
+.facebook-networking {
+  display: flex;
+  margin: -10px 0 30px 0;
+  width: 70%;
 }
 
 .facebook-password {
@@ -44,9 +72,13 @@ body {
   width: 800px;
 }
 
-.firstname {
+.first-name {
+  border: 1px solid rgb(211, 221, 238);
+  border-radius: 3px;
   display: flex;
-  margin-right: 5px;
+  font-size: 1.2rem;
+  margin-right: 7px;
+  padding: 5px;
   width: 50%;
 }
 
@@ -54,15 +86,19 @@ body {
   align-self: flex-end;
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  margin: 0 15px;
+  margin-right: 50px;
 }
 
 .form-group {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-end;
-  margin: 0 10px;
+}
+
+.form-group label {
+  color: rgb(240, 240, 240);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .form-input {
@@ -71,18 +107,43 @@ body {
 }
 
 .gender {
+  color: gray;
   display: flex;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5px 0 10px;
   width: 100%;
 }
 
 .gender-container {
   display: flex;
   flex-flow: row wrap;
+  font-size: 0.9rem;
   width: 100%;
 }
 
-.lastname {
+.gender-custom-input {
+  border: 1px solid rgb(211, 221, 238);
+  border-radius: 3px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 5px;
+  width: 100%;
+}
+
+h1 {
+  color: rgb(61, 61, 61);
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.last-name {
+  border: 1px solid rgb(211, 221, 238);
+  border-radius: 3px;
   display: flex;
+  font-size: 1.2rem;
+  padding: 5px;
   width: 50%;
 }
 
@@ -93,6 +154,15 @@ body {
   width: 800px;
 }
 
+.left-content p {
+  color: rgb(66, 103, 178);
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 60px;
+  text-align: left;
+  width: 60%;
+}
+
 .main-content {
   display: flex;
   flex-flow: row wrap;
@@ -101,14 +171,22 @@ body {
 }
 
 .password {
+  border: 1px solid rgb(211, 221, 238);
+  border-radius: 3px;
   display: flex;
   flex-grow: 1;
+  font-size: 1.2rem;
+  padding: 5px;
 }
 
 .phone-email {
+  border: 1px solid rgb(211, 221, 238);
+  border-radius: 3px;
   display: flex;
   flex-grow: 1;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin: 12px 0;
+  padding: 5px;
 }
 
 .right-content {
@@ -116,6 +194,23 @@ body {
   flex-flow: column wrap;
   height: auto;
   width: 300px;
+}
+
+.right-content p {
+  font-size: 1.4rem;
+  margin: -15px 0 15px 0;
+}
+
+.submit-button {
+  background-color: rgb(38, 149, 38);
+  border: 1px solid rgb(211, 221, 238);
+  border-radius: 6px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-shadow: 10px black;
 }
 
 .top-bar {
@@ -130,4 +225,18 @@ body {
   display: flex;
   flex-flow: row nowrap;
   margin: 5px 0;
+}
+
+.user-email-phone {
+  border: 1px black solid;
+  display: flex;
+  font-size: 1rem;
+  width: 90%;
+}
+
+.user-password {
+  border: 1px black solid;
+  display: flex;
+  font-size: 1rem;
+  width: 90%;
 }
