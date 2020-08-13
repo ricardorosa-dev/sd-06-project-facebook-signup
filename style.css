@@ -25,6 +25,11 @@ body {
   margin: 0 5px;
 }
 
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
 .form-control button {
   background-color: #4267b2;
   border-radius: 5px;
