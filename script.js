@@ -19,11 +19,11 @@ buttonEnter.addEventListener('click', function () {
 function getRadioValue() {
   for (let index = 0; index < radioButtons.length; index += 1) {
     if (radioButtons[index].checked) {
-      return radioButtons[index].value;
+      radioButtons[index].value;
     }
   }
-  return;
-};
+  return true;
+}
 
 // Armazenar os dados submetidos pelo usuario
 function completedForm() {
@@ -35,7 +35,7 @@ function completedForm() {
   ${getRadioValue()}
   `;
   mainContentDiv.appendChild(dataSubmittedDiv);
-};
+}
 
 // Exibir uma mensagem de "Campos inválidos" se pelo menos um campo não esteja preenchido
 buttonRegister.addEventListener('click', function (e) {
