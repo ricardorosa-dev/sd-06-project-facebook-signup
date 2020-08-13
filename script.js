@@ -21,6 +21,7 @@ function getRadioValue() {
     if (radioButtons[index].checked) {
       radioButtons[index].value;
     }
+    return false;
   }
   return true;
 }
@@ -50,7 +51,7 @@ buttonRegister.addEventListener('click', function (e) {
   const rightContentDiv = document.querySelector('.right-content');
   rightContentDiv.remove();
   completedForm();
-  return;
+  return true;
 });
 
 // Exibir um capo de texto caso o usuário clique em "personalizado"
