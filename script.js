@@ -40,7 +40,7 @@ feminino.addEventListener('click', function () {
 
 masculino.addEventListener('click', function () {
   genderClick = 0;
-  let gender = document.querySelector('#otherGender');
+  const gender = document.querySelector('#otherGender');
   if (gender) {
     gender.remove(gender);
   }
