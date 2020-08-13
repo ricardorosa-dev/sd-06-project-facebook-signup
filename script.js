@@ -45,6 +45,11 @@ function validateForm() {
   return isValid;
 }
 
+function clearRightContent() {
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
+}
+
 function textMsgIfValidate() {
   const rightContent = document.querySelector('.right-content');
   const newUser = document.forms.user;
@@ -53,8 +58,14 @@ function textMsgIfValidate() {
   const phoneEmail = newUser.elements.phone_email.value;
   const birthdate = newUser.elements.birthdate.value;
   const gender = newUser.elements.gender.value;
-  rightContent.innerHTML = `Olá, ${firstName} ${lastName}! O seu login é ${phoneEmail}, sua data de nascimento é ${birthdate} e selecionou o gênero ${gender}.`;
-  return rightContent;
+  clearRightContent();
+  const welcomeMsg = document.createElement('p');
+  rightContent.appendChild(welcomeMsg);
+  welcomeMsg.innerHTML = `Olá, ${firstName} ${lastName}!
+  O seu login é ${phoneEmail},
+  sua data de nascimento é ${birthdate} e
+  selecionou o gênero ${gender}.`;
+  return welcomeMsg;
 }
 
 window.onload = () => {
@@ -62,7 +73,7 @@ window.onload = () => {
   genderOptions.addEventListener('change', genderCheck);
   btnSingUp.addEventListener('click', function (event) {
     event.preventDefault();
-    if (validateForm() === true) {
+    if (validateForm()) {
       textMsgIfValidate();
     }
   });
