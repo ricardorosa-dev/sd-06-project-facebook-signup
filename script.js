@@ -33,27 +33,38 @@ function removeDataContainer() {
   parentElemen.removeChild(childElement);
 }
 
+function getInputGenderData(input) {
+  const inputGenderMap = new Map();
+  const customInput = document.querySelector('#custom-input');
+  if (input.checked) {
+    if (customInput) {
+      inputGenderMap.set(input.name, customInput.value);
+    } else {
+      inputGenderMap.set(input.name, input.value);
+    }
+  }
+  return inputGenderMap
+}
+
 function getData() {
   const inputs = document.querySelectorAll('main input');
-  const customInput = document.querySelector('#custom-input');
+  let inputsMap = new Map();
   const dataMap = new Map();
   for (let i = 0; i < inputs.length; i += 1) {
     if (i <= 4) {
       dataMap.set(inputs[i].name, inputs[i].value);
     }
-    if (inputs[i].checked) {
-      if (customInput) {
-        dataMap.set(inputs[i].name, customInput.value);
-      } else {
-        dataMap.set(inputs[i].name, inputs[i].value);
-      }
+    else {
+      // reference  https://stackoverflow.com/questions/36959923/javascript-concat-two-map-objects //
+      inputsMap = new Map([...inputsMap].concat([...getInputGenderData(inputs[i])]));
     }
   }
-  return dataMap;
+  inputsMap = new Map([...dataMap].concat([...inputsMap]));
+
+  return inputsMap;
 }
 
 function showData(filledElements, inputs) {
-
   if (filledElements >= (inputs.length) - 2) {
     const dataMap = getData();
     removeErrorElement();
@@ -83,10 +94,10 @@ function isFilled(inputs) {
 }
 
 function isFilledTextInput(inputText) {
-    isFilled(inputText);
-    if (inputText.value === ''  || inputText.value === undefined ) {
-      inputText.setAttribute('filled', 'false');
-    }
+  isFilled(inputText);
+  if (inputText.value === '' || inputText.value === undefined ) {
+    inputText.setAttribute('filled', 'false');
+  }
 }
 
 function isFilledRadioInput(inputRadio) {
@@ -98,18 +109,17 @@ function isFilledRadioInput(inputRadio) {
 
 function isFilledInputs(inputs) {
   for (let i = 0; i < inputs.length; i += 1) {
-    console.log(inputs[i].type)
-    if(inputs[i].type === "text") {
+    if (inputs[i].type === 'text') {
       isFilledTextInput(inputs[i]);
-    } else if (inputs[i].type === "radio") {
+    } else if (inputs[i].type === 'radio') {
       isFilledRadioInput(inputs[i]);
     }
   }
 }
 
 function validateInputs(inputs) {
-    isFilledInputs(inputs);
-    setFilledState(inputs);
+  isFilledInputs(inputs);
+  setFilledState(inputs);
 }
 
 function initAttributes(inputs) {
@@ -121,14 +131,14 @@ function initAttributes(inputs) {
 function checkCustomInputExistence() {
   const customInput = document.getElementById('custom-input');
   if (customInput) {
-    return true
-  } else {
-    return false
+    return true;
   }
-}
+    return false;
+  }
+
 
 function generateCustomInput() {
-  let existent = checkCustomInputExistence();
+  const existent = checkCustomInputExistence();
   if (!existent) {
     const newInput = document.createElement('input');
     const buttonArea = document.querySelector('.button-area');
@@ -139,7 +149,7 @@ function generateCustomInput() {
     newInput.id = 'custom-input';
     newInput.style.marginBottom = '10px';
     buttonArea.insertAdjacentElement('beforebegin', newInput);
-    newInput.addEventListener('blur', (e) => {
+    newInput.addEventListener('blur', () => {
       isFilledInputs(newInput);
     });
   }
@@ -173,7 +183,7 @@ function inputEvents() {
   const inputs = document.querySelectorAll('main input');
   const inputsGender = document.querySelectorAll('.input-gender');
   for (let i = 0; i < inputs.length; i += 1) {
-    inputs[i].addEventListener('blur', function (e) {
+    inputs[i].addEventListener('blur', function () {
       isFilledInputs(inputs);
     });
   }
