@@ -4,11 +4,13 @@ const celularEmailInput = document.getElementById('celular-email-input');
 const passwordInput = document.getElementById('password-input');
 const birthdateInput = document.getElementById('birthdate');
 const fGenderRadio = document.getElementById('gender-female');
-const mGenderRagio = document.getElementById('gender-male');
+const mGenderRadio = document.getElementById('gender-male');
 const pGenderRadio = document.getElementById('gender-personalized');
 const answers = document.getElementById('answers');
 const genderInput = document.getElementById('gender-input');
 const genderDiv = document.getElementsByClassName('user-gender')[0];
+let genderValue;
+
 
 function buttonLogin() {
   const botaoEntrar = document.getElementById('button-login');
@@ -21,10 +23,31 @@ function buttonLogin() {
   });
 }
 
+function genderInputWork() {
+  genderInput.addEventListener('input', function () {
+    genderValue = genderInput.value;
+    return genderValue;
+  })
+}
+
+function showGenderCustom() {
+  genderDiv.addEventListener('change', function (e) {
+
+    if (e.target.value === 'Personalizado') {
+      genderInput.classList.remove('invisible');
+      genderInputWork();
+    } else {
+      genderInput.classList.add('invisible');
+      genderValue = e.target.value;
+      return genderValue;
+    }
+  });
+}
+
 function buttonSubmit() {
   const botaoSubmit = document.getElementById('facebook-register');
 
-  botaoSubmit.addEventListener('click', function () {
+  botaoSubmit.addEventListener('click', function (event) {
     if (fNameInput.value === '') {
       answers.innerText = 'Campos inválidos';
     } else if (lNameInput.value === '') {
@@ -35,20 +58,17 @@ function buttonSubmit() {
       answers.innerHTML = 'Campos inválidos';
     } else if (birthdateInput.value === '') {
       answers.innerHTML = 'Campos inválidos';
-    } else if (!fGenderRadio.checked && !mGenderRagio.checked && !pGenderRadio.checked) {
+    } else if (!fGenderRadio.checked && !mGenderRadio.checked && !pGenderRadio.checked) {
       answers.innerHTML = 'Campos inválidos';
     } else {
       // O que acontece se o botão de submit der certo?
-    }
-  });
-}
+      event.preventDefault();
 
-function showGenderCustom() {
-  genderDiv.addEventListener('change', function (e) {
-    if (e.target.value === 'Personalizado') {
-      genderInput.classList.remove('invisible');
-    } else {
-      genderInput.classList.add('invisible');
+      const formRegister = document.getElementById('form-register');
+      formRegister.innerHTML = `Olá, ${fNameInput.value} ${lNameInput.value} <br>
+      ${celularEmailInput.value} <br>
+      ${birthdateInput.value} <br>
+      ${genderValue}`
     }
   });
 }
