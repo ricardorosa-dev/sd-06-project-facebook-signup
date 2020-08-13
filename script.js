@@ -5,21 +5,21 @@ btn.addEventListener('click', function () {
   alert(valor);
 });
 
-function messageInvalid() {
-  const messageError = document.querySelector('.divMessage');
+function testingInvalidit() {
+  const messageError = document.querySelector('.configuerMsg');
   messageError.innerText = 'Campos inválidos';
 }
 
-function validate() {
+function testingValidation() {
   const inputs = document.querySelectorAll('input');
   let auxBol = true;
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === aux) auxBol = false;
   }
-  if (!auxBol) messageInvalid();
+  if (!auxBol) testingInvalidit();
 }
 const botaoRegistro = document.querySelector('#facebook-register');
-botaoRegistro.addEventListener('click', validate);
+botaoRegistro.addEventListener('click', testingValidation);
 
 const perso = document.querySelector('#p');
 const todos = document.querySelector('.generos');
