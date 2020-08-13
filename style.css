@@ -15,12 +15,14 @@ body {
 
 .facebook-logo {
   border: black 1px solid;
+  margin-left: 75px;
   margin-top: 10px;
 }
 
 .facebook-login {
   border: black 1px solid;
   display: flex;
+  margin-right: 75px;
 }
 
 .form-group {
@@ -90,12 +92,15 @@ body {
   display: flex;
 }
 
-input {
+input , select {
+  box-sizing: border-box;
   width: 100%;
 }
 
-.right-content input {
-  box-sizing: border-box;
+legend {
+  color: gray;
+  font-size: 0.9em;
+  margin-bottom: 10px;
 }
 
 .subcontainer_gender {
@@ -106,4 +111,8 @@ input {
   align-content: stretch;
   display: flex;
   flex-direction: column;
+}
+
+.gender_custom_form {
+  display: none;
 }
