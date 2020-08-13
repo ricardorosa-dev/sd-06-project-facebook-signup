@@ -8,7 +8,6 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  flex-direction: row;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   height: 90px;
@@ -26,11 +25,6 @@ body {
   margin: 0 5px;
 }
 
-.form-control {
-  align-self: flex-end;
-  display: flex;
-}
-
 .form-control button {
   background-color: #4267b2;
   border-radius: 5px;
@@ -41,21 +35,19 @@ body {
 
 .main-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  margin: 30px;
 }
 
 .left-content {
-  max-width: 800px;
-  width: 60%;
+  width: 800px;
 }
 
 .right-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 300px;
-  width: 30%;
+  width: 300px;
 }
 
 h1 {
@@ -90,21 +82,20 @@ h1 {
 }
 
 .form-group-2 {
-  display: flex;
-  height: 40px;
-  max-width: 300px;
-  width: 100%;
+  width: 300px;
 }
 
 .input-control-2 {
   border: 1px solid rgb(189, 199, 216);
   border-radius: 5px;
-  flex: 1 1 auto;
+  height: 23px;
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
   padding: 2px;
+  width: 284px;
 }
+
 
 .form-group-3 {
   display: flex;
@@ -112,8 +103,12 @@ h1 {
 }
 
 .input-control-3 {
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
+  height: 23px;
   margin-bottom: 10px;
   margin-left: 5px;
+  margin-top: 5px;
   padding: 2px;
   width: 60%;
 }
@@ -121,6 +116,7 @@ h1 {
 .form-group-3 label {
   color: rgb(28, 30, 33);
   margin-left: 5px;
+  margin-top: 10px;
 }
 
 .form-group-4 {
@@ -132,20 +128,15 @@ h1 {
 .label-gender {
   font-size: 14px;
   font-weight: 700;
-  width: 300px;
+  margin: 0 5px;
+  width: 290px;
 }
 
 .input-control-4 {
-  display: flex;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 14px;
   margin-bottom: 10px;
-  margin-left: 5px;
-  padding: 2px;
-}
-
-.form-group-4 legend {
-  margin-left: 5px;
+  margin-left: 7px;
+  margin-top: 10px;
 }
 
 .form-group-5 .btn {

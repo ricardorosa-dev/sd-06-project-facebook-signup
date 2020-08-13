@@ -1,9 +1,13 @@
-// função para tratar evento do botão para exibir alert.
+// função para tratar evento do button-login e exibir alert e apagar entrada.
 const buttonLogin = document.getElementById('button-login');
 buttonLogin.addEventListener('click', function () {
   const inputEmail = document.getElementById('user-email-phone').value;
-  window.alert(inputEmail);
-  inputEmail.innerHTML = '';
+  if (inputEmail === '') {
+    window.alert('Por favor, preencha seu email');
+  } else {
+    window.alert(inputEmail);
+    inputEmail.innerHTML = '';
+  }
 });
 // CONJUNTO DE FUNÇÕES PARA TRATAR GENDER-CUSTON.
 // criar elemento que receberá texto.
@@ -31,18 +35,16 @@ function removeInput() {
     extraGender.removeChild(extraGender.firstChild);
   }
 }
-// tratar addEventListener, testar se personalizado e chamar função adequada.
-function handleGenderOption() {
+// addEventListener radios para chamar função adequada dependendo da seleção.
+const genderOption = document.querySelector('.form-group-4');
+genderOption.addEventListener('change', function () {
   const customize = document.getElementById('personalizado');
   if (customize.checked) {
     addInput();
   } else {
     removeInput();
   }
-}
-// escutar addEventListener e chamar a função que vai tratar.
-const genderOption = document.querySelector('.form-group-4');
-genderOption.addEventListener('change', handleGenderOption);
+});
 // CONJUNTO DE FUNÇÕES PARA OBTER VALORES DOS INPUTS.
 // obter valores dos inputs tipo text da right-content.
 const getText = () => {
