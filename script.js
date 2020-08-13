@@ -27,9 +27,9 @@ function insertParagraphContent(map, rightContainer) {
   map.forEach(function (value, key) {
     const newParagraph = document.createElement('p');
     if (key !== 'password' && key !== 'lastname' && key !== 'firstname') {
-    newParagraph.classList = 'new-paragraph quick-easy';
-    newParagraph.innerText = `${value}`;
-    rightContainer.appendChild(newParagraph);
+      newParagraph.classList = 'new-paragraph quick-easy';
+      newParagraph.innerText = `${value}`;
+      rightContainer.appendChild(newParagraph);
     }
   });
 }
