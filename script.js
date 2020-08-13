@@ -1,11 +1,5 @@
-const buttonLogin = document.getElementById('button-login');
-const userEmailPhone = document.getElementById('user-email-phone');
-// const userPassword = document.getElementById('user-password');
-// const nome = document.getElementById('nome');
-// const sobrenome = document.getElementById('sobrenome');
-// const celularEmail = document.getElementById('celularEmail');
-// const customRadio = document.getElementById('custom');
-
+const loginButton = document.querySelector('#button-login');
+const userEmailPhone = document.querySelector('#user-email-phone');
 
 //  Consulta realizada no PullRequest https://github.com/tryber/sd-06-project-facebook-signup/pull/117/files como referência
 
@@ -14,5 +8,6 @@ function clickButton() {
 }
 
 window.onload = function () {
-  buttonLogin.addEventListener('click', clickButton);
+  loginButton.addEventListener('click', clickButton);
 };
+
