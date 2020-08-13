@@ -27,12 +27,13 @@ function genderCheck(event) {
 }
 
 function validateForm() {
-  const firstName = document.forms['form-content']['firstname'].value;
-  const lastName = document.forms['form-content']['lastname'].value;
-  const phoneEmail = document.forms['form-content']['phone_email'].value;
-  const password = document.forms['form-content']['password'].value;
-  const birthdate = document.forms['form-content']['birthdate'].value;
-  const gender = document.forms['form-content']['gender'].value;
+  const newUser = document.forms.user;
+  const firstName = newUser.elements.firstname.value;
+  const lastName = newUser.elements.lastname.value;
+  const phoneEmail = newUser.elements.phone_email.value;
+  const password = newUser.elements.password.value;
+  const birthdate = newUser.elements.birthdate.value;
+  const gender = newUser.elements.gender.value;
   const allInputsRequired = [firstName, lastName, phoneEmail, password, birthdate, gender];
   let isValid = true;
   for (let index = 0; index < allInputsRequired.length; index += 1) {
@@ -46,19 +47,21 @@ function validateForm() {
 
 function textMsgIfValidate() {
   const rightContent = document.querySelector('.right-content');
-  const firstName = document.forms['form-content']['firstname'].value;
-  const lastName = document.forms['form-content']['lastname'].value;
-  const phoneEmail = document.forms['form-content']['phone_email'].value;
-  const birthdate = document.forms['form-content']['birthdate'].value;
-  const gender = document.forms['form-content']['gender'].value;
-  rightContent.innerHTML = `Olá, ${firstName} ${lastName}! Você se cadastrou com ${phoneEmail} e sua data de nascimento é ${birthdate} e selecionou o gênero ${gender}.`;
+  const newUser = document.forms.user;
+  const firstName = newUser.elements.firstname.value;
+  const lastName = newUser.elements.lastname.value;
+  const phoneEmail = newUser.elements.phone_email.value;
+  const birthdate = newUser.elements.birthdate.value;
+  const gender = newUser.elements.gender.value;
+  rightContent.innerHTML = `Olá, ${firstName} ${lastName}! O seu login é ${phoneEmail}, sua data de nascimento é ${birthdate} e selecionou o gênero ${gender}.`;
   return rightContent;
 }
 
 window.onload = () => {
   btnLogin.addEventListener('click', clickLoginButton);
   genderOptions.addEventListener('change', genderCheck);
-  btnSingUp.addEventListener('click', function () {
+  btnSingUp.addEventListener('click', function (event) {
+    event.preventDefault();
     if (validateForm() === true) {
       textMsgIfValidate();
     }
