@@ -2,7 +2,7 @@ const buttonLogin = document.getElementById('button-login');
 const buttonSignUp = document.getElementById('facebook-register');
 const emailInput = document.getElementById('user-email-phone');
 const form = document.getElementById('formSignUp');
-const altGender = document.getElementsByClassName('gender')[0];
+const altGender = document.getElementById('gender');
 const ids = ['firstname', 'lastname', 'phone_email', 'password', 'birthdate'];
 const invalid = document.createElement('div');
 let isEmpty = 5;
@@ -29,6 +29,30 @@ function checkFields() {
   }
 }
 
+function showEntries() {
+  const text1 = document.createElement('div');
+  text1.innerHTML = 'Olá, ' + document.getElementById('firstname').value + ' ' + document.getElementById('lastname').value;
+  const text2 = document.createElement('div');
+  text2.innerHTML = document.getElementById('phone_email').value;
+  const text3 = document.createElement('div');
+  text3.innerHTML = document.getElementById('birthdate').value;
+  const text4 = document.createElement('div');
+  if (document.getElementById('female').checked === true) {
+    text4.innerHTML = 'Feminino';
+  } else if (document.getElementById('male').checked === true) {
+    text4.innerHTML = 'Masculino';
+  } else if (document.getElementById('other').checked === true) {
+    text4.innerHTML = 'Personalizado';
+  }
+  while (form.firstChild) {
+    form.removeChild(form.firstChild);
+  }
+  form.appendChild(text1);
+  form.appendChild(text2);
+  form.appendChild(text3);
+  form.appendChild(text4);
+}
+
 function checkEmpty() {
   isEmpty = 5;
   checkFields();
@@ -43,6 +67,7 @@ function checkEmpty() {
       form.removeChild(temp[0]);
       wasEmpty = 0;
     }
+    showEntries();
   }
 }
 
