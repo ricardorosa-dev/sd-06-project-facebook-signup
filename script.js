@@ -16,10 +16,8 @@ function dataValidation(event) {
   event.preventDefault();
 
   if ((document.getElementById('first-name').value === '') || (document.getElementById('last-name').value === '') || (document.getElementById('phone-email') === '') || (document.getElementById('new_password') === '') || (document.getElementById('birth-date') === '')) {
-    const divErrorMessage = document.getElementById('error-message');
-    const errorMessage = document.createElement('p');
+    const errorMessage = document.getElementById('error-message');
     errorMessage.innerHTML = 'Campos inválidos';
-    divErrorMessage.appendChild(errorMessage);
   }
 }
 
