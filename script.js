@@ -53,11 +53,7 @@ function getInputGenderData(input) {
   const inputGenderMap = new Map();
   const customInput = document.querySelector('#custom-input');
   if (input.checked) {
-    if (customInput) {
-      inputGenderMap.set(input.name, customInput.value);
-    } else {
-      inputGenderMap.set(input.name, input.value);
-    }
+    inputGenderMap.set(input.name, input.value);
   }
   return inputGenderMap;
 }
