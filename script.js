@@ -31,7 +31,7 @@ function checkFields() {
 
 function showEntries() {
   const text1 = document.createElement('div');
-  text1.innerHTML = 'Olá, ' + document.getElementById('firstname').value + ' ' + document.getElementById('lastname').value;
+  text1.innerHTML = `Olá, ${document.getElementById('firstname').value} ${document.getElementById('lastname').value}`;
   const text2 = document.createElement('div');
   text2.innerHTML = document.getElementById('phone_email').value;
   const text3 = document.createElement('div');
