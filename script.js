@@ -10,4 +10,3 @@ function clickButton() {
 window.onload = function () {
   loginButton.addEventListener('click', clickButton);
 };
-
