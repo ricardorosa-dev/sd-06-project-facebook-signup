@@ -27,18 +27,42 @@ function genderCheck(event) {
 }
 
 function validateForm() {
-  const allInputsRequired = document.querySelectorAll('.input-group');
+  const firstName = document.forms['form-content']['firstname'].value;
+  const lastName = document.forms['form-content']['lastname'].value;
+  const phoneEmail = document.forms['form-content']['phone_email'].value;
+  const password = document.forms['form-content']['password'].value;
+  const birthdate = document.forms['form-content']['birthdate'].value;
+  const gender = document.forms['form-content']['gender'].value;
+  const allInputsRequired = [firstName, lastName, phoneEmail, password, birthdate, gender];
+  let isValid = true;
   for (let index = 0; index < allInputsRequired.length; index += 1) {
-    if (!allInputsRequired[index].checked || allInputsRequired[index] === '') {
+    if (allInputsRequired[index] === '') {
       invalidMessage.innerHTML = 'Campos inválidos';
+      isValid = false;
     }
   }
+  return isValid;
+}
+
+function textMsgIfValidate() {
+  const rightContent = document.querySelector('.right-content');
+  const firstName = document.forms['form-content']['firstname'].value;
+  const lastName = document.forms['form-content']['lastname'].value;
+  const phoneEmail = document.forms['form-content']['phone_email'].value;
+  const birthdate = document.forms['form-content']['birthdate'].value;
+  const gender = document.forms['form-content']['gender'].value;
+  rightContent.innerHTML = `Olá, ${firstName} ${lastName}! Você se cadastrou com ${phoneEmail} e sua data de nascimento é ${birthdate} e selecionou o gênero ${gender}.`;
+  return rightContent;
 }
 
 window.onload = () => {
   btnLogin.addEventListener('click', clickLoginButton);
   genderOptions.addEventListener('change', genderCheck);
-  btnSingUp.addEventListener('click', validateForm);
+  btnSingUp.addEventListener('click', function () {
+    if (validateForm() === true) {
+      textMsgIfValidate();
+    }
+  });
   createNewInput();
   genderCustom.style.display = 'none';
 };

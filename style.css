@@ -177,3 +177,9 @@ body {
 .btn-login:hover {
   background-color: rgb(59, 89, 152);
 }
+
+.invalid-input {
+  color: red;
+  font-size: 13px;
+  margin: 0;
+}
