@@ -19,11 +19,10 @@ buttonEnter.addEventListener('click', function () {
 function getRadioValue() {
   for (let index = 0; index < radioButtons.length; index += 1) {
     if (radioButtons[index].checked) {
-      radioButtons[index].value;
+      return radioButtons[index].value;
     }
-    return false;
   }
-  return true;
+  return false;
 }
 
 // Armazenar os dados submetidos pelo usuario
