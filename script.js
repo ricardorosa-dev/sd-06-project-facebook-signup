@@ -31,10 +31,10 @@ function validateForm() {
   const firstName = newUser.elements.firstname.value;
   const lastName = newUser.elements.lastname.value;
   const phoneEmail = newUser.elements.phone_email.value;
-  const password = newUser.elements.password.value;
+  const password = newUser.elements.passwordContent.value;
   const birthdate = newUser.elements.birthdate.value;
   const gender = newUser.elements.gender.value;
-  const allInputsRequired = [firstName, lastName, phoneEmail, password, birthdate, gender];
+  const allInputsRequired = [firstName, lastName, phoneEmail, passwordContent, birthdate, gender];
   let isValid = true;
   for (let index = 0; index < allInputsRequired.length; index += 1) {
     if (allInputsRequired[index] === '') {
