@@ -24,6 +24,19 @@ function validateRadioInput(formInputs) {
   return inputRadioValidate;
 }
 
+function showData() {
+  const rightContent = document.querySelector('.right-content');
+  const firstName = createAccountForm.elements.firstname.value;
+  const lastName = createAccountForm.elements.lastname.value;
+  const phoneEmail = createAccountForm.elements.phone_email.value;
+  const birthdate = createAccountForm.elements.birthdate.value;
+  const gender = createAccountForm.elements.gender.value;
+  rightContent.innerHTML = `<p>Olá, ${firstName} ${lastName}</p>
+  <p>${phoneEmail}</p>
+  <p>${birthdate}</p>
+  <p>${gender}</p>`;
+}
+
 window.onload = function () {
   loginButton.addEventListener('click', () => alert(emailPhoneInput.value));
   customInput.addEventListener('click', () => {
@@ -44,7 +57,7 @@ window.onload = function () {
       errorMsg.style.color = 'red';
       errorMsg.innerHTML = 'Campos inválidos';
     } else {
-      errorMsg.innerHTML = '';
+      showData();
     }
   });
 };
