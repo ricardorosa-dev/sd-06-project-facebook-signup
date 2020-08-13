@@ -43,7 +43,7 @@ function getInputGenderData(input) {
       inputGenderMap.set(input.name, input.value);
     }
   }
-  return inputGenderMap
+  return inputGenderMap;
 }
 
 function getData() {
@@ -95,7 +95,7 @@ function isFilled(inputs) {
 
 function isFilledTextInput(inputText) {
   isFilled(inputText);
-  if (inputText.value === '' || inputText.value === undefined ) {
+  if (inputText.value === '' || inputText.value === undefined) {
     inputText.setAttribute('filled', 'false');
   }
 }
@@ -133,8 +133,8 @@ function checkCustomInputExistence() {
   if (customInput) {
     return true;
   }
-    return false;
-  }
+  return false;
+}
 
 
 function generateCustomInput() {
