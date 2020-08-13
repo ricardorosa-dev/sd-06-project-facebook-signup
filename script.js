@@ -15,7 +15,7 @@ function newOption() {
 function dataValidation(event) {
   event.preventDefault();
 
-  if ((document.getElementById('first-name').value === '') || (document.getElementById('last-name').value === '') || (document.getElementById('phone-email') === '') || (document.getElementById('new_password') === '') || (document.getElementById('birth-date') === '')) {
+  if ((document.getElementById('first-name').value === '') || (document.getElementById('last-name').value === '') || (document.getElementById('phone-email') === '').value || (document.getElementById('new_password').value === '') || (document.getElementById('birth-date').value === '')) {
     const errorMessage = document.getElementById('error-message');
     errorMessage.innerHTML = 'Campos inválidos';
   }
