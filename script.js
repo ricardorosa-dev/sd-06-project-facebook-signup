@@ -16,15 +16,31 @@ function removeErrorElement() {
   }
 }
 
+function insertTitleContent(map, rightContainer) {
+  const newElement = document.createElement('h1');
+  newElement.classList = 'new-title';
+  newElement.innerText = `Olá, ${map.get('firstname')} ${map.get('lastname')}`;
+  rightContainer.appendChild(newElement);
+}
+
+function insertParagraphContent(map, rightContainer) {
+  map.forEach(function (value, key) {
+    const newParagraph = document.createElement('p');
+    if (key !== 'password' && key !== 'lastname' && key !== 'firstname') {
+    newParagraph.classList = 'new-paragraph quick-easy';
+    newParagraph.innerText = `${value}`;
+    rightContainer.appendChild(newParagraph);
+    }
+  });
+}
+
 function createDataContainer(map) {
   const rightContainer = document.createElement('article');
   const mainContainer = document.getElementsByClassName('main-content')[0];
   rightContainer.classList = 'right-content';
   mainContainer.appendChild(rightContainer);
-  const newElement = document.createElement('h1');
-  newElement.classList = 'new-element';
-  newElement.innerText = `Olá, ${map.get('firstname')} ${map.get('lastname')}`;
-  rightContainer.appendChild(newElement);
+  insertTitleContent(map, rightContainer);
+  insertParagraphContent(map, rightContainer);
 }
 
 function removeDataContainer() {
@@ -134,7 +150,6 @@ function checkCustomInputExistence() {
   }
   return false;
 }
-
 
 function generateCustomInput() {
   const existent = checkCustomInputExistence();
