@@ -18,6 +18,7 @@ body {
 }
 
 .main-content {
+  background-color: rgb(247, 247, 247);
   display: flex;
   justify-content: center;
 }
@@ -28,7 +29,7 @@ body {
 }
 
 .facebook-logo {
-  justify-content: flex-start;
+  align-self: flex-start;
 }
 
 .form-group {
@@ -55,7 +56,7 @@ body {
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
 }
 
 .form-control button {
@@ -71,17 +72,57 @@ body {
   width: 800px;
 }
 
+.left-content p {
+  color: rgb(59, 89, 152);
+  font-weight: 700;
+}
+
 .right-content {
   display: flex;
   flex-wrap: wrap;
   width: 300px;
 }
 
+.right-content form button {
+  background-color: rgb(57, 102, 53);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 10px 40px;
+}
+
+.right-content form button:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+}
+
 .fullName {
   display: flex;
+  justify-content: space-between;
 }
 
 .birth {
   display: flex;
   flex-direction: column;
+}
+
+.birth label , .gender-container label:nth-child( 1 ) {
+  color: rgb(75, 73, 73);
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  margin-bottom: 10px;
+}
+
+.form-data-container {
+  margin-bottom: 10px;
+}
+
+.form-data-container input {
+  border-color: rgb(172, 186, 219);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 0.5rem 1rem;
 }
