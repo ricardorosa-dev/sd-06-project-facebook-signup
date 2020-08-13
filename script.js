@@ -21,7 +21,6 @@ function dataValidation(event) {
   }
 }
 
-
 window.onload = function () {
   const buttonLogin = document.getElementById('button-login');
   buttonLogin.addEventListener('click', buttonAlert);
