@@ -53,8 +53,7 @@ function getData() {
   for (let i = 0; i < inputs.length; i += 1) {
     if (i <= 4) {
       dataMap.set(inputs[i].name, inputs[i].value);
-    }
-    else {
+    } else {
       // reference  https://stackoverflow.com/questions/36959923/javascript-concat-two-map-objects //
       inputsMap = new Map([...inputsMap].concat([...getInputGenderData(inputs[i])]));
     }
