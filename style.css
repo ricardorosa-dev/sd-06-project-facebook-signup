@@ -7,21 +7,44 @@ body {
   display: flex;
 }
 
+form input {
+  margin: 3px;
+}
+
+form label {
+  margin: 3px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 5px;
+  width: 140px;
 }
 
 .form-control {
   align-self: flex-end;
 }
 
+.form-control button {
+  margin: 5px;
+}
+
 .form-date {
   flex-direction: column;
 }
 
+.gender-radio {
+  margin: 10px 0 10px 0;
+
+}
+.gender-radio label {
+  font-size: 12px;
+}
+
 .left-content {
   width: 800px;
+  padding: 80px 100px 10px 100px;
 }
 
 .main-content {
@@ -30,9 +53,19 @@ body {
 
 .right-content {
   width: 300px;
+  padding: 80px 100px 10px 100px;
+}
+
+.right-content button {
+  width: 300px;
+  height: 30px;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
+  padding: 10px 100px 10px 100px;
+}
+.validate-inputs {
+  width: 152px;
 }
