@@ -108,7 +108,7 @@ function isFilledRadioInput(inputRadio) {
 
 function isFilledInputs(inputs) {
   for (let i = 0; i < inputs.length; i += 1) {
-    if (inputs[i].type === 'text' || inputs[i].type === "password") {
+    if (inputs[i].type === 'text' || inputs[i].type === 'password') {
       isFilledTextInput(inputs[i]);
     } else if (inputs[i].type === 'radio') {
       isFilledRadioInput(inputs[i]);
