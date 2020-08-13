@@ -22,7 +22,7 @@ function validate() {
 const botaoRegistro = document.querySelector('#facebook-register');
 botaoRegistro.addEventListener('click', validate);
 
-// **Tendo como referência o código da dupla Matheus e Ana Flávia, pego de seus respectivos pull request**
+// **Tendo como referência o código do PR da dupla Matheus e Ana Flávia**
 
 const perso = document.querySelector('#p');
 const feminino = document.querySelector('#f');
@@ -32,7 +32,7 @@ let genderClick = 0;
 
 feminino.addEventListener('click', function () {
   genderClick = 0;
-  let gender = document.querySelector('#otherGender');
+  const gender = document.querySelector('#otherGender');
   if (gender) {
     gender.remove(gender);
   }
