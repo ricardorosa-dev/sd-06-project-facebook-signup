@@ -47,6 +47,10 @@ form {
   text-decoration: none;
 }
 
+.form-group a:hover {
+  text-decoration: underline;
+}
+
 .form-group label {
   color: white;
   margin-bottom: 3px;
