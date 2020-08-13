@@ -35,22 +35,31 @@ function removeDataContainer() {
 
 function getData() {
   const inputs = document.querySelectorAll('main input');
+  const customInput = document.querySelector('#custom-input');
   const dataMap = new Map();
   for (let i = 0; i < inputs.length; i += 1) {
     if (i <= 4) {
       dataMap.set(inputs[i].name, inputs[i].value);
     }
     if (inputs[i].checked) {
-      dataMap.set(inputs[i].name, inputs[i].value);
+      if (customInput) {
+        dataMap.set(inputs[i].name, customInput.value);
+      } else {
+        dataMap.set(inputs[i].name, inputs[i].value);
+      }
     }
   }
   return dataMap;
 }
 
-function showData() {
-  const dataMap = getData();
-  removeDataContainer();
-  createDataContainer(dataMap);
+function showData(filledElements, inputs) {
+
+  if (filledElements >= (inputs.length) - 2) {
+    const dataMap = getData();
+    removeErrorElement();
+    removeDataContainer();
+    createDataContainer(dataMap);
+  }
 }
 
 function setFilledState(inputs) {
@@ -59,37 +68,48 @@ function setFilledState(inputs) {
     const currentState = inputs[i].getAttribute('filled');
     if (currentState !== 'true') {
       generateErrorElement();
-    } else {
+    } else if (!inputs[i].classList.contains('input-gender')) {
       filledElements += 1;
     }
   }
-  if (filledElements >= (inputs.length) - 2) {
-    removeErrorElement();
-    showData();
-  }
+  filledElements += 1;
+  showData(filledElements, inputs);
 }
 
-function isFilled(inputs, e) {
-  if (inputs.value !== '' && inputs === e.currentTarget) {
+function isFilled(inputs) {
+  if ((inputs.value !== '' && inputs.value !== undefined) || inputs.checked) {
     inputs.setAttribute('filled', 'true');
   }
 }
 
-function isFilledInputs(e, inputs) {
+function isFilledTextInput(inputText) {
+    isFilled(inputText);
+    if (inputText.value === ''  || inputText.value === undefined ) {
+      inputText.setAttribute('filled', 'false');
+    }
+}
+
+function isFilledRadioInput(inputRadio) {
+  isFilled(inputRadio);
+  if (!inputRadio.checked) {
+    inputRadio.setAttribute('filled', 'false');
+  }
+}
+
+function isFilledInputs(inputs) {
   for (let i = 0; i < inputs.length; i += 1) {
-    isFilled(inputs[i], e);
-    if (inputs[i].value === '' && inputs[i] === e.currentTarget) {
-      inputs[i].setAttribute('filled', 'false');
+    console.log(inputs[i].type)
+    if(inputs[i].type === "text") {
+      isFilledTextInput(inputs[i]);
+    } else if (inputs[i].type === "radio") {
+      isFilledRadioInput(inputs[i]);
     }
   }
 }
 
-function validateInputs(e, inputs) {
-  const errorElements = document.querySelectorAll('.error');
-  if (errorElements.length === 0) {
-    isFilledInputs(e, inputs);
+function validateInputs(inputs) {
+    isFilledInputs(inputs);
     setFilledState(inputs);
-  }
 }
 
 function initAttributes(inputs) {
@@ -98,16 +118,31 @@ function initAttributes(inputs) {
   }
 }
 
+function checkCustomInputExistence() {
+  const customInput = document.getElementById('custom-input');
+  if (customInput) {
+    return true
+  } else {
+    return false
+  }
+}
+
 function generateCustomInput() {
-  const newInput = document.createElement('input');
-  const buttonArea = document.querySelector('.button-area');
-  newInput.type = Text;
-  newInput.name = 'gender-custom';
-  newInput.placeholder = 'Gênero (opcional)';
-  newInput.classList = 'input-gender input';
-  newInput.id = 'custom-input';
-  newInput.style.marginBottom = '10px';
-  buttonArea.insertAdjacentElement('beforebegin', newInput);
+  let existent = checkCustomInputExistence();
+  if (!existent) {
+    const newInput = document.createElement('input');
+    const buttonArea = document.querySelector('.button-area');
+    newInput.type = Text;
+    newInput.name = 'gender-custom';
+    newInput.placeholder = 'Gênero (opcional)';
+    newInput.classList = 'input-gender input';
+    newInput.id = 'custom-input';
+    newInput.style.marginBottom = '10px';
+    buttonArea.insertAdjacentElement('beforebegin', newInput);
+    newInput.addEventListener('blur', (e) => {
+      isFilledInputs(newInput);
+    });
+  }
 }
 
 function removeCustomInput() {
@@ -118,7 +153,7 @@ function removeCustomInput() {
 
 function validateCustomInputRemoval(inputsGender) {
   for (let i = 0; i < inputsGender.length; i += 1) {
-    inputsGender[i].addEventListener('change', () => {
+    inputsGender[i].addEventListener('blur', () => {
       const customInput = document.getElementById('custom-input');
       if (!inputsGender[2].checked && customInput) {
         removeCustomInput();
@@ -127,9 +162,9 @@ function validateCustomInputRemoval(inputsGender) {
   }
 }
 
-function generateCustomInputEvent(inputsGender) {
-  inputsGender[2].addEventListener('click', function () {
-    generateCustomInput(inputsGender[2]);
+function addCustomInputEvent(inputsGender) {
+  inputsGender[2].addEventListener('click', function (e) {
+    generateCustomInput(inputsGender[2], e);
   });
   validateCustomInputRemoval(inputsGender);
 }
@@ -139,11 +174,10 @@ function inputEvents() {
   const inputsGender = document.querySelectorAll('.input-gender');
   for (let i = 0; i < inputs.length; i += 1) {
     inputs[i].addEventListener('blur', function (e) {
-      isFilledInputs(e, inputs);
-      setFilledState(inputs);
+      isFilledInputs(inputs);
     });
   }
-  generateCustomInputEvent(inputsGender);
+  addCustomInputEvent(inputsGender);
 }
 
 function buttonEvents() {
@@ -152,7 +186,7 @@ function buttonEvents() {
   const buttonConclude = document.getElementById('facebook-register');
   buttonConclude.addEventListener('click', function (e) {
     initAttributes(inputs);
-    validateInputs(e, inputs);
+    validateInputs(inputs);
     e.preventDefault();
   });
   buttonLogin.addEventListener('click', function () {
