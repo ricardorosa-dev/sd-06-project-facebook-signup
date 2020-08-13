@@ -27,19 +27,17 @@ function genderInputWork() {
   genderInput.addEventListener('input', function () {
     genderValue = genderInput.value;
     return genderValue;
-  })
+  });
 }
 
 function showGenderCustom() {
   genderDiv.addEventListener('change', function (e) {
-
     if (e.target.value === 'Personalizado') {
       genderInput.classList.remove('invisible');
       genderInputWork();
     } else {
       genderInput.classList.add('invisible');
       genderValue = e.target.value;
-      return genderValue;
     }
   });
 }
@@ -68,7 +66,7 @@ function buttonSubmit() {
       formRegister.innerHTML = `Olá, ${fNameInput.value} ${lNameInput.value} <br>
       ${celularEmailInput.value} <br>
       ${birthdateInput.value} <br>
-      ${genderValue}`
+      ${genderValue}`;
     }
   });
 }
