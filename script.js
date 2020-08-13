@@ -51,7 +51,6 @@ function removeDataContainer() {
 
 function getInputGenderData(input) {
   const inputGenderMap = new Map();
-  const customInput = document.querySelector('#custom-input');
   if (input.checked) {
     inputGenderMap.set(input.name, input.value);
   }
