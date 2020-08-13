@@ -53,7 +53,7 @@ buttonRegister.addEventListener('click', function (e) {
   return true;
 });
 
-// Exibir um capo de texto caso o usuário clique em "personalizado"
+// Exibir um capo de texto caso a pessoa clique em "personalizado"
 const optionCustomized = document.querySelector('#gender-customized');
 optionCustomized.addEventListener('click', function () {
   const divCustomizedOption = document.querySelector('.gender-customized');
