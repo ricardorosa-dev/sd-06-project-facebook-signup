@@ -35,16 +35,16 @@ form label {
 }
 
 .gender-radio {
-  margin: 10px 0 10px 0;
-
+  margin: 10px 0;
 }
+
 .gender-radio label {
   font-size: 12px;
 }
 
 .left-content {
+  padding: 80px 100px 10px;
   width: 800px;
-  padding: 80px 100px 10px 100px;
 }
 
 .main-content {
@@ -52,20 +52,21 @@ form label {
 }
 
 .right-content {
+  padding: 80px 100px 10px;
   width: 300px;
-  padding: 80px 100px 10px 100px;
 }
 
 .right-content button {
-  width: 300px;
   height: 30px;
+  width: 300px;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
-  padding: 10px 100px 10px 100px;
+  padding: 10px 100px 10px;
 }
+
 .validate-inputs {
   width: 152px;
 }
