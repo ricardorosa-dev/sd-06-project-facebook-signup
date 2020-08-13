@@ -19,6 +19,7 @@
 
 body {
   font-size: 12px;
+  font-family: ;
   line-height: 1.34;
   margin: 0;
   padding: 0;
@@ -78,6 +79,7 @@ body {
 
 .left-content {
   display: flex;
+  flex-direction: column;
   width: 800px;
 }
 
