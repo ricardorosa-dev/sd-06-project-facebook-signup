@@ -10,8 +10,8 @@ function clickButton() {
 }
 
 function customField() {
-  let genderParent = document.querySelector('.new-gender-field');
-  let newGender = document.createElement('input');
+  const genderParent = document.querySelector('.new-gender-field');
+  const newGender = document.createElement('input');
   genderParent.appendChild(newGender);
   newGender.setAttribute('type', 'text');
   newGender.setAttribute('name', 'gender-custom');
@@ -23,4 +23,4 @@ window.onload = function () {
   loginButton.addEventListener('click', clickButton);
 };
 
-customGender.addEventListener ('change', customField);
+customGender.addEventListener('change', customField);
