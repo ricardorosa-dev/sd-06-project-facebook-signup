@@ -15,23 +15,18 @@ buttonEnter.addEventListener('click', function () {
   alert(nameOrPhone);
 });
 
-// Exibir uma mensagem de "Campos inválidos" se pelo menos um campo não esteja preenchido
-buttonRegister.addEventListener('click', function (e) {
-  e.preventDefault();
-  for (let index = 0; index < inputElements.length; index += 1) {
-    if (inputElements[index].value === '') {
-      const messageDiv = document.querySelector('.empty-input');
-      messageDiv.innerHTML = 'Campos inválidos';
-      return false;
-    } 
+// Retornar o genero escolhido
+function getRadioValue() {
+  for (let index = 0; index < radioButtons.length; index += 1) {
+    if (radioButtons[index].checked) {
+      return radioButtons[index].value;
+    }
   }
-  const rightContentDiv = document.querySelector('.right-content');
-  rightContentDiv.remove();
-  completedForm();
-});
+  return;
+};
 
 // Armazenar os dados submetidos pelo usuario
-function completedForm () {
+function completedForm() {
   const dataSubmittedDiv = document.createElement('div');
   dataSubmittedDiv.className = 'right-content';
   dataSubmittedDiv.innerText = `Olá, ${nameInput.value} ${lastnameInput.value}
@@ -42,14 +37,21 @@ function completedForm () {
   mainContentDiv.appendChild(dataSubmittedDiv);
 };
 
-// Retornar o genero escolhido
-function getRadioValue () {
-  for (let index = 0; index < radioButtons.length; index += 1) {
-    if (radioButtons[index].checked) {
-      return radioButtons[index].value;
+// Exibir uma mensagem de "Campos inválidos" se pelo menos um campo não esteja preenchido
+buttonRegister.addEventListener('click', function (e) {
+  e.preventDefault();
+  for (let index = 0; index < inputElements.length; index += 1) {
+    if (inputElements[index].value === '') {
+      const messageDiv = document.querySelector('.empty-input');
+      messageDiv.innerHTML = 'Campos inválidos';
+      return false;
     }
   }
-};
+  const rightContentDiv = document.querySelector('.right-content');
+  rightContentDiv.remove();
+  completedForm();
+  return;
+});
 
 // Exibir um capo de texto caso o usuário clique em "personalizado"
 const optionCustomized = document.querySelector('#gender-customized');
