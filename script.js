@@ -2,11 +2,11 @@
 const buttonLogin = document.getElementById('button-login');
 buttonLogin.addEventListener('click', function () {
   const inputEmail = document.getElementById('user-email-phone').value;
-  if (inputEmail === "") {
-    window.alert("Por favor, preencha seu email");
+  if (inputEmail === '') {
+    window.alert('Por favor, preencha seu email');
   } else {
-  window.alert(inputEmail);
-  inputEmail.innerHTML = '';
+    window.alert(inputEmail);
+    inputEmail.innerHTML = '';
   }
 });
 
@@ -40,7 +40,7 @@ function removeInput() {
 
 // escutar addEventListener e chamar a função que vai tratar.
 const genderOption = document.querySelector('.form-group-4');
-genderOption.addEventListener('change', function() {
+genderOption.addEventListener('change', function () {
   const customize = document.getElementById('personalizado');
   if (customize.checked) {
     addInput();
