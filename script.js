@@ -28,10 +28,10 @@ function showData() {
   const phoneEmail = formElements.phone_email.value;
   const birthdate = formElements.birthdate.value;
   const gender = formElements.gender.value;
-  rightContent.innerHTML = `<p>Olá, ${firstName} ${lastName}<br>
-  Nascido em ${birthdate}<br>
-  Seu email/telefone é ${phoneEmail}<br>
-  O gênero selecionado foi ${gender}</p>`;
+  rightContent.innerHTML = `<p>Olá, ${firstName} ${lastName}<br><br>
+  Data de nascimento: ${birthdate}<br><br>
+  Email/telefone: ${phoneEmail}<br><br>
+  Gênero: ${gender}</p>`;
 }
 
 function validateAccountForm(event) {
@@ -58,15 +58,6 @@ function addGenderOptions() {
 }
 
 window.onload = function () {
-  const birthdateInput = document.querySelector('#birthdate');
-  birthdateInput.DatePickerX.init({
-    format: 'dd/mm/yyyy',
-    weekDayLabels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab', 'Dom'],
-    shortMonthLabels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
-    singleMonthLabels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
-    todayButton: false,
-    clearButton: false,
-  });
   const loginButton = document.querySelector('#button-login');
   const customInput = document.querySelector('#custom-input');
   const submitButton = document.querySelector('#facebook-register');
