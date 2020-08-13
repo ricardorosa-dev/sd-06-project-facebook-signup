@@ -28,13 +28,10 @@ function showData() {
   const phoneEmail = formElements.phone_email.value;
   const birthdate = formElements.birthdate.value;
   const gender = formElements.gender.value;
-  rightContent.innerText = `Olá, ${firstName} ${lastName}
-
-  Nascido em ${birthdate}
-
-  Seu email/telefone é ${phoneEmail}
-
-  O gênero selecionado foi ${gender}`;
+  rightContent.innerHTML = `<p>Olá, ${firstName} ${lastName}<br>
+  Nascido em ${birthdate}<br>
+  Seu email/telefone é ${phoneEmail}<br>
+  O gênero selecionado foi ${gender}</p>`;
 }
 
 function validateAccountForm(event) {
