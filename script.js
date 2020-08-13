@@ -47,11 +47,17 @@ function validateForm() {
 
 function clearRightContent() {
   const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = '';
+  rightContent.remove();
+}
+
+function createRightContent() {
+  const mainContent = document.querySelector('.main-content');
+  const newRightContent = document.createElement('div');
+  newRightContent.className = 'right-content';
+  mainContent.appendChild(newRightContent);
 }
 
 function textMsgIfValidate() {
-  const rightContent = document.querySelector('.right-content');
   const newUser = document.forms.user;
   const firstName = newUser.elements.firstname.value;
   const lastName = newUser.elements.lastname.value;
@@ -59,11 +65,13 @@ function textMsgIfValidate() {
   const birthdate = newUser.elements.birthdate.value;
   const gender = newUser.elements.gender.value;
   clearRightContent();
-  rightContent.innerHTML = `Olá, ${firstName} ${lastName}!
+  createRightContent();
+  const newRightContent = document.querySelector('.right-content');
+  newRightContent.innerHTML = `Olá, ${firstName} ${lastName}!
   O seu login é ${phoneEmail},
   sua data de nascimento é ${birthdate} e
   selecionou o gênero ${gender}.`;
-  return rightContent;
+  return newRightContent;
 }
 
 window.onload = () => {
