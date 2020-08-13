@@ -67,6 +67,11 @@ body {
   justify-content: center;
 }
 
+.new-gender-field {
+  display: flex;
+  flex-direction: column;
+}
+
 .left-content {
   display: flex;
   flex-direction: column;
