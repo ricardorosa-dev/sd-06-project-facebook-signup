@@ -8,7 +8,7 @@ buttonLogin.addEventListener('click', function () {
 });
 
 inputPerson.addEventListener('click', function () {
-  const elemFather = document.querySelector("#gen-person > #custom")
+  const elemFather = document.querySelector('#gen-person > #custom');
   if (!elemFather) {
     const inputGenPerson = document.createElement('input');
     inputGenPerson.type = 'text';
