@@ -101,6 +101,13 @@ header form input {
   width: 295px;
 }
 
+.right-content form :nth-child( 5 ) input {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 5px;
+  width: 13px;
+}
+
 .form-space {
   justify-content: space-between;
 }
@@ -136,25 +143,21 @@ small {
   padding-left: 6px;
 }
 
-.subscription-form {
-  display: flex;
-  flex-flow: column;
+.sub-form {
+  flex-flow: row;
 }
 
 .personal_genere-tom {
   border: 1px solid black;
-  display: inline-block;
-  width: 100px;
+  display: flex;
+  width: 122px;
 }
 
 .personal_genere {
-  border: 1px solid black;
-  display: inline-block;
-  width: 200px;
-}
-
-.personal_genere label {
-  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .form-label-inline {
@@ -163,12 +166,11 @@ small {
   width: 100px;
 }
 
-.label-flexend {
-  align-items: center;
-  justify-content: flex-end;
+.tam-input {
+  width: 10px;
 }
 
-.radio-FlexEnd {
+.personal_genere label {
   align-items: center;
-  justify-content: flex-end;
+  display: flex;
 }
