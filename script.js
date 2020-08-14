@@ -35,19 +35,31 @@ function validateForms() {
 const registerButton = document.querySelector('#facebook-register');
 registerButton.addEventListener('click', validateForms);
 
-let isOtherGenre = false;
+let existeOInputExtra = false;
 const otherGenreRadio = document.querySelector('#gen-others');
 
 function generateOtherGenreInput() {
   const otherGenreInputWrapper = document.querySelector('.other-gen-input');
-  if (otherGenreRadio.checked === true && isOtherGenre === false) {
+  if (otherGenreRadio.checked === true && existeOInputExtra === false) {
     const otherGenreInput = document.createElement('input');
     otherGenreInput.setAttribute('name', 'gender-custom');
     otherGenreInput.setAttribute('placeholder', 'Gênero');
 
     otherGenreInputWrapper.appendChild(otherGenreInput);
-    isOtherGenre = true;
+    existeOInputExtra = true;
   }
 }
 
 otherGenreRadio.addEventListener('click', generateOtherGenreInput);
+
+function tirarOInputExtraQuandoClicarEmOutroRadio() {
+  const otherGenreInputWrapper = document.querySelector('.other-gen-input');
+  otherGenreInputWrapper.removeChild(otherGenreInputWrapper.firstElementChild);
+  existeOInputExtra = false;
+}
+
+const mRadio = document.querySelector('#gen-masc');
+const fRadio = document.querySelector('#gen-fem');
+
+mRadio.addEventListener('click', tirarOInputExtraQuandoClicarEmOutroRadio);
+fRadio.addEventListener('click', tirarOInputExtraQuandoClicarEmOutroRadio);
