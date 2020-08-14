@@ -25,7 +25,7 @@ function buttonLogin() {
 function showGenderCustom() {
   genderDiv.addEventListener('click', function (e) {
     if (e.target.value === 'Personalizado') {
-      genderValue = 'Personalizado'
+      genderValue = 'Personalizado';
     } else {
       genderValue = e.target.value;
     }
