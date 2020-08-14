@@ -34,7 +34,7 @@ button {
   flex-direction: column;
 }
 
-.gender-custom, .left-content {
+.gender-custom , .left-content {
   width: 800px;
 }
 
