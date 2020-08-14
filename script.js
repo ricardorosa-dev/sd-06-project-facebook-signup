@@ -35,6 +35,9 @@ function validateForms() {
 const registerButton = document.querySelector('#facebook-register');
 registerButton.addEventListener('click', validateForms);
 
+let isOtherGenre = false;
+const otherGenreRadio = document.querySelector('#gen-others');
+
 function generateOtherGenreInput() {
   const otherGenreInputWrapper = document.querySelector('.other-gen-input');
   if (otherGenreRadio.checked === true && isOtherGenre === false) {
@@ -47,6 +50,4 @@ function generateOtherGenreInput() {
   }
 }
 
-let isOtherGenre = false;
-const otherGenreRadio = document.querySelector('#gen-others');
 otherGenreRadio.addEventListener('click', generateOtherGenreInput);
