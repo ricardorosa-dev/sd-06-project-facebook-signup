@@ -35,25 +35,29 @@ function createInputGenPerson() {
 }
 createInputGenPerson();
 
+function valdateAboveInputs() {
+  let validation = true;
+  if (inputName.value === '' || inputSob.value === '') {
+    validation = false;
+  }
+  if (inputMail.value === '' || inputDtns.value === '' ||
+    inputNewPass.value === '') {
+    validation = false;
+  }
+  if (inputMasc.checked === false && inputFem.checked ===
+    false && inputPerson.checked === false) {
+    validation = false;
+  }
+  if (validation === false) {
+    const elemP = document.createElement('p');
+    elemP.innerHTML = 'Campos inválidos';
+    divError.appendChild(elemP);
+  }
+}
+
 function validateInputs() {
   buttonRegister.addEventListener('click', function () {
-    let validation = true;
-    if (inputName.value === '' || inputSob.value === '') {
-      validation = false;
-    }
-    if (inputMail.value === '' || inputDtns.value === '' ||
-      inputNewPass.value === '') {
-      validation = false;
-    }
-    if (inputMasc.checked === false && inputFem.checked ===
-      false && inputPerson.checked === false) {
-      validation = false;
-    }
-    if (validation === false) {
-      const elemP = document.createElement('p');
-      elemP.innerHTML = 'Campos inválidos';
-      divError.appendChild(elemP);
-    }
+    valdateAboveInputs();
     if (inputPerson.checked === true) {
       const inputNewGenero = document.querySelector('#custom');
       if (inputNewGenero.value === '') {
