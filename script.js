@@ -26,7 +26,6 @@ function buttonLogin() {
 function genderInputWork() {
   genderInput.addEventListener('input', function () {
     genderValue = genderInput.value;
-    console.log(genderValue);
   });
 }
 
@@ -36,7 +35,6 @@ function showGenderCustom() {
       genderInputWork();
     } else {
       genderValue = e.target.value;
-      console.log(genderValue);
     }
   });
 }
