@@ -64,3 +64,7 @@ input {
 .gender-container {
   display: flex;
 }
+
+.span {
+  font-weight: bold;
+}

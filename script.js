@@ -7,13 +7,9 @@ const genderCustomCtn = document.querySelector('.gender-custom-container');
 const radioGenderPersonalized = document.querySelector('#personalizado');
 const registerSuccessContainer = document.querySelector('.right-content');
 
-const firstName = document.querySelector('#firstname').value;
-const lastName = document.querySelector('#lastname').value;
-const phoneEmail = document.querySelector('#phone_email').value;
-const labelBirthdate = document.querySelector('#label-birthdate').value;
-const femaleGender = document.querySelector('#feminino').value;
-const maleGender = document.querySelector('#masculino').value;
-const personalizedGender = document.querySelector('#personalizado').value;
+// const femaleGender = document.querySelector('#feminino').value;
+// const maleGender = document.querySelector('#masculino').value;
+// const personalizedGender = document.querySelector('#personalizado').value;
 
 login.addEventListener('click', function () {
   alert(name.value);
@@ -23,6 +19,8 @@ submitBtn.addEventListener('click', function () {
   let count = 0;
   const firstName = document.querySelector('#firstname').value;
   const lastName = document.querySelector('#lastname').value;
+  const phoneEmail = document.querySelector('#phone_email').value;
+  const labelBirthdate = document.querySelector('#label-birthdate').value;
 
   for (let i = 2; i < (inputArray.length - 3); i += 1) {
     const resultCheck = inputArray[i].checkValidity();
@@ -30,7 +28,6 @@ submitBtn.addEventListener('click', function () {
       count += 1;
     }
   }
-
   if (count !== 0) {
     const paragraph = document.createElement('p');
     paragraph.innerText = 'Campos inválidos';
@@ -41,7 +38,9 @@ submitBtn.addEventListener('click', function () {
     };
 
     const parag = document.createElement('p');
-    parag.innerHTML = `Olá, ${firstName} ${lastName}`;
+    parag.innerHTML = `<h1>Olá, ${firstName} ${lastName}</h1> <br>
+    <strong>email ou telefone:</strong> ${phoneEmail} <br>
+    <strong>Data de Nascimento:</strong> ${labelBirthdate}`;
     registerSuccessContainer.appendChild(parag);
   }
 });
@@ -54,12 +53,3 @@ radioGenderPersonalized.addEventListener('click', function () {
   inputGenderCustom.className = 'gender-custom';
   genderCustomCtn.appendChild(inputGenderCustom);
 });
-
-// submitBtn.addEventListener('submit', function (event) {
-//   event.preventDefault();
-
-// })
-
-
-
-
