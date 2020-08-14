@@ -35,7 +35,7 @@ submitBtn.addEventListener('click', function () {
   } else {
     while (registerSuccessContainer.firstElementChild) {
       registerSuccessContainer.firstElementChild.remove();
-    };
+    }
 
     const parag = document.createElement('p');
     parag.innerHTML = `<h1>Olá, ${firstName} ${lastName}</h1> <br>
