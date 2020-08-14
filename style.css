@@ -72,7 +72,7 @@ label {
 
 header form input {
   height: 16px;
-  margin-top: 2px;  
+  margin-top: 2px;
   width: 110px;
 }
 
@@ -84,7 +84,7 @@ header form input {
   border: 0.6px solid rgb(201, 201, 201);
   border-radius: 4px;
   height: 25px;
-  margin-bottom: 4px; 
+  margin-bottom: 4px;
 }
 
 .right-content form > :first-of-type {
@@ -150,7 +150,7 @@ small {
 .personal_genere {
   border: 1px solid black;
   display: inline-block;
- width: 200px;
+  width: 200px;
 }
 
 .personal_genere label {
