@@ -2,10 +2,10 @@ const buttonLogin = document.querySelector('#button-login');
 const inputUser = document.querySelector('#user-email-phone');
 const inputPerson = document.querySelector('#personalizado');
 const divGenPerson = document.querySelector('#gen-person');
-const buttonRegister = document.querySelector('#facebook-register');
 const divError = document.querySelector('#error');
 const inputMasc = document.querySelector('#masculino');
 const inputFem = document.querySelector('#feminino');
+const buttonRegister = document.querySelector('#facebook-register');
 
 function exibeUserAlert() {
   buttonLogin.addEventListener('click', function () {
@@ -30,12 +30,11 @@ function createInputGenPerson() {
 }
 createInputGenPerson();
 
-function valida() {
+function validateInputs() {
   const inputsAll = document.querySelectorAll('input');
   let validation = true;
   if (inputsAll[2].value === '' || inputsAll[3].value === '') {
     validation = false;
-    return validation;
   }
   if (inputsAll[4].value === '' || inputsAll[5].value === '' ||
     inputsAll[6].value === '') {
@@ -50,11 +49,6 @@ function valida() {
       validation = false;
     }
   }
-  return validation;
-}
-
-function validateInputs() {
-  let validation = valida();
   if (validation === false) {
     const elemP = document.createElement('p');
     elemP.innerHTML = 'Campos inválidos';
@@ -62,6 +56,7 @@ function validateInputs() {
   }
   return validation;
 }
+buttonRegister.addEventListener('click', validateInputs);
 
 function inputFemRemoveGenPerson() {
   inputFem.addEventListener('click', function () {
