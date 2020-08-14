@@ -48,16 +48,17 @@ function valdateAboveInputs() {
     false && inputPerson.checked === false) {
     validation = false;
   }
-  if (validation === false) {
-    const elemP = document.createElement('p');
-    elemP.innerHTML = 'Campos inválidos';
-    divError.appendChild(elemP);
-  }
+  return validation;
 }
 
 function validateInputs() {
   buttonRegister.addEventListener('click', function () {
-    valdateAboveInputs();
+    let validation = valdateAboveInputs();
+    if (validation === false) {
+      const elemP = document.createElement('p');
+      elemP.innerHTML = 'Campos inválidos';
+      divError.appendChild(elemP);
+    }
     if (inputPerson.checked === true) {
       const inputNewGenero = document.querySelector('#custom');
       if (inputNewGenero.value === '') {
