@@ -15,6 +15,28 @@ login.addEventListener('click', function () {
   alert(name.value);
 });
 
+function invalidFields(text) {
+  const paragraph = document.createElement('p');
+  paragraph.innerText = text;
+  registerForm.appendChild(paragraph);
+};
+
+function inputRegisterMessage() {
+  const firstName = document.querySelector('#firstname').value;
+  const lastName = document.querySelector('#lastname').value;
+  const phoneEmail = document.querySelector('#phone_email').value;
+  const labelBirthdate = document.querySelector('.label-birthdate').value;
+
+  while (registerSuccessContainer.firstElementChild) {
+    registerSuccessContainer.firstElementChild.remove();
+  }
+  const parag = document.createElement('p');
+  parag.innerHTML = `<h1>Olá, ${firstName} ${lastName}</h1> <br>
+  <strong>email ou telefone:</strong> ${phoneEmail} <br>
+  <strong>Data de Nascimento:</strong> ${labelBirthdate}`;
+  registerSuccessContainer.appendChild(parag);
+}
+
 submitBtn.addEventListener('click', function () {
   let count = 0;
 
@@ -27,31 +49,9 @@ submitBtn.addEventListener('click', function () {
   if (count !== 0) {
     invalidFields('Campos inválidos');
   } else {
-    inputRegisterMessage ();
+    inputRegisterMessage();
   }
 });
-
-function invalidFields (text) {
-  const paragraph = document.createElement('p');
-  paragraph.innerText = text;
-  registerForm.appendChild(paragraph);
-};
-
-function inputRegisterMessage () {
-  const firstName = document.querySelector('#firstname').value;
-  const lastName = document.querySelector('#lastname').value;
-  const phoneEmail = document.querySelector('#phone_email').value;
-  const labelBirthdate = document.querySelector('.label-birthdate').value;
-
-  while (registerSuccessContainer.firstElementChild) {
-  registerSuccessContainer.firstElementChild.remove();
-  }
-  const parag = document.createElement('p');
-  parag.innerHTML = `<h1>Olá, ${firstName} ${lastName}</h1> <br>
-  <strong>email ou telefone:</strong> ${phoneEmail} <br>
-  <strong>Data de Nascimento:</strong> ${labelBirthdate}`;
-  registerSuccessContainer.appendChild(parag);
-};
 
 radioGenderPersonalized.addEventListener('click', function () {
   const inputGenderCustom = document.createElement('input');
