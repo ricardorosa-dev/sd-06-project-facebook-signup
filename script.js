@@ -49,9 +49,9 @@ function genderFilter(genderMale, genderFemale, genderOther) {
 
 const checkFormFunc = () => {
   const inputChecker = document.querySelectorAll('input');
-  for (cont = 0; cont < inputChecker.length; cont += 1) {
-    if (inputChecker[cont].hasAttribute('required') && inputChecker[cont].value === ''){
-      alert('Campos Inválidos')
+  for (let cont = 0; cont < inputChecker.length; cont += 1) {
+    if (inputChecker[cont].hasAttribute('required') && inputChecker[cont].value === '') {
+      alert('Campos Inválidos');
       return false;
     }
   }
