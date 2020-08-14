@@ -19,7 +19,7 @@ function invalidFields(text) {
   const paragraph = document.createElement('p');
   paragraph.innerText = text;
   registerForm.appendChild(paragraph);
-};
+}
 
 function inputRegisterMessage() {
   const firstName = document.querySelector('#firstname').value;
