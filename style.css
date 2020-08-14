@@ -39,8 +39,7 @@ body {
 }
 
 .form-control button {
-  background-color: rgb(94, 135, 216);
-  ;
+  background-color: rgb(94, 135, 216);  
   border: 0.8px solid rgba(2, 2, 2, 0.24);
   border-radius: 2px;
   color: white;
@@ -72,7 +71,6 @@ label {
 }
 
 header form input {
-  border: 1px solid black;
   height: 16px;
   margin-top: 2px;
   outline: 0;
@@ -84,7 +82,7 @@ header form input {
 }
 
 .right-content form input {
-  border: 0.6px solid rgb(201, 201, 201);
+  /*border: 0.6px solid rgb(201, 201, 201);*/
   border-radius: 4px;
   height: 25px;
   margin-bottom: 4px;
@@ -133,7 +131,7 @@ h1 {
 
 small {
   font-size: 18px;
-  font-weight: 0;
+  font-weight: 800;
 }
 
 ::placeholder {
@@ -145,10 +143,10 @@ small {
   flex-flow: column;
 }
 
-.personal_genere-tom {
-  width: 100px;
+.personal_genere-tom {  
   border: 1px solid black;
   display: inline-block;
+  width: 100px;
 }
 
 .personal_genere {
@@ -161,18 +159,17 @@ small {
   font-size: 10px;
 }
 
-.right-content form input[type="radio"] {
-  width: 7px;
-  border: 1px solid black;
+.right-content form input[ type = 'radio' ] {  
   border-radius: 4px;
   justify-content: flex-start;
   outline: 0;
+  width: 7px;
 }
 
-.form-label-inline {
-  width: 100px;
+.form-label-inline { 
   display: flex;
   border: 0.6px solid rgb(201, 201, 201);
+  width: 100px;
 }
 
 .label-flexend {
@@ -184,5 +181,3 @@ small {
   align-items: center;
   justify-content: flex-end;
 }
-
-
