@@ -28,12 +28,12 @@ function createSmallTag(innerHtml) {
   return createSmall;
 }
 
-function dateChecker(date) {
+/* function dateChecker(date) {
   const dateDay = parseInt(date.slice(8, 10), 10);
   const dateMonth = parseInt(date.slice(5, 7), 10);
   const dateYear = parseInt(date.slice(0, 4), 10);
   return `${dateDay} ${dateMonth} ${dateYear}`;
-}
+} */
 
 function genderFilter(genderMale, genderFemale, genderOther) {
   let genderValue;
@@ -63,11 +63,10 @@ const appendAfterCheck = () => {
   const nameValue = document.querySelector('.first-name').value;
   const lastNameValue = document.querySelector('.last-name').value;
   const emailPhoneValue = document.querySelector('.phone-email').value;
-  let birthDateValue = document.querySelector('.birth-date').value;
+  const birthDateValue = document.querySelector('.birth-date').value;
   const genderMale = document.querySelector('#male');
   const genderFemale = document.querySelector('#female');
   const genderOther = document.querySelector('#other');
-  birthDateValue = dateChecker(birthDateValue);
 
   rightContent.innerHTML = '';
 
