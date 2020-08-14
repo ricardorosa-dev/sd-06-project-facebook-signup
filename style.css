@@ -1,6 +1,6 @@
 body {
-  margin: 0px;
   background-color: rgba(173, 173, 173, 0.808);
+  margin: 0;
 }
 
 .top-bar {
@@ -56,19 +56,19 @@ body {
 }
 
 .small-input {
-  margin-bottom: 10px;
-  margin-left: 0px;
-  margin-right: 10px;
+  margin-bottom: 10;
+  margin-left: 0;
+  margin-right: 10;
   width: 120px;
 }
 
 .gender-radio {
   display: flex;
-  margin: 10px;
+  margin: 10;
 }
 
 .password-input {
-  margin-bottom: 10px;
+  margin-bottom: 10;
   width: 260px;
 }
 
@@ -77,18 +77,18 @@ body {
   border-radius: 5px;
   color: white;
   font-weight: 600;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  margin-bottom: 10;
+  margin-right: 10;
 }
 
-button.btn-cadastre {
+.btn-cadastre {
   background-color: rgba(30, 112, 6, 0.877);
   border-radius: 5px;
   color: white;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 10;
 }
 
 .slogan {
-  margin-left: 10px;
+  margin-left: 10;
 }
