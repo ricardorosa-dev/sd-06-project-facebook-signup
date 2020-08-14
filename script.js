@@ -1,17 +1,10 @@
 const buttonLogin = document.querySelector('#button-login');
 const inputUser = document.querySelector('#user-email-phone');
-const inputName = document.querySelector('#name');
-const inputSob = document.querySelector('#sob');
-const inputMail = document.querySelector('#cel-email');
-const inputNewPass = document.querySelector('#new-pass');
 const inputPerson = document.querySelector('#personalizado');
 const divGenPerson = document.querySelector('#gen-person');
 const buttonRegister = document.querySelector('#facebook-register');
-const inputMasc = document.querySelector('#masculino');
-const inputFem = document.querySelector('#feminino');
-const inputDtns = document.querySelector('#date-nsc');
 const divError = document.querySelector('#error');
-const inputsAll = document.querySelectorAll('input');
+
 
 function exibeUserAlert() {
   buttonLogin.addEventListener('click', function () {
@@ -39,7 +32,6 @@ createInputGenPerson();
 function validateInputs() {
   buttonRegister.addEventListener('click', function () {
     const inputsAll = document.querySelectorAll('input');
-    const elemFather = document.querySelector('#gen-person > #custom');
     let validation = true;
     if (inputsAll[2].value === '' || inputsAll[3].value === '') {
       validation = false;
