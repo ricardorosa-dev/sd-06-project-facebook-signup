@@ -7,7 +7,6 @@ const fGenderRadio = document.getElementById('gender-female');
 const mGenderRadio = document.getElementById('gender-male');
 const pGenderRadio = document.getElementById('gender-personalized');
 const answers = document.getElementById('answers');
-const genderInput = document.getElementById('gender-input');
 const genderDiv = document.getElementsByClassName('user-gender')[0];
 let genderValue;
 
@@ -23,16 +22,10 @@ function buttonLogin() {
   });
 }
 
-function genderInputWork() {
-  genderInput.addEventListener('input', function () {
-    genderValue = genderInput.value;
-  });
-}
-
 function showGenderCustom() {
   genderDiv.addEventListener('click', function (e) {
     if (e.target.value === 'Personalizado') {
-      genderInputWork();
+      genderValue = 'Personalizado'
     } else {
       genderValue = e.target.value;
     }
