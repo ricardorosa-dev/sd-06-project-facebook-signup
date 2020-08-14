@@ -30,34 +30,38 @@ function createInputGenPerson() {
 }
 createInputGenPerson();
 
-function validateInputs() {
-  buttonRegister.addEventListener('click', function () {
-    const inputsAll = document.querySelectorAll('input');
-    let validation = true;
-    if (inputsAll[2].value === '' || inputsAll[3].value === '') {
+function valida() {
+  const inputsAll = document.querySelectorAll('input');
+  let validation = true;
+  if (inputsAll[2].value === '' || inputsAll[3].value === '') {
+    validation = false;
+    return validation;
+  }
+  if (inputsAll[4].value === '' || inputsAll[5].value === '' ||
+    inputsAll[6].value === '') {
+    validation = false;
+  }
+  if (inputsAll[7].checked === false && inputsAll[8].checked ===
+    false && inputsAll[9].checked === false) {
+    validation = false;
+  }
+  if (inputsAll[10]) {
+    if (inputsAll[10].value === '') {
       validation = false;
     }
-    if (inputsAll[4].value === '' || inputsAll[5].value === '' ||
-      inputsAll[6].value === '') {
-      validation = false;
-    }
-    if (inputsAll[7].checked === false && inputsAll[8].checked ===
-      false && inputsAll[9].checked === false) {
-      validation = false;
-    }
-    if (inputsAll[10]) {
-      if (inputsAll[10].value === '') {
-        validation = false;
-      }
-    }
-    if (validation === false) {
-      const elemP = document.createElement('p');
-      elemP.innerHTML = 'Campos inválidos';
-      divError.appendChild(elemP);
-    }
-  });
+  }
+  return validation;
 }
-validateInputs();
+
+function validateInputs() {
+  let validation = valida();
+  if (validation === false) {
+    const elemP = document.createElement('p');
+    elemP.innerHTML = 'Campos inválidos';
+    divError.appendChild(elemP);
+  }
+  return validation;
+}
 
 function inputFemRemoveGenPerson() {
   inputFem.addEventListener('click', function () {
