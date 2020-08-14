@@ -47,8 +47,10 @@
         <section class='gender'>
           <input name='gender' type='radio' value='Feminino' required><label>Feminino</label>
           <input name='gender' type='radio' value='Masculino' required><label>Masculino</label>
-          <input name='gender' type='radio' value='Personalizado' class="customGender" required><label>Personalizado</label><br>
+          <input name='gender' type='radio' value='Personalizado' class="customGender" id="customGender" required><label>Personalizado</label><br>
         </section>
+
+        <input name="gender-custom" type="text" placeholder="Gênero (opcional)" style="display: none;" class="gender-custom" id="gender-custom">
 
         <p id="msInvalidField" style="display: none;">Campos inválidos</p>
 

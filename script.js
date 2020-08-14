@@ -23,3 +23,10 @@ facebookRegister.addEventListener('click', function (event) {
   msInvalidField.style.display = 'block';
   return event.preventDefault();
 });
+
+const genderCustom = document.getElementById('gender-custom');
+const customGender = document.getElementById('customGender')
+
+customGender.addEventListener('click', function () {
+  genderCustom.style.display = 'block';
+})

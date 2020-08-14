@@ -10,18 +10,8 @@ button {
   padding: 2%;
 }
 
-.right-content input {
-  margin: 2% 0;
-  padding: 1%;
-  width: 93%;
-}
-
 .full-name input {
   width: 44%;
-}
-
-.gender input {
-  width: 7%;
 }
 
 .facebook-login {
@@ -44,14 +34,32 @@ button {
   flex-direction: column;
 }
 
-.left-content {
+.gender-custom .left-content {
   width: 800px;
+}
+
+.gender {
+  display: flex;
+}
+
+.gender input {
+  width: 7%;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content input {
+  margin: 2% 0;
+  padding: 1%;
+  width: 93%;
 }
 
 .top-bar {
@@ -61,8 +69,4 @@ button {
   height: 82px;
   justify-content: space-between;
   width: 100%;
-}
-
-.right-content {
-  width: 300px;
 }
