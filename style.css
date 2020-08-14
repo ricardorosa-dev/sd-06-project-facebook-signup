@@ -39,7 +39,7 @@ body {
 }
 
 .form-control button {
-  background-color: rgb(94, 135, 216);  
+  background-color: rgb(94, 135, 216);
   border: 0.8px solid rgba(2, 2, 2, 0.24);
   border-radius: 2px;
   color: white;
@@ -72,8 +72,7 @@ label {
 
 header form input {
   height: 16px;
-  margin-top: 2px;
-  outline: 0;
+  margin-top: 2px;  
   width: 110px;
 }
 
@@ -82,11 +81,10 @@ header form input {
 }
 
 .right-content form input {
-  /*border: 0.6px solid rgb(201, 201, 201);*/
+  border: 0.6px solid rgb(201, 201, 201);
   border-radius: 4px;
   height: 25px;
-  margin-bottom: 4px;
-  outline: 0;
+  margin-bottom: 4px; 
 }
 
 .right-content form > :first-of-type {
@@ -143,32 +141,25 @@ small {
   flex-flow: column;
 }
 
-.personal_genere-tom {  
+.personal_genere-tom {
   border: 1px solid black;
   display: inline-block;
   width: 100px;
 }
 
 .personal_genere {
-  width: 200px;
   border: 1px solid black;
   display: inline-block;
+ width: 200px;
 }
 
 .personal_genere label {
   font-size: 10px;
 }
 
-.right-content form input[ type = 'radio' ] {  
-  border-radius: 4px;
-  justify-content: flex-start;
-  outline: 0;
-  width: 7px;
-}
-
-.form-label-inline { 
-  display: flex;
+.form-label-inline {
   border: 0.6px solid rgb(201, 201, 201);
+  display: flex;
   width: 100px;
 }
 
