@@ -87,6 +87,8 @@ header form input {
   margin-bottom: 4px;
 }
 
+.gen-person {}
+
 .right-content form > :first-of-type {
   margin-top: 10px;
 }
@@ -101,7 +103,7 @@ header form input {
   width: 295px;
 }
 
-.right-content form :nth-child( 5 ) input {
+.right-content form :nth-child( 5) input {
   align-items: flex-start;
   display: flex;
   margin-right: 5px;
