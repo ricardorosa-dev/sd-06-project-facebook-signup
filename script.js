@@ -26,7 +26,6 @@ function buttonLogin() {
 function genderInputWork() {
   genderInput.addEventListener('input', function () {
     genderValue = genderInput.value;
-    return genderValue;
   });
 }
 
