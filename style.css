@@ -39,7 +39,8 @@ body {
 }
 
 .form-control button {
-background-color:  rgb(94, 135, 216);;
+  background-color: rgb(94, 135, 216);
+  ;
   border: 0.8px solid rgba(2, 2, 2, 0.24);
   border-radius: 2px;
   color: white;
@@ -74,7 +75,7 @@ header form input {
   border: 1px solid black;
   height: 16px;
   margin-top: 2px;
-outline: 0;
+  outline: 0;
   width: 110px;
 }
 
@@ -87,9 +88,10 @@ outline: 0;
   border-radius: 4px;
   height: 25px;
   margin-bottom: 4px;
-outline: 0;
+  outline: 0;
 }
-.right-content form > :first-of-type  {
+
+.right-content form > :first-of-type {
   margin-top: 10px;
 }
 
@@ -129,21 +131,56 @@ h1 {
   width: 500px;
 }
 
-.subscription-form {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.personal_genere {
-  display: flex;
-  flex-flow: row;
-}
-
 small {
-font-size: 18px;
-font-weight: 0;
+  font-size: 18px;
+  font-weight: 0;
 }
 
 ::placeholder {
-padding-left: 6px;
+  padding-left: 6px;
+}
+
+.subscription-form {
+  display: flex;
+  flex-flow: column;
+}
+
+.personal_genere-tom {
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.personal_genere {
+  width: 200px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.personal_genere label {
+  font-size: 10px;
+}
+
+.right-content form input[type="radio"] {
+  width: 7px;
+  border: 1px solid black;
+  border-radius: 4px;
+  justify-content: flex-start;
+  outline: 0;
+}
+
+.form-label-inline {
+  width: 100px;
+  display: flex;
+  border: 0.6px solid rgb(201, 201, 201);
+}
+
+.label-flexend {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.radio-FlexEnd {
+  align-items: center;
+  justify-content: flex-end;
 }
