@@ -26,17 +26,17 @@ function buttonLogin() {
 function genderInputWork() {
   genderInput.addEventListener('input', function () {
     genderValue = genderInput.value;
+    console.log(genderValue);
   });
 }
 
 function showGenderCustom() {
-  genderDiv.addEventListener('change', function (e) {
+  genderDiv.addEventListener('click', function (e) {
     if (e.target.value === 'Personalizado') {
-      genderInput.classList.remove('invisible');
       genderInputWork();
     } else {
-      genderInput.classList.add('invisible');
       genderValue = e.target.value;
+      console.log(genderValue);
     }
   });
 }
