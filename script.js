@@ -10,6 +10,7 @@ const buttonRegister = document.querySelector('#facebook-register');
 const inputMasc = document.querySelector('#masculino');
 const inputFem = document.querySelector('#feminino');
 const inputDtns = document.querySelector('#date-nsc');
+const divError = document.querySelector('#error');
 
 function exibeUserAlert() {
   buttonLogin.addEventListener('click', function () {
@@ -49,12 +50,16 @@ function validateInputs() {
       validation = false;
     }
     if (validation === false) {
-      alert('Campos inválidos');
+      const elemP = document.createElement('p');
+      elemP.innerHTML = 'Campos inválidos';
+      divError.appendChild(elemP);
     }
     if (inputPerson.checked === true) {
       const inputNewGenero = document.querySelector('#custom');
       if (inputNewGenero.value === '') {
-        alert('Campos inválidos');
+        const elemP = document.createElement('p');
+        elemP.innerHTML = 'Campos inválidos';
+        divError.appendChild(elemP);
       }
     }
   });
