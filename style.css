@@ -1,4 +1,8 @@
 body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient( rgba(255, 255, 255, 1) 0%, rgba(221, 221, 221, 1) 100%);
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -34,6 +38,16 @@ body {
 .facebook-login {
   align-self: center;
   display: flex;
+}
+
+.fb-description {
+  color: #0e385f;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
 }
 
 .form-group {
@@ -78,4 +92,16 @@ header label {
 .gender {
   align-items: center;
   display: flex;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.quick-easy {
+  font-size: 19px;
+  color: #1D2129;
+  margin-bottom: 15px;
 }
