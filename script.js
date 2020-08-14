@@ -4,7 +4,8 @@ const inputPerson = document.querySelector('#personalizado');
 const divGenPerson = document.querySelector('#gen-person');
 const buttonRegister = document.querySelector('#facebook-register');
 const divError = document.querySelector('#error');
-
+const inputMasc = document.querySelector('#masculino');
+const inputFem = document.querySelector('#feminino');
 
 function exibeUserAlert() {
   buttonLogin.addEventListener('click', function () {
