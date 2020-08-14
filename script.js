@@ -17,7 +17,7 @@ document.querySelector('#other').addEventListener('click', function () {
 
 function createPersonH1(nameValue, lastNameValue) {
   const createH1 = document.createElement('h1');
-  createH1.innerHTML = `Olá  ${nameValue} ${lastNameValue}`;
+  createH1.innerHTML = `Olá,  ${nameValue} ${lastNameValue}`;
   return createH1;
 }
 
@@ -52,7 +52,7 @@ const checkFormFunc = () => {
   const inputChecker = document.querySelectorAll('input');
   for (let cont = 0; cont < inputChecker.length; cont += 1) {
     if (inputChecker[cont].hasAttribute('required') && inputChecker[cont].value === '') {
-      placeErrorText.innerHTML = 'Campos Inválidos';
+      placeErrorText.innerHTML = 'Campos inválidos';
       return placeErrorText;
     }
   }
