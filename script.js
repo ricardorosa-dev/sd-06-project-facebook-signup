@@ -11,6 +11,7 @@ const inputMasc = document.querySelector('#masculino');
 const inputFem = document.querySelector('#feminino');
 const inputDtns = document.querySelector('#date-nsc');
 const divError = document.querySelector('#error');
+const inputsAll = document.querySelectorAll('input');
 
 function exibeUserAlert() {
   buttonLogin.addEventListener('click', function () {
@@ -35,37 +36,31 @@ function createInputGenPerson() {
 }
 createInputGenPerson();
 
-function valdateAboveInputs() {
-  let validation = true;
-  if (inputName.value === '' || inputSob.value === '') {
-    validation = false;
-  }
-  if (inputMail.value === '' || inputDtns.value === '' ||
-    inputNewPass.value === '') {
-    validation = false;
-  }
-  if (inputMasc.checked === false && inputFem.checked ===
-    false && inputPerson.checked === false) {
-    validation = false;
-  }
-  return validation;
-}
-
 function validateInputs() {
   buttonRegister.addEventListener('click', function () {
-    let validation = valdateAboveInputs();
+    const inputsAll = document.querySelectorAll('input');
+    const elemFather = document.querySelector('#gen-person > #custom');
+    let validation = true;
+    if (inputsAll[2].value === '' || inputsAll[3].value === '') {
+      validation = false;
+    }
+    if (inputsAll[4].value === '' || inputsAll[5].value === '' ||
+      inputsAll[6].value === '') {
+      validation = false;
+    }
+    if (inputsAll[7].checked === false && inputsAll[8].checked ===
+      false && inputsAll[9].checked === false) {
+      validation = false;
+    }
+    if (inputsAll[10]) {
+      if (inputsAll[10].value === '') {
+        validation = false;
+      }
+    }
     if (validation === false) {
       const elemP = document.createElement('p');
       elemP.innerHTML = 'Campos inválidos';
       divError.appendChild(elemP);
-    }
-    if (inputPerson.checked === true) {
-      const inputNewGenero = document.querySelector('#custom');
-      if (inputNewGenero.value === '') {
-        const elemP = document.createElement('p');
-        elemP.innerHTML = 'Campos inválidos';
-        divError.appendChild(elemP);
-      }
     }
   });
 }
