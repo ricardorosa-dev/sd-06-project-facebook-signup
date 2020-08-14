@@ -47,8 +47,18 @@ function genderFilter(genderMale, genderFemale, genderOther) {
   return genderValue;
 }
 
-submitButton.addEventListener('click', function (event) {
-  event.preventDefault();
+const checkFormFunc = () => {
+  const inputChecker = document.querySelectorAll('input');
+  for (cont = 0; cont < inputChecker.length; cont += 1) {
+    if (inputChecker[cont].hasAttribute('required') && inputChecker[cont].value === ''){
+      alert('Campos Inválidos')
+      return false;
+    }
+  }
+  return true;
+};
+
+const appendAfterCheck = () => {
   const nameValue = document.querySelector('.first-name').value;
   const lastNameValue = document.querySelector('.last-name').value;
   const emailPhoneValue = document.querySelector('.phone-email').value;
@@ -69,4 +79,11 @@ submitButton.addEventListener('click', function (event) {
   rightContent.appendChild(userEmailPhone);
   rightContent.appendChild(birthConfirmation);
   rightContent.appendChild(genderValue);
+};
+
+submitButton.addEventListener('click', function (event) {
+  event.preventDefault();
+  if (checkFormFunc() === true) {
+    appendAfterCheck();
+  }
 });
