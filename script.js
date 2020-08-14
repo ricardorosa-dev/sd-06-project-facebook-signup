@@ -7,10 +7,6 @@ const genderCustomCtn = document.querySelector('.gender-custom-container');
 const radioGenderPersonalized = document.querySelector('#personalizado');
 const registerSuccessContainer = document.querySelector('.right-content');
 
-// const femaleGender = document.querySelector('#feminino').value;
-// const maleGender = document.querySelector('#masculino').value;
-// const personalizedGender = document.querySelector('#personalizado').value;
-
 login.addEventListener('click', function () {
   alert(name.value);
 });
@@ -26,6 +22,9 @@ function inputRegisterMessage() {
   const lastName = document.querySelector('#lastname').value;
   const phoneEmail = document.querySelector('#phone_email').value;
   const labelBirthdate = document.querySelector('.label-birthdate').value;
+  const femaleGender = document.querySelector('#feminino').value;
+  const maleGender = document.querySelector('#masculino').value;
+  const personalizedGender = document.querySelector('#personalizado').value;
 
   while (registerSuccessContainer.firstElementChild) {
     registerSuccessContainer.firstElementChild.remove();
@@ -33,7 +32,11 @@ function inputRegisterMessage() {
   const parag = document.createElement('p');
   parag.innerHTML = `<h1>Olá, ${firstName} ${lastName}</h1> <br>
   <strong>email ou telefone:</strong> ${phoneEmail} <br>
-  <strong>Data de Nascimento:</strong> ${labelBirthdate}`;
+  <strong>Data de Nascimento:</strong> ${labelBirthdate}
+  <strong>Gênero:</strong> <br>
+  ${femaleGender} <br>
+  ${maleGender} <br>
+  ${personalizedGender} `;
   registerSuccessContainer.appendChild(parag);
 }
 
