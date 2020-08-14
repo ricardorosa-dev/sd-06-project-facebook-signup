@@ -48,11 +48,11 @@ function genderFilter(genderMale, genderFemale, genderOther) {
 }
 
 const checkFormFunc = () => {
-  const placeErrorText = document.querySelector('.first-name');
+  const placeErrorText = document.querySelector('#error-message');
   const inputChecker = document.querySelectorAll('input');
   for (let cont = 0; cont < inputChecker.length; cont += 1) {
     if (inputChecker[cont].hasAttribute('required') && inputChecker[cont].value === '') {
-      placeErrorText.value = 'Campos Inválidos';
+      placeErrorText.innerHTML = 'Campos Inválidos';
       return placeErrorText;
     }
   }
