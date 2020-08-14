@@ -25,8 +25,8 @@ facebookRegister.addEventListener('click', function (event) {
 });
 
 const genderCustom = document.getElementById('gender-custom');
-const customGender = document.getElementById('customGender');
+const customGender = document.getElementById('customGender')
 
 customGender.addEventListener('click', function () {
   genderCustom.style.display = 'block';
-});
+})
