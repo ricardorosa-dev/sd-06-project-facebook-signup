@@ -20,7 +20,7 @@ submitBtn.addEventListener('click', function () {
   const firstName = document.querySelector('#firstname').value;
   const lastName = document.querySelector('#lastname').value;
   const phoneEmail = document.querySelector('#phone_email').value;
-  const labelBirthdate = document.querySelector('#label-birthdate').value;
+  const labelBirthdate = document.querySelector('.label-birthdate').value;
 
   for (let i = 2; i < (inputArray.length - 3); i += 1) {
     const resultCheck = inputArray[i].checkValidity();
