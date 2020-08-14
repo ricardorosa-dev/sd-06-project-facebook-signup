@@ -1,6 +1,5 @@
 const buttonLogin = document.querySelector('#button-login');
 const inputUser = document.querySelector('#user-email-phone');
-const inputPass = document.querySelector('#user-password');
 const inputName = document.querySelector('#name');
 const inputSob = document.querySelector('#sob');
 const inputMail = document.querySelector('#cel-email');
@@ -41,10 +40,12 @@ function validateInputs() {
     if (inputName.value === '' || inputSob.value === '') {
       validation = false;
     }
-    if (inputMail.value === '' || inputDtns.value === '' || inputNewPass.value === '') {
+    if (inputMail.value === '' || inputDtns.value === '' ||
+      inputNewPass.value === '') {
       validation = false;
     }
-    if (inputMasc.checked === false && inputFem.checked === false && inputPerson.checked === false) {
+    if (inputMasc.checked === false && inputFem.checked ===
+      false && inputPerson.checked === false) {
       validation = false;
     }
     if (validation === false) {
