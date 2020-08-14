@@ -37,9 +37,17 @@ createInputGenPerson();
 
 function validateInputs() {
   buttonRegister.addEventListener('click', function () {
-    if ((inputName.value === '' || inputSob.value === '' || inputMail.value === ''
-      || inputDtns.value === '' || inputNewPass.value === '')
-      || (inputMasc.checked === false && inputFem.checked === false && inputPerson.checked === false)) {
+    let validation = true;
+    if (inputName.value === '' || inputSob.value === '') {
+      validation = false;
+    }
+    if (inputMail.value === '' || inputDtns.value === '' || inputNewPass.value === '') {
+      validation = false;
+    }
+    if (inputMasc.checked === false && inputFem.checked === false && inputPerson.checked === false) {
+      validation = false;
+    }
+    if (validation === false) {
       alert('Campos inválidos');
     }
     if (inputPerson.checked === true) {
