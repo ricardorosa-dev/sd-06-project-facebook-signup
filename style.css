@@ -1,6 +1,5 @@
 body {
-  background: rgb(255, 255, 255);
-  background: linear-gradient( rgba(255, 255, 255, 1) 0%, rgba(221, 221, 221, 1) 100%);
+  background: linear-gradient(white 0%, rgba(221, 221, 221, 1) 100%);
   font-family: Helvetica, Arial, sans-serif;
   height: 100vh;
   margin: 0;
@@ -95,13 +94,13 @@ header label {
 }
 
 h1 {
+  color: #333;
   font-size: 36px;
-  color: #333333;
   margin-bottom: 10px;
 }
 
 .quick-easy {
+  color: #1d2129;
   font-size: 19px;
-  color: #1D2129;
   margin-bottom: 15px;
 }
