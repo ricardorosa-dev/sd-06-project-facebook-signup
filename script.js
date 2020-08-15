@@ -21,7 +21,7 @@ function createInputGenPerson() {
       const inputGenPerson = document.createElement('input');
       inputGenPerson.type = 'text';
       inputGenPerson.name = 'gender-custom';
-      inputGenPerson.className = 'text'
+      inputGenPerson.className = 'text';
       inputGenPerson.id = 'custom';
       inputGenPerson.placeholder = 'Gênero (opcional)';
       inputGenPerson.style.width = '295px';
@@ -31,16 +31,21 @@ function createInputGenPerson() {
 }
 createInputGenPerson();
 
-function validateInputs() {
+function validaInputsText() {
   const inputsText = document.querySelectorAll('.text');
-  const inputsRadio = document.querySelectorAll('.radio');
   let validation = true;
-  let checked = 0;
   for (let i = 0; i < inputsText.length; i += 1) {
     if (inputsText[i].value === '') {
       validation = false;
     }
   }
+  return validation;
+}
+
+function validateInputs() {
+  const inputsRadio = document.querySelectorAll('.radio');
+  let validation = validaInputsText();
+  let checked = 0;
   for (let i = 0; i < inputsRadio.length; i += 1) {
     if (inputsRadio[i].checked === false) {
       checked += 1;
@@ -53,12 +58,12 @@ function validateInputs() {
     const elementoP = document.querySelector('#menssager');
     if (!divError.contains(elementoP)) {
       const elemP = document.createElement('p');
-      elemP.id = 'menssager'
+      elemP.id = 'menssager';
       elemP.innerHTML = 'Campos inválidos';
       divError.appendChild(elemP);
     }
-    return validation;
   }
+  return validation;
 }
 buttonRegister.addEventListener('click', validateInputs);
 
