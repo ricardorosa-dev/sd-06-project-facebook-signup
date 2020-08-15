@@ -42,9 +42,9 @@ function validaInputsText() {
   return validation;
 }
 
-function validateInputs() {
+function validaInputsRadio() {
   const inputsRadio = document.querySelectorAll('.radio');
-  let validation = validaInputsText();
+  let validation = true;
   let checked = 0;
   for (let i = 0; i < inputsRadio.length; i += 1) {
     if (inputsRadio[i].checked === false) {
@@ -53,6 +53,16 @@ function validateInputs() {
     if (checked === inputsRadio.length) {
       validation = false;
     }
+  }
+  return validation;
+}
+
+function validateInputs() {
+  let validation = true;
+  let validationInpText = validaInputsText();
+  let validationInpRadio = validaInputsRadio();
+  if (validationInpRadio === false || validationInpText === false) {
+    validation = false;
   }
   if (validation === false) {
     const elementoP = document.querySelector('#menssager');
