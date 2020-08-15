@@ -75,7 +75,6 @@ function validateInputs() {
   }
   return validation;
 }
-buttonRegister.addEventListener('click', validateInputs);
 
 function inputFemRemoveGenPerson() {
   inputFem.addEventListener('click', function () {
@@ -96,3 +95,62 @@ function inputMascRemoveGenPerson() {
   });
 }
 inputMascRemoveGenPerson();
+
+function userRegistrated() {
+  const rightForm = document.querySelector('.right-content')
+  const validation = validateInputs();
+  if (validation = true) {
+    document.querySelector('.right-content').style.display = 'none'
+  }
+}
+
+buttonRegister.addEventListener('click', function () {
+  validateInputs();
+  setLocalStorage();
+});
+
+function setLocalStorage() {
+  const control = validateInputs();
+  if (control === true) {
+    localStorage.setItem('control', 'true');
+    const name = document.querySelector('#name');
+    const lastName = document.querySelector('#sob');
+    const mailPhone = document.querySelector('#cel-email');
+    const date = document.querySelector('#date-nsc');
+    const inputsRadio = document.querySelectorAll('.radio');
+    let check = '';
+    for (let i = 0; i < inputsRadio.length; i += 1) {
+      if (inputsRadio[i].checked === true) {
+        check = inputsRadio[i].value;
+      }
+    }
+    localStorage.setItem('nome', name.value);
+    localStorage.setItem('sob', lastName.value);
+    localStorage.setItem('contato', mailPhone.value);
+    localStorage.setItem('nsc', date.value);
+    localStorage.setItem('genero', check);
+    alert('salvo');
+  }
+}
+
+window.onload = function () {
+  function getLocalStorage() {
+    const rigthContent = document.querySelector('.right-content');
+    if (localStorage.getItem('control') === 'true') {
+      document.querySelector('#register-form').style.display = 'none';
+      for (let i = 0; i < localStorage.length - 2; i += 1) {
+        const elementoLi = document.createElement('li');
+        elementoLi.style.marginTop = '15px';
+        elementoLi.style.listStyleType = 'none';
+        rigthContent.appendChild(elementoLi);
+      }
+      const elementoLi = document.querySelectorAll('li');
+      elementoLi[0].innerText = `Olá ${localStorage.getItem('nome')} ${localStorage.getItem('sob')}`;
+      elementoLi[1].innerText = localStorage.getItem('contato');
+      elementoLi[2].innerText = localStorage.getItem('nsc');
+      elementoLi[3].innerText = localStorage.getItem('genero');
+      localStorage.setItem('control', 'false');
+    }
+  }
+  getLocalStorage();
+}
