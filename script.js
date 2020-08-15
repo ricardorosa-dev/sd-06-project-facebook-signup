@@ -59,8 +59,8 @@ function validaInputsRadio() {
 
 function validateInputs() {
   let validation = true;
-  let validationInpText = validaInputsText();
-  let validationInpRadio = validaInputsRadio();
+  const validationInpText = validaInputsText();
+  const validationInpRadio = validaInputsRadio();
   if (validationInpRadio === false || validationInpText === false) {
     validation = false;
   }
