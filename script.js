@@ -138,7 +138,7 @@ window.onload = function () {
         rigthContent.appendChild(elementoLi);
       }
       const elementoLi = document.querySelectorAll('li');
-      elementoLi[0].innerText = `Olá ${localStorage.getItem('nome')} ${localStorage.getItem('sob')}`;
+      elementoLi[0].innerText = `Olá, ${localStorage.getItem('nome')} ${localStorage.getItem('sob')}`;
       elementoLi[1].innerText = localStorage.getItem('contato');
       elementoLi[2].innerText = localStorage.getItem('nsc');
       elementoLi[3].innerText = localStorage.getItem('genero');
