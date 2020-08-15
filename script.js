@@ -104,13 +104,13 @@ function selectRadioChecked() {
       check = inputsRadio[i].value;
     }
   }
-  return check
+  return check;
 }
 
 function setLocalStorage() {
   const control = validateInputs();
   if (control === true) {
-    let check = selectRadioChecked();
+    const check = selectRadioChecked();
     const name = document.querySelector('#name');
     const lastName = document.querySelector('#sob');
     const mailPhone = document.querySelector('#cel-email');
