@@ -96,34 +96,26 @@ function inputMascRemoveGenPerson() {
 }
 inputMascRemoveGenPerson();
 
-function userRegistrated() {
-  const rightForm = document.querySelector('.right-content')
-  const validation = validateInputs();
-  if (validation = true) {
-    document.querySelector('.right-content').style.display = 'none'
+function selectRadioChecked() {
+  let check = '';
+  const inputsRadio = document.querySelectorAll('.radio');
+  for (let i = 0; i < inputsRadio.length; i += 1) {
+    if (inputsRadio[i].checked === true) {
+      check = inputsRadio[i].value;
+    }
   }
+  return check
 }
-
-buttonRegister.addEventListener('click', function () {
-  validateInputs();
-  setLocalStorage();
-});
 
 function setLocalStorage() {
   const control = validateInputs();
   if (control === true) {
-    localStorage.setItem('control', 'true');
+    let check = selectRadioChecked();
     const name = document.querySelector('#name');
     const lastName = document.querySelector('#sob');
     const mailPhone = document.querySelector('#cel-email');
     const date = document.querySelector('#date-nsc');
-    const inputsRadio = document.querySelectorAll('.radio');
-    let check = '';
-    for (let i = 0; i < inputsRadio.length; i += 1) {
-      if (inputsRadio[i].checked === true) {
-        check = inputsRadio[i].value;
-      }
-    }
+    localStorage.setItem('control', 'true');
     localStorage.setItem('nome', name.value);
     localStorage.setItem('sob', lastName.value);
     localStorage.setItem('contato', mailPhone.value);
@@ -142,6 +134,7 @@ window.onload = function () {
         const elementoLi = document.createElement('li');
         elementoLi.style.marginTop = '15px';
         elementoLi.style.listStyleType = 'none';
+        elementoLi.style.color = 'red';
         rigthContent.appendChild(elementoLi);
       }
       const elementoLi = document.querySelectorAll('li');
@@ -153,4 +146,9 @@ window.onload = function () {
     }
   }
   getLocalStorage();
-}
+};
+
+buttonRegister.addEventListener('click', function () {
+  validateInputs();
+  setLocalStorage();
+});
