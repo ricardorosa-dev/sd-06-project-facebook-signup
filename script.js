@@ -23,7 +23,7 @@ function validateForms() {
 
   for (let index = 0; index < field.length; index += 1) {
     if (field[index].value === '') {
-        isValid = false;
+      isValid = false;
     }
   }
 
