@@ -1,54 +1,54 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .top-bar {
-    display: flex;
-    background-color: rgb(66, 103, 178);    
-    justify-content: space-between;    
-    align-items: center; 
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
 }
 
 .facebook-login {
-    display: flex;
+  display: flex;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
-    align-self: flex-end; 
+  align-self: flex-end;
 }
 
 .main-content {
-    display: flex;
-    justify-content: center;    
-}
-
-.left-content {
-    width: 800px;
+  display: flex;
+  justify-content: center;
 }
 
 .right-content {
-    width: 300px;    
+  width: 300px;
+}
+
+.left-content {
+  width: 800px;
 }
 
 .right-content form .fullname-container {
-    display: flex;
+  display: flex;
 }
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .label-birthdate, .label-gender {
-    display: block;
+  display: block;
 }
 
 .invalide-warning {
-    color: rgb(253, 6, 6);
-    font-weight: 700;
+  color: rgb(253, 6, 6);
+  font-weight: 700;
 }
