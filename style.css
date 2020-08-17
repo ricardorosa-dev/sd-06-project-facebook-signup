@@ -1,140 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .top-bar {
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    background-color: rgb(66, 103, 178);    
+    justify-content: space-between;    
+    align-items: center; 
 }
 
 .facebook-login {
-  align-items: flex-end;
-  display: flex;
+    display: flex;
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-control {
-  align-self: flex-end;
-}
-
-body {
-  background: white;
-  color: rgb(28, 30, 33);
-  direction: ltr;
-  font-family: Helvetica, sans-serif;
-  line-height: 1.34;
-  margin: 0;
-  padding: 0;
-  unicode-bidi: embed;
-}
-
-h1 {
-  font-size: 36px;
-  font-weight: 800;
-}
-
-.main-background-content {
-  background: linear-gradient(white, #d3d8e8);
-  min-width: 980px;
+    align-self: flex-end; 
 }
 
 .main-content {
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
-  max-width: 980px;
-  width: 90%;
+    display: flex;
+    justify-content: center;    
 }
 
 .left-content {
-  min-width: 800px;
+    width: 800px;
 }
 
 .right-content {
-  min-width: 300px;
+    width: 300px;    
 }
 
-.left-title {
-  color: rgb(14, 56, 95);
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 29px;
-  margin-top: 40px;
-  width: 450px;
-  word-spacing: -1px;
+.right-content form .fullname-container {
+    display: flex;
 }
 
-.form-group-2 {
-  display: flex;
-  flex-flow: nowrap;
+.d-flex {
+    display: flex;
 }
 
-.form-control-3 {
-  display: flex;
-  flex-flow: nowrap;
-  margin-bottom: 10px;
-  width: 100%;
+.label-birthdate, .label-gender {
+    display: block;
 }
 
-.quick-easy {
-  font-size: 19px;
-  margin-bottom: 15px;
-}
-
-.subtitle-forms {
-  color: rgb(144, 148, 156);
-  font-size: 16px;
-}
-
-.input-name {
-  display: flex;
-  width: 140px;
-}
-
-.input-contact {
-  width: 292px;
-}
-
-.input-gender {
-  text-align: left;
-}
-
-.label {
-  display: block;
-}
-
-.gender-control {
-  display: flex;
-  width: 100%;
-}
-
-.gender-type {
-  display: flex;
-  width: 33%;
-}
-
-.gender-text {
-  font-size: 0.9em;
-  font-weight: 800;
-}
-
-.button {
-  border: 1px solid;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  position: relative;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.button-green {
-  background: linear-gradient(rgb(103, 174, 85), rgb(87, 136, 67));
-  background-color: rgb(105, 167, 78);
-  border-color: rgb(59, 110, 34) rgb(59, 110, 34) rgb(44, 81, 21);
-  box-shadow: inset 0 1px 1px rgb(164, 227, 136);
+.invalide-warning {
+    color: rgb(253, 6, 6);
+    font-weight: 700;
 }

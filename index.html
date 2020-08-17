@@ -1,83 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang='en'>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='style.css'>
     <title>Document</title>
-    <link rel="stylesheet" href="libs/bulma.css">
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="top-bar">
-        <img class="facebook-logo" src="imgs/facebook-logo.png">
-        <form class="facebook-login">
-            <div class="form-group">
-                <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-                <input id="user-email-phone" type="text">
+    <header class='top-bar'>
+        <img class='facebook-logo' src='imgs/facebook-logo.png'>
+        <form class='facebook-login'>
+            <div class='form-group'>
+                <label id='user-email-phone-label' for='user-email-phone'>Email ou telefone</label>
+                <input id='user-email-phone' type='text'>
             </div>
-            <div class="form-group">
-                <label for="user-password" id="user-password-label">Senha</label>
-                <input id="user-password" type="text">
+            <div class='form-group'>
+                <label id='user-password-label' for='user-password'>Senha</label>
+                <input id='user-password' type='text'>
             </div>
-            <div class="form-control">
-                <button id="button-login">Entrar</button>
+            <div class='form-control'>
+                <button id='button-login' class='button-login' type='submit'>Entrar</button>
             </div>
         </form>
     </header>
-    <div class="main-background-content">
-        <main class="main-content">
-            <article class="left-content">
-                <p id="facebook-slogan" class="left-title">
-                    O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
-                </p>
-                <img id="facebook-networking" src="imgs/networking.png" alt="">
-            </article>
-            <article  id="article" class="right-content">
-                <h1>Abra uma conta</h1>
-                <p class="quick-easy">É rápido e fácil.</p>
-                <form action="#" class="js-form form" id="signUp">
-                    <div class="form-group-2">
-                        <div class="form-control-3">
-                            <input type="text" name="firstname" filled="false" class="input-name input" placeholder="Nome" data-validate-field="name">
-                        </div>
-                        <div class="form-control-3">
-                            <input type="text" name="lastname" filled="false" class="input-name input" placeholder="Sobrenome" data-validate-field="lastname">
-                        </div>
+    <main class='main-content'>
+        <section class='left-content'>
+            <p id='facebook-slogan'>
+                O Facebook ajuda você a se conectar e
+                compartilhar com as pessoas que fazem parte da sua vida
+            </p>
+            <img src='imgs/networking.png' id='facebook-networking'>
+        </section>
+        <section class='right-content'>
+            <h1>Abra uma conta</h1>
+            <p class='quick-easy'>É rápido e fácil</p>
+            <form action="" id='register-form'>
+                <div class='fullname-container'>
+                    <input type='text' name='first-name' placeholder='Nome' required>
+                    <input type='text' name='last-name' placeholder='Sobrenome' required>
+                </div>
+                <input type='text' name='phone_email' placeholder='Celular ou email' required>
+                <input type='password' name='password' placeholder='Nova senha' required>
+                <label id='label-birthdate' class='label-birthdate'>Data de nascimento</label>
+                <input type='text' name='birthdate' placeholder='dd/mm/aaaa' required>
+                <label class='label-gender' id='label-gender'>Gênero</label>
+                <div class='d-flex'>
+                    <div class='d-flex'>
+                        <input type='radio' name='gender' id='gen-fem' value='Feminino' checked>
+                        <label for='gen-fem'>Feminino</label>
                     </div>
-                    <input type="text" name="phone_email" filled="false" placeholder="Celular ou email" class="input input-contact form__input form-control" data-validate-field="contact">
-                    <input type="password" name="password" filled="false" data-validate-field="password" placeholder="Nova senha" class="input-contact input">
-                    <label for="birthdate" id="label-birthdate" class="label subtitle-forms">Data de nascimento</label>
-                    <input type="text" id="input-birthdate" filled="false" data-validate-field="date" class="input input-contact" name="birthdate" placeholder="dd/mm/aaaa">
-                    <label for="gender" id="label-gender" class="subtitle-forms label">Gênero</label>
-                    <div class="form-group-2">
-                        <div class="gender-type">
-                            <div class="form-control-3">
-                                <input type="radio" id="fem" name="gender" data-validate-field="gender" filled="false" value="Feminino" class="input-gender">
-                                <label class="gender-text" for="fem">Feminino</label>
-                            </div>
-                        </div>
-                    <div class="gender-type">
-                        <div class="form-control-3">
-                            <input type="radio" filled="false" id="Mas" name="gender" value="Masculino" data-validate-field="gender" class="input-gender">
-                            <label class="gender-text" for="Mas">Masculino</label>
-                        </div>
+                    <div class='d-flex'>
+                        <input type='radio' name='gender' id='gen-masc' value='Masculino'>
+                        <label for='gen-masc'>Masculino</label>
                     </div>
-                        <div class="gender-type">
-                            <div class="form-control-3">
-                                <input type="radio" id="Per" filled="false"  name="gender" data-validate-field="gender" value="Personalizado" class="input-gender">
-                                <label class="gender-text" for="Per">Personalizado</label>
-                            </div>
-                        </div>
+                    <div class='d-flex'>
+                        <input type='radio' name='gender' id='gen-others' value='Personalizado'>
+                        <label for='gen-others'>Personalizado</label>
                     </div>
-                    <div class="button-area">
-                        <button class="button is-success button-green" type="submit" id="facebook-register">Cadastre-se</button>
-                    </div>
-
-                </form>
-            </article>
-        </main>
-    </div>
-    <!-- <script src="libs/just-validate.js"></script> -->
-    <script src="script.js"></script>
+                </div>
+                <div class='other-gen-input'>
+                </div>
+                <button id='facebook-register' type='submit'>Cadastre-se</button>
+            </form>
+        </section>
+    </main>
+    <script src='script.js'></script>
 </body>
 </html>
