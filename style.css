@@ -44,7 +44,7 @@ body {
   display: flex;
 }
 
-.label-birthdate, .label-gender {
+.label-birthdate .label-gender {
   display: block;
 }
 

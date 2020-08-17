@@ -3,7 +3,7 @@ function buttonAlert() {
   const userEmailPhone = document.querySelector('#user-email-phone');
 
   buttonLogin.addEventListener('click', function () {
-      alert(userEmailPhone.value);
+    alert(userEmailPhone.value);
   });
 }
 
@@ -22,13 +22,13 @@ function validateForms() {
   let isValid = true;
 
   for (let index = 0; index < field.length; index += 1) {
-      if (field[index].value === '') {
-          isValid = false;
-      }
+    if (field[index].value === '') {
+        isValid = false;
+    }
   }
 
   if (!isValid) {
-      validateFieldsMessage();
+    validateFieldsMessage();
   }
 }
 
@@ -41,21 +41,21 @@ const otherGenreRadio = document.querySelector('#gen-others');
 function generateOtherGenreInput() {
   const otherGenreInputWrapper = document.querySelector('.other-gen-input');
   if (otherGenreRadio.checked === true && existeOInputExtra === false) {
-      const otherGenreInput = document.createElement('input');
-      otherGenreInput.setAttribute('name', 'gender-custom');
-      otherGenreInput.setAttribute('placeholder', 'Gênero');
+    const otherGenreInput = document.createElement('input');
+    otherGenreInput.setAttribute('name', 'gender-custom');
+    otherGenreInput.setAttribute('placeholder', 'Gênero');
 
-      otherGenreInputWrapper.appendChild(otherGenreInput);
-      existeOInputExtra = true;
+    otherGenreInputWrapper.appendChild(otherGenreInput);
+    existeOInputExtra = true;
   }
 }
 
 otherGenreRadio.addEventListener('click', generateOtherGenreInput);
 
 function tirarOInputExtraQuandoClicarEmOutroRadio() {
-    const otherGenreInputWrapper = document.querySelector('.other-gen-input');
-    otherGenreInputWrapper.removeChild(otherGenreInputWrapper.firstElementChild);
-    existeOInputExtra = false;
+  const otherGenreInputWrapper = document.querySelector('.other-gen-input');
+  otherGenreInputWrapper.removeChild(otherGenreInputWrapper.firstElementChild);
+  existeOInputExtra = false;
 }
 
 const mRadio = document.querySelector('#gen-masc');
