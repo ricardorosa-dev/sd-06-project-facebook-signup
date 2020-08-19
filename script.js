@@ -7,14 +7,14 @@ function alertEmail() {
 }
 
 function optionalGender() {
-       const genderForm = document.getElementById('js-form');
-       const buttonForm = document.getElementById('facebook-register');
-       const newGender = document.createElement('input');
-       newGender.id = 'gender-custom';
-       newGender.type = 'text';
-       newGender.name = 'gender-custom';
-       newGender.placeholder= 'Gênero (opcional)';
-       genderForm.insertBefore(newGender, buttonForm);
+  const genderForm = document.getElementById('js-form');
+  const buttonForm = document.getElementById('facebook-register');
+  const newGender = document.createElement('input');
+  newGender.className = 'gender-custom';
+  newGender.type = 'text';
+  newGender.name = 'gender-custom';
+  newGender.placeholder = 'Gênero (opcional)';
+  genderForm.insertBefore(newGender, buttonForm);
 }
 
 loginButton.addEventListener('click', alertEmail);

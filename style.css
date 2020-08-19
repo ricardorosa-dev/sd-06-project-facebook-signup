@@ -57,6 +57,6 @@ body {
   margin-right: 12px;
 }
 
-#gender-custom {
+.gender-custom {
   display: flex;
 }
