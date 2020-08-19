@@ -47,9 +47,13 @@
         <div class="quick-easy">
           <p>É rápido e fácil.</p>
         </div>
-        <form action="" method="GET" class="js-form">
+        <form action="" method="GET" class="js-form" id="js-form">
           <div class="first-last-name">
-            <input name="firstname" class="first-name" placeholder="Nome" />
+            <input
+              name="firstname"
+              class="first-name"
+              placeholder="Nome"
+            />
             <input
               class="lastname"
               type="text"
@@ -83,7 +87,7 @@
             />
           </div>
           <label id="label-gender">Gênero</label>
-          <div class="gender-form">
+          <div class="gender-form" id="gender-form">
             <label for="female">Feminino</label>
             <input id="female" type="radio" name="gender" value="Feminino" />
             <label for="female">Masculino</label>
@@ -96,12 +100,10 @@
               value="Personalizado"
             />
           </div>
-          <button id="facebook-register" type="submit">Cadastre-se</button>
+          <button id="facebook-register" type="submit" value="submit">Cadastre-se</button>
         </form>
       </div>
     </section>
   </body>
-  <script src="jquery-2.1.4.min.js"></script>
-  <script src="jquery.validate.min.js"></script>
   <script src="script.js"></script>
 </html>
