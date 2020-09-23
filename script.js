@@ -4,13 +4,13 @@ const userPassword = document.querySelector('#user-password');
 
 buttonLogin.addEventListener('click', () => {
   if (userEmailPhone.value.length === 0 && userPassword.value.length === 0) {
-      alert('Você precisa preencher seu e-mail e senha');
+    alert('Você precisa preencher seu e-mail e senha');
   } else if (userEmailPhone.value.length !== 0 && userPassword.value.length === 0) {
-      alert('Você não preencheu sua senha');
+    alert('Você não preencheu sua senha');
   } else if (userEmailPhone.value.length === 0 && userPassword.value.length !== 0) {
-      alert('Você não preencheu seu e-mail');
+    alert('Você não preencheu seu e-mail');
   } else {
-      alert(`Seu email é: ${userEmailPhone.value}
+    alert(`Seu email é: ${userEmailPhone.value}
 sua senha é: ${userPassword.value}`);
-}
+  }
 });
