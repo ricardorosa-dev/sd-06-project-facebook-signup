@@ -27,6 +27,42 @@
             </form>
           </div>
     </header>
+    <section class="main-content">
+        <section class="left-content">
+          <p id="facebook-slogan">
+            O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+          </p>
+          <img id="facebook-networking" src="imgs/networking.png" alt="Facebook networking">
+        </section>
+        <section class="right-content">
+          <h1>Abra uma conta</h1>
+          <h2 class="quick-easy">É rápido e fácil.</h2>
+          <form>
+            <input type="text" name="firstname" placeholder="Nome">
+            <input type="text" name="lastname" placeholder="Sobrenome">
+            <input type="text" name="phone_email" placeholder="Celular ou email">
+            <input type="password" name="password" placeholder="Nova senha">
+            <div>
+              <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+              <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+            </div>
+            <div>
+              <label id="label-gender" for="">Gênero</label>
+              <input type="radio" name="gender" id="woman" value="Feminino">
+              <label id="label-gender" for="woman">Feminino</label>
+              <input type="radio" name="gender" id="man" value="Masculino">
+              <label id="label-gender" for="man">Masculino</label>
+              <input type="radio" name="gender" id="customized" value="Personalizado">
+              <label id="label-gender" for="customized">Personalizado</label>
+              <span>
+                <input type="text" name="gender-custom" placeholder="Gênero (opcional)">
+              </span>
+            </div>
+            <button type="submit" id="facebook-register">Cadastre-se</button>
+            <span></span>
+          </form>
+        </section>
+      </section>
 </body>
 <script src="script.js"></script>
 </html>
