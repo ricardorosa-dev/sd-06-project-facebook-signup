@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-y:scroll;
 }
 
 .top-bar {
@@ -17,6 +18,7 @@ body {
 }
 
 .facebook-login {
+  margin-right: 20px;
   align-content: center;
   display: flex;
   flex-grow: 1;
@@ -29,7 +31,7 @@ body {
 }
 
 .form-group {
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   font-family: Tahoma, sans-serif;
@@ -48,19 +50,164 @@ body {
 }
 
 .left-content {
+  /* border: 1px solid; */
+  font-weight: 800;
+  text-align: right;
   width: 800px;
 }
 
+#facebook-slogan {
+  /* border: 1px solid; */
+  display: inline-block;
+  width: 400px;
+  text-align: left;
+}
+
 .right-content {
+  /* border: 1px solid; */
+  margin-right: 200px;
   display: flex;
   flex-direction: column;
   width: 300px;
 }
 
+.right-content input {
+  font-size: 20px;
+}
+
 .name-inputs {
+  /* border: 1px solid; */
   display: flex;
+}
+
+.name-inputs input {
+  margin-right: 5px;
+  width: 200px;
+}
+
+.user-gender {
+  /* border: 1px solid; */
+  width: 400px;
 }
 
 /* .invisible {
   display: none;
 } */
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+  }
+  
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    height: 50px;
+  }
+  
+  .img-container img {
+    width: 130px;
+  }
+  
+  .facebook-login {
+    /* border: 1px solid; */
+    /* width: 100px; */
+    margin: 10px;
+    display: block;
+    flex-direction: column;
+  }
+  
+  .facebook-login div {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 0;
+  }
+  
+  .facebook-login input {
+    font-size: 20px;
+  }
+  
+  .form-group {
+    /* border: 1px solid red; */
+    /* width: 300px; */
+    margin: 5px 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+  }
+  
+  .form-group label {
+    display:none;
+    font-size: 10;
+  }
+  
+  .main-content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .left-content {
+    display: none;
+    border: 1px solid;
+    font-weight: 800;
+    text-align: right;
+    width: 100vw;
+    height: 15vh;
+    z-index: 1;
+  }
+  
+  .left-content input {
+    font-size: 20px;
+    z-index: 2;
+  }
+  
+  .left-content img {
+    width: 10px;
+    /* visibility: hidden; */
+  }
+  /*  */
+  
+  #facebook-slogan {
+    font-size: 0;
+    border: 1px solid;
+    width: 0px;
+    visibility: hidden;
+  }
+  
+  .right-content {
+    margin-left: 10px;
+    /* border: 1px solid; */
+    margin-right: 0;
+    margin-top: 17vh;
+    width: 99vw;
+  }
+  
+  .right-content input {
+    font-size: 20px;
+  }
+  
+  .name-inputs {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name-inputs input {
+    margin-right: 5px;
+    width: 200px;
+  }
+  
+  .user-gender {
+    /* border: 1px solid; */
+    width: 400px;
+  }
+  
+  /* .invisible {
+    display: none;
+  } */
+}
